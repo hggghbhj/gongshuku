@@ -1,6 +1,15 @@
 [
  {
   "cat": "用户手册",
+  "t": "E3000变频器说明书",
+  "d": "2026-09-23",
+  "u": "https://www.euradrives.com/Upload/File/202609/20260923161554_9657.pdf",
+  "fn": "or_63e001ad.pdf",
+  "pages": 377,
+  "size": 8706022
+ },
+ {
+  "cat": "用户手册",
   "t": "E700变频器说明书",
   "d": "2026-09-16",
   "u": "https://www.euradrives.com/Upload/File/202609/20260916100306_0210.pdf",
@@ -214,6 +223,105 @@
   "fn": "or_f45720f3.pdf",
   "pages": 188,
   "size": 3011488
+ },
+ {
+  "cat": "用户手册",
+  "t": "SD20-Y系列EtherCAT总线型伺服系统详细版使用手册(28388平台)",
+  "d": "2026-03-31",
+  "u": "https://www.euradrives.com/Upload/File/202603/20260331151617_3323.pdf",
+  "fn": "or_a09cb5fa.pdf",
+  "pages": 13,
+  "size": 485632
+ },
+ {
+  "cat": "用户手册",
+  "t": "EP66 C1滤波器简易操作手册",
+  "d": "2026-03-09",
+  "u": "https://www.euradrives.com/Upload/File/202603/20260309084813_0746.pdf",
+  "fn": "or_386822dd.pdf",
+  "pages": 27,
+  "size": 1240956
+ },
+ {
+  "cat": "用户手册",
+  "t": "SDP20-G系列伺服系统说明书",
+  "d": "2026-03-09",
+  "u": "https://www.euradrives.com/Upload/File/202603/20260309084622_4760.pdf",
+  "fn": "or_df4ee0b5.pdf",
+  "pages": 14,
+  "size": 594035
+ },
+ {
+  "cat": "用户手册",
+  "t": "E100系列变频器说明书",
+  "d": "2026-02-26",
+  "u": "https://www.euradrives.com/Upload/File/202602/20260226135323_3337.pdf",
+  "fn": "or_9d93d9d7.pdf",
+  "pages": 42,
+  "size": 4365560
+ },
+ {
+  "cat": "用户手册",
+  "t": "ERMS243-32DTD软件使用说明手册",
+  "d": "2025-10-28",
+  "u": "https://www.euradrives.com/Upload/File/202510/20251028084020_1058.pdf",
+  "fn": "or_53d6bfa8.pdf",
+  "pages": 17,
+  "size": 1093364
+ },
+ {
+  "cat": "用户手册",
+  "t": "ERMS243 硬件使用手册",
+  "d": "2025-10-28",
+  "u": "https://www.euradrives.com/Upload/File/202510/20251028083948_6443.pdf",
+  "fn": "or_1ca54099.pdf",
+  "pages": 77,
+  "size": 1921371
+ },
+ {
+  "cat": "用户手册",
+  "t": "DRIVES上位机监控软件用户使用手册",
+  "d": "2025-09-04",
+  "u": "https://www.euradrives.com/Upload/File/202509/20250904112604_1355.pdf",
+  "fn": "or_fb65e502.pdf",
+  "pages": 10,
+  "size": 890621
+ },
+ {
+  "cat": "用户手册",
+  "t": "SDE15系列伺服使用手册",
+  "d": "2025-09-04",
+  "u": "https://www.euradrives.com/Upload/File/202509/20250904152549_8640.pdf",
+  "fn": "or_5f71adf4.pdf",
+  "pages": 2,
+  "size": 422310
+ },
+ {
+  "cat": "用户手册",
+  "t": "E600说明书5.5kW及以下",
+  "d": "2025-08-25",
+  "u": "https://www.euradrives.com/Upload/File/202508/20250825091226_7443.pdf",
+  "fn": "or_f58b06c2.pdf",
+  "pages": 34,
+  "size": 2494417
+ },
+ {
+  "cat": "用户手册",
+  "t": "E600说明书7.5kW-22kW",
+  "d": "2025-08-25",
+  "u": "https://www.euradrives.com/Upload/File/202508/20250825091152_6560.pdf",
+  "fn": "or_96f66ff2.pdf",
+  "pages": 14,
+  "size": 1097457
+ },
+ {
+  "cat": "用户手册",
+  "t": "E2000-T张力控制专用说明书",
+  "d": "2025-08-21",
+  "u": "https://www.euradrives.com/Upload/File/202508/20250821105353_9763.pdf",
+  "fn": "or_dfde8673.pdf",
+  "pages": 33,
+  "size": 1871943
  },
  {
   "cat": "用户手册",
@@ -433,111 +541,561 @@
  },
  {
   "cat": "用户手册",
+  "t": "ZKE2000系列真空设备专用变频器使用手册",
+  "d": "2023-05-30",
+  "u": "https://www.euradrives.com/Upload/File/202502/20250207205029_5236.pdf",
+  "fn": "or_2955fe44.pdf",
+  "pages": 22,
+  "size": 1357292
+ },
+ {
+  "cat": "用户手册",
+  "t": "欧瑞E2000-T系列张力控制专用说明书",
+  "d": "2023-05-14",
+  "u": "https://www.euradrives.com/Upload/File/202305/20230514172713_6754.pdf",
+  "fn": "or_414ba59d.pdf",
+  "pages": 115,
+  "size": 3161728
+ },
+ {
+  "cat": "用户手册",
+  "t": "低压直流伺服简易调试手册",
+  "d": "2023-03-31",
+  "u": "https://www.euradrives.com/Upload/File/202303/20230331154431_4768.pdf",
+  "fn": "or_c04e2621.pdf",
+  "pages": 118,
+  "size": 3056673
+ },
+ {
+  "cat": "用户手册",
+  "t": "E2200系列变频器说明书",
+  "d": "2023-03-31",
+  "u": "https://www.euradrives.com/Upload/File/202303/20230331154317_5584.pdf",
+  "fn": "or_43c39d24.pdf",
+  "pages": 24,
+  "size": 1061051
+ },
+ {
+  "cat": "用户手册",
+  "t": "EPC100系列恒压供水控制器说明书",
+  "d": "2023-03-31",
+  "u": "https://www.euradrives.com/Upload/File/202303/20230331154617_3451.pdf",
+  "fn": "or_4b267362.pdf",
+  "pages": 28,
+  "size": 979126
+ },
+ {
+  "cat": "用户手册",
+  "t": "HFR2000系列软起动器说明书",
+  "d": "2023-01-05",
+  "u": "https://www.euradrives.com/Upload/File/202301/20230105170828_6311.pdf",
+  "fn": "or_ea0a32ae.pdf",
+  "pages": 40,
+  "size": 1417782
+ },
+ {
+  "cat": "用户手册",
+  "t": "HFR1000系列软起动器说明书",
+  "d": "2023-01-05",
+  "u": "https://www.euradrives.com/Upload/File/202301/20230105170755_0569.pdf",
+  "fn": "or_434c4342.pdf",
+  "pages": 48,
+  "size": 848591
+ },
+ {
+  "cat": "用户手册",
+  "t": "E2000-M系列变频器说明书",
+  "d": "2022-08-30",
+  "u": "https://www.euradrives.com/Upload/File/202208/20220830164238_8803.pdf",
+  "fn": "or_4de73587.pdf",
+  "pages": 211,
+  "size": 4850195
+ },
+ {
+  "cat": "用户手册",
+  "t": "QSC2000一体机系列产品操作手册",
+  "d": "2022-07-21",
+  "u": "https://www.euradrives.com/Upload/File/202207/20220721221329_9386.pdf",
+  "fn": "or_8b0ac88e.pdf",
+  "pages": 106,
+  "size": 2099172
+ },
+ {
+  "cat": "用户手册",
+  "t": "FC2100系列化工/矿山工程定制型变频器使用手册",
+  "d": "2022-06-29",
+  "u": "https://www.euradrives.com/Upload/File/202206/20220629204226_1898.pdf",
+  "fn": "or_6591fe0f.pdf",
+  "pages": 85,
+  "size": 2578332
+ },
+ {
+  "cat": "用户手册",
+  "t": "DriversPCMonitoringSoftwareUserGuide",
+  "d": "2022-06-24",
+  "u": "https://www.euradrives.com/Upload/File/202206/20220624145029_7642.pdf",
+  "fn": "or_32bc87bf.pdf",
+  "pages": 109,
+  "size": 4006955
+ },
+ {
+  "cat": "用户手册",
+  "t": "EC231-04IVM单独硬件使用手册",
+  "d": "2022-06-09",
+  "u": "https://www.euradrives.com/Upload/File/202206/20220609105104_7211.pdf",
+  "fn": "or_4a8861f0.pdf",
+  "pages": 13,
+  "size": 485632
+ },
+ {
+  "cat": "用户手册",
+  "t": "EC400系列PLC硬件使用手册2021072201",
+  "d": "2022-06-09",
+  "u": "https://www.euradrives.com/Upload/File/202206/20220609104808_3618.pdf",
+  "fn": "or_594af47d.pdf",
+  "pages": 27,
+  "size": 1240956
+ },
+ {
+  "cat": "用户手册",
+  "t": "EC431-04IVM单独使用手册",
+  "d": "2022-06-09",
+  "u": "https://www.euradrives.com/Upload/File/202206/20220609104910_1430.pdf",
+  "fn": "or_609b2d7b.pdf",
+  "pages": 14,
+  "size": 594035
+ },
+ {
+  "cat": "用户手册",
+  "t": "欧瑞物联云HMI使用说明",
+  "d": "2022-05-05",
+  "u": "https://www.euradrives.com/Upload/File/202205/20220505134025_3588.pdf",
+  "fn": "or_a31b3b7f.pdf",
+  "pages": 42,
+  "size": 4365560
+ },
+ {
+  "cat": "用户手册",
+  "t": "欧瑞物联云盒配置向导",
+  "d": "2022-04-29",
+  "u": "https://www.euradrives.com/Upload/File/202204/20220429155815_5649.pdf",
+  "fn": "or_b74b19bc.pdf",
+  "pages": 17,
+  "size": 1093364
+ },
+ {
+  "cat": "用户手册",
+  "t": "F1000-G系列变频器用户手册",
+  "d": "2022-04-29",
+  "u": "https://www.euradrives.com/Upload/File/202204/20220429161111_4242.pdf",
+  "fn": "or_b6ea40a3.pdf",
+  "pages": 77,
+  "size": 1921371
+ },
+ {
+  "cat": "用户手册",
+  "t": "欧瑞物联网卡使用说明",
+  "d": "2022-04-19",
+  "u": "https://www.euradrives.com/Upload/File/202204/20220419164430_6434.pdf",
+  "fn": "or_40fcebee.pdf",
+  "pages": 10,
+  "size": 890621
+ },
+ {
+  "cat": "用户手册",
+  "t": "物联终端固件更新指引",
+  "d": "2022-04-19",
+  "u": "https://www.euradrives.com/Upload/File/202204/20220419164247_8778.pdf",
+  "fn": "or_c313d69e.pdf",
+  "pages": 2,
+  "size": 422310
+ },
+ {
+  "cat": "用户手册",
+  "t": "欧瑞DT3000物联云盒使用说明书",
+  "d": "2022-04-19",
+  "u": "https://www.euradrives.com/Upload/File/202204/20220419164143_9090.pdf",
+  "fn": "or_be98e074.pdf",
+  "pages": 34,
+  "size": 2494417
+ },
+ {
+  "cat": "用户手册",
+  "t": "欧瑞物联云HMI配置向导",
+  "d": "2022-04-19",
+  "u": "https://www.euradrives.com/Upload/File/202204/20220419162050_3153.pdf",
+  "fn": "or_d02a2264.pdf",
+  "pages": 14,
+  "size": 1097457
+ },
+ {
+  "cat": "用户手册",
+  "t": "ERM100系列EtherCAT远程IO模块使用手册",
+  "d": "2022-04-18",
+  "u": "https://www.euradrives.com/Upload/File/202204/20220418164642_0653.pdf",
+  "fn": "or_129e0978.pdf",
+  "pages": 33,
+  "size": 1871943
+ },
+ {
+  "cat": "用户手册",
+  "t": "变频器用PG及IO扩展卡使用说明书",
+  "d": "2022-02-25",
+  "u": "https://www.euradrives.com/Upload/File/202202/20220225154731_6017.pdf",
+  "fn": "or_d6c2dd57.pdf",
+  "pages": 47,
+  "size": 1394702
+ },
+ {
+  "cat": "用户手册",
+  "t": "EAC200系列运动控制器使用手册",
+  "d": "2022-02-25",
+  "u": "https://www.euradrives.com/Upload/File/202202/20220225154454_9601.pdf",
+  "fn": "or_a5aa1d74.pdf",
+  "pages": 95,
+  "size": 4134072
+ },
+ {
+  "cat": "用户手册",
+  "t": "SD20-Y系列CANopen总线型伺服系统详细版使用手册（版本号2021011501）",
+  "d": "2021-11-19",
+  "u": "https://www.euradrives.com/Upload/File/202111/20211119151501_9440.pdf",
+  "fn": "or_93dcbca5.pdf",
+  "pages": 464,
+  "size": 6818454
+ },
+ {
+  "cat": "用户手册",
+  "t": "EM30 USER MANUAL",
+  "d": "2021-08-24",
+  "u": "https://www.euradrives.com/Upload/File/202108/20210824142919_7424.pdf",
+  "fn": "or_24e508e6.pdf",
+  "pages": 191,
+  "size": 7285268
+ },
+ {
+  "cat": "用户手册",
+  "t": "EC432-04IVM单独使用手册20210728",
+  "d": "2021-08-18",
+  "u": "https://www.euradrives.com/Upload/File/202108/20210818094247_3815.pdf",
+  "fn": "or_c0fe4521.pdf",
+  "pages": 17,
+  "size": 1068078
+ },
+ {
+  "cat": "用户手册",
+  "t": "EC400系列PLC软件使用手册2021071901",
+  "d": "2021-08-18",
+  "u": "https://www.euradrives.com/Upload/File/202109/20210926111917_1316.pdf",
+  "fn": "or_d0568829.pdf",
+  "pages": 217,
+  "size": 10117861
+ },
+ {
+  "cat": "用户手册",
+  "t": "EC421-16DX单独使用手册2021072201",
+  "d": "2021-08-18",
+  "u": "https://www.euradrives.com/Upload/File/202108/20210818094027_6473.pdf",
+  "fn": "or_91df02f8.pdf",
+  "pages": 5,
+  "size": 315831
+ },
+ {
+  "cat": "用户手册",
+  "t": "EC422-16DTD单独使用手册2021072201",
+  "d": "2021-08-18",
+  "u": "https://www.euradrives.com/Upload/File/202108/20210818093941_2097.pdf",
+  "fn": "or_6c779963.pdf",
+  "pages": 5,
+  "size": 316026
+ },
+ {
+  "cat": "用户手册",
+  "t": "欧瑞传动ME2000系列工程型变频器",
+  "d": "2021-08-18",
+  "u": "https://www.euradrives.com/Upload/File/202108/20210818092554_1315.pdf",
+  "fn": "or_4ea62f83.pdf",
+  "pages": 270,
+  "size": 5878428
+ },
+ {
+  "cat": "用户手册",
+  "t": "欧瑞智慧云使用手册",
+  "d": "2021-08-18",
+  "u": "https://www.euradrives.com/Upload/File/202108/20210818094352_9283.pdf",
+  "fn": "or_e746afd2.pdf",
+  "pages": 99,
+  "size": 6258611
+ },
+ {
+  "cat": "用户手册",
+  "t": "SD20-E系列EtherCAT伺服系统说明书",
+  "d": "2021-07-30",
+  "u": "https://www.euradrives.com/Upload/File/202107/20210730164526_0813.pdf",
+  "fn": "or_e3cf059f.pdf",
+  "pages": 323,
+  "size": 9176154
+ },
+ {
+  "cat": "用户手册",
+  "t": "SD20-Y系列伺服系统说明书",
+  "d": "2021-06-21",
+  "u": "https://www.euradrives.com/Upload/File/202106/20210621095227_9460.pdf",
+  "fn": "or_c5a1c179.pdf",
+  "pages": 272,
+  "size": 5632104
+ },
+ {
+  "cat": "用户手册",
+  "t": "E800-Z触摸屏用户手册",
+  "d": "2019-08-12",
+  "u": "https://www.euradrives.com/Upload/File/201806/20180619153600_6747.pdf",
+  "fn": "or_5ec8afa2.pdf",
+  "pages": 22,
+  "size": 1357292
+ },
+ {
+  "cat": "用户手册",
+  "t": "F2000-P系列变频器用户手册",
+  "d": "2019-06-26",
+  "u": "https://www.euradrives.com/Upload/File/201906/20190626091439_4854.pdf",
+  "fn": "or_f3e57f40.pdf",
+  "pages": 115,
+  "size": 3161728
+ },
+ {
+  "cat": "用户手册",
+  "t": "E2000-C系列变频器说明书",
+  "d": "2019-03-15",
+  "u": "https://www.euradrives.com/Upload/File/201903/20190315112711_7719.pdf",
+  "fn": "or_e814eea3.pdf",
+  "pages": 118,
+  "size": 3056673
+ },
+ {
+  "cat": "用户手册",
+  "t": "EIB-CSSE01总线卡说明书",
+  "d": "2019-01-27",
+  "u": "https://www.euradrives.com/Upload/File/201901/20190127151344_6608.pdf",
+  "fn": "or_d3651234.pdf",
+  "pages": 24,
+  "size": 1061051
+ },
+ {
+  "cat": "用户手册",
+  "t": "EIB-ESSE01总线卡说明书",
+  "d": "2019-01-27",
+  "u": "https://www.euradrives.com/Upload/File/201901/20190127151256_6901.pdf",
+  "fn": "or_9bef9ac3.pdf",
+  "pages": 28,
+  "size": 979126
+ },
+ {
+  "cat": "用户手册",
+  "t": "EIB-PDSSE01系列总线卡说明书",
+  "d": "2019-01-27",
+  "u": "https://www.euradrives.com/Upload/File/201801/20180104152152_6612.pdf",
+  "fn": "or_3d601154.pdf",
+  "pages": 40,
+  "size": 1417782
+ },
+ {
+  "cat": "用户手册",
+  "t": "ESB-CSPE01系列说明书",
+  "d": "2019-01-27",
+  "u": "https://www.euradrives.com/Upload/File/201801/20180104150427_3502.pdf",
+  "fn": "or_d55ea64f.pdf",
+  "pages": 48,
+  "size": 848591
+ },
+ {
+  "cat": "用户手册",
+  "t": "EN2000系列变频器说明书",
+  "d": "2018-12-24",
+  "u": "https://www.euradrives.com/Upload/File/201801/20180104143846_8163.pdf",
+  "fn": "or_b362d155.pdf",
+  "pages": 211,
+  "size": 4850195
+ },
+ {
+  "cat": "用户手册",
+  "t": "F2000-G系列变频器用户手册",
+  "d": "2018-04-04",
+  "u": "https://www.euradrives.com/Upload/File/201804/20180404091946_0659.pdf",
+  "fn": "or_c11d6e50.pdf",
+  "pages": 106,
+  "size": 2099172
+ },
+ {
+  "cat": "用户手册",
+  "t": "F1500-P系列用户手册",
+  "d": "2018-04-04",
+  "u": "https://www.euradrives.com/Upload/File/201804/20180404091902_1625.pdf",
+  "fn": "or_70f967c1.pdf",
+  "pages": 85,
+  "size": 2578332
+ },
+ {
+  "cat": "用户手册",
+  "t": "F1500-G系列变频器用户手册",
+  "d": "2018-04-04",
+  "u": "https://www.euradrives.com/Upload/File/201804/20180404091822_6186.pdf",
+  "fn": "or_5b8d4a9a.pdf",
+  "pages": 96,
+  "size": 2832778
+ },
+ {
+  "cat": "用户手册",
+  "t": "E1000系列变频器用户手册",
+  "d": "2018-04-04",
+  "u": "https://www.euradrives.com/Upload/File/201804/20180404091548_4819.pdf",
+  "fn": "or_014d6fe8.pdf",
+  "pages": 159,
+  "size": 7938142
+ },
+ {
+  "cat": "宣传资料",
+  "t": "伺服系统选型手册",
+  "d": "2025-09-30",
+  "u": "https://www.euradrives.com/Upload/File/202509/20250930133035_7921.pdf",
+  "fn": "or_07c24dc3.pdf",
+  "pages": 93,
+  "size": 19668181
+ },
+ {
+  "cat": "宣传资料",
+  "t": "电气传动综合选型手册",
+  "d": "2025-08-25",
+  "u": "https://www.euradrives.com/Upload/File/202508/20250825095520_5011.pdf",
+  "fn": "or_edfdca88.pdf",
+  "pages": 69,
+  "size": 1385083
+ },
+ {
+  "cat": "宣传资料",
+  "t": "E600产品宣传三折页",
+  "d": "2025-05-12",
+  "u": "https://www.euradrives.com/Upload/File/202505/20250512130037_0964.pdf",
+  "fn": "or_a663164d.pdf",
+  "pages": 2,
+  "size": 2642792
+ },
+ {
+  "cat": "宣传资料",
+  "t": "SD10-Z(S)系列伺服系统选型手册",
+  "d": "2025-05-12",
+  "u": "https://www.euradrives.com/Upload/File/202505/20250512130733_9333.pdf",
+  "fn": "or_37d473c3.pdf",
+  "pages": 31,
+  "size": 6384754
+ },
+ {
+  "cat": "宣传资料",
+  "t": "自动化控制产品选型手册",
+  "d": "2024-11-21",
+  "u": "https://www.euradrives.com/Upload/File/202411/20241121130232_3466.pdf",
+  "fn": "or_b1abe253.pdf",
+  "pages": 41,
+  "size": 56447484
+ },
+ {
+  "cat": "宣传资料",
+  "t": "E2000系列变频器选型手册",
+  "d": "2023-07-31",
+  "u": "https://www.euradrives.com/Upload/File/202307/20230731162232_6802.pdf",
+  "fn": "or_67b57804.pdf",
+  "pages": 2,
+  "size": 13215459
+ },
+ {
+  "cat": "宣传资料",
+  "t": "EM30一体机宣传折页",
+  "d": "2021-09-26",
+  "u": "https://www.euradrives.com/Upload/File/202109/20210926110253_3349.pdf",
+  "fn": "or_344b45f2.pdf",
+  "pages": 2,
+  "size": 42545475
+ },
+ {
+  "cat": "宣传资料",
+  "t": "EP66系列变频器选型手册",
+  "d": "2021-09-26",
+  "u": "https://www.euradrives.com/Upload/File/202109/20210926105935_9141.pdf",
+  "fn": "or_7bf847af.pdf",
+  "pages": 2,
+  "size": 87103376
+ },
+ {
+  "cat": "宣传资料",
+  "t": "E2300系列变频器宣传手册",
+  "d": "2019-09-20",
+  "u": "https://www.euradrives.com/Upload/File/201909/20190920133454_1193.pdf",
+  "fn": "or_2f0b838f.pdf",
+  "pages": 2,
+  "size": 7717179
+ },
+ {
+  "cat": "宣传资料",
+  "t": "E800-Z米克重专用变频器选型手册",
+  "d": "2018-05-21",
+  "u": "https://www.euradrives.com/Upload/File/201805/20180521153348_9927.pdf",
+  "fn": "or_335f5dff.pdf",
+  "pages": 2,
+  "size": 5939345
+ },
+ {
+  "cat": "宣传资料",
+  "t": "E800系列变频器选型手册",
+  "d": "2018-04-04",
+  "u": "https://www.euradrives.com/Upload/File/201801/20180102094140_9398.pdf",
+  "fn": "or_bf2b363a.pdf",
+  "pages": 2,
+  "size": 4353888
+ },
+ {
+  "cat": "宣传资料",
+  "t": "E2000-P系列变频器选型手册",
+  "d": "2018-04-04",
+  "u": "https://www.euradrives.com/Upload/File/201801/20180102100519_1695.pdf",
+  "fn": "or_c877dc3f.pdf",
+  "pages": 2,
+  "size": 4983103
+ },
+ {
+  "cat": "宣传资料",
+  "t": "EVPM系列电机选型手册",
+  "d": "2018-01-03",
+  "u": "https://www.euradrives.com/Upload/File/201801/20180103155916_3946.pdf",
+  "fn": "or_fb507416.pdf",
+  "pages": 2,
+  "size": 2129444
+ },
+ {
+  "cat": "宣传资料",
+  "t": "EVD10系列电动汽车控制器选型手册",
+  "d": "2018-01-03",
+  "u": "https://www.euradrives.com/Upload/File/201801/20180103155831_7785.pdf",
+  "fn": "or_5253623d.pdf",
+  "pages": 2,
+  "size": 2282760
+ },
+ {
+  "cat": "宣传资料",
+  "t": "EH2000系列变频器选型手册",
+  "d": "2018-01-03",
+  "u": "https://www.euradrives.com/Upload/File/201801/20180103154537_3152.pdf",
+  "fn": "or_1ed72dc7.pdf",
+  "pages": 16,
+  "size": 1609141
+ },
+ {
+  "cat": "用户手册",
   "t": "E3000变频器说明书",
   "d": "2026-04-23",
   "u": "https://www.euradrives.com/Upload/File/202604/20260423092242_5539.pdf",
   "fn": "or_78c1e030.pdf",
   "pages": 109,
   "size": 4006955
- },
- {
-  "cat": "用户手册",
-  "t": "SD20-Y系列EtherCAT总线型伺服系统详细版使用手册(28388平台)",
-  "d": "2026-03-31",
-  "u": "https://www.euradrives.com/Upload/File/202603/20260331151617_3323.pdf",
-  "fn": "or_a09cb5fa.pdf",
-  "pages": 13,
-  "size": 485632
- },
- {
-  "cat": "用户手册",
-  "t": "EP66 C1滤波器简易操作手册",
-  "d": "2026-03-09",
-  "u": "https://www.euradrives.com/Upload/File/202603/20260309084813_0746.pdf",
-  "fn": "or_386822dd.pdf",
-  "pages": 27,
-  "size": 1240956
- },
- {
-  "cat": "用户手册",
-  "t": "SDP20-G系列伺服系统说明书",
-  "d": "2026-03-09",
-  "u": "https://www.euradrives.com/Upload/File/202603/20260309084622_4760.pdf",
-  "fn": "or_df4ee0b5.pdf",
-  "pages": 14,
-  "size": 594035
- },
- {
-  "cat": "用户手册",
-  "t": "E100系列变频器说明书",
-  "d": "2026-02-26",
-  "u": "https://www.euradrives.com/Upload/File/202602/20260226135323_3337.pdf",
-  "fn": "or_9d93d9d7.pdf",
-  "pages": 42,
-  "size": 4365560
- },
- {
-  "cat": "用户手册",
-  "t": "ERMS243-32DTD软件使用说明手册",
-  "d": "2025-10-28",
-  "u": "https://www.euradrives.com/Upload/File/202510/20251028084020_1058.pdf",
-  "fn": "or_53d6bfa8.pdf",
-  "pages": 17,
-  "size": 1093364
- },
- {
-  "cat": "用户手册",
-  "t": "ERMS243 硬件使用手册",
-  "d": "2025-10-28",
-  "u": "https://www.euradrives.com/Upload/File/202510/20251028083948_6443.pdf",
-  "fn": "or_1ca54099.pdf",
-  "pages": 77,
-  "size": 1921371
- },
- {
-  "cat": "用户手册",
-  "t": "DRIVES上位机监控软件用户使用手册",
-  "d": "2025-09-04",
-  "u": "https://www.euradrives.com/Upload/File/202509/20250904112604_1355.pdf",
-  "fn": "or_fb65e502.pdf",
-  "pages": 10,
-  "size": 890621
- },
- {
-  "cat": "用户手册",
-  "t": "SDE15系列伺服使用手册",
-  "d": "2025-09-04",
-  "u": "https://www.euradrives.com/Upload/File/202509/20250904152549_8640.pdf",
-  "fn": "or_5f71adf4.pdf",
-  "pages": 2,
-  "size": 422310
- },
- {
-  "cat": "用户手册",
-  "t": "E600说明书5.5kW及以下",
-  "d": "2025-08-25",
-  "u": "https://www.euradrives.com/Upload/File/202508/20250825091226_7443.pdf",
-  "fn": "or_f58b06c2.pdf",
-  "pages": 34,
-  "size": 2494417
- },
- {
-  "cat": "用户手册",
-  "t": "E600说明书7.5kW-22kW",
-  "d": "2025-08-25",
-  "u": "https://www.euradrives.com/Upload/File/202508/20250825091152_6560.pdf",
-  "fn": "or_96f66ff2.pdf",
-  "pages": 14,
-  "size": 1097457
- },
- {
-  "cat": "用户手册",
-  "t": "E2000-T张力控制专用说明书",
-  "d": "2025-08-21",
-  "u": "https://www.euradrives.com/Upload/File/202508/20250821105353_9763.pdf",
-  "fn": "or_dfde8673.pdf",
-  "pages": 33,
-  "size": 1871943
  },
  {
   "cat": "用户手册",
@@ -648,213 +1206,6 @@
   "size": 5878428
  },
  {
-  "cat": "用户手册",
-  "t": "ZKE2000系列真空设备专用变频器使用手册",
-  "d": "2023-05-30",
-  "u": "https://www.euradrives.com/Upload/File/202502/20250207205029_5236.pdf",
-  "fn": "or_2955fe44.pdf",
-  "pages": 22,
-  "size": 1357292
- },
- {
-  "cat": "用户手册",
-  "t": "欧瑞E2000-T系列张力控制专用说明书",
-  "d": "2023-05-14",
-  "u": "https://www.euradrives.com/Upload/File/202305/20230514172713_6754.pdf",
-  "fn": "or_414ba59d.pdf",
-  "pages": 115,
-  "size": 3161728
- },
- {
-  "cat": "用户手册",
-  "t": "低压直流伺服简易调试手册",
-  "d": "2023-03-31",
-  "u": "https://www.euradrives.com/Upload/File/202303/20230331154431_4768.pdf",
-  "fn": "or_c04e2621.pdf",
-  "pages": 118,
-  "size": 3056673
- },
- {
-  "cat": "用户手册",
-  "t": "E2200系列变频器说明书",
-  "d": "2023-03-31",
-  "u": "https://www.euradrives.com/Upload/File/202303/20230331154317_5584.pdf",
-  "fn": "or_43c39d24.pdf",
-  "pages": 24,
-  "size": 1061051
- },
- {
-  "cat": "用户手册",
-  "t": "EPC100系列恒压供水控制器说明书",
-  "d": "2023-03-31",
-  "u": "https://www.euradrives.com/Upload/File/202303/20230331154617_3451.pdf",
-  "fn": "or_4b267362.pdf",
-  "pages": 28,
-  "size": 979126
- },
- {
-  "cat": "用户手册",
-  "t": "HFR2000系列软起动器说明书",
-  "d": "2023-01-05",
-  "u": "https://www.euradrives.com/Upload/File/202301/20230105170828_6311.pdf",
-  "fn": "or_ea0a32ae.pdf",
-  "pages": 40,
-  "size": 1417782
- },
- {
-  "cat": "用户手册",
-  "t": "HFR1000系列软起动器说明书",
-  "d": "2023-01-05",
-  "u": "https://www.euradrives.com/Upload/File/202301/20230105170755_0569.pdf",
-  "fn": "or_434c4342.pdf",
-  "pages": 48,
-  "size": 848591
- },
- {
-  "cat": "用户手册",
-  "t": "E2000-M系列变频器说明书",
-  "d": "2022-08-30",
-  "u": "https://www.euradrives.com/Upload/File/202208/20220830164238_8803.pdf",
-  "fn": "or_4de73587.pdf",
-  "pages": 211,
-  "size": 4850195
- },
- {
-  "cat": "用户手册",
-  "t": "QSC2000一体机系列产品操作手册",
-  "d": "2022-07-21",
-  "u": "https://www.euradrives.com/Upload/File/202207/20220721221329_9386.pdf",
-  "fn": "or_8b0ac88e.pdf",
-  "pages": 106,
-  "size": 2099172
- },
- {
-  "cat": "用户手册",
-  "t": "FC2100系列化工/矿山工程定制型变频器使用手册",
-  "d": "2022-06-29",
-  "u": "https://www.euradrives.com/Upload/File/202206/20220629204226_1898.pdf",
-  "fn": "or_6591fe0f.pdf",
-  "pages": 85,
-  "size": 2578332
- },
- {
-  "cat": "宣传资料",
-  "t": "伺服系统选型手册",
-  "d": "2025-09-30",
-  "u": "https://www.euradrives.com/Upload/File/202509/20250930133035_7921.pdf",
-  "fn": "or_07c24dc3.pdf",
-  "pages": 93,
-  "size": 19668181
- },
- {
-  "cat": "宣传资料",
-  "t": "电气传动综合选型手册",
-  "d": "2025-08-25",
-  "u": "https://www.euradrives.com/Upload/File/202508/20250825095520_5011.pdf",
-  "fn": "or_edfdca88.pdf",
-  "pages": 69,
-  "size": 1385083
- },
- {
-  "cat": "宣传资料",
-  "t": "E600产品宣传三折页",
-  "d": "2025-05-12",
-  "u": "https://www.euradrives.com/Upload/File/202505/20250512130037_0964.pdf",
-  "fn": "or_a663164d.pdf",
-  "pages": 2,
-  "size": 2642792
- },
- {
-  "cat": "宣传资料",
-  "t": "SD10-Z(S)系列伺服系统选型手册",
-  "d": "2025-05-12",
-  "u": "https://www.euradrives.com/Upload/File/202505/20250512130733_9333.pdf",
-  "fn": "or_37d473c3.pdf",
-  "pages": 31,
-  "size": 6384754
- },
- {
-  "cat": "宣传资料",
-  "t": "自动化控制产品选型手册",
-  "d": "2024-11-21",
-  "u": "https://www.euradrives.com/Upload/File/202411/20241121130232_3466.pdf",
-  "fn": "or_b1abe253.pdf",
-  "pages": 41,
-  "size": 56447484
- },
- {
-  "cat": "宣传资料",
-  "t": "E2000系列变频器选型手册",
-  "d": "2023-07-31",
-  "u": "https://www.euradrives.com/Upload/File/202307/20230731162232_6802.pdf",
-  "fn": "or_67b57804.pdf",
-  "pages": 2,
-  "size": 13215459
- },
- {
-  "cat": "宣传资料",
-  "t": "EM30一体机宣传折页",
-  "d": "2021-09-26",
-  "u": "https://www.euradrives.com/Upload/File/202109/20210926110253_3349.pdf",
-  "fn": "or_344b45f2.pdf",
-  "pages": 2,
-  "size": 42545475
- },
- {
-  "cat": "宣传资料",
-  "t": "EP66系列变频器选型手册",
-  "d": "2021-09-26",
-  "u": "https://www.euradrives.com/Upload/File/202109/20210926105935_9141.pdf",
-  "fn": "or_7bf847af.pdf",
-  "pages": 2,
-  "size": 87103376
- },
- {
-  "cat": "宣传资料",
-  "t": "E2300系列变频器宣传手册",
-  "d": "2019-09-20",
-  "u": "https://www.euradrives.com/Upload/File/201909/20190920133454_1193.pdf",
-  "fn": "or_2f0b838f.pdf",
-  "pages": 2,
-  "size": 7717179
- },
- {
-  "cat": "宣传资料",
-  "t": "E800-Z米克重专用变频器选型手册",
-  "d": "2018-05-21",
-  "u": "https://www.euradrives.com/Upload/File/201805/20180521153348_9927.pdf",
-  "fn": "or_335f5dff.pdf",
-  "pages": 2,
-  "size": 5939345
- },
- {
-  "cat": "宣传资料",
-  "t": "E800系列变频器选型手册",
-  "d": "2018-04-04",
-  "u": "https://www.euradrives.com/Upload/File/201801/20180102094140_9398.pdf",
-  "fn": "or_bf2b363a.pdf",
-  "pages": 2,
-  "size": 4353888
- },
- {
-  "cat": "历史抓取",
-  "t": "欧瑞说明书 014d6fe8",
-  "d": "",
-  "u": "",
-  "fn": "or_014d6fe8.pdf",
-  "pages": 159,
-  "size": 7938142
- },
- {
-  "cat": "历史抓取",
-  "t": "欧瑞说明书 129e0978",
-  "d": "",
-  "u": "",
-  "fn": "or_129e0978.pdf",
-  "pages": 272,
-  "size": 5632104
- },
- {
   "cat": "历史抓取",
   "t": "欧瑞说明书 167a0ca9",
   "d": "",
@@ -883,33 +1234,6 @@
  },
  {
   "cat": "历史抓取",
-  "t": "欧瑞说明书 1ed72dc7",
-  "d": "",
-  "u": "",
-  "fn": "or_1ed72dc7.pdf",
-  "pages": 16,
-  "size": 1609141
- },
- {
-  "cat": "历史抓取",
-  "t": "欧瑞说明书 24e508e6",
-  "d": "",
-  "u": "",
-  "fn": "or_24e508e6.pdf",
-  "pages": 23,
-  "size": 572532
- },
- {
-  "cat": "历史抓取",
-  "t": "欧瑞说明书 32bc87bf",
-  "d": "",
-  "u": "",
-  "fn": "or_32bc87bf.pdf",
-  "pages": 47,
-  "size": 1394702
- },
- {
-  "cat": "历史抓取",
   "t": "欧瑞说明书 39a54df3",
   "d": "",
   "u": "",
@@ -925,51 +1249,6 @@
   "fn": "or_3b07800e.pdf",
   "pages": 267,
   "size": 6846843
- },
- {
-  "cat": "历史抓取",
-  "t": "欧瑞说明书 3d601154",
-  "d": "",
-  "u": "",
-  "fn": "or_3d601154.pdf",
-  "pages": 40,
-  "size": 1417782
- },
- {
-  "cat": "历史抓取",
-  "t": "欧瑞说明书 40fcebee",
-  "d": "",
-  "u": "",
-  "fn": "or_40fcebee.pdf",
-  "pages": 5,
-  "size": 316026
- },
- {
-  "cat": "历史抓取",
-  "t": "欧瑞说明书 4a8861f0",
-  "d": "",
-  "u": "",
-  "fn": "or_4a8861f0.pdf",
-  "pages": 95,
-  "size": 4134072
- },
- {
-  "cat": "历史抓取",
-  "t": "欧瑞说明书 4ea62f83",
-  "d": "",
-  "u": "",
-  "fn": "or_4ea62f83.pdf",
-  "pages": 33,
-  "size": 1815023
- },
- {
-  "cat": "历史抓取",
-  "t": "欧瑞说明书 5253623d",
-  "d": "",
-  "u": "",
-  "fn": "or_5253623d.pdf",
-  "pages": 2,
-  "size": 2282760
  },
  {
   "cat": "历史抓取",
@@ -991,48 +1270,12 @@
  },
  {
   "cat": "历史抓取",
-  "t": "欧瑞说明书 594af47d",
-  "d": "",
-  "u": "",
-  "fn": "or_594af47d.pdf",
-  "pages": 464,
-  "size": 6818454
- },
- {
-  "cat": "历史抓取",
-  "t": "欧瑞说明书 5b8d4a9a",
-  "d": "",
-  "u": "",
-  "fn": "or_5b8d4a9a.pdf",
-  "pages": 96,
-  "size": 2832778
- },
- {
-  "cat": "历史抓取",
   "t": "欧瑞说明书 5df4a9fc",
   "d": "",
   "u": "",
   "fn": "or_5df4a9fc.pdf",
   "pages": 173,
   "size": 3537194
- },
- {
-  "cat": "历史抓取",
-  "t": "欧瑞说明书 5ec8afa2",
-  "d": "",
-  "u": "",
-  "fn": "or_5ec8afa2.pdf",
-  "pages": 22,
-  "size": 1357292
- },
- {
-  "cat": "历史抓取",
-  "t": "欧瑞说明书 609b2d7b",
-  "d": "",
-  "u": "",
-  "fn": "or_609b2d7b.pdf",
-  "pages": 191,
-  "size": 7285268
  },
  {
   "cat": "历史抓取",
@@ -1045,57 +1288,12 @@
  },
  {
   "cat": "历史抓取",
-  "t": "欧瑞说明书 6c779963",
-  "d": "",
-  "u": "",
-  "fn": "or_6c779963.pdf",
-  "pages": 267,
-  "size": 6846843
- },
- {
-  "cat": "历史抓取",
-  "t": "欧瑞说明书 70f967c1",
-  "d": "",
-  "u": "",
-  "fn": "or_70f967c1.pdf",
-  "pages": 85,
-  "size": 2578332
- },
- {
-  "cat": "历史抓取",
-  "t": "欧瑞说明书 91df02f8",
-  "d": "",
-  "u": "",
-  "fn": "or_91df02f8.pdf",
-  "pages": 52,
-  "size": 1357614
- },
- {
-  "cat": "历史抓取",
-  "t": "欧瑞说明书 93dcbca5",
-  "d": "",
-  "u": "",
-  "fn": "or_93dcbca5.pdf",
-  "pages": 27,
-  "size": 850652
- },
- {
-  "cat": "历史抓取",
   "t": "欧瑞说明书 9b1baf88",
   "d": "",
   "u": "",
   "fn": "or_9b1baf88.pdf",
   "pages": 171,
   "size": 3723138
- },
- {
-  "cat": "历史抓取",
-  "t": "欧瑞说明书 9bef9ac3",
-  "d": "",
-  "u": "",
-  "fn": "or_9bef9ac3.pdf",
-  "pages": 28,
-  "size": 979126
  },
  {
   "cat": "历史抓取",
@@ -1114,24 +1312,6 @@
   "fn": "or_a0176bb5.pdf",
   "pages": 2,
   "size": 2195516
- },
- {
-  "cat": "历史抓取",
-  "t": "欧瑞说明书 a31b3b7f",
-  "d": "",
-  "u": "",
-  "fn": "or_a31b3b7f.pdf",
-  "pages": 17,
-  "size": 1068078
- },
- {
-  "cat": "历史抓取",
-  "t": "欧瑞说明书 a5aa1d74",
-  "d": "",
-  "u": "",
-  "fn": "or_a5aa1d74.pdf",
-  "pages": 159,
-  "size": 7938142
  },
  {
   "cat": "历史抓取",
@@ -1162,183 +1342,12 @@
  },
  {
   "cat": "历史抓取",
-  "t": "欧瑞说明书 b362d155",
-  "d": "",
-  "u": "",
-  "fn": "or_b362d155.pdf",
-  "pages": 211,
-  "size": 4850195
- },
- {
-  "cat": "历史抓取",
-  "t": "欧瑞说明书 b6ea40a3",
-  "d": "",
-  "u": "",
-  "fn": "or_b6ea40a3.pdf",
-  "pages": 5,
-  "size": 315831
- },
- {
-  "cat": "历史抓取",
-  "t": "欧瑞说明书 b74b19bc",
-  "d": "",
-  "u": "",
-  "fn": "or_b74b19bc.pdf",
-  "pages": 217,
-  "size": 10117861
- },
- {
-  "cat": "历史抓取",
-  "t": "欧瑞说明书 be98e074",
-  "d": "",
-  "u": "",
-  "fn": "or_be98e074.pdf",
-  "pages": 99,
-  "size": 6258611
- },
- {
-  "cat": "历史抓取",
-  "t": "欧瑞说明书 c0fe4521",
-  "d": "",
-  "u": "",
-  "fn": "or_c0fe4521.pdf",
-  "pages": 55,
-  "size": 1061186
- },
- {
-  "cat": "历史抓取",
-  "t": "欧瑞说明书 c11d6e50",
-  "d": "",
-  "u": "",
-  "fn": "or_c11d6e50.pdf",
-  "pages": 106,
-  "size": 2099172
- },
- {
-  "cat": "历史抓取",
-  "t": "欧瑞说明书 c313d69e",
-  "d": "",
-  "u": "",
-  "fn": "or_c313d69e.pdf",
-  "pages": 270,
-  "size": 5878428
- },
- {
-  "cat": "历史抓取",
-  "t": "欧瑞说明书 c5a1c179",
-  "d": "",
-  "u": "",
-  "fn": "or_c5a1c179.pdf",
-  "pages": 272,
-  "size": 5632104
- },
- {
-  "cat": "历史抓取",
-  "t": "欧瑞说明书 c877dc3f",
-  "d": "",
-  "u": "",
-  "fn": "or_c877dc3f.pdf",
-  "pages": 2,
-  "size": 4983103
- },
- {
-  "cat": "历史抓取",
-  "t": "欧瑞说明书 d02a2264",
-  "d": "",
-  "u": "",
-  "fn": "or_d02a2264.pdf",
-  "pages": 323,
-  "size": 9176154
- },
- {
-  "cat": "历史抓取",
-  "t": "欧瑞说明书 d0568829",
-  "d": "",
-  "u": "",
-  "fn": "or_d0568829.pdf",
-  "pages": 48,
-  "size": 2258693
- },
- {
-  "cat": "历史抓取",
-  "t": "欧瑞说明书 d3651234",
-  "d": "",
-  "u": "",
-  "fn": "or_d3651234.pdf",
-  "pages": 24,
-  "size": 1061051
- },
- {
-  "cat": "历史抓取",
-  "t": "欧瑞说明书 d55ea64f",
-  "d": "",
-  "u": "",
-  "fn": "or_d55ea64f.pdf",
-  "pages": 48,
-  "size": 848591
- },
- {
-  "cat": "历史抓取",
-  "t": "欧瑞说明书 d6c2dd57",
-  "d": "",
-  "u": "",
-  "fn": "or_d6c2dd57.pdf",
-  "pages": 96,
-  "size": 2832778
- },
- {
-  "cat": "历史抓取",
   "t": "欧瑞说明书 d8393ddc",
   "d": "",
   "u": "",
   "fn": "or_d8393ddc.pdf",
   "pages": 23,
   "size": 572532
- },
- {
-  "cat": "历史抓取",
-  "t": "欧瑞说明书 e3cf059f",
-  "d": "",
-  "u": "",
-  "fn": "or_e3cf059f.pdf",
-  "pages": 268,
-  "size": 6195839
- },
- {
-  "cat": "历史抓取",
-  "t": "欧瑞说明书 e746afd2",
-  "d": "",
-  "u": "",
-  "fn": "or_e746afd2.pdf",
-  "pages": 2,
-  "size": 2195516
- },
- {
-  "cat": "历史抓取",
-  "t": "欧瑞说明书 e814eea3",
-  "d": "",
-  "u": "",
-  "fn": "or_e814eea3.pdf",
-  "pages": 118,
-  "size": 3056673
- },
- {
-  "cat": "历史抓取",
-  "t": "欧瑞说明书 f3e57f40",
-  "d": "",
-  "u": "",
-  "fn": "or_f3e57f40.pdf",
-  "pages": 115,
-  "size": 3161728
- },
- {
-  "cat": "历史抓取",
-  "t": "欧瑞说明书 fb507416",
-  "d": "",
-  "u": "",
-  "fn": "or_fb507416.pdf",
-  "pages": 2,
-  "size": 2129444
  },
  {
   "cat": "历史抓取",
