@@ -6,6 +6,10 @@ on:
     - cron: '17 */3 * * *'
   workflow_dispatch: {}
 
+# 让 GitHub Actions 令牌能把更新后的采集清单 push 回仓库（默认只读）
+permissions:
+  contents: write
+
 jobs:
   crawl-deploy:
     runs-on: ubuntu-latest
