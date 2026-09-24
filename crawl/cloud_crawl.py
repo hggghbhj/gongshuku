@@ -22,6 +22,7 @@ STEPS=[
  ("英威腾",["python3","crawler_invt.py"]),
  ("伟创",["python3","crawler_veichi.py"]),
  ("昆仑通态",["python3","crawler_mcgs.py"]),
+ ("艾莫迅",["python3","crawler_amsamotion.py"]),
  ("金田链接",["python3","crawl_jintian_pw.py","--links-only"]),
 ]
 def main():
