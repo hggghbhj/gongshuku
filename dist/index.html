@@ -144,6 +144,9 @@ input{font-family:inherit}
 .hero-stats{display:flex;gap:34px;margin-top:24px;position:relative;flex-wrap:wrap}
 .hero-stats .hs b{font-family:var(--mono);font-size:25px;font-weight:700;color:#ffb27f;display:block;line-height:1}
 .hero-stats .hs span{font-size:11.5px;color:#8aa7b3;letter-spacing:1px}
+.crawl-status{margin-top:14px;font-size:12px;color:#7fa0ad;font-family:var(--mono);display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.crawl-status .dot{width:8px;height:8px;border-radius:50%;background:var(--green);display:inline-block;animation:pulse 1.5s infinite}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.3}}
 .sec-h{display:flex;align-items:center;gap:11px;margin:28px 2px 15px}
 .sec-h .bar{width:4px;height:19px;background:var(--orange);border-radius:2px}
 .sec-h h3{font-size:17px;font-weight:900;color:var(--navy)}
@@ -373,6 +376,7 @@ footer a{color:var(--blue)}
         <div class="hs"><b id="h-new" style="color:var(--green)">0</b><span>本次新增</span></div>
         <div class="hs"><b id="h-countdown" style="color:var(--orange)">--:--:--</b><span>距下次自动采集</span></div>
       </div>
+      <div class="crawl-status" id="crawlStatus">云端自动采集中…</div>
     </div>
 
     <div id="homeHistory" class="home-history" style="display:none"></div>
@@ -919,6 +923,14 @@ function renderHome(){
   // 加载采集统计
   fetch('data/stats.json?v='+Date.now()).then(function(r){return r.json();}).then(function(d){
     var el=document.getElementById('h-new'); if(el)el.textContent=d.last_new||0;
+    var cs=document.getElementById('crawlStatus');
+    if(cs){
+      var failCount=0;
+      if(d.steps)for(var k in d.steps)if(d.steps[k]!=='ok')failCount++;
+      var statusText=failCount>0?('部分品牌异常('+failCount+')'):'运行正常';
+      var newText=d.last_new>0?('，本次新增 '+d.last_new+' 份'):'';
+      cs.innerHTML='<span class="dot"></span> 云端自动采集 '+statusText+' | 最近采集：'+(d.last_run||'--')+newText+' | 每3小时自动增量采集';
+    }
   }).catch(function(){});
 }
 
