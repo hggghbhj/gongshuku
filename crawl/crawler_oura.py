@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 """欧瑞euradrives采集器（playwright翻页收集，直链带Referer下载）。可重复运行，幂等。"""
 from playwright.sync_api import sync_playwright
+from pw_util import chromium_path
 import time,os,subprocess,urllib.request,json,re,hashlib
 UA="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120 Safari/537.36"
 BASE="https://www.euradrives.com";BRAND="oura";DST="pdfs/"+BRAND
@@ -37,7 +38,7 @@ def run():
         except Exception:pass
     recs=[];seen=set()
     with sync_playwright() as p:
-        b=p.chromium.launch(headless=True,executable_path="/usr/local/bin/chromium",args=["--no-sandbox","--disable-dev-shm-usage"])
+        b=p.chromium.launch(headless=True,executable_path=chromium_path(),args=["--no-sandbox","--disable-dev-shm-usage"])
         pg=b.new_page(user_agent=UA)
         pg.goto(BASE+"/service/down.html",wait_until="networkidle",timeout=35000);time.sleep(2)
         for label in ["用户手册","宣传资料"]:

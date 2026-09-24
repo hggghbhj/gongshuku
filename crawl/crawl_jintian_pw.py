@@ -4,6 +4,7 @@
 用法: python3 crawl_jintian_pw.py [limit]   limit 仅测前N个
 """
 from playwright.sync_api import sync_playwright
+from pw_util import chromium_path
 import time,sys,json,os
 LIST="http://jtdrive.com/downs/sms"
 UA="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120 Safari/537.36"
@@ -44,7 +45,7 @@ def collect(main):
 
 def main_run():
     with sync_playwright() as p:
-        b=p.chromium.launch(headless=True,executable_path="/usr/local/bin/chromium",
+        b=p.chromium.launch(headless=True,executable_path=chromium_path(),
                             args=["--no-sandbox","--disable-dev-shm-usage"])
         ctx=b.new_context(user_agent=UA,accept_downloads=True)
         main=ctx.new_page()

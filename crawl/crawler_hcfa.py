@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 """禾川hcfa采集器（playwright点说明书分类+翻页，context.request下载 hcfa.cc 直链）。可重复运行，幂等。"""
 from playwright.sync_api import sync_playwright
+from pw_util import chromium_path
 import time,os,subprocess,json,hashlib
 UA="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/120 Safari/537.36"
 DST="pdfs/hcfa";os.makedirs(DST,exist_ok=True)
@@ -28,7 +29,7 @@ def run():
                 if x.get("u"):old[x["u"]]=x
         except Exception:pass
     with sync_playwright() as p:
-        b=p.chromium.launch(headless=True,executable_path="/usr/local/bin/chromium",args=["--no-sandbox","--ignore-certificate-errors"])
+        b=p.chromium.launch(headless=True,executable_path=chromium_path(),args=["--no-sandbox","--ignore-certificate-errors","--disable-dev-shm-usage"])
         ctx=b.new_context(user_agent=UA,ignore_https_errors=True)
         pg=ctx.new_page()
         pg.goto("https://www.hcfa.cn/service/index.html",wait_until="domcontentloaded",timeout=30000)

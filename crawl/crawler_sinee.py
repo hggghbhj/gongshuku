@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 """正弦sinee采集器（playwright收集列表+详情页OSS直链，urllib带Referer下载）。可重复运行，幂等。"""
 from playwright.sync_api import sync_playwright
+from pw_util import chromium_path
 import time,os,subprocess,urllib.request,json,re
 UA="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120 Safari/537.36"
 BASE="https://www.sinee.cn";BRAND="sinee";DST="pdfs/"+BRAND
@@ -19,15 +20,18 @@ def dl(u,fp):
 def run():
     recs=[]
     seen=set()
-    # 云端增量：旧manifest按URL，已记录的复用（含页数/fn），不重复下载、不重新 pdfinfo
-    old={}
+    # 云端增量：旧manifest按URL与按详情页ID，已记录的复用（含页数/fn），不重复下载、不重新 pdfinfo
+    old={};old_did={}
     if os.path.exists("sinee_manifest.json"):
         try:
             for x in json.load(open("sinee_manifest.json",encoding="utf-8")):
                 if x.get("u"):old[x["u"]]=x
+                if x.get("durl"):
+                    m=re.search(r'/47/(\d+)',x["durl"])
+                    if m:old_did[m.group(1)]=x
         except Exception:pass
     with sync_playwright() as p:
-        b=p.chromium.launch(headless=True,executable_path="/usr/local/bin/chromium",args=["--no-sandbox","--disable-dev-shm-usage"])
+        b=p.chromium.launch(headless=True,executable_path=chromium_path(),args=["--no-sandbox","--disable-dev-shm-usage"])
         pg=b.new_page(user_agent=UA)
         for fl,cat in CATS:
             # 遍历分页
@@ -46,6 +50,10 @@ def run():
             detail=list(dict.fromkeys(detail))
             print("正弦[%s] 详情页 %d 个"%(cat,len(detail)))
             for i,durl in enumerate(detail):
+                dm=re.search(r'/47/(\d+)',durl);did=dm.group(1) if dm else None
+                # 上版已枚举过的详情页直接复用记录，不再逐个打开（节省约10分钟）
+                if did and did in old_did:
+                    recs.append(old_did[did]);continue
                 try:
                     pg.goto(durl,wait_until="networkidle",timeout=30000);time.sleep(1.5)
                     info=pg.evaluate("""()=>{
@@ -58,7 +66,6 @@ def run():
                     if u in seen:continue
                     seen.add(u)
                     if not t:t=u.split('/')[-1]
-                    did=re.search(r'/47/(\d+)',durl).group(1)
                     fn="sn_%s.pdf"%did;fp=os.path.join(DST,fn)
                     ox=old.get(u)
                     if ox and (ox.get("pages") or 0)>0:
