@@ -38,7 +38,7 @@ def run():
             pn=1;detail=[]
             while True:
                 url="%s/47/?fl=%s"%(BASE,fl) if pn==1 else "%s/47/pn%d/?fl=%s"%(BASE,pn,fl)
-                try:pg.goto(url,wait_until="networkidle",timeout=35000)
+                try:pg.goto(url,wait_until="domcontentloaded",timeout=20000)
                 except:pass
                 time.sleep(2)
                 items=pg.eval_on_selector_all("a[href*='/47/']","""els=>[...new Set(els.map(a=>a.href).filter(h=>/\/47\/\d+/.test(h)))]""")
@@ -55,7 +55,7 @@ def run():
                 if did and did in old_did:
                     recs.append(old_did[did]);continue
                 try:
-                    pg.goto(durl,wait_until="networkidle",timeout=30000);time.sleep(1.5)
+                    pg.goto(durl,wait_until="domcontentloaded",timeout=20000);time.sleep(1)
                     info=pg.evaluate("""()=>{
                       const a=document.querySelectorAll("a[href*='.pdf']");
                       let t=(document.title||'').split(/[,，]/)[0].trim();

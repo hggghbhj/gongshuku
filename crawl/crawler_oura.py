@@ -40,10 +40,10 @@ def run():
     with sync_playwright() as p:
         b=p.chromium.launch(headless=True,executable_path=chromium_path(),args=["--no-sandbox","--disable-dev-shm-usage"])
         pg=b.new_page(user_agent=UA)
-        pg.goto(BASE+"/service/down.html",wait_until="networkidle",timeout=35000);time.sleep(2)
+        pg.goto(BASE+"/service/down.html",wait_until="domcontentloaded",timeout=20000);time.sleep(1.5)
         for label in ["用户手册","宣传资料"]:
             # 每个分类重新导航，避免上一分类停留页干扰
-            pg.goto(BASE+"/service/down.html",wait_until="networkidle",timeout=35000)
+            pg.goto(BASE+"/service/down.html",wait_until="domcontentloaded",timeout=20000)
             time.sleep(2)
             pg.evaluate("(l)=>{const t=[...document.querySelectorAll('a,li,span,div')].find(e=>e.innerText.trim()===l);if(t)t.click();}",label)
             time.sleep(3)
