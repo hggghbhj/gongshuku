@@ -20,6 +20,7 @@ STEPS=[
  ("欧瑞",["python3","crawler_oura.py"]),
  ("禾川",["python3","crawler_hcfa.py"]),
  ("英威腾",["python3","crawler_invt.py"]),
+ ("伟创",["python3","crawler_veichi.py"]),
  ("金田链接",["python3","crawl_jintian_pw.py","--links-only"]),
 ]
 def main():
