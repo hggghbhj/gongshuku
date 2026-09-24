@@ -13,6 +13,7 @@ BRANDS={
  "jintian":{"b":"金田科技","page":"http://jtdrive.com/downs/sms","ty_default":"说明书"},
  "invt":{"b":"英威腾","page":"https://www.invt.com.cn/dowload-15","ty_default":"说明书"},
  "veichi":{"b":"伟创电气","page":"https://www.veichi.cn/service/datadownload","ty_default":"用户手册"},
+ "mcgs":{"b":"昆仑通态","page":"https://www.mcgspro.com/downloads.html","ty_default":"用户手册"},
 }
 def clean_title(t,b):
     t=re.sub(r'\.pdf$','',t or '',flags=re.I).strip()
@@ -85,6 +86,9 @@ for x in load("coolmay"):
 for x in load("veichi"):
     info=BRANDS["veichi"]
     out.append(rec(info["b"],info["page"],"用户手册",x.get("t"),x.get("d"),"",x.get("u"),"",x.get("pages")))
+for x in load("mcgs"):
+    info=BRANDS["mcgs"]
+    out.append(rec(info["b"],info["page"],"用户手册",x.get("t"),x.get("d"),"",x.get("u"),"",x.get("pages"),x.get("cat","")))
 # 普传：kv_powtran.json 已是标准格式，补充 _sx/src
 if os.path.exists("kv_powtran.json"):
     for x in json.load(open("kv_powtran.json",encoding="utf-8")):
