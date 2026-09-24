@@ -1,0 +1,24 @@
+{
+ "last_run": "2026-09-25 07:05:21",
+ "last_new": 0,
+ "new_by_brand": {},
+ "total": 2448,
+ "brands": {
+  "amsamotion": 156,
+  "coolmay": 23,
+  "easydrive": 27,
+  "elitech": 445,
+  "hcfa": 81,
+  "invt": 539,
+  "leisai": 297,
+  "mcgs": 63,
+  "oura": 151,
+  "senlan": 48,
+  "sinee": 207,
+  "veichi": 63,
+  "xinje": 296,
+  "powtran": 52
+ },
+ "cron": "每3小时自动采集（北京时间 8:17/11:17/14:17/17:17/20:17/23:17/2:17/5:17）",
+ "steps": {}
+}

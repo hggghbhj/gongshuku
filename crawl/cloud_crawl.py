@@ -1,16 +1,10 @@
 # -*- coding: utf-8 -*-
 """工书库·云端采集编排（GitHub Actions 专用）。
 顺序跑各品牌采集器（manifest 驱动增量，只下载新发现的说明书）-> build_docs 生成 docs-3.js。
-
-不做全量 PDF 健康检查：云端不保留完整 PDF 副本（pdfs 为临时目录），
-网站在线健康由 Cloudflare 的 /api/health 访问驱动自检负责，两条线互不干扰。
-可重复运行、幂等。
-用法: python3 cloud_crawl.py            # 全部
-      python3 cloud_crawl.py 精创 雷赛   # 只跑指定（中文名）
+运行前后对比 manifest 记录数统计本次新增，写入 dist/data/stats.json 供网站前端展示。
 """
-import subprocess,os,time,sys,json
+import subprocess,os,time,sys,json,glob
 HERE=os.path.dirname(os.path.abspath(__file__));os.chdir(HERE)
-# (显示名, 命令)；纯接口品牌快，playwright 品牌需 chromium
 STEPS=[
  ("顾美",["python3","crawler_coolmay.py"]),
  ("精创",["python3","crawler_elitech.py"]),
@@ -27,8 +21,24 @@ STEPS=[
  ("易驱",["python3","crawler_easydrive.py"]),
  ("金田链接",["python3","crawl_jintian_pw.py","--links-only"]),
 ]
+def count_manifests():
+    """统计所有 manifest 的记录数（按品牌key）"""
+    counts={}
+    for fp in glob.glob("*_manifest.json"):
+        key=fp.replace("_manifest.json","")
+        try:
+            d=json.load(open(fp,encoding="utf-8"))
+            counts[key]=len(d) if isinstance(d,list) else 0
+        except Exception:counts[key]=0
+    # 普传 kv_powtran.json
+    try:
+        d=json.load(open("kv_powtran.json",encoding="utf-8"))
+        counts["powtran"]=len(d) if isinstance(d,list) else 0
+    except Exception:pass
+    return counts
 def main():
     only=sys.argv[1:]
+    before=count_manifests()
     summary={}
     for name,cmd in STEPS:
         if only and name not in only:continue
@@ -48,6 +58,28 @@ def main():
     print(r.stdout.strip())
     if r.returncode!=0:
         print(r.stderr);sys.exit(1)
-    json.dump({"steps":summary},open("cloud_crawl_state.json","w",encoding="utf-8"),ensure_ascii=False,indent=1)
+    after=count_manifests()
+    # 统计新增
+    new_by_brand={}
+    total_new=0
+    for k in after:
+        diff=after[k]-before.get(k,0)
+        if diff>0:
+            new_by_brand[k]=diff
+            total_new+=diff
+    total=sum(after.values())
+    stats={
+        "last_run":time.strftime("%Y-%m-%d %H:%M:%S",time.localtime()),
+        "last_new":total_new,
+        "new_by_brand":new_by_brand,
+        "total":total,
+        "brands":after,
+        "cron":"每3小时自动采集（北京时间 8:17/11:17/14:17/17:17/20:17/23:17/2:17/5:17）",
+        "steps":summary,
+    }
+    os.makedirs("../dist/data",exist_ok=True)
+    json.dump(stats,open("../dist/data/stats.json","w",encoding="utf-8"),ensure_ascii=False,indent=1)
+    json.dump({"steps":summary,"last_new":total_new,"total":total},open("cloud_crawl_state.json","w",encoding="utf-8"),ensure_ascii=False,indent=1)
+    print("本次新增 %d 份，累计 %d 份。新增明细: %s"%(total_new,total,new_by_brand))
     print("云端采集编排完成:",summary)
 if __name__=="__main__":main()
