@@ -91,19 +91,6 @@
   ]
  },
  {
-  "t": "精创 ERS-210 冷媒秤",
-  "model": "ERS-210",
-  "cat": "冷媒秤",
-  "u": "https://dl.e-elitech.com/uploadfile/2026/08/13/20260813163814TwhEB9.pdf",
-  "fn": "ec_01574653f8.pdf",
-  "pages": 2,
-  "size": 9375102,
-  "d": "2026-08-13",
-  "pids": [
-   "760"
-  ]
- },
- {
   "t": "精创 PG-30Pro 数字压力表",
   "model": "PG-30Pro",
   "cat": "数字压力表",
@@ -478,19 +465,6 @@
   "d": "2025-04-28",
   "pids": [
    "633"
-  ]
- },
- {
-  "t": "精创 ILD-510C,内贸常规 冷媒检漏仪",
-  "model": "ILD-510C,内贸常规",
-  "cat": "冷媒检漏仪",
-  "u": "https://dl.e-elitech.com/uploadfile/2026/05/15/202605151158152bvPVh.pdf",
-  "fn": "ec_41ac651a57.pdf",
-  "pages": 6,
-  "size": 685463,
-  "d": "2026-07-17",
-  "pids": [
-   "776"
   ]
  },
  {
@@ -5782,6 +5756,32 @@
   "d": "2021-09-08",
   "pids": [
    "406"
+  ]
+ },
+ {
+  "t": "精创 ERS-210 冷媒秤",
+  "model": "ERS-210",
+  "cat": "冷媒秤",
+  "u": "https://dl.e-elitech.com/uploadfile/2026/08/13/20260813163814TwhEB9.pdf",
+  "fn": "ec_01574653f8.pdf",
+  "pages": 2,
+  "size": 9375102,
+  "d": "2026-08-13",
+  "pids": [
+   "760"
+  ]
+ },
+ {
+  "t": "精创 ILD-510C,内贸常规 冷媒检漏仪",
+  "model": "ILD-510C,内贸常规",
+  "cat": "冷媒检漏仪",
+  "u": "https://dl.e-elitech.com/uploadfile/2026/05/15/202605151158152bvPVh.pdf",
+  "fn": "ec_41ac651a57.pdf",
+  "pages": 6,
+  "size": 685463,
+  "d": "2026-07-17",
+  "pids": [
+   "776"
   ]
  }
 ]
