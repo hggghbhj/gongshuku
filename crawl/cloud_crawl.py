@@ -29,7 +29,7 @@ def main():
         if only and name not in only:continue
         t0=time.time()
         try:
-            r=subprocess.run(cmd,capture_output=True,text=True,timeout=2400)
+            r=subprocess.run(cmd,capture_output=True,text=True,timeout=900)
             ok=r.returncode==0
             summary[name]="ok" if ok else "fail(rc=%d)"%r.returncode
             tail=(r.stdout or "").strip().splitlines()[-2:]
