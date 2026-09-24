@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=5,viewport-fit=cover">
+<title>说明书翻译 · 工书库</title>
+<style>
+:root{--brand:#0f766e;--brand2:#0e5a53;--ink:#15201e;--mut:#6b7b78;--line:#e3e9e7;--bg:#f4f6f5;--card:#fff;--ac:#f0b400;}
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Microsoft YaHei",sans-serif;background:var(--bg);color:var(--ink);padding-bottom:90px}
+.topbar{position:sticky;top:0;z-index:20;background:linear-gradient(135deg,var(--brand),var(--brand2));color:#fff;padding:calc(10px + env(safe-area-inset-top)) 14px 12px;box-shadow:0 2px 10px rgba(0,0,0,.15)}
+.topbar .t1{font-size:15px;font-weight:700;line-height:1.35;max-height:40px;overflow:hidden;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical}
+.topbar .row{display:flex;gap:8px;margin-top:10px;align-items:center}
+.btn{border:0;border-radius:9px;padding:9px 14px;font-size:14px;font-weight:600;cursor:pointer;display:inline-flex;align-items:center;gap:6px}
+.btn-y{background:var(--ac);color:#3d2c00}
+.btn-o{background:rgba(255,255,255,.16);color:#fff;border:1px solid rgba(255,255,255,.35)}
+.btn:disabled{opacity:.55}
+.spacer{flex:1}
+.status{font-size:12px;opacity:.92;margin-top:8px}
+.page{background:var(--card);margin:10px 12px;border-radius:12px;overflow:hidden;box-shadow:0 1px 4px rgba(0,0,0,.06)}
+.page .ph{display:flex;align-items:center;gap:8px;padding:10px 14px;border-bottom:1px solid var(--line);font-size:13px;color:var(--mut);font-weight:600}
+.page .ph .pn{background:var(--brand);color:#fff;border-radius:6px;padding:2px 9px;font-size:12px}
+.page .ph .mini{margin-left:auto;border:0;background:#eef3f2;color:var(--brand);border-radius:7px;padding:5px 11px;font-size:12px;font-weight:600;cursor:pointer}
+.txt{padding:13px 14px;font-size:14px;line-height:1.75;white-space:pre-wrap;word-break:break-word}
+.txt.en{color:#33413f}
+.txt.zh{background:#f7faf9;border-top:1px dashed var(--line);color:#11332e}
+.txt.zh .lab{display:block;font-size:11px;color:var(--brand);font-weight:700;margin-bottom:4px}
+.empty{color:var(--mut);font-style:italic;font-size:13px}
+.loading{text-align:center;padding:40px 20px;color:var(--mut)}
+.spin{display:inline-block;width:26px;height:26px;border:3px solid #cfe0dd;border-top-color:var(--brand);border-radius:50%;animation:sp 1s linear infinite;vertical-align:middle}
+@keyframes sp{to{transform:rotate(360deg)}}
+.err{margin:16px 12px;padding:16px;background:#fef2f2;border:1px solid #fecaca;border-radius:12px;color:#991b1b;font-size:14px;line-height:1.6}
+.bar{position:fixed;left:0;right:0;bottom:0;background:#fff;border-top:1px solid var(--line);padding:10px 14px calc(10px + env(safe-area-inset-bottom));display:flex;gap:10px;box-shadow:0 -2px 12px rgba(0,0,0,.06)}
+.bar .btn{flex:1;justify-content:center}
+</style>
+</head>
+<body>
+<div class="topbar">
+  <div class="t1" id="ttl">说明书翻译</div>
+  <div class="row">
+    <button class="btn btn-y" id="btnAll">🌐 翻译本页</button>
+    <button class="btn btn-o" id="btnRaw">📄 查看原 PDF</button>
+    <div class="spacer"></div>
+  </div>
+  <div class="status" id="status">正在加载说明书…</div>
+</div>
+
+<div id="err" class="err" style="display:none"></div>
+<div id="content"></div>
+<div class="loading" id="loading"><span class="spin"></span><br><br>正在提取说明书文字，请稍候…</div>
+
+<div class="bar">
+  <button class="btn btn-y" id="btnAll2" style="background:var(--brand);color:#fff">🌐 翻译全部页面</button>
+  <button class="btn btn-o" style="color:var(--brand);border-color:var(--line)" id="btnUp">↑ 顶部</button>
+</div>
+
+<script src="vendor/pdf.min.js?v=20260923-01"></script>
+<script src="vendor/pdf-range.js?v=20260923-04"></script>
+<script>
+pdfjsLib.GlobalWorkerOptions.workerSrc = 'vendor/pdf.worker.min.js?v=20260923-01';
+const P = new URLSearchParams(location.search);
+const PDF_URL = P.get('pdf') || '';
+const TITLE = P.get('title') || '说明书';
+const proxyUrl = '/api/pdf?u=' + encodeURIComponent(PDF_URL);
+const DIRECT_HOSTS=['gongkong.com','gongkong.tv','danfoss.com','amsamotion.com'];
+function hostOf(u){try{return new URL(u,location.origin).hostname.toLowerCase();}catch(e){return '';}}
+function directOk(u){
+  if(/^\//.test(u))return true; // 工书库同源托管的 PDF
+  try{if(new URL(u).origin===location.origin)return true;}catch(e){}
+  const h=hostOf(u);return DIRECT_HOSTS.some(d=>h===d||h.endsWith('.'+d));
+}
+function reportHealth(ok, extra){
+  try{ fetch('/api/report',{method:'POST',headers:{'Content-Type':'application/json'},keepalive:true,
+    body:JSON.stringify(Object.assign({url:PDF_URL,ok,title:TITLE},extra||{}))}).catch(function(){}); }catch(e){}
+}
+document.getElementById('ttl').textContent = TITLE;
+document.title = TITLE + ' · 翻译';
+document.getElementById('btnRaw').onclick = () => window.open(PDF_URL, '_blank');
+document.getElementById('btnUp').onclick = () => window.scrollTo({top:0,behavior:'smooth'});
+
+const MAX_PAGES = 40;
+const content = document.getElementById('content');
+const statusEl = document.getElementById('status');
+let pdfDoc = null;
+const pageState = {}; // n -> {text, translated}
+
+function showErr(msg, rawUrl){
+  const e = document.getElementById('err');
+  e.style.display='block';
+  e.innerHTML = msg + (rawUrl ? '<br><br><button class="btn btn-y" onclick="location.href=\'reader.html?pdf='+encodeURIComponent(rawUrl)+'&title='+encodeURIComponent(TITLE)+'\'">📄 改为在线阅读 PDF 画面</button>' : '');
+  document.getElementById('loading').style.display='none';
+}
+
+async function translate(text){
+  const r = await fetch('/api/translate', {
+    method:'POST', headers:{'Content-Type':'application/json'},
+    body: JSON.stringify({text, sl:'auto', tl:'zh-CN'})
+  });
+  const j = await r.json();
+  if(!j.ok) throw new Error(j.error||'翻译失败');
+  return j.translation;
+}
+
+function renderPage(n, text){
+  const card = document.createElement('div');
+  card.className='page'; card.id='pg'+n;
+  const hasText = text && text.trim().length>0;
+  card.innerHTML =
+    '<div class="ph"><span class="pn">第 '+n+' 页</span>'+
+      '<button class="mini" data-tr="'+n+'">翻译</button></div>'+
+    '<div class="txt en">'+(hasText ? escapeHtml(text) : '<span class="empty">（本页为图片/无可提取文字，可点“查看原 PDF”直接阅读）</span>')+'</div>';
+  content.appendChild(card);
+  card.querySelector('[data-tr]').onclick = () => translateOne(n);
+}
+function escapeHtml(s){return s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');}
+
+async function translateOne(n){
+  const st = pageState[n];
+  if(!st || !st.text || !st.text.trim()) return;
+  const card = document.getElementById('pg'+n);
+  const btn = card.querySelector('[data-tr]');
+  let zh = card.querySelector('.txt.zh');
+  if(zh){ zh.scrollIntoView({block:'center',behavior:'smooth'}); return; }
+  btn.disabled=true; btn.textContent='翻译中…';
+  zh = document.createElement('div');
+  zh.className='txt zh';
+  zh.innerHTML='<span class="lab">中文译文</span><span class="spin" style="width:16px;height:16px;border-width:2px"></span>';
+  card.appendChild(zh);
+  try{
+    const out = await translate(st.text);
+    zh.innerHTML='<span class="lab">中文译文（机器翻译，专业术语请以原文为准）</span>'+escapeHtml(out);
+    btn.textContent='已翻译 ✓';
+  }catch(e){
+    zh.innerHTML='<span class="lab" style="color:#b91c1c">翻译失败</span>'+escapeHtml(String(e.message||e));
+    btn.disabled=false; btn.textContent='重试';
+  }
+}
+
+async function loadPdf(){
+  const tryLoad=async(u)=>{
+    const task=await GskRange.getPdfTask(pdfjsLib,u,{
+      cMapUrl:'vendor/cmaps/', cMapPacked:true, isEvalSupported:false
+    });
+    task.onPassword=function(cb){reportHealth(false,{reason:'password'});cb(new Error('password'));};
+    return task.promise;
+  };
+  const first = directOk(PDF_URL) ? PDF_URL : proxyUrl;
+  const second = directOk(PDF_URL) ? proxyUrl : PDF_URL;
+  try{ return await tryLoad(first); }
+  catch(e1){ try{ return await tryLoad(second); }catch(e){ throw e; } }
+}
+
+async function main(){
+  if(!PDF_URL){ showErr('缺少 PDF 地址。'); return; }
+  try{
+    pdfDoc = await loadPdf();
+    reportHealth(true,{pages:pdfDoc.numPages});
+    const total = pdfDoc.numPages;
+    const cap = Math.min(total, MAX_PAGES);
+    statusEl.textContent = '共 '+total+' 页，已提取前 '+cap+' 页文字 · 点“翻译”查看中文';
+    for(let n=1;n<=cap;n++){
+      let text='';
+      try{
+        const page = await pdfDoc.getPage(n);
+        const tc = await page.getTextContent();
+        text = tc.items.map(it=>it.str).join(' ').replace(/\s+\n/g,'\n').replace(/[ \t]{2,}/g,' ');
+      }catch(e){ text=''; }
+      pageState[n]={text};
+      renderPage(n, text);
+      if(n===1) document.getElementById('loading').style.display='none';
+    }
+    document.getElementById('loading').style.display='none';
+    if(total>MAX_PAGES){
+      const tip=document.createElement('div');
+      tip.className='page'; tip.innerHTML='<div class="txt" style="text-align:center;color:#6b7b78">说明书共 '+total+' 页，已加载前 '+MAX_PAGES+' 页；后续内容请点“查看原 PDF”。</div>';
+      content.appendChild(tip);
+    }
+  }catch(e){
+    reportHealth(false,{reason:'translate-load:'+String((e&&e.message)||e).slice(0,40)});
+    showErr('该说明书的文字提取失败（'+(e&&e.message||e)+'）。可改为在线阅读原始 PDF 画面。', PDF_URL);
+  }
+}
+
+document.getElementById('btnAll').onclick = async () => {
+  const first = Object.keys(pageState).map(Number).sort((a,b)=>a-b).find(n=>pageState[n].text&&pageState[n].text.trim());
+  if(first) translateOne(first);
+};
+document.getElementById('btnAll2').onclick = async (ev) => {
+  const btn=ev.currentTarget; btn.disabled=true;
+  const nums = Object.keys(pageState).map(Number).filter(n=>pageState[n].text&&pageState[n].text.trim()).sort((a,b)=>a-b);
+  for(const n of nums){
+    if(document.getElementById('pg'+n).querySelector('.txt.zh')) continue;
+    btn.textContent='正在翻译… '+n+'/'+nums.length;
+    try{ await translateOne(n); }catch(e){}
+    await new Promise(r=>setTimeout(r,120));
+  }
+  btn.textContent='翻译全部页面 ✓'; btn.disabled=false;
+};
+main();
+</script>
+</body>
+</html>

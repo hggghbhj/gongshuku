@@ -1,0 +1,29 @@
+# PDF.js 库、中文字体映射等静态资源：长期缓存（内容不变，二次访问走本地缓存秒开）
+/vendor/*
+  Cache-Control: public, max-age=31536000, immutable
+
+# 图标 / manifest
+/icon-*.png
+  Cache-Control: public, max-age=31536000, immutable
+/manifest.webmanifest
+  Cache-Control: public, max-age=86400
+
+# HTML 页面：始终重新校验，保证用户拿到最新代码
+/
+  Cache-Control: no-cache
+/index.html
+  Cache-Control: no-cache
+/reader
+  Cache-Control: no-cache
+/reader.html
+  Cache-Control: no-cache
+/viewer
+  Cache-Control: no-cache
+/viewer.html
+  Cache-Control: no-cache
+/sw.js
+  Cache-Control: no-cache
+
+# 数据分片：1 小时缓存（采集每 3 小时更新），可离线回退
+/data/*
+  Cache-Control: public, max-age=3600

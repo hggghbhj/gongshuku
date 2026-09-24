@@ -1,0 +1,49 @@
+name: 工书库自动采集
+
+# 每 3 小时云端自动跑一次（cron 为 UTC 时间；GitHub 高峰期可能延迟数分钟，属正常）
+on:
+  schedule:
+    - cron: '17 */3 * * *'
+  workflow_dispatch: {}
+
+jobs:
+  crawl-deploy:
+    runs-on: ubuntu-latest
+    timeout-minutes: 50
+    steps:
+      - name: 检出代码
+        uses: actions/checkout@v4
+
+      - name: 安装 Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: 安装系统依赖（pdfinfo 取页数）
+        run: sudo apt-get update -qq && sudo apt-get install -y -qq poppler-utils
+
+      - name: 安装 Python 依赖
+        run: python -m pip install --quiet --upgrade requests playwright
+
+      - name: 安装 Chromium（正弦/欧瑞/禾川/金田 用无头浏览器收集列表）
+        run: python -m playwright install --with-deps chromium
+
+      - name: 云端采集（manifest 驱动增量，只下载新说明书）
+        run: python crawl/cloud_crawl.py
+
+      - name: 更新网站数据分片 docs-3.js
+        run: cp crawl/docs-3.js dist/data/docs-3.js
+
+      - name: 部署到 Cloudflare Pages
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+        run: npx -y wrangler@4.136.0 pages deploy dist --project-name=gongshuku --branch=main --commit-dirty=true
+
+      - name: 回写采集清单（供下次增量）
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add crawl/*_manifest.json crawl/jintian_pw_links.json crawl/cloud_crawl_state.json
+          git commit -m "chore(auto): 更新采集清单" || echo "无清单变更"
+          git push

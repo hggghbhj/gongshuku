@@ -1,0 +1,107 @@
+# -*- coding: utf-8 -*-
+"""把各品牌 manifest 转成前端 DOCS 记录，输出 docs-3.js（官网免费直链数据）。"""
+import json,os,re
+
+BRANDS={
+ "coolmay":{"b":"顾美科技","page":"http://www.coolmay.com","ty_default":"使用手册"},
+ "elitech":{"b":"精创电气","page":"https://www.e-elitech.com/index.php?v=new_manual","ty_default":"说明书"},
+ "xinje":{"b":"信捷电气","page":"https://www.xinje.com/web/downloadCenter/index","ty_default":"产品手册"},
+ "leisai":{"b":"雷赛智能","page":"https://www.leisai.com/downloads.html","ty_default":"产品手册"},
+ "sinee":{"b":"正弦电气","page":"https://www.sinee.cn/47/","ty_default":"用户手册"},
+ "oura":{"b":"欧瑞传动","page":"https://www.euradrives.com/service/down.html","ty_default":"用户手册"},
+ "hcfa":{"b":"禾川科技","page":"https://www.hcfa.cn/service/index.html","ty_default":"说明书"},
+ "jintian":{"b":"金田科技","page":"http://jtdrive.com/downs/sms","ty_default":"说明书"},
+ "invt":{"b":"英威腾","page":"https://www.invt.com.cn/dowload-15","ty_default":"说明书"},
+}
+def clean_title(t,b):
+    t=re.sub(r'\.pdf$','',t or '',flags=re.I).strip()
+    t=re.sub(r'\s+',' ',t)
+    return t
+def models(t):
+    # 提取常见型号 token
+    cands=re.findall(r'[A-Za-z]{1,6}[-]?[A-Za-z0-9]{1,3}[\-\dA-Za-z]{0,12}',t)
+    out=[]
+    for c in cands:
+        if len(c)>=3 and re.search(r'\d',c):out.append(c)
+    return ",".join(dict.fromkeys(out[:6]))
+def norm(s):
+    return re.sub(r'\s+','',(s or '').lower())
+def rec(b,page,ty,t,d,v,u,size,pages,cat=""):
+    t=clean_title(t,b)
+    kw=(b+" "+t+" "+cat+" "+models(t)).strip()
+    return {"t":t,"b":b,"d":d or "","ty":ty or "说明书","v":v or "","l":"中文",
+      "url":page,"pdf":u,"size":size or "","kw":kw,
+      "sum":"%s %s（%d页），来源品牌官网，免费在线查看。"%(b,cat or ty,pages or 0),
+      "src":"官网直链","pages":pages or 0,
+      "_sx":norm(" ".join([t,b,kw,cat]))}
+
+out=[]
+def load(brand):
+    fn=brand+"_manifest.json"
+    if os.path.exists(fn):
+        return json.load(open(fn,encoding="utf-8"))
+    return []
+
+# 各品牌
+for x in load("elitech"):
+    info=BRANDS["elitech"]
+    out.append(rec(info["b"],info["page"],"说明书",x.get("t"),x.get("d"),"",x.get("u"),"",x.get("pages"),x.get("cat","")))
+for x in load("xinje"):
+    info=BRANDS["xinje"]
+    out.append(rec(info["b"],info["page"],"产品手册",x.get("t"),x.get("d"),x.get("v"),x.get("u"),x.get("size_h",""),x.get("pages")))
+for x in load("leisai"):
+    info=BRANDS["leisai"]
+    out.append(rec(info["b"],info["page"],"选型手册" if "选型" in (x.get("cat") or "") else "产品手册",x.get("t"),x.get("d"),x.get("v"),x.get("u"),"",x.get("pages"),x.get("cat","")))
+for x in load("sinee"):
+    info=BRANDS["sinee"]
+    ty="宣传样本" if "宣传" in (x.get("cat") or "") else "用户手册"
+    out.append(rec(info["b"],info["page"],ty,x.get("t"),x.get("d",""),"",x.get("u"),"",x.get("pages"),x.get("cat","")))
+for x in load("oura"):
+    info=BRANDS["oura"]
+    ty="宣传资料" if "宣传" in (x.get("cat") or "") else "用户手册"
+    out.append(rec(info["b"],info["page"],ty,x.get("t"),x.get("d",""),"",x.get("u"),"",x.get("pages"),x.get("cat","")))
+for x in load("hcfa"):
+    info=BRANDS["hcfa"]
+    out.append(rec(info["b"],info["page"],"说明书",x.get("t"),"","",x.get("u"),"",x.get("pages")))
+for x in load("invt"):
+    info=BRANDS["invt"]
+    cat=x.get("cat","") or ""
+    out.append(rec(info["b"],info["page"],cat or "说明书",x.get("t"),x.get("d"),x.get("v"),x.get("u"),"",x.get("pages"),cat))
+# 金田链接清单是 jintian_pw_links.json
+jt=json.load(open("jintian_pw_links.json",encoding="utf-8")) if os.path.exists("jintian_pw_links.json") else []
+# 若有 manifest 补充页数
+jt_pages={}
+if os.path.exists("jintian_manifest.json"):
+    for x in json.load(open("jintian_manifest.json",encoding="utf-8")):jt_pages[x.get("u","")]=x.get("pages",0)
+for x in jt:
+    info=BRANDS["jintian"]
+    out.append(rec(info["b"],info["page"],"说明书",x.get("t"),x.get("d",""),"",x.get("u"),"",jt_pages.get(x.get("u",""),0)))
+for x in load("coolmay"):
+    info=BRANDS["coolmay"]
+    cat=x.get("cat","")
+    ty="宣传画册" if "画册" in cat or "宣传" in cat else "用户手册"
+    out.append(rec(info["b"],info["page"],ty,x.get("t"),"","",x.get("u"),"",x.get("pages"),cat))
+# 普传：kv_powtran.json 已是标准格式，补充 _sx/src
+if os.path.exists("kv_powtran.json"):
+    for x in json.load(open("kv_powtran.json",encoding="utf-8")):
+        r=dict(x);r["src"]="官网直链";r["pages"]=0
+        r["_sx"]=norm(" ".join([r.get("t",""),r.get("b",""),r.get("kw","")]))
+        out.append(r)
+
+# 去重（按 pdf URL）
+seen=set();uniq=[]
+for r in out:
+    k=r.get("pdf","")
+    if k in seen:continue
+    seen.add(k);uniq.append(r)
+json.dump(uniq,open("docs_new_records.json","w",encoding="utf-8"),ensure_ascii=False,indent=1)
+# 写 JS 分片
+with open("docs-3.js","w",encoding="utf-8") as f:
+    f.write("/* 工书库数据分片3：品牌官网免费直链（自动采集，每3小时增量更新） */\n")
+    f.write("DOCS=DOCS.concat(")
+    json.dump(uniq,f,ensure_ascii=False,separators=(",",":"))
+    f.write(");\n")
+from collections import Counter
+print("生成官网直链记录:",len(uniq))
+print(dict(Counter(r["b"] for r in uniq)))
+print("docs-3.js 大小: %.2f MB"%(os.path.getsize("docs-3.js")/1048576))

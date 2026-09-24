@@ -1,0 +1,10 @@
+# 云端 PDF 副本是临时下载产物，不入库（网站通过 /api/pdf 代理品牌官网）
+crawl/pdfs/
+*.tmp
+crawl/receiver.out
+crawl/docs_new_records.json
+crawl/docs-3.js
+crawl/cm_*.html
+node_modules/
+.DS_Store
+*.log

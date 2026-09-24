@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=5,viewport-fit=cover">
+<title>说明书在线预览 · 工书库</title>
+<style>
+:root{--brand:#0f766e;--brand2:#0e5a53;--ink:#15201e;--mut:#6b7b78;--line:#e3e9e7;--bg:#3a4442;--card:#fff;--ac:#f0b400;}
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html,body{margin:0;padding:0}
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Microsoft YaHei",sans-serif;background:var(--bg);color:var(--ink);padding-bottom:76px}
+.topbar{position:sticky;top:0;z-index:30;background:linear-gradient(135deg,var(--brand),var(--brand2));color:#fff;padding:calc(9px + env(safe-area-inset-top)) 12px 10px;box-shadow:0 2px 10px rgba(0,0,0,.25)}
+.topbar .t1{font-size:14px;font-weight:700;line-height:1.35;max-height:38px;overflow:hidden;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;padding-right:4px}
+.row{display:flex;gap:8px;margin-top:9px;align-items:center;flex-wrap:wrap}
+.btn{border:0;border-radius:9px;padding:8px 13px;font-size:13px;font-weight:600;cursor:pointer;display:inline-flex;align-items:center;gap:5px;color:#fff;background:rgba(255,255,255,.16);border:1px solid rgba(255,255,255,.3)}
+.btn-y{background:var(--ac);color:#3d2c00;border-color:transparent}
+.spacer{flex:1}
+#pginfo{font-size:12px;opacity:.92}
+#pages{max-width:900px;margin:0 auto;padding:10px 8px}
+.sheet{background:#fff;margin:0 auto 12px;border-radius:5px;box-shadow:0 2px 12px rgba(0,0,0,.28);position:relative;overflow:hidden;display:flex;justify-content:center}
+.sheet canvas{display:block;width:100%;height:auto}
+.sheet .ph{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;color:#9aa7a4;font-size:13px;flex-direction:column;gap:8px;background:#f2f4f3}
+.sheet .ph .pnum{color:#c2cbc8;font-size:12px}
+.spin{display:inline-block;width:24px;height:24px;border:3px solid #cfdeda;border-top-color:var(--brand);border-radius:50%;animation:sp 1s linear infinite}
+@keyframes sp{to{transform:rotate(360deg)}}
+.loading{text-align:center;color:#e8efed;padding:46px 18px;font-size:14px}
+.err{margin:16px 12px;padding:18px 16px;background:#fff;border:1px solid #fecaca;border-radius:12px;color:#991b1b;font-size:14px;line-height:1.7;max-width:860px}
+.err .big{font-size:16px;font-weight:700;margin-bottom:6px}
+.err .btns{margin-top:14px;display:flex;gap:10px;flex-wrap:wrap}
+.err .e-btn{background:var(--brand);color:#fff;border:0;border-radius:9px;padding:10px 16px;font-size:14px;font-weight:600;text-decoration:none;display:inline-block}
+.err .e-btn.alt{background:#f1f5f4;color:var(--brand)}
+.badge{font-size:11px;background:rgba(255,255,255,.2);border-radius:6px;padding:2px 8px}
+.bar{position:fixed;left:0;right:0;bottom:0;background:#fff;border-top:1px solid var(--line);padding:9px 12px calc(9px + env(safe-area-inset-bottom));display:flex;gap:10px;box-shadow:0 -2px 12px rgba(0,0,0,.12);z-index:30}
+.bar .btn{flex:1;justify-content:center;color:var(--brand);background:#eef3f2;border-color:var(--line)}
+.bar .btn.primary{background:var(--brand);color:#fff;border-color:var(--brand)}
+</style>
+</head>
+<body>
+<div class="topbar">
+  <div class="t1" id="ttl">说明书</div>
+  <div class="row">
+    <span class="badge" id="srcBadge">在线预览</span>
+    <span id="pginfo"></span>
+    <span class="spacer"></span>
+    <button class="btn" id="btnTr">🌐 翻译</button>
+    <button class="btn" id="btnOpen">↗ 新窗口</button>
+  </div>
+</div>
+
+<div id="loading" class="loading"><span class="spin"></span><br><br>正在打开说明书，请稍候…<br><span style="font-size:12px;opacity:.8" id="loadMsg">正在从官方资料库加载</span></div>
+<div id="err" class="err" style="display:none"></div>
+<div id="pages"></div>
+
+<div class="bar">
+  <button class="btn" id="btnDl">⬇ 下载原文件</button>
+  <button class="btn primary" id="btnBack">‹ 返回搜索</button>
+</div>
+
+<script src="vendor/pdf.min.js?v=20260923-01"></script>
+<script src="vendor/pdf-range.js?v=20260923-04"></script>
+<script>
+pdfjsLib.GlobalWorkerOptions.workerSrc = 'vendor/pdf.worker.min.js?v=20260923-01';
+const P=new URLSearchParams(location.search);
+const RAW=P.get('pdf')||'';
+const TITLE=P.get('title')||'说明书';
+document.getElementById('ttl').textContent=TITLE;
+document.title=TITLE+' · 在线预览';
+const proxy=u=>'/api/pdf?u='+encodeURIComponent(u);
+// 已确认 CORS 开放的源直连（更快、不占代理）；其余（精创/工贝/英威腾等）走同源代理
+const DIRECT_HOSTS=['gongkong.com','gongkong.tv','danfoss.com','amsamotion.com'];
+function hostOf(u){try{return new URL(u,location.origin).hostname.toLowerCase();}catch(e){return '';}}
+function directOk(u){
+  if(/^\//.test(u))return true; // 工书库同源托管的 PDF（如官网仅提供压缩包的品牌）
+  try{if(new URL(u).origin===location.origin)return true;}catch(e){}
+  const h=hostOf(u);return DIRECT_HOSTS.some(d=>h===d||h.endsWith('.'+d));
+}
+const pagesEl=document.getElementById('pages');
+const loadingEl=document.getElementById('loading');
+const errEl=document.getElementById('err');
+const pginfo=document.getElementById('pginfo');
+let reported=false, firstRendered=false, blankPages=0, pdfDoc=null;
+
+document.getElementById('btnOpen').onclick=()=>window.open(RAW,'_blank');
+document.getElementById('btnDl').onclick=()=>window.open(RAW,'_blank');
+document.getElementById('btnBack').onclick=()=>history.length>1?history.back():location.href='/';
+document.getElementById('btnTr').onclick=()=>location.href='viewer.html?pdf='+encodeURIComponent(RAW)+'&title='+encodeURIComponent(TITLE);
+
+function report(ok,extra){
+  if(reported && ok) return;
+  reported=true;
+  try{
+    fetch('/api/report',{method:'POST',headers:{'Content-Type':'application/json'},
+      body:JSON.stringify(Object.assign({url:RAW,ok,title:TITLE,brand:P.get('brand')||''},extra||{})),keepalive:true}).catch(()=>{});
+  }catch(e){}
+}
+function showError(msg,reason){
+  loadingEl.style.display='none';
+  pagesEl.innerHTML='';
+  errEl.style.display='block';
+  errEl.innerHTML='<div class="big">⚠ 这份说明书暂时无法正常预览</div><div>'+msg+'</div>'+
+    '<div class="btns">'+
+      '<a class="e-btn" href="'+RAW.replace(/"/g,'&quot;')+'" target="_blank" rel="noopener">↗ 直接打开官方原文件</a>'+
+      '<a class="e-btn alt" href="/?q='+encodeURIComponent(TITLE)+'">🔍 重新搜索同类说明书</a>'+
+    '</div>';
+  report(false,{reason:reason||'loadfail'});
+}
+
+// 非白像素检测：首页几乎全白时，多检测几页，避免误判空白封面
+function canvasNonBlank(cv){
+  try{
+    const ctx=cv.getContext('2d');
+    const w=cv.width,h=cv.height;
+    if(w<10||h<10)return 0;
+    const step=Math.max(1,Math.floor(Math.min(w,h)/140));
+    const data=ctx.getImageData(0,0,w,h).data;
+    let non=0,tot=0;
+    for(let y=0;y<h;y+=step)for(let x=0;x<w;x+=step){
+      const i=(y*w+x)*4;tot++;
+      if(!(data[i]>244&&data[i+1]>244&&data[i+2]>244))non++;
+    }
+    return tot?non/tot:0;
+  }catch(e){return 0.5;}
+}
+
+async function renderInto(sheet,page,num){
+  const cv=document.createElement('canvas');
+  const holder=sheet.querySelector('.ph');
+  const wrap=()=>Math.min(sheet.clientWidth||document.getElementById('pages').clientWidth-16, 900);
+  const targetW=wrap();
+  const base=page.getViewport({scale:1});
+  // 手机端优化：降低渲染分辨率，首屏秒开
+  // 高清渲染：手机屏 dpr 最高 2，不做超采样，MAX_PX 降到 1200，大幅提升渲染速度
+  const dpr=Math.min(window.devicePixelRatio||1,2);
+  const supersample=1.0, MAX_PX=1200;
+  const fitScale=targetW/base.width;
+  let renderScale=fitScale*dpr*supersample;
+  if(base.width*renderScale>MAX_PX) renderScale=MAX_PX/base.width;
+  const vp=page.getViewport({scale:renderScale});
+  cv.width=Math.floor(vp.width);cv.height=Math.floor(vp.height);
+  cv.style.width=targetW+'px';
+  sheet.style.minHeight='auto';
+  const ctx=cv.getContext('2d');
+  const task=page.render({canvasContext:ctx,viewport:vp});
+  await task.promise;
+  if(holder)holder.remove();
+  if(!sheet.querySelector('canvas'))sheet.appendChild(cv);
+  // 首页渲染检测
+  if(num===1){
+    const ratio=canvasNonBlank(cv);
+    if(ratio<0.002){
+      blankPages++;
+      if(blankPages>=3){report(false,{reason:'blank',pages:pdfDoc.numPages});}
+    }else{
+      firstRendered=true;report(true,{pages:pdfDoc.numPages});
+    }
+  }
+}
+
+let triedModes=[];
+async function openWith(url,mode){
+  document.getElementById('loadMsg').textContent=mode==='direct'?'正在直连官方资料库…':'正在通过安全通道加载…';
+  let task;
+  try{
+    task=await GskRange.getPdfTask(pdfjsLib,url,{
+      cMapUrl:'vendor/cmaps/',
+      cMapPacked:true,
+      isEvalSupported:false
+    });
+    task.onPassword=function(cb){ // 真正需要密码才触发；空权限密码 PDF.js 会自动解开
+      report(false,{reason:'password'});
+      cb(new Error('password'));
+    };
+    pdfDoc=await task.promise;
+  }catch(e){
+    const msg=String(e&&e.message||e);
+    if(/password/i.test(msg)){showError('该文件已加密且需要密码，无法在线预览。','password');return;}
+    if(/MissingPDF|404|403|network|Failed|fetch/i.test(msg)){
+      if(mode==='proxy'&&!triedModes.includes('direct')){triedModes.push('direct');return openWith(RAW,'direct');}
+      if(mode==='direct'&&!triedModes.includes('proxy')){triedModes.push('proxy');return openWith(proxy(RAW),'proxy');}
+      showError('官方文件链接可能已失效或服务器暂时拒绝访问（'+msg.slice(0,60)+'）。','missing');return;
+    }
+    if(/InvalidPDF|invalid/i.test(msg)){
+      if(mode==='direct'&&!triedModes.includes('proxy')){triedModes.push('proxy');return openWith(proxy(RAW),'proxy');}
+      showError('文件可能已损坏或不是有效的 PDF（'+msg.slice(0,60)+'）。','invalid');return;
+    }
+    showError('加载失败：'+msg.slice(0,100),'loadfail');return;
+  }
+  loadingEl.style.display='none';
+  const total=pdfDoc.numPages;
+  if(!total){showError('该 PDF 没有可显示的页面。','nopages');return;}
+  pginfo.textContent='共 '+total+' 页';
+  // 建占位
+  pagesEl.innerHTML='';
+  const sheets=[];
+  for(let n=1;n<=total;n++){
+    const s=document.createElement('div');s.className='sheet';
+    s.style.minHeight=(Math.min(window.innerWidth,900)*1.4)+'px';
+    s.innerHTML='<div class="ph"><span class="pnum">第 '+n+' 页</span></div>';
+    pagesEl.appendChild(s);sheets.push(s);
+  }
+  // 懒渲染：降低预加载范围，减少后台请求
+  const io=new IntersectionObserver((entries)=>{
+    entries.forEach(en=>{
+      if(!en.isIntersecting)return;
+      const n=Number(en.target.getAttribute('data-n'));
+      if(en.target.getAttribute('data-done'))return;
+      en.target.setAttribute('data-done','1');
+      const _ph=en.target.querySelector('.ph');
+      if(_ph)_ph.innerHTML='<span class="spin"></span>';
+      pdfDoc.getPage(n).then(pg=>renderInto(en.target,pg,n)).catch(()=>{
+        const ph=en.target.querySelector('.ph');if(ph)ph.innerHTML='第 '+n+' 页渲染失败';
+      });
+    });
+  },{rootMargin:'200px 0px'});
+  sheets.forEach((s,i)=>{s.setAttribute('data-n',String(i+1));io.observe(s);});
+}
+
+if(!RAW){showError('缺少 PDF 地址。','nourl');}
+else{
+  triedModes=[];
+  if(directOk(RAW)){triedModes.push('direct');openWith(RAW,'direct');}
+  else{triedModes.push('proxy');openWith(proxy(RAW),'proxy');}
+}
+</script>
+<script>
+// 访问驱动的云端健康自检：服务器端按边缘节点节流为每小时一次，不阻塞预览
+(function(){
+  try{
+    setTimeout(function(){
+      try{
+        if(navigator.sendBeacon){ navigator.sendBeacon('/api/cron-health'); }
+        else { fetch('/api/cron-health',{method:'POST',keepalive:true}).catch(function(){}); }
+      }catch(e){}
+    }, 6000);
+  }catch(e){}
+})();
+</script>
+</body>
+</html>
