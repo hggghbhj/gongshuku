@@ -33,6 +33,7 @@ BRANDS={
  "yudian":{"b":"宇电","page":"https://www.yudian.com/down/10039.html","ty_default":"产品手册"},
  "cincon":{"b":"Cincon","page":"https://www.cincon.com/user-manual_en.php","ty_default":"用户手册"},
  "hollysys":{"b":"和利时","page":"https://www.hollysys.com/download/products","ty_default":"产品手册"},
+ "hongfa":{"b":"宏发","page":"https://www.hongfa.com/en/service/down","ty_default":"产品手册"},
 }
 def clean_title(t,b):
     t=re.sub(r'\.pdf$','',t or '',flags=re.I).strip()
@@ -164,6 +165,9 @@ for x in load("cincon"):
     out.append(rec(info["b"],info["page"],x.get("type","用户手册"),x.get("name"),"","",x.get("url"),"",x.get("pages")))
 for x in load("hollysys"):
     info=BRANDS["hollysys"]
+    out.append(rec(info["b"],info["page"],x.get("type","产品手册"),x.get("name"),"","",x.get("url"),"",x.get("pages")))
+for x in load("hongfa"):
+    info=BRANDS["hongfa"]
     out.append(rec(info["b"],info["page"],x.get("type","产品手册"),x.get("name"),"","",x.get("url"),"",x.get("pages")))
 # 普传：kv_powtran.json 已是标准格式，补充 _sx/src
 if os.path.exists("kv_powtran.json"):

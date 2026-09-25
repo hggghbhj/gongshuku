@@ -34,6 +34,7 @@ STEPS=[
  ("宇电",["python3","crawler_yudian.py"]),
  ("Cincon",["python3","crawler_cincon.py"]),
  ("和利时",["python3","crawler_hollysys.py"]),
+ ("宏发",["python3","crawler_hongfa.py"]),
  ("汇川",["python3","crawler_inovance.py"]),
  ("金田链接",["python3","crawl_jintian_pw.py","--links-only"]),
 ]
