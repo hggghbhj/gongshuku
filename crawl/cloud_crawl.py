@@ -49,6 +49,7 @@ STEPS=[
  ("安邦信",["python3","crawler_anbangxin.py"]),
  ("华中数控",["python3","crawler_huazhong.py"]),
  ("广州数控",["python3","crawler_gskcnc.py"]),
+ ("西安西普",["python3","crawler_westpow.py"]),
  ("汇川",["python3","crawler_inovance.py"]),
  ("金田链接",["python3","crawl_jintian_pw.py","--links-only"]),
 ]

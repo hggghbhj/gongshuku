@@ -48,6 +48,7 @@ BRANDS={
  "anbangxin":{"b":"安邦信","page":"http://www.anbangxin.com/page_7/","ty_default":"说明书"},
  "huazhong":{"b":"华中数控","page":"https://huazhongcnc.com/portal/list/index/cid/73.html","ty_default":"用户手册"},
  "gskcnc":{"b":"广州数控","page":"https://www.gsk.com.cn/zlxz/index_15.aspx?lcid=18","ty_default":"使用手册"},
+ "westpow":{"b":"西安西普","page":"https://www.westpow.com/download-center","ty_default":"说明书"},
 }
 def clean_title(t,b):
     t=re.sub(r'\.pdf$','',t or '',flags=re.I).strip()
@@ -225,6 +226,9 @@ for x in load("huazhong"):
 for x in load("gskcnc"):
     info=BRANDS["gskcnc"]
     out.append(rec(info["b"],info["page"],x.get("type","使用手册"),x.get("name"),"","",x.get("url"),"",x.get("pages")))
+for x in load("westpow"):
+    info=BRANDS["westpow"]
+    out.append(rec(info["b"],info["page"],x.get("type","说明书"),x.get("name"),"","",x.get("url"),"",x.get("pages")))
 # 普传：kv_powtran.json 已是标准格式，补充 _sx/src
 if os.path.exists("kv_powtran.json"):
     for x in json.load(open("kv_powtran.json",encoding="utf-8")):
