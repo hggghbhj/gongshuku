@@ -60,9 +60,10 @@ BRANDS={
  "people":{"b":"人民电器","page":"https://www.chinapeople.com","ty_default":"说明书"},
  "fotek":{"b":"阳明电机","page":"https://www.fotek.com.tw/zh-cn/download","ty_default":"说明书"},
  "airtac":{"b":"亚德客","page":"https://www.airtac.com/download","ty_default":"产品手册"},
- "airtac":{"b":"亚德客","page":"https://www.airtac.com/download","ty_default":"产品手册"},
  "chint":{"b":"正泰电器","page":"http://m.chint.com/kunlun/","ty_default":"产品样本"},
+ "jelpc":{"b":"佳尔灵气动","page":"https://www.jelpc.com/download/","ty_default":"产品目录"},
  "yatai":{"b":"亚泰仪表","page":"http://www.yatai.sh.cn","ty_default":"使用说明书"},
+ "siglent":{"b":"鼎阳科技","page":"https://www.siglent.com/support/resource/","ty_default":"用户手册"},
 }
 def clean_title(t,b):
     t=re.sub(r'\.pdf$','',t or '',flags=re.I).strip()
@@ -276,15 +277,18 @@ for x in load("fotek"):
 for x in load("airtac"):
     info=BRANDS["airtac"]
     out.append(rec(info["b"],info["page"],x.get("type","产品手册"),x.get("name"),"","",x.get("url"),"",x.get("pages")))
-for x in load("airtac"):
-    info=BRANDS["airtac"]
-    out.append(rec(info["b"],info["page"],x.get("type","产品手册"),x.get("name"),"","",x.get("url"),"",x.get("pages")))
 for x in load("chint"):
     info=BRANDS["chint"]
     out.append(rec(info["b"],info["page"],x.get("type","产品样本"),x.get("name"),"","",x.get("url"),"",x.get("pages")))
+for x in load("jelpc"):
+    info=BRANDS["jelpc"]
+    out.append(rec(info["b"],info["page"],x.get("type","产品目录"),x.get("name"),"","",x.get("url"),"",x.get("pages")))
 for x in load("yatai"):
     info=BRANDS["yatai"]
     out.append(rec(info["b"],info["page"],x.get("type","使用说明书"),x.get("name"),"","",x.get("url"),"",x.get("pages")))
+for x in load("siglent"):
+    info=BRANDS["siglent"]
+    out.append(rec(info["b"],info["page"],x.get("type","用户手册"),x.get("name"),"","",x.get("url"),"",x.get("pages")))
 # 普传：kv_powtran.json 已是标准格式，补充 _sx/src
 if os.path.exists("kv_powtran.json"):
     for x in json.load(open("kv_powtran.json",encoding="utf-8")):

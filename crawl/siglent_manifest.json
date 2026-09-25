@@ -1,0 +1,919 @@
+[
+  {
+    "name": "SDM4065A_Datasheet_CN01C_20260309_release",
+    "url": "https://siglent.oss-cn-shenzhen.aliyuncs.com/document/Digital%20Multimeters/SDM4065A_Datasheet_CN01C_20260309_release.pdf",
+    "file": "pdfs/siglent/SDM4065A_Datasheet_CN01C_20260309_release.pdf",
+    "size": 1516303,
+    "pages": 19
+  },
+  {
+    "name": "SDM4075A-DV Datasheet_CN01A 20251222",
+    "url": "https://siglent.oss-cn-shenzhen.aliyuncs.com/document/Digital%20Multimeters/SDM4075A-DV%20Datasheet_CN01A%2020251222.pdf",
+    "file": "pdfs/siglent/SDM4075A-DV Datasheet_CN01A 20251222.pdf",
+    "size": 1118434,
+    "pages": 10
+  },
+  {
+    "name": "SDM4075A-DV_Remote Manual_CN01A",
+    "url": "https://siglent.oss-cn-shenzhen.aliyuncs.com/document/Digital%20Multimeters/SDM4075A-DV_Remote%20Manual_CN01A.pdf",
+    "file": "pdfs/siglent/SDM4075A-DV_Remote Manual_CN01A.pdf",
+    "size": 1417444,
+    "pages": 58
+  },
+  {
+    "name": "SDM4075A_UserManual_CN01A",
+    "url": "https://siglent.oss-cn-shenzhen.aliyuncs.com/document/Digital%20Multimeters/SDM4075A_UserManual_CN01A.pdf",
+    "file": "pdfs/siglent/SDM4075A_UserManual_CN01A.pdf",
+    "size": 8111565,
+    "pages": 161
+  },
+  {
+    "name": "MA054A_DataSheet_CN01A",
+    "url": "https://siglent.oss-cn-shenzhen.aliyuncs.com/document/Modular%20Instrument/MA054A_DataSheet_CN01A.pdf",
+    "file": "pdfs/siglent/MA054A_DataSheet_CN01A.pdf",
+    "size": 1737423,
+    "pages": 18
+  },
+  {
+    "name": "MA054A_QuickStart_CN01A",
+    "url": "https://siglent.oss-cn-shenzhen.aliyuncs.com/document/Modular%20Instrument/MA054A_QuickStart_CN01A.pdf",
+    "file": "pdfs/siglent/MA054A_QuickStart_CN01A.pdf",
+    "size": 2173516,
+    "pages": 44
+  },
+  {
+    "name": "MC987_977_937A_Datasheet_CN01A",
+    "url": "https://siglent.oss-cn-shenzhen.aliyuncs.com/document/Modular%20Instrument/MC987_977_937A_Datasheet_CN01A.pdf",
+    "file": "pdfs/siglent/MC987_977_937A_Datasheet_CN01A.pdf",
+    "size": 1396296,
+    "pages": 6
+  },
+  {
+    "name": "MC987_977_937A_QuickStart_CN01A",
+    "url": "https://siglent.oss-cn-shenzhen.aliyuncs.com/document/Modular%20Instrument/MC987_977_937A_QuickStart_CN01A.pdf",
+    "file": "pdfs/siglent/MC987_977_937A_QuickStart_CN01A.pdf",
+    "size": 2551839,
+    "pages": 16
+  },
+  {
+    "name": "MN514_520A_Datasheet_CN01B",
+    "url": "https://siglent.oss-cn-shenzhen.aliyuncs.com/document/Modular%20Instrument/MN514_520A_Datasheet_CN01B.pdf",
+    "file": "pdfs/siglent/MN514_520A_Datasheet_CN01B.pdf",
+    "size": 2409885,
+    "pages": 28
+  },
+  {
+    "name": "MR301A_Datasheet_CN01A",
+    "url": "https://siglent.oss-cn-shenzhen.aliyuncs.com/document/Modular%20Instrument/MR301A_Datasheet_CN01A.pdf",
+    "file": "pdfs/siglent/MR301A_Datasheet_CN01A.pdf",
+    "size": 1234928,
+    "pages": 6
+  },
+  {
+    "name": "MR301A_QuickStart_CN01A",
+    "url": "https://siglent.oss-cn-shenzhen.aliyuncs.com/document/Modular%20Instrument/MR301A_QuickStart_CN01A.pdf",
+    "file": "pdfs/siglent/MR301A_QuickStart_CN01A.pdf",
+    "size": 1739360,
+    "pages": 16
+  },
+  {
+    "name": "MR590A_Datasheet_CN01A",
+    "url": "https://siglent.oss-cn-shenzhen.aliyuncs.com/document/Modular%20Instrument/MR590A_Datasheet_CN01A.pdf",
+    "file": "pdfs/siglent/MR590A_Datasheet_CN01A.pdf",
+    "size": 4358962,
+    "pages": 6
+  },
+  {
+    "name": "MR590A_QuickStart_CN01A",
+    "url": "https://siglent.oss-cn-shenzhen.aliyuncs.com/document/Modular%20Instrument/MR590A_QuickStart_CN01A.pdf",
+    "file": "pdfs/siglent/MR590A_QuickStart_CN01A.pdf",
+    "size": 4961062,
+    "pages": 16
+  },
+  {
+    "name": "MR785A_Datasheet_CN01A",
+    "url": "https://siglent.oss-cn-shenzhen.aliyuncs.com/document/Modular%20Instrument/MR785A_Datasheet_CN01A.pdf",
+    "file": "pdfs/siglent/MR785A_Datasheet_CN01A.pdf",
+    "size": 5532386,
+    "pages": 7
+  },
+  {
+    "name": "MR785A_QuickStart_CN01A",
+    "url": "https://siglent.oss-cn-shenzhen.aliyuncs.com/document/Modular%20Instrument/MR785A_QuickStart_CN01A.pdf",
+    "file": "pdfs/siglent/MR785A_QuickStart_CN01A.pdf",
+    "size": 5881297,
+    "pages": 16
+  },
+  {
+    "name": "MS032_052_102A_Datasheet_CN01C",
+    "url": "https://siglent.oss-cn-shenzhen.aliyuncs.com/document/Modular%20Instrument/MS032_052_102A_Datasheet_CN01C.pdf",
+    "file": "pdfs/siglent/MS032_052_102A_Datasheet_CN01C.pdf",
+    "size": 2392777,
+    "pages": 20
+  },
+  {
+    "name": "MS032_052_102A_QuickStart_CN01A",
+    "url": "https://siglent.oss-cn-shenzhen.aliyuncs.com/document/Modular%20Instrument/MS032_052_102A_QuickStart_CN01A.pdf",
+    "file": "pdfs/siglent/MS032_052_102A_QuickStart_CN01A.pdf",
+    "size": 3824654,
+    "pages": 32
+  },
+  {
+    "name": "SUN5000A_Datasheet_CN01B",
+    "url": "https://siglent.oss-cn-shenzhen.aliyuncs.com/document/Modular%20Instrument/SUN5000A_Datasheet_CN01B.pdf",
+    "file": "pdfs/siglent/SUN5000A_Datasheet_CN01B.pdf",
+    "size": 2466926,
+    "pages": 30
+  },
+  {
+    "name": "10 BASE-T Ethernet Compliance Test Application_CN01A",
+    "url": "https://siglent.oss-cn-shenzhen.aliyuncs.com/document/Oscilloscope/10%20BASE-T%20Ethernet%20Compliance%20Test%20Application_CN01A.pdf",
+    "file": "pdfs/siglent/10 BASE-T Ethernet Compliance Test Application_CN01A.pdf",
+    "size": 3864945,
+    "pages": 53
+  },
+  {
+    "name": "100 BASE-TX Ethernet Compliance Test Application_CN01B",
+    "url": "https://siglent.oss-cn-shenzhen.aliyuncs.com/document/Oscilloscope/100%20BASE-TX%20Ethernet%20Compliance%20Test%20Application_CN01B.pdf",
+    "file": "pdfs/siglent/100 BASE-TX Ethernet Compliance Test Application_CN01B.pdf",
+    "size": 4637387,
+    "pages": 50
+  },
+  {
+    "name": "Automotive Ethernet Compliance Test Application_CN01B",
+    "url": "https://siglent.oss-cn-shenzhen.aliyuncs.com/document/Oscilloscope/Automotive%20Ethernet%20Compliance%20Test%20Application_CN01B.pdf",
+    "file": "pdfs/siglent/Automotive Ethernet Compliance Test Application_CN01B.pdf",
+    "size": 7361551,
+    "pages": 102
+  },
+  {
+    "name": "DDR_Compliance_Test_UserMannual_CN03A",
+    "url": "https://siglent.oss-cn-shenzhen.aliyuncs.com/document/Oscilloscope/DDR_Compliance_Test_UserMannual_CN03A.pdf",
+    "file": "pdfs/siglent/DDR_Compliance_Test_UserMannual_CN03A.pdf",
+    "size": 21648616,
+    "pages": 379
+  },
+  {
+    "name": "DPB6150-SDP6150 Instruction Manual_CN02B",
+    "url": "https://siglent.oss-cn-shenzhen.aliyuncs.com/document/Oscilloscope/DPB6150-SDP6150%20Instruction%20Manual_CN02B.pdf",
+    "file": "pdfs/siglent/DPB6150-SDP6150 Instruction Manual_CN02B.pdf",
+    "size": 1343232,
+    "pages": 20
+  },
+  {
+    "name": "ODP6000B_Instruction Manual_CN01D",
+    "url": "https://siglent.oss-cn-shenzhen.aliyuncs.com/document/Oscilloscope/ODP6000B_Instruction%20Manual_CN01D.pdf",
+    "file": "pdfs/siglent/ODP6000B_Instruction Manual_CN01D.pdf",
+    "size": 1134853,
+    "pages": 16
+  },
+  {
+    "name": "Oscilloscope Standard Probes and Other Accessories_260226",
+    "url": "https://siglent.oss-cn-shenzhen.aliyuncs.com/document/Oscilloscope/Oscilloscope%20Standard%20Probes%20and%20Other%20Accessories_260226.pdf",
+    "file": "pdfs/siglent/Oscilloscope Standard Probes and Other Accessories_260226.pdf",
+    "size": 781418,
+    "pages": 8
+  },
+  {
+    "name": "PCIe 1.0_2.0 Compliance Test Application_CN01A",
+    "url": "https://siglent.oss-cn-shenzhen.aliyuncs.com/document/Oscilloscope/PCIe%201.0_2.0%20Compliance%20Test%20Application_CN01A.pdf",
+    "file": "pdfs/siglent/PCIe 1.0_2.0 Compliance Test Application_CN01A.pdf",
+    "size": 4125087,
+    "pages": 62
+  },
+  {
+    "name": "Probe_DataSheet_CN02C",
+    "url": "https://siglent.oss-cn-shenzhen.aliyuncs.com/document/Oscilloscope/Probe_DataSheet_CN02C.pdf",
+    "file": "pdfs/siglent/Probe_DataSheet_CN02C.pdf",
+    "size": 1529144,
+    "pages": 20
+  },
+  {
+    "name": "SAP160D_SAP200D_UserManual_CN01A",
+    "url": "https://siglent.oss-cn-shenzhen.aliyuncs.com/document/Oscilloscope/SAP160D_SAP200D_UserManual_CN01A.pdf",
+    "file": "pdfs/siglent/SAP160D_SAP200D_UserManual_CN01A.pdf",
+    "size": 2822237,
+    "pages": 36
+  },
+  {
+    "name": "SAP4000P_UserManual_CN01B",
+    "url": "https://siglent.oss-cn-shenzhen.aliyuncs.com/document/Oscilloscope/SAP4000P_UserManual_CN01B.pdf",
+    "file": "pdfs/siglent/SAP4000P_UserManual_CN01B.pdf",
+    "size": 2100332,
+    "pages": 28
+  },
+  {
+    "name": "SAP5000D_UserManual_CN01C",
+    "url": "https://siglent.oss-cn-shenzhen.aliyuncs.com/document/Oscilloscope/SAP5000D_UserManual_CN01C.pdf",
+    "file": "pdfs/siglent/SAP5000D_UserManual_CN01C.pdf",
+    "size": 2559363,
+    "pages": 36
+  },
+  {
+    "name": "SDS1000X HD_QuickStart_CN01C",
+    "url": "https://siglent.oss-cn-shenzhen.aliyuncs.com/document/Oscilloscope/SDS1000X%20HD_QuickStart_CN01C.pdf",
+    "file": "pdfs/siglent/SDS1000X HD_QuickStart_CN01C.pdf",
+    "size": 2516622,
+    "pages": 36
+  },
+  {
+    "name": "SDS1000X-C_DataSheet_DS0101E-C04D",
+    "url": "https://siglent.oss-cn-shenzhen.aliyuncs.com/document/Oscilloscope/SDS1000X-C_DataSheet_DS0101E-C04D.pdf",
+    "file": "pdfs/siglent/SDS1000X-C_DataSheet_DS0101E-C04D.pdf",
+    "size": 11320909,
+    "pages": 20
+  },
+  {
+    "name": "SDS2000X HD_Datasheet_CN02B",
+    "url": "https://siglent.oss-cn-shenzhen.aliyuncs.com/document/Oscilloscope/SDS2000X%20HD_Datasheet_CN02B.pdf",
+    "file": "pdfs/siglent/SDS2000X HD_Datasheet_CN02B.pdf",
+    "size": 2080342,
+    "pages": 22
+  },
+  {
+    "name": "SDS2000X HD_UserManual_CN01B",
+    "url": "https://siglent.oss-cn-shenzhen.aliyuncs.com/document/Oscilloscope/SDS2000X%20HD_UserManual_CN01B.pdf",
+    "file": "pdfs/siglent/SDS2000X HD_UserManual_CN01B.pdf",
+    "size": 15967251,
+    "pages": 285
+  },
+  {
+    "name": "SDS2000X Plus_Datasheet_CN02E",
+    "url": "https://siglent.oss-cn-shenzhen.aliyuncs.com/document/Oscilloscope/SDS2000X%20Plus_Datasheet_CN02E.pdf",
+    "file": "pdfs/siglent/SDS2000X Plus_Datasheet_CN02E.pdf",
+    "size": 2152592,
+    "pages": 20
+  },
+  {
+    "name": "SDS2000X Plus_ProgrammingGuide_CN11G",
+    "url": "https://siglent.oss-cn-shenzhen.aliyuncs.com/document/Oscilloscope/SDS2000X%20Plus_ProgrammingGuide_CN11G.pdf",
+    "file": "pdfs/siglent/SDS2000X Plus_ProgrammingGuide_CN11G.pdf",
+    "size": 8654359,
+    "pages": 495
+  },
+  {
+    "name": "SDS3000X HD_Datasheet_CN01D_",
+    "url": "https://siglent.oss-cn-shenzhen.aliyuncs.com/document/Oscilloscope/SDS3000X%20HD_Datasheet_CN01D_.pdf",
+    "file": "pdfs/siglent/SDS3000X HD_Datasheet_CN01D_.pdf",
+    "size": 2346475,
+    "pages": 24
+  },
+  {
+    "name": "SDS3000X HD_ProgrammingGuide_CN11H",
+    "url": "https://siglent.oss-cn-shenzhen.aliyuncs.com/document/Oscilloscope/SDS3000X%20HD_ProgrammingGuide_CN11H.pdf",
+    "file": "pdfs/siglent/SDS3000X HD_ProgrammingGuide_CN11H.pdf",
+    "size": 7235200,
+    "pages": 597
+  },
+  {
+    "name": "SDS3000X HD_UserManual_CN01B",
+    "url": "https://siglent.oss-cn-shenzhen.aliyuncs.com/document/Oscilloscope/SDS3000X%20HD_UserManual_CN01B.pdf",
+    "file": "pdfs/siglent/SDS3000X HD_UserManual_CN01B.pdf",
+    "size": 16286045,
+    "pages": 297
+  },
+  {
+    "name": "SDS5000X HD_ProgrammingGuide_CN11H",
+    "url": "https://siglent.oss-cn-shenzhen.aliyuncs.com/document/Oscilloscope/SDS5000X%20HD_ProgrammingGuide_CN11H.pdf",
+    "file": "pdfs/siglent/SDS5000X HD_ProgrammingGuide_CN11H.pdf",
+    "size": 7235200,
+    "pages": 597
+  },
+  {
+    "name": "SDS5000X HD_SDS5000L_Datasheet_CN04B",
+    "url": "https://siglent.oss-cn-shenzhen.aliyuncs.com/document/Oscilloscope/SDS5000X%20HD_SDS5000L_Datasheet_CN04B.pdf",
+    "file": "pdfs/siglent/SDS5000X HD_SDS5000L_Datasheet_CN04B.pdf",
+    "size": 2488885,
+    "pages": 28
+  },
+  {
+    "name": "SDS5000X HD_SDS5000L_ServiceManual_EN01A",
+    "url": "https://siglent.oss-cn-shenzhen.aliyuncs.com/document/Oscilloscope/SDS5000X%20HD_SDS5000L_ServiceManual_EN01A.pdf",
+    "file": "pdfs/siglent/SDS5000X HD_SDS5000L_ServiceManual_EN01A.pdf",
+    "size": 4826354,
+    "pages": 69
+  },
+  {
+    "name": "SDS5000X HD_UserManual_CN01A",
+    "url": "https://siglent.oss-cn-shenzhen.aliyuncs.com/document/Oscilloscope/SDS5000X%20HD_UserManual_CN01A.pdf",
+    "file": "pdfs/siglent/SDS5000X HD_UserManual_CN01A.pdf",
+    "size": 24696909,
+    "pages": 321
+  },
+  {
+    "name": "SDS5000X_Datasheet_CN02L",
+    "url": "https://siglent.oss-cn-shenzhen.aliyuncs.com/document/Oscilloscope/SDS5000X_Datasheet_CN02L.pdf",
+    "file": "pdfs/siglent/SDS5000X_Datasheet_CN02L.pdf",
+    "size": 2020104,
+    "pages": 24
+  },
+  {
+    "name": "SDS5000X_UserManual_CN01E",
+    "url": "https://siglent.oss-cn-shenzhen.aliyuncs.com/document/Oscilloscope/SDS5000X_UserManual_CN01E.pdf",
+    "file": "pdfs/siglent/SDS5000X_UserManual_CN01E.pdf",
+    "size": 15362396,
+    "pages": 277
+  },
+  {
+    "name": "SDS6000 Pro_Datasheet_CN03F",
+    "url": "https://siglent.oss-cn-shenzhen.aliyuncs.com/document/Oscilloscope/SDS6000%20Pro_Datasheet_CN03F.pdf",
+    "file": "pdfs/siglent/SDS6000 Pro_Datasheet_CN03F.pdf",
+    "size": 3045899,
+    "pages": 26
+  },
+  {
+    "name": "SDS6000B_Datasheet_CN01A",
+    "url": "https://siglent.oss-cn-shenzhen.aliyuncs.com/document/Oscilloscope/SDS6000B_Datasheet_CN01A.pdf",
+    "file": "pdfs/siglent/SDS6000B_Datasheet_CN01A.pdf",
+    "size": 2585604,
+    "pages": 25
+  },
+  {
+    "name": "SDS6000L_Datasheet_CN01E",
+    "url": "https://siglent.oss-cn-shenzhen.aliyuncs.com/document/Oscilloscope/SDS6000L_Datasheet_CN01E.pdf",
+    "file": "pdfs/siglent/SDS6000L_Datasheet_CN01E.pdf",
+    "size": 2567726,
+    "pages": 27
+  },
+  {
+    "name": "SDS6000L_UserManual_CN01B",
+    "url": "https://siglent.oss-cn-shenzhen.aliyuncs.com/document/Oscilloscope/SDS6000L_UserManual_CN01B.pdf",
+    "file": "pdfs/siglent/SDS6000L_UserManual_CN01B.pdf",
+    "size": 15770329,
+    "pages": 297
+  },
+  {
+    "name": "SDS7000A_SDS7000L_Datasheet_CN04E",
+    "url": "https://siglent.oss-cn-shenzhen.aliyuncs.com/document/Oscilloscope/SDS7000A_SDS7000L_Datasheet_CN04E.pdf",
+    "file": "pdfs/siglent/SDS7000A_SDS7000L_Datasheet_CN04E.pdf",
+    "size": 2756019,
+    "pages": 34
+  },
+  {
+    "name": "SDS7000A_SDS7000L_UserManual_CN02A",
+    "url": "https://siglent.oss-cn-shenzhen.aliyuncs.com/document/Oscilloscope/SDS7000A_SDS7000L_UserManual_CN02A.pdf",
+    "file": "pdfs/siglent/SDS7000A_SDS7000L_UserManual_CN02A.pdf",
+    "size": 24715006,
+    "pages": 328
+  },
+  {
+    "name": "SDS8000A_Datasheet_CN03A",
+    "url": "https://siglent.oss-cn-shenzhen.aliyuncs.com/document/Oscilloscope/SDS8000A_Datasheet_CN03A.pdf",
+    "file": "pdfs/siglent/SDS8000A_Datasheet_CN03A.pdf",
+    "size": 2297612,
+    "pages": 27
+  },
+  {
+    "name": "SDS8000A_QuickStart_CN01A",
+    "url": "https://siglent.oss-cn-shenzhen.aliyuncs.com/document/Oscilloscope/SDS8000A_QuickStart_CN01A.pdf",
+    "file": "pdfs/siglent/SDS8000A_QuickStart_CN01A.pdf",
+    "size": 2364957,
+    "pages": 28
+  },
+  {
+    "name": "SDS8000A_UserManual_CN01A",
+    "url": "https://siglent.oss-cn-shenzhen.aliyuncs.com/document/Oscilloscope/SDS8000A_UserManual_CN01A.pdf",
+    "file": "pdfs/siglent/SDS8000A_UserManual_CN01A.pdf",
+    "size": 23995492,
+    "pages": 308
+  },
+  {
+    "name": "SDS800X HD_Datasheet_CN01E",
+    "url": "https://siglent.oss-cn-shenzhen.aliyuncs.com/document/Oscilloscope/SDS800X%20HD_Datasheet_CN01E.pdf",
+    "file": "pdfs/siglent/SDS800X HD_Datasheet_CN01E.pdf",
+    "size": 2296294,
+    "pages": 23
+  },
+  {
+    "name": "SP6150 Datasheet EN01A",
+    "url": "https://siglent.oss-cn-shenzhen.aliyuncs.com/document/Oscilloscope/SP6150%20Datasheet%20EN01A.pdf",
+    "file": "pdfs/siglent/SP6150 Datasheet EN01A.pdf",
+    "size": 2412503,
+    "pages": 12
+  },
+  {
+    "name": "SYN64-R Datasheet_CN01A",
+    "url": "https://siglent.oss-cn-shenzhen.aliyuncs.com/document/Oscilloscope/SYN64-R%20Datasheet_CN01A.pdf",
+    "file": "pdfs/siglent/SYN64-R Datasheet_CN01A.pdf",
+    "size": 1463025,
+    "pages": 24
+  },
+  {
+    "name": "SigScopeLab_Datasheet_CN04A",
+    "url": "https://siglent.oss-cn-shenzhen.aliyuncs.com/document/Oscilloscope/SigScopeLab_Datasheet_CN04A.pdf",
+    "file": "pdfs/siglent/SigScopeLab_Datasheet_CN04A.pdf",
+    "size": 1523327,
+    "pages": 11
+  },
+  {
+    "name": "SigScopeLab_UserManual_CN03A",
+    "url": "https://siglent.oss-cn-shenzhen.aliyuncs.com/document/Oscilloscope/SigScopeLab_UserManual_CN03A.pdf",
+    "file": "pdfs/siglent/SigScopeLab_UserManual_CN03A.pdf",
+    "size": 2570558,
+    "pages": 19
+  },
+  {
+    "name": "SSM5000A_Datasheet_CN03A",
+    "url": "https://siglent.oss-cn-shenzhen.aliyuncs.com/document/Other%20Product/SSM5000A_Datasheet_CN03A.pdf",
+    "file": "pdfs/siglent/SSM5000A_Datasheet_CN03A.pdf",
+    "size": 747775,
+    "pages": 12
+  },
+  {
+    "name": "SigVSA_Datasheet_CN01E",
+    "url": "https://siglent.oss-cn-shenzhen.aliyuncs.com/document/PC%20Software/SigVSA_Datasheet_CN01E.pdf",
+    "file": "pdfs/siglent/SigVSA_Datasheet_CN01E.pdf",
+    "size": 11791849,
+    "pages": 27
+  },
+  {
+    "name": "SigVSA_UserManual_CN01F",
+    "url": "https://siglent.oss-cn-shenzhen.aliyuncs.com/document/PC%20Software/SigVSA_UserManual_CN01F.pdf",
+    "file": "pdfs/siglent/SigVSA_UserManual_CN01F.pdf",
+    "size": 20315601,
+    "pages": 224
+  },
+  {
+    "name": "SMM3000X_Datasheet_CN02A",
+    "url": "https://siglent.oss-cn-shenzhen.aliyuncs.com/document/Power%20Supplies/SMM3000X_Datasheet_CN02A.pdf",
+    "file": "pdfs/siglent/SMM3000X_Datasheet_CN02A.pdf",
+    "size": 1787614,
+    "pages": 16
+  },
+  {
+    "name": "SMM3000X_ProgrammingGuide_CN01A_0224",
+    "url": "https://siglent.oss-cn-shenzhen.aliyuncs.com/document/Power%20Supplies/SMM3000X_ProgrammingGuide_CN01A_0224.pdf",
+    "file": "pdfs/siglent/SMM3000X_ProgrammingGuide_CN01A_0224.pdf",
+    "size": 3010630,
+    "pages": 148
+  },
+  {
+    "name": "SMM3000X_UserManual_CN01C",
+    "url": "https://siglent.oss-cn-shenzhen.aliyuncs.com/document/Power%20Supplies/SMM3000X_UserManual_CN01C.pdf",
+    "file": "pdfs/siglent/SMM3000X_UserManual_CN01C.pdf",
+    "size": 6134757,
+    "pages": 100
+  },
+  {
+    "name": "SPB3000X_ProgrammingGuide_CN01B_",
+    "url": "https://siglent.oss-cn-shenzhen.aliyuncs.com/document/Power%20Supplies/SPB3000X_ProgrammingGuide_CN01B_.pdf",
+    "file": "pdfs/siglent/SPB3000X_ProgrammingGuide_CN01B_.pdf",
+    "size": 2992638,
+    "pages": 124
+  },
+  {
+    "name": "SPB3000X_QuickStart_CN01A",
+    "url": "https://siglent.oss-cn-shenzhen.aliyuncs.com/document/Power%20Supplies/SPB3000X_QuickStart_CN01A.pdf",
+    "file": "pdfs/siglent/SPB3000X_QuickStart_CN01A.pdf",
+    "size": 3862640,
+    "pages": 44
+  },
+  {
+    "name": "SPB3000X_UserManual_CN01A_",
+    "url": "https://siglent.oss-cn-shenzhen.aliyuncs.com/document/Power%20Supplies/SPB3000X_UserManual_CN01A_.pdf",
+    "file": "pdfs/siglent/SPB3000X_UserManual_CN01A_.pdf",
+    "size": 5626422,
+    "pages": 106
+  },
+  {
+    "name": "SPB3000X__Datasheet_CN01A",
+    "url": "https://siglent.oss-cn-shenzhen.aliyuncs.com/document/Power%20Supplies/SPB3000X__Datasheet_CN01A.pdf",
+    "file": "pdfs/siglent/SPB3000X__Datasheet_CN01A.pdf",
+    "size": 1477808,
+    "pages": 13
+  },
+  {
+    "name": "SPD4000X_DataSheet_CN01F",
+    "url": "https://siglent.oss-cn-shenzhen.aliyuncs.com/document/Power%20Supplies/SPD4000X_DataSheet_CN01F.pdf",
+    "file": "pdfs/siglent/SPD4000X_DataSheet_CN01F.pdf",
+    "size": 1094007,
+    "pages": 11
+  },
+  {
+    "name": "SPD4051X_DataSheet_CN01A",
+    "url": "https://siglent.oss-cn-shenzhen.aliyuncs.com/document/Power%20Supplies/SPD4051X_DataSheet_CN01A.pdf",
+    "file": "pdfs/siglent/SPD4051X_DataSheet_CN01A.pdf",
+    "size": 962687,
+    "pages": 8
+  },
+  {
+    "name": "SPD4051X_QuickStart_CN01A",
+    "url": "https://siglent.oss-cn-shenzhen.aliyuncs.com/document/Power%20Supplies/SPD4051X_QuickStart_CN01A.pdf",
+    "file": "pdfs/siglent/SPD4051X_QuickStart_CN01A.pdf",
+    "size": 1156875,
+    "pages": 28
+  },
+  {
+    "name": "SPD4051X_UserManual_CN01A",
+    "url": "https://siglent.oss-cn-shenzhen.aliyuncs.com/document/Power%20Supplies/SPD4051X_UserManual_CN01A.pdf",
+    "file": "pdfs/siglent/SPD4051X_UserManual_CN01A.pdf",
+    "size": 2259824,
+    "pages": 67
+  },
+  {
+    "name": "SPS6000X_Datasheet_CN01C",
+    "url": "https://siglent.oss-cn-shenzhen.aliyuncs.com/document/Power%20Supplies/SPS6000X_Datasheet_CN01C.pdf",
+    "file": "pdfs/siglent/SPS6000X_Datasheet_CN01C.pdf",
+    "size": 1014926,
+    "pages": 12
+  },
+  {
+    "name": "SPS6000X_QuickStart_CN01C",
+    "url": "https://siglent.oss-cn-shenzhen.aliyuncs.com/document/Power%20Supplies/SPS6000X_QuickStart_CN01C.pdf",
+    "file": "pdfs/siglent/SPS6000X_QuickStart_CN01C.pdf",
+    "size": 991990,
+    "pages": 24
+  },
+  {
+    "name": "SPS6000X_UserManual_C01B",
+    "url": "https://siglent.oss-cn-shenzhen.aliyuncs.com/document/Power%20Supplies/SPS6000X_UserManual_C01B.pdf",
+    "file": "pdfs/siglent/SPS6000X_UserManual_C01B.pdf",
+    "size": 2586039,
+    "pages": 95
+  },
+  {
+    "name": "STC6P serial_DataSheet_CN01A",
+    "url": "https://siglent.oss-cn-shenzhen.aliyuncs.com/document/Power%20Supplies/STC6P%20serial_DataSheet_CN01A.pdf",
+    "file": "pdfs/siglent/STC6P serial_DataSheet_CN01A.pdf",
+    "size": 881149,
+    "pages": 5
+  },
+  {
+    "name": "265PA_Datasheet_CN01B",
+    "url": "https://siglent.oss-cn-shenzhen.aliyuncs.com/document/RF%20Generator/265PA_Datasheet_CN01B.pdf",
+    "file": "pdfs/siglent/265PA_Datasheet_CN01B.pdf",
+    "size": 520770,
+    "pages": 5
+  },
+  {
+    "name": "40PA_Datasheet_CN01B",
+    "url": "https://siglent.oss-cn-shenzhen.aliyuncs.com/document/RF%20Generator/40PA_Datasheet_CN01B.pdf",
+    "file": "pdfs/siglent/40PA_Datasheet_CN01B.pdf",
+    "size": 521545,
+    "pages": 5
+  },
+  {
+    "name": "RF Cable & Adaptor DataSheet__CN03A",
+    "url": "https://siglent.oss-cn-shenzhen.aliyuncs.com/document/RF%20Generator/RF%20Cable%20%26%20Adaptor%20DataSheet__CN03A.pdf",
+    "file": "pdfs/siglent/RF Cable & Adaptor DataSheet__CN03A.pdf",
+    "size": 1973673,
+    "pages": 30
+  },
+  {
+    "name": "SSG3000X Plus_ProgrammingGuide_CN01A",
+    "url": "https://siglent.oss-cn-shenzhen.aliyuncs.com/document/RF%20Generator/SSG3000X%20Plus_ProgrammingGuide_CN01A.pdf",
+    "file": "pdfs/siglent/SSG3000X Plus_ProgrammingGuide_CN01A.pdf",
+    "size": 3257084,
+    "pages": 122
+  },
+  {
+    "name": "SSG3000X Plus_Quickstart_CN01A",
+    "url": "https://siglent.oss-cn-shenzhen.aliyuncs.com/document/RF%20Generator/SSG3000X%20Plus_Quickstart_CN01A.pdf",
+    "file": "pdfs/siglent/SSG3000X Plus_Quickstart_CN01A.pdf",
+    "size": 1892385,
+    "pages": 28
+  },
+  {
+    "name": "SSG3000X Plus_UserManual_CN01A",
+    "url": "https://siglent.oss-cn-shenzhen.aliyuncs.com/document/RF%20Generator/SSG3000X%20Plus_UserManual_CN01A.pdf",
+    "file": "pdfs/siglent/SSG3000X Plus_UserManual_CN01A.pdf",
+    "size": 3670335,
+    "pages": 92
+  },
+  {
+    "name": "SSG3000X_Plus_Datasheet_CN01B",
+    "url": "https://siglent.oss-cn-shenzhen.aliyuncs.com/document/RF%20Generator/SSG3000X_Plus_Datasheet_CN01B.pdf",
+    "file": "pdfs/siglent/SSG3000X_Plus_Datasheet_CN01B.pdf",
+    "size": 1615070,
+    "pages": 18
+  },
+  {
+    "name": "SSG5000A_datasheet_DS0805A_C02B",
+    "url": "https://siglent.oss-cn-shenzhen.aliyuncs.com/document/RF%20Generator/SSG5000A_datasheet_DS0805A_C02B.pdf",
+    "file": "pdfs/siglent/SSG5000A_datasheet_DS0805A_C02B.pdf",
+    "size": 1782299,
+    "pages": 16
+  },
+  {
+    "name": "SSG6000A_Datasheet_CN03B",
+    "url": "https://siglent.oss-cn-shenzhen.aliyuncs.com/document/RF%20Generator/SSG6000A_Datasheet_CN03B.pdf",
+    "file": "pdfs/siglent/SSG6000A_Datasheet_CN03B.pdf",
+    "size": 1512061,
+    "pages": 21
+  },
+  {
+    "name": "SSG6M80A_Datasheet-CN01B",
+    "url": "https://siglent.oss-cn-shenzhen.aliyuncs.com/document/RF%20Generator/SSG6M80A_Datasheet-CN01B.pdf",
+    "file": "pdfs/siglent/SSG6M80A_Datasheet-CN01B.pdf",
+    "size": 1318505,
+    "pages": 16
+  },
+  {
+    "name": "SSG6M80A_QuickStart_CN01A",
+    "url": "https://siglent.oss-cn-shenzhen.aliyuncs.com/document/RF%20Generator/SSG6M80A_QuickStart_CN01A.pdf",
+    "file": "pdfs/siglent/SSG6M80A_QuickStart_CN01A.pdf",
+    "size": 1707528,
+    "pages": 28
+  },
+  {
+    "name": "SSG6M80A_UserManual_CN01A",
+    "url": "https://siglent.oss-cn-shenzhen.aliyuncs.com/document/RF%20Generator/SSG6M80A_UserManual_CN01A.pdf",
+    "file": "pdfs/siglent/SSG6M80A_UserManual_CN01A.pdf",
+    "size": 3184640,
+    "pages": 87
+  },
+  {
+    "name": "Selection Guide-CN-2026-03",
+    "url": "https://siglent.oss-cn-shenzhen.aliyuncs.com/document/Selection%20Guide-CN-2026-03.pdf",
+    "file": "pdfs/siglent/Selection Guide-CN-2026-03.pdf",
+    "size": 19966198,
+    "pages": 50
+  },
+  {
+    "name": "SDG1000X_Plus_ProgrammingGuide_CN01B",
+    "url": "https://siglent.oss-cn-shenzhen.aliyuncs.com/document/Signal%20Generator/SDG1000X_Plus_ProgrammingGuide_CN01B.pdf",
+    "file": "pdfs/siglent/SDG1000X_Plus_ProgrammingGuide_CN01B.pdf",
+    "size": 2593629,
+    "pages": 105
+  },
+  {
+    "name": "SDG2000X_DataSheet_CN02H",
+    "url": "https://siglent.oss-cn-shenzhen.aliyuncs.com/document/Signal%20Generator/SDG2000X_DataSheet_CN02H.pdf",
+    "file": "pdfs/siglent/SDG2000X_DataSheet_CN02H.pdf",
+    "size": 1658152,
+    "pages": 16
+  },
+  {
+    "name": "SDG2000X_UserManual_CN03A",
+    "url": "https://siglent.oss-cn-shenzhen.aliyuncs.com/document/Signal%20Generator/SDG2000X_UserManual_CN03A.pdf",
+    "file": "pdfs/siglent/SDG2000X_UserManual_CN03A.pdf",
+    "size": 2994855,
+    "pages": 88
+  },
+  {
+    "name": "SDG3000X_DataSheet_CN01D",
+    "url": "https://siglent.oss-cn-shenzhen.aliyuncs.com/document/Signal%20Generator/SDG3000X_DataSheet_CN01D.pdf",
+    "file": "pdfs/siglent/SDG3000X_DataSheet_CN01D.pdf",
+    "size": 1868046,
+    "pages": 18
+  },
+  {
+    "name": "SDG3000X_ProgrammingGuide_CN02A",
+    "url": "https://siglent.oss-cn-shenzhen.aliyuncs.com/document/Signal%20Generator/SDG3000X_ProgrammingGuide_CN02A.pdf",
+    "file": "pdfs/siglent/SDG3000X_ProgrammingGuide_CN02A.pdf",
+    "size": 3120373,
+    "pages": 123
+  },
+  {
+    "name": "SDG3000X_UserManual_CN02A",
+    "url": "https://siglent.oss-cn-shenzhen.aliyuncs.com/document/Signal%20Generator/SDG3000X_UserManual_CN02A.pdf",
+    "file": "pdfs/siglent/SDG3000X_UserManual_CN02A.pdf",
+    "size": 6942550,
+    "pages": 109
+  },
+  {
+    "name": "SDG6000X_ProgrammingGuide_CN03A",
+    "url": "https://siglent.oss-cn-shenzhen.aliyuncs.com/document/Signal%20Generator/SDG6000X_ProgrammingGuide_CN03A.pdf",
+    "file": "pdfs/siglent/SDG6000X_ProgrammingGuide_CN03A.pdf",
+    "size": 2215499,
+    "pages": 111
+  },
+  {
+    "name": "SDG7000A_Programming Guide_CN03A",
+    "url": "https://siglent.oss-cn-shenzhen.aliyuncs.com/document/Signal%20Generator/SDG7000A_Programming%20Guide_CN03A.pdf",
+    "file": "pdfs/siglent/SDG7000A_Programming Guide_CN03A.pdf",
+    "size": 3680725,
+    "pages": 175
+  },
+  {
+    "name": "SDG7000A_UserManual_CN01G",
+    "url": "https://siglent.oss-cn-shenzhen.aliyuncs.com/document/Signal%20Generator/SDG7000A_UserManual_CN01G.pdf",
+    "file": "pdfs/siglent/SDG7000A_UserManual_CN01G.pdf",
+    "size": 8816256,
+    "pages": 126
+  },
+  {
+    "name": "SDG8000A_DataSheet_CN01E",
+    "url": "https://siglent.oss-cn-shenzhen.aliyuncs.com/document/Signal%20Generator/SDG8000A_DataSheet_CN01E.pdf",
+    "file": "pdfs/siglent/SDG8000A_DataSheet_CN01E.pdf",
+    "size": 1842309,
+    "pages": 24
+  },
+  {
+    "name": "SDG8000A_ProgrammingGuide_CN01B",
+    "url": "https://siglent.oss-cn-shenzhen.aliyuncs.com/document/Signal%20Generator/SDG8000A_ProgrammingGuide_CN01B.pdf",
+    "file": "pdfs/siglent/SDG8000A_ProgrammingGuide_CN01B.pdf",
+    "size": 3865704,
+    "pages": 194
+  },
+  {
+    "name": "SDG8000A_UserManual_CN01B",
+    "url": "https://siglent.oss-cn-shenzhen.aliyuncs.com/document/Signal%20Generator/SDG8000A_UserManual_CN01B.pdf",
+    "file": "pdfs/siglent/SDG8000A_UserManual_CN01B.pdf",
+    "size": 7778552,
+    "pages": 124
+  },
+  {
+    "name": "SDG8100A DataSheet_CN01A",
+    "url": "https://siglent.oss-cn-shenzhen.aliyuncs.com/document/Signal%20Generator/SDG8100A%20DataSheet_CN01A.pdf",
+    "file": "pdfs/siglent/SDG8100A DataSheet_CN01A.pdf",
+    "size": 1911382,
+    "pages": 26
+  },
+  {
+    "name": "SDG8100A_QuickStart_CN01A",
+    "url": "https://siglent.oss-cn-shenzhen.aliyuncs.com/document/Signal%20Generator/SDG8100A_QuickStart_CN01A.pdf",
+    "file": "pdfs/siglent/SDG8100A_QuickStart_CN01A.pdf",
+    "size": 1734149,
+    "pages": 24
+  },
+  {
+    "name": "Directional Antenna DataSheet_CN03A",
+    "url": "https://siglent.oss-cn-shenzhen.aliyuncs.com/document/Spectrum%20Analyzer/Directional%20Antenna%20DataSheet_CN03A.pdf",
+    "file": "pdfs/siglent/Directional Antenna DataSheet_CN03A.pdf",
+    "size": 1300207,
+    "pages": 8
+  },
+  {
+    "name": "SHA850A_Datasheet_CN02C",
+    "url": "https://siglent.oss-cn-shenzhen.aliyuncs.com/document/Spectrum%20Analyzer/SHA850A_Datasheet_CN02C.pdf",
+    "file": "pdfs/siglent/SHA850A_Datasheet_CN02C.pdf",
+    "size": 1759576,
+    "pages": 24
+  },
+  {
+    "name": "SHA850A_ServiceManual_EN01A",
+    "url": "https://siglent.oss-cn-shenzhen.aliyuncs.com/document/Spectrum%20Analyzer/SHA850A_ServiceManual_EN01A.pdf",
+    "file": "pdfs/siglent/SHA850A_ServiceManual_EN01A.pdf",
+    "size": 1253763,
+    "pages": 26
+  },
+  {
+    "name": "SHA850A_UserManual&Programming Guide_CN01D",
+    "url": "https://siglent.oss-cn-shenzhen.aliyuncs.com/document/Spectrum%20Analyzer/SHA850A_UserManual%26Programming%20Guide_CN01D.pdf",
+    "file": "pdfs/siglent/SHA850A_UserManual&Programming Guide_CN01D.pdf",
+    "size": 7015185,
+    "pages": 276
+  },
+  {
+    "name": "SSA1015X-C_Datasheet_C02C",
+    "url": "https://siglent.oss-cn-shenzhen.aliyuncs.com/document/Spectrum%20Analyzer/SSA1015X-C_Datasheet_C02C.pdf",
+    "file": "pdfs/siglent/SSA1015X-C_Datasheet_C02C.pdf",
+    "size": 1938270,
+    "pages": 23
+  },
+  {
+    "name": "SSA3000X Plus_Datasheet_C04E",
+    "url": "https://siglent.oss-cn-shenzhen.aliyuncs.com/document/Spectrum%20Analyzer/SSA3000X%20Plus_Datasheet_C04E.pdf",
+    "file": "pdfs/siglent/SSA3000X Plus_Datasheet_C04E.pdf",
+    "size": 2379607,
+    "pages": 20
+  },
+  {
+    "name": "SSA3000X-R_Datasheet_C02D",
+    "url": "https://siglent.oss-cn-shenzhen.aliyuncs.com/document/Spectrum%20Analyzer/SSA3000X-R_Datasheet_C02D.pdf",
+    "file": "pdfs/siglent/SSA3000X-R_Datasheet_C02D.pdf",
+    "size": 2379943,
+    "pages": 24
+  },
+  {
+    "name": "SSA5000A_Datasheet_CN02A",
+    "url": "https://siglent.oss-cn-shenzhen.aliyuncs.com/document/Spectrum%20Analyzer/SSA5000A_Datasheet_CN02A.pdf",
+    "file": "pdfs/siglent/SSA5000A_Datasheet_CN02A.pdf",
+    "size": 1909125,
+    "pages": 26
+  },
+  {
+    "name": "SSA5000A_QuickStart",
+    "url": "https://siglent.oss-cn-shenzhen.aliyuncs.com/document/Spectrum%20Analyzer/SSA5000A_QuickStart.pdf",
+    "file": "pdfs/siglent/SSA5000A_QuickStart.pdf",
+    "size": 1475379,
+    "pages": 20
+  },
+  {
+    "name": "SSA5000A_UserManual_CN02A",
+    "url": "https://siglent.oss-cn-shenzhen.aliyuncs.com/document/Spectrum%20Analyzer/SSA5000A_UserManual_CN02A.pdf",
+    "file": "pdfs/siglent/SSA5000A_UserManual_CN02A.pdf",
+    "size": 10100286,
+    "pages": 397
+  },
+  {
+    "name": "SSA6000A_Datasheet_CN01C",
+    "url": "https://siglent.oss-cn-shenzhen.aliyuncs.com/document/Spectrum%20Analyzer/SSA6000A_Datasheet_CN01C.pdf",
+    "file": "pdfs/siglent/SSA6000A_Datasheet_CN01C.pdf",
+    "size": 2641313,
+    "pages": 28
+  },
+  {
+    "name": "SSA6000A_Quickstart_CN01A",
+    "url": "https://siglent.oss-cn-shenzhen.aliyuncs.com/document/Spectrum%20Analyzer/SSA6000A_Quickstart_CN01A.pdf",
+    "file": "pdfs/siglent/SSA6000A_Quickstart_CN01A.pdf",
+    "size": 1510155,
+    "pages": 20
+  },
+  {
+    "name": "SVA1000X_Datasheet_C05D",
+    "url": "https://siglent.oss-cn-shenzhen.aliyuncs.com/document/Spectrum%20Analyzer/SVA1000X_Datasheet_C05D.pdf",
+    "file": "pdfs/siglent/SVA1000X_Datasheet_C05D.pdf",
+    "size": 2630471,
+    "pages": 22
+  },
+  {
+    "name": "SVA1015X_ServiceManual_SM0703X_E01B",
+    "url": "https://siglent.oss-cn-shenzhen.aliyuncs.com/document/Spectrum%20Analyzer/SVA1015X_ServiceManual_SM0703X_E01B.pdf",
+    "file": "pdfs/siglent/SVA1015X_ServiceManual_SM0703X_E01B.pdf",
+    "size": 1821780,
+    "pages": 39
+  },
+  {
+    "name": "SVA1032X_ServiceManual_SM0703X_E01B",
+    "url": "https://siglent.oss-cn-shenzhen.aliyuncs.com/document/Spectrum%20Analyzer/SVA1032X_ServiceManual_SM0703X_E01B.pdf",
+    "file": "pdfs/siglent/SVA1032X_ServiceManual_SM0703X_E01B.pdf",
+    "size": 1821625,
+    "pages": 40
+  },
+  {
+    "name": "SVA1075X_ServiceManual_SM0703R_E01B",
+    "url": "https://siglent.oss-cn-shenzhen.aliyuncs.com/document/Spectrum%20Analyzer/SVA1075X_ServiceManual_SM0703R_E01B.pdf",
+    "file": "pdfs/siglent/SVA1075X_ServiceManual_SM0703R_E01B.pdf",
+    "size": 2225580,
+    "pages": 40
+  },
+  {
+    "name": "Mechanical Calibration Kit Datasheet_CN03C",
+    "url": "https://siglent.oss-cn-shenzhen.aliyuncs.com/document/Vector%20Network%20Analyzer/Mechanical%20Calibration%20Kit%20Datasheet_CN03C.pdf",
+    "file": "pdfs/siglent/Mechanical Calibration Kit Datasheet_CN03C.pdf",
+    "size": 1706112,
+    "pages": 70
+  },
+  {
+    "name": "SHN900A_UserManual_CN04A",
+    "url": "https://siglent.oss-cn-shenzhen.aliyuncs.com/document/Vector%20Network%20Analyzer/SHN900A_UserManual_CN04A.pdf",
+    "file": "pdfs/siglent/SHN900A_UserManual_CN04A.pdf",
+    "size": 12735656,
+    "pages": 276
+  },
+  {
+    "name": "SNA-TB01_UserManual_CN01A",
+    "url": "https://siglent.oss-cn-shenzhen.aliyuncs.com/document/Vector%20Network%20Analyzer/SNA-TB01_UserManual_CN01A.pdf",
+    "file": "pdfs/siglent/SNA-TB01_UserManual_CN01A.pdf",
+    "size": 2861431,
+    "pages": 40
+  },
+  {
+    "name": "SNA5000B_Datasheet_CN01A_1231",
+    "url": "https://siglent.oss-cn-shenzhen.aliyuncs.com/document/Vector%20Network%20Analyzer/SNA5000B_Datasheet_CN01A_1231.pdf",
+    "file": "pdfs/siglent/SNA5000B_Datasheet_CN01A_1231.pdf",
+    "size": 2640665,
+    "pages": 28
+  },
+  {
+    "name": "SNA5000B_QuickStart_CN01A",
+    "url": "https://siglent.oss-cn-shenzhen.aliyuncs.com/document/Vector%20Network%20Analyzer/SNA5000B_QuickStart_CN01A.pdf",
+    "file": "pdfs/siglent/SNA5000B_QuickStart_CN01A.pdf",
+    "size": 1428693,
+    "pages": 24
+  },
+  {
+    "name": "SNA5000X&SNA5000A_UserManual_CN08A",
+    "url": "https://siglent.oss-cn-shenzhen.aliyuncs.com/document/Vector%20Network%20Analyzer/SNA5000X%26SNA5000A_UserManual_CN08A.pdf",
+    "file": "pdfs/siglent/SNA5000X&SNA5000A_UserManual_CN08A.pdf",
+    "size": 14672704,
+    "pages": 388
+  },
+  {
+    "name": "SNA5000X-E_UserManual_CN08A",
+    "url": "https://siglent.oss-cn-shenzhen.aliyuncs.com/document/Vector%20Network%20Analyzer/SNA5000X-E_UserManual_CN08A.pdf",
+    "file": "pdfs/siglent/SNA5000X-E_UserManual_CN08A.pdf",
+    "size": 11480484,
+    "pages": 323
+  },
+  {
+    "name": "SNA6000A_UserManual_CN05A",
+    "url": "https://siglent.oss-cn-shenzhen.aliyuncs.com/document/Vector%20Network%20Analyzer/SNA6000A_UserManual_CN05A.pdf",
+    "file": "pdfs/siglent/SNA6000A_UserManual_CN05A.pdf",
+    "size": 15333415,
+    "pages": 423
+  },
+  {
+    "name": "SSA UserManual_C02E",
+    "url": "https://siglent.oss-cn-shenzhen.aliyuncs.com/document/Vector%20Network%20Analyzer/SSA%20UserManual_C02E.pdf",
+    "file": "pdfs/siglent/SSA UserManual_C02E.pdf",
+    "size": 6922165,
+    "pages": 173
+  },
+  {
+    "name": "VNA Frequency Extender_DataSheet_CN01A_",
+    "url": "https://siglent.oss-cn-shenzhen.aliyuncs.com/document/Vector%20Network%20Analyzer/VNA%20Frequency%20Extender_DataSheet_CN01A_.pdf",
+    "file": "pdfs/siglent/VNA Frequency Extender_DataSheet_CN01A_.pdf",
+    "size": 942916,
+    "pages": 8
+  },
+  {
+    "name": "VNA_Series_ProgrammingGuide_CN05A - new",
+    "url": "https://siglent.oss-cn-shenzhen.aliyuncs.com/document/Vector%20Network%20Analyzer/VNA_Series_ProgrammingGuide_CN05A%20-%20new.pdf",
+    "file": "pdfs/siglent/VNA_Series_ProgrammingGuide_CN05A - new.pdf",
+    "size": 10387456,
+    "pages": 496
+  }
+]

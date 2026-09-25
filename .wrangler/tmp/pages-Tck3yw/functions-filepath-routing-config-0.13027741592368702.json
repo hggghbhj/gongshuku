@@ -1,0 +1,117 @@
+{
+  "routes": [
+    {
+      "routePath": "/api/check",
+      "mountPath": "/api",
+      "method": "GET",
+      "module": [
+        "api/check.js:onRequestGet"
+      ]
+    },
+    {
+      "routePath": "/api/check",
+      "mountPath": "/api",
+      "method": "OPTIONS",
+      "module": [
+        "api/check.js:onRequestOptions"
+      ]
+    },
+    {
+      "routePath": "/api/cron-health",
+      "mountPath": "/api",
+      "method": "GET",
+      "module": [
+        "api/cron-health.js:onRequestGet"
+      ]
+    },
+    {
+      "routePath": "/api/cron-health",
+      "mountPath": "/api",
+      "method": "OPTIONS",
+      "module": [
+        "api/cron-health.js:onRequestOptions"
+      ]
+    },
+    {
+      "routePath": "/api/cron-health",
+      "mountPath": "/api",
+      "method": "POST",
+      "module": [
+        "api/cron-health.js:onRequestPost"
+      ]
+    },
+    {
+      "routePath": "/api/health",
+      "mountPath": "/api",
+      "method": "GET",
+      "module": [
+        "api/health.js:onRequestGet"
+      ]
+    },
+    {
+      "routePath": "/api/healthmap",
+      "mountPath": "/api",
+      "method": "GET",
+      "module": [
+        "api/healthmap.js:onRequestGet"
+      ]
+    },
+    {
+      "routePath": "/api/healthmap",
+      "mountPath": "/api",
+      "method": "OPTIONS",
+      "module": [
+        "api/healthmap.js:onRequestOptions"
+      ]
+    },
+    {
+      "routePath": "/api/pdf",
+      "mountPath": "/api",
+      "method": "GET",
+      "module": [
+        "api/pdf.js:onRequestGet"
+      ]
+    },
+    {
+      "routePath": "/api/pdf",
+      "mountPath": "/api",
+      "method": "HEAD",
+      "module": [
+        "api/pdf.js:onRequestHead"
+      ]
+    },
+    {
+      "routePath": "/api/pdf",
+      "mountPath": "/api",
+      "method": "OPTIONS",
+      "module": [
+        "api/pdf.js:onRequestOptions"
+      ]
+    },
+    {
+      "routePath": "/api/report",
+      "mountPath": "/api",
+      "method": "GET",
+      "module": [
+        "api/report.js:onRequestGet"
+      ]
+    },
+    {
+      "routePath": "/api/report",
+      "mountPath": "/api",
+      "method": "OPTIONS",
+      "module": [
+        "api/report.js:onRequestOptions"
+      ]
+    },
+    {
+      "routePath": "/api/report",
+      "mountPath": "/api",
+      "method": "POST",
+      "module": [
+        "api/report.js:onRequestPost"
+      ]
+    }
+  ],
+  "baseURL": "/"
+}
