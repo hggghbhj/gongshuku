@@ -24,6 +24,7 @@ STEPS=[
  ("工贝",["python3","crawler_gongbei.py"]),
  ("明纬",["python3","crawler_meanwell.py"]),
  ("山特",["python3","crawler_santak.py"]),
+ ("四方电气",["python3","crawler_simphoenix.py"]),
  ("汇川",["python3","crawler_inovance.py"]),
  ("金田链接",["python3","crawl_jintian_pw.py","--links-only"]),
 ]
