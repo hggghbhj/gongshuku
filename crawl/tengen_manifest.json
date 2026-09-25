@@ -1,92 +1,692 @@
 [
- {
-  "name": "天正说明书_b0a39241",
-  "url": "https://www.tengen.com/public/uploads/files/20260408/b0a3924120e5220e25a5f43a76d0f139.pdf",
-  "pages": 3,
-  "type": "产品手册",
-  "size": 1266831,
-  "brand": "天正",
-  "src": "tengen.com"
- },
- {
-  "name": "天正说明书_f9312b3a",
-  "url": "https://www.tengen.com/public/uploads/files/20260408/f9312b3ab06d3e000bb03ce51c871aa1.pdf",
-  "pages": 6,
-  "type": "产品手册",
-  "size": 1195619,
-  "brand": "天正",
-  "src": "tengen.com"
- },
- {
-  "name": "天正说明书_f9312b3a",
-  "url": "https://www.tengen.com/public/uploads/files/20260313/f9312b3ab06d3e000bb03ce51c871aa1.pdf",
-  "pages": 6,
-  "type": "产品手册",
-  "size": 1195619,
-  "brand": "天正",
-  "src": "tengen.com"
- },
- {
-  "name": "天正说明书_69a75d14",
-  "url": "https://www.tengen.com/public/uploads/files/20250508/69a75d147bbade115fc4e4d94af7ec74.pdf",
-  "pages": 2,
-  "type": "产品手册",
-  "size": 2336667,
-  "brand": "天正",
-  "src": "tengen.com"
- },
- {
-  "name": "天正说明书_365c9e43",
-  "url": "https://www.tengen.com/public/uploads/files/20260317/365c9e43910cb910aa023d083ee8883f.pdf",
-  "pages": 3,
-  "type": "产品手册",
-  "size": 1095572,
-  "brand": "天正",
-  "src": "tengen.com"
- },
- {
-  "name": "天正说明书_590c8622",
-  "url": "https://www.tengen.com/public/uploads/files/20240701/590c862272037f02f9205806cc68ac2f.pdf",
-  "pages": 3,
-  "type": "产品手册",
-  "size": 1164203,
-  "brand": "天正",
-  "src": "tengen.com"
- },
- {
-  "name": "天正说明书_02e6bb54",
-  "url": "https://www.tengen.com/public/uploads/files/20240701/02e6bb54232c9914c91eb97f71411bda.pdf",
-  "pages": 3,
-  "type": "产品手册",
-  "size": 1129004,
-  "brand": "天正",
-  "src": "tengen.com"
- },
- {
-  "name": "天正说明书_81d7493d",
-  "url": "https://www.tengen.com/public/uploads/files/20240701/81d7493dec246758bf16b23601e088f1.pdf",
-  "pages": 4,
-  "type": "产品手册",
-  "size": 1539344,
-  "brand": "天正",
-  "src": "tengen.com"
- },
- {
-  "name": "天正说明书_4a267fec",
-  "url": "https://www.tengen.com/public/uploads/files/20250508/4a267fec8bdbb93367af7cfdd3892f24.pdf",
-  "pages": 1,
-  "type": "产品手册",
-  "size": 1248504,
-  "brand": "天正",
-  "src": "tengen.com"
- },
- {
-  "name": "天正说明书_8e944f5a",
-  "url": "https://www.tengen.com/public/uploads/files/20250528/8e944f5aed69d1bb7f0af8236def57dd.pdf",
-  "pages": 4,
-  "type": "产品手册",
-  "size": 1357956,
-  "brand": "天正",
-  "src": "tengen.com"
- }
+  {
+    "name": "天正说明书_b0a39241",
+    "url": "https://www.tengen.com/public/uploads/files/20260408/b0a3924120e5220e25a5f43a76d0f139.pdf",
+    "pages": 3,
+    "type": "产品手册",
+    "size": 1266831,
+    "brand": "天正",
+    "src": "tengen.com",
+    "file": "pdfs/tengen/b0a3924120e5220e25a5f43a76d0f139.pdf"
+  },
+  {
+    "name": "天正说明书_f9312b3a",
+    "url": "https://www.tengen.com/public/uploads/files/20260408/f9312b3ab06d3e000bb03ce51c871aa1.pdf",
+    "pages": 6,
+    "type": "产品手册",
+    "size": 1195619,
+    "brand": "天正",
+    "src": "tengen.com",
+    "file": "pdfs/tengen/f9312b3ab06d3e000bb03ce51c871aa1.pdf"
+  },
+  {
+    "name": "天正说明书_f9312b3a",
+    "url": "https://www.tengen.com/public/uploads/files/20260313/f9312b3ab06d3e000bb03ce51c871aa1.pdf",
+    "pages": 6,
+    "type": "产品手册",
+    "size": 1195619,
+    "brand": "天正",
+    "src": "tengen.com",
+    "file": "pdfs/tengen/f9312b3ab06d3e000bb03ce51c871aa1.pdf"
+  },
+  {
+    "name": "天正说明书_69a75d14",
+    "url": "https://www.tengen.com/public/uploads/files/20250508/69a75d147bbade115fc4e4d94af7ec74.pdf",
+    "pages": 2,
+    "type": "产品手册",
+    "size": 2336667,
+    "brand": "天正",
+    "src": "tengen.com",
+    "file": "pdfs/tengen/69a75d147bbade115fc4e4d94af7ec74.pdf"
+  },
+  {
+    "name": "天正说明书_365c9e43",
+    "url": "https://www.tengen.com/public/uploads/files/20260317/365c9e43910cb910aa023d083ee8883f.pdf",
+    "pages": 3,
+    "type": "产品手册",
+    "size": 1095572,
+    "brand": "天正",
+    "src": "tengen.com",
+    "file": "pdfs/tengen/365c9e43910cb910aa023d083ee8883f.pdf"
+  },
+  {
+    "name": "天正说明书_590c8622",
+    "url": "https://www.tengen.com/public/uploads/files/20240701/590c862272037f02f9205806cc68ac2f.pdf",
+    "pages": 3,
+    "type": "产品手册",
+    "size": 1164203,
+    "brand": "天正",
+    "src": "tengen.com",
+    "file": "pdfs/tengen/590c862272037f02f9205806cc68ac2f.pdf"
+  },
+  {
+    "name": "天正说明书_02e6bb54",
+    "url": "https://www.tengen.com/public/uploads/files/20240701/02e6bb54232c9914c91eb97f71411bda.pdf",
+    "pages": 3,
+    "type": "产品手册",
+    "size": 1129004,
+    "brand": "天正",
+    "src": "tengen.com",
+    "file": "pdfs/tengen/02e6bb54232c9914c91eb97f71411bda.pdf"
+  },
+  {
+    "name": "天正说明书_81d7493d",
+    "url": "https://www.tengen.com/public/uploads/files/20240701/81d7493dec246758bf16b23601e088f1.pdf",
+    "pages": 4,
+    "type": "产品手册",
+    "size": 1539344,
+    "brand": "天正",
+    "src": "tengen.com",
+    "file": "pdfs/tengen/81d7493dec246758bf16b23601e088f1.pdf"
+  },
+  {
+    "name": "天正说明书_4a267fec",
+    "url": "https://www.tengen.com/public/uploads/files/20250508/4a267fec8bdbb93367af7cfdd3892f24.pdf",
+    "pages": 1,
+    "type": "产品手册",
+    "size": 1248504,
+    "brand": "天正",
+    "src": "tengen.com",
+    "file": "pdfs/tengen/4a267fec8bdbb93367af7cfdd3892f24.pdf"
+  },
+  {
+    "name": "天正说明书_8e944f5a",
+    "url": "https://www.tengen.com/public/uploads/files/20250528/8e944f5aed69d1bb7f0af8236def57dd.pdf",
+    "pages": 4,
+    "type": "产品手册",
+    "size": 1357956,
+    "brand": "天正",
+    "src": "tengen.com",
+    "file": "pdfs/tengen/8e944f5aed69d1bb7f0af8236def57dd.pdf"
+  },
+  {
+    "name": "五星级品牌服务证书2026~2029.pdf",
+    "url": "https://www.tengen.com/public/uploads/files/20260415/4b7ffc7f931660fd3fb71bec98169ea4.pdf",
+    "pages": 1,
+    "type": "产品手册",
+    "size": 1279352,
+    "brand": "天正",
+    "src": "tengen.com",
+    "file": "pdfs/tengen/4b7ffc7f931660fd3fb71bec98169ea4.pdf"
+  },
+  {
+    "name": "CCC报告-TGB3-40(新).pdf",
+    "url": "https://www.tengen.com/public/uploads/files/20250305/219491d6d2ba53ac739e226ec636289c.pdf",
+    "pages": 3,
+    "type": "产品手册",
+    "size": 887853,
+    "brand": "天正",
+    "src": "tengen.com",
+    "file": "pdfs/tengen/219491d6d2ba53ac739e226ec636289c.pdf"
+  },
+  {
+    "name": "CCC证书-TGB3-40(新).pdf",
+    "url": "https://www.tengen.com/public/uploads/files/20250305/a40444766c4fde9812f7309450ba92ad.pdf",
+    "pages": 1,
+    "type": "产品手册",
+    "size": 817122,
+    "brand": "天正",
+    "src": "tengen.com",
+    "file": "pdfs/tengen/a40444766c4fde9812f7309450ba92ad.pdf"
+  },
+  {
+    "name": "产品符合声明-TG-ZSG.pdf",
+    "url": "https://www.tengen.com/public/uploads/files/20260916/c62fb165722b2c57746ab4659ffaa67f.pdf",
+    "pages": 2,
+    "type": "产品手册",
+    "size": 3701015,
+    "brand": "天正",
+    "src": "tengen.com",
+    "file": "pdfs/tengen/c62fb165722b2c57746ab4659ffaa67f.pdf"
+  },
+  {
+    "name": "产品符合声明-TG-ZSF.pdf",
+    "url": "https://www.tengen.com/public/uploads/files/20260916/257ee9b7a8af4f7d58f505bd551ba74f.pdf",
+    "pages": 2,
+    "type": "产品手册",
+    "size": 3700934,
+    "brand": "天正",
+    "src": "tengen.com",
+    "file": "pdfs/tengen/257ee9b7a8af4f7d58f505bd551ba74f.pdf"
+  },
+  {
+    "name": "CCC报告-TGW45G-3200 .pdf",
+    "url": "https://www.tengen.com/public/uploads/files/20260916/3a6671b445b4321eacaa0db75221fb81.pdf",
+    "pages": 4,
+    "type": "产品手册",
+    "size": 514310,
+    "brand": "天正",
+    "src": "tengen.com",
+    "file": "pdfs/tengen/3a6671b445b4321eacaa0db75221fb81.pdf"
+  },
+  {
+    "name": "CCC报告-TGW45G-2000.pdf",
+    "url": "https://www.tengen.com/public/uploads/files/20260916/e11c3aa425eb8fc4c6b4c8f9c873d6ec.pdf",
+    "pages": 4,
+    "type": "产品手册",
+    "size": 514182,
+    "brand": "天正",
+    "src": "tengen.com",
+    "file": "pdfs/tengen/e11c3aa425eb8fc4c6b4c8f9c873d6ec.pdf"
+  },
+  {
+    "name": "CCC报告-TGQ3-80 .pdf",
+    "url": "https://www.tengen.com/public/uploads/files/20260916/45d867cdd96afe76f8689ef3248cd744.pdf",
+    "pages": 3,
+    "type": "产品手册",
+    "size": 836391,
+    "brand": "天正",
+    "src": "tengen.com",
+    "file": "pdfs/tengen/45d867cdd96afe76f8689ef3248cd744.pdf"
+  },
+  {
+    "name": "CCC证书-TGQ3-80 .pdf",
+    "url": "https://www.tengen.com/public/uploads/files/20260916/e5480990e74d24351ad2fc78a1170506.pdf",
+    "pages": 1,
+    "type": "产品手册",
+    "size": 856856,
+    "brand": "天正",
+    "src": "tengen.com",
+    "file": "pdfs/tengen/e5480990e74d24351ad2fc78a1170506.pdf"
+  },
+  {
+    "name": "CCC证书TGM3R-250L、TGM3R-250M ODM.pdf",
+    "url": "https://www.tengen.com/public/uploads/files/20260916/da0646ceb13fa0847a8560756fddcb78.pdf",
+    "pages": 1,
+    "type": "产品手册",
+    "size": 829154,
+    "brand": "天正",
+    "src": "tengen.com",
+    "file": "pdfs/tengen/da0646ceb13fa0847a8560756fddcb78.pdf"
+  },
+  {
+    "name": "CCC证书-TeM5EX-250L .pdf",
+    "url": "https://www.tengen.com/public/uploads/files/20260916/0cd78785eb137e5c9ca36a2d1e218707.pdf",
+    "pages": 2,
+    "type": "产品手册",
+    "size": 967284,
+    "brand": "天正",
+    "src": "tengen.com",
+    "file": "pdfs/tengen/0cd78785eb137e5c9ca36a2d1e218707.pdf"
+  },
+  {
+    "name": "CCC证书-TeM5EX-400L .pdf",
+    "url": "https://www.tengen.com/public/uploads/files/20260916/d9d3e551436bcee1601ef11d49865b1b.pdf",
+    "pages": 2,
+    "type": "产品手册",
+    "size": 972460,
+    "brand": "天正",
+    "src": "tengen.com",
+    "file": "pdfs/tengen/d9d3e551436bcee1601ef11d49865b1b.pdf"
+  },
+  {
+    "name": "CCC证书-TeM5EX-630L .pdf",
+    "url": "https://www.tengen.com/public/uploads/files/20260916/d75cf5a8908d6b02394d1330c990d26c.pdf",
+    "pages": 2,
+    "type": "产品手册",
+    "size": 962917,
+    "brand": "天正",
+    "src": "tengen.com",
+    "file": "pdfs/tengen/d75cf5a8908d6b02394d1330c990d26c.pdf"
+  },
+  {
+    "name": "CCC证书-TeM5EX-800L.pdf",
+    "url": "https://www.tengen.com/public/uploads/files/20260916/79ac9c48918f6aeddd9c76795f137a09.pdf",
+    "pages": 2,
+    "type": "产品手册",
+    "size": 975938,
+    "brand": "天正",
+    "src": "tengen.com",
+    "file": "pdfs/tengen/79ac9c48918f6aeddd9c76795f137a09.pdf"
+  },
+  {
+    "name": "CCC证书-TeW5-630.pdf",
+    "url": "https://www.tengen.com/public/uploads/files/20260916/cd28be8e45fb09b1cd11abb7bd65be1c.pdf",
+    "pages": 1,
+    "type": "产品手册",
+    "size": 900663,
+    "brand": "天正",
+    "src": "tengen.com",
+    "file": "pdfs/tengen/cd28be8e45fb09b1cd11abb7bd65be1c.pdf"
+  },
+  {
+    "name": "CCC证书-TeW5-1250.pdf",
+    "url": "https://www.tengen.com/public/uploads/files/20260916/63cc890f218174604c4431ddff8471da.pdf",
+    "pages": 1,
+    "type": "产品手册",
+    "size": 898605,
+    "brand": "天正",
+    "src": "tengen.com",
+    "file": "pdfs/tengen/63cc890f218174604c4431ddff8471da.pdf"
+  },
+  {
+    "name": "CCC证书-TeW5-2000.pdf",
+    "url": "https://www.tengen.com/public/uploads/files/20260916/a27b007b567e270e300295c798a349fd.pdf",
+    "pages": 1,
+    "type": "产品手册",
+    "size": 905370,
+    "brand": "天正",
+    "src": "tengen.com",
+    "file": "pdfs/tengen/a27b007b567e270e300295c798a349fd.pdf"
+  },
+  {
+    "name": "CCC证书-TeW5-2500.pdf",
+    "url": "https://www.tengen.com/public/uploads/files/20260916/512e7bc4a34623d92bc02d5795357d37.pdf",
+    "pages": 1,
+    "type": "产品手册",
+    "size": 905255,
+    "brand": "天正",
+    "src": "tengen.com",
+    "file": "pdfs/tengen/512e7bc4a34623d92bc02d5795357d37.pdf"
+  },
+  {
+    "name": "CCC报告-TeW5-2500.pdf",
+    "url": "https://www.tengen.com/public/uploads/files/20260916/54f4a5adcf72918b31a177c380a908fd.pdf",
+    "pages": 3,
+    "type": "产品手册",
+    "size": 1551627,
+    "brand": "天正",
+    "src": "tengen.com",
+    "file": "pdfs/tengen/54f4a5adcf72918b31a177c380a908fd.pdf"
+  },
+  {
+    "name": "CCC报告-TeW5-2000.pdf",
+    "url": "https://www.tengen.com/public/uploads/files/20260916/1e0d23c6e2fbe4753b767317d877300e.pdf",
+    "pages": 3,
+    "type": "产品手册",
+    "size": 1647116,
+    "brand": "天正",
+    "src": "tengen.com",
+    "file": "pdfs/tengen/1e0d23c6e2fbe4753b767317d877300e.pdf"
+  },
+  {
+    "name": "CCC报告-TeW5-1250.pdf",
+    "url": "https://www.tengen.com/public/uploads/files/20260916/03a3922e195e7b24efe6a4e602da7061.pdf",
+    "pages": 3,
+    "type": "产品手册",
+    "size": 1544375,
+    "brand": "天正",
+    "src": "tengen.com",
+    "file": "pdfs/tengen/03a3922e195e7b24efe6a4e602da7061.pdf"
+  },
+  {
+    "name": "CCC报告-TeW5-630.pdf",
+    "url": "https://www.tengen.com/public/uploads/files/20260916/15ee180b73f339de86a79b75a3ec4c01.pdf",
+    "pages": 3,
+    "type": "产品手册",
+    "size": 1746481,
+    "brand": "天正",
+    "src": "tengen.com",
+    "file": "pdfs/tengen/15ee180b73f339de86a79b75a3ec4c01.pdf"
+  },
+  {
+    "name": "CCC报告-TeM5EX-800L.pdf",
+    "url": "https://www.tengen.com/public/uploads/files/20260916/53d2a063ed0775c2fcd3d2e0f4fab8c4.pdf",
+    "pages": 4,
+    "type": "产品手册",
+    "size": 1044345,
+    "brand": "天正",
+    "src": "tengen.com",
+    "file": "pdfs/tengen/53d2a063ed0775c2fcd3d2e0f4fab8c4.pdf"
+  },
+  {
+    "name": "CCC报告-TeM5EX-630L.pdf",
+    "url": "https://www.tengen.com/public/uploads/files/20260916/9c6e7eab1d812dc02d1b08b18ab46f59.pdf",
+    "pages": 4,
+    "type": "产品手册",
+    "size": 1247272,
+    "brand": "天正",
+    "src": "tengen.com",
+    "file": "pdfs/tengen/9c6e7eab1d812dc02d1b08b18ab46f59.pdf"
+  },
+  {
+    "name": "CCC报告-TeM5EX-400L.pdf",
+    "url": "https://www.tengen.com/public/uploads/files/20260916/34ef8c1fd18598ba34e1133c3e8235a0.pdf",
+    "pages": 4,
+    "type": "产品手册",
+    "size": 947579,
+    "brand": "天正",
+    "src": "tengen.com",
+    "file": "pdfs/tengen/34ef8c1fd18598ba34e1133c3e8235a0.pdf"
+  },
+  {
+    "name": "CCC报告-TeM5EX-250L.pdf",
+    "url": "https://www.tengen.com/public/uploads/files/20260916/0ae87a67ac0de911085b76a27de04929.pdf",
+    "pages": 4,
+    "type": "产品手册",
+    "size": 1053086,
+    "brand": "天正",
+    "src": "tengen.com",
+    "file": "pdfs/tengen/0ae87a67ac0de911085b76a27de04929.pdf"
+  },
+  {
+    "name": "CCC报告-TeM5EX-100L.pdf",
+    "url": "https://www.tengen.com/public/uploads/files/20260916/b35d70f37ea7d9ceaf9192c72e6e1e48.pdf",
+    "pages": 4,
+    "type": "产品手册",
+    "size": 1207910,
+    "brand": "天正",
+    "src": "tengen.com",
+    "file": "pdfs/tengen/b35d70f37ea7d9ceaf9192c72e6e1e48.pdf"
+  },
+  {
+    "name": "CCC报告-HR6-160.pdf",
+    "url": "https://www.tengen.com/public/uploads/files/20260916/c21129b995efa3594346ac31aed776a2.pdf",
+    "pages": 3,
+    "type": "产品手册",
+    "size": 1350674,
+    "brand": "天正",
+    "src": "tengen.com",
+    "file": "pdfs/tengen/c21129b995efa3594346ac31aed776a2.pdf"
+  },
+  {
+    "name": "CCC证书-HR6-160.pdf",
+    "url": "https://www.tengen.com/public/uploads/files/20260916/a7a631f3d6cb87dcb45abf873da09b24.pdf",
+    "pages": 1,
+    "type": "产品手册",
+    "size": 830710,
+    "brand": "天正",
+    "src": "tengen.com",
+    "file": "pdfs/tengen/a7a631f3d6cb87dcb45abf873da09b24.pdf"
+  },
+  {
+    "name": "CCC证书-THB1-80.pdf",
+    "url": "https://www.tengen.com/public/uploads/files/20260916/32b49610d6bf51718abaa3c68a892964.pdf",
+    "pages": 1,
+    "type": "产品手册",
+    "size": 824368,
+    "brand": "天正",
+    "src": "tengen.com",
+    "file": "pdfs/tengen/32b49610d6bf51718abaa3c68a892964.pdf"
+  },
+  {
+    "name": "CCC报告-THB1-80.pdf",
+    "url": "https://www.tengen.com/public/uploads/files/20260916/256959048a00a97c03455c7b5e083c02.pdf",
+    "pages": 3,
+    "type": "产品手册",
+    "size": 683291,
+    "brand": "天正",
+    "src": "tengen.com",
+    "file": "pdfs/tengen/256959048a00a97c03455c7b5e083c02.pdf"
+  },
+  {
+    "name": "CE报告-TGQ1NPL-250、 TGQKPL-250.pdf",
+    "url": "https://www.tengen.com/public/uploads/files/20260916/84d72b2cb02ad4d61ff5e78ec3f8f54d.pdf",
+    "pages": 2,
+    "type": "产品手册",
+    "size": 255283,
+    "brand": "天正",
+    "src": "tengen.com",
+    "file": "pdfs/tengen/84d72b2cb02ad4d61ff5e78ec3f8f54d.pdf"
+  },
+  {
+    "name": "CE报告-TGQ1NPL-125、 TGQKPL-125.pdf",
+    "url": "https://www.tengen.com/public/uploads/files/20260916/1febaf80691c27fb48212720216e6741.pdf",
+    "pages": 2,
+    "type": "产品手册",
+    "size": 255253,
+    "brand": "天正",
+    "src": "tengen.com",
+    "file": "pdfs/tengen/1febaf80691c27fb48212720216e6741.pdf"
+  },
+  {
+    "name": "CQC证书-TGJX33.pdf",
+    "url": "https://www.tengen.com/public/uploads/files/20260916/f15f5d3f3684adbc6bb74122b7dccad3.pdf",
+    "pages": 2,
+    "type": "产品手册",
+    "size": 1256876,
+    "brand": "天正",
+    "src": "tengen.com",
+    "file": "pdfs/tengen/f15f5d3f3684adbc6bb74122b7dccad3.pdf"
+  },
+  {
+    "name": "CQC报告-TGJX33.pdf",
+    "url": "https://www.tengen.com/public/uploads/files/20260916/46dba07e9d32251f5db428498eabeb04.pdf",
+    "pages": 3,
+    "type": "产品手册",
+    "size": 486907,
+    "brand": "天正",
+    "src": "tengen.com",
+    "file": "pdfs/tengen/46dba07e9d32251f5db428498eabeb04.pdf"
+  },
+  {
+    "name": "CCC证书-TGBMA-125L ODM.pdf",
+    "url": "https://www.tengen.com/public/uploads/files/20260916/366c69bb25e9237018ae86f46a05683a.pdf",
+    "pages": 1,
+    "type": "产品手册",
+    "size": 828190,
+    "brand": "天正",
+    "src": "tengen.com",
+    "file": "pdfs/tengen/366c69bb25e9237018ae86f46a05683a.pdf"
+  },
+  {
+    "name": "CCC报告-TGBMA-125L ODM.pdf",
+    "url": "https://www.tengen.com/public/uploads/files/20260916/0f620806ef32b9c18a5c11f98ad5875f.pdf",
+    "pages": 3,
+    "type": "产品手册",
+    "size": 1632009,
+    "brand": "天正",
+    "src": "tengen.com",
+    "file": "pdfs/tengen/0f620806ef32b9c18a5c11f98ad5875f.pdf"
+  },
+  {
+    "name": "CQC报告-TG-8CKHJ.pdf",
+    "url": "https://www.tengen.com/public/uploads/files/20260916/58f10f87a8fae4a39140baa33ac9548f.pdf",
+    "pages": 2,
+    "type": "产品手册",
+    "size": 672276,
+    "brand": "天正",
+    "src": "tengen.com",
+    "file": "pdfs/tengen/58f10f87a8fae4a39140baa33ac9548f.pdf"
+  },
+  {
+    "name": "CQC证书-TG-8CKHJ.pdf",
+    "url": "https://www.tengen.com/public/uploads/files/20260916/a37c73c922ac6b9721077ec60f069d46.pdf",
+    "pages": 1,
+    "type": "产品手册",
+    "size": 749903,
+    "brand": "天正",
+    "src": "tengen.com",
+    "file": "pdfs/tengen/a37c73c922ac6b9721077ec60f069d46.pdf"
+  },
+  {
+    "name": "CCC证书-TeW3FX-1600、TeW3FX-1600H .pdf",
+    "url": "https://www.tengen.com/public/uploads/files/20260916/4d1a3f58c220bd313d9dbde505811f2c.pdf",
+    "pages": 1,
+    "type": "产品手册",
+    "size": 870806,
+    "brand": "天正",
+    "src": "tengen.com",
+    "file": "pdfs/tengen/4d1a3f58c220bd313d9dbde505811f2c.pdf"
+  },
+  {
+    "name": "CCC报告-TeW3FX-1600、TeW3FX-1600H .pdf",
+    "url": "https://www.tengen.com/public/uploads/files/20260916/f2fdb1e23c3627f93e11f3d209e490d9.pdf",
+    "pages": 3,
+    "type": "产品手册",
+    "size": 355476,
+    "brand": "天正",
+    "src": "tengen.com",
+    "file": "pdfs/tengen/f2fdb1e23c3627f93e11f3d209e490d9.pdf"
+  },
+  {
+    "name": "CCC证书-JQX-38F ODM.pdf",
+    "url": "https://www.tengen.com/public/uploads/files/20260916/24eeb81db7272cb094a6624e6b3596e9.pdf",
+    "pages": 1,
+    "type": "产品手册",
+    "size": 819202,
+    "brand": "天正",
+    "src": "tengen.com",
+    "file": "pdfs/tengen/24eeb81db7272cb094a6624e6b3596e9.pdf"
+  },
+  {
+    "name": "CCC报告-JQX-38F ODM.pdf",
+    "url": "https://www.tengen.com/public/uploads/files/20260916/ccafb2f1d91202c908d844789504fb3c.pdf",
+    "pages": 3,
+    "type": "产品手册",
+    "size": 1636995,
+    "brand": "天正",
+    "src": "tengen.com",
+    "file": "pdfs/tengen/ccafb2f1d91202c908d844789504fb3c.pdf"
+  },
+  {
+    "name": "ISO 45001职业健康管理体系_子证书_浙江天正智能电器有限公司_CN1921099_02_中文.pdf",
+    "url": "https://www.tengen.com/public/uploads/files/20260831/ca7913a32c9a9a120df11ba570441e13.pdf",
+    "pages": 1,
+    "type": "产品手册",
+    "size": 1844480,
+    "brand": "天正",
+    "src": "tengen.com",
+    "file": "pdfs/tengen/ca7913a32c9a9a120df11ba570441e13.pdf"
+  },
+  {
+    "name": "ISO 45001职业健康管理体系_子证书_浙江天正电气股份有限公司（嘉兴）_CN1921099_04_中文.pdf",
+    "url": "https://www.tengen.com/public/uploads/files/20260831/b00cc9460cf74bf8933594aedb7c1baa.pdf",
+    "pages": 1,
+    "type": "产品手册",
+    "size": 1842456,
+    "brand": "天正",
+    "src": "tengen.com",
+    "file": "pdfs/tengen/b00cc9460cf74bf8933594aedb7c1baa.pdf"
+  },
+  {
+    "name": "ISO 45001职业健康管理体系_主证书_浙江天正电气股份有限公司_CN1921099_00_中文.pdf",
+    "url": "https://www.tengen.com/public/uploads/files/20260831/d43bc3ad1512cbbda121409476190682.pdf",
+    "pages": 3,
+    "type": "产品手册",
+    "size": 1814195,
+    "brand": "天正",
+    "src": "tengen.com",
+    "file": "pdfs/tengen/d43bc3ad1512cbbda121409476190682.pdf"
+  },
+  {
+    "name": "ISO 45001职业健康管理体系_主证书_浙江天正电气股份有限公司_CN1921099_00_英文.pdf",
+    "url": "https://www.tengen.com/public/uploads/files/20260831/5591ab21a2d84242a5fa1363af86aeb9.pdf",
+    "pages": 4,
+    "type": "产品手册",
+    "size": 1826681,
+    "brand": "天正",
+    "src": "tengen.com",
+    "file": "pdfs/tengen/5591ab21a2d84242a5fa1363af86aeb9.pdf"
+  },
+  {
+    "name": "ISO 14001环境管理体系_子证书_浙江天正智能电器有限公司_CN0522160_03_中文.pdf",
+    "url": "https://www.tengen.com/public/uploads/files/20260831/ccbb30d7cabaa405a9c544a971e85fcc.pdf",
+    "pages": 1,
+    "type": "产品手册",
+    "size": 1844318,
+    "brand": "天正",
+    "src": "tengen.com",
+    "file": "pdfs/tengen/ccbb30d7cabaa405a9c544a971e85fcc.pdf"
+  },
+  {
+    "name": "ISO 14001环境管理体系_子证书_浙江天正电气股份有限公司（嘉兴）_CN0522160_05_中文.pdf",
+    "url": "https://www.tengen.com/public/uploads/files/20260831/701ab4b07e44bcd0f8b19946f5be1083.pdf",
+    "pages": 1,
+    "type": "产品手册",
+    "size": 1842144,
+    "brand": "天正",
+    "src": "tengen.com",
+    "file": "pdfs/tengen/701ab4b07e44bcd0f8b19946f5be1083.pdf"
+  },
+  {
+    "name": "ISO 14001环境管理体系_主证书_浙江天正电气股份有限公司_CN0522160_00_中文.pdf",
+    "url": "https://www.tengen.com/public/uploads/files/20260831/ee0d474d1e76cdedf95a00bff5cdda89.pdf",
+    "pages": 3,
+    "type": "产品手册",
+    "size": 1813183,
+    "brand": "天正",
+    "src": "tengen.com",
+    "file": "pdfs/tengen/ee0d474d1e76cdedf95a00bff5cdda89.pdf"
+  },
+  {
+    "name": "ISO 14001环境管理体系_主证书_浙江天正电气股份有限公司_CN0522160_00_英文.pdf",
+    "url": "https://www.tengen.com/public/uploads/files/20260831/e695807793576e68d7fc942c4cc4000f.pdf",
+    "pages": 4,
+    "type": "产品手册",
+    "size": 1826635,
+    "brand": "天正",
+    "src": "tengen.com",
+    "file": "pdfs/tengen/e695807793576e68d7fc942c4cc4000f.pdf"
+  },
+  {
+    "name": "ISO 9001质量管理体系_子证书_浙江天正智能电器有限公司_CN030299_03_中文.pdf",
+    "url": "https://www.tengen.com/public/uploads/files/20260831/8001033400eb313fd39bfc2dbac1325c.pdf",
+    "pages": 1,
+    "type": "产品手册",
+    "size": 1851496,
+    "brand": "天正",
+    "src": "tengen.com",
+    "file": "pdfs/tengen/8001033400eb313fd39bfc2dbac1325c.pdf"
+  },
+  {
+    "name": "ISO 9001质量管理体系_子证书_浙江天正电气股份有限公司（嘉兴）_CN030299_06_中文.pdf",
+    "url": "https://www.tengen.com/public/uploads/files/20260831/259e91a6497dbecf7fd66bc04c4791ff.pdf",
+    "pages": 1,
+    "type": "产品手册",
+    "size": 1849287,
+    "brand": "天正",
+    "src": "tengen.com",
+    "file": "pdfs/tengen/259e91a6497dbecf7fd66bc04c4791ff.pdf"
+  },
+  {
+    "name": "ISO 9001质量管理体系_子证书_上海天毅行智能电气有限公司_CN030299_05_中文.pdf",
+    "url": "https://www.tengen.com/public/uploads/files/20260831/f5afe9f56a6dc6519e394ea78b39948c.pdf",
+    "pages": 1,
+    "type": "产品手册",
+    "size": 1857510,
+    "brand": "天正",
+    "src": "tengen.com",
+    "file": "pdfs/tengen/f5afe9f56a6dc6519e394ea78b39948c.pdf"
+  },
+  {
+    "name": "ISO 9001质量管理体系_主证书_浙江天正电气股份有限公司_CN030299_00_中文.pdf",
+    "url": "https://www.tengen.com/public/uploads/files/20260831/fb3740e0f887afde616d6cb86a310590.pdf",
+    "pages": 4,
+    "type": "产品手册",
+    "size": 1839323,
+    "brand": "天正",
+    "src": "tengen.com",
+    "file": "pdfs/tengen/fb3740e0f887afde616d6cb86a310590.pdf"
+  },
+  {
+    "name": "ISO 9001质量管理体系_主证书_浙江天正电气股份有限公司_CN030299_00_英文.pdf",
+    "url": "https://www.tengen.com/public/uploads/files/20260831/bfdb25200c6ee01ba4e53d4e1288aa92.pdf",
+    "pages": 4,
+    "type": "产品手册",
+    "size": 1832338,
+    "brand": "天正",
+    "src": "tengen.com",
+    "file": "pdfs/tengen/bfdb25200c6ee01ba4e53d4e1288aa92.pdf"
+  },
+  {
+    "name": "CCC证书-TGQ3L-63X .pdf",
+    "url": "https://www.tengen.com/public/uploads/files/20260701/67c5eb72b5a2940751f1c25985817370.pdf",
+    "pages": 1,
+    "type": "产品手册",
+    "size": 861187,
+    "brand": "天正",
+    "src": "tengen.com",
+    "file": "pdfs/tengen/67c5eb72b5a2940751f1c25985817370.pdf"
+  },
+  {
+    "name": "CCC报告TGQ3L-63X .pdf",
+    "url": "https://www.tengen.com/public/uploads/files/20260701/cd31af3e342bc351d4956a5b6dc94afd.pdf",
+    "pages": 3,
+    "type": "产品手册",
+    "size": 847028,
+    "brand": "天正",
+    "src": "tengen.com",
+    "file": "pdfs/tengen/cd31af3e342bc351d4956a5b6dc94afd.pdf"
+  },
+  {
+    "name": "CCC证书-TGM5DC-250HUH,TGM5DC-320HUH .pdf",
+    "url": "https://www.tengen.com/public/uploads/files/20260701/988e49852a1b878f05520e74160aaabe.pdf",
+    "pages": 1,
+    "type": "产品手册",
+    "size": 875891,
+    "brand": "天正",
+    "src": "tengen.com",
+    "file": "pdfs/tengen/988e49852a1b878f05520e74160aaabe.pdf"
+  }
 ]

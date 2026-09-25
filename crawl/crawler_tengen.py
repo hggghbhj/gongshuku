@@ -32,30 +32,28 @@ def run():
             old[item['url']] = item
     print(f'天正: 已有 {len(old)} 条记录')
 
-    try:
-        req = urllib.request.Request(DOWNLOAD_PAGE, headers=HEADERS)
-        html = urllib.request.urlopen(req, timeout=30).read().decode('utf-8', errors='ignore')
-    except Exception as e:
-        print(f'抓取页面失败: {e}')
-        return {'brand': 'tengen', 'new': 0, 'fail': 0, 'total': len(old)}
-
-    pdfs = re.findall(r'href=["\']([^"\']*\.pdf)["\']', html, re.I)
-    # 提取PDF旁边的标题
     all_docs = {}
-    for url in pdfs:
-        if url.startswith('//'):
-            url = 'https:' + url
-        elif url.startswith('/'):
-            url = 'https://www.tengen.com' + url
-        elif not url.startswith('http'):
-            url = 'https://www.tengen.com/' + url
-        if 'tengen' not in url: continue
-        # 尝试从URL提取名称，或用hash
-        name = url.split('/')[-1].replace('.pdf','').replace('%20',' ')
-        if len(name) > 30 or re.match(r'^[a-f0-9]{32}$', name):
-            name = '天正说明书_' + name[:8]
-        if url not in all_docs:
-            all_docs[url] = {'name': name[:80], 'url': url, 'type': '产品手册'}
+    # 抓取前8页
+    for page in range(1, 9):
+        DOWNLOAD_PAGE = f'https://www.tengen.com/Download?page={page}' if page > 1 else 'https://www.tengen.com/Download'
+        try:
+            req = urllib.request.Request(DOWNLOAD_PAGE, headers=HEADERS)
+            html = urllib.request.urlopen(req, timeout=30).read().decode('utf-8', errors='ignore')
+        except Exception as e:
+            print(f'  第{page}页失败: {e}')
+            continue
+
+        # 提取PDF链接和标题
+        items = re.findall(r'href=["\'](/public/uploads/files/[^"\']*\.pdf)["\'][^>]*title=["\']([^"\']*)["\']', html, re.I)
+        if not items:
+            items = [(u, u.split('/')[-1]) for u in re.findall(r'href=["\'](/public/uploads/files/[^"\']*\.pdf)["\']', html, re.I)]
+        print(f'  第{page}页: {len(items)} 个PDF')
+        for url, name in items:
+            full_url = 'https://www.tengen.com' + url
+            if full_url not in all_docs:
+                all_docs[full_url] = {'name': name[:80] if name else url.split('/')[-1], 'url': full_url, 'type': '产品手册'}
+        time.sleep(0.3)
+
     print(f'发现 {len(all_docs)} 个PDF')
 
     to_download = [d for d in all_docs.values() if d['url'] not in old or old[d['url']].get('pages',0)==0]
