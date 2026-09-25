@@ -82,6 +82,7 @@ def main():
         manifest.append({"name": name, "url": url, "file": f"pdfs/airtac/{fname}", "size": len(data), "pages": pages})
         existing.add(url)
         new_count += 1
+        MANIFEST.write_text(json.dumps(manifest, ensure_ascii=False, indent=2), encoding="utf-8")
         print(f"  + {name} ({pages}页, {len(data)//1024}KB)")
     MANIFEST.write_text(json.dumps(manifest, ensure_ascii=False, indent=2), encoding="utf-8")
     print(f"\n亚德客: 新增{new_count}, 累计{len(manifest)}")
