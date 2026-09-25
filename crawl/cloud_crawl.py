@@ -59,6 +59,8 @@ STEPS=[
  ("开民电器",["python3","crawler_kaimin.py"]),
  ("协鑫集成",["python3","crawler_gclsi.py"]),
  ("亚泰仪表",["python3","crawler_yatai.py"]),
+ ("正泰电器",["python3","crawler_chint_mobile.py"]),
+ ("亚德客",["python3","crawler_airtac.py"]),
  ("汇川",["python3","crawler_inovance.py"]),
  ("金田链接",["python3","crawl_jintian_pw.py","--links-only"]),
 ]
