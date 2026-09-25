@@ -61,6 +61,7 @@ BRANDS={
  "fotek":{"b":"阳明电机","page":"https://www.fotek.com.tw/zh-cn/download","ty_default":"说明书"},
  "airtac":{"b":"亚德客","page":"https://www.airtac.com/download","ty_default":"产品手册"},
  "airtac":{"b":"亚德客","page":"https://www.airtac.com/download","ty_default":"产品手册"},
+ "chint":{"b":"正泰电器","page":"http://m.chint.com/kunlun/","ty_default":"产品样本"},
  "yatai":{"b":"亚泰仪表","page":"http://www.yatai.sh.cn","ty_default":"使用说明书"},
 }
 def clean_title(t,b):
@@ -278,6 +279,9 @@ for x in load("airtac"):
 for x in load("airtac"):
     info=BRANDS["airtac"]
     out.append(rec(info["b"],info["page"],x.get("type","产品手册"),x.get("name"),"","",x.get("url"),"",x.get("pages")))
+for x in load("chint"):
+    info=BRANDS["chint"]
+    out.append(rec(info["b"],info["page"],x.get("type","产品样本"),x.get("name"),"","",x.get("url"),"",x.get("pages")))
 for x in load("yatai"):
     info=BRANDS["yatai"]
     out.append(rec(info["b"],info["page"],x.get("type","使用说明书"),x.get("name"),"","",x.get("url"),"",x.get("pages")))
