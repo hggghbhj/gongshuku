@@ -132,6 +132,10 @@ def run():
             continue
         to_download.append(d)
     print(f'待下载: {len(to_download)} 个PDF')
+    MAX_PER_RUN = 150
+    if len(to_download) > MAX_PER_RUN:
+        print(f'本次限量下载 {MAX_PER_RUN} 份，剩余 {len(to_download)-MAX_PER_RUN} 份下次cron继续')
+        to_download = to_download[:MAX_PER_RUN]
 
     manifest = list(old.values())
     ok, fail = 0, 0
