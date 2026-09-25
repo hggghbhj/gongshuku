@@ -50,6 +50,9 @@ BRANDS={
  "gskcnc":{"b":"广州数控","page":"https://www.gsk.com.cn/zlxz/index_15.aspx?lcid=18","ty_default":"使用手册"},
  "westpow":{"b":"西安西普","page":"https://www.westpow.com/download-center","ty_default":"说明书"},
  "microsensor":{"b":"麦克传感器","page":"https://www.microsensor.cn/download","ty_default":"产品说明书"},
+ "growatt":{"b":"古瑞瓦特","page":"https://www.growatt.com/support/download","ty_default":"产品手册"},
+ "delixi":{"b":"德力西变频器","page":"https://www.delixidrive.com/list-26-1.html","ty_default":"使用说明书"},
+ "fuling":{"b":"富凌电气","page":"https://www.chinafuling.com/download-3.html","ty_default":"使用手册"},
 }
 def clean_title(t,b):
     t=re.sub(r'\.pdf$','',t or '',flags=re.I).strip()
@@ -233,6 +236,15 @@ for x in load("westpow"):
 for x in load("microsensor"):
     info=BRANDS["microsensor"]
     out.append(rec(info["b"],info["page"],x.get("type","产品说明书"),x.get("name"),"","",x.get("url"),"",x.get("pages")))
+for x in load("growatt"):
+    info=BRANDS["growatt"]
+    out.append(rec(info["b"],info["page"],x.get("type","产品手册"),x.get("name"),"","",x.get("url"),"",x.get("pages")))
+for x in load("delixi"):
+    info=BRANDS["delixi"]
+    out.append(rec(info["b"],info["page"],x.get("type","使用说明书"),x.get("name"),"","",x.get("url"),"",x.get("pages")))
+for x in load("fuling"):
+    info=BRANDS["fuling"]
+    out.append(rec(info["b"],info["page"],x.get("type","使用手册"),x.get("name"),"","",x.get("url"),"",x.get("pages")))
 # 普传：kv_powtran.json 已是标准格式，补充 _sx/src
 if os.path.exists("kv_powtran.json"):
     for x in json.load(open("kv_powtran.json",encoding="utf-8")):
