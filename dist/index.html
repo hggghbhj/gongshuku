@@ -146,6 +146,18 @@ input{font-family:inherit}
 .hero-stats .hs span{font-size:11.5px;color:#8aa7b3;letter-spacing:1px}
 .crawl-status{margin-top:14px;font-size:12px;color:#7fa0ad;font-family:var(--mono);display:flex;align-items:center;gap:8px;flex-wrap:wrap}
 .crawl-status .dot{width:8px;height:8px;border-radius:50%;background:var(--green);display:inline-block;animation:pulse 1.5s infinite}
+.crawl-status .detail-link{color:var(--blue);cursor:pointer;text-decoration:underline;margin-left:4px}
+.crawl-detail{display:none;margin-top:10px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);border-radius:10px;padding:14px 16px;font-size:12px;font-family:var(--mono)}
+.crawl-detail.show{display:block}
+.crawl-detail .cd-summary{margin-bottom:10px;font-weight:700}
+.crawl-detail .cd-ok{color:var(--green)}
+.crawl-detail .cd-fail{color:#ff6b6b}
+.crawl-detail .cd-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:6px 12px}
+.crawl-detail .cd-item{display:flex;align-items:center;gap:6px}
+.crawl-detail .cd-item .s{width:6px;height:6px;border-radius:50%;flex-shrink:0}
+.crawl-detail .cd-item .s.ok{background:var(--green)}
+.crawl-detail .cd-item .s.fail{background:#ff6b6b}
+.crawl-detail .cd-item .reason{color:#ff9999;font-size:11px;margin-left:4px}
 @keyframes pulse{0%,100%{opacity:1}50%{opacity:.3}}
 .sec-h{display:flex;align-items:center;gap:11px;margin:28px 2px 15px}
 .sec-h .bar{width:4px;height:19px;background:var(--orange);border-radius:2px}
@@ -377,6 +389,7 @@ footer a{color:var(--blue)}
         <div class="hs"><b id="h-countdown" style="color:var(--orange)">--:--:--</b><span>距下次自动采集</span></div>
       </div>
       <div class="crawl-status" id="crawlStatus">云端自动采集中…</div>
+      <div class="crawl-detail" id="crawlDetail"></div>
     </div>
 
     <div id="homeHistory" class="home-history" style="display:none"></div>
@@ -925,13 +938,32 @@ function renderHome(){
     var el=document.getElementById('h-new'); if(el)el.textContent=d.last_new||0;
     var cs=document.getElementById('crawlStatus');
     if(cs){
-      var failCount=0;
-      if(d.steps)for(var k in d.steps)if(d.steps[k]!=='ok')failCount++;
-      var statusText=failCount>0?('部分品牌异常('+failCount+')'):'运行正常';
+      var failCount=0,okCount=0,failList=[];
+      if(d.steps)for(var k in d.steps){
+        if(d.steps[k]==='ok')okCount++;else{failCount++;failList.push({name:k,reason:d.steps[k]});}
+      }
+      var totalBrands=okCount+failCount;
+      var statusText=failCount>0?('部分异常('+failCount+'/'+totalBrands+')'):('全部正常('+okCount+'/'+totalBrands+')');
       var newText=d.last_new>0?('，本次新增 '+d.last_new+' 份'):'';
-      cs.innerHTML='<span class="dot"></span> 云端自动采集 '+statusText+' | 最近采集：'+(d.last_run||'--')+newText+' | 每3小时自动增量采集';
+      cs.innerHTML='<span class="dot"></span> 云端自动采集 '+statusText+' | 最近采集：'+(d.last_run||'--')+newText+' | 每3小时自动增量采集 <span class="detail-link" onclick="toggleCrawlDetail()">['+(failCount>0?'查看异常':'查看详情')+']</span>';
+      // 填充详情面板
+      var cd=document.getElementById('crawlDetail');
+      if(cd&&d.steps){
+        var html='<div class="cd-summary">采集状态：<span class="cd-ok">正常 '+okCount+' 个</span> / <span class="cd-fail">异常 '+failCount+' 个</span>（共 '+totalBrands+' 个品牌）</div>';
+        html+='<div class="cd-grid">';
+        for(var b in d.steps){
+          var isOk=d.steps[b]==='ok';
+          html+='<div class="cd-item"><span class="s '+(isOk?'ok':'fail')+'"></span>'+b+(isOk?'':'<span class="reason">'+d.steps[b]+'</span>')+'</div>';
+        }
+        html+='</div>';
+        cd.innerHTML=html;
+      }
     }
   }).catch(function(){});
+}
+function toggleCrawlDetail(){
+  var cd=document.getElementById('crawlDetail');
+  if(cd)cd.classList.toggle('show');
 }
 
 /* ===== 品牌/分类点击 ===== */
