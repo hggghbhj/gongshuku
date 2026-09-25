@@ -250,6 +250,72 @@ input{font-family:inherit}
 .catcard .ct b{font-size:14px;color:var(--ink);display:block}
 .catcard .ct span{font-size:11px;color:var(--mut);font-family:var(--mono)}
 
+/* ===== 入场科技感动画 ===== */
+#intro-overlay{position:fixed;inset:0;z-index:9999;background:var(--bg);
+  display:flex;flex-direction:column;align-items:center;justify-content:center;
+  transition:opacity .6s ease,visibility .6s;overflow:hidden}
+#intro-overlay.hide{opacity:0;visibility:hidden;pointer-events:none}
+#intro-overlay::before{content:"";position:absolute;inset:0;
+  background:
+    linear-gradient(rgba(34,211,238,.03) 1px,transparent 1px),
+    linear-gradient(90deg,rgba(34,211,238,.03) 1px,transparent 1px);
+  background-size:40px 40px;animation:gridMove 20s linear infinite}
+@keyframes gridMove{from{background-position:0 0}to{background-position:40px 40px}}
+#intro-overlay::after{content:"";position:absolute;top:0;left:0;right:0;height:2px;
+  background:linear-gradient(90deg,transparent,var(--cyan),transparent);
+  animation:scanLine 1.5s ease-in-out infinite;box-shadow:0 0 20px var(--cyan)}
+@keyframes scanLine{0%{top:0;opacity:0}10%{opacity:1}90%{opacity:1}100%{top:100%;opacity:0}}
+.intro-logo{font-size:42px;font-weight:900;letter-spacing:4px;margin-bottom:20px;
+  background:linear-gradient(135deg,var(--cyan),var(--orange));-webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;background-clip:text;position:relative;z-index:1;
+  animation:introPulse 1.2s ease-in-out infinite alternate}
+@keyframes introPulse{from{opacity:.7;transform:scale(.98)}to{opacity:1;transform:scale(1.02)}}
+.intro-bar{width:240px;height:3px;background:rgba(255,255,255,.08);border-radius:2px;overflow:hidden;position:relative;z-index:1}
+.intro-bar-fill{height:100%;background:linear-gradient(90deg,var(--cyan),var(--orange));
+  border-radius:2px;animation:introFill 1.2s ease-out forwards;box-shadow:0 0 10px var(--cyan)}
+@keyframes introFill{from{width:0}to{width:100%}}
+.intro-text{margin-top:14px;font-size:12px;color:var(--mut);font-family:var(--mono);letter-spacing:2px;position:relative;z-index:1}
+
+/* 页面内容入场动画 */
+.view{animation:viewFadeIn .5s ease}
+@keyframes viewFadeIn{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
+.hero>*{opacity:0;animation:heroItemIn .6s ease forwards}
+.hero>*:nth-child(1){animation-delay:.1s}
+.hero>*:nth-child(2){animation-delay:.2s}
+.hero>*:nth-child(3){animation-delay:.3s}
+.hero>*:nth-child(4){animation-delay:.4s}
+.hero>*:nth-child(5){animation-delay:.5s}
+.hero>*:nth-child(6){animation-delay:.6s}
+@keyframes heroItemIn{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:translateY(0)}}
+
+/* 数字滚动 */
+.count-up{font-variant-numeric:tabular-nums}
+
+/* 实时更新连接条 */
+.live-connect{display:flex;align-items:center;gap:12px;margin:0 0 14px;padding:12px 18px;
+  background:linear-gradient(90deg,rgba(34,211,238,.08),rgba(255,140,66,.05));
+  border:1px solid rgba(34,211,238,.15);border-radius:12px;backdrop-filter:blur(8px);
+  position:relative;overflow:hidden}
+.live-connect::before{content:"";position:absolute;top:0;left:-100%;width:100%;height:100%;
+  background:linear-gradient(90deg,transparent,rgba(34,211,238,.1),transparent);
+  animation:liveShine 3s ease-in-out infinite}
+@keyframes liveShine{0%{left:-100%}50%,100%{left:100%}}
+.live-connect .lc-dot{width:10px;height:10px;border-radius:50%;background:var(--green);
+  box-shadow:0 0 12px var(--green);animation:pulse 1.5s infinite;flex-shrink:0}
+.live-connect .lc-label{font-size:13px;font-weight:700;color:var(--ink);flex-shrink:0}
+.live-connect .lc-stream{flex:1;overflow:hidden;height:20px;position:relative}
+.live-connect .lc-stream-inner{animation:streamScroll 15s linear infinite;white-space:nowrap;
+  font-size:12px;color:var(--ink2);font-family:var(--mono)}
+@keyframes streamScroll{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+.live-connect .lc-stream-inner span{margin-right:40px}
+.live-connect .lc-stream-inner span .b{color:var(--cyan);font-weight:600}
+.live-connect .lc-stream-inner span .t{color:var(--mut)}
+
+/* 最新入库NEW角标 */
+.doc .new-badge{position:absolute;top:12px;left:16px;background:linear-gradient(135deg,var(--orange),var(--red));
+  color:#fff;font-size:10px;font-weight:800;padding:3px 8px;border-radius:6px;letter-spacing:1px;
+  box-shadow:0 2px 10px rgba(255,140,66,.4);z-index:2}
+
 /* 空态 / 兜底 */
 .empty{background:var(--card);border:1px dashed var(--line2);border-radius:16px;padding:60px 30px;text-align:center;
   backdrop-filter:blur(10px)}
@@ -431,6 +497,11 @@ footer a:hover{color:#fff;text-shadow:0 0 10px rgba(34,211,238,.4)}
 </style>
 </head>
 <body>
+<div id="intro-overlay">
+  <div class="intro-logo">工书库</div>
+  <div class="intro-bar"><div class="intro-bar-fill"></div></div>
+  <div class="intro-text">INITIALIZING SYSTEM...</div>
+</div>
 <!-- ===== 顶栏 ===== -->
 <header class="topbar">
   <div class="topbar-in">
@@ -483,7 +554,12 @@ footer a:hover{color:#fff;text-shadow:0 0 10px rgba(34,211,238,.4)}
     <div class="sec-h"><div class="bar"></div><h3>按设备类型</h3><span>覆盖工控全品类</span></div>
     <div class="catgrid" id="catGrid"></div>
 
-    <div class="sec-h"><div class="bar"></div><h3>最新入库</h3><span>最新版本优先</span></div>
+    <div class="sec-h"><div class="bar"></div><h3>最新入库</h3><span>最新版本优先 · 云端实时更新</span></div>
+    <div class="live-connect">
+      <span class="lc-dot"></span>
+      <span class="lc-label">实时更新</span>
+      <div class="lc-stream"><div class="lc-stream-inner" id="liveStream"></div></div>
+    </div>
     <div class="doclist" id="latestDocs"></div>
   </div>
 </div>
@@ -1016,7 +1092,11 @@ function renderHome(){
   }).join('');
   // 最新入库
   var latest=DOCS.filter(function(d){return d.pdf;}).slice().sort(function(a,b){return b.d>a.d.d?1:-1;}).slice(0,12);
-  document.getElementById('latestDocs').innerHTML=latest.map(function(d){return docCard(d,[]);}).join('');
+  document.getElementById('latestDocs').innerHTML=latest.map(function(d,i){
+    var card=docCard(d,[]);
+    if(i<3)card=card.replace(/(<div class="doc[^>]*>)/,'$1<div class="new-badge">NEW</div>');
+    return card;
+  }).join('');
   // 加载采集统计
   fetch('data/stats.json?v='+Date.now()).then(function(r){return r.json();}).then(function(d){
     var el=document.getElementById('h-new'); if(el)el.textContent=d.last_new||0;
@@ -1941,14 +2021,62 @@ async function healthSync(){
   setInterval(loadMap,240000);
 }
 
+/* ---------- 入场动画 ---------- */
+function hideIntro(){
+  var ov=document.getElementById('intro-overlay');
+  if(ov){ov.classList.add('hide');setTimeout(function(){if(ov.parentNode)ov.parentNode.removeChild(ov);},700);}
+}
+function countUp(el,target,dur){
+  if(!el)return;
+  var start=0,startTime=null;
+  function step(ts){
+    if(!startTime)startTime=ts;
+    var p=Math.min((ts-startTime)/dur,1);
+    var eased=1-Math.pow(1-p,3);
+    el.textContent=Math.floor(start+(target-start)*eased).toLocaleString();
+    if(p<1)requestAnimationFrame(step);
+  }
+  requestAnimationFrame(step);
+}
+function fillLiveStream(){
+  var el=document.getElementById('liveStream');
+  if(!el||typeof DOCS==='undefined'||!DOCS.length)return;
+  var latest=DOCS.filter(function(d){return d.pdf;}).slice().sort(function(a,b){return b.d>a.d?1:-1;}).slice(0,8);
+  var html='';
+  latest.forEach(function(d){
+    var title=d.t.length>20?d.t.substring(0,20)+'…':d.t;
+    html+='<span><span class="b">'+d.b+'</span> <span class="t">'+title+'</span></span>';
+  });
+  el.innerHTML=html+html; // 复制一份实现无缝滚动
+}
+
 /* ---------- 启动 ---------- */
 function boot(){
   injectUI();
   detectApi();
   ping();setInterval(ping,15000);
-  cloudSync(); // 云托管：拉取云端每3小时自动抓取的新增文档
-  healthSync(); // 高频链接自检：打不开/白屏自动检测、标注、沉底
+  cloudSync();
+  healthSync();
   updateFab();
+  // 入场动画：最多1.5秒，数据就绪立即隐藏
+  var introTimer=setTimeout(hideIntro,1500);
+  var origRender=typeof renderHome==='function'?renderHome:null;
+  if(origRender){
+    window.renderHome=function(){
+      origRender.apply(this,arguments);
+      clearTimeout(introTimer);
+      setTimeout(hideIntro,300);
+      // 数字滚动
+      setTimeout(function(){
+        countUp(document.getElementById('h-doc'),parseInt(document.getElementById('h-doc').textContent)||0,800);
+        countUp(document.getElementById('h-pdf'),parseInt(document.getElementById('h-pdf').textContent)||0,800);
+        countUp(document.getElementById('h-brand'),parseInt(document.getElementById('h-brand').textContent)||0,800);
+      },400);
+      fillLiveStream();
+    };
+  }else{
+    setTimeout(hideIntro,800);
+  }
 }
 hookSearch();
 if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',boot);
