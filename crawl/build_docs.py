@@ -35,6 +35,10 @@ BRANDS={
  "hollysys":{"b":"和利时","page":"https://www.hollysys.com/download/products","ty_default":"产品手册"},
  "hongfa":{"b":"宏发","page":"https://www.hongfa.com/en/service/down","ty_default":"产品手册"},
  "haiwell":{"b":"海为","page":"https://haiwell.com/download/download.php?class2=392","ty_default":"产品手册"},
+ "hongrun":{"b":"虹润仪表","page":"https://www.hrgs.com.cn/download/?tag=8","ty_default":"说明书"},
+ "wideplus":{"b":"上润仪表","page":"https://www.wideplus.com/companyfile/2/","ty_default":"使用手册"},
+ "anthone":{"b":"安东仪表","page":"https://anthone.com.cn/index.php/Server/data_download.html","ty_default":"说明书"},
+ "lazzen":{"b":"良信电器","page":"https://www.lazzen.com/support/downloads/product-manual","ty_default":"产品说明书"},
 }
 def clean_title(t,b):
     t=re.sub(r'\.pdf$','',t or '',flags=re.I).strip()
@@ -173,6 +177,18 @@ for x in load("hongfa"):
 for x in load("haiwell"):
     info=BRANDS["haiwell"]
     out.append(rec(info["b"],info["page"],x.get("type","产品手册"),x.get("name"),"","",x.get("url"),"",x.get("pages")))
+for x in load("hongrun"):
+    info=BRANDS["hongrun"]
+    out.append(rec(info["b"],info["page"],x.get("type","说明书"),x.get("name"),"","",x.get("url"),"",x.get("pages")))
+for x in load("wideplus"):
+    info=BRANDS["wideplus"]
+    out.append(rec(info["b"],info["page"],x.get("type","使用手册"),x.get("name"),"","",x.get("url"),"",x.get("pages")))
+for x in load("anthone"):
+    info=BRANDS["anthone"]
+    out.append(rec(info["b"],info["page"],x.get("type","说明书"),x.get("name"),"","",x.get("url"),"",x.get("pages")))
+for x in load("lazzen"):
+    info=BRANDS["lazzen"]
+    out.append(rec(info["b"],info["page"],x.get("type","产品说明书"),x.get("name"),"","",x.get("url"),"",x.get("pages")))
 # 普传：kv_powtran.json 已是标准格式，补充 _sx/src
 if os.path.exists("kv_powtran.json"):
     for x in json.load(open("kv_powtran.json",encoding="utf-8")):

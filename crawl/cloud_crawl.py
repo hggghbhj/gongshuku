@@ -36,6 +36,10 @@ STEPS=[
  ("和利时",["python3","crawler_hollysys.py"]),
  ("宏发",["python3","crawler_hongfa.py"]),
  ("海为",["python3","crawler_haiwell.py"]),
+ ("虹润",["python3","crawler_hongrun.py"]),
+ ("上润",["python3","crawler_wideplus.py"]),
+ ("安东",["python3","crawler_anthone.py"]),
+ ("良信",["python3","crawler_lazzen.py"]),
  ("汇川",["python3","crawler_inovance.py"]),
  ("金田链接",["python3","crawl_jintian_pw.py","--links-only"]),
 ]
