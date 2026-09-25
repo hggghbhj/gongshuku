@@ -40,6 +40,8 @@ STEPS=[
  ("上润",["python3","crawler_wideplus.py"]),
  ("安东",["python3","crawler_anthone.py"]),
  ("良信",["python3","crawler_lazzen.py"]),
+ ("研控",["python3","crawler_yankong.py"]),
+ ("汇辰",["python3","crawler_huceen.py"]),
  ("汇川",["python3","crawler_inovance.py"]),
  ("金田链接",["python3","crawl_jintian_pw.py","--links-only"]),
 ]
