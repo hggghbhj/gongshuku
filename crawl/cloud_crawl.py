@@ -97,10 +97,13 @@ def main():
         except subprocess.TimeoutExpired:
             summary[name]="timeout";print("【%s】超时（下次重试）"%name)
     print("="*50);print("生成 docs-3.js ...")
-    r=subprocess.run(["python3","build_docs.py"],capture_output=True,text=True)
-    print(r.stdout.strip())
-    if r.returncode!=0:
-        print(r.stderr);sys.exit(1)
+    try:
+        r=subprocess.run(["python3","build_docs.py"],capture_output=True,text=True,timeout=120)
+        print(r.stdout.strip())
+        if r.returncode!=0:
+            print("build_docs警告:",(r.stderr or "")[-500:])
+    except Exception as e:
+        print("build_docs异常:",e)
     after=count_manifests()
     # 统计新增
     new_by_brand={}
