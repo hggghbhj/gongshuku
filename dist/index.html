@@ -169,12 +169,13 @@ input{font-family:inherit}
 
 /* 首页 */
 .hero{background:linear-gradient(135deg,#0f172a 0%,#1e293b 50%,#0f172a 100%);border-radius:18px;padding:42px 44px 36px;
-  color:#fff;position:relative;overflow:hidden;margin-bottom:24px;border:1px solid var(--line2);
+  color:#fff;position:relative;overflow:visible;margin-bottom:24px;border:1px solid var(--line2);
   box-shadow:0 8px 40px rgba(0,0,0,.4)}
 .hero::before{content:"";position:absolute;right:-80px;top:-80px;width:320px;height:320px;
-  border:1px solid rgba(34,211,238,.12);border-radius:50%;animation:rotate 30s linear infinite}
+  border:1px solid rgba(34,211,238,.12);border-radius:50%;animation:rotate 30s linear infinite;z-index:0;pointer-events:none}
 .hero::after{content:"";position:absolute;right:40px;top:40px;width:200px;height:200px;
-  border:1px solid rgba(255,140,66,.1);border-radius:50%;animation:rotate 20s linear infinite reverse}
+  border:1px solid rgba(255,140,66,.1);border-radius:50%;animation:rotate 20s linear infinite reverse;z-index:0;pointer-events:none}
+.hero>*{position:relative;z-index:1}
 @keyframes rotate{from{transform:rotate(0)}to{transform:rotate(360deg)}}
 .hero-glow{position:absolute;width:400px;height:400px;border-radius:50%;filter:blur(80px);opacity:.15;pointer-events:none}
 .hero-glow.g1{background:var(--cyan);top:-100px;left:-50px}
@@ -1127,6 +1128,26 @@ function renderHome(){
         html+='</div>';
         cd.innerHTML=html;
       }
+      // 加载健康自检结果
+      fetch('data/health_report.json?v='+Date.now()).then(function(r){return r.json();}).then(function(h){
+        if(!h||!h.bad_count)return;
+        var cs2=document.getElementById('crawlStatus');
+        if(cs2){
+          cs2.innerHTML+=' | <span style="color:var(--red)">链接异常 '+h.bad_count+'</span>';
+          cs2.classList.add('warn');
+        }
+        if(cd){
+          var hhtml='<div class="cd-summary" style="margin-top:14px">链接自检：<span class="cd-fail">异常 '+h.bad_count+' 个</span> / 共 '+h.total+' 个（'+h.check_time+'）</div>';
+          if(h.bad_by_brand){
+            hhtml+='<div class="cd-grid">';
+            for(var bb in h.bad_by_brand){
+              hhtml+='<div class="cd-item"><span class="s fail"></span>'+bb+' <span class="reason">'+h.bad_by_brand[bb]+'个坏链</span></div>';
+            }
+            hhtml+='</div>';
+          }
+          cd.innerHTML+=hhtml;
+        }
+      }).catch(function(){});
     }
   }).catch(function(){});
 }
