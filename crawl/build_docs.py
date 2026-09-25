@@ -20,6 +20,7 @@ BRANDS={
  "inovance":{"b":"汇川技术","page":"https://www.inovance.com/portal-front/home/search","ty_default":"用户手册"},
  "enc":{"b":"易能电气","page":"http://www.enc.net.cn/service/filedownlaod/productType/index.html","ty_default":"使用手册"},
  "cotion":{"b":"合信技术","page":"https://www.co-trust.com/Download/index.html","ty_default":"用户手册"},
+ "gongbei":{"b":"工贝电子","page":"https://jngbdz.com/","ty_default":"产品说明书"},
 }
 def clean_title(t,b):
     t=re.sub(r'\.pdf$','',t or '',flags=re.I).strip()
@@ -113,6 +114,9 @@ for x in load("enc"):
 for x in load("cotion"):
     info=BRANDS["cotion"]
     out.append(rec(info["b"],info["page"],x.get("type","用户手册"),x.get("name"),"","",x.get("url"),"",x.get("pages"),x.get("type","")))
+for x in load("gongbei"):
+    info=BRANDS["gongbei"]
+    out.append(rec(info["b"],info["page"],x.get("type","产品说明书"),x.get("name"),"","",x.get("url"),"",x.get("pages")))
 # 普传：kv_powtran.json 已是标准格式，补充 _sx/src
 if os.path.exists("kv_powtran.json"):
     for x in json.load(open("kv_powtran.json",encoding="utf-8")):

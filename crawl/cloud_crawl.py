@@ -21,6 +21,7 @@ STEPS=[
  ("易驱",["python3","crawler_easydrive.py"]),
  ("易能",["python3","crawler_enc.py"]),
  ("合信",["python3","crawler_cotion.py"]),
+ ("工贝",["python3","crawler_gongbei.py"]),
  ("汇川",["python3","crawler_inovance.py"]),
  ("金田链接",["python3","crawl_jintian_pw.py","--links-only"]),
 ]
