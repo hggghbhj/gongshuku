@@ -30,6 +30,7 @@ BRANDS={
  "ema":{"b":"伊玛电子","page":"https://www.ema-electronic.com/downloadsms.html","ty_default":"产品手册"},
  "banner":{"b":"邦纳","page":"https://www.bannerengineering.com.cn/cn/zh/products/wireless-sensor-networks/reference-library/manuals.html","ty_default":"产品手册"},
  "sanyou":{"b":"三友","page":"https://www.sanyourelay.com/pc/download","ty_default":"产品手册"},
+ "yudian":{"b":"宇电","page":"https://www.yudian.com/down/10039.html","ty_default":"产品手册"},
 }
 def clean_title(t,b):
     t=re.sub(r'\.pdf$','',t or '',flags=re.I).strip()
@@ -152,6 +153,9 @@ for x in load("banner"):
     out.append(rec(info["b"],info["page"],x.get("type","产品手册"),x.get("name"),"","",x.get("url"),"",x.get("pages")))
 for x in load("sanyou"):
     info=BRANDS["sanyou"]
+    out.append(rec(info["b"],info["page"],x.get("type","产品手册"),x.get("name"),"","",x.get("url"),"",x.get("pages")))
+for x in load("yudian"):
+    info=BRANDS["yudian"]
     out.append(rec(info["b"],info["page"],x.get("type","产品手册"),x.get("name"),"","",x.get("url"),"",x.get("pages")))
 # 普传：kv_powtran.json 已是标准格式，补充 _sx/src
 if os.path.exists("kv_powtran.json"):
