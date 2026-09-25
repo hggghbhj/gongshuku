@@ -87,22 +87,27 @@ def main():
     only=sys.argv[1:]
     before=count_manifests()
     summary={}
-    for name,cmd in STEPS:
-        if only and name not in only:continue
-        t0=time.time()
-        try:
-            r=subprocess.run(cmd,capture_output=True,text=True,timeout=900)
-            ok=r.returncode==0
-            summary[name]="ok" if ok else "fail(rc=%d)"%r.returncode
-            tail=(r.stdout or "").strip().splitlines()[-2:]
-            print("【%s】%s %.0fs"%(name,"成功" if ok else "失败",time.time()-t0))
-            for l in tail:print("   ",l)
-            if not ok:print("   stderr:",(r.stderr or "")[-300:])
-        except subprocess.TimeoutExpired:
-            summary[name]="timeout";print("【%s】超时（下次重试）"%name)
+    try:
+        for name,cmd in STEPS:
+            if only and name not in only:continue
+            t0=time.time()
+            try:
+                r=subprocess.run(cmd,capture_output=True,text=True,timeout=900)
+                ok=r.returncode==0
+                summary[name]="ok" if ok else "fail(rc=%d)"%r.returncode
+                tail=(r.stdout or "").strip().splitlines()[-2:]
+                print("【%s】%s %.0fs"%(name,"成功" if ok else "失败",time.time()-t0))
+                for l in tail:print("   ",l)
+                if not ok:print("   stderr:",(r.stderr or "")[-300:])
+            except subprocess.TimeoutExpired:
+                summary[name]="timeout";print("【%s】超时（下次重试）"%name)
+            except Exception as e:
+                summary[name]="error:%s"%e;print("【%s】异常:%s"%(name,e))
+    except Exception as e:
+        print("采集循环全局异常:",e)
     print("="*50);print("生成 docs-3.js ...")
     try:
-        r=subprocess.run(["python3","build_docs.py"],capture_output=True,text=True,timeout=120)
+        r=subprocess.run(["python3","build_docs.py"],capture_output=True,text=True,timeout=180)
         print(r.stdout.strip())
         if r.returncode!=0:
             print("build_docs警告:",(r.stderr or "")[-500:])
@@ -124,6 +129,7 @@ def main():
         "new_by_brand":new_by_brand,
         "total":total,
         "brands":after,
+        "brand_count":len(after),
         "cron":"每3小时自动采集（北京时间 8:17/11:17/14:17/17:17/20:17/23:17/2:17/5:17）",
         "steps":summary,
     }
@@ -132,4 +138,16 @@ def main():
     json.dump({"steps":summary,"last_new":total_new,"total":total},open("cloud_crawl_state.json","w",encoding="utf-8"),ensure_ascii=False,indent=1)
     print("本次新增 %d 份，累计 %d 份。新增明细: %s"%(total_new,total,new_by_brand))
     print("云端采集编排完成:",summary)
-if __name__=="__main__":main()
+if __name__=="__main__":
+    try:
+        main()
+    except Exception as e:
+        print("FATAL:",e)
+        # 致命错误也生成stats
+        import traceback;traceback.print_exc()
+        try:
+            after=count_manifests()
+            stats={"last_run":time.strftime("%Y-%m-%d %H:%M:%S",time.localtime()),"last_new":0,"new_by_brand":{},"total":sum(after.values()),"brands":after,"brand_count":len(after),"cron":"每3小时自动采集","steps":{},"fatal_error":str(e)}
+            os.makedirs("../dist/data",exist_ok=True)
+            json.dump(stats,open("../dist/data/stats.json","w",encoding="utf-8"),ensure_ascii=False,indent=1)
+        except:pass
