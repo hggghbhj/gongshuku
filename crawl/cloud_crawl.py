@@ -19,6 +19,8 @@ STEPS=[
  ("艾莫迅",["python3","crawler_amsamotion.py"]),
  ("森兰",["python3","crawler_senlan.py"]),
  ("易驱",["python3","crawler_easydrive.py"]),
+ ("易能",["python3","crawler_enc.py"]),
+ ("汇川",["python3","crawler_inovance.py"]),
  ("金田链接",["python3","crawl_jintian_pw.py","--links-only"]),
 ]
 def count_manifests():
