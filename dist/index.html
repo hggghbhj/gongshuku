@@ -168,21 +168,12 @@ input{font-family:inherit}
 .doc.direct{border-left:3px solid var(--green);padding-left:17px}
 
 /* 首页 */
-.hero{background:linear-gradient(135deg,#0f172a 0%,#1e293b 50%,#0f172a 100%);border-radius:18px;padding:42px 44px 36px;
-  color:#fff;position:relative;overflow:visible;margin-bottom:24px;border:1px solid var(--line2);
+.hero{background:linear-gradient(135deg,#0d1526 0%,#162032 50%,#0d1526 100%);border-radius:18px;padding:42px 44px 36px;
+  color:#fff;position:relative;margin-bottom:24px;border:1px solid rgba(100,140,200,.2);
   box-shadow:0 8px 40px rgba(0,0,0,.4)}
-.hero::before{content:"";position:absolute;right:-80px;top:-80px;width:320px;height:320px;
-  border:1px solid rgba(34,211,238,.12);border-radius:50%;animation:rotate 30s linear infinite;z-index:0;pointer-events:none}
-.hero::after{content:"";position:absolute;right:40px;top:40px;width:200px;height:200px;
-  border:1px solid rgba(255,140,66,.1);border-radius:50%;animation:rotate 20s linear infinite reverse;z-index:0;pointer-events:none}
-.hero>*{position:relative;z-index:1}
-@keyframes rotate{from{transform:rotate(0)}to{transform:rotate(360deg)}}
-.hero-glow{position:absolute;width:400px;height:400px;border-radius:50%;filter:blur(80px);opacity:.15;pointer-events:none}
-.hero-glow.g1{background:var(--cyan);top:-100px;left:-50px}
-.hero-glow.g2{background:var(--orange);bottom:-100px;right:-50px}
-.hero h1{font-size:28px;font-weight:900;letter-spacing:.5px;margin-bottom:10px;position:relative;line-height:1.3}
-.hero h1 .o{color:var(--orange);text-shadow:0 0 24px rgba(255,140,66,.5)}
-.hero p{color:var(--ink2);font-size:14px;max-width:640px;position:relative;margin-bottom:24px;line-height:1.7}
+.hero h1{font-size:28px;font-weight:900;letter-spacing:.5px;margin-bottom:10px;position:relative;line-height:1.3;color:#fff}
+.hero h1 .o{color:var(--orange);text-shadow:0 1px 6px rgba(0,0,0,.5)}
+.hero p{color:#c8d4e6;font-size:14px;max-width:640px;position:relative;margin-bottom:24px;line-height:1.7}
 .hero-search{position:relative;max-width:720px}
 .hero-search .searchbox{box-shadow:0 10px 40px rgba(0,0,0,.4),0 0 0 1px rgba(34,211,238,.1)}
 .hero-stats{display:flex;gap:36px;margin-top:28px;position:relative;flex-wrap:wrap}
@@ -190,10 +181,10 @@ input{font-family:inherit}
 .hero-stats .hs::after{content:"";position:absolute;right:-18px;top:50%;transform:translateY(-50%);width:1px;height:30px;background:var(--line)}
 .hero-stats .hs:last-child::after{display:none}
 .hero-stats .hs b{font-family:var(--mono);font-size:26px;font-weight:700;
-  color:#fff;display:block;line-height:1;text-shadow:0 0 20px rgba(34,211,238,.4)}
-.hero-stats .hs span{font-size:11.5px;color:var(--ink2);letter-spacing:1px;margin-top:6px;display:block}
-.hero-stats .hs b#h-new{color:var(--green);text-shadow:0 0 20px rgba(0,229,160,.5)}
-.hero-stats .hs b#h-countdown{color:var(--orange);text-shadow:0 0 20px rgba(255,140,66,.5)}
+  color:#fff;display:block;line-height:1}
+.hero-stats .hs span{font-size:11.5px;color:#a8b8d0;letter-spacing:1px;margin-top:6px;display:block}
+.hero-stats .hs b#h-new{color:var(--green)}
+.hero-stats .hs b#h-countdown{color:var(--orange)}
 .crawl-status{margin-top:16px;font-size:12px;color:var(--ink2);font-family:var(--mono);
   display:flex;align-items:center;gap:10px;flex-wrap:wrap;
   background:rgba(0,229,160,.06);border:1px solid rgba(0,229,160,.2);border-radius:10px;padding:10px 14px;
@@ -284,14 +275,7 @@ input{font-family:inherit}
 /* 页面内容入场动画 */
 .view{animation:viewFadeIn .5s ease}
 @keyframes viewFadeIn{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
-.hero>*{opacity:0;animation:heroItemIn .6s ease forwards}
-.hero>*:nth-child(1){animation-delay:.1s}
-.hero>*:nth-child(2){animation-delay:.2s}
-.hero>*:nth-child(3){animation-delay:.3s}
-.hero>*:nth-child(4){animation-delay:.4s}
-.hero>*:nth-child(5){animation-delay:.5s}
-.hero>*:nth-child(6){animation-delay:.6s}
-@keyframes heroItemIn{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:translateY(0)}}
+/* hero内容直接显示，不做入场动画 */
 
 /* 数字滚动 */
 .count-up{font-variant-numeric:tabular-nums}
@@ -529,16 +513,13 @@ footer a:hover{color:#fff;text-shadow:0 0 10px rgba(34,211,238,.4)}
 <div id="view-home" class="view">
   <div style="max-width:1440px;margin:0 auto;padding:24px">
     <div class="hero">
-      <div class="hero-glow g1"></div>
-      <div class="hero-glow g2"></div>
       <h1>全网工业说明书，<span class="o">输入型号直接取</span></h1>
       <p>覆盖 PLC、变频器、HMI、伺服、传感器、制冷压缩机与控制器等工控设备。支持中英文、拼音、型号片段、相似词模糊匹配；外文手册一键翻译，PDF 可在线阅读或下载。</p>
       <div class="hero-search">
         <div class="searchbox">
-          <input id="qhome" autocomplete="off" placeholder="试试：G120C、FX5U、ACS580、VLT、比泽尔、FC302、S7-1500…" oninput="onSug(this.value,'home')" onfocus="onSug(this.value,'home')" onkeydown="onKey(event,'home')">
+          <input id="qhome" autocomplete="off" placeholder="试试：G120C、FX5U、ACS580、VLT、比泽尔、FC302、S7-1500…" onkeydown="onKey(event,'home')">
           <button class="search-btn" onclick="doSearch('home')"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4-4"/></svg>直取文档</button>
         </div>
-        <div class="suggest" id="sug-home"></div>
       </div>
       <div class="hero-stats">
         <div class="hs"><b id="h-doc">0</b><span>文档总量</span></div>
@@ -1600,10 +1581,8 @@ function updateFab(){
 
 /* ---------- 注入 UI ---------- */
 function injectUI(){
-  const fab=document.createElement('button');
-  fab.id='gskFab';fab.innerHTML='🤖<span class="dot"></span>';
-  fab.onclick=openChat;
-  document.body.appendChild(fab);
+  // AI助手已临时禁用
+  return;
 
   const panel=document.createElement('div');panel.id='gskPanel';
   panel.innerHTML=
