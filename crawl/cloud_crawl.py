@@ -63,6 +63,10 @@ STEPS=[
  ("亚德客",["python3","crawler_airtac.py"]),
  ("汇川",["python3","crawler_inovance.py"]),
  ("金田链接",["python3","crawl_jintian_pw.py","--links-only"]),
+ ("佳尔灵",["python3","crawler_jelpc.py"]),
+ ("鼎阳科技",["python3","crawler_siglent.py"]),
+ ("汉泰克",["python3","crawler_hantek.py"]),
+ ("鸣志",["python3","crawler_moons.py"]),
 ]
 def count_manifests():
     """统计所有 manifest 的记录数（按品牌key）"""

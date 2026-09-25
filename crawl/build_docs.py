@@ -65,6 +65,7 @@ BRANDS={
  "yatai":{"b":"亚泰仪表","page":"http://www.yatai.sh.cn","ty_default":"使用说明书"},
  "siglent":{"b":"鼎阳科技","page":"https://www.siglent.com/support/resource/","ty_default":"用户手册"},
  "hantek":{"b":"汉泰克","page":"https://www.hantek.com.cn/download","ty_default":"用户手册"},
+ "moons":{"b":"鸣志","page":"https://www.moons.com.cn/support-training/downloads","ty_default":"产品手册"},
 }
 def clean_title(t,b):
     t=re.sub(r'\.pdf$','',t or '',flags=re.I).strip()
@@ -293,6 +294,9 @@ for x in load("siglent"):
 for x in load("hantek"):
     info=BRANDS["hantek"]
     out.append(rec(info["b"],info["page"],x.get("type","用户手册"),x.get("name"),"","",x.get("url"),"",x.get("pages")))
+for x in load("moons"):
+    info=BRANDS["moons"]
+    out.append(rec(info["b"],info["page"],x.get("type","产品手册"),x.get("name"),"","",x.get("url"),"",x.get("pages")))
 # 普传：kv_powtran.json 已是标准格式，补充 _sx/src
 if os.path.exists("kv_powtran.json"):
     for x in json.load(open("kv_powtran.json",encoding="utf-8")):
