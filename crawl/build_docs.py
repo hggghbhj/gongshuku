@@ -27,6 +27,7 @@ BRANDS={
  "gtake":{"b":"吉泰科","page":"https://www.gtake.com/downloads/","ty_default":"用户手册"},
  "tengen":{"b":"天正电气","page":"https://www.tengen.com/Download.html","ty_default":"产品手册"},
  "hiconics":{"b":"合康新能","page":"https://www.hiconics.com/category/download1.html","ty_default":"产品手册"},
+ "ema":{"b":"伊玛电子","page":"https://www.ema-electronic.com/downloadsms.html","ty_default":"产品手册"},
 }
 def clean_title(t,b):
     t=re.sub(r'\.pdf$','',t or '',flags=re.I).strip()
@@ -140,6 +141,9 @@ for x in load("tengen"):
     out.append(rec(info["b"],info["page"],x.get("type","产品手册"),x.get("name"),"","",x.get("url"),"",x.get("pages")))
 for x in load("hiconics"):
     info=BRANDS["hiconics"]
+    out.append(rec(info["b"],info["page"],x.get("type","产品手册"),x.get("name"),"","",x.get("url"),"",x.get("pages")))
+for x in load("ema"):
+    info=BRANDS["ema"]
     out.append(rec(info["b"],info["page"],x.get("type","产品手册"),x.get("name"),"","",x.get("url"),"",x.get("pages")))
 # 普传：kv_powtran.json 已是标准格式，补充 _sx/src
 if os.path.exists("kv_powtran.json"):
