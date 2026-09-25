@@ -58,9 +58,13 @@ def main():
     all_pdfs = list(dict.fromkeys(all_pdfs))
     print(f"  去重后共 {len(all_pdfs)} 个PDF")
     # 3. 下载PDF
+    bad_urls = set()
+    BAD_FILE = BASE / "airtac_bad_urls.json"
+    if BAD_FILE.exists():
+        bad_urls = set(json.loads(BAD_FILE.read_text(encoding="utf-8")))
     new_count = 0
     for url in all_pdfs:
-        if url in existing:
+        if url in existing or url in bad_urls:
             continue
         fname = url.split("/")[-1]
         fname = re.sub(r'[\\/:*?"<>|]', "_", fname)[:100]
@@ -68,15 +72,18 @@ def main():
         data = fetch(url, timeout=60)
         if not data or not data.startswith(b"%PDF"):
             print(f"  跳过(非PDF): {fname}")
+            bad_urls.add(url)
             continue
         if len(data) < 2000:
             print(f"  跳过(太小): {fname}")
+            bad_urls.add(url)
             continue
         fp.write_bytes(data)
         pages = get_pages_count(fp)
         if pages == 0:
             print(f"  跳过(0页): {fname}")
             fp.unlink(missing_ok=True)
+            bad_urls.add(url)
             continue
         name = fname.replace(".PDF","").replace(".pdf","")
         manifest.append({"name": name, "url": url, "file": f"pdfs/airtac/{fname}", "size": len(data), "pages": pages})
@@ -84,8 +91,9 @@ def main():
         new_count += 1
         MANIFEST.write_text(json.dumps(manifest, ensure_ascii=False, indent=2), encoding="utf-8")
         print(f"  + {name} ({pages}页, {len(data)//1024}KB)")
+    BAD_FILE.write_text(json.dumps(list(bad_urls), ensure_ascii=False, indent=2), encoding="utf-8")
     MANIFEST.write_text(json.dumps(manifest, ensure_ascii=False, indent=2), encoding="utf-8")
-    print(f"\n亚德客: 新增{new_count}, 累计{len(manifest)}")
+    print(f"\n亚德客: 新增{new_count}, 累计{len(manifest)}, 坏链接{len(bad_urls)}个")
 
 if __name__ == "__main__":
     main()
