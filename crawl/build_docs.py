@@ -24,6 +24,7 @@ BRANDS={
  "meanwell":{"b":"明纬电源","page":"https://www.meanwell.com.cn/productManual.aspx","ty_default":"产品手册"},
  "santak":{"b":"山特UPS","page":"https://www.santak.com.cn/page/santak-downloads.html","ty_default":"使用手册"},
  "simphoenix":{"b":"四方电气","page":"https://www.simphoenix.com/download/manual/","ty_default":"用户手册"},
+ "gtake":{"b":"吉泰科","page":"https://www.gtake.com/downloads/","ty_default":"用户手册"},
 }
 def clean_title(t,b):
     t=re.sub(r'\.pdf$','',t or '',flags=re.I).strip()
@@ -128,6 +129,9 @@ for x in load("santak"):
     out.append(rec(info["b"],info["page"],x.get("type","使用手册"),x.get("name"),"","",x.get("url"),"",x.get("pages")))
 for x in load("simphoenix"):
     info=BRANDS["simphoenix"]
+    out.append(rec(info["b"],info["page"],x.get("type","用户手册"),x.get("name"),"","",x.get("url"),"",x.get("pages")))
+for x in load("gtake"):
+    info=BRANDS["gtake"]
     out.append(rec(info["b"],info["page"],x.get("type","用户手册"),x.get("name"),"","",x.get("url"),"",x.get("pages")))
 # 普传：kv_powtran.json 已是标准格式，补充 _sx/src
 if os.path.exists("kv_powtran.json"):
