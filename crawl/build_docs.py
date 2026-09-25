@@ -41,6 +41,7 @@ BRANDS={
  "lazzen":{"b":"良信电器","page":"https://www.lazzen.com/support/downloads/product-manual","ty_default":"产品说明书"},
  "yankong":{"b":"研控自动化","page":"https://www.yankong.com/download.html","ty_default":"产品手册"},
  "huceen":{"b":"汇辰自动化","page":"https://www.huceen.cn/download/list-274-cn.html","ty_default":"产品手册"},
+ "mege":{"b":"米格电机","page":"https://www.mege.cn/index.php?ac=Article&at=List&tid=42","ty_default":"产品样册"},
 }
 def clean_title(t,b):
     t=re.sub(r'\.pdf$','',t or '',flags=re.I).strip()
@@ -197,6 +198,9 @@ for x in load("yankong"):
 for x in load("huceen"):
     info=BRANDS["huceen"]
     out.append(rec(info["b"],info["page"],x.get("type","产品手册"),x.get("name"),"","",x.get("url"),"",x.get("pages")))
+for x in load("mege"):
+    info=BRANDS["mege"]
+    out.append(rec(info["b"],info["page"],x.get("type","产品样册"),x.get("name"),"","",x.get("url"),"",x.get("pages")))
 # 普传：kv_powtran.json 已是标准格式，补充 _sx/src
 if os.path.exists("kv_powtran.json"):
     for x in json.load(open("kv_powtran.json",encoding="utf-8")):
