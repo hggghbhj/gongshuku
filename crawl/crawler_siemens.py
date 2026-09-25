@@ -55,8 +55,8 @@ def main():
             url = f"https://support.industry.siemens.com/cs/document/{doc_id}/"
             print(f"\n  文档 {doc_id}: {doc_name}")
             try:
-                page.goto(url, timeout=30000, wait_until="domcontentloaded")
-                time.sleep(8)
+                page.goto(url, timeout=45000, wait_until="domcontentloaded")
+                time.sleep(12)
                 # 用简单正则从HTML提取PDF链接
                 html = page.content()
                 pdf_links = list(dict.fromkeys(re.findall(r'https://[^"\s]+\.pdf', html, re.I)))
