@@ -179,7 +179,7 @@ input{font-family:inherit}
 .hero-glow.g1{background:var(--cyan);top:-100px;left:-50px}
 .hero-glow.g2{background:var(--orange);bottom:-100px;right:-50px}
 .hero h1{font-size:28px;font-weight:900;letter-spacing:.5px;margin-bottom:10px;position:relative;line-height:1.3}
-.hero h1 .o{background:linear-gradient(90deg,var(--orange),var(--cyan));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.hero h1 .o{color:var(--orange);text-shadow:0 0 24px rgba(255,140,66,.5)}
 .hero p{color:var(--ink2);font-size:14px;max-width:640px;position:relative;margin-bottom:24px;line-height:1.7}
 .hero-search{position:relative;max-width:720px}
 .hero-search .searchbox{box-shadow:0 10px 40px rgba(0,0,0,.4),0 0 0 1px rgba(34,211,238,.1)}
@@ -188,11 +188,10 @@ input{font-family:inherit}
 .hero-stats .hs::after{content:"";position:absolute;right:-18px;top:50%;transform:translateY(-50%);width:1px;height:30px;background:var(--line)}
 .hero-stats .hs:last-child::after{display:none}
 .hero-stats .hs b{font-family:var(--mono);font-size:26px;font-weight:700;
-  background:linear-gradient(135deg,#fff,#7dd3fc);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;
-  display:block;line-height:1;text-shadow:0 0 30px rgba(34,211,238,.3)}
-.hero-stats .hs span{font-size:11.5px;color:var(--mut);letter-spacing:1px;margin-top:6px;display:block}
-.hero-stats .hs b#h-new{background:linear-gradient(135deg,var(--green),#7dd3fc);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
-.hero-stats .hs b#h-countdown{background:linear-gradient(135deg,var(--orange),var(--amber));-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+  color:#fff;display:block;line-height:1;text-shadow:0 0 20px rgba(34,211,238,.4)}
+.hero-stats .hs span{font-size:11.5px;color:var(--ink2);letter-spacing:1px;margin-top:6px;display:block}
+.hero-stats .hs b#h-new{color:var(--green);text-shadow:0 0 20px rgba(0,229,160,.5)}
+.hero-stats .hs b#h-countdown{color:var(--orange);text-shadow:0 0 20px rgba(255,140,66,.5)}
 .crawl-status{margin-top:16px;font-size:12px;color:var(--ink2);font-family:var(--mono);
   display:flex;align-items:center;gap:10px;flex-wrap:wrap;
   background:rgba(0,229,160,.06);border:1px solid rgba(0,229,160,.2);border-radius:10px;padding:10px 14px;
@@ -204,9 +203,9 @@ input{font-family:inherit}
 .crawl-status .detail-link{color:var(--cyan);cursor:pointer;text-decoration:none;margin-left:6px;font-weight:600;
   padding:3px 10px;border-radius:6px;background:rgba(34,211,238,.1);transition:.15s}
 .crawl-status .detail-link:hover{background:rgba(34,211,238,.2)}
-.crawl-detail{display:none;margin-top:12px;background:rgba(15,23,42,.8);border:1px solid var(--line2);
-  border-radius:12px;padding:16px 18px;font-size:12px;font-family:var(--mono);max-height:320px;overflow-y:auto;
-  backdrop-filter:blur(12px)}
+.crawl-detail{display:none;margin:-10px 0 20px;background:rgba(15,23,42,.9);border:1px solid var(--line2);
+  border-radius:12px;padding:16px 18px;font-size:12px;font-family:var(--mono);max-height:360px;overflow-y:auto;
+  backdrop-filter:blur(12px);box-shadow:0 8px 30px rgba(0,0,0,.3)}
 .crawl-detail.show{display:block;animation:fadeIn .3s ease}
 @keyframes fadeIn{from{opacity:0;transform:translateY(-6px)}to{opacity:1;transform:translateY(0)}}
 .crawl-detail .cd-summary{margin-bottom:12px;font-weight:700;font-size:13px;color:var(--ink)}
@@ -222,8 +221,7 @@ input{font-family:inherit}
 @keyframes pulse{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.4;transform:scale(.85)}}
 .sec-h{display:flex;align-items:center;gap:12px;margin:32px 2px 16px}
 .sec-h .bar{width:4px;height:20px;background:linear-gradient(180deg,var(--cyan),var(--blue));border-radius:2px;box-shadow:0 0 10px rgba(34,211,238,.4)}
-.sec-h h3{font-size:17px;font-weight:900;color:var(--ink);
-  background:linear-gradient(90deg,#fff,#a8d8ff);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.sec-h h3{font-size:17px;font-weight:900;color:var(--ink)}
 .sec-h span{font-size:12px;color:var(--mut)}
 .sec-h .more{margin-left:auto;font-size:12.5px;color:var(--cyan);cursor:pointer;font-weight:600;transition:.15s}
 .sec-h .more:hover{color:#fff;text-shadow:0 0 10px rgba(34,211,238,.5)}
@@ -544,8 +542,8 @@ footer a:hover{color:#fff;text-shadow:0 0 10px rgba(34,211,238,.4)}
         <div class="hs"><b id="h-countdown" style="color:var(--orange)">--:--:--</b><span>距下次自动采集</span></div>
       </div>
       <div class="crawl-status" id="crawlStatus">云端自动采集中…</div>
-      <div class="crawl-detail" id="crawlDetail"></div>
     </div>
+    <div class="crawl-detail" id="crawlDetail"></div>
 
     <div id="homeHistory" class="home-history" style="display:none"></div>
     <div class="sec-h"><div class="bar"></div><h3>热门品牌</h3><span>点击查看该品牌全部手册</span><div class="more" onclick="go('allbrands')">全部品牌 ›</div></div>
