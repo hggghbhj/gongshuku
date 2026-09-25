@@ -54,6 +54,11 @@ STEPS=[
  ("古瑞瓦特",["python3","crawler_growatt.py"]),
  ("德力西变频器",["python3","crawler_delixi.py"]),
  ("富凌电气",["python3","crawler_fuling.py"]),
+ ("申乐电气",["python3","crawler_shenler.py"]),
+ ("汇邦科技",["python3","crawler_huibang.py"]),
+ ("开民电器",["python3","crawler_kaimin.py"]),
+ ("协鑫集成",["python3","crawler_gclsi.py"]),
+ ("亚泰仪表",["python3","crawler_yatai.py"]),
  ("汇川",["python3","crawler_inovance.py"]),
  ("金田链接",["python3","crawl_jintian_pw.py","--links-only"]),
 ]

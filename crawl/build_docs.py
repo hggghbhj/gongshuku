@@ -53,6 +53,11 @@ BRANDS={
  "growatt":{"b":"古瑞瓦特","page":"https://www.growatt.com/support/download","ty_default":"产品手册"},
  "delixi":{"b":"德力西变频器","page":"https://www.delixidrive.com/list-26-1.html","ty_default":"使用说明书"},
  "fuling":{"b":"富凌电气","page":"https://www.chinafuling.com/download-3.html","ty_default":"使用手册"},
+ "shenler":{"b":"申乐电气","page":"https://www.shenler.cn/","ty_default":"产品手册"},
+ "huibang":{"b":"汇邦科技","page":"https://www.hbkj.com.cn/download-39-0-1.html","ty_default":"说明书"},
+ "kaimin":{"b":"开民电器","page":"http://www.cnkaimin.net/downlist/T1","ty_default":"使用说明书"},
+ "gclsi":{"b":"协鑫集成","page":"https://www.gclsi.com/download.html","ty_default":"安装手册"},
+ "yatai":{"b":"亚泰仪表","page":"http://www.yatai.sh.cn","ty_default":"使用说明书"},
 }
 def clean_title(t,b):
     t=re.sub(r'\.pdf$','',t or '',flags=re.I).strip()
@@ -245,6 +250,21 @@ for x in load("delixi"):
 for x in load("fuling"):
     info=BRANDS["fuling"]
     out.append(rec(info["b"],info["page"],x.get("type","使用手册"),x.get("name"),"","",x.get("url"),"",x.get("pages")))
+for x in load("shenler"):
+    info=BRANDS["shenler"]
+    out.append(rec(info["b"],info["page"],x.get("type","产品手册"),x.get("name"),"","",x.get("url"),"",x.get("pages")))
+for x in load("huibang"):
+    info=BRANDS["huibang"]
+    out.append(rec(info["b"],info["page"],x.get("type","说明书"),x.get("name"),"","",x.get("url"),"",x.get("pages")))
+for x in load("kaimin"):
+    info=BRANDS["kaimin"]
+    out.append(rec(info["b"],info["page"],x.get("type","使用说明书"),x.get("name"),"","",x.get("url"),"",x.get("pages")))
+for x in load("gclsi"):
+    info=BRANDS["gclsi"]
+    out.append(rec(info["b"],info["page"],x.get("type","安装手册"),x.get("name"),"","",x.get("url"),"",x.get("pages")))
+for x in load("yatai"):
+    info=BRANDS["yatai"]
+    out.append(rec(info["b"],info["page"],x.get("type","使用说明书"),x.get("name"),"","",x.get("url"),"",x.get("pages")))
 # 普传：kv_powtran.json 已是标准格式，补充 _sx/src
 if os.path.exists("kv_powtran.json"):
     for x in json.load(open("kv_powtran.json",encoding="utf-8")):
