@@ -56,18 +56,10 @@ def main():
             print(f"\n  文档 {doc_id}: {doc_name}")
             try:
                 page.goto(url, timeout=30000, wait_until="domcontentloaded")
-                time.sleep(4)
-                # 查找PDF链接
-                pdf_links = page.evaluate("""() => {
-                    const links = document.querySelectorAll('a[href*=".pdf"]');
-                    const results = [];
-                    links.forEach(a => {
-                        if (a.href.includes('/cs/attachments/')) {
-                            results.push(a.href);
-                        }
-                    });
-                    return [...new Set(results)];
-                }""")
+                time.sleep(8)
+                # 用简单正则从HTML提取PDF链接
+                html = page.content()
+                pdf_links = list(dict.fromkeys(re.findall(r'https://[^"\s]+\.pdf', html, re.I)))
                 print(f"    找到 {len(pdf_links)} 个PDF链接")
                 # 下载PDF
                 for pdf_url in pdf_links:
