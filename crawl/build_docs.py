@@ -57,6 +57,8 @@ BRANDS={
  "huibang":{"b":"汇邦科技","page":"https://www.hbkj.com.cn/download-39-0-1.html","ty_default":"说明书"},
  "kaimin":{"b":"开民电器","page":"http://www.cnkaimin.net/downlist/T1","ty_default":"使用说明书"},
  "gclsi":{"b":"协鑫集成","page":"https://www.gclsi.com/download.html","ty_default":"安装手册"},
+ "people":{"b":"人民电器","page":"https://www.chinapeople.com","ty_default":"说明书"},
+ "fotek":{"b":"阳明电机","page":"https://www.fotek.com.tw/zh-cn/download","ty_default":"说明书"},
  "yatai":{"b":"亚泰仪表","page":"http://www.yatai.sh.cn","ty_default":"使用说明书"},
 }
 def clean_title(t,b):
@@ -262,6 +264,12 @@ for x in load("kaimin"):
 for x in load("gclsi"):
     info=BRANDS["gclsi"]
     out.append(rec(info["b"],info["page"],x.get("type","安装手册"),x.get("name"),"","",x.get("url"),"",x.get("pages")))
+for x in load("people"):
+    info=BRANDS["people"]
+    out.append(rec(info["b"],info["page"],x.get("type","说明书"),x.get("name"),"","",x.get("url"),"",x.get("pages")))
+for x in load("fotek"):
+    info=BRANDS["fotek"]
+    out.append(rec(info["b"],info["page"],x.get("type","说明书"),x.get("name"),"","",x.get("url"),"",x.get("pages")))
 for x in load("yatai"):
     info=BRANDS["yatai"]
     out.append(rec(info["b"],info["page"],x.get("type","使用说明书"),x.get("name"),"","",x.get("url"),"",x.get("pages")))
