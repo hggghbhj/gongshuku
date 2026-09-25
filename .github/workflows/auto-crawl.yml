@@ -33,17 +33,20 @@ jobs:
         run: python -m playwright install --with-deps chromium
 
       - name: 云端采集（manifest 驱动增量，只下载新说明书）
-        run: python crawl/cloud_crawl.py
+        run: |
+          # 先删除旧的stats.json，确保cloud_crawl.py生成全新的（避免检出的旧文件残留）
+          rm -f dist/data/stats.json
+          python crawl/cloud_crawl.py
         continue-on-error: true
 
       - name: 确保stats.json存在（容错）
         run: |
           if [ ! -f dist/data/stats.json ]; then
-            echo '{"last_run":"'$(date '+%Y-%m-%d %H:%M:%S')'","last_new":0,"total":0,"brands":{},"steps":{},"cron":"每3小时自动采集"}' > dist/data/stats.json
-            echo "stats.json不存在，已创建空模板"
+            echo '{"last_run":"'$(date '+%Y-%m-%d %H:%M:%S')'","last_new":0,"total":0,"brands":{},"brand_count":0,"steps":{},"cron":"每3小时自动采集","error":"cloud_crawl.py未生成stats，使用兜底模板"}' > dist/data/stats.json
+            echo "stats.json不存在，已创建兜底模板"
           fi
           echo "stats.json预览:"
-          head -c 200 dist/data/stats.json
+          head -c 300 dist/data/stats.json
 
       - name: 更新网站数据分片 docs-3.js
         run: cp crawl/docs-3.js dist/data/docs-3.js 2>/dev/null || echo "docs-3.js复制失败，使用现有版本"
