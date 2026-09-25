@@ -29,6 +29,7 @@ STEPS=[
  ("天正",["python3","crawler_tengen.py"]),
  ("合康新能",["python3","crawler_hiconics.py"]),
  ("伊玛电子",["python3","crawler_ema.py"]),
+ ("邦纳",["python3","crawler_banner.py"]),
  ("汇川",["python3","crawler_inovance.py"]),
  ("金田链接",["python3","crawl_jintian_pw.py","--links-only"]),
 ]
