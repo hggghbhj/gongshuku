@@ -45,6 +45,7 @@ STEPS=[
  ("米格",["python3","crawler_mege.py"]),
  ("兰宝",["python3","crawler_lanbao.py"]),
  ("阿尔法",["python3","crawler_alpha.py"]),
+ ("西驰",["python3","crawler_xichi.py"]),
  ("汇川",["python3","crawler_inovance.py"]),
  ("金田链接",["python3","crawl_jintian_pw.py","--links-only"]),
 ]
