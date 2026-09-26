@@ -1096,7 +1096,18 @@ function renderHome(){
       var statusText=failCount>0?('部分异常('+failCount+'/'+totalBrands+')'):('全部正常('+okCount+'/'+totalBrands+')');
       var newText=d.last_new>0?('，本次新增 '+d.last_new+' 份'):'';
       if(failCount>0)cs.classList.add('warn');else cs.classList.remove('warn');
-      cs.innerHTML='<span class="dot"></span> 云端自动采集 '+statusText+' | 最近采集：'+(d.last_run||'--')+newText+' | 每3小时自动增量采集 <span class="detail-link" onclick="toggleCrawlDetail()">['+(failCount>0?'查看异常':'查看详情')+']</span>';
+      // UTC时间转北京时间(+8小时)
+      var bjTime='--';
+      if(d.last_run){
+        var t=d.last_run.replace(' ','T')+'Z';
+        var dt=new Date(t);
+        if(!isNaN(dt.getTime())){
+          var y=dt.getFullYear(),m=String(dt.getMonth()+1).padStart(2,'0'),dd=String(dt.getDate()).padStart(2,'0');
+          var hh=String(dt.getHours()).padStart(2,'0'),mm=String(dt.getMinutes()).padStart(2,'0');
+          bjTime=y+'-'+m+'-'+dd+' '+hh+':'+mm;
+        }else bjTime=d.last_run;
+      }
+      cs.innerHTML='<span class="dot"></span> 云端自动采集 '+statusText+' | 最近采集：'+bjTime+newText+' | 每3小时自动增量采集 <span class="detail-link" onclick="toggleCrawlDetail()">['+(failCount>0?'查看异常':'查看详情')+']</span>';
       // 填充详情面板
       var cd=document.getElementById('crawlDetail');
       if(cd&&d.steps){
