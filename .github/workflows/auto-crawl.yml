@@ -69,7 +69,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add crawl/*_manifest.json crawl/jintian_pw_links.json crawl/cloud_crawl_state.json crawl/stats.json 2>/dev/null || true
+          git add crawl/*_manifest.json crawl/jintian_pw_links.json crawl/cloud_crawl_state.json crawl/stats.json dist/data/stats.json dist/data/docs-3.js 2>/dev/null || true
           git commit -m "chore(auto): 更新采集清单" || echo "无清单变更"
           git stash || true
           git pull --rebase origin main || true
