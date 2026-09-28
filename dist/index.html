@@ -639,7 +639,7 @@ setInterval(updateCountdown,1000);updateCountdown();
 </script>
 <script src="data/docs-1.js?v=20260921-1755"></script>
 <script src="data/docs-2.js?v=20260921-1755"></script>
-<script src="data/docs-3.js?v=20260922-0700"></script>
+<script src="data/docs-3.js?v=20260928-1510"></script>
 <script>;
 
 /* ===== 归一化与匹配 ===== */
@@ -709,6 +709,26 @@ const BRAND_COUNT={},TYPE_COUNT={};
 DOCS.forEach(d=>{if(d.b)BRAND_COUNT[d.b]=(BRAND_COUNT[d.b]||0)+1;TYPE_COUNT[d.ty]=(TYPE_COUNT[d.ty]||0)+1;});
 const TYPE_ORDER=['使用手册','产品样本','程序例程','维修故障','软件','图纸','案例方案','培训','标准','其他'];
 const HOT=['西门子','三菱电机','台达','欧姆龙','施耐德电气','汇川','ABB','丹佛斯','英威腾','安川电机','松下电器机电','富士电机','罗克韦尔自动化','威纶通','信捷','比泽尔','卡乐','横河'];
+
+/* 英文key -> 中文品牌名映射（用于查看详细面板） */
+const BRAND_KEY_MAP={
+  "airtac":"亚德客","alpha":"阿尔法电气","amsamotion":"艾莫迅","anbangxin":"安邦信",
+  "anthone":"安东仪表","banner":"邦纳","chint":"正泰电器","cincon":"Cincon",
+  "coolmay":"顾美科技","cotion":"合信技术","delixi":"德力西变频器","easydrive":"易驱电气",
+  "elitech":"精创电气","enc":"易能电气","fotek":"阳明电机","fuling":"富凌电气",
+  "gclsi":"协鑫集成","gongbei":"工贝电子","growatt":"古瑞瓦特","gskcnc":"广州数控",
+  "gtake":"吉泰科","gwinstek":"固纬电子","haiwell":"海为","hantek":"汉泰克",
+  "hcfa":"禾川科技","hiconics":"合康新能","hollysys":"和利时","hongfa":"宏发",
+  "hongrun":"虹润仪表","huazhong":"华中数控","huceen":"汇辰自动化","huibang":"汇邦科技",
+  "invt":"英威腾","jelpc":"佳尔灵气动","kaimin":"开民电器","lanbao":"兰宝传感",
+  "lazzen":"良信电器","leisai":"雷赛智能","mcgs":"昆仑通态","meanwell":"明纬电源",
+  "mege":"米格电机","microsensor":"麦克传感器","moons":"鸣志","oura":"欧瑞传动",
+  "people":"人民电器","powtran":"普传","santak":"山特UPS","sanyou":"三友",
+  "schneider":"施耐德","senlan":"森兰","shenler":"申乐电气","siemens":"西门子",
+  "siglent":"鼎阳科技","simphoenix":"四方电气","sinee":"正弦电气","tengen":"天正电气",
+  "veichi":"伟创电气","westpow":"西安西普","wideplus":"上润仪表","xichi":"西驰电气",
+  "xinje":"信捷电气","yankong":"研控自动化","yatai":"亚泰仪表","yudian":"宇电"
+};
 
 /* 拼音首字母工具 */
 function pinyinMatch(b,q){
@@ -1115,7 +1135,8 @@ function renderHome(){
         html+='<div class="cd-grid">';
         for(var b in d.steps){
           var isOk=d.steps[b]==='ok';
-          html+='<div class="cd-item"><span class="s '+(isOk?'ok':'fail')+'"></span>'+b+(isOk?'':'<span class="reason">'+d.steps[b]+'</span>')+'</div>';
+          var bname=BRAND_KEY_MAP[b]||b;
+          html+='<div class="cd-item"><span class="s '+(isOk?'ok':'fail')+'"></span>'+bname+(isOk?'':'<span class="reason">'+d.steps[b]+'</span>')+'</div>';
         }
         html+='</div>';
         cd.innerHTML=html;

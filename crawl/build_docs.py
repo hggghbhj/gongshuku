@@ -83,6 +83,29 @@ def models(t):
     return ",".join(dict.fromkeys(out[:6]))
 def norm(s):
     return re.sub(r'\s+','',(s or '').lower())
+
+def normalize_date(s):
+    """把各种日期格式统一成 YYYY-MM-DD，便于排序"""
+    if not s: return ""
+    s=str(s).strip()
+    # 去掉时间部分
+    s=re.split(r'[ T]',s)[0]
+    # YYYY.M.D 或 YYYY/M/D
+    m=re.match(r'^(\d{4})[./](\d{1,2})[./](\d{1,2})$',s)
+    if m:
+        y,mo,d=m.groups()
+        return f"{y}-{int(mo):02d}-{int(d):02d}"
+    # YYYY-M-D
+    m=re.match(r'^(\d{4})-(\d{1,2})-(\d{1,2})$',s)
+    if m:
+        y,mo,d=m.groups()
+        return f"{y}-{int(mo):02d}-{int(d):02d}"
+    # YYYY年M月D日
+    m=re.match(r'^(\d{4})年(\d{1,2})月(\d{1,2})日$',s)
+    if m:
+        y,mo,d=m.groups()
+        return f"{y}-{int(mo):02d}-{int(d):02d}"
+    return s
 # 品牌默认接入日期（用于d字段为空时填充，让"最新入库"正常排序）
 BRAND_DATE={
  "siemens":"2026-09-28","schneider":"2026-09-25","gwinstek":"2026-09-25",
@@ -104,6 +127,7 @@ def rec(b,page,ty,t,d,v,u,size,pages,cat=""):
             if v2.get("b")==b:
                 bkey=k;break
         d=BRAND_DATE.get(bkey,"2026-01-01")
+    d=normalize_date(d)
     return {"t":t,"b":b,"d":d or "","ty":ty or "说明书","v":v or "","l":"中文",
       "url":page,"pdf":u,"size":size or "","kw":kw,
       "sum":"%s %s（%d页），来源品牌官网，免费在线查看。"%(b,cat or ty,pages or 0),
