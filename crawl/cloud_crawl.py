@@ -69,6 +69,7 @@ STEPS=[
  ("鸣志",["python3","crawler_moons.py"]),
  ("施耐德",["python3","crawler_schneider.py"]),
  ("固纬电子",["python3","crawler_gwinstek.py"]),
+ ("西门子",["python3","crawler_siemens.py"]),
 ]
 def count_manifests():
     """统计所有 manifest 的记录数（按品牌key）"""
