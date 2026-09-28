@@ -67,6 +67,7 @@ BRANDS={
  "hantek":{"b":"汉泰克","page":"https://www.hantek.com.cn/download","ty_default":"用户手册"},
  "moons":{"b":"鸣志","page":"https://www.moons.com.cn/support-training/downloads","ty_default":"产品手册"},
  "schneider":{"b":"施耐德","page":"https://www.se.com/cn/zh/download/","ty_default":"用户手册"},
+ "gwinstek":{"b":"固纬电子","page":"https://www.gwinstek.com.cn/down/208","ty_default":"用户手册"},
 }
 def clean_title(t,b):
     t=re.sub(r'\.pdf$','',t or '',flags=re.I).strip()
@@ -300,6 +301,9 @@ for x in load("moons"):
     out.append(rec(info["b"],info["page"],x.get("type","产品手册"),x.get("name"),"","",x.get("url"),"",x.get("pages")))
 for x in load("schneider"):
     info=BRANDS["schneider"]
+    out.append(rec(info["b"],info["page"],x.get("type","用户手册"),x.get("name"),"","",x.get("url"),x.get("size",""),x.get("pages")))
+for x in load("gwinstek"):
+    info=BRANDS["gwinstek"]
     out.append(rec(info["b"],info["page"],x.get("type","用户手册"),x.get("name"),"","",x.get("url"),x.get("size",""),x.get("pages")))
 # 普传：kv_powtran.json 已是标准格式，补充 _sx/src
 if os.path.exists("kv_powtran.json"):
