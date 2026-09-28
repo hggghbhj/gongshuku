@@ -4,7 +4,12 @@
 运行前后对比 manifest 记录数统计本次新增，写入 dist/data/stats.json 供网站前端展示。
 """
 import subprocess,os,time,sys,json,glob
+from datetime import datetime,timezone,timedelta
 HERE=os.path.dirname(os.path.abspath(__file__));os.chdir(HERE)
+# 北京时间（UTC+8）
+BJ_TZ=timezone(timedelta(hours=8))
+def bj_now():
+    return datetime.now(BJ_TZ).strftime("%Y-%m-%d %H:%M:%S")
 STEPS=[
  ("顾美",["python3","crawler_coolmay.py"]),
  ("精创",["python3","crawler_elitech.py"]),
@@ -70,6 +75,7 @@ STEPS=[
  ("施耐德",["python3","crawler_schneider.py"]),
  ("固纬电子",["python3","crawler_gwinstek.py"]),
  ("西门子",["python3","crawler_siemens.py"]),
+ ("三菱电机",["python3","crawler_mitsubishi.py"]),
 ]
 def count_manifests():
     """统计所有 manifest 的记录数（按品牌key）"""
@@ -127,7 +133,7 @@ def main():
             total_new+=diff
     total=sum(after.values())
     stats={
-        "last_run":time.strftime("%Y-%m-%d %H:%M:%S",time.localtime()),
+        "last_run":bj_now(),
         "last_new":total_new,
         "new_by_brand":new_by_brand,
         "total":total,
