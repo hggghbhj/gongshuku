@@ -70,6 +70,7 @@ BRANDS={
  "gwinstek":{"b":"固纬电子","page":"https://www.gwinstek.com.cn/down/208","ty_default":"用户手册"},
  "siemens":{"b":"西门子","page":"https://www.ad.siemens.com.cn/download/","ty_default":"手册"},
  "mitsubishi":{"b":"三菱电机","page":"https://www.mitsubishielectric.com/fa/download/","ty_default":"手册"},
+ "cocis":{"b":"无锡科思","page":"https://www.chinacocis.com/download","ty_default":"说明书"},
 }
 def clean_title(t,b):
     t=re.sub(r'\.pdf$','',t or '',flags=re.I).strip()
@@ -109,7 +110,7 @@ def normalize_date(s):
     return s
 # 品牌默认接入日期（用于d字段为空时填充，让"最新入库"正常排序）
 BRAND_DATE={
- "siemens":"2026-09-28","mitsubishi":"2026-09-28","schneider":"2026-09-25","gwinstek":"2026-09-25",
+ "siemens":"2026-09-28","mitsubishi":"2026-09-28","cocis":"2026-09-28","schneider":"2026-09-25","gwinstek":"2026-09-25",
  "moons":"2026-09-24","siglent":"2026-09-24","hantek":"2026-09-24",
  "airtac":"2026-09-23","chint":"2026-09-23","jelpc":"2026-09-23",
  "growatt":"2026-09-23","delixi":"2026-09-23","fuling":"2026-09-23",
@@ -355,6 +356,9 @@ for x in load("siemens"):
 for x in load("mitsubishi"):
     info=BRANDS["mitsubishi"]
     out.append(rec(info["b"],info["page"],x.get("category","手册"),x.get("name"),"","",x.get("url"),x.get("size",""),x.get("pages")))
+for x in load("cocis"):
+    info=BRANDS["cocis"]
+    out.append(rec(info["b"],info["page"],x.get("category","说明书"),x.get("name"),"","",x.get("url"),x.get("size",""),x.get("pages")))
 # 普传：kv_powtran.json 已是标准格式，补充 _sx/src
 if os.path.exists("kv_powtran.json"):
     for x in json.load(open("kv_powtran.json",encoding="utf-8")):
