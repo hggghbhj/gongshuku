@@ -9,7 +9,7 @@
 <meta http-equiv="Expires" content="0">
 <script>
 // 版本自动检测：发现新版本自动刷新
-var PAGE_VERSION='20260928-1610';
+var PAGE_VERSION='20260928-1620';
 try{
   if(localStorage.getItem('gs_ver')!==PAGE_VERSION){
     localStorage.setItem('gs_ver',PAGE_VERSION);
@@ -23,7 +23,7 @@ if('serviceWorker' in navigator){
     regs.forEach(function(r){r.unregister();});
   });
   if('caches' in window){caches.keys().then(function(ks){ks.forEach(function(k){caches.delete(k);});});}
-  navigator.serviceWorker.register('sw.js?v=20260928-1600').catch(function(){});
+  navigator.serviceWorker.register('sw.js?v=20260928-1620').catch(function(){});
 }
 </script>
 <link rel="manifest" href="manifest.webmanifest">
@@ -672,9 +672,7 @@ function updateCountdown(){
 }
 setInterval(updateCountdown,1000);updateCountdown();
 </script>
-<script src="data/docs-1.js?v=20260921-1755"></script>
-<script src="data/docs-2.js?v=20260921-1755"></script>
-<script src="data/docs-3.js?v=20260928-1610"></script>
+<script src="data/docs-3.js?v=20260928-1620"></script>
 <script>;
 
 /* ===== 归一化与匹配 ===== */
@@ -835,7 +833,7 @@ function markLatest(docs){
 }
 
 /* ===== 渲染：文档卡片 ===== */
-function esc(s){return (s||'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));}
+function esc(s){return (s==null?'':String(s)).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));}
 function hl(text,terms){
   text=esc(text);
   terms.forEach(t=>{
