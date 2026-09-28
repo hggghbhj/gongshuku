@@ -71,6 +71,7 @@ BRANDS={
  "siemens":{"b":"西门子","page":"https://www.ad.siemens.com.cn/download/","ty_default":"手册"},
  "mitsubishi":{"b":"三菱电机","page":"https://www.mitsubishielectric.com/fa/download/","ty_default":"手册"},
  "cocis":{"b":"无锡科思","page":"https://www.chinacocis.com/download","ty_default":"说明书"},
+ "abb":{"b":"ABB","page":"https://motorswechat.abb.com.cn/motor/center/manual/","ty_default":"手册"},
 }
 def clean_title(t,b):
     t=re.sub(r'\.pdf$','',t or '',flags=re.I).strip()
@@ -359,6 +360,9 @@ for x in load("mitsubishi"):
 for x in load("cocis"):
     info=BRANDS["cocis"]
     out.append(rec(info["b"],info["page"],x.get("category","说明书"),x.get("name"),"","",x.get("url"),x.get("size",""),x.get("pages")))
+for x in load("abb_motor"):
+    info=BRANDS["abb"]
+    out.append(rec(info["b"],info["page"],x.get("cat","手册"),x.get("name"),"","",x.get("url"),x.get("size",""),x.get("pages")))
 # 普传：kv_powtran.json 已是标准格式，补充 _sx/src
 if os.path.exists("kv_powtran.json"):
     for x in json.load(open("kv_powtran.json",encoding="utf-8")):

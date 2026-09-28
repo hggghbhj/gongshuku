@@ -77,6 +77,7 @@ STEPS=[
  ("西门子",["python3","crawler_siemens.py"]),
  ("三菱电机",["python3","crawler_mitsubishi.py"]),
  ("无锡科思",["python3","crawler_cocis.py"]),
+ ("ABB电机",["python3","crawler_abb_motor.py"]),
 ]
 def count_manifests():
     """统计所有 manifest 的记录数（按品牌key）"""
