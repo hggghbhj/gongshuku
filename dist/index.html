@@ -44,13 +44,12 @@ input{font-family:inherit}
   box-shadow:0 4px 30px rgba(0,0,0,.4)}
 .topbar-in{max-width:1440px;margin:0 auto;display:flex;align-items:center;gap:18px;padding:0 24px;height:64px}
 .logo{display:flex;align-items:center;gap:11px;flex-shrink:0;cursor:pointer}
-.logo-mark{width:38px;height:38px;background:linear-gradient(135deg,var(--orange),var(--cyan));border-radius:10px;
-  display:grid;place-items:center;box-shadow:var(--glow-orange);position:relative;overflow:hidden}
-.logo-mark::after{content:"";position:absolute;inset:0;background:linear-gradient(135deg,transparent 40%,rgba(255,255,255,.2));border-radius:10px}
-.logo-mark svg{width:23px;height:23px;position:relative;z-index:1}
+.logo-mark{width:38px;height:38px;border-radius:10px;display:grid;place-items:center;position:relative;overflow:hidden;
+  filter:drop-shadow(0 4px 12px rgba(34,211,238,.35))}
+.logo-mark svg{width:38px;height:38px;position:relative;z-index:1}
 .logo-txt b{display:block;font-size:18px;font-weight:900;letter-spacing:1px;line-height:1.1;
   background:linear-gradient(90deg,#fff,#a8d8ff);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
-.logo-txt span{font-size:10px;letter-spacing:2.5px;color:var(--mut);font-weight:500}
+.logo-txt span{font-size:9px;letter-spacing:3px;color:var(--cyan);font-weight:600;opacity:.8}
 .searchwrap{flex:1;position:relative;max-width:760px}
 .searchbox{display:flex;align-items:center;background:rgba(26,35,50,.9);border:1px solid var(--line2);
   border-radius:12px;overflow:hidden;box-shadow:0 4px 20px rgba(0,0,0,.3),inset 0 1px 0 rgba(255,255,255,.05);
@@ -342,7 +341,7 @@ footer a:hover{color:#fff;text-shadow:0 0 10px rgba(34,211,238,.4)}
   /* 顶栏 */
   .topbar-in{padding:0 12px;height:56px;gap:10px}
   .logo-mark{width:33px;height:33px;border-radius:7px}
-  .logo-mark svg{width:20px;height:20px}
+  .logo-mark svg{width:33px;height:33px}
   .logo-txt b{font-size:15px}
   .logo-txt span{display:none}
   .searchwrap{min-width:0}
@@ -495,8 +494,16 @@ footer a:hover{color:#fff;text-shadow:0 0 10px rgba(34,211,238,.4)}
 <header class="topbar">
   <div class="topbar-in">
     <div class="logo" onclick="go('home')">
-      <div class="logo-mark"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.2"><path d="M4 4h10l6 6v10H4z"/><path d="M14 4v6h6"/><path d="M8 14h8M8 17h5"/></svg></div>
-      <div class="logo-txt"><b>工书库</b><span>MANUALS&nbsp;DIRECT</span></div>
+      <div class="logo-mark">
+        <svg viewBox="0 0 40 40" fill="none">
+          <defs><linearGradient id="lg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#22d3ee"/><stop offset="1" stop-color="#3b82f6"/></linearGradient></defs>
+          <rect x="2" y="2" width="36" height="36" rx="10" fill="url(#lg)"/>
+          <path d="M11 13h18M11 20.5h18M11 28h11" stroke="#fff" stroke-width="2.8" stroke-linecap="round"/>
+          <rect x="27" y="24.5" width="5.5" height="5.5" rx="1.5" fill="#fff" opacity="0.85"/>
+          <circle cx="32" cy="10" r="1.8" fill="#fff" opacity="0.6"/>
+        </svg>
+      </div>
+      <div class="logo-txt"><b>工书库</b><span>GONGSHUKU</span></div>
     </div>
     <div class="searchwrap">
       <div class="searchbox">
@@ -639,7 +646,7 @@ setInterval(updateCountdown,1000);updateCountdown();
 </script>
 <script src="data/docs-1.js?v=20260921-1755"></script>
 <script src="data/docs-2.js?v=20260921-1755"></script>
-<script src="data/docs-3.js?v=20260928-1510"></script>
+<script src="data/docs-3.js?v=20260928-1540"></script>
 <script>;
 
 /* ===== 归一化与匹配 ===== */
@@ -1048,7 +1055,12 @@ function go(v){
     var el=document.getElementById('view-'+x);
     if(el)el.style.display=(x===v?'block':'none');
   });
-  if(v==='home'){try{renderHome();}catch(e){console.error(e);}}
+  if(v==='home'){
+    // 清除搜索状态，确保hero正常显示
+    S.q='';S.types.clear();S.langs.clear();S.brands.clear();S.pdfOnly=false;S.latestOnly=false;S.page=1;S.cur=[];
+    ['qtop','qhome'].forEach(function(id){var e=document.getElementById(id);if(e)e.value='';});
+    try{renderHome();}catch(e){console.error(e);}
+  }
   if(v==='brands'){try{renderAllBrands();}catch(e){console.error(e);}}
   window.scrollTo(0,0);
 }
@@ -1097,7 +1109,7 @@ function renderHome(){
     return '<div class="catcard" onclick="catPick(\''+c.key+'\')"><div class="ci">'+c.ic+'</div><div class="ct"><b>'+c.name+'</b><span>'+n+' 份</span></div></div>';
   }).join('');
   // 最新入库
-  var latest=DOCS.filter(function(d){return d.pdf;}).slice().sort(function(a,b){return b.d>a.d.d?1:-1;}).slice(0,12);
+  var latest=DOCS.filter(function(d){return d.pdf;}).slice().sort(function(a,b){return b.d>a.d?1:-1;}).slice(0,12);
   document.getElementById('latestDocs').innerHTML=latest.map(function(d,i){
     var card=docCard(d,[]);
     if(i<3)card=card.replace(/(<div class="doc[^>]*>)/,'$1<div class="new-badge">NEW</div>');
@@ -1180,7 +1192,7 @@ function catPick(key){
   var c=CATS.find(function(x){return x.key===key;});if(!c)return;
   S.q='';S.types.clear();S.langs.clear();S.brands.clear();S.pdfOnly=false;S.latestOnly=false;S.page=1;
   var res=DOCS.filter(function(d){return catMatch(d).indexOf(key)>=0;});
-  res.sort(function(a,b){return b.d>a.d.d?1:-1;});
+  res.sort(function(a,b){return b.d>a.d?1:-1;});
   S.cur=res;
   document.getElementById('listTitle').innerHTML='分类：<span class="hl">'+c.name+'</span>';
   document.getElementById('listCount').textContent=res.length+' 份 · '+res.filter(function(d){return d.pdf;}).length+' 份可直取';
