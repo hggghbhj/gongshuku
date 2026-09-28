@@ -9,7 +9,7 @@
 <meta http-equiv="Expires" content="0">
 <script>
 // 版本自动检测：发现新版本自动刷新
-var PAGE_VERSION='20260928-1630';
+var PAGE_VERSION='20260928-1640';
 try{
   if(localStorage.getItem('gs_ver')!==PAGE_VERSION){
     localStorage.setItem('gs_ver',PAGE_VERSION);
@@ -23,7 +23,7 @@ if('serviceWorker' in navigator){
     regs.forEach(function(r){r.unregister();});
   });
   if('caches' in window){caches.keys().then(function(ks){ks.forEach(function(k){caches.delete(k);});});}
-  navigator.serviceWorker.register('sw.js?v=20260928-1630').catch(function(){});
+  navigator.serviceWorker.register('sw.js?v=20260928-1640').catch(function(){});
 }
 </script>
 <link rel="manifest" href="manifest.webmanifest">
@@ -471,6 +471,38 @@ footer a:hover{color:#fff;text-shadow:0 0 10px rgba(34,211,238,.4)}
   .doc-r .btn-pdf{flex:1 1 100%}
 }
 
+/* ===== 大屏电脑端优化（≥1200px） ===== */
+@media(min-width:1200px){
+  .topbar-in{max-width:1600px;height:70px}
+  #view-home > div{max-width:1600px;padding:32px}
+  .home-history{max-width:1600px;padding:0 32px}
+  .hero{padding:52px 56px 44px;border-radius:22px}
+  .hero h1{font-size:34px;letter-spacing:1px;margin-bottom:14px}
+  .hero p{font-size:15px;max-width:720px;margin-bottom:28px}
+  .hero-search{max-width:800px}
+  .hero-search .searchbox input{font-size:16px;padding:16px 20px}
+  .hero-search .search-btn{font-size:16px;padding:0 28px}
+  .hero-stats{gap:48px;margin-top:32px}
+  .hero-stats .hs b{font-size:32px}
+  .hero-stats .hs span{font-size:12.5px;margin-top:8px}
+  .hero-stats .hs::after{height:36px;right:-24px}
+  .crawl-status{font-size:13px;padding:12px 18px}
+}
+
+/* ===== 超大屏（≥1600px） ===== */
+@media(min-width:1600px){
+  .topbar-in{max-width:1800px}
+  #view-home > div{max-width:1800px;padding:40px}
+  .home-history{max-width:1800px;padding:0 40px}
+  .hero{padding:60px 64px 50px}
+  .hero h1{font-size:38px}
+  .hero p{font-size:15.5px;max-width:800px}
+  .hero-search{max-width:880px}
+  .hero-stats{gap:56px}
+  .hero-stats .hs b{font-size:36px}
+  .hero-stats .hs span{font-size:13px}
+}
+
 /* ===== 手机端溢出修正（追加，覆盖前值） ===== */
 @media(max-width:860px){
   html,body{overflow-x:hidden}
@@ -672,9 +704,9 @@ function updateCountdown(){
 }
 setInterval(updateCountdown,1000);updateCountdown();
 </script>
-<script src="data/docs-1.js?v=20260928-1630"></script>
-<script src="data/docs-2.js?v=20260928-1630"></script>
-<script src="data/docs-3.js?v=20260928-1630"></script>
+<script src="data/docs-1.js?v=20260928-1640"></script>
+<script src="data/docs-2.js?v=20260928-1640"></script>
+<script src="data/docs-3.js?v=20260928-1640"></script>
 <script>;
 
 /* ===== 归一化与匹配 ===== */

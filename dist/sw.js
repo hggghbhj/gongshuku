@@ -1,6 +1,6 @@
 /* 工书库 Service Worker：外壳离线缓存，数据分片 network-first；跨域 PDF 直链走网络。 */
 const CACHE='gongshuku-v'+"20260928-1630";
-const SHELL=['./index.html','./data/docs-1.js?v=20260928-1630','./data/docs-2.js?v=20260928-1630','./data/docs-3.js?v=20260928-1630','./manifest.webmanifest','./icon-192.png','./icon-512.png','./icon-maskable-192.png','./icon-maskable-512.png','./viewer.html','./reader.html','./vendor/pdf.min.js','./vendor/pdf.worker.min.js'];
+const SHELL=['./index.html','./data/docs-1.js?v=20260928-1640','./data/docs-2.js?v=20260928-1640','./data/docs-3.js?v=20260928-1640','./manifest.webmanifest','./icon-192.png','./icon-512.png','./icon-maskable-192.png','./icon-maskable-512.png','./viewer.html','./reader.html','./vendor/pdf.min.js','./vendor/pdf.worker.min.js'];
 self.addEventListener('install',function(e){
   e.waitUntil(caches.open(CACHE).then(function(c){return c.addAll(SHELL).catch(function(){return c.add('./index.html');});}).then(function(){return self.skipWaiting();}));
 });
