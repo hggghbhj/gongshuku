@@ -10,9 +10,13 @@
 
 # HTML 页面：始终重新校验，保证用户拿到最新代码
 /
-  Cache-Control: no-cache
+  Cache-Control: no-cache, no-store, must-revalidate
+  Pragma: no-cache
+  Expires: 0
 /index.html
-  Cache-Control: no-cache
+  Cache-Control: no-cache, no-store, must-revalidate
+  Pragma: no-cache
+  Expires: 0
 /reader
   Cache-Control: no-cache
 /reader.html
