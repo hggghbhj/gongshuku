@@ -83,9 +83,27 @@ def models(t):
     return ",".join(dict.fromkeys(out[:6]))
 def norm(s):
     return re.sub(r'\s+','',(s or '').lower())
+# 品牌默认接入日期（用于d字段为空时填充，让"最新入库"正常排序）
+BRAND_DATE={
+ "siemens":"2026-09-28","schneider":"2026-09-25","gwinstek":"2026-09-25",
+ "moons":"2026-09-24","siglent":"2026-09-24","hantek":"2026-09-24",
+ "airtac":"2026-09-23","chint":"2026-09-23","jelpc":"2026-09-23",
+ "growatt":"2026-09-23","delixi":"2026-09-23","fuling":"2026-09-23",
+ "shenler":"2026-09-23","huibang":"2026-09-23","kaimin":"2026-09-23",
+ "gclsi":"2026-09-23","people":"2026-09-23","fotek":"2026-09-23",
+ "yatai":"2026-09-23",
+}
 def rec(b,page,ty,t,d,v,u,size,pages,cat=""):
     t=clean_title(t,b)
     kw=(b+" "+t+" "+cat+" "+models(t)).strip()
+    # d字段为空时用品牌接入日期填充
+    if not d:
+        # 从page反查品牌key
+        bkey=""
+        for k,v2 in BRANDS.items():
+            if v2.get("b")==b:
+                bkey=k;break
+        d=BRAND_DATE.get(bkey,"2026-01-01")
     return {"t":t,"b":b,"d":d or "","ty":ty or "说明书","v":v or "","l":"中文",
       "url":page,"pdf":u,"size":size or "","kw":kw,
       "sum":"%s %s（%d页），来源品牌官网，免费在线查看。"%(b,cat or ty,pages or 0),
