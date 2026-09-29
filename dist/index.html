@@ -1137,11 +1137,25 @@ function renderHome(){
     if(!n)return '';
     return '<div class="catcard" onclick="catPick(\''+c.key+'\')"><div class="ci">'+c.ic+'</div><div class="ct"><b>'+c.name+'</b><span>'+n+' 份</span></div></div>';
   }).join('');
-  // 最新入库
-  var latest=DOCS.filter(function(d){return d.pdf;}).slice().sort(function(a,b){return b.d>a.d?1:-1;}).slice(0,12);
+  // 最新入库（只显示真正的PDF，按采集时间ct降序，跟自动采集同步）
+  var now=Date.now();
+  var latest=DOCS.filter(function(d){return d.pdf && /\.pdf(\?|$)/i.test(d.pdf);}).slice().sort(function(a,b){
+    var ca=(a.ct||a.d||'').replace(/-/g,'/');
+    var cb=(b.ct||b.d||'').replace(/-/g,'/');
+    if(ca<cb)return 1;
+    if(ca>cb)return -1;
+    if(a.b<b.b)return -1;
+    if(a.b>b.b)return 1;
+    return 0;
+  }).slice(0,12);
   document.getElementById('latestDocs').innerHTML=latest.map(function(d,i){
     var card=docCard(d,[]);
-    if(i<3)card=card.replace(/(<div class="doc[^>]*>)/,'$1<div class="new-badge">NEW</div>');
+    // 24小时内采集的文档都显示NEW标签
+    var ct=(d.ct||d.d||'').replace(/-/g,'/');
+    var ctTime=new Date(ct).getTime();
+    if(ctTime && now-ctTime<86400000){
+      card=card.replace(/(<div class="doc[^>]*>)/,'$1<div class="new-badge">NEW</div>');
+    }
     return card;
   }).join('');
   // 加载采集统计

@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 """把各品牌 manifest 转成前端 DOCS 记录，输出 docs-3.js（官网免费直链数据）。"""
-import json,os,re
+import json,os,re,time
 
 BRANDS={
  "coolmay":{"b":"顾美科技","page":"http://www.coolmay.com","ty_default":"使用手册"},
@@ -119,7 +119,7 @@ BRAND_DATE={
  "gclsi":"2026-09-23","people":"2026-09-23","fotek":"2026-09-23",
  "yatai":"2026-09-23",
 }
-def rec(b,page,ty,t,d,v,u,size,pages,cat=""):
+def rec(b,page,ty,t,d,v,u,size,pages,cat="",ct=""):
     t=clean_title(t,b)
     kw=(b+" "+t+" "+cat+" "+models(t)).strip()
     # d字段为空时用品牌接入日期填充
@@ -131,10 +131,13 @@ def rec(b,page,ty,t,d,v,u,size,pages,cat=""):
                 bkey=k;break
         d=BRAND_DATE.get(bkey,"2026-01-01")
     d=normalize_date(d)
+    # ct采集时间：优先用传入值，否则用文档日期d（首次运行时按文档日期排序）
+    if not ct:
+        ct=d or "2026-01-01"
     return {"t":t,"b":b,"d":d or "","ty":ty or "说明书","v":v or "","l":"中文",
       "url":page,"pdf":u,"size":size or "","kw":kw,
       "sum":"%s %s（%d页），来源品牌官网，免费在线查看。"%(b,cat or ty,pages or 0),
-      "src":"官网直链","pages":pages or 0,
+      "src":"官网直链","pages":pages or 0,"ct":ct,
       "_sx":norm(" ".join([t,b,kw,cat]))}
 
 out=[]
@@ -365,19 +368,53 @@ for x in load("cocis"):
 for x in load("abb_motor"):
     info=BRANDS["abb"]
     out.append(rec(info["b"],info["page"],x.get("cat","手册"),x.get("name"),"","",x.get("url"),x.get("size",""),x.get("pages")))
-# 普传：kv_powtran.json 已是标准格式，补充 _sx/src
+# 普传：kv_powtran.json 已是标准格式，补充 _sx/src/ct
 if os.path.exists("kv_powtran.json"):
+    powtran_ct=BRAND_DATE.get("powtran","2026-09-20")
     for x in json.load(open("kv_powtran.json",encoding="utf-8")):
         r=dict(x);r["src"]="官网直链";r["pages"]=0
         r["_sx"]=norm(" ".join([r.get("t",""),r.get("b",""),r.get("kw","")]))
+        r["ct"]=powtran_ct
         out.append(r)
 
-# 去重（按 pdf URL）
+# 去重（按 pdf URL）+ 采集时间继承
+# 读取旧docs-3.js，已有文档保持原ct，新增文档ct设为当前时间
+old_ct={}
+try:
+    if os.path.exists("../dist/data/docs-3.js"):
+        with open("../dist/data/docs-3.js","r",encoding="utf-8") as f:
+            old_content=f.read()
+        import re
+        m=re.search(r'DOCS=DOCS\.concat\((\[.*\])\);',old_content,re.DOTALL)
+        if m:
+            old_data=json.loads(m.group(1))
+            for r in old_data:
+                if r.get("pdf") and r.get("ct"):
+                    old_ct[r["pdf"]]=r["ct"]
+except Exception as e:
+    print("读取旧docs-3.js失败:",e)
+
+now_str=time.strftime("%Y-%m-%d %H:%M:%S",time.localtime())
 seen=set();uniq=[]
 for r in out:
     k=r.get("pdf","")
     if k in seen:continue
-    seen.add(k);uniq.append(r)
+    seen.add(k)
+    # 继承已有文档的采集时间，新增文档用文档日期或品牌接入日期
+    if k in old_ct:
+        r["ct"]=old_ct[k]
+    elif not r.get("ct"):
+        # 新增文档且未设置ct：优先用文档日期d，否则用品牌接入日期
+        if r.get("d"):
+            r["ct"]=r["d"]
+        else:
+            # 从品牌名反查品牌接入日期
+            bkey=""
+            for k2,v2 in BRANDS.items():
+                if v2.get("b")==r.get("b"):
+                    bkey=k2;break
+            r["ct"]=BRAND_DATE.get(bkey,"2026-01-01")
+    uniq.append(r)
 json.dump(uniq,open("docs_new_records.json","w",encoding="utf-8"),ensure_ascii=False,indent=1)
 # 写 JS 分片
 with open("docs-3.js","w",encoding="utf-8") as f:
