@@ -98,6 +98,13 @@ def main():
     only=sys.argv[1:]
     before=count_manifests()
     summary={}
+    # 读取历史失败计数（避免瞬时故障被误判为一直异常）
+    fail_counts={}
+    try:
+        if os.path.exists("cloud_crawl_state.json"):
+            old=json.load(open("cloud_crawl_state.json",encoding="utf-8"))
+            fail_counts=old.get("fail_counts",{})
+    except Exception:pass
     try:
         for name,cmd in STEPS:
             if only and name not in only:continue
@@ -105,15 +112,34 @@ def main():
             try:
                 r=subprocess.run(cmd,capture_output=True,text=True,timeout=900)
                 ok=r.returncode==0
-                summary[name]="ok" if ok else "fail(rc=%d)"%r.returncode
+                if ok:
+                    fail_counts[name]=0
+                    summary[name]="ok"
+                else:
+                    fail_counts[name]=fail_counts.get(name,0)+1
+                    # 连续失败<3次标记为retrying，>=3次才标记为fail
+                    if fail_counts[name]<3:
+                        summary[name]="retrying(%d/3)"%fail_counts[name]
+                    else:
+                        summary[name]="fail(rc=%d)"%r.returncode
                 tail=(r.stdout or "").strip().splitlines()[-2:]
                 print("【%s】%s %.0fs"%(name,"成功" if ok else "失败",time.time()-t0))
                 for l in tail:print("   ",l)
                 if not ok:print("   stderr:",(r.stderr or "")[-300:])
             except subprocess.TimeoutExpired:
-                summary[name]="timeout";print("【%s】超时（下次重试）"%name)
+                fail_counts[name]=fail_counts.get(name,0)+1
+                if fail_counts[name]<3:
+                    summary[name]="retrying(%d/3)"%fail_counts[name]
+                else:
+                    summary[name]="timeout"
+                print("【%s】超时（下次重试）"%name)
             except Exception as e:
-                summary[name]="error:%s"%e;print("【%s】异常:%s"%(name,e))
+                fail_counts[name]=fail_counts.get(name,0)+1
+                if fail_counts[name]<3:
+                    summary[name]="retrying(%d/3)"%fail_counts[name]
+                else:
+                    summary[name]="error:%s"%e
+                print("【%s】异常:%s"%(name,e))
     except Exception as e:
         print("采集循环全局异常:",e)
     print("="*50);print("生成 docs-3.js ...")
@@ -146,7 +172,7 @@ def main():
     }
     os.makedirs("../dist/data",exist_ok=True)
     json.dump(stats,open("../dist/data/stats.json","w",encoding="utf-8"),ensure_ascii=False,indent=1)
-    json.dump({"steps":summary,"last_new":total_new,"total":total},open("cloud_crawl_state.json","w",encoding="utf-8"),ensure_ascii=False,indent=1)
+    json.dump({"steps":summary,"last_new":total_new,"total":total,"fail_counts":fail_counts},open("cloud_crawl_state.json","w",encoding="utf-8"),ensure_ascii=False,indent=1)
     print("本次新增 %d 份，累计 %d 份。新增明细: %s"%(total_new,total,new_by_brand))
     print("云端采集编排完成:",summary)
 if __name__=="__main__":

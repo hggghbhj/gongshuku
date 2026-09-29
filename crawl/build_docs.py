@@ -359,7 +359,9 @@ for x in load("mitsubishi"):
     out.append(rec(info["b"],info["page"],x.get("category","手册"),x.get("name"),"","",x.get("url"),x.get("size",""),x.get("pages")))
 for x in load("cocis"):
     info=BRANDS["cocis"]
-    out.append(rec(info["b"],info["page"],x.get("category","说明书"),x.get("name"),"","",x.get("url"),x.get("size",""),x.get("pages")))
+    # 无锡科思PDF已解压部署到 /pdfs/cocis/，用本地URL而非压缩包
+    pdf_url="/pdfs/cocis/"+x.get("name","")+".pdf"
+    out.append(rec(info["b"],info["page"],x.get("category","说明书"),x.get("name"),"","",pdf_url,x.get("size",""),x.get("pages")))
 for x in load("abb_motor"):
     info=BRANDS["abb"]
     out.append(rec(info["b"],info["page"],x.get("cat","手册"),x.get("name"),"","",x.get("url"),x.get("size",""),x.get("pages")))
