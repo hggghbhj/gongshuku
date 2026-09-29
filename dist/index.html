@@ -9,7 +9,7 @@
 <meta http-equiv="Expires" content="0">
 <script>
 // 版本自动检测：发现新版本自动刷新
-var PAGE_VERSION='20260928-1640';
+var PAGE_VERSION='20260928-1701';
 try{
   if(localStorage.getItem('gs_ver')!==PAGE_VERSION){
     localStorage.setItem('gs_ver',PAGE_VERSION);
@@ -471,38 +471,6 @@ footer a:hover{color:#fff;text-shadow:0 0 10px rgba(34,211,238,.4)}
   .doc-r .btn-pdf{flex:1 1 100%}
 }
 
-/* ===== 大屏电脑端优化（≥1200px） ===== */
-@media(min-width:1200px){
-  .topbar-in{max-width:1600px;height:70px}
-  #view-home > div{max-width:1600px;padding:32px}
-  .home-history{max-width:1600px;padding:0 32px}
-  .hero{padding:52px 56px 44px;border-radius:22px}
-  .hero h1{font-size:34px;letter-spacing:1px;margin-bottom:14px}
-  .hero p{font-size:15px;max-width:720px;margin-bottom:28px}
-  .hero-search{max-width:800px}
-  .hero-search .searchbox input{font-size:16px;padding:16px 20px}
-  .hero-search .search-btn{font-size:16px;padding:0 28px}
-  .hero-stats{gap:48px;margin-top:32px}
-  .hero-stats .hs b{font-size:32px}
-  .hero-stats .hs span{font-size:12.5px;margin-top:8px}
-  .hero-stats .hs::after{height:36px;right:-24px}
-  .crawl-status{font-size:13px;padding:12px 18px}
-}
-
-/* ===== 超大屏（≥1600px） ===== */
-@media(min-width:1600px){
-  .topbar-in{max-width:1800px}
-  #view-home > div{max-width:1800px;padding:40px}
-  .home-history{max-width:1800px;padding:0 40px}
-  .hero{padding:60px 64px 50px}
-  .hero h1{font-size:38px}
-  .hero p{font-size:15.5px;max-width:800px}
-  .hero-search{max-width:880px}
-  .hero-stats{gap:56px}
-  .hero-stats .hs b{font-size:36px}
-  .hero-stats .hs span{font-size:13px}
-}
-
 /* ===== 手机端溢出修正（追加，覆盖前值） ===== */
 @media(max-width:860px){
   html,body{overflow-x:hidden}
@@ -584,9 +552,10 @@ footer a:hover{color:#fff;text-shadow:0 0 10px rgba(34,211,238,.4)}
       <p>覆盖 PLC、变频器、HMI、伺服、传感器、制冷压缩机与控制器等工控设备。支持中英文、拼音、型号片段、相似词模糊匹配；外文手册一键翻译，PDF 可在线阅读或下载。</p>
       <div class="hero-search">
         <div class="searchbox">
-          <input id="qhome" autocomplete="off" placeholder="试试：G120C、FX5U、ACS580、VLT、比泽尔、FC302、S7-1500…" onkeydown="onKey(event,'home')">
+          <input id="qhome" autocomplete="off" placeholder="试试：G120C、FX5U、ACS580、VLT、比泽尔、FC302、S7-1500…" oninput="onSug(this.value,'home')" onfocus="onSug(this.value,'home')" onkeydown="onKey(event,'home')">
           <button class="search-btn" onclick="doSearch('home')"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4-4"/></svg>直取文档</button>
         </div>
+        <div class="suggest" id="sug-home"></div>
       </div>
       <div class="hero-stats">
         <div class="hs"><b id="h-doc">0</b><span>文档总量</span></div>
@@ -704,9 +673,9 @@ function updateCountdown(){
 }
 setInterval(updateCountdown,1000);updateCountdown();
 </script>
-<script src="data/docs-1.js?v=20260928-1640"></script>
-<script src="data/docs-2.js?v=20260928-1640"></script>
-<script src="data/docs-3.js?v=20260928-1640"></script>
+<script src="data/docs-1.js?v=20260929-0840"></script>
+<script src="data/docs-2.js?v=20260929-0840"></script>
+<script src="data/docs-3.js?v=20260929-0840"></script>
 <script>;
 
 /* ===== 归一化与匹配 ===== */
@@ -1188,16 +1157,10 @@ function renderHome(){
       var statusText=failCount>0?('部分异常('+failCount+'/'+totalBrands+')'):('全部正常('+okCount+'/'+totalBrands+')');
       var newText=d.last_new>0?('，本次新增 '+d.last_new+' 份'):'';
       if(failCount>0)cs.classList.add('warn');else cs.classList.remove('warn');
-      // UTC时间转北京时间(+8小时)
+      // last_run已是北京时间(UTC+8)，直接显示
       var bjTime='--';
       if(d.last_run){
-        var t=d.last_run.replace(' ','T')+'Z';
-        var dt=new Date(t);
-        if(!isNaN(dt.getTime())){
-          var y=dt.getFullYear(),m=String(dt.getMonth()+1).padStart(2,'0'),dd=String(dt.getDate()).padStart(2,'0');
-          var hh=String(dt.getHours()).padStart(2,'0'),mm=String(dt.getMinutes()).padStart(2,'0');
-          bjTime=y+'-'+m+'-'+dd+' '+hh+':'+mm;
-        }else bjTime=d.last_run;
+        bjTime=d.last_run.substring(0,16);
       }
       cs.innerHTML='<span class="dot"></span> 云端自动采集 '+statusText+' | 最近采集：'+bjTime+newText+' | 每3小时自动增量采集 <span class="detail-link" onclick="toggleCrawlDetail()">['+(failCount>0?'查看异常':'查看详情')+']</span>';
       // 填充详情面板
