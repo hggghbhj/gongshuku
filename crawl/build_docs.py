@@ -111,7 +111,8 @@ def normalize_date(s):
     return s
 # 品牌默认接入日期（用于d字段为空时填充，让"最新入库"正常排序）
 BRAND_DATE={
- "siemens":"2026-09-28","mitsubishi":"2026-09-28","cocis":"2026-09-28","schneider":"2026-09-25","gwinstek":"2026-09-25",
+ "siemens":"2026-09-29","mitsubishi":"2026-09-29","cocis":"2026-09-29","abb":"2026-09-29","powtran":"2026-09-29",
+ "schneider":"2026-09-25","gwinstek":"2026-09-25",
  "moons":"2026-09-24","siglent":"2026-09-24","hantek":"2026-09-24",
  "airtac":"2026-09-23","chint":"2026-09-23","jelpc":"2026-09-23",
  "growatt":"2026-09-23","delixi":"2026-09-23","fuling":"2026-09-23",
@@ -131,9 +132,13 @@ def rec(b,page,ty,t,d,v,u,size,pages,cat="",ct=""):
                 bkey=k;break
         d=BRAND_DATE.get(bkey,"2026-01-01")
     d=normalize_date(d)
-    # ct采集时间：优先用传入值，否则用文档日期d（首次运行时按文档日期排序）
+    # ct采集时间：优先用传入值，否则用品牌接入日期（新接入品牌排在前面）
     if not ct:
-        ct=d or "2026-01-01"
+        bkey=""
+        for k,v2 in BRANDS.items():
+            if v2.get("b")==b:
+                bkey=k;break
+        ct=BRAND_DATE.get(bkey,d or "2026-01-01")
     return {"t":t,"b":b,"d":d or "","ty":ty or "说明书","v":v or "","l":"中文",
       "url":page,"pdf":u,"size":size or "","kw":kw,
       "sum":"%s %s（%d页），来源品牌官网，免费在线查看。"%(b,cat or ty,pages or 0),
@@ -400,20 +405,12 @@ for r in out:
     k=r.get("pdf","")
     if k in seen:continue
     seen.add(k)
-    # 继承已有文档的采集时间，新增文档用文档日期或品牌接入日期
+    # 采集时间策略：已有文档继承原ct，新增文档用rec函数设置的品牌接入日期
     if k in old_ct:
         r["ct"]=old_ct[k]
     elif not r.get("ct"):
-        # 新增文档且未设置ct：优先用文档日期d，否则用品牌接入日期
-        if r.get("d"):
-            r["ct"]=r["d"]
-        else:
-            # 从品牌名反查品牌接入日期
-            bkey=""
-            for k2,v2 in BRANDS.items():
-                if v2.get("b")==r.get("b"):
-                    bkey=k2;break
-            r["ct"]=BRAND_DATE.get(bkey,"2026-01-01")
+        # 新增文档且未设置ct：用当前采集时间
+        r["ct"]=now_str
     uniq.append(r)
 json.dump(uniq,open("docs_new_records.json","w",encoding="utf-8"),ensure_ascii=False,indent=1)
 # 写 JS 分片
