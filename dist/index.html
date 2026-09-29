@@ -673,9 +673,9 @@ function updateCountdown(){
 }
 setInterval(updateCountdown,1000);updateCountdown();
 </script>
-<script src="data/docs-1.js?v=20260929-0840"></script>
-<script src="data/docs-2.js?v=20260929-0840"></script>
-<script src="data/docs-3.js?v=20260929-0840"></script>
+<script src="data/docs-1.js?v=20260929-0900"></script>
+<script src="data/docs-2.js?v=20260929-0900"></script>
+<script src="data/docs-3.js?v=20260929-0900"></script>
 <script>;
 
 /* ===== 归一化与匹配 ===== */
@@ -2126,7 +2126,14 @@ function countUp(el,target,dur){
 function fillLiveStream(){
   var el=document.getElementById('liveStream');
   if(!el||typeof DOCS==='undefined'||!DOCS.length)return;
-  var latest=DOCS.filter(function(d){return d.pdf;}).slice().sort(function(a,b){return b.d>a.d?1:-1;}).slice(0,8);
+  // 按采集时间ct降序，跟自动采集同步
+  var latest=DOCS.filter(function(d){return d.pdf && /\.pdf(\?|$)/i.test(d.pdf);}).slice().sort(function(a,b){
+    var ca=(a.ct||a.d||'').replace(/-/g,'/');
+    var cb=(b.ct||b.d||'').replace(/-/g,'/');
+    if(ca<cb)return 1;if(ca>cb)return -1;
+    if(a.b<b.b)return -1;if(a.b>b.b)return 1;
+    return 0;
+  }).slice(0,8);
   var html='';
   latest.forEach(function(d){
     var title=d.t.length>20?d.t.substring(0,20)+'…':d.t;
