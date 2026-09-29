@@ -860,8 +860,8 @@ function docCard(d,terms){
   const direct=!!d.pdf;
   const fm=(direct&&d.pdf)?((d.pdf.toLowerCase().split('?')[0].match(/\.([a-z0-9]+)$/)||[])[1]||''):'';
   const isArc=['zip','rar','7z','gz'].indexOf(fm)>=0;
-  // 判断是否为PDF：.pdf后缀 或 API下载链接（download/api/download.aspx等），非压缩包
-  const isPdf=fm==='pdf' || (direct && !isArc && /(download|\/api\/|download\.aspx|dodown|downfile|file\/down)/i.test(d.pdf));
+  // 判断是否为PDF：.pdf后缀 或 API下载链接（download/api/down/file等关键词），非压缩包
+  const isPdf=fm==='pdf' || (direct && !isArc && /(download|api|down|file\/down|dodown|downfile)/i.test(d.pdf));
   const isDoc=['doc','docx','ppt','pptx','xls','xlsx','txt','wps','rtf'].indexOf(fm)>=0;
   const tags=[];
   if(d.b)tags.push('<span class="tag brand">'+esc(d.b)+'</span>');
@@ -1144,7 +1144,7 @@ function renderHome(){
     if(!d.pdf)return false;
     var fm=(d.pdf.toLowerCase().split('?')[0].match(/\.([a-z0-9]+)$/)||[])[1]||'';
     if(['zip','rar','7z','gz'].indexOf(fm)>=0)return false;
-    return fm==='pdf' || /(download|\/api\/|download\.aspx|dodown|downfile|file\/down)/i.test(d.pdf);
+    return fm==='pdf' || /(download|api|down|file\/down|dodown|downfile)/i.test(d.pdf);
   }).slice().sort(function(a,b){
     var ca=(a.ct||a.d||'').replace(/-/g,'/');
     var cb=(b.ct||b.d||'').replace(/-/g,'/');
@@ -2137,7 +2137,7 @@ function fillLiveStream(){
     if(!d.pdf)return false;
     var fm=(d.pdf.toLowerCase().split('?')[0].match(/\.([a-z0-9]+)$/)||[])[1]||'';
     if(['zip','rar','7z','gz'].indexOf(fm)>=0)return false;
-    return fm==='pdf' || /(download|\/api\/|download\.aspx|dodown|downfile|file\/down)/i.test(d.pdf);
+    return fm==='pdf' || /(download|api|down|file\/down|dodown|downfile)/i.test(d.pdf);
   }).slice().sort(function(a,b){
     var ca=(a.ct||a.d||'').replace(/-/g,'/');
     var cb=(b.ct||b.d||'').replace(/-/g,'/');
