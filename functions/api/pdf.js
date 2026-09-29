@@ -21,12 +21,23 @@ const REFERERS = {
   'invt.com.cn': 'https://www.invt.com.cn/dowload-15',
   'invt.com': 'https://www.invt.com.cn/dowload-15',
   'jngbdz.com': 'https://jngbdz.com/',
+  'mitsubishielectric.com': 'https://www.mitsubishielectric.com/fa/download/',
+  'siemens.com.cn': 'https://www.ad.siemens.com.cn/download/',
+  'aliyuncs.com': 'https://www.ad.siemens.com.cn/download/',
+  'websiteonline.cn': 'https://www.chinacocis.com/download',
+  'mcgspro.com': 'https://www.mcgspro.com/',
+  'haiwell.com': 'https://haiwell.com/',
+  'delixidrive.com': 'https://www.delixidrive.com/',
+  'se.com': 'https://www.se.com/cn/zh/download/',
+  'huceen.cn': 'https://www.huceen.cn/',
+  'xichi.com': 'http://www.xichi.com/',
+  'gwinstek.com.cn': 'https://www.gwinstek.com.cn/',
 };
 function refererFor(u){
   for(const k in REFERERS){ if(u.includes(k)) return REFERERS[k]; }
   try{ return new URL(u).origin+'/'; }catch(e){ return ''; }
 }
-const ALLOWED_HOST = /(dl\.e-elitech\.com|www\.e-elitech\.com|cdn\.xinje\.com|xinje\.com|sinee\.cn|zxdq\.oss-cn-shenzhen|euradrives\.com|hcfa\.cc|hcfa\.cn|coolmay\.com|leisai\.com|powtran\.com|thefastfile\.com|jtdrive\.com|invt\.com|jngbdz\.com|elitech)/i;
+const ALLOWED_HOST = /(dl\.e-elitech\.com|www\.e-elitech\.com|cdn\.xinje\.com|xinje\.com|sinee\.cn|zxdq\.oss-cn-shenzhen|euradrives\.com|hcfa\.cc|hcfa\.cn|coolmay\.com|leisai\.com|powtran\.com|thefastfile\.com|jtdrive\.com|invt\.com|jngbdz\.com|elitech|dl\.mitsubishielectric\.com|mitsubishielectric\.com|ad\.siemens\.com\.cn|siemens\.com\.cn|aliyuncs\.com|websiteonline\.cn|mcgspro\.com|haiwell\.com|delixidrive\.com|download\.se\.com|se\.com|huceen\.cn|xichi\.com|gwinstek\.com\.cn)/i;
 const MAX_CACHE_BYTES = 25 * 1024 * 1024;
 
 // dl.e-elitech.com 与 www.e-elitech.com 完全镜像，前者在 Cloudflare 节点间歇 520，统一改写为 www
