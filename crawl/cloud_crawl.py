@@ -1,0 +1,190 @@
+# -*- coding: utf-8 -*-
+"""工书库·云端采集编排（GitHub Actions 专用）。
+顺序跑各品牌采集器（manifest 驱动增量，只下载新发现的说明书）-> build_docs 生成 docs-3.js。
+运行前后对比 manifest 记录数统计本次新增，写入 dist/data/stats.json 供网站前端展示。
+"""
+import subprocess,os,time,sys,json,glob
+from datetime import datetime,timezone,timedelta
+HERE=os.path.dirname(os.path.abspath(__file__));os.chdir(HERE)
+# 北京时间（UTC+8）
+BJ_TZ=timezone(timedelta(hours=8))
+def bj_now():
+    return datetime.now(BJ_TZ).strftime("%Y-%m-%d %H:%M:%S")
+STEPS=[
+ ("顾美",["python3","crawler_coolmay.py"]),
+ ("精创",["python3","crawler_elitech.py"]),
+ ("信捷",["python3","crawler_xinje.py"]),
+ ("雷赛",["python3","crawler_leisai.py"]),
+ ("正弦",["python3","crawler_sinee.py"]),
+ ("欧瑞",["python3","crawler_oura.py"]),
+ ("禾川",["python3","crawler_hcfa.py"]),
+ ("英威腾",["python3","crawler_invt.py"]),
+ ("伟创",["python3","crawler_veichi.py"]),
+ ("昆仑通态",["python3","crawler_mcgs.py"]),
+ ("艾莫迅",["python3","crawler_amsamotion.py"]),
+ ("森兰",["python3","crawler_senlan.py"]),
+ ("易驱",["python3","crawler_easydrive.py"]),
+ ("易能",["python3","crawler_enc.py"]),
+ ("合信",["python3","crawler_cotion.py"]),
+ ("工贝",["python3","crawler_gongbei.py"]),
+ ("明纬",["python3","crawler_meanwell.py"]),
+ ("山特",["python3","crawler_santak.py"]),
+ ("四方电气",["python3","crawler_simphoenix.py"]),
+ ("吉泰科",["python3","crawler_gtake.py"]),
+ ("天正",["python3","crawler_tengen.py"]),
+ ("合康新能",["python3","crawler_hiconics.py"]),
+ ("伊玛电子",["python3","crawler_ema.py"]),
+ ("邦纳",["python3","crawler_banner.py"]),
+ ("三友",["python3","crawler_sanyou.py"]),
+ ("宇电",["python3","crawler_yudian.py"]),
+ ("Cincon",["python3","crawler_cincon.py"]),
+ ("和利时",["python3","crawler_hollysys.py"]),
+ ("宏发",["python3","crawler_hongfa.py"]),
+ ("海为",["python3","crawler_haiwell.py"]),
+ ("虹润",["python3","crawler_hongrun.py"]),
+ ("上润",["python3","crawler_wideplus.py"]),
+ ("安东",["python3","crawler_anthone.py"]),
+ ("良信",["python3","crawler_lazzen.py"]),
+ ("研控",["python3","crawler_yankong.py"]),
+ ("汇辰",["python3","crawler_huceen.py"]),
+ ("米格",["python3","crawler_mege.py"]),
+ ("兰宝",["python3","crawler_lanbao.py"]),
+ ("阿尔法",["python3","crawler_alpha.py"]),
+ ("西驰",["python3","crawler_xichi.py"]),
+ ("安邦信",["python3","crawler_anbangxin.py"]),
+ ("华中数控",["python3","crawler_huazhong.py"]),
+ ("广州数控",["python3","crawler_gskcnc.py"]),
+ ("西安西普",["python3","crawler_westpow.py"]),
+ ("麦克传感器",["python3","crawler_microsensor.py"]),
+ ("古瑞瓦特",["python3","crawler_growatt.py"]),
+ ("德力西变频器",["python3","crawler_delixi.py"]),
+ ("富凌电气",["python3","crawler_fuling.py"]),
+ ("申乐电气",["python3","crawler_shenler.py"]),
+ ("汇邦科技",["python3","crawler_huibang.py"]),
+ ("开民电器",["python3","crawler_kaimin.py"]),
+ ("协鑫集成",["python3","crawler_gclsi.py"]),
+ ("亚泰仪表",["python3","crawler_yatai.py"]),
+ ("正泰电器",["python3","crawler_chint_mobile.py"]),
+ ("亚德客",["python3","crawler_airtac.py"]),
+ ("汇川",["python3","crawler_inovance.py"]),
+ ("金田链接",["python3","crawl_jintian_pw.py","--links-only"]),
+ ("佳尔灵",["python3","crawler_jelpc.py"]),
+ ("鼎阳科技",["python3","crawler_siglent.py"]),
+ ("汉泰克",["python3","crawler_hantek.py"]),
+ ("鸣志",["python3","crawler_moons.py"]),
+ ("施耐德",["python3","crawler_schneider.py"]),
+ ("固纬电子",["python3","crawler_gwinstek.py"]),
+ ("西门子",["python3","crawler_siemens.py"]),
+ ("三菱电机",["python3","crawler_mitsubishi.py"]),
+ ("无锡科思",["python3","crawler_cocis.py"]),
+ ("ABB电机",["python3","crawler_abb_motor.py"]),
+]
+def count_manifests():
+    """统计所有 manifest 的记录数（按品牌key）"""
+    counts={}
+    for fp in glob.glob("*_manifest.json"):
+        key=fp.replace("_manifest.json","")
+        try:
+            d=json.load(open(fp,encoding="utf-8"))
+            counts[key]=len(d) if isinstance(d,list) else 0
+        except Exception:counts[key]=0
+    # 普传 kv_powtran.json
+    try:
+        d=json.load(open("kv_powtran.json",encoding="utf-8"))
+        counts["powtran"]=len(d) if isinstance(d,list) else 0
+    except Exception:pass
+    return counts
+def main():
+    only=sys.argv[1:]
+    before=count_manifests()
+    summary={}
+    # 读取历史失败计数（避免瞬时故障被误判为一直异常）
+    fail_counts={}
+    try:
+        if os.path.exists("cloud_crawl_state.json"):
+            old=json.load(open("cloud_crawl_state.json",encoding="utf-8"))
+            fail_counts=old.get("fail_counts",{})
+    except Exception:pass
+    try:
+        for name,cmd in STEPS:
+            if only and name not in only:continue
+            t0=time.time()
+            try:
+                r=subprocess.run(cmd,capture_output=True,text=True,timeout=480)
+                ok=r.returncode==0
+                if ok:
+                    fail_counts[name]=0
+                    summary[name]="ok"
+                else:
+                    fail_counts[name]=fail_counts.get(name,0)+1
+                    # 连续失败<3次标记为retrying，>=3次才标记为fail
+                    if fail_counts[name]<3:
+                        summary[name]="retrying(%d/3)"%fail_counts[name]
+                    else:
+                        summary[name]="fail(rc=%d)"%r.returncode
+                tail=(r.stdout or "").strip().splitlines()[-2:]
+                print("【%s】%s %.0fs"%(name,"成功" if ok else "失败",time.time()-t0))
+                for l in tail:print("   ",l)
+                if not ok:print("   stderr:",(r.stderr or "")[-300:])
+            except subprocess.TimeoutExpired:
+                fail_counts[name]=fail_counts.get(name,0)+1
+                if fail_counts[name]<3:
+                    summary[name]="retrying(%d/3)"%fail_counts[name]
+                else:
+                    summary[name]="timeout"
+                print("【%s】超时（下次重试）"%name)
+            except Exception as e:
+                fail_counts[name]=fail_counts.get(name,0)+1
+                if fail_counts[name]<3:
+                    summary[name]="retrying(%d/3)"%fail_counts[name]
+                else:
+                    summary[name]="error:%s"%e
+                print("【%s】异常:%s"%(name,e))
+    except Exception as e:
+        print("采集循环全局异常:",e)
+    print("="*50);print("生成 docs-3.js ...")
+    try:
+        r=subprocess.run(["python3","build_docs.py"],capture_output=True,text=True,timeout=180)
+        print(r.stdout.strip())
+        if r.returncode!=0:
+            print("build_docs警告:",(r.stderr or "")[-500:])
+    except Exception as e:
+        print("build_docs异常:",e)
+    after=count_manifests()
+    # 统计新增
+    new_by_brand={}
+    total_new=0
+    for k in after:
+        diff=after[k]-before.get(k,0)
+        if diff>0:
+            new_by_brand[k]=diff
+            total_new+=diff
+    total=sum(after.values())
+    stats={
+        "last_run":bj_now(),
+        "last_new":total_new,
+        "new_by_brand":new_by_brand,
+        "total":total,
+        "brands":after,
+        "brand_count":len(after),
+        "cron":"每3小时自动采集（北京时间 8:17/11:17/14:17/17:17/20:17/23:17/2:17/5:17）",
+        "steps":summary,
+    }
+    os.makedirs("../dist/data",exist_ok=True)
+    json.dump(stats,open("../dist/data/stats.json","w",encoding="utf-8"),ensure_ascii=False,indent=1)
+    json.dump({"steps":summary,"last_new":total_new,"total":total,"fail_counts":fail_counts},open("cloud_crawl_state.json","w",encoding="utf-8"),ensure_ascii=False,indent=1)
+    print("本次新增 %d 份，累计 %d 份。新增明细: %s"%(total_new,total,new_by_brand))
+    print("云端采集编排完成:",summary)
+if __name__=="__main__":
+    try:
+        main()
+    except Exception as e:
+        print("FATAL:",e)
+        # 致命错误也生成stats
+        import traceback;traceback.print_exc()
+        try:
+            after=count_manifests()
+            stats={"last_run":time.strftime("%Y-%m-%d %H:%M:%S",time.localtime()),"last_new":0,"new_by_brand":{},"total":sum(after.values()),"brands":after,"brand_count":len(after),"cron":"每3小时自动采集","steps":{},"fatal_error":str(e)}
+            os.makedirs("../dist/data",exist_ok=True)
+            json.dump(stats,open("../dist/data/stats.json","w",encoding="utf-8"),ensure_ascii=False,indent=1)
+        except:pass

@@ -1,0 +1,152 @@
+name: 工书库自动采集
+
+# 每 3 小时云端自动跑一次（cron 为 UTC 时间；GitHub 高峰期可能延迟数分钟，属正常）
+on:
+  schedule:
+    - cron: '17 */3 * * *'
+  workflow_dispatch: {}
+
+# 让 GitHub Actions 令牌能把更新后的采集清单 push 回仓库（默认只读）
+permissions:
+  contents: write
+
+jobs:
+  crawl-deploy:
+    runs-on: ubuntu-latest
+    timeout-minutes: 150
+    steps:
+      - name: 检出代码
+        uses: actions/checkout@v4
+
+      - name: 安装 Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: 安装系统依赖（pdfinfo 取页数，gs 压缩大文件）
+        run: sudo apt-get update -qq && sudo apt-get install -y -qq poppler-utils ghostscript
+
+      - name: 安装 Python 依赖
+        run: python -m pip install --quiet --upgrade requests playwright pypdf
+
+      - name: 安装 Chromium（正弦/欧瑞/禾川/金田 用无头浏览器收集列表）
+        run: python -m playwright install --with-deps chromium
+
+      - name: 云端采集（manifest 驱动增量，只下载新说明书）
+        run: |
+          # 先删除旧的stats.json，确保cloud_crawl.py生成全新的（避免检出的旧文件残留）
+          rm -f dist/data/stats.json
+          python crawl/cloud_crawl.py
+        continue-on-error: true
+
+      - name: 复制已下载PDF到部署目录
+        run: |
+          mkdir -p dist/pdfs
+          if [ -d crawl/pdfs ]; then
+            cp -r crawl/pdfs/* dist/pdfs/ 2>/dev/null || true
+            echo "dist/pdfs PDF总数: $(find dist/pdfs -name '*.pdf' | wc -l)"
+          else
+            echo "crawl/pdfs 不存在，跳过"
+          fi
+
+      - name: 匹配本地PDF路径（处理manifest pdf字段为空的品牌）
+        run: |
+          cd crawl && python match_local.py || echo "match_local.py 异常，继续"
+        continue-on-error: true
+
+      - name: 压缩超25MB的PDF（gs ebook参数）
+        run: |
+          cd crawl
+          python3 - <<'PYEOF'
+      import os, subprocess, glob
+      DIST=os.path.join(os.path.dirname(os.path.abspath(".")),"dist")
+      LIMIT=25*1024*1024
+      pdfs=[]
+      for root,_,files in os.walk(os.path.join(DIST,"pdfs")):
+          for f in files:
+              fp=os.path.join(root,f)
+              if f.endswith(".pdf") and os.path.getsize(fp)>LIMIT:
+                  pdfs.append(fp)
+      print(f"待压缩: {len(pdfs)} 个")
+      for fp in pdfs:
+          tmp=fp+".tmp"
+          try:
+              subprocess.run(["gs","-sDEVICE=pdfwrite","-dCompatibilityLevel=1.4",
+                  "-dPDFSETTINGS=/ebook","-dNOPAUSE","-dQUIET","-dBATCH",
+                  "-sOutputFile="+tmp,fp],timeout=180,check=True)
+              if os.path.exists(tmp) and os.path.getsize(tmp)>1000:
+                  if os.path.getsize(tmp)<LIMIT:
+                      os.replace(tmp,fp)
+                      print("  OK:",os.path.basename(fp)[:40])
+                  else:
+                      os.remove(tmp)
+                      print("  仍超25MB，保留:",os.path.basename(fp)[:40])
+          except Exception as e:
+              if os.path.exists(tmp): os.remove(tmp)
+              print("  压缩失败:",os.path.basename(fp)[:40],str(e)[:50])
+      PYEOF
+        continue-on-error: true
+
+      - name: 移出仍超25MB的PDF（不删除，保留在备份目录）
+        run: |
+          cd crawl && python handle_large.py || echo "handle_large.py 异常，继续"
+        continue-on-error: true
+
+      - name: 确保stats.json存在（容错）
+        run: |
+          if [ ! -f dist/data/stats.json ]; then
+            echo '{"last_run":"'$(date '+%Y-%m-%d %H:%M:%S')'","last_new":0,"total":0,"brands":{},"brand_count":0,"steps":{},"cron":"每3小时自动采集","error":"cloud_crawl.py未生成stats，使用兜底模板"}' > dist/data/stats.json
+            echo "stats.json不存在，已创建兜底模板"
+          fi
+          echo "stats.json预览:"
+          head -c 300 dist/data/stats.json
+
+      - name: 重建并保护数据分片 docs-3.js（防止回退）
+        run: |
+          # 备份当前线上全量版本
+          cp dist/data/docs-3.js /tmp/docs3_backup.js
+          # 重新生成 docs-3.js（build_docs.py 会自动读取旧版本做时间合并）
+          cd crawl && python build_docs.py
+          BUILD_RC=$?
+          cd ..
+          if [ $BUILD_RC -ne 0 ]; then
+            echo "⚠️ build_docs.py 失败(rc=$BUILD_RC)，保留现有全量版本"
+            cp /tmp/docs3_backup.js dist/data/docs-3.js
+          else
+            OLD=$(grep -o '"pdf"' /tmp/docs3_backup.js | wc -l)
+            NEW=$(grep -o '"pdf"' crawl/docs-3.js | wc -l)
+            echo "旧版本条目: $OLD, 新版本条目: $NEW"
+            if [ "$NEW" -ge "$OLD" ]; then
+              cp crawl/docs-3.js dist/data/docs-3.js
+              echo "✅ 新版本($NEW) >= 旧版($OLD)，采用新版本"
+            else
+              cp /tmp/docs3_backup.js dist/data/docs-3.js
+              echo "⚠️ 新版本($NEW) < 旧版($OLD)，保留旧版，防止数据回退"
+            fi
+          fi
+
+      - name: 部署到 Cloudflare Pages
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+        run: npx -y wrangler@4.136.0 pages deploy dist --project-name=gongshuku --branch=main --commit-dirty=true
+        continue-on-error: true
+
+      - name: 验证线上部署
+        run: |
+          sleep 10
+          echo "=== 线上docs-3.js大小 ==="
+          curl -s https://gongshuku.pages.dev/data/docs-3.js | wc -c
+          echo "=== 线上stats.json ==="
+          curl -s https://gongshuku.pages.dev/data/stats.json | python3 -c "import sys,json; d=json.load(sys.stdin); print(f'total={d.get(\"total\")}, brands={len(d.get(\"brands\",{}))}, steps={len(d.get(\"steps\",{}))}')" 2>/dev/null || echo "stats.json验证失败"
+
+      - name: 回写采集清单（供下次增量）
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add crawl/*_manifest.json crawl/jintian_pw_links.json crawl/cloud_crawl_state.json crawl/stats.json dist/data/stats.json dist/data/docs-3.js 2>/dev/null || true
+          git commit -m "chore(auto): 更新采集清单" || echo "无清单变更"
+          git stash || true
+          git pull --rebase origin main || true
+          git stash pop || true
+          git push origin main || (git pull --rebase origin main && git push origin main) || git push --force-with-lease origin main

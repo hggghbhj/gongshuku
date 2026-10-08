@@ -1,0 +1,1900 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="theme-color" content="#132531">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" type="image/png" href="icon-192.png">
+<link rel="apple-touch-icon" href="icon-192.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="工书库">
+<title>工书库 · 工业说明书直取中心</title>
+<link rel="stylesheet" href="https://miaoda.feishu.cn/fonts/css2?family=Noto+Sans+SC:wght@300;400;500;700;900&family=JetBrains+Mono:wght@400;600;700&display=swap">
+<style>
+:root{
+  --bg:#e9edee; --bg2:#dfe5e6; --card:#ffffff; --ink:#15212a; --ink2:#3d4c57; --mut:#71808a; --line:#d6dee0;
+  --navy:#132531; --navy2:#1d3a4b; --orange:#ff6100; --orange2:#e65600; --green:#0a8155; --greenbg:#e3f3ea;
+  --blue:#0d5f8c; --bluebg:#e4f0f7; --amber:#b07300; --amberbg:#fbf1dc; --red:#b42318; --redbg:#fcebe8;
+  --mono:"JetBrains Mono",ui-monospace,Consolas,monospace; --sans:"Noto Sans SC",-apple-system,"Microsoft YaHei",sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{height:100%}
+body{font-family:var(--sans);background:var(--bg);color:var(--ink);font-size:14px;line-height:1.5;-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none}
+button{font-family:inherit;cursor:pointer;border:none;background:none;color:inherit}
+input{font-family:inherit}
+::-webkit-scrollbar{width:10px;height:10px}
+::-webkit-scrollbar-thumb{background:#b6c0c4;border-radius:6px;border:2px solid var(--bg)}
+::-webkit-scrollbar-thumb:hover{background:#97a4a9}
+
+/* ===== 顶栏 ===== */
+.topbar{background:var(--navy);color:#eaf2f4;position:sticky;top:0;z-index:50;box-shadow:0 2px 12px rgba(10,25,35,.25)}
+.topbar-in{max-width:1440px;margin:0 auto;display:flex;align-items:center;gap:18px;padding:0 24px;height:64px}
+.logo{display:flex;align-items:center;gap:11px;flex-shrink:0;cursor:pointer}
+.logo-mark{width:38px;height:38px;background:linear-gradient(135deg,var(--orange),var(--orange2));border-radius:8px;display:grid;place-items:center;box-shadow:0 3px 10px rgba(255,97,0,.4)}
+.logo-mark svg{width:23px;height:23px}
+.logo-txt b{display:block;font-size:18px;font-weight:900;letter-spacing:1px;line-height:1.1}
+.logo-txt span{font-size:10px;letter-spacing:2.5px;color:#7fa0ad;font-weight:500}
+.searchwrap{flex:1;position:relative;max-width:760px}
+.searchbox{display:flex;align-items:center;background:#fff;border-radius:10px;overflow:hidden;box-shadow:0 4px 18px rgba(0,0,0,.18)}
+.searchbox input{flex:1;border:none;outline:none;padding:13px 16px;font-size:15px;color:var(--ink);background:transparent}
+.searchbox input::placeholder{color:#9aa7ae}
+.search-btn{background:var(--orange);color:#fff;padding:0 26px;align-self:stretch;display:flex;align-items:center;gap:7px;font-weight:700;font-size:15px;transition:.15s}
+.search-btn:hover{background:var(--orange2)}
+.search-btn svg{width:18px;height:18px}
+.top-stats{margin-left:auto;flex-shrink:0;text-align:right;line-height:1.25}
+.top-stats b{font-family:var(--mono);font-size:18px;color:#ffd9bf;font-weight:700}
+.top-stats span{display:block;font-size:10.5px;color:#86a3af;letter-spacing:.5px}
+.suggest{position:absolute;top:56px;left:0;right:0;background:#fff;border-radius:12px;box-shadow:0 18px 50px rgba(10,25,35,.3);overflow:hidden;display:none;z-index:60}
+.suggest.show{display:block}
+.sug-sec{padding:7px 14px 4px;font-size:11px;color:var(--mut);font-weight:700;letter-spacing:1px}
+.sug-item{display:flex;align-items:center;gap:11px;padding:9px 16px;cursor:pointer;color:var(--ink)}
+.sug-item:hover,.sug-item.act{background:#f2f6f7}
+.sug-item .ic{width:26px;height:26px;border-radius:6px;display:grid;place-items:center;flex-shrink:0;font-size:12px;font-weight:700}
+.sug-item .ic.b{background:var(--navy);color:#fff}
+.sug-item .ic.m{background:var(--bluebg);color:var(--blue)}
+.sug-item .tt{flex:1;font-size:14px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.sug-item .tt em{font-style:normal;color:var(--orange);font-weight:700}
+.sug-item .meta{font-size:11px;color:var(--mut);font-family:var(--mono);flex-shrink:0}
+.sug-item .go{color:#b3bfc4;font-size:15px}
+
+/* ===== 布局 ===== */
+.wrap{max-width:1440px;margin:0 auto;padding:24px;display:grid;grid-template-columns:236px 1fr;gap:24px;align-items:start}
+.sidebar{position:sticky;top:88px;display:flex;flex-direction:column;gap:16px}
+.panel{background:var(--card);border:1px solid var(--line);border-radius:12px;overflow:hidden}
+.panel-h{padding:13px 16px 11px;font-weight:700;font-size:13px;color:var(--navy);border-bottom:1px solid var(--line);display:flex;align-items:center;justify-content:space-between;letter-spacing:.5px}
+.panel-h .cnt{font-family:var(--mono);color:var(--mut);font-weight:400;font-size:11px}
+.filt{padding:10px 12px 13px;max-height:290px;overflow-y:auto}
+.filt label{display:flex;align-items:center;gap:9px;padding:6px 8px;border-radius:7px;cursor:pointer;font-size:13px;color:var(--ink2)}
+.filt label:hover{background:#f1f5f5}
+.filt label input{accent-color:var(--orange);width:15px;height:15px}
+.filt label .n{margin-left:auto;font-family:var(--mono);font-size:11px;color:var(--mut)}
+.filt label.ck{color:var(--navy);font-weight:600}
+.switch-row{padding:12px 16px;border-top:1px solid var(--line);display:flex;align-items:center;justify-content:space-between;font-size:13px;font-weight:600}
+.sw{width:40px;height:22px;background:#c2ccd0;border-radius:20px;position:relative;transition:.2s;flex-shrink:0}
+.sw::after{content:"";position:absolute;top:2px;left:2px;width:18px;height:18px;background:#fff;border-radius:50%;transition:.2s;box-shadow:0 1px 3px rgba(0,0,0,.3)}
+.sw.on{background:var(--green)}
+.sw.on::after{transform:translateX(18px)}
+
+/* ===== 主区 ===== */
+.main{min-width:0}
+.crumb{display:flex;align-items:center;gap:10px;margin-bottom:14px;font-size:13px;color:var(--mut);flex-wrap:wrap}
+.crumb b{color:var(--navy)}
+.toolbar{display:flex;align-items:center;gap:14px;margin-bottom:16px;flex-wrap:wrap}
+.toolbar h2{font-size:19px;font-weight:900;color:var(--navy)}
+.toolbar h2 .hl{color:var(--orange)}
+.toolbar .count{font-family:var(--mono);font-size:12px;color:var(--mut);background:var(--card);border:1px solid var(--line);padding:4px 11px;border-radius:20px}
+.spacer{flex:1}
+.sortsel{display:flex;background:var(--card);border:1px solid var(--line);border-radius:9px;overflow:hidden}
+.sortsel button{padding:8px 14px;font-size:12.5px;color:var(--mut);font-weight:600}
+.sortsel button.on{background:var(--navy);color:#fff}
+
+/* 文档卡片 */
+.doclist{display:flex;flex-direction:column;gap:11px}
+.doc{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:15px 18px;display:grid;grid-template-columns:1fr auto;gap:6px 16px;transition:.15s;position:relative}
+.doc:hover{border-color:#b9c9cd;box-shadow:0 6px 20px rgba(20,45,60,.08)}
+.doc.direct{border-left:4px solid var(--green)}
+.doc.main{background:linear-gradient(180deg,#fff,#f7faf8)}
+.doc-l{min-width:0}
+.doc-title{font-size:15.5px;font-weight:700;color:var(--navy);line-height:1.4;margin-bottom:7px;display:flex;align-items:center;gap:9px;flex-wrap:wrap}
+.doc-title em{font-style:normal;background:linear-gradient(transparent 62%,#ffe2c8 62%);color:var(--orange2);padding:0 1px}
+.doc-tags{display:flex;gap:6px;flex-wrap:wrap;align-items:center}
+.tag{font-size:11px;padding:2px 8px;border-radius:5px;font-weight:600;line-height:1.5;white-space:nowrap}
+.tag.brand{background:var(--navy);color:#fff}
+.tag.type{background:var(--bluebg);color:var(--blue)}
+.tag.ver{background:var(--amberbg);color:var(--amber);font-family:var(--mono)}
+.tag.lang{background:var(--bg2);color:var(--ink2)}
+.tag.latest{background:var(--green);color:#fff}
+.tag.other{background:#eef2f3;color:var(--mut)}
+.tag.fmt{background:#fff1e6;color:#d97706;font-family:var(--mono);font-weight:700}
+.doc-sum{font-size:12.5px;color:var(--mut);margin-top:7px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;max-width:760px}
+.doc-meta{display:flex;gap:16px;margin-top:9px;font-size:11.5px;color:var(--mut);font-family:var(--mono);flex-wrap:wrap}
+.doc-meta span{display:inline-flex;align-items:center;gap:4px}
+.doc-meta svg{width:13px;height:13px;opacity:.6}
+.doc-r{display:flex;flex-direction:column;gap:7px;align-items:stretch;justify-content:center;min-width:118px}
+.btn{padding:8px 13px;border-radius:8px;font-size:12.5px;font-weight:700;display:inline-flex;align-items:center;justify-content:center;gap:6px;transition:.15s;white-space:nowrap}
+.btn svg{width:14px;height:14px}
+.btn-pdf{background:var(--green);color:#fff}
+.btn-pdf:hover{background:#086b47}
+.btn-dl{background:var(--navy);color:#fff}
+.btn-dl:hover{background:var(--navy2)}
+.btn-tr{background:var(--amberbg);color:var(--amber)}
+.btn-tr:hover{background:#f6e3bd}
+.btn-page{background:#eef2f3;color:var(--ink2)}
+.btn-page:hover{background:#e0e8e9}
+.badge-direct{position:absolute;top:13px;right:16px;font-size:10px;color:var(--green);font-weight:700;display:none;align-items:center;gap:4px}
+.doc.direct .badge-direct{display:flex}
+.badge-direct i{width:6px;height:6px;background:var(--green);border-radius:50%}
+.badge-login{position:absolute;top:13px;right:16px;font-size:10px;color:#9a7b3a;font-weight:600;background:#f6efdf;padding:2px 7px;border-radius:20px}
+.btn-pdf{box-shadow:0 2px 8px rgba(10,129,85,.28)}
+.doc.direct{border-left:3px solid var(--green);padding-left:15px}
+
+/* 首页 */
+.hero{background:linear-gradient(135deg,var(--navy) 0%,var(--navy2) 70%);border-radius:16px;padding:38px 40px 34px;color:#fff;position:relative;overflow:hidden;margin-bottom:24px}
+.hero::before{content:"";position:absolute;right:-60px;top:-60px;width:280px;height:280px;border:2px solid rgba(255,97,0,.15);border-radius:50%}
+.hero::after{content:"";position:absolute;right:30px;top:30px;width:160px;height:160px;border:2px solid rgba(255,97,0,.1);border-radius:50%}
+.hero h1{font-size:27px;font-weight:900;letter-spacing:.5px;margin-bottom:9px;position:relative}
+.hero h1 .o{color:var(--orange)}
+.hero p{color:#a9c2cd;font-size:14px;max-width:620px;position:relative;margin-bottom:22px}
+.hero-search{position:relative;max-width:720px}
+.hero-search .searchbox{box-shadow:0 10px 34px rgba(0,0,0,.35)}
+.hero-stats{display:flex;gap:34px;margin-top:24px;position:relative;flex-wrap:wrap}
+.hero-stats .hs b{font-family:var(--mono);font-size:25px;font-weight:700;color:#ffb27f;display:block;line-height:1}
+.hero-stats .hs span{font-size:11.5px;color:#8aa7b3;letter-spacing:1px}
+.crawl-status{margin-top:14px;font-size:12px;color:#7fa0ad;font-family:var(--mono);display:flex;align-items:center;gap:8px;flex-wrap:wrap;background:rgba(0,200,120,.06);border:1px solid rgba(0,200,120,.18);border-radius:8px;padding:8px 12px}
+.crawl-status.warn{background:rgba(255,107,107,.06);border-color:rgba(255,107,107,.25)}
+.crawl-status .dot{width:8px;height:8px;border-radius:50%;background:var(--green);display:inline-block;animation:pulse 1.5s infinite;flex-shrink:0}
+.crawl-status.warn .dot{background:#ff6b6b}
+.crawl-status .detail-link{color:var(--blue);cursor:pointer;text-decoration:underline;margin-left:4px;font-weight:600}
+.crawl-detail{display:none;margin-top:10px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);border-radius:10px;padding:14px 16px;font-size:12px;font-family:var(--mono);max-height:300px;overflow-y:auto}
+.crawl-detail.show{display:block;animation:fadeIn .25s ease}
+@keyframes fadeIn{from{opacity:0;transform:translateY(-4px)}to{opacity:1;transform:translateY(0)}}
+.crawl-detail .cd-summary{margin-bottom:10px;font-weight:700;font-size:13px}
+.crawl-detail .cd-ok{color:var(--green)}
+.crawl-detail .cd-fail{color:#ff6b6b}
+.crawl-detail .cd-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:6px 12px}
+.crawl-detail .cd-item{display:flex;align-items:center;gap:6px;padding:3px 6px;border-radius:4px}
+.crawl-detail .cd-item:hover{background:rgba(255,255,255,.05)}
+.crawl-detail .cd-item .s{width:7px;height:7px;border-radius:50%;flex-shrink:0}
+.crawl-detail .cd-item .s.ok{background:var(--green);box-shadow:0 0 4px rgba(0,200,120,.5)}
+.crawl-detail .cd-item .s.fail{background:#ff6b6b;box-shadow:0 0 4px rgba(255,107,107,.5)}
+.crawl-detail .cd-item .reason{color:#ff9999;font-size:11px;margin-left:4px;opacity:.85}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.3}}
+.sec-h{display:flex;align-items:center;gap:11px;margin:28px 2px 15px}
+.sec-h .bar{width:4px;height:19px;background:var(--orange);border-radius:2px}
+.sec-h h3{font-size:17px;font-weight:900;color:var(--navy)}
+.sec-h span{font-size:12px;color:var(--mut)}
+.sec-h .more{margin-left:auto;font-size:12.5px;color:var(--blue);cursor:pointer;font-weight:600}
+.brandgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:10px}
+.brandcard{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:14px 13px;cursor:pointer;transition:.15s;position:relative;overflow:hidden}
+.brandcard:hover{border-color:var(--orange);transform:translateY(-2px);box-shadow:0 8px 20px rgba(20,45,60,.1)}
+.brandcard .nm{font-weight:700;font-size:14px;color:var(--navy);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.brandcard .en{font-family:var(--mono);font-size:10.5px;color:var(--mut);margin-top:2px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;text-transform:uppercase}
+.brandcard .num{position:absolute;top:10px;right:12px;font-family:var(--mono);font-size:11px;color:var(--orange);font-weight:700}
+.catgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(172px,1fr));gap:10px}
+.catcard{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:15px 16px;cursor:pointer;display:flex;align-items:center;gap:12px;transition:.15s}
+.catcard:hover{border-color:var(--navy);box-shadow:0 6px 16px rgba(20,45,60,.08)}
+.catcard .ci{width:38px;height:38px;border-radius:9px;background:var(--navy);color:#fff;display:grid;place-items:center;flex-shrink:0}
+.catcard .ci svg{width:20px;height:20px}
+.catcard .ct b{font-size:14px;color:var(--navy);display:block}
+.catcard .ct span{font-size:11px;color:var(--mut);font-family:var(--mono)}
+
+/* 空态 / 兜底 */
+.empty{background:var(--card);border:1px dashed #c2ccd0;border-radius:14px;padding:54px 30px;text-align:center}
+.empty .ei{font-size:40px;margin-bottom:12px}
+.empty h4{font-size:17px;color:var(--navy);margin-bottom:8px}
+.empty p{color:var(--mut);font-size:13px;margin-bottom:20px}
+.fallback{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:9px;max-width:760px;margin:0 auto}
+.fb-btn{background:#f4f7f7;border:1px solid var(--line);border-radius:9px;padding:12px;font-size:13px;font-weight:600;color:var(--navy)}
+.fb-btn:hover{border-color:var(--orange);color:var(--orange2)}
+.loading{padding:60px;text-align:center;color:var(--mut)}
+.spin{width:34px;height:34px;border:3px solid var(--line);border-top-color:var(--orange);border-radius:50%;animation:sp 1s linear infinite;margin:0 auto 14px}
+@keyframes sp{to{transform:rotate(360deg)}}
+.pager{display:flex;justify-content:center;gap:7px;margin:26px 0 10px}
+.pager button{min-width:38px;height:38px;padding:0 12px;border:1px solid var(--line);background:var(--card);border-radius:8px;font-family:var(--mono);font-size:13px;color:var(--ink2)}
+.pager button.on{background:var(--navy);color:#fff;border-color:var(--navy)}
+.pager button:disabled{opacity:.4;cursor:default}
+.toast{position:fixed;bottom:30px;left:50%;transform:translateX(-50%) translateY(80px);background:var(--navy);color:#fff;padding:12px 22px;border-radius:10px;font-size:13px;box-shadow:0 10px 30px rgba(0,0,0,.3);transition:.3s;z-index:100}
+.toast.show{transform:translateX(-50%) translateY(0)}
+footer{text-align:center;padding:30px;color:var(--mut);font-size:12px;line-height:1.9}
+footer a{color:var(--blue)}
+/* ===== 移动端筛选抽屉（桌面端隐藏） ===== */
+.filter-fab,.filter-drawer-h,.filter-apply{display:none}
+.filter-mask{display:none}
+
+/* ===== 手机 / 小平板（≤860px） ===== */
+@media(max-width:860px){
+  /* 顶栏 */
+  .topbar-in{padding:0 12px;height:56px;gap:10px}
+  .logo-mark{width:33px;height:33px;border-radius:7px}
+  .logo-mark svg{width:20px;height:20px}
+  .logo-txt b{font-size:15px}
+  .logo-txt span{display:none}
+  .searchwrap{min-width:0}
+  .searchbox{border-radius:9px}
+  .searchbox input{padding:11px 12px;font-size:16px}
+  .search-btn{padding:0 15px;font-size:14px}
+  .search-btn svg{width:17px;height:17px}
+  .top-stats{display:none}
+
+  /* 首页 / 品牌页容器（覆盖内联 padding） */
+  #view-home > div,#view-brands > div{padding:14px 12px !important}
+  .wrap{padding:12px;gap:0;grid-template-columns:1fr}
+
+  /* Hero */
+  .hero{padding:22px 18px 18px;border-radius:13px;margin-bottom:16px}
+  .hero::before{width:180px;height:180px;right:-70px;top:-70px}
+  .hero::after{width:100px;height:100px}
+  .hero h1{font-size:20px;letter-spacing:0;margin-bottom:8px;line-height:1.35}
+  .hero p{font-size:12.5px;margin-bottom:16px}
+  .hero-search .searchbox input{font-size:16px}
+  .hero-stats{gap:14px 28px;margin-top:18px}
+  .hero-stats .hs b{font-size:20px}
+  .hero-stats .hs span{font-size:10.5px}
+
+  /* 区块标题 */
+  .sec-h{margin:22px 2px 11px;gap:8px}
+  .sec-h h3{font-size:15.5px}
+  .sec-h > span{display:none}
+
+  /* 网格：两列 */
+  .brandgrid{grid-template-columns:repeat(2,1fr);gap:9px}
+  .brandcard{padding:12px 11px}
+  .brandcard .nm{font-size:13.5px}
+  .catgrid{grid-template-columns:repeat(2,1fr);gap:9px}
+  .catcard{padding:13px}
+  .catcard .ci{width:34px;height:34px}
+  .catcard .ci svg{width:18px;height:18px}
+  .catcard .ct b{font-size:13px}
+  .fallback{grid-template-columns:repeat(2,1fr)}
+
+  /* 列表工具栏 */
+  .toolbar{gap:9px;margin-bottom:12px}
+  .toolbar h2{font-size:17px}
+  .count{font-size:11px;padding:4px 9px}
+  .sortsel button{padding:8px 11px;font-size:12px}
+  .crumb{font-size:12px;margin-bottom:10px}
+  .filter-fab{display:inline-flex;align-items:center;gap:5px;padding:8px 14px;border:1px solid var(--line);background:var(--card);border-radius:9px;font-size:12.5px;font-weight:700;color:var(--navy)}
+
+  /* 筛选抽屉 */
+  .filter-mask{display:block;position:fixed;inset:0;background:rgba(10,25,35,.48);z-index:150;opacity:0;pointer-events:none;transition:opacity .22s}
+  .filter-mask.show{opacity:1;pointer-events:auto}
+  .sidebar{position:fixed;top:0;left:0;bottom:0;width:84%;max-width:340px;z-index:160;background:var(--bg);padding:15px 13px calc(16px + env(safe-area-inset-bottom));overflow-y:auto;gap:12px;transform:translateX(-106%);transition:transform .25s;box-shadow:0 0 44px rgba(0,0,0,.35)}
+  .sidebar.open{transform:translateX(0)}
+  .filter-drawer-h{display:flex;align-items:center;justify-content:space-between;padding:2px 4px 2px}
+  .filter-drawer-h b{font-size:17px;color:var(--navy)}
+  .filter-x{width:36px;height:36px;border-radius:9px;background:#e2e9ea;color:var(--ink2);font-size:15px}
+  .filt{max-height:none}
+  .filter-apply{display:flex;align-items:center;justify-content:center;background:var(--navy);color:#fff;padding:13px;border-radius:10px;font-weight:700;font-size:14px;margin-top:2px}
+
+  /* 文档卡片 */
+  .doc{grid-template-columns:1fr;padding:13px 14px;gap:9px}
+  .doc.direct{border-left:3px solid var(--green);padding-left:13px}
+  .doc-title{font-size:14.5px;margin-bottom:5px}
+  .doc-sum{max-width:none;white-space:normal;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+  .doc-meta{gap:8px 14px;margin-top:7px}
+  .doc-r{flex-direction:row;min-width:0;gap:8px;margin-top:2px}
+  .doc-r .btn{flex:1 1 0;min-width:0;min-height:42px;padding:11px 6px;font-size:13px}
+  .badge-direct{top:11px;right:12px}
+  .badge-login{top:11px;right:12px}
+
+  /* 输入框 16px 防 iOS 聚焦缩放 */
+  .searchbox input{font-size:16px}
+  #brandFilter{font-size:16px !important}
+
+  /* 联想下拉 */
+  .suggest{top:52px;border-radius:10px}
+  .sug-item{padding:11px 14px}
+  .sug-item .tt{font-size:13.5px}
+  .sug-item .ic{width:28px;height:28px}
+
+  /* 空态 / 分页 / 兜底 */
+  .empty{padding:42px 18px}
+  .empty .ei{font-size:34px}
+  .empty h4{font-size:16px}
+  .pager{flex-wrap:wrap;gap:6px;margin:20px 0 6px}
+  .pager button{min-width:36px;height:36px}
+  .fb-btn{padding:11px 8px;font-size:12.5px}
+
+  /* 品牌筛选页 */
+  #view-brands input{margin-bottom:14px}
+
+  /* Toast */
+  .toast{left:12px;right:12px;bottom:calc(18px + env(safe-area-inset-bottom));width:auto;transform:translateY(80px);text-align:center;padding:12px 16px}
+  .toast.show{transform:translateY(0)}
+
+  footer{padding:24px 16px calc(26px + env(safe-area-inset-bottom))}
+  body{padding-bottom:env(safe-area-inset-bottom)}
+}
+
+/* ===== 超窄屏（≤380px） ===== */
+@media(max-width:380px){
+  .hero h1{font-size:19px}
+  .doc-r{flex-wrap:wrap}
+  .doc-r .btn{flex:1 1 100%}
+  .doc-r .btn-pdf{flex:1 1 100%}
+}
+
+/* ===== 手机端溢出修正（追加，覆盖前值） ===== */
+@media(max-width:860px){
+  html,body{overflow-x:hidden}
+  .topbar{width:100%}
+  .topbar-in{padding:0 10px;gap:8px}
+  .logo{gap:7px}
+  .searchwrap{min-width:0;flex:1 1 auto}
+  .searchbox{min-width:0;width:100%}
+  .searchbox input{min-width:0;width:auto;flex:1 1 auto;padding:11px 11px;font-size:16px}
+  .search-btn{flex-shrink:0;padding:0 14px;font-size:0;gap:0}
+  .search-btn svg{width:19px;height:19px;margin:0}
+  .hero-search{min-width:0}
+  .hero-search .search-btn{padding:0 16px;font-size:0}
+  .hero-search .search-btn svg{width:20px;height:20px}
+  .doc{overflow:hidden}
+  .doc-r{width:100%;flex-wrap:wrap}
+  .doc-r .btn{min-width:0}
+  .doc-r .badflag{flex:1 1 100%;order:10;text-align:left;line-height:1.5}
+  .badge-direct{position:static;display:inline-flex;margin:9px 0 0}
+  .badge-login{position:static;display:inline-flex;margin:2px 0 0}
+  .doc-title{padding-right:0}
+}
+
+.doc.is-bad{opacity:.6}
+.doc.is-bad .btn-pdf{background:#9ca3af!important}
+.doc.is-bad .badge-direct{background:#7f1d1d!important;color:#fff!important}
+.home-history{max-width:1440px;margin:14px auto 2px;padding:0 24px}
+.home-history .hh{display:flex;justify-content:space-between;align-items:center;margin-bottom:8px}
+.home-history .hh span{font-size:13px;font-weight:700;color:var(--ink2)}
+.htags{display:flex;flex-wrap:wrap;gap:8px}
+.htag{background:#f1f5f4;border:1px solid var(--line);border-radius:999px;padding:6px 14px;font-size:13px;color:var(--navy);cursor:pointer}
+.htag:active{background:#e2ebe9}
+</style>
+</head>
+<body>
+<!-- ===== 顶栏 ===== -->
+<header class="topbar">
+  <div class="topbar-in">
+    <div class="logo" onclick="go('home')">
+      <div class="logo-mark"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.2"><path d="M4 4h10l6 6v10H4z"/><path d="M14 4v6h6"/><path d="M8 14h8M8 17h5"/></svg></div>
+      <div class="logo-txt"><b>工书库</b><span>MANUALS&nbsp;DIRECT</span></div>
+    </div>
+    <div class="searchwrap">
+      <div class="searchbox">
+        <input id="qtop" autocomplete="off" placeholder="输入品牌 / 型号 / 关键词，如：西门子 G120、三菱 FX5U、丹佛斯 FC302…" oninput="onSug(this.value,'top')" onfocus="onSug(this.value,'top')" onkeydown="onKey(event,'top')">
+        <button class="search-btn" onclick="doSearch('top')"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4-4"/></svg>搜索</button>
+      </div>
+      <div class="suggest" id="sug-top"></div>
+    </div>
+    <div class="top-stats"><b id="statDocs">0</b><span>可直取说明书 / 文档</span></div>
+  </div>
+</header>
+
+<!-- ===== 首页 ===== -->
+<div id="view-home" class="view">
+  <div style="max-width:1440px;margin:0 auto;padding:24px">
+    <div class="hero">
+      <h1>全网工业说明书，<span class="o">输入型号直接取</span></h1>
+      <p>覆盖 PLC、变频器、HMI、伺服、传感器、制冷压缩机与控制器等工控设备。支持中英文、拼音、型号片段、相似词模糊匹配；外文手册一键翻译，PDF 可在线阅读或下载。</p>
+      <div class="hero-search">
+        <div class="searchbox">
+          <input id="qhome" autocomplete="off" placeholder="试试：G120C、FX5U、ACS580、VLT、比泽尔、FC302、S7-1500…" oninput="onSug(this.value,'home')" onfocus="onSug(this.value,'home')" onkeydown="onKey(event,'home')">
+          <button class="search-btn" onclick="doSearch('home')"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4-4"/></svg>直取文档</button>
+        </div>
+        <div class="suggest" id="sug-home"></div>
+      </div>
+      <div class="hero-stats">
+        <div class="hs"><b id="h-doc">0</b><span>文档总量</span></div>
+        <div class="hs"><b id="h-pdf">0</b><span>免费直链</span></div>
+        <div class="hs"><b id="h-brand">0</b><span>品牌</span></div>
+        <div class="hs"><b id="h-type">11</b><span>文档类型</span></div>
+        <div class="hs"><b id="h-new" style="color:var(--green)">0</b><span>本次新增</span></div>
+        <div class="hs"><b id="h-countdown" style="color:var(--orange)">--:--:--</b><span>距下次自动采集</span></div>
+      </div>
+      <div class="crawl-status" id="crawlStatus">云端自动采集中…</div>
+      <div class="crawl-detail" id="crawlDetail"></div>
+    </div>
+
+    <div id="homeHistory" class="home-history" style="display:none"></div>
+    <div class="sec-h"><div class="bar"></div><h3>热门品牌</h3><span>点击查看该品牌全部手册</span><div class="more" onclick="go('allbrands')">全部品牌 ›</div></div>
+    <div class="brandgrid" id="brandHot"></div>
+
+    <div class="sec-h"><div class="bar"></div><h3>按设备类型</h3><span>覆盖工控全品类</span></div>
+    <div class="catgrid" id="catGrid"></div>
+
+    <div class="sec-h"><div class="bar"></div><h3>最新入库</h3><span>最新版本优先</span></div>
+    <div class="doclist" id="latestDocs"></div>
+  </div>
+</div>
+
+<!-- ===== 搜索/列表页 ===== -->
+<div id="view-list" class="view" style="display:none">
+  <div class="wrap">
+    <div class="filter-mask" id="filterMask" onclick="closeFilter()"></div>
+    <aside class="sidebar" id="sidebar">
+      <div class="filter-drawer-h"><b>筛选条件</b><button class="filter-x" onclick="closeFilter()" aria-label="关闭">✕</button></div>
+      <div class="panel">
+        <div class="panel-h">文档类型 <span class="cnt" id="f-type-cnt"></span></div>
+        <div class="filt" id="f-type"></div>
+      </div>
+      <div class="panel">
+        <div class="panel-h">语言 <span class="cnt"></span></div>
+        <div class="filt" id="f-lang"></div>
+      </div>
+      <div class="panel">
+        <div class="panel-h">品牌 <span class="cnt" id="f-brand-cnt"></span></div>
+        <div class="filt" id="f-brand"></div>
+      </div>
+      <div class="panel">
+        <div class="switch-row">仅看免费直取 <div class="sw" id="sw-pdf" onclick="togglePdf()"></div></div>
+        <div class="switch-row">仅看最新版本 <div class="sw" id="sw-latest" onclick="toggleLatest()"></div></div>
+      </div>
+      <button class="filter-apply" onclick="closeFilter()">查看筛选结果</button>
+    </aside>
+    <main class="main">
+      <div class="crumb" id="crumb"></div>
+      <div class="toolbar">
+        <h2 id="listTitle"></h2>
+        <span class="count" id="listCount"></span>
+        <button class="filter-fab" onclick="openFilter()">⚲ 筛选</button>
+        <div class="spacer"></div>
+        <div class="sortsel">
+          <button data-s="rel" onclick="setSort('rel')">相关度</button>
+          <button data-s="date" onclick="setSort('date')">最新</button>
+          <button data-s="dl" onclick="setSort('dl')">热度</button>
+        </div>
+      </div>
+      <div class="doclist" id="docList"></div>
+      <div class="pager" id="pager"></div>
+    </main>
+  </div>
+</div>
+
+<!-- ===== 全部品牌 ===== -->
+<div id="view-brands" class="view" style="display:none">
+  <div style="max-width:1440px;margin:0 auto;padding:24px">
+    <div class="crumb"><a onclick="go('home')">首页</a> › <b>全部品牌</b></div>
+    <div class="toolbar"><h2>全部品牌</h2><span class="count" id="allBrandCount"></span></div>
+    <input id="brandFilter" placeholder="筛选品牌（中文 / 英文 / 拼音）…" style="width:100%;padding:13px 16px;border:1px solid var(--line);border-radius:10px;font-size:14px;margin-bottom:18px;outline:none" oninput="renderAllBrands()">
+    <div class="brandgrid" id="allBrands"></div>
+  </div>
+</div>
+
+<div class="toast" id="toast"></div>
+
+<footer>
+  工书库 · 本地离线检索 · 文档直链由各厂家官网 / 中国工控网公开下载中心提供并标注来源<br>
+  型号与品牌版权归各厂商所有；本工具仅做技术资料索引，不存储文档本体。外文手册可借助内置翻译按钮阅读。<br>
+  <a href="/api/health?full=1" style="font-size:11px;opacity:.7">云端自检</a>
+</footer>
+
+<script>
+/* ===== 数据（构建时注入） ===== */
+const BRANDS = [{"n":"金升阳","en":"","py":"jinshengyang","al":["金升阳","MORNSUN","URB","URF","LB","VRB"]},{"n":"RECOM","en":"RECOM","py":"recom","al":[]},{"n":"穆尔电子","en":"murrelektronik","py":"muer","al":["穆尔","MURR","MURRELEKTRONIK"]},{"n":"OPT-奥普特","en":"OPT","py":"aopute","al":[]},{"n":"新时达","en":"step","py":"xinshida","al":["新时达","STEP","AS","AS320","iAStar"]},{"n":"福禄克","en":"Fluke","py":"fuluke","al":[]},{"n":"埃斯顿","en":"ESTUN","py":"aisidun","al":["埃斯顿","ESTUN","PRONET","EDC","EM"]},{"n":"鸣志","en":"moons","py":"mingzhi","al":[]},{"n":"维宏","en":"","py":"weihong","al":[]},{"n":"ABB","en":"","py":"abb","al":["ABB","ACS","ACQ","ACH","DCS","DSQC","IRC5","PS55","SACE","Tmax"]},{"n":"HMS","en":"","py":"hms","al":[]},{"n":"Silicon Labs","en":"Silicon Labs","py":"siliconlabs","al":[]},{"n":"SoftServo(软赢）","en":"Soft Servo","py":"ruanying","al":[]},{"n":"Vecow超恩","en":"Vecow","py":"vecow","al":[]},{"n":"阿尔法","en":"ALPHA","py":"aerfa","al":[]},{"n":"安川电机","en":"Yaskawa","py":"anchuandianji","al":["安川","YASKAWA","GA700","GA500","A1000","H1000","V1000","J1000","E1000","L1000","Σ","SGM","SGDV","JUSP","MP","GP"]},{"n":"安控","en":"Echo","py":"ankong","al":[]},{"n":"奥托尼克斯","en":"Autonics","py":"aotuonikesi","al":["奥托尼克斯","AUTONICS","FX4","FX6","FP","PR","BR","TK"]},{"n":"巴鲁夫","en":"BALLUFF","py":"balufu","al":["巴鲁夫","BALLUFF","BNI","BIS","BES"]},{"n":"邦纳","en":"BANNER","py":"bangna","al":["邦纳","BANNER","Q45","QS18","K50","DXM"]},{"n":"堡盟","en":"Baumer","py":"baomeng","al":["堡盟","BAUMER","GXMM","GCI"]},{"n":"北尔电子","en":"Beijer","py":"beierdianzi","al":[]},{"n":"倍福","en":"Beckhoff","py":"beifu","al":["倍福","BECKHOFF","CX","EL","KL","BK","TwinCAT","AX"]},{"n":"倍加福","en":"P+F","py":"beijiafu","al":["倍加福","PEPPERL","P+F","KFD","UC","GL"]},{"n":"大族电机","en":"dazudianji","py":"dazudianji","al":[]},{"n":"德力西电气","en":"delixi","py":"delixi","al":["德力西","DELIXI","CDI","CDM","DZ47"]},{"n":"东土科技","en":"kyland","py":"dongtukeji","al":[]},{"n":"恩德斯豪斯","en":"E+H","py":"endesihaosi","al":[]},{"n":"菲尼克斯电气","en":"Phoenix Contact","py":"feinikesi","al":["菲尼克斯","PHOENIX CONTACT","CONTACT","AXC","ILC","PLCnext","AXIOLINE","Inline"]},{"n":"风光","en":"fengguang","py":"fengguang","al":[]},{"n":"光洋","en":"KOYO","py":"guangyang","al":[]},{"n":"合康新能","en":"hiconics","py":"hekangxinneng","al":[]},{"n":"合信","en":"CO-TRUST","py":"hexin","al":[]},{"n":"和利时","en":"Hollysys","py":"helishi","al":["和利时","HOLLYSYS","LK","LM","MACS"]},{"n":"和泉电气","en":"IDEC","py":"hequandianqi","al":[]},{"n":"恒晟","en":"","py":"hengsheng","al":[]},{"n":"易福门","en":"ifm","py":"yifumen","al":[]},{"n":"町洋","en":"DINKLE","py":"tingyang","al":[]},{"n":"Allied Vision","en":"Allied Vision","py":"allied vsion","al":[]},{"n":"EAO","en":"eao","py":"eao","al":[]},{"n":"傲拓科技","en":"aotuokeji","py":"aotuokej","al":[]},{"n":"创联电源","en":"","py":"chuanglian","al":[]},{"n":"泓格","en":"ICPDAS","py":"hongge","al":[]},{"n":"虹润","en":"hongrun","py":"hongrun","al":[]},{"n":"惠朋","en":"VIPA","py":"huipeng","al":[]},{"n":"杰控","en":"FameView","py":"jiekong","al":[]},{"n":"巨联电气","en":"JULIAN ELECTRIC","py":"juliandianqi","al":[]},{"n":"昆仑通态","en":"MCGS","py":"kunluntongtai","al":[]},{"n":"雷赛","en":"leisai","py":"leisai","al":["雷赛","LEADSHINE","DM","DM3","CL","CL3","M5","M8","PMC"]},{"n":"力准传感","en":"","py":"lizhunchunagan","al":[]},{"n":"凌华科技","en":"ADLINK","py":"linghuakeji","al":[]},{"n":"伦茨","en":"Lenze","py":"lunci","al":[]},{"n":"罗克韦尔自动化","en":"ROCKWELL","py":"luokeweier(ab)","al":["罗克韦尔","ROCKWELL","ALLEN-BRADLEY","ALLEN BRADLEY","AB ","CONTROLLOGIX","COMPACTLOGIX","MICROLOGIX","MICRO800","POWERFLEX","1756","1769","1762","22A","22B","22C"]},{"n":"梅特勒-托利多","en":"METTLER-TOLEDO","py":"meitele-tuoliduo","al":[]},{"n":"美国国家仪器","en":"NI","py":"meiguoguojiayiqi","al":[]},{"n":"米尔电子","en":"","py":"mier","al":[]},{"n":"明阳龙源","en":"","py":"mingyanglongyuan","al":[]},{"n":"摩莎","en":"MOXA","py":"mosha","al":[]},{"n":"诺德","en":"NORD","py":"nuode","al":[]},{"n":"皮尔磁","en":"Pilz","py":"pierci","al":[]},{"n":"森兰","en":"senlan","py":"senlan","al":[]},{"n":"上银","en":"HIWIN","py":"shangyin","al":[]},{"n":"施耐德电气","en":"Schneider","py":"shinaide","al":["施耐德","SCHNEIDER","Modicon","M340","M580","M241","M221","M251","ATV","Altivar","TeSys","Lexium","XB","Zelio"]},{"n":"台达","en":"Delta","py":"taida","al":["DELTA","DVP","ASDA","VFD","MS300","MH300","C2000","CP2000","B系列","EC3","HMI DOP","DOP-","DOP107"]},{"n":"图尔克","en":"TURCK","py":"tuerke","al":["图尔克","TURCK","BL20","BL67","TBEN"]},{"n":"威卡","en":"WIKA","py":"weika","al":[]},{"n":"威琅","en":"Wieland","py":"weilang","al":[]},{"n":"威图","en":"RITTAL","py":"weitu","al":[]},{"n":"伟肯","en":"VACON","py":"weiken","al":["伟肯","VACON","NXP","NXS","NXL"]},{"n":"魏德米勒","en":"Weidmuller","py":"weidemile","al":[]},{"n":"西克","en":"SICK","py":"xike","al":["SICK","西克","GTE","GTB","GL10","DT","LMS"]},{"n":"西门子","en":"SIEMENS","py":"ximenzi","al":["SIEMENS","SINAMICS","S7-","S7 ","SIMATIC","G120","G120C","G200","V20","V90","ET200","ET 200","SIRIUS","SITOP","LOGO!","6SE","6ES7"]},{"n":"信捷","en":"xinjie","py":"xinjie","al":["信捷","XINJE","XC1","XC2","XC3","XD3","XD5","XDME","XL","XG1","TH","TG","DS5","DS5C","DS5L","XDM"]},{"n":"亚控","en":"Kingview","py":"yakong","al":[]},{"n":"研华科技","en":"ADVANTECH","py":"yanhuakeji","al":[]},{"n":"宜科","en":"ELCO","py":"yike","al":[]},{"n":"亿维","en":"UniMAT","py":"yiwei","al":[]},{"n":"易格斯","en":"","py":"yigesi","al":[]},{"n":"易盼","en":"","py":"eplan","al":[]},{"n":"中控","en":"supcon","py":"zhongkong","al":[]},{"n":"众为兴","en":"adtech","py":"zhongweixing","al":[]},{"n":"海泰克","en":"HITECH","py":"haitaike","al":[]},{"n":"凯福科技","en":"","py":"kaifukeji","al":[]},{"n":"欧瑞传动","en":"EURA","py":"ourui","al":[]},{"n":"GE智能平台","en":"GE IP","py":"gezhinengpingtai","al":[]},{"n":"艾讯宏达","en":"Grantech","py":"aixunhongda","al":[]},{"n":"贝加莱","en":"B&R","py":"beijialai","al":[]},{"n":"博世力士乐","en":"Bosch Rexroth","py":"boshilishile","al":[]},{"n":"海得控制","en":"HTE","py":"haidekongzhi","al":[]},{"n":"横河电机","en":"YOKOGAWA","py":"henghedianji","al":[]},{"n":"ACS","en":"","py":"acs","al":[]},{"n":"apq阿普奇","en":"apq","py":"apuqi","al":[]},{"n":"ARBOR磐仪","en":"ARBOR","py":"arbor","al":[]},{"n":"ASIX-亚信电子","en":"ASIX","py":"asix","al":[]},{"n":"AUCOTEC","en":"","py":"aucotec","al":[]},{"n":"Autodesk","en":"AutoCAD","py":"autocad","al":[]},{"n":"BEI","en":"","py":"bei","al":[]},{"n":"CONTRINEX","en":"CONTRINEX","py":"contrinex","al":[]},{"n":"coolmay","en":"coolmay","py":"coolmay","al":[]},{"n":"DEUZE","en":"DEUZE","py":"deuze","al":[]},{"n":"di-soric","en":"","py":"di-soric","al":[]},{"n":"EMG","en":"","py":"emg","al":[]},{"n":"GALIL","en":"","py":"galil","al":[]},{"n":"GE 数字能源","en":"GE Digital Energy","py":"ge shuzinengyuan","al":[]},{"n":"GEMS 捷迈","en":"GEMS","py":"gems","al":[]},{"n":"GE检测控制技术","en":"GE Measurement & Control","py":"gejiancekongzhijishu","al":[]},{"n":"GE新华","en":"","py":"ge xinhua","al":[]},{"n":"GSEE-TECH ","en":"GSEE-TECH ","py":"ginuo","al":[]},{"n":"GSK广州数控","en":"","py":"gskguangzhoushukong","al":[]},{"n":"Hellolink","en":"Hellolink","py":"hellolink","al":[]},{"n":"IBM","en":"","py":"ibm","al":[]},{"n":"iEi威强电","en":"IEI","py":"weiqiang","al":[]},{"n":"IGE+XAO","en":"","py":"ige+xao","al":[]},{"n":"LMI","en":"LMI","py":"lmi","al":[]},{"n":"LS电气","en":"LS","py":"lsdianqi","al":[]},{"n":"magnetrol","en":"","py":"magnetrol","al":[]},{"n":"micromatch","en":"micromatch","py":"micromatch","al":[]},{"n":"Mikrotron","en":"Mikrotron","py":"mikrotron","al":[]},{"n":"MiR","en":"MiR","py":"mir","al":[]},{"n":"MOTEC","en":"","py":"motec","al":[]},{"n":"Nanomotion","en":"Nanomotion","py":"nanomotion","al":[]},{"n":"NBK","en":"","py":"nbk","al":[]},{"n":"ODOT零点","en":"","py":"lingdian","al":[]},{"n":"OMEGA","en":"Omega","py":"omega","al":[]},{"n":"ONPOW","en":"ONPOW","py":"onpow","al":[]},{"n":"ORing","en":"ORing","py":"oring","al":[]},{"n":"OTC","en":"OTC","py":"otc","al":[]},{"n":"P-DUKE","en":"P-DUKE","py":"p-duke","al":[]},{"n":"PULS 普尔世","en":"PULS","py":"puershi","al":[]},{"n":"SAP","en":"SAP","py":"sap","al":[]},{"n":"SEW","en":"","py":"sew","al":[]},{"n":"SMC","en":"","py":"smc","al":[]},{"n":"Softing","en":"Softing","py":"softing","al":[]},{"n":"Technosoft","en":"Technosoft","py":"technosoft","al":[]},{"n":"Teledyne DALSA","en":"Teledyne DALSA","py":"teledyne dalsa","al":[]},{"n":"Temposonics","en":"Temposonics","py":"temposonics","al":[]},{"n":"TMEIC","en":"TMEIC","py":"tmeic","al":[]},{"n":"TRINAMIC","en":"","py":"trinamic","al":[]},{"n":"VEGA","en":"VEGA","py":"vega","al":[]},{"n":"vision-omponents","en":"","py":"vision-omponents","al":[]},{"n":"well唯乐","en":"","py":"weile","al":[]},{"n":"阿尔泰科技","en":"","py":"aertaikeji","al":[]},{"n":"阿自倍尔","en":"azbil","py":"azibeier","al":[]},{"n":"埃夫特","en":"EFORT","py":"aifute","al":[]},{"n":"艾利特","en":"","py":"ailite","al":[]},{"n":"艾络格","en":"","py":"ailuoge","al":[]},{"n":"艾默生","en":"Emerson","py":"aimosheng","al":["艾默生","EMERSON","COPELAND","DIXELL","小精灵","XC","XR"]},{"n":"爱里富","en":"ALIF","py":"alif","al":[]},{"n":"爱默信","en":"AMC","py":"aimoxin","al":[]},{"n":"爱普生","en":"EPSON","py":"aipusheng","al":[]},{"n":"安邦信","en":"","py":"anbangxin","al":[]},{"n":"安川首钢","en":"","py":"anchuanshougang","al":[]},{"n":"安东帕","en":"antonpaar","py":"andognpa","al":[]},{"n":"安科瑞","en":"","py":"ankerui","al":[]},{"n":"安提国际","en":"","py":"antiguoji","al":[]},{"n":"奥博瑞光","en":"AOBO","py":"aoboruiguang","al":[]},{"n":"邦飞利","en":"BONFIGLIOLI","py":"bangfeili","al":[]},{"n":"宝帝","en":"Burkert","py":"baodi","al":[]},{"n":"宝伦数控","en":"","py":"blsk","al":[]},{"n":"必得客","en":"bideke","py":"bideke","al":[]},{"n":"宾德","en":"binder","py":"binde","al":[]},{"n":"滨特尔","en":"PENTAIR","py":"binteer","al":[]},{"n":"波仕电子","en":"","py":"boshidianzi","al":[]},{"n":"伯纳德","en":"Bernard","py":"bonade","al":[]},{"n":"步科","en":"Kinco","py":"buke","al":[]},{"n":"才茂通信","en":"","py":"caimaotongxin","al":[]},{"n":"彩虹","en":"PcVue","py":"caihong","al":[]},{"n":"常熟","en":"","py":"changshu","al":[]},{"n":"超同步","en":"","py":"chaotongbu","al":[]},{"n":"川崎","en":"KAWASAKI","py":"chuanqi","al":[]},{"n":"川仪","en":"","py":"chuanyi","al":[]},{"n":"创科","en":"","py":"chuangke","al":[]},{"n":"达索系统","en":"Dassault","py":"dasuo","al":[]},{"n":"大恒图像","en":"","py":"daheng","al":[]},{"n":"大研工控","en":"Dayond","py":"dayan","al":[]},{"n":"大中电机","en":"","py":"dazhongdianji","al":[]},{"n":"丹佛斯","en":"Danfoss","py":"danfosi","al":["DANFOSS","丹佛斯","VLT","FC302","FC102","FC202","FC360","FC51","AKD","AK-","EKC","EKD","ICAD","AKVA","AKS","AKS"]},{"n":"岛电","en":"SHIMADEN","py":"daodian","al":[]},{"n":"德克威尔","en":"","py":"dekeweier","al":[]},{"n":"德莱尔","en":"","py":"delaier","al":[]},{"n":"德马吉","en":"DMG","py":"demaji","al":[]},{"n":"迪文","en":"","py":"diwen","al":[]},{"n":"帝尔电子","en":"TR-ELECTRONIC","py":"dierdianzi","al":[]},{"n":"鼎实创新","en":"","py":"dingshichuangxin","al":[]},{"n":"东安电气","en":"","py":"dongandianqi","al":[]},{"n":"东方马达","en":"ORIENTAL MOTOR","py":"dongfangmada","al":[]},{"n":"东方日立","en":"","py":"dongfangrili","al":[]},{"n":"东田工控","en":"","py":"dongtian","al":[]},{"n":"东元电机","en":"TECO","py":"dongyuandianji","al":[]},{"n":"东芝","en":"Toshiba","py":"dongzhi","al":["东芝","TOSHIBA","TOSVERT","VF-","VFAS","VFS","VFnC"]},{"n":"多摩川","en":"TAMAGAWA","py":"duomochuan","al":[]},{"n":"恩尼睿","en":"ERNI","py":"ennirui","al":[]},{"n":"发那科","en":"FANUC","py":"fanake","al":[]},{"n":"凡宜","en":"FINE","py":"fanyi","al":[]},{"n":"繁易","en":"","py":"fanyi","al":[]},{"n":"方竹","en":"FUNZ","py":"fangzhu","al":[]},{"n":"飞沪科技","en":"","py":"feihukeji","al":[]},{"n":"菲仕","en":"","py":"feishi","al":[]},{"n":"费斯托","en":"FESTO","py":"feisituo","al":[]},{"n":"丰炜","en":"VIGOR","py":"fengwei","al":[]},{"n":"佛朗克","en":"","py":"folangke","al":[]},{"n":"福克斯波罗","en":"Foxboro","py":"fukesiboluo","al":[]},{"n":"富士电机","en":"FUJI Electric","py":"fushidianji","al":["富士","FUJI","FRENIC","FRN","MICREX","SPB","SPS","NW","ALPHA5","RYC","RYT"]},{"n":"富士康","en":"FOXKPC","py":"fushikang","al":[]},{"n":"高创","en":"Servotronix","py":"gaochuang","al":[]},{"n":"高诺斯","en":"Crouze","py":"gaonuosi","al":[]},{"n":"高松","en":"DEGSON","py":"gaosong","al":[]},{"n":"工装自控","en":"KOSO","py":"gongzhuangzikong","al":[]},{"n":"固高科技","en":"","py":"gugao","al":[]},{"n":"国电智深","en":"","py":"guodianzhishen","al":[]},{"n":"国控精仪","en":"guokongjingyi","py":"guokongjingyi","al":[]},{"n":"哈斯","en":"HAAS","py":"hasi","al":[]},{"n":"海康机器人","en":"HIKROBOT","py":"haikangjiqiren","al":[]},{"n":"海利普","en":"","py":"hailipu","al":["海利普","HOLIP","HLP","HLP-A","HLP-NV"]},{"n":"海任科技","en":"EWMIP","py":"hairenkeji","al":[]},{"n":"浩纳尔","en":"HORNER","py":"haonaer","al":[]},{"n":"合力万通","en":"","py":"hlwt","al":[]},{"n":"赫优讯","en":"Hilscher","py":"heyouxun","al":[]},{"n":"横河川仪","en":"CYS","py":"henghechuanyi","al":[]},{"n":"衡孚","en":"","py":"hengfu","al":[]},{"n":"红狮","en":"REDLION","py":"hongshi","al":[]},{"n":"宏电","en":"","py":"hongdian","al":[]},{"n":"华北工控","en":"NORCO","py":"huabeigongkong","al":[]},{"n":"华辰智通","en":"Hignton","py":"huachenzhitong","al":[]},{"n":"华汉伟业","en":"","py":"huahanweiye","al":[]},{"n":"华杰智控","en":"","py":"huajiezhikong","al":[]},{"n":"华茂欧特","en":"","py":"huamao","al":[]},{"n":"华中数控","en":"","py":"huazhongshukong","al":[]},{"n":"汇辰自动化","en":"","py":"huichen","al":[]},{"n":"汇川","en":"Inovance","py":"huichuan","al":["INOVANCE","汇川","MD280","MD320","MD380","MD500","SV660","IS620","H3U","H5U","AM400","AC700","AC800","MD290"]},{"n":"霍尼韦尔","en":"Honeywell","py":"huoniweier","al":[]},{"n":"基恩士","en":"Keyence","py":"jienshi","al":["基恩士","KEYENCE","KV-","KV ","KV700","KV5000","KV7500","SR-","LR-","IG-","GT-"]},{"n":"吉方工控","en":"jifanggongkong","py":"jifanggongkong","al":[]},{"n":"吉林省北联","en":"","py":"jilinshengbeilian","al":[]},{"n":"吉诺科技","en":"","py":"jinuo","al":[]},{"n":"极光尔沃","en":"","py":"jiguangerwo","al":[]},{"n":"佳乐","en":"CARLO GAVAZZI","py":"jiale","al":[]},{"n":"嘉准","en":"F&C","py":"jiazhun","al":[]},{"n":"捷安浦GEMPLE","en":"GEMPLE","py":"jieanpu","al":[]},{"n":"金蝶","en":"","py":"jindie","al":[]},{"n":"金泰克","en":"","py":"jintaike","al":[]},{"n":"进联","en":"DECA","py":"jinlian","al":[]},{"n":"精锐广用","en":"APEX","py":"jingruiguangyong","al":[]},{"n":"矩形科技","en":"","py":"juxingkeji","al":[]},{"n":"开疆智能","en":"KJ","py":"kaijiangzhineng","al":[]},{"n":"凯昆","en":"KACON","py":"kaikun","al":[]},{"n":"凯茂","en":"KIMO","py":"kaimao","al":[]},{"n":"凯谱华","en":"Kepware","py":"kaipuhua","al":[]},{"n":"康佳特","en":"Congatec","py":"congatec","al":[]},{"n":"康茂胜","en":"CAMOZZI","py":"kangmaosheng","al":[]},{"n":"康耐视","en":"Cognex","py":"kangnaishi","al":[]},{"n":"柯马","en":"COMAU","py":"kema","al":[]},{"n":"科宝","en":"KOBOLD","py":"kebao","al":[]},{"n":"科比","en":"KEB","py":"kebi","al":[]},{"n":"科尔摩根","en":"Kollmorgen","py":"keermogen","al":[]},{"n":"科隆","en":"KROHNE","py":"kelong","al":[]},{"n":"科洛理思","en":"korenix","py":"keluolisi","al":[]},{"n":"科姆龙","en":"KEMRON","py":"kemulong","al":[]},{"n":"科尼威尔","en":"connectwell","py":"keniweier","al":[]},{"n":"科瑞","en":"Controlway","py":"kerui","al":[]},{"n":"科威","en":"KEWEI","py":"kewei","al":[]},{"n":"科远","en":"SCIYON","py":"keyuan","al":[]},{"n":"控道智能","en":"Kondoct","py":"kongdaozhineng","al":[]},{"n":"控汇智能","en":"","py":"konghuizhinneng","al":[]},{"n":"库卡","en":"KUKA","py":"kuka","al":[]},{"n":"库马克","en":"cumark","py":"kumake","al":[]},{"n":"昆仑海岸","en":"","py":"kunlunhaian","al":[]},{"n":"昆明机床","en":"","py":"kunmingjichuang","al":[]},{"n":"兰宝传感","en":"","py":"lanbaochuangan","al":[]},{"n":"蓝迪通信","en":"","py":"landitongxin","al":[]},{"n":"蓝海华腾","en":"","py":"lanhaihuateng","al":[]},{"n":"蓝普锋","en":"RUNPOWET","py":"lanpufeng","al":[]},{"n":"乐创","en":"LEETRO","py":"lechuang","al":[]},{"n":"雷勃电气","en":"REGAL","py":"leibodianqi","al":[]},{"n":"雷诺尔","en":"Renle","py":"leinuoer","al":[]},{"n":"力控科技","en":"","py":"likongkji","al":[]},{"n":"力纳克","en":"","py":"linake","al":[]},{"n":"立格","en":"","py":"lige","al":[]},{"n":"利德华福","en":"Harvest","py":"lidehuafu","al":[]},{"n":"利密托克","en":"Limitorque","py":"limituoke","al":[]},{"n":"联达","en":"","py":"lianda","al":[]},{"n":"良石技术","en":"LSJS","py":"liangshijishu","al":[]},{"n":"良信","en":"Nader","py":"liangxin","al":[]},{"n":"凌科","en":"","py":"lingke","al":[]},{"n":"鲁邦通","en":"","py":"lubangtong","al":[]},{"n":"罗宾康","en":"ROBICON","py":"luobinkang","al":[]},{"n":"罗杰康","en":"RUGGEDOCM","py":"luojiekang","al":[]},{"n":"罗托克","en":"ROTORK","py":"luotuoke","al":[]},{"n":"迈威","en":"","py":"mwtx","al":[]},{"n":"迈信电气","en":"maxsine","py":"maixindianqi","al":[]},{"n":"麦格米特","en":"MEGMEET","py":"maigemite","al":[]},{"n":"麦格纳丘","en":"Magnetrol","py":"maigenaqiu","al":[]},{"n":"麦克","en":"","py":"maike","al":[]},{"n":"美国江森","en":"Johnso","py":"jiangsen","al":[]},{"n":"美卓","en":"Metso","py":"meizhuo","al":[]},{"n":"明纬","en":"MEANWELL","py":"mingwei","al":[]},{"n":"莫托曼","en":"MOTOMAN","py":"motuoman","al":[]},{"n":"藦卡","en":"","py":"moka","al":[]},{"n":"牧野机床","en":"MAKINO","py":"muyejichuang","al":[]},{"n":"穆格","en":"MOOG","py":"muge","al":[]},{"n":"那智不二越","en":"","py":"nazhibueryue","al":[]},{"n":"耐特森","en":"","py":"naitesen","al":[]},{"n":"耐用通信","en":"","py":"naiyong","al":[]},{"n":"诺维","en":"","py":"nuowei","al":[]},{"n":"欧陆","en":"EUROTHERM","py":"oulu","al":[]},{"n":"欧姆龙","en":"OMRON","py":"oumulong","al":["OMRON","CP1","CP2","CJ1","CJ2","CS1","NJ","NX","SYSMAC","E5","3G3MX","MX2","JZ","CQM","C200","R88"]},{"n":"派勤","en":"","py":"paiqin","al":[]},{"n":"磐创科技","en":"","py":"panchuangkeji","al":[]},{"n":"平升","en":"DATA86","py":"tangshanpingsheng","al":[]},{"n":"屏通","en":"","py":"pingtong","al":[]},{"n":"普奥","en":"","py":"puao","al":[]},{"n":"普传","en":"Powtran","py":"puchuan","al":[]},{"n":"普罗索福特","en":"PROSOFT","py":"puluosufute","al":[]},{"n":"普洛菲斯","en":"Pro-face","py":"puluofeisi","al":[]},{"n":"奇石乐","en":"Kistler","py":"qishile","al":[]},{"n":"清软英泰","en":"","py":"qingruanyingtai","al":[]},{"n":"日本理化","en":"RKC","py":"ribenlihua","al":[]},{"n":"日鼎","en":"Ri-ding","py":"riding","al":[]},{"n":"日立","en":"HITACHI","py":"rili","al":["日立","HITACHI","WJ200","SJ700","X200","L100"]},{"n":"日业","en":"","py":"riye","al":[]},{"n":"荣信","en":"","py":"rongxin","al":[]},{"n":"萨姆森","en":"Samson","py":"samusen","al":[]},{"n":"赛默飞世尔","en":"Thermo Fisher ","py":"saimofeishier","al":[]},{"n":"三和","en":"SAMWHA EOCR-","py":"sanhe","al":[]},{"n":"三环","en":"","py":"sanhuan","al":[]},{"n":"三晶","en":"","py":"sanjing","al":[]},{"n":"三垦","en":"SANKEN","py":"sanken","al":[]},{"n":"三菱电机","en":"MITSUBISHI","py":"sanlingdianji","al":["三菱","MITSUBISHI","MELSEC","MELSOFT","FX3U","FX5U","FX2N","Q系列","L系列","iQ-R","iQ-F","GX Works","FR-","A800","F800","D700","E700","AJ","QJ"]},{"n":"三品软件","en":"","py":"sanpinruanjian","al":[]},{"n":"三碁","en":"SANCH","py":"sanchang","al":[]},{"n":"森创","en":"SYNTRON","py":"senchuang","al":[]},{"n":"森纳士","en":"SENEX","py":"sennashi","al":[]},{"n":"闪铸科技","en":"","py":"shanshuokeji","al":[]},{"n":"上海精浦","en":"","py":"shanghaijingpu","al":[]},{"n":"上海联捷","en":"","py":"shanghailianjie","al":[]},{"n":"上海泗博","en":"sibotech","py":"sibo","al":[]},{"n":"上海新华","en":"","py":"shanghaixinhua","al":[]},{"n":"上润","en":"","py":"shangrun","al":[]},{"n":"深川变频","en":"","py":"shenchuan","al":[]},{"n":"升立德","en":"","py":"shenglide","al":[]},{"n":"圣斯尔","en":"","py":"shengsier","al":[]},{"n":"施迈赛","en":"SCHMERSA","py":"shimaisai","al":[]},{"n":"史陶比尔","en":"STAUBLI","py":"shitaobier","al":[]},{"n":"士林","en":"shihlin","py":"shilin","al":[]},{"n":"顺源","en":"","py":"shunyuan","al":[]},{"n":"硕特电子","en":"SCHURTER","py":"schurter","al":[]},{"n":"思普软件","en":"SIPM","py":"sipu","al":[]},{"n":"斯亚乐","en":"SIERRI ASIA","py":"siyale","al":[]},{"n":"四方电气","en":"SUNFAR","py":"sifangdianqi","al":["四方","E380","E550","C300","C320","V350","SUNFAR"]},{"n":"四信","en":"Four-Faith","py":"sixin","al":[]},{"n":"松下电器机电","en":"Panasonic","py":"songxiadianqijidian","al":["松下","PANASONIC","FP0","FP-X","FP2","FP7","FP0H","MBD","MINAS","MSD","A5","A6","MAD","MKDEV","VLTT"]},{"n":"苏州迅鹏","en":"SURPON","py":"suzhouxunpeng","al":[]},{"n":"速达","en":"","py":"suda","al":[]},{"n":"台安","en":"TAIAN","py":"taian","al":[]},{"n":"台塑电子","en":"","py":"taisudianzi","al":[]},{"n":"泰道","en":"DeltaTau","py":"taidao","al":[]},{"n":"泰格动力","en":"TigerPower","py":"taigedongli","al":[]},{"n":"泰兴","en":"","py":"taixing","al":[]},{"n":"天康","en":"","py":"tiankang","al":[]},{"n":"天任","en":"","py":"tianren","al":[]},{"n":"图尔库","en":"tukbest","py":"tuerku","al":[]},{"n":"图灵开物","en":"","py":"tulingkaiwu","al":[]},{"n":"湾测","en":"WORSOR","py":"wance","al":[]},{"n":"万可","en":"WAGO","py":"wanke","al":[]},{"n":"威尔凯","en":"","py":"weierkai","al":[]},{"n":"威格勒","en":"wenglor","py":"weigele","al":[]},{"n":"威固信息","en":"","py":"weigu","al":[]},{"n":"威科达","en":"","py":"weikeda","al":[]},{"n":"威纶","en":"Easyview","py":"weilun","al":[]},{"n":"威纶通","en":"WEINVIEW","py":"weiluntong","al":["威纶通","WEINVIEW","WEINTEK","MT8","MT6","MT8071","MT8102","TK6071","CMT","cMT","EasyBuilder","EasyAccess"]},{"n":"微硬创新","en":"","py":"weiyingchuangxin","al":[]},{"n":"唯恩","en":"WAIN","py":"weien","al":[]},{"n":"维控","en":"","py":"weikong","al":[]},{"n":"伟创","en":"VEICHI","py":"weichuang-veichi","al":["伟创","VEICHI","AC70","AC300","AC10","SDF"]},{"n":"沃陆","en":"","py":"wolu","al":[]},{"n":"西驰","en":"","py":"xichi","al":[]},{"n":"西林电气","en":"","py":"xilindianqi","al":[]},{"n":"西普","en":"WESTPOW","py":"xipu-westpow","al":[]},{"n":"西特","en":"Setra","py":"xite","al":[]},{"n":"西威","en":"siei","py":"xiwei","al":[]},{"n":"夏普","en":"SHARP","py":"xiapu","al":[]},{"n":"显控","en":"SAMKOON","py":"xiankong","al":[]},{"n":"现代重工","en":"","py":"xiandaizhonggong","al":[]},{"n":"新超","en":"","py":"xinchao","al":[]},{"n":"新松","en":"siasun","py":"xinsong-siasun","al":[]},{"n":"迅饶","en":"","py":"xunrao","al":[]},{"n":"雅科贝思","en":"Akribis","py":"yakebeisi","al":[]},{"n":"雅马哈","en":"YAMAHA","py":"yamaha","al":[]},{"n":"亚德客","en":"AIRTAC","py":"yadeke","al":[]},{"n":"亚锐","en":"ARRAY","py":"yarui","al":[]},{"n":"研勤工控","en":"","py":"yanqingongkong","al":[]},{"n":"研祥智能","en":"EVOC","py":"yanxiang","al":[]},{"n":"阳明","en":"FOTEK","py":"yangming","al":[]},{"n":"伊顿电气","en":"Eaton","py":"yidundianqi","al":[]},{"n":"伊莱斯","en":"ELESY","py":"yilaisi","al":[]},{"n":"宜鼎国际","en":"Innodisk","py":"yidingguoji","al":[]},{"n":"亿道","en":"","py":"yidao","al":[]},{"n":"艺玛电子","en":"elmaasiaym","py":"yimadianzi","al":[]},{"n":"易科智连","en":"icotek","py":"yikezhilian","al":[]},{"n":"易能","en":"ENC","py":"yineng","al":["易能","EDS","EN600","EN500","ENC"]},{"n":"易驱","en":"Easydrive","py":"yiqu","al":[]},{"n":"翌芯","en":"esemi","py":"yixin","al":[]},{"n":"毅天科技","en":"","py":"yitian","al":[]},{"n":"英士达机电","en":"Insta Electromechanical","py":"yingshidajidian","al":[]},{"n":"英威腾","en":"INVT","py":"yingweiteng","al":["INVT","GD20","GD200","GD35","GD300","GD350","CHE","CHF","CHV","DA200","SV-","Goodrive"]},{"n":"永宏","en":"FATEK","py":"yonghong","al":["永宏","FATEK","FBS","B1","B1z","FBE","WinProladder"]},{"n":"用友","en":"yonyou","py":"yongyou","al":[]},{"n":"优傲机器人","en":"","py":"youaojiqiren","al":[]},{"n":"优稳","en":"UWnTeK","py":"youwen","al":[]},{"n":"宇电","en":"yudian","py":"yudian","al":[]},{"n":"禹衡","en":"","py":"yuheng","al":[]},{"n":"元存YANSEN","en":"YANSEN","py":"yuancun","al":[]},{"n":"源信","en":"YUANSHIN","py":"yuanxin","al":[]},{"n":"浙江禾川","en":"HCFA","py":"zhejianghechuan","al":[]},{"n":"正泰","en":"chint","py":"zhengtai","al":["正泰","CHINT","NVF","NJR","NXC"]},{"n":"正弦","en":"SINEE","py":"zhengxian-sinee","al":[]},{"n":"正运动","en":"","py":"zhengyundong","al":[]},{"n":"至誉科技","en":"","py":"zhiyukeji","al":[]},{"n":"智邦国际","en":"","py":"zhibangguoji","al":[]},{"n":"智创","en":"STONKER","py":"zhichuang","al":[]},{"n":"智达","en":"ZDAUTO","py":"zhida","al":[]},{"n":"中波动光","en":"womaster","py":"zhongbodongguang","al":[]},{"n":"中达优控","en":"","py":"zhongdayoukong","al":[]},{"n":"中嵌科技","en":"","py":"zhongqian","al":[]},{"n":"中颐","en":"","py":"zhongyi","al":[]},{"n":"珠峰电气","en":"aci","py":"zhufengdianqi","al":[]},{"n":"康吉森自动化","en":"","py":"kangjisen","al":[]},{"n":"横河","en":"","py":"","al":["横河","YOKOGAWA","UT","UP","UM","FA-M3","FA-M","DPharp"]},{"n":"比泽尔","en":"","py":"","al":["BITZER","比泽尔","CSH","CSW","4FC","6F","4H","2DES","4DES","6GE","ECOLINE","VARISPEED","BITZER COMPRESSOR"]},{"n":"卡乐","en":"","py":"","al":["CAREL","卡乐","pCO","pGD","MPX","IR33","IR32","EVD","EVD Evolution","UE2","rTM"]},{"n":"谷轮","en":"","py":"","al":["COPELAND","谷轮","ZB","ZF","ZR","VP","ZSI","Discus","Stream"]},{"n":"约克","en":"","py":"","al":["YORK","约克"]},{"n":"开利","en":"","py":"","al":["CARRIER","开利"]},{"n":"特灵","en":"","py":"","al":["TRANE","特灵"]},{"n":"麦克维尔","en":"","py":"","al":["MCQUAY","麦克维尔","MCS"]},{"n":"汉钟","en":"","py":"","al":["汉钟","HANBELL","RC2","ZA"]},{"n":"复盛","en":"","py":"","al":["复盛","FUSHENG","SRG"]},{"n":"莱富康","en":"","py":"","al":["莱富康","REFCOMP","SRC","SP","SW"]},{"n":"都灵","en":"","py":"","al":["都灵","DORIN","H","HI","CD"]},{"n":"斯波兰","en":"","py":"","al":["SPORLAN","斯波兰"]},{"n":"小精灵","en":"","py":"","al":["DIXELL","小精灵","XR02","XR06","IC121","IC208"]},{"n":"精创","en":"ELITECH","py":"jingchuang","al":["ELITECH","精创","STC","ECS","EK-","MTC","RC-","GSP","ECB","温控器","记录仪","电子膨胀阀","冷链"]},{"n":"艾莫迅","en":"AMSAMOTION","py":"aimoxun","al":["AMSAMOTION","艾莫迅","AMX","MODBUS-","LORA","ETH-","IOT-","协议转换","通讯模块","远程IO"]},{"n":"工贝电子","en":"GONGBEI","py":"gongbei","al":["GONGBEI","工贝","GB Smart","GB200","PLC","信号板","一体机","扩展模块"]},{"n":"金田","en":"JTE INVERTER","py":"jintian","al":["金田","JTE","金田变频器","JIN TIAN"]},{"n":"科思","en":"CHINACOCIS","py":"kesi","al":["科思","无锡科思","CHINACOCIS","科思电子","无锡科思电子"]}];
+var DOCS=[];
+/* ===== 自动采集倒计时（每3小时整点17分，UTC时间）===== */
+function nextCronTime(){
+  var now=new Date();
+  var utcH=now.getUTCHours(),utcM=now.getUTCMinutes();
+  var block=Math.floor(utcH/3)*3;
+  var nextH=block;
+  if(utcH>block||(utcH===block&&utcM>=17))nextH=block+3;
+  if(nextH>=24)nextH-=24;
+  var next=new Date(now);
+  next.setUTCHours(nextH,17,0,0);
+  if(next<=now)next.setUTCDate(next.getUTCDate()+1);
+  return next;
+}
+function updateCountdown(){
+  var el=document.getElementById('h-countdown');
+  if(!el)return;
+  var diff=Math.max(0,nextCronTime()-new Date());
+  var h=Math.floor(diff/3600000),m=Math.floor(diff%3600000/60000),s=Math.floor(diff%60000/1000);
+  el.textContent=(h<10?'0':'')+h+':'+(m<10?'0':'')+m+':'+(s<10?'0':'')+s;
+}
+setInterval(updateCountdown,1000);updateCountdown();
+</script>
+<script src="data/docs-1.js?v=20260921-1755"></script>
+<script src="data/docs-2.js?v=20260921-1755"></script>
+<script src="data/docs-3.js?v=20260922-0700"></script>
+<script>;
+
+/* ===== 归一化与匹配 ===== */
+function norm(s){return (s||'').toUpperCase().replace(/[\s\-_/\\().,，。、:：·#+&]/g,'');}
+
+/* 智能分词：品牌+型号连写也能拆开，如「精创5080」→精创/5080、「汇川md500」→汇川/MD500/500、stc-1000→STC1000 */
+function smartTerms(raw){
+  raw=(raw||'').trim().toLowerCase();
+  const out=[];const push=t=>{t=(t||'').trim();if(t&&out.indexOf(t)<0)out.push(t);};
+  const segs=raw.split(/[\s/\\().,，。、:：·#&+]+/).filter(Boolean);
+  for(let s0 of segs){
+    // 字母数字内部的连字符/下划线视为型号一部分：stc-1000 → stc1000
+    const seg=s0.replace(/([a-z0-9])[-_](?=[a-z0-9])/g,'$1');
+    const blocks=seg.match(/[a-z0-9]+|[一-龥]+/g)||[seg];
+    for(const b of blocks){
+      if(/^[a-z0-9]+$/.test(b)){
+        const up=b.toUpperCase();push(up);
+        if(/[a-z]/.test(b)&&/\d/.test(b)){
+          (b.match(/\d{2,}/g)||[]).forEach(n=>push(n));
+          (b.match(/[a-z]{2,}/g)||[]).forEach(a=>push(a.toUpperCase()));
+        }
+      }else{
+        // 中文块：若以已知品牌名开头，切出品牌，剩余作为类型/描述
+        let rest=b;
+        for(const br of BRANDS){
+          const cn=br.n;
+          if(cn&&/^[一-龥]+$/.test(cn)&&rest.indexOf(cn.toLowerCase())===0){push(cn);rest=rest.slice(cn.length);break;}
+        }
+        // 英文/拼音品牌名也尝试切分
+        if(rest===b){
+          for(const br of BRANDS){
+            const en=(br.en||'').toLowerCase();
+            if(en&&/^[a-z]+$/.test(en)&&rest.indexOf(en)===0){push(br.en);rest=rest.slice(en.length);break;}
+          }
+        }
+        if(rest)push(rest);
+      }
+    }
+  }
+  return out;
+}
+
+const PINYIN={};
+BRANDS.forEach(b=>{if(b.py)PINYIN[b.n]=b.py;});
+/* 文档索引只放品牌名/英文/拼音/较长英文别名，不含具体型号，避免型号污染所有同品牌文档 */
+function brandAliasText(b){
+  const br=BRANDS.find(x=>x.n===b); if(!br)return '';
+  const parts=[br.n,br.en,br.py];
+  (br.al||[]).forEach(a=>{
+    const na=norm(a);
+    if(!na||/\d/.test(na)||na.length<4)return;
+    parts.push(a);
+  });
+  return parts.join(' ');
+}
+DOCS.forEach(d=>{
+  d._sx=norm([d.t,d.b,d.kw,brandAliasText(d.b)].join(' '));
+  d._title=norm(d.t);
+  d._dl=(d.hit||d.h||0);
+});
+
+/* ===== 状态 ===== */
+const S={q:'',types:new Set(),langs:new Set(),brands:new Set(),pdfOnly:false,latestOnly:false,sort:'rel',page:1,perPage:25,cur:[]};
+
+/* ===== 品牌/类型统计 ===== */
+const BRAND_COUNT={},TYPE_COUNT={};
+DOCS.forEach(d=>{if(d.b)BRAND_COUNT[d.b]=(BRAND_COUNT[d.b]||0)+1;TYPE_COUNT[d.ty]=(TYPE_COUNT[d.ty]||0)+1;});
+const TYPE_ORDER=['使用手册','产品样本','程序例程','维修故障','软件','图纸','案例方案','培训','标准','其他'];
+const HOT=['西门子','三菱电机','台达','欧姆龙','施耐德电气','汇川','ABB','丹佛斯','英威腾','安川电机','松下电器机电','富士电机','罗克韦尔自动化','威纶通','信捷','比泽尔','卡乐','横河'];
+
+/* 拼音首字母工具 */
+function pinyinMatch(b,q){
+  const br=BRANDS.find(x=>x.n===b); if(!br||!br.py)return false;
+  const py=br.py.toLowerCase();
+  return py.includes(q)||py.split(/\s+/).map(w=>w[0]).join('').includes(q);
+}
+function brandHit(d,term){
+  if(!d.b)return false;
+  if(norm(d.b).includes(term))return true;
+  if(pinyinMatch(d.b,term.toLowerCase()))return true;
+  const br=BRANDS.find(x=>x.n===d.b);
+  if(br){
+    if(br.en&&norm(br.en).includes(term))return true;
+    for(const a of (br.al||[])){const na=norm(a); if(na&&na.length>=4&&!/\d/.test(na)&&na.includes(term))return true;}
+  }
+  return false;
+}
+
+/* ===== 相关度打分 ===== */
+function scoreDoc(d,terms){
+  const title=d._title, sx=d._sx; let sc=0;
+  for(const t of terms){
+    if(!t)continue;
+    const isModel=/\d/.test(t);
+    const inTitle=title.includes(t);
+    const inBrand=brandHit(d,t);
+    if(inTitle){sc+=isModel?55:28; if(title.indexOf(t)<3)sc+=10;}
+    if(inBrand)sc+=16;
+    if(sx.includes(t))sc+=inTitle?0:(isModel?8:5);
+    if(sx===t)sc+=40;
+  }
+  if(d.pdf)sc+=2;
+  return sc;
+}
+function searchDocs(q){
+  const raw=(q||'').trim();
+  const terms=smartTerms(raw);
+  let res=DOCS.map(d=>({d,sc:terms.length?scoreDoc(d,terms):0}));
+  if(terms.length){
+    res=res.filter(r=>terms.every(t=>r.d._sx.includes(t)||brandHit(r.d,t)));
+  }
+  if(S.types.size)res=res.filter(r=>S.types.has(r.d.ty));
+  if(S.langs.size)res=res.filter(r=>S.langs.has(r.d.l));
+  if(S.brands.size)res=res.filter(r=>S.brands.has(r.d.b));
+  if(S.pdfOnly)res=res.filter(r=>r.d.pdf);
+  if(S.latestOnly)res=res.filter(r=>r.d.latest);
+  if(S.sort==='rel')res.sort((a,b)=>b.sc-a.sc||(b.d.pdf?1:0)-(a.d.pdf?1:0)||(b.d.d>a.d.d?1:-1));
+  else if(S.sort==='date')res.sort((a,b)=>b.d.d<a.d.d?-1:1);
+  else res.sort((a,b)=>(b.d._dl||0)-(a.d._dl||0));
+  return res.map(r=>r.d);
+}
+
+/* 型号分组：标记最新版本 */
+function markLatest(docs){
+  const groups={};
+  docs.forEach(d=>{
+    // 提取型号核心：标题中的型号串
+    const m=d.t.match(/([A-Za-z]{1,5}[-]?[A-Za-z0-9]{2,}[-]?[A-Za-z0-9]{0,})/);
+    const key=(d.b||'')+'|'+(m?norm(m[1]).replace(/(V\d+.*)$/,''):norm(d.t).slice(0,12));
+    d._key=key;
+    if(!groups[key]||d.d>groups[key].d)groups[key]=d;
+  });
+  Object.values(groups).forEach(d=>{
+    // 同型号有多个版本时才标
+    const n=docs.filter(x=>x._key===d._key).length;
+    if(n>1&&(d.v||true))d.latest=true;
+  });
+}
+
+/* ===== 渲染：文档卡片 ===== */
+function esc(s){return (s||'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));}
+function hl(text,terms){
+  text=esc(text);
+  terms.forEach(t=>{
+    if(t.length<2)return;
+    const t2=t.replace(/[.*+?^${}()|[\]\\]/g,'\\$&');
+    try{text=text.replace(new RegExp('('+t2+')','gi'),'<em>$1</em>');}catch(e){}
+  });
+  return text;
+}
+const ICON={
+  pdf:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg>',
+  dl:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3v12m0 0l-4-4m4 4l4-4M4 21h16"/></svg>',
+  tr:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 5h12M9 3v2c0 4-3 7-6 8M13 21c0-4 4-7 8-8M14 19h7"/></svg>',
+  page:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 3H7a2 2 0 00-2 2v14a2 2 0 002 2h10a2 2 0 002-2V8z"/><path d="M14 3v5h5"/></svg>',
+  date:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>',
+  size:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><path d="M14 2v6h6"/></svg>',
+  hit:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 12s-3-7-10-7-10 7-10 7 3 7 10 7 10-7 10-7z"/><circle cx="12" cy="12" r="3"/></svg>'
+};
+function typeColor(ty){return 'type';}
+function docCard(d,terms){
+  const direct=!!d.pdf;
+  const fm=(direct&&d.pdf)?((d.pdf.toLowerCase().split('?')[0].match(/\.([a-z0-9]+)$/)||[])[1]||''):'';
+  const isPdf=fm==='pdf';
+  const isArc=['zip','rar','7z','gz'].indexOf(fm)>=0;
+  const isDoc=['doc','docx','ppt','pptx','xls','xlsx','txt','wps','rtf'].indexOf(fm)>=0;
+  const tags=[];
+  if(d.b)tags.push('<span class="tag brand">'+esc(d.b)+'</span>');
+  tags.push('<span class="tag type">'+esc(d.ty)+'</span>');
+  if(d.v)tags.push('<span class="tag ver">'+esc(d.v)+'</span>');
+  if(d.latest)tags.push('<span class="tag latest">最新版</span>');
+  if(d.l==='英文')tags.push('<span class="tag lang">EN</span>');
+  else if(d.l==='中文')tags.push('<span class="tag lang">中</span>');
+  if(direct&&fm&&!isPdf)tags.push('<span class="tag fmt">'+fm.toUpperCase()+'</span>');
+  const meta=[];
+  if(d.d)meta.push('<span>'+ICON.date+d.d+'</span>');
+  if(d.size)meta.push('<span>'+ICON.size+esc(d.size)+'</span>');
+  if(d._dl)meta.push('<span>'+ICON.hit+d._dl+'</span>');
+  meta.push('<span>来源：'+esc(d.src)+'</span>');
+  let acts='';
+  if(direct){
+    if(isPdf){
+      const rdHref='reader.html?pdf='+encodeURIComponent(d.pdf)+'&title='+encodeURIComponent(d.t)+'&brand='+encodeURIComponent(d.b||'');
+      const bad=window.BAD_URLS&&window.BAD_URLS[d.pdf];
+      acts+='<a class="btn btn-pdf" href="'+esc(rdHref)+'">'+ICON.pdf+'在线预览</a>';
+      if(bad)acts+='<div class="badflag" style="flex:1 1 100%;color:#b91c1c;font-size:12px;margin-top:2px">⚠ 自动检测该链接可能异常，已优先排到后面（点开仍会尝试备用通道）</div>';
+      acts+='<a class="btn btn-dl" target="_blank" rel="noopener" href="'+esc(d.pdf)+'">'+ICON.dl+'下载</a>';
+      if(d.l==='英文')acts+='<button class="btn btn-tr" onclick="translate(\''+encodeURIComponent(d.pdf)+'\',\''+encodeURIComponent(d.t)+'\')">'+ICON.tr+'翻译</button>';
+    }else{
+      const lab=isArc?'下载压缩包':(isDoc?'下载文档':'下载文件');
+      acts+='<a class="btn btn-dl" target="_blank" rel="noopener" href="'+esc(d.pdf)+'">'+ICON.dl+lab+(fm?' · '+fm.toUpperCase():'')+'</a>';
+    }
+  }else{
+    acts+='<span class="btn btn-page" style="opacity:.55;cursor:default">'+ICON.page+'暂未找到免费直链</span>';
+  }
+  const isBad=direct&&window.BAD_URLS&&window.BAD_URLS[d.pdf];
+  return '<div class="doc '+(direct?'direct':'')+(isBad?' is-bad':'')+'">'
+    +'<div class="doc-l"><div class="doc-title">'+hl(d.t,terms)+'</div>'
+    +'<div class="doc-tags">'+tags.join('')+'</div>'
+    +(d.sum?'<div class="doc-sum">'+esc(d.sum)+'</div>':'')
+    +'<div class="doc-meta">'+meta.join('')+'</div></div>'
+    +'<div class="doc-r">'+acts+'</div>'
+    +(isBad?'<div class="badge-direct" style="background:#7f1d1d;color:#fff">⚠ 链接可能失效</div>':direct?'<div class="badge-direct"><i></i>免费·在线可看</div>':'<div class="badge-login">可让 AI 帮你找</div>')
+    +'</div>';
+}
+
+/* ===== 列表渲染 ===== */
+function runSearch(){
+  const q=S.q; const terms=q.trim().toLowerCase().split(/\s+/).map(norm).filter(Boolean);
+  let res=searchDocs(q);
+  markLatest(res);
+  if(S.latestOnly)res=res.filter(d=>d.latest);
+  if(window.BAD_URLS&&Object.keys(window.BAD_URLS).length){
+    res=res.slice().sort(function(a,b){return (window.BAD_URLS[a.pdf]?1:0)-(window.BAD_URLS[b.pdf]?1:0);});
+  }
+  S.cur=res; S.page=1;
+  // 标题
+  const titleEl=document.getElementById('listTitle');
+  if(S.brands.size===1)titleEl.innerHTML='品牌：<span class="hl">'+[...S.brands][0]+'</span>';
+  else if(q)titleEl.innerHTML='“<span class="hl">'+esc(q)+'</span>” 的说明书';
+  else titleEl.innerHTML='全部文档';
+  document.getElementById('listCount').textContent=res.length+' 份 · '+res.filter(d=>d.pdf).length+' 份可直取';
+  renderFilters(res);
+  renderCrumb();
+  renderDocs(terms);
+  go('list');
+}
+function renderDocs(terms){
+  const list=document.getElementById('docList');
+  const res=S.cur;
+  if(!res.length){
+    list.innerHTML='<div class="empty"><div class="ei">🔍</div><h4>本地资料库暂未收录该型号</h4><p>已为你准备全网直达入口，可一键在各厂家资料中心与搜索引擎继续精确查找。</p>'
+      +'<div class="fallback">'+fallbackBtns(S.q)+'</div></div>';
+    document.getElementById('pager').innerHTML='';return;
+  }
+  const start=(S.page-1)*S.perPage;
+  const page=res.slice(start,start+S.perPage);
+  list.innerHTML=page.map(d=>docCard(d,terms||[])).join('');
+  renderPager(res.length);
+}
+function renderPager(total){
+  const pages=Math.ceil(total/S.perPage), p=S.page, el=document.getElementById('pager');
+  if(pages<=1){el.innerHTML='';return;}
+  let h='<button '+(p<=1?'disabled':'')+' onclick="goPage('+(p-1)+')">‹</button>';
+  const range=[];
+  for(let i=Math.max(1,p-2);i<=Math.min(pages,p+2);i++)range.push(i);
+  if(range[0]>1){h+='<button onclick="goPage(1)">1</button>';if(range[0]>2)h+='<button disabled>…</button>';}
+  range.forEach(i=>h+='<button class="'+(i===p?'on':'')+'" onclick="goPage('+i+')">'+i+'</button>');
+  if(range[range.length-1]<pages){if(range[range.length-1]<pages-1)h+='<button disabled>…</button>';h+='<button onclick="goPage('+pages+')">'+pages+'</button>';}
+  h+='<button '+(p>=pages?'disabled':'')+' onclick="goPage('+(p+1)+')">›</button>';
+  el.innerHTML=h;
+}
+function goPage(p){S.page=p;renderDocs(S.q.trim().toLowerCase().split(/\s+/).map(norm).filter(Boolean));window.scrollTo({top:0});}
+
+/* 筛选面板 */
+function renderFilters(res){
+  // 类型
+  const tc={};res.forEach(d=>tc[d.ty]=(tc[d.ty]||0)+1);
+  document.getElementById('f-type').innerHTML=TYPE_ORDER.filter(t=>tc[t]).map(t=>
+    '<label class="'+(S.types.has(t)?'ck':'')+'"><input type="checkbox" '+(S.types.has(t)?'checked':'')+' onchange="toggleSet(S.types,\''+t+'\',this.checked)">'+t+'<span class="n">'+tc[t]+'</span></label>').join('');
+  // 语言
+  const lc={};res.forEach(d=>{if(d.l)lc[d.l]=(lc[d.l]||0)+1;});
+  document.getElementById('f-lang').innerHTML=Object.keys(lc).map(l=>
+    '<label class="'+(S.langs.has(l)?'ck':'')+'"><input type="checkbox" '+(S.langs.has(l)?'checked':'')+' onchange="toggleSet(S.langs,\''+l+'\',this.checked)">'+l+'<span class="n">'+lc[l]+'</span></label>').join('');
+  // 品牌（取当前结果中前15）
+  const bc={};res.forEach(d=>{if(d.b)bc[d.b]=(bc[d.b]||0)+1;});
+  const top=Object.entries(bc).sort((a,b)=>b[1]-a[1]).slice(0,16);
+  document.getElementById('f-brand').innerHTML=top.map(([b,n])=>{
+    const bs=b.replace(/'/g,"\\'");
+    return '<label class="'+(S.brands.has(b)?'ck':'')+'"><input type="checkbox" '+(S.brands.has(b)?'checked':'')+' onchange="toggleSet(S.brands,\''+bs+'\',this.checked)">'+esc(b)+'<span class="n">'+n+'</span></label>';
+  }).join('');
+  document.getElementById('sw-pdf').className='sw'+(S.pdfOnly?' on':'');
+  document.getElementById('sw-latest').className='sw'+(S.latestOnly?' on':'');
+}
+function toggleSet(set,v,on){if(on)set.add(v);else set.delete(v);runSearch();}
+function openFilter(){var s=document.getElementById("sidebar"),m=document.getElementById("filterMask");s.classList.add("open");m.classList.add("show");document.body.style.overflow="hidden";}
+function closeFilter(){var s=document.getElementById("sidebar"),m=document.getElementById("filterMask");s.classList.remove("open");m.classList.remove("show");document.body.style.overflow="";}
+function togglePdf(){S.pdfOnly=!S.pdfOnly;runSearch();}
+function toggleLatest(){S.latestOnly=!S.latestOnly;runSearch();}
+function setSort(s){S.sort=s;document.querySelectorAll('.sortsel button').forEach(b=>b.classList.toggle('on',b.dataset.s===s));runSearch();}
+function renderCrumb(){
+  const parts=['<a onclick="go(\'home\')">首页</a>','›','<b>'+(S.q?'搜索：'+esc(S.q):'全部文档')+'</b>'];
+  document.getElementById('crumb').innerHTML=parts.join(' ');
+}
+
+/* ===== 搜索交互 ===== */
+function getHistory(){
+  try{return JSON.parse(localStorage.getItem('gsk_history')||'[]').filter(Boolean);}catch(e){return [];}
+}
+function saveHistory(q){
+  try{
+    q=(q||'').trim(); if(!q)return;
+    let h=getHistory().filter(x=>x.toLowerCase()!==q.toLowerCase());
+    h.unshift(q); h=h.slice(0,10);
+    localStorage.setItem('gsk_history',JSON.stringify(h));
+  }catch(e){}
+}
+function clearHistory(){
+  try{localStorage.removeItem('gsk_history');}catch(e){}
+  const box=document.getElementById('homeHistory'); if(box)box.style.display='none';
+}
+function renderHistory(){
+  const box=document.getElementById('homeHistory'); if(!box)return;
+  const h=getHistory();
+  if(!h.length){box.style.display='none';return;}
+  box.style.display='block';
+  box.innerHTML='<div class="hh"><span>最近搜索</span><a onclick="clearHistory()" style="font-size:12px;color:var(--mut);cursor:pointer">清空</a></div>'
+    +'<div class="htags">'+h.map(function(q){return '<span class="htag" onclick="historyPick(this.textContent)">'+esc(q)+'</span>';}).join('')+'</div>';
+}
+function historyPick(q){
+  q=(q||'').trim();
+  const el=document.getElementById('qhome')||document.getElementById('qtop');
+  S.q=q;
+  ['qtop','qhome'].forEach(function(id){const e=document.getElementById(id);if(e)e.value=q;});
+  doSearch(el&&el.id==='qtop'?'top':'home');
+}
+function doSearch(where){
+  try{
+    const el=document.getElementById('q'+(where==='home'?'home':'top'));
+    S.q=el.value.trim();
+    ['qtop','qhome'].forEach(id=>{const e=document.getElementById(id);if(e)e.value=S.q;});
+    S.types.clear();S.langs.clear();S.brands.clear();S.pdfOnly=false;S.latestOnly=false;
+    const swp=document.getElementById('sw-pdf'),swl=document.getElementById('sw-latest');
+    if(swp)swp.className='sw';if(swl)swl.className='sw';
+    saveHistory(S.q);
+    hideSug();
+    runSearch();
+  }catch(err){
+    console.error('doSearch error:',err);
+    try{hideSug();runSearch();}catch(e2){}
+  }
+}
+function onKey(e,where){
+  if(e.key==='Enter')doSearch(where);
+  else if(e.key==='ArrowDown'||e.key==='ArrowUp'){moveSug(e.key==='ArrowDown'?1:-1,e);}
+  else if(e.key==='Escape')hideSug();
+}
+let sugIdx=-1,sugItems=[];
+function onSug(v,where){
+  const box=document.getElementById('sug-'+where);
+  v=v.trim();
+  if(!v){hideSug();return;}
+  const terms=smartTerms(v);
+  // 识别品牌（中文/英文品牌名）
+  let brand=null;
+  for(const t of terms){
+    const hit=BRANDS.find(b=>norm(b.n)===t||(b.en&&norm(b.en)===t));
+    if(hit){brand=hit.n;break;}
+  }
+  const isBrand=t=>BRANDS.some(b=>norm(b.n)===t||(b.en&&norm(b.en)===t));
+  const modelTerms=terms.filter(t=>!isBrand(t));
+  const qn=norm(v.toLowerCase());
+  const items=[];
+  // 品牌建议（未识别到品牌时，按输入片段匹配品牌名）
+  if(!brand){
+    BRANDS.forEach(b=>{
+      const hay=norm(b.n+' '+b.en+' '+b.py+' '+(b.al||[]).join(' '));
+      if(hay.includes(qn)||(b.py&&b.py.replace(/\s/g,'').includes(qn)))items.push({k:'b',b:b.n,label:b.n,meta:b.en||b.py});
+    });
+  }
+  // 文档型号匹配：识别到品牌则限定品牌；所有非品牌词都要命中
+  const seen=new Set();
+  for(const d of DOCS){
+    if(items.length>=24)break;
+    if(brand&&d.b!==brand)continue;
+    const ok=modelTerms.length?modelTerms.every(t=>d._sx.includes(t)||brandHit(d,t)):d._sx.includes(qn);
+    if(ok){
+      const key=d.t.slice(0,30);
+      if(!seen.has(key)){seen.add(key);items.push({k:'d',label:d.t,meta:d.b||'',d:d});}
+    }
+  }
+  sugItems=items.slice(0,12);sugIdx=-1;
+  if(!sugItems.length){box.innerHTML='<div class="sug-item" style="color:var(--mut)">未找到匹配，回车搜索全部说明书</div>';box.classList.add('show');return;}
+  let h='';
+  const bitems=sugItems.filter(it=>it.k==='b').slice(0,4);
+  if(bitems.length){h+='<div class="sug-sec">品牌</div>';bitems.forEach(it=>{h+=sugRow(it,sugItems.indexOf(it),qn);});}
+  const mitems=sugItems.filter(it=>it.k==='d').slice(0,8);
+  if(mitems.length){h+='<div class="sug-sec">说明书 / 型号</div>';mitems.forEach(it=>{h+=sugRow(it,sugItems.indexOf(it),qn);});}
+  box.innerHTML=h;box.classList.add('show');
+}
+
+/* ===== 视图切换（恢复） ===== */
+function go(v){
+  if(v==='allbrands')v='brands';
+  ['home','list','brands'].forEach(function(x){
+    var el=document.getElementById('view-'+x);
+    if(el)el.style.display=(x===v?'block':'none');
+  });
+  if(v==='home'){try{renderHome();}catch(e){console.error(e);}}
+  if(v==='brands'){try{renderAllBrands();}catch(e){console.error(e);}}
+  window.scrollTo(0,0);
+}
+
+/* ===== 设备分类（按品牌/标题/关键词归类） ===== */
+function catText(d){return ((d.t||'')+' '+(d.b||'')+' '+(d.kw||'')).toUpperCase();}
+var CATS=[
+  {key:'plc',name:'PLC 可编程控制器',ic:'P',k:['PLC','可编程','逻辑控制器','控制器模块','PROGRAMMABLE']},
+  {key:'hmi',name:'HMI 触摸屏',ic:'H',k:['HMI','触摸屏','人机界面','TOUCHSCREEN','WEINVIEW','MT8','DOP','PRO-FACE','PROFACE','SAMKOON','MCGS']},
+  {key:'vfd',name:'变频器/驱动器',ic:'V',k:['变频','VFD','INVERTER','DRIVE','调速','FREQUENCY','INVT','VLT','ALTIVAR','SINAMICS']},
+  {key:'servo',name:'伺服/运动控制',ic:'S',k:['伺服','SERVO','步进','运动控制','MOTION','运动','KINCO','LEADSHINE']},
+  {key:'sensor',name:'传感器/开关',ic:'传',k:['传感器','SENSOR','接近开关','光电开关','编码器','ENCODER','压力开关','温度开关','PRESSURE SWITCH','BALLUFF','SICK','BANNER','AUTONICS','IFM','TURCK']},
+  {key:'cool',name:'制冷/温控',ic:'冷',k:['压缩机','COMPRESSOR','温控','制冷','冷库','冷凝','膨胀阀','EVAPORATOR','CONDENS','BITZER','CAREL','ELITECH','DIXELL','COPELAND','REFRIGER','比泽尔','卡乐','精创','谷轮','小精灵','艾默生','丹佛斯','ECS','STC','ECB','冷柜','冷链']},
+  {key:'motor',name:'电机',ic:'M',k:['电机','MOTOR','马达']},
+  {key:'instrument',name:'仪表/过程控制',ic:'仪',k:['仪表','变送器','流量计','液位','TRANSMITTER','FLOWMETER','ANALYZER','过程','温度控制仪','巡检仪','记录仪','RKC','SHIMADEN']},
+  {key:'power',name:'电源',ic:'源',k:['电源','POWER SUPPLY','UPS','MEANWELL','明纬','开关电源','MORNSUN','金升阳']},
+  {key:'network',name:'工业网络/通信',ic:'网',k:['通信','通讯','网关','GATEWAY','MODBUS','PROFINET','PROFIBUS','ETHERNET','交换机','总线','协议','IO-LINK','AMSAMOTION','艾莫迅','MOXA','远程IO']},
+  {key:'lv',name:'低压电气',ic:'低',k:['断路器','接触器','继电器','CONTACTOR','BREAKER','RELAY','隔离开关','熔断器','SCHNEIDER','正泰','德力西']},
+  {key:'robot',name:'机器人',ic:'R',k:['机器人','ROBOT','KUKA','FANUC','机械臂','ABB ']}
+];
+function catMatch(d){
+  var txt=catText(d);var hits=[];
+  for(var i=0;i<CATS.length;i++){
+    var c=CATS[i];
+    for(var j=0;j<c.k.length;j++){if(txt.indexOf(c.k[j].toUpperCase())>=0){hits.push(c.key);break;}}
+  }
+  return hits;
+}
+
+/* ===== 首页 ===== */
+function renderHome(){
+  if(typeof renderHistory==='function')renderHistory();
+  document.getElementById('h-doc').textContent=DOCS.length.toLocaleString();
+  document.getElementById('h-pdf').textContent=DOCS.filter(function(d){return d.pdf;}).length.toLocaleString();
+  document.getElementById('h-brand').textContent=Object.keys(BRAND_COUNT).length;
+  var st=document.getElementById('statDocs'); if(st)st.textContent=DOCS.filter(function(d){return d.pdf;}).length.toLocaleString();
+  // 热门品牌
+  document.getElementById('brandHot').innerHTML=HOT.filter(function(b){return BRAND_COUNT[b];}).slice(0,16).map(function(b){
+    var br=BRANDS.find(function(x){return x.n===b;})||{};
+    return '<div class="brandcard" onclick="pickBrand(\''+b.replace(/'/g,"\\'")+'\')"><span class="num">'+BRAND_COUNT[b]+'</span><div class="nm">'+b+'</div><div class="en">'+(br.en||'')+'</div></div>';
+  }).join('');
+  // 分类
+  document.getElementById('catGrid').innerHTML=CATS.map(function(c){
+    var n=DOCS.filter(function(d){return catMatch(d).indexOf(c.key)>=0;}).length;
+    if(!n)return '';
+    return '<div class="catcard" onclick="catPick(\''+c.key+'\')"><div class="ci">'+c.ic+'</div><div class="ct"><b>'+c.name+'</b><span>'+n+' 份</span></div></div>';
+  }).join('');
+  // 最新入库
+  var latest=DOCS.filter(function(d){return d.pdf;}).slice().sort(function(a,b){return b.d>a.d.d?1:-1;}).slice(0,12);
+  document.getElementById('latestDocs').innerHTML=latest.map(function(d){return docCard(d,[]);}).join('');
+  // 加载采集统计
+  fetch('data/stats.json?v='+Date.now()).then(function(r){return r.json();}).then(function(d){
+    var el=document.getElementById('h-new'); if(el)el.textContent=d.last_new||0;
+    var cs=document.getElementById('crawlStatus');
+    if(cs){
+      var failCount=0,okCount=0,failList=[];
+      if(d.steps)for(var k in d.steps){
+        if(d.steps[k]==='ok')okCount++;else{failCount++;failList.push({name:k,reason:d.steps[k]});}
+      }
+      var totalBrands=okCount+failCount;
+      var statusText=failCount>0?('部分异常('+failCount+'/'+totalBrands+')'):('全部正常('+okCount+'/'+totalBrands+')');
+      var newText=d.last_new>0?('，本次新增 '+d.last_new+' 份'):'';
+      if(failCount>0)cs.classList.add('warn');else cs.classList.remove('warn');
+      cs.innerHTML='<span class="dot"></span> 云端自动采集 '+statusText+' | 最近采集：'+(d.last_run||'--')+newText+' | 每3小时自动增量采集 <span class="detail-link" onclick="toggleCrawlDetail()">['+(failCount>0?'查看异常':'查看详情')+']</span>';
+      // 填充详情面板
+      var cd=document.getElementById('crawlDetail');
+      if(cd&&d.steps){
+        var html='<div class="cd-summary">采集状态：<span class="cd-ok">正常 '+okCount+' 个</span> / <span class="cd-fail">异常 '+failCount+' 个</span>（共 '+totalBrands+' 个品牌）</div>';
+        html+='<div class="cd-grid">';
+        for(var b in d.steps){
+          var isOk=d.steps[b]==='ok';
+          html+='<div class="cd-item"><span class="s '+(isOk?'ok':'fail')+'"></span>'+b+(isOk?'':'<span class="reason">'+d.steps[b]+'</span>')+'</div>';
+        }
+        html+='</div>';
+        cd.innerHTML=html;
+      }
+    }
+  }).catch(function(){});
+}
+function toggleCrawlDetail(){
+  var cd=document.getElementById('crawlDetail');
+  if(cd)cd.classList.toggle('show');
+}
+
+/* ===== 品牌/分类点击 ===== */
+function pickBrand(b){
+  S.q='';S.types.clear();S.langs.clear();S.brands.clear();S.pdfOnly=false;S.latestOnly=false;
+  S.brands.add(b);
+  ['qtop','qhome'].forEach(function(id){var e=document.getElementById(id);if(e)e.value='';});
+  runSearch();
+}
+function catPick(key){
+  var c=CATS.find(function(x){return x.key===key;});if(!c)return;
+  S.q='';S.types.clear();S.langs.clear();S.brands.clear();S.pdfOnly=false;S.latestOnly=false;S.page=1;
+  var res=DOCS.filter(function(d){return catMatch(d).indexOf(key)>=0;});
+  res.sort(function(a,b){return b.d>a.d.d?1:-1;});
+  S.cur=res;
+  document.getElementById('listTitle').innerHTML='分类：<span class="hl">'+c.name+'</span>';
+  document.getElementById('listCount').textContent=res.length+' 份 · '+res.filter(function(d){return d.pdf;}).length+' 份可直取';
+  renderFilters(res);
+  document.getElementById('crumb').innerHTML='<a onclick="go(\'home\')">首页</a> › <b>'+c.name+'</b>';
+  renderDocs([]);
+  go('list');
+}
+
+/* ===== 全部品牌 ===== */
+function renderAllBrands(){
+  var inp=document.getElementById('brandFilter');
+  var q=(inp&&inp.value||'').trim().toLowerCase();
+  var list=BRANDS.filter(function(b){return BRAND_COUNT[b.n];});
+  if(q){
+    list=list.filter(function(b){
+      var hay=(b.n+' '+(b.en||'')+' '+(b.py||'')+' '+(b.al||[]).join(' ')).toLowerCase();
+      if(hay.indexOf(q)>=0)return true;
+      if(b.py&&b.py.replace(/\s/g,'').indexOf(q.replace(/\s/g,''))>=0)return true;
+      return false;
+    });
+  }
+  list.sort(function(a,b){return (BRAND_COUNT[b.n]||0)-(BRAND_COUNT[a.n]||0);});
+  document.getElementById('allBrandCount').textContent=Object.keys(BRAND_COUNT).length+' 个品牌 · '+list.length+' 匹配';
+  document.getElementById('allBrands').innerHTML=list.map(function(b){
+    return '<div class="brandcard" onclick="pickBrand(\''+b.n.replace(/'/g,"\\'")+'\')"><span class="num">'+BRAND_COUNT[b.n]+'</span><div class="nm">'+b.n+'</div><div class="en">'+(b.en||'')+'</div></div>';
+  }).join('');
+}
+
+/* ===== 翻译跳转 ===== */
+function translate(pdfEnc,titleEnc){
+  var u=decodeURIComponent(pdfEnc);
+  var title=titleEnc?decodeURIComponent(titleEnc):'说明书';
+  location.href='viewer.html?pdf='+encodeURIComponent(u)+'&title='+encodeURIComponent(title);
+}
+
+/* ===== 全网兜底 ===== */
+function fallbackBtns(q){
+  var qe=encodeURIComponent(q+' 说明书 manual filetype:pdf');
+  var list=[
+    ['百度','https://www.baidu.com/s?wd='+encodeURIComponent(q+' 说明书 pdf')],
+    ['必应','https://cn.bing.com/search?q='+qe],
+    ['谷歌','https://www.google.com/search?q='+qe],
+    ['搜狗','https://www.sogou.com/web?query='+encodeURIComponent(q+' 说明书 pdf')],
+    ['ManualsLib','https://www.manualslib.com/?q='+encodeURIComponent(q)],
+    ['Manuals+','https://manuals.plus/search?q='+encodeURIComponent(q)]
+  ];
+  return list.map(function(p){return '<a class="fb-btn" target="_blank" rel="noopener" href="'+p[1]+'">'+p[0]+' 查找</a>';}).join('');
+}
+
+/* ===== 下拉建议 ===== */
+function hideSug(){
+  document.querySelectorAll('.suggest').forEach(function(s){s.classList.remove('show');});
+  sugIdx=-1;
+}
+function sugRow(it,idx,qn){
+  var isB=it.k==='b';
+  var ic='<div class="ic '+(isB?'b':'m')+'">'+(isB?'牌':'书')+'</div>';
+  var meta=it.meta?'<span style="margin-left:8px;color:var(--mut);font-size:11px;font-family:var(--mono);overflow:hidden;text-overflow:ellipsis;white-space:nowrap;max-width:38%">'+esc(it.meta)+'</span>':'';
+  return '<div class="sug-item" data-i="'+idx+'" onclick="sugPick('+idx+')">'+ic+'<div class="tt">'+esc(it.label)+'</div>'+meta+'</div>';
+}
+function sugPick(idx){
+  var it=sugItems[idx];if(!it)return;
+  hideSug();
+  if(it.k==='b'){pickBrand(it.label);return;}
+  var q=it.d?(it.d.t):it.label;
+  S.q=q;
+  ['qtop','qhome'].forEach(function(id){var e=document.getElementById(id);if(e)e.value=q;});
+  runSearch();
+}
+function moveSug(dir,e){
+  var box=document.querySelector('.suggest.show');if(!box)return;
+  var rows=box.querySelectorAll('.sug-item');if(!rows.length)return;
+  if(e&&e.preventDefault)e.preventDefault();
+  sugIdx=(sugIdx+dir+rows.length)%rows.length;
+  rows.forEach(function(r,i){r.classList.toggle('act',i===sugIdx);});
+  if(rows[sugIdx]&&rows[sugIdx].scrollIntoView)rows[sugIdx].scrollIntoView({block:'nearest'});
+}
+
+/* ===== 首屏渲染（数据分片在本脚本前已同步加载） ===== */
+try{renderHome();}catch(e){console.error('renderHome init error:',e);}
+
+</script>
+<!-- GSK-APP-START -->
+<style id="gsk-style">
+/* ===== 工书库 实时/AI/设置 集成样式 ===== */
+/* AI 悬浮按钮 */
+#gskFab{position:fixed;right:16px;bottom:calc(18px + env(safe-area-inset-bottom));z-index:200;
+  width:58px;height:58px;border-radius:50%;border:none;cursor:pointer;color:#fff;
+  background:linear-gradient(135deg,#0e6b6e,#1597a5);box-shadow:0 8px 22px rgba(14,107,110,.42);
+  display:flex;align-items:center;justify-content:center;font-size:26px;transition:transform .15s}
+#gskFab:active{transform:scale(.92)}
+#gskFab .dot{position:absolute;top:7px;right:8px;width:10px;height:10px;border-radius:50%;background:#ff5a4d;border:2px solid #fff}
+#gskFab.ok{background:linear-gradient(135deg,#0d7d56,#17b380);box-shadow:0 8px 22px rgba(16,145,100,.42)}
+
+/* 通用抽屉 */
+#gskPanel,#gskSet{position:fixed;inset:0;z-index:220;display:none;flex-direction:column;
+  background:var(--bg,#eef2f3)}
+#gskPanel.open,#gskSet.open{display:flex}
+.gsk-mask{position:fixed;inset:0;background:rgba(10,25,35,.48);z-index:210;display:none}
+.gsk-mask.show{display:block}
+.gsk-bar{display:flex;align-items:center;gap:10px;padding:12px 14px;background:var(--navy,#12354a);color:#fff;
+  padding-top:calc(12px + env(safe-area-inset-top));flex:0 0 auto}
+.gsk-bar b{font-size:16px}
+.gsk-bar .sub{font-size:11px;opacity:.82;margin-top:1px}
+.gsk-x{margin-left:auto;width:38px;height:38px;border-radius:9px;background:rgba(255,255,255,.14);color:#fff;font-size:18px;border:none}
+
+/* 聊天 */
+#gskChat{flex:1;overflow-y:auto;padding:14px 13px;display:flex;flex-direction:column;gap:11px;background:var(--bg,#eef2f3)}
+.msg{max-width:88%;padding:10px 13px;border-radius:14px;font-size:14px;line-height:1.62;white-space:pre-wrap;word-break:break-word}
+.msg.user{align-self:flex-end;background:#1597a5;color:#fff;border-bottom-right-radius:4px}
+.msg.ai{align-self:flex-start;background:var(--card,#fff);color:var(--ink,#1a2a33);border:1px solid var(--line,#dbe3e4);border-bottom-left-radius:4px}
+.msg.sys{align-self:center;background:#fff4e0;color:#9a5a00;border:1px solid #ffd98a;font-size:12.6px;padding:8px 14px;text-align:center}
+.msg.typing{color:#6b808b}.msg.typing i{display:inline-block;width:6px;height:6px;margin:0 1px;border-radius:50%;background:#8aa0aa;animation:gskblink 1s infinite}
+.msg.typing i:nth-child(2){animation-delay:.2s}.msg.typing i:nth-child(3){animation-delay:.4s}
+@keyframes gskblink{0%,100%{opacity:.25}50%{opacity:1}}
+.refs{margin-top:9px;display:flex;flex-direction:column;gap:7px}
+.ref{display:flex;flex-direction:column;gap:3px;padding:9px 11px;border-radius:9px;background:#f1f8f7;border:1px solid #cfe9e6;text-decoration:none;color:inherit}
+.ref .rt{font-size:13px;font-weight:700;color:var(--navy,#12354a);line-height:1.4}
+.ref .rm{font-size:11.5px;color:#178a72}
+.ref .live-badge{font-size:10.5px;background:#ff8a2a;color:#fff;border-radius:5px;padding:1px 6px;margin-left:6px}
+#gskInput{flex:0 0 auto;display:flex;gap:8px;padding:10px 12px calc(10px + env(safe-area-inset-bottom));background:var(--card,#fff);border-top:1px solid var(--line,#dbe3e4)}
+#gskText{flex:1;border:1px solid var(--line,#cfd8da);border-radius:22px;padding:11px 16px;font-size:14.5px;background:var(--bg,#f4f7f7)}
+#gskSend{flex:0 0 auto;border:none;border-radius:50%;width:46px;height:46px;background:#1597a5;color:#fff;font-size:18px;cursor:pointer}
+#gskSend:disabled{opacity:.5}
+.chip-row{display:flex;gap:7px;flex-wrap:wrap;padding:0 12px 8px;background:var(--bg,#eef2f3)}
+.chip{border:1px solid var(--line,#cfd8da);background:var(--card,#fff);border-radius:16px;padding:6px 12px;font-size:12.5px;color:var(--navy,#12354a);cursor:pointer}
+
+/* 实时兜底区块 */
+#liveBox{margin:14px 0 4px}
+.live-loading,.live-none{text-align:center;color:#7a8b94;font-size:13px;padding:12px}
+.live-head{font-size:13.5px;font-weight:700;color:#0d7d56;padding:6px 2px 10px}
+.live-card{display:flex;gap:10px;align-items:flex-start;background:var(--card,#fff);border:1px solid var(--line,#dbe3e4);
+  border-left:3px solid #ff8a2a;border-radius:10px;padding:11px 12px;margin-bottom:9px}
+.live-card .lc-body{flex:1;min-width:0}
+.live-card .lc-t{font-size:14px;font-weight:700;color:var(--navy,#12354a);line-height:1.4}
+.live-card .lc-m{font-size:11.5px;color:#8295a0;margin-top:4px}
+.live-card .lc-btns{margin-top:8px;display:flex;gap:7px;flex-wrap:wrap}
+.live-badge{font-size:10.5px;background:#ff8a2a;color:#fff;border-radius:5px;padding:2px 7px;font-weight:700}
+
+/* 设置面板 */
+#gskSet .gsk-body{flex:1;overflow-y:auto;padding:16px 15px calc(20px + env(safe-area-inset-bottom))}
+.fset{background:var(--card,#fff);border:1px solid var(--line,#dbe3e4);border-radius:12px;padding:14px;margin-bottom:14px}
+.fset h4{margin:0 0 11px;font-size:14.5px;color:var(--navy,#12354a)}
+.fset label{display:block;font-size:12.5px;color:#6b808b;margin:10px 0 5px}
+.fset input,.fset select{width:100%;padding:10px 12px;border:1px solid var(--line,#cfd8da);border-radius:9px;font-size:14px;box-sizing:border-box;background:var(--bg,#f7f9f9)}
+.fset .hint{font-size:11.8px;color:#8aa0aa;line-height:1.55;margin-top:6px}
+.fset .stat{display:flex;justify-content:space-between;font-size:13px;padding:6px 0;color:#334754}
+.fset .stat b{color:var(--navy,#12354a)}
+.btn-primary{width:100%;background:var(--navy,#12354a);color:#fff;border:none;border-radius:10px;padding:13px;font-size:14.5px;font-weight:700;cursor:pointer}
+.btn-ghost{width:100%;background:#eef3f3;color:var(--navy,#12354a);border:1px solid var(--line,#cfd8da);border-radius:10px;padding:12px;font-size:13.5px;font-weight:700;cursor:pointer;margin-top:9px}
+.save-tip{text-align:center;font-size:12.6px;color:#0d7d56;margin-top:9px;min-height:16px}
+.key-link{color:#1597a5;font-weight:700}
+
+@media(min-width:860px){
+  #gskFab{right:26px;bottom:26px;width:62px;height:62px}
+  #gskPanel{inset:auto 0 0 auto;right:24px;bottom:24px;width:420px;height:78vh;border-radius:18px;overflow:hidden;
+    box-shadow:0 20px 60px rgba(0,0,0,.3)}
+  #gskPanel.open{display:flex}
+  #gskSet{background:rgba(10,25,35,.45);justify-content:flex-end}
+  #gskSet .gsk-bar{border-radius:0}
+  #gskSet .gsk-body{background:var(--bg,#eef2f3);max-width:520px;width:100%;margin-left:auto;box-shadow:-10px 0 40px rgba(0,0,0,.2)}
+}
+
+</style>
+<script>
+﻿/* ========== 工书库 检索 + AI 助手 + 设置（云端/本地双模式） ==========
+ * 连得上后端（本地 App / 局域网）：走后端 API。
+ * 纯静态云托管（无后端）：AI 浏览器直连 DeepSeek（Key 存本机浏览器），
+ *                         实时兜底直连丹佛斯官方 Algolia 库（已验证 CORS）。
+ */
+(function(){
+'use strict';
+let API_BASE='', API_OK=false, SrvStatus=null, liveTok=0;
+let chatMsgs=[];
+
+/* ---------- 服务商预设。全部经工书库云端 Worker 代理转发，国内手机/电脑无需翻墙即可调用 ---------- */
+const PRESETS={
+  cloud:{name:'云端免费 AI（无需注册，开箱即用·推荐）',type:'cloud',base_url:'',model:'',keyUrl:'',
+    hint:'由工书库云端免费提供，基于检索到的真实说明书回答，无需任何 Key。开箱即用，免费额度每日自动恢复。'},
+  deepseek:{name:'DeepSeek 深度求索（中文强·国内直连·推荐）',type:'openai',base_url:'https://api.deepseek.com',model:'deepseek-chat',keyUrl:'https://platform.deepseek.com/api_keys',
+    hint:'中文工程问答最强之一，注册送额度，经云端代理国内可直连。注册后在“API keys”创建并粘贴。'},
+  qwen:{name:'通义千问 Qwen（阿里·国内直连·免费额度）',type:'openai',base_url:'https://dashscope.aliyuncs.com/compatible-mode/v1',model:'qwen-turbo',keyUrl:'https://dashscope.console.aliyun.com/apiKey',
+    hint:'阿里云百炼，新用户有免费额度，qwen-turbo 稳定便宜，国内直连。'},
+  moonshot:{name:'Kimi 月之暗面（长文档·国内直连）',type:'openai',base_url:'https://api.moonshot.cn/v1',model:'moonshot-v1-8k',keyUrl:'https://platform.moonshot.cn/console/api-keys',
+    hint:'长上下文、说明书阅读强，注册送额度，国内直连。'},
+  doubao:{name:'豆包 / 火山方舟（国内直连）',type:'openai',base_url:'https://ark.cn-beijing.volces.com/api/v3',model:'doubao-1-5-pro-32k-250115',keyUrl:'https://console.volcengine.com/ark',
+    hint:'字节火山方舟，国内访问稳定；注意模型名需在方舟控制台创建“推理接入点”后替换。'},
+  openrouter:{name:'OpenRouter（含 :free 免费模型·云端自动轮换）',type:'openai',base_url:'https://openrouter.ai/api/v1',model:'nex-agi/nex-n2.5-pro:free',keyUrl:'https://openrouter.ai/keys',
+    hint:'一个 Key 可用多家模型。模型名留空或用 :free 即完全免费，云端会在多个免费模型间自动轮换（限流/下架自动换），你只需粘 Key、模型框可留空。经云端代理转发。'},
+  gemini:{name:'Google Gemini（免费 Flash·海外）',type:'gemini',base_url:'https://generativelanguage.googleapis.com/v1beta/models',model:'gemini-2.0-flash',keyUrl:'https://aistudio.google.com/apikey',
+    hint:'多语言/翻译强，有免费额度；部分地区经云端代理可能受限，如提示地区错误请换 DeepSeek。'},
+  groq:{name:'Groq（免费·极速 Llama 70B·海外）',type:'openai',base_url:'https://api.groq.com/openai/v1',model:'llama-3.3-70b-versatile',keyUrl:'https://console.groq.com/keys',
+    hint:'免费、速度极快；部分地区经云端代理可能受限，如连不上请换 DeepSeek。'},
+  openai:{name:'OpenAI（GPT·海外·易地区受限）',type:'openai',base_url:'https://api.openai.com/v1',model:'gpt-4o-mini',keyUrl:'https://platform.openai.com/api-keys',
+    hint:'OpenAI 对部分地区（含中国/香港出口节点）会返回 403 地区限制，即使填了正确 Key 也可能连不上。国内使用建议改用 DeepSeek / 通义 / Kimi。'}
+};
+const CFG_KEY='gsk_ai_cfg_v1';
+function loadLocalCfg(){
+  try{const c=JSON.parse(localStorage.getItem(CFG_KEY)||'null');if(c&&c.ai)return c;}catch(e){}
+  return {ai:{provider:'cloud',base_url:'',api_key:'',model:''}};
+}
+function saveLocalCfg(c){try{localStorage.setItem(CFG_KEY,JSON.stringify(c));}catch(e){}}
+
+/* ---------- 丹佛斯官方实时库（前端直连 Algolia，CORS: *） ---------- */
+const DAN_APP='1XNO79B4A1', DAN_KEY='ed2b630ea371ae8bd7f2ab7409d04e86', DAN_IDX='prod-shared-assets';
+const DAN_GUIDES=['Installation guide','Operating guide','User guide','Application guide','Programming guide','Service manual','Brochure','Fact sheet','Data sheet'];
+const DAN_TM={'Installation guide':'使用手册','Operating guide':'使用手册','User guide':'使用手册','Programming guide':'使用手册','Service manual':'维修故障','Application guide':'使用手册','Brochure':'产品样本','Fact sheet':'产品样本','Data sheet':'产品样本'};
+const ZH_KW=[['expansion valve','膨胀阀'],['solenoid valve','电磁阀'],['pressure switch','压力开关'],['pressure transmitter','压力传感器'],['temperature sensor','温度传感器'],['compressor','压缩机'],['condenser','冷凝器'],['evaporator','蒸发器'],['controller','控制器'],['superheat','过热度'],['refrigeration','制冷']];
+function fsize(n){try{n=parseFloat(n);if(n>1048576)return (n/1048576).toFixed(1)+'MB';if(n>1024)return Math.round(n/1024)+'KB';}catch(e){}return '';}
+function zhKw(t){const l=(t||'').toLowerCase();const s=new Set();ZH_KW.forEach(k=>{if(l.indexOf(k[0])>=0)s.add(k[1]);});if(!s.size)s.add('制冷');return Array.from(s).join(' ');}
+function danConv(h){
+  const t=(h.title||'').trim(); const url=h.url||'';
+  if(!t||url.toLowerCase().slice(-4)!=='.pdf')return null;
+  const langs=h.languages||[];
+  const lang=langs.indexOf('zh')>=0?'中文':(langs.indexOf('en')>=0?'英文':'英文');
+  const sub=h.assetSubType||''; const typ=DAN_TM[sub]||'使用手册';
+  let title='丹佛斯 '+t;
+  if(sub&&t.toLowerCase().indexOf(sub.toLowerCase())<0)title+='（'+sub+'）';
+  return {t:title,b:'丹佛斯',d:(h.updatedDate||'').slice(0,10),ty:typ,v:'',l:lang,url:url,pdf:url,size:fsize(h.fileSize),kw:t+' '+zhKw(t),sum:'',src:'丹佛斯官网·实时',live:true};
+}
+function danLang(q,lang){
+  const st=DAN_GUIDES.map(s=>'assetSubType:"'+s+'"').join(' OR ');
+  const filters='assetType:Document AND fileExtension:PDF AND languages:'+lang+' AND ('+st+')';
+  const ctrl=new AbortController();const to=setTimeout(()=>ctrl.abort(),14000);
+  return fetch('https://'+DAN_APP+'-dsn.algolia.net/1/indexes/'+DAN_IDX+'/query',{
+    method:'POST',signal:ctrl.signal,
+    headers:{'X-Algolia-Application-Id':DAN_APP,'X-Algolia-API-Key':DAN_KEY,'Content-Type':'application/json'},
+    body:JSON.stringify({query:q,filters:filters,hitsPerPage:12,page:0})
+  }).then(r=>r.json()).then(j=>{clearTimeout(to);return (j.hits||[]).map(danConv).filter(Boolean);})
+    .catch(()=>{clearTimeout(to);return [];});
+}
+function danLive(q){
+  return Promise.allSettled([danLang(q,'zh'),danLang(q,'en')]).then(rs=>{
+    let out=[],seen=new Set();
+    rs.forEach(r=>{if(r.status==='fulfilled')(r.value||[]).forEach(d=>{if(!seen.has(d.pdf)){seen.add(d.pdf);out.push(d);}});});
+    out.sort((a,b)=>(a.l==='中文'?0:1)-(b.l==='中文'?0:1));
+    return out.slice(0,12);
+  });
+}
+/* 只有丹佛斯/制冷相关、或本地确实没有时，才查丹佛斯官方库，避免给其它品牌补无关结果 */
+function danRelevant(q){
+  q=q||'';
+  if(/丹佛斯|danfoss|膨胀阀|电磁阀|电子膨胀阀|液位|过热|压力开关|温控阀|制冷阀|阀件|热力膨胀|冷凝压力|蒸发压力|止回阀|视液镜|油分|储液器|制冷压缩|冷库|冷冻|制冷机组|制冷系统/i.test(q))return true;
+  if(/\b(EKE|EKC|EKD|EKA|EKP|EKS|EKF|EKV|EKO|EVR|EVD|EVM|EVS|EVA|EV[23]|ETS|ICM|ICS|ICAD|AKS|AKV|AKM|AKC|AKD|AK2|AK-[A-Z]{1,2}|ECL|KVP|KVR|KVD|NRV|MBS|KPS|BFH)\b/i.test(q))return true;
+  if(/\b(KP|RT|CS)\s?\d/.test(q))return true;
+  return false;
+}
+/* 从自然语言问题中提取型号（字母+数字，如 MS300 / EKD316 / G120C） */
+function extractModels(q){
+  const ms=[...String(q||'').matchAll(/[A-Za-z]{1,8}[-\s]?\d{2,5}[A-Za-z0-9-]*/g)]
+    .map(m=>m[0].replace(/\s+/g,'').trim()).filter(s=>s.length>=3);
+  return Array.from(new Set(ms));
+}
+/* 制冷/工控常见品牌 */
+const BRAND_RE=/(台达|Delta|西门子|Siemens|丹佛斯|Danfoss|英威腾|INVT|三菱|Mitsubishi|施耐德|Schneider|ABB|欧姆龙|Omron|安川|Yaskawa|汇川|Inovance|富士|Fuji|日立|Hitachi|松下|Panasonic|罗克韦尔|Rockwell|倍福|Beckhoff|卡乐|Carel|比泽尔|Bitzer|谷轮|Copeland|艾默生|Emerson|斯波兰|Sporlan|约克|York|特灵|Trane|开利|Carrier|麦克维尔|McQuay|莱富康|Refcomp|GEA|汉钟|复盛|格力|美的|海尔|海立|霍尼韦尔|Honeywell|Honeywell|博世|BOSCH|阿特拉斯|Atlas)/i;
+/* 从自然语言中构造最相关的检索词（品牌+型号优先），避免整句 AND 匹配命中为 0 */
+function extractQuery(q){
+  const models=extractModels(q);
+  const bm=String(q||'').match(BRAND_RE);
+  const brand=bm?bm[0]:null;
+  const terms=[];
+  models.slice(0,3).forEach(m=>{
+    if(brand)terms.push(brand+' '+m);
+    terms.push(m);
+  });
+  if(!terms.length){
+    if(brand)terms.push(brand);
+    else terms.push(String(q||'').replace(/[？?。，,.!！怎么如何多少哪些什么吗呢啊的呢啊怎么怎样怎么设置怎么接线怎么查怎么设置]*/g,' ').replace(/\s+/g,' ').trim().slice(0,16));
+  }
+  return Array.from(new Set(terms.filter(Boolean)));
+}
+/* 实时结果型号相关性过滤：含型号数字时，标题必须含该型号/数字串，避免泛文档 */
+function liveRelevant(q,docs){
+  let nq=(typeof norm==='function')?norm(q):(q||'').toLowerCase().replace(/[^a-z0-9\u4e00-\u9fa5]/g,'');
+  const toks=[];
+  (nq.match(/[a-z]{1,6}\d{1,}[a-z0-9-]*/g)||[]).forEach(t=>toks.push(t));
+  (nq.match(/\d{2,}/g)||[]).forEach(t=>toks.push(t));
+  const uniq=Array.from(new Set(toks));
+  if(!uniq.length)return docs; // 纯中文/泛词，不做型号过滤
+  return docs.filter(d=>{
+    const t=(d._title||((typeof norm==='function')?norm(d.t):d.t.toLowerCase()))+' '+((typeof norm==='function')?norm(d.kw||''):(d.kw||''));
+    return uniq.some(tok=>t.indexOf(tok)>=0);
+  });
+}
+async function danLiveFiltered(q){
+  const all=await danLive(q);
+  return liveRelevant(q,all);
+}
+
+function esc(s){return (s==null?'':String(s)).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));}
+
+function detectApi(){
+  if(location.protocol==='http:'||location.protocol==='https:'){
+    // 云托管静态域（pages.dev/surge 等）没有同源后端，仍先探测 /api/status；局域网/本地服务同源则可用
+    API_BASE=location.origin;
+  }else{
+    API_BASE=localStorage.getItem('gsk_api')||'http://192.168.1.26:8090';
+  }
+}
+async function ping(){
+  try{
+    const ctrl=new AbortController();const t=setTimeout(()=>ctrl.abort(),2500);
+    const r=await fetch(API_BASE+'/api/status',{signal:ctrl.signal});
+    clearTimeout(t);
+    SrvStatus=await r.json(); API_OK=true;
+    syncData();
+  }catch(e){ API_OK=false; SrvStatus=null; }
+  updateFab();
+}
+
+/* 连上后端且后端索引更新时，自动同步最新数据 */
+let _synced=false;
+async function syncData(){
+  if(_synced||!API_OK||!SrvStatus)return;
+  try{
+    if(!SrvStatus.total||SrvStatus.total<=(window.DOCS?DOCS.length:0)){_synced=true;return;}
+    const r=await fetch(API_BASE+'/api/data');
+    const d=await r.json();
+    const docs=d.docs||[];
+    if(!docs.length||docs.length<=DOCS.length){_synced=true;return;}
+    const clean=docs.map(x=>({t:x.t,b:x.b,d:x.d,ty:x.ty,v:x.v,l:x.l,url:x.url,pdf:x.pdf,
+      size:x.size,kw:x.kw,sum:x.sum,src:x.src,hit:x.hit||x.h||0}));
+    DOCS.length=0; Array.prototype.push.apply(DOCS,clean);
+    DOCS.forEach(function(doc){
+      doc._sx=norm([doc.t,doc.b,doc.kw,brandAliasText(doc.b)].join(' '));
+      doc._title=norm(doc.t); doc._dl=(doc.hit||doc.h||0);
+    });
+    Object.keys(BRAND_COUNT).forEach(function(k){delete BRAND_COUNT[k];});
+    Object.keys(TYPE_COUNT).forEach(function(k){delete TYPE_COUNT[k];});
+    DOCS.forEach(function(doc){
+      if(doc.b)BRAND_COUNT[doc.b]=(BRAND_COUNT[doc.b]||0)+1;
+      TYPE_COUNT[doc.ty]=(TYPE_COUNT[doc.ty]||0)+1;
+    });
+    markLatest(DOCS);
+    if(typeof S!=='undefined'&&S.q&&typeof runSearch==='function')runSearch();
+    else if(typeof renderHome==='function')renderHome();
+    _synced=true;
+    if(typeof toast==='function')toast('已同步最新资料库 '+DOCS.length.toLocaleString()+' 份');
+  }catch(e){_synced=false;}
+}
+function api(path,opts){
+  opts=opts||{};
+  if(!opts.signal){
+    const ctrl=new AbortController();
+    const to=setTimeout(()=>ctrl.abort(),opts.timeout||60000);
+    opts.signal=ctrl.signal;
+    return fetch(API_BASE+path,opts).finally(()=>clearTimeout(to));
+  }
+  return fetch(API_BASE+path,opts);
+}
+
+/* 云端定时增量：云托管时从同源 /api/latest 拉取 Cron 自动抓取并验证过的新文档（丹佛斯官方库） */
+let _cloudDone=false, _cloudMeta=null;
+function reindexAdded(add){
+  add.forEach(function(doc){
+    if(doc._sx==null){try{doc._sx=norm([doc.t,doc.b,doc.kw,brandAliasText(doc.b)].join(' '));}catch(e){doc._sx='';}}
+    if(!doc._title)doc._title=norm(doc.t);
+    doc._dl=doc.hit||doc.h||0;
+  });
+  Array.prototype.push.apply(DOCS,add);
+  add.forEach(function(doc){
+    if(doc.b)BRAND_COUNT[doc.b]=(BRAND_COUNT[doc.b]||0)+1;
+    if(doc.ty)TYPE_COUNT[doc.ty]=(TYPE_COUNT[doc.ty]||0)+1;
+  });
+  try{markLatest(DOCS);}catch(e){}
+}
+function rerender(){
+  try{
+    if(typeof S!=='undefined'&&S.q&&typeof runSearch==='function')runSearch();
+    else if(typeof renderHome==='function')renderHome();
+  }catch(e){}
+}
+async function cloudSync(){
+  if(_cloudDone)return;
+  if(location.protocol!=='http:'&&location.protocol!=='https:')return;
+  try{
+    // 访问驱动自动更新：每次打开网站静默触发一次，服务端按 3 小时节流（无需密钥，超时即放弃）
+    try{ fetch(location.origin+'/api/tick',{cache:'no-store'}).catch(()=>{}); }catch(e){}
+    const ctrl=new AbortController();const to=setTimeout(()=>ctrl.abort(),12000);
+    const r=await fetch(location.origin+'/api/latest',{signal:ctrl.signal});
+    clearTimeout(to);
+    if(!r.ok)return;
+    const ct=r.headers.get('content-type')||'';
+    if(ct.indexOf('json')<0)return; // 非云端（旧后端 / 静态回退）
+    const d=await r.json();
+    _cloudDone=true;
+    _cloudMeta=d.meta||{};
+    paintCloudStat(d);
+    if(!d.ok||!d.docs||!d.docs.length)return;
+    const have=new Set(DOCS.map(x=>x.pdf));
+    const add=d.docs.filter(x=>x&&x.pdf&&!have.has(x.pdf)).map(x=>({
+      t:x.t,b:x.b||'丹佛斯',d:x.d,ty:x.ty||'使用手册',v:x.v||'',l:x.l||'英文',
+      url:x.pdf,pdf:x.pdf,size:x.size||'',kw:x.kw||'',sum:x.sum||'',src:x.src||'丹佛斯官网·云端',hit:0}));
+    if(!add.length)return;
+    reindexAdded(add);
+    rerender();
+    if(typeof toast==='function')toast('☁️ 云端已自动更新 '+add.length+' 份新说明书（每3小时自动更新）');
+  }catch(e){_cloudDone=false;}
+}
+function paintCloudStat(d){
+  try{
+    const meta=d.meta||{};
+    const way=document.getElementById('setUpdWay');
+    const msg=document.getElementById('setUpdMsg');
+    if(way){
+      way.textContent='云端每3小时自动更新';
+      way.style.color='#0a8155';
+    }
+    if(msg){
+      const last=meta.lastRun?new Date(meta.lastRun):null;
+      const ls=last?(last.getFullYear()+'-'+String(last.getMonth()+1).padStart(2,'0')+'-'+String(last.getDate()).padStart(2,'0')+' '+String(last.getHours()).padStart(2,'0')+':'+String(last.getMinutes()).padStart(2,'0')):'';
+      msg.innerHTML='☁️ 已开启云端定时更新，无需开电脑；丹佛斯官方库实时检索，新增文档经 PDF 真实性校验后自动入库。'+
+        (ls?'<br>上次更新：'+ls+' · 云端新增：'+(meta.totalExtra||0)+' 份':'');
+    }
+  }catch(e){}
+}
+
+function apiFast(path,ms){
+  const ctrl=new AbortController();const to=setTimeout(()=>ctrl.abort(),ms);
+  return fetch(API_BASE+path,{signal:ctrl.signal}).finally(()=>clearTimeout(to));
+}
+function updateFab(){
+  const fab=document.getElementById('gskFab');if(!fab)return;
+  const localKey=loadLocalCfg().ai.api_key;
+  fab.classList.toggle('ok',API_OK||!!localKey);
+  const dot=fab.querySelector('.dot'); if(dot)dot.style.display=(API_OK||localKey)?'none':'block';
+  fab.title=(API_OK?'AI 助手（服务已连接）':'AI 助手（云端模式，内置库可直接检索）');
+}
+
+/* ---------- 注入 UI ---------- */
+function injectUI(){
+  const fab=document.createElement('button');
+  fab.id='gskFab';fab.innerHTML='🤖<span class="dot"></span>';
+  fab.onclick=openChat;
+  document.body.appendChild(fab);
+
+  const panel=document.createElement('div');panel.id='gskPanel';
+  panel.innerHTML=
+    '<div class="gsk-bar"><div style="min-width:0">'+
+      '<b>工书库 AI 助手</b><div class="sub" id="gskChatSub">找说明书 · 讲参数 · 查故障，服务于现场</div></div>'+
+      '<button class="gsk-x" id="gskSetOpen" title="设置">⚙</button>'+
+      '<button class="gsk-x" onclick="document.getElementById(\'gskPanel\').classList.remove(\'open\')">✕</button></div>'+
+    '<div id="gskChat"></div>'+
+    '<div class="chip-row">'+
+      '<span class="chip" data-q="帮我找台达MS300变频器手册">找台达MS300手册</span>'+
+      '<span class="chip" data-q="丹佛斯 EKE347 液位控制器怎么设置？">EKE347怎么设置</span>'+
+      '<span class="chip" data-q="变频器报过流故障怎么排查？">过流故障排查</span>'+
+    '</div>'+
+    '<div id="gskInput"><input id="gskText" placeholder="输入品牌型号或问题，如：西门子 G120C 报F0001…" autocomplete="off">'+
+    '<button id="gskSend">➤</button></div>';
+  document.body.appendChild(panel);
+  panel.querySelector('#gskSetOpen').onclick=openSettings;
+  panel.querySelectorAll('.chip').forEach(c=>c.onclick=()=>{
+    document.getElementById('gskText').value=c.dataset.q;sendChat();
+  });
+  document.getElementById('gskSend').onclick=sendChat;
+  document.getElementById('gskText').addEventListener('keydown',e=>{if(e.key==='Enter')sendChat();});
+
+  const set=document.createElement('div');set.id='gskSet';
+  set.innerHTML=
+    '<div class="gsk-bar"><b>设置</b><button class="gsk-x" onclick="document.getElementById(\'gskSet\').classList.remove(\'open\')">✕</button></div>'+
+    '<div class="gsk-body">'+
+      '<div class="fset"><h4>AI 助手</h4>'+
+        '<label>服务商</label><select id="setProvider"></select>'+
+        '<div class="hint" id="setAiHint" style="margin:6px 0"></div>'+
+        '<div id="setKeyBox">'+
+          '<label>API Key（仅保存在本设备浏览器）</label><input id="setKey" type="password" placeholder="填入你的免费 API Key">'+
+        '</div>'+
+        '<div id="setModelBox">'+
+          '<label>模型（一般自动填好，无需改）</label><input id="setModel">'+
+        '</div>'+
+        '<button class="btn-primary" id="setSave" style="margin-top:12px">保存设置</button>'+
+        '<div class="save-tip" id="setTip"></div>'+
+      '</div>'+
+      '<div class="fset" id="setServerBox"><h4>手机 App / 局域网服务地址（可选）</h4>'+
+        '<label>电脑服务地址（安装版 App 时填写）</label><input id="setApi" placeholder="http://192.168.1.26:8090">'+
+        '<div class="hint">通过网页/公网地址打开时无需填写，自动使用当前地址。</div>'+
+        '<button class="btn-ghost" id="setApiSave">保存并连接</button>'+
+      '</div>'+
+      '<div class="fset"><h4>资料库与自动更新</h4>'+
+        '<div class="stat"><span>本机已收录</span><b id="setTotal">—</b></div>'+
+        '<div class="stat"><span>更新方式</span><b id="setUpdWay">—</b></div>'+
+        '<div class="hint" id="setUpdMsg"></div>'+
+        '<button class="btn-ghost" id="setUpdate" style="display:none">立即更新（联网抓取官方最新）</button>'+
+      '</div>'+
+    '</div>';
+  document.body.appendChild(set);
+  document.getElementById('setSave').onclick=saveConfig;
+  document.getElementById('setApiSave').onclick=saveApi;
+  document.getElementById('setUpdate').onclick=manualUpdate;
+}
+
+/* ---------- 检索：本地（复用页面 searchDocs） + 官方实时 ---------- */
+function localFind(q,n){
+  try{
+    let arr=typeof searchDocs==='function'?searchDocs(q):[];
+    return arr.slice(0,n);
+  }catch(e){return [];}
+}
+function toRef(d){return {t:d.t,b:d.b||'',l:d.l||'',pdf:d.pdf,src:d.src||'',live:!!d.live};}
+
+/* ---------- 实时兜底区块 ---------- */
+function ensureLiveBox(){
+  let box=document.getElementById('liveBox');
+  if(!box){
+    const dl=document.getElementById('docList');
+    if(dl){box=document.createElement('div');box.id='liveBox';dl.parentNode.insertBefore(box,document.getElementById('pager'));}
+  }
+  return box;
+}
+function liveCard(d){
+  const rdHref='reader.html?pdf='+encodeURIComponent(d.pdf)+'&title='+encodeURIComponent(d.t)+'&brand='+encodeURIComponent(d.b||'');
+  const trHref='viewer.html?pdf='+encodeURIComponent(d.pdf)+'&title='+encodeURIComponent(d.t);
+  const acts='<a class="btn btn-pdf" href="'+esc(rdHref)+'">在线预览</a>'
+    +(d.l==='英文'?'<a class="btn btn-tr" href="'+esc(trHref)+'">翻译</a>':'');
+  return '<div class="live-card"><div class="lc-body">'+
+    '<div class="lc-t">'+esc(d.t)+'</div>'+
+    '<div class="lc-m">'+esc(d.b||'')+' · '+esc(d.ty||'')+' · '+esc(d.l||'')+' · '+(d.d?esc(d.d):'')+' · 来源：'+esc(d.src||'')+'</div>'+
+    '<div class="lc-btns"><span class="live-badge">实时</span>'+acts+'</div></div></div>';
+}
+function liveSearch(){
+  const tok=++liveTok;
+  const box=ensureLiveBox();
+  if(!box)return;
+  if(!S.q||!S.q.trim()){box.style.display='none';box.innerHTML='';return;}
+  if(S.cur.length>=4){box.style.display='none';box.innerHTML='';return;}
+  // 仅在本地无结果/极少、或丹佛斯/制冷相关时才实时检索，避免无关品牌干扰
+  if(S.cur.length>0 && !danRelevant(S.q)){box.style.display='none';box.innerHTML='';return;}
+  box.style.display='block';
+  box.innerHTML='<div class="live-loading">本地结果较少，正在联网检索丹佛斯官方资料库…</div>';
+  const localPdf=new Set(S.cur.map(x=>x.pdf));
+  let p;
+  if(API_OK){
+    p=apiFast('/api/search?q='+encodeURIComponent(S.q)+'&n=20',16000).then(r=>r.json())
+        .then(d=>(d.live||[]));
+  }else{
+    p=danLiveFiltered(S.q);
+  }
+  p.then(live=>{
+      if(tok!==liveTok)return;
+      live=live.filter(x=>!localPdf.has(x.pdf));
+      if(!live.length){box.innerHTML='<div class="live-none">官方实时库暂无更多匹配（内置库结果如上）</div>';return;}
+      box.innerHTML='<div class="live-head">🌐 官方实时源 · 额外找到 '+live.length+' 份免费文档（已验证可在线预览）</div>'+live.map(liveCard).join('');
+    })
+    .catch(()=>{if(tok===liveTok)box.innerHTML='<div class="live-none">官方库联网较慢，可点右下角 AI 助手直接帮你找</div>';});
+}
+function hookSearch(){
+  if(typeof window.runSearch!=='function'){setTimeout(hookSearch,200);return;}
+  if(window.__gskHooked)return;window.__gskHooked=true;
+  const orig=window.runSearch;
+  window.runSearch=function(){orig.apply(this,arguments);try{liveSearch();}catch(e){console.warn(e);}};
+}
+
+/* ---------- AI 对话 ---------- */
+const SYSTEM_PROMPT='你是“工书库”的工业技术助手，服务于制冷与电气自动化工程师，现场环境使用。\n你的职责：\n1. 帮用户快速找到正确品牌、型号的说明书 / 手册 / 安装使用指南 / 故障手册；\n2. 解答变频器、PLC、控制器、制冷阀件、压缩机、传感器等的接线、参数、故障代码、选型与调试问题；\n3. 回答必须严谨，不确定就说不确定，不要编造参数和结论；\n4. 系统会在每次提问时附上检索到的真实说明书（标题 + 免费PDF链接）。优先依据这些资料回答，并在相关结论后用【资料N】标注，最后列出“可在线打开的说明书”；\n5. 如果没有检索到对应资料，明确告诉用户，并建议更换品牌/型号关键词，不要编造链接。\n用简洁、现场可操作的中文回答，步骤用序号。';
+function buildCtx(hits){
+  return hits.map((d,i)=>'【资料'+(i+1)+'】标题：'+d.t+'\n  品牌：'+(d.b||'')+' 类型：'+(d.ty||'')+' 语言：'+(d.l||'')+' 日期：'+(d.d||'')+'\n  免费PDF：'+d.pdf+'\n  来源：'+(d.src||'')).join('\n');
+}
+let chatInited=false;
+function openChat(){
+  document.getElementById('gskPanel').classList.add('open');
+  if(!chatInited){
+    chatInited=true;
+    addMsg('ai','你好，我是工书库 AI 助手（云端免费，开箱即用，无需配置）。\n直接输入品牌型号（如“台达 MS300”“丹佛斯 EKD316”），我帮你找可在线预览的说明书，并能讲参数、故障代码、接线与现场排查；外文说明书点“翻译”即可看中文。');
+  }
+}
+function addMsg(role,text,refs){
+  const box=document.getElementById('gskChat');
+  const el=document.createElement('div');
+  el.className='msg '+role;
+  let html=esc(text);
+  if(refs&&refs.length){
+    html+='<div class="refs">'+refs.map(r=>
+      '<a class="ref" target="_blank" rel="noopener" href="'+esc(r.pdf)+'">'+
+      '<span class="rt">'+esc(r.t)+(r.live?'<span class="live-badge">实时</span>':'')+'</span>'+
+      '<span class="rm">'+esc(r.b||'')+' · '+esc(r.l||'')+' · 点击在线预览 · '+esc(r.src||'')+'</span></a>').join('')+'</div>';
+  }
+  el.innerHTML=html;
+  box.appendChild(el);box.scrollTop=box.scrollHeight;
+  return el;
+}
+function md2html(s){
+  const lines=esc(s==null?'':String(s)).split('\n').map(line=>{
+    line=line.replace(/\*\*([^*]+)\*\*/g,'<b>$1</b>');
+    line=line.replace(/`([^`]+)`/g,'<code>$1</code>');
+    const h=line.match(/^\s*#{1,4}\s*(.+)$/);
+    if(h)line='<b style="font-size:1.05em">'+h[1]+'</b>';
+    if(/^\s*[-*]\s+/.test(line))line=line.replace(/^(\s*)[-*]\s+/,'$1• ');
+    return line;
+  });
+  return lines.join('<br>');
+}
+function renderRefs(ty,answer,refs){
+  let html=md2html(answer);
+  if(refs&&refs.length){
+    html+='<div class="refs">'+refs.map(r=>'<a class="ref" target="_blank" rel="noopener" href="'+esc(r.pdf)+'"><span class="rt">'+esc(r.t)+(r.live?'<span class="live-badge">实时</span>':'')+'</span><span class="rm">'+esc(r.b||'')+' · '+esc(r.l||'')+' · 点击在线预览 · '+esc(r.src||'')+'</span></a>').join('')+'</div>';
+  }
+  ty.innerHTML=html;
+}
+/* 浏览器直连 OpenAI 兼容接口（DeepSeek 等） */
+async function callAIBrowser(cfg,messages){
+  const ai=cfg.ai; const base=(ai.base_url||'').replace(/\/+$/,'');
+  const ctrl=new AbortController();const to=setTimeout(()=>ctrl.abort(),60000);
+  const r=await fetch(base+'/chat/completions',{method:'POST',signal:ctrl.signal,
+    headers:{'Content-Type':'application/json','Authorization':'Bearer '+ai.api_key},
+    body:JSON.stringify({model:ai.model||'deepseek-chat',messages:messages,temperature:0.3,max_tokens:1200})});
+  clearTimeout(to);
+  if(!r.ok){let det='';try{det=(await r.text()).slice(0,160);}catch(e){}throw new Error('AI 接口错误 '+(r.status)+'：'+det);}
+  const j=await r.json();
+  return (j.choices&&j.choices[0]&&j.choices[0].message&&j.choices[0].message.content||'').trim();
+}
+/* Google Gemini（非 OpenAI 格式，单独处理；浏览器直连支持 CORS） */
+async function callGemini(cfg,messages){
+  const ai=cfg.ai;
+  const model=ai.model||'gemini-2.0-flash';
+  const base=(ai.base_url||'https://generativelanguage.googleapis.com/v1beta/models').replace(/\/+$/,'');
+  const sys=messages.filter(m=>m.role==='system').map(m=>m.content).join('\n\n');
+  const contents=messages.filter(m=>m.role!=='system').map(m=>({
+    role:m.role==='assistant'?'model':'user',
+    parts:[{text:String(m.content).slice(0,4000)}]
+  }));
+  const body={contents,systemInstruction:{parts:[{text:sys}]},
+    generationConfig:{temperature:0.3,maxOutputTokens:1200}};
+  const ctrl=new AbortController();const to=setTimeout(()=>ctrl.abort(),60000);
+  const r=await fetch(base+'/'+model+':generateContent?key='+encodeURIComponent(ai.api_key),
+    {method:'POST',signal:ctrl.signal,headers:{'Content-Type':'application/json'},body:JSON.stringify(body)});
+  clearTimeout(to);
+  if(!r.ok){let det='';try{det=(await r.text()).slice(0,160);}catch(e){}throw new Error('Gemini 接口错误 '+(r.status)+'：'+det);}
+  const j=await r.json();
+  const txt=(j.candidates&&j.candidates[0]&&j.candidates[0].content&&j.candidates[0].content.parts||[]).map(p=>p.text||'').join('');
+  return txt.trim();
+}
+async function sendChat(){
+  const inp=document.getElementById('gskText');
+  const text=inp.value.trim();if(!text)return;
+  inp.value='';
+  addMsg('user',text);
+  const ty=addMsg('ai','<span class="typing">正在检索并思考<i>.</i><i>.</i><i>.</i></span>');
+  ty.classList.add('typing');
+
+  // 后端在线 → 走后端（局域网/本地服务，功能最全）
+  if(API_OK){
+    try{
+      const r=await api('/api/chat',{method:'POST',headers:{'Content-Type':'application/json'},
+        body:JSON.stringify({question:text,history:chatMsgs})}).then(x=>x.json());
+      ty.classList.remove('typing');
+      if(r.error){
+        ty.className='msg sys';
+        ty.innerHTML=(r.error==='no_key')
+          ?'还没有配置 AI 的 API Key。<br>云端免费 AI 无需配置即可使用；也可以点右上角 <b>⚙</b>，选 DeepSeek / 通义千问 / Kimi（国内直连·推荐）等并粘贴免费 Key。<br>不配置也能直接帮你找说明书。'
+          :esc(r.message||'AI 出错了');
+      }else{
+        ty.className='msg ai'; renderRefs(ty,r.answer,(r.refs||[]).map(toRef));
+        chatMsgs.push({role:'user',content:text},{role:'assistant',content:r.answer});
+        if(chatMsgs.length>12)chatMsgs=chatMsgs.slice(-12);
+      }
+    }catch(e){
+      ty.className='msg sys';ty.textContent='连接失败：'+String(e).slice(0,80)+'，将改用本地检索…';
+    }
+    document.getElementById('gskChat').scrollTop=999999;
+    if(ty.className.indexOf('sys')<0)return;
+    // 后端失败则落到下面的纯前端流程
+  }
+
+  // 纯前端：从自然语言提取型号/品牌检索，本地无结果/极少或丹佛斯/制冷相关时再官方实时
+  let local=[];
+  const have=new Set();
+  const terms=extractQuery(text);
+  for(const t of terms){
+    try{
+      const rr=localFind(t,6);
+      rr.forEach(d=>{if(!have.has(d.pdf)){have.add(d.pdf);local.push(d);}});
+    }catch(e){}
+    if(local.length>=8)break;
+  }
+  if(local.length<4 && (local.length===0 || danRelevant(text))){
+    try{
+      const liveQ=extractModels(text)[0]||text;
+      const live=await danLiveFiltered(liveQ);
+      live.forEach(d=>{if(!have.has(d.pdf)){local.push(d);have.add(d.pdf);}});
+    }catch(e){}
+  }
+  const hits=local.slice(0,8);
+  const cfg=loadLocalCfg();
+  const key=(cfg.ai.api_key||'').trim();
+  const preset=PRESETS[cfg.ai.provider]||PRESETS.cloud;
+  ty.classList.remove('typing');
+  if(!key||cfg.ai.provider==='cloud'||preset.type==='cloud'){
+    // 无 Key：优先走云端免费 AI（Workers AI，无需配置）；云端不可用时降级为"找说明书"
+    const canCloud = (location.protocol==='http:'||location.protocol==='https:');
+    if(canCloud){
+      try{
+        const refs=hits.map(d=>({t:d.t,b:d.b,l:d.l,pdf:d.pdf,src:d.src}));
+        const ctrl=new AbortController();const to=setTimeout(()=>ctrl.abort(),90000);
+        const rr=await fetch(location.origin+'/api/ai',{method:'POST',signal:ctrl.signal,
+          headers:{'Content-Type':'application/json'},
+          body:JSON.stringify({question:text,history:chatMsgs,refs})});
+        clearTimeout(to);
+        const j=await rr.json();
+        if(j&&j.ok&&j.answer){
+          ty.className='msg ai';
+          renderRefs(ty,j.answer,hits.map(toRef));
+          chatMsgs.push({role:'user',content:text},{role:'assistant',content:j.answer});
+          if(chatMsgs.length>12)chatMsgs=chatMsgs.slice(-12);
+          document.getElementById('gskChat').scrollTop=999999;
+          return;
+        }
+      }catch(e){ /* 云端 AI 不可用，降级 */ }
+    }
+    // 降级：智能找说明书（始终可用）
+    ty.className='msg ai';
+    if(hits.length){
+      const names=hits.slice(0,6).map(d=>'· '+((d.b||'')+' '+d.t).trim()).join('\n');
+      ty.innerHTML=esc('我在资料库中找到以下说明书，点击下方卡片即可直接在线预览（全部免费、无需登录）：\n\n'+names+'\n\nAI 云端暂时繁忙时，可重试，或点右上角 ⚙ 选择 DeepSeek / 通义千问等国内直连通道。')
+        .replace(/\n/g,'<br>');
+    }else{
+      ty.innerHTML='暂时没有匹配到该型号的免费说明书，请换一个品牌/型号关键词（如“西门子 G120C”“台达 MS300”）。';
+    }
+    if(hits.length){const refs=hits.map(toRef);ty.innerHTML+='<div class="refs">'+refs.map(r=>'<a class="ref" target="_blank" rel="noopener" href="'+esc(r.pdf)+'"><span class="rt">'+esc(r.t)+(r.live?'<span class="live-badge">实时</span>':'')+'</span><span class="rm">'+esc(r.b||'')+' · '+esc(r.l||'')+' · 点击在线预览 · '+esc(r.src||'')+'</span></a>').join('')+'</div>';}
+    document.getElementById('gskChat').scrollTop=999999;
+    return;
+  }
+  // 有 Key：经云端 Worker 代理转发（国内直连 OpenAI/Gemini 等会被墙超时，统一走 gongshuku 边缘节点）
+  try{
+    const refs=hits.map(d=>({t:d.t,b:d.b,l:d.l,pdf:d.pdf,src:d.src}));
+    const ctrl=new AbortController();const to=setTimeout(()=>ctrl.abort(),90000);
+    const rr=await fetch(location.origin+'/api/ai',{method:'POST',signal:ctrl.signal,
+      headers:{'Content-Type':'application/json'},
+      body:JSON.stringify({question:text,history:chatMsgs,refs,
+        provider:cfg.ai.provider,base_url:cfg.ai.base_url,model:cfg.ai.model,api_key:key})});
+    clearTimeout(to);
+    const j=await rr.json();
+    if(j&&j.ok&&j.answer){
+      ty.className='msg ai';
+      renderRefs(ty,j.answer,hits.map(toRef));
+      chatMsgs.push({role:'user',content:text},{role:'assistant',content:j.answer});
+      if(chatMsgs.length>12)chatMsgs=chatMsgs.slice(-12);
+    }else{
+      throw new Error((j&&j.error)||'AI 无响应');
+    }
+  }catch(e){
+    const em=String(e&&e.message||e);
+    ty.className='msg sys';
+    let hint=em;
+    if(/401|403|invalid.*key|api.?key|unauthorized|认证/i.test(em)) hint='Key 无效或已失效（401/403），请到对应服务商后台核对并重新粘贴 Key';
+    else if(/429|rate|额度|余额|quota|insufficient/i.test(em)) hint='服务商返回额度/频率限制（429），请稍后重试或更换 Key/服务商';
+    else if(/404|model|not found|模型/i.test(em)) hint='模型名称可能不正确，请在设置里核对模型名（如 gpt-4o-mini）';
+    else if(/timeout|abort|超时|网络|connect|fetch/i.test(em)) hint='连接超时，请稍后重试';
+    ty.textContent='AI 调用失败：'+hint+'。你仍可点击下方说明书直接在线查看。';
+    if(hits.length){const refs=hits.map(toRef);ty.innerHTML+='<div class="refs">'+refs.map(r=>'<a class="ref" target="_blank" rel="noopener" href="'+esc(r.pdf)+'"><span class="rt">'+esc(r.t)+'</span><span class="rm">'+esc(r.b||'')+' · '+esc(r.l||'')+' · 点击在线预览</span></a>').join('')+'</div>';}
+  }
+  document.getElementById('gskChat').scrollTop=999999;
+}
+
+/* ---------- 设置 ---------- */
+function fillProviders(sel,provider){
+  sel.innerHTML=Object.entries(PRESETS).map(([k,v])=>'<option value="'+k+'">'+esc(v.name)+'</option>').join('');
+  sel.value=provider||'cloud';
+}
+async function openSettings(){
+  const set=document.getElementById('gskSet');set.classList.add('open');
+  const sel=document.getElementById('setProvider');
+  const cfg=loadLocalCfg();
+  fillProviders(sel,cfg.ai.provider);
+  function paintAi(provider){
+    const p=PRESETS[provider]||PRESETS.cloud;
+    const isCloud=p.type==='cloud';
+    document.getElementById('setKeyBox').style.display=isCloud?'none':'block';
+    document.getElementById('setModelBox').style.display=(isCloud||p.type==='gemini')?'none':'block';
+    document.getElementById('setModel').value=p.model||'';
+    cfg.ai.provider=provider;cfg.ai.base_url=p.base_url||'';
+    const link=p.keyUrl?'<span class="key-link" onclick="window.open(\''+p.keyUrl+'\',\'_blank\')">点这里免费获取 Key</span>':'';
+    document.getElementById('setAiHint').innerHTML=esc(p.hint||'').replace(/点这里免费获取 Key/g,'')+(link?'　'+link:'');
+  }
+  sel.onchange=()=>paintAi(sel.value);
+  paintAi(cfg.ai.provider);
+  document.getElementById('setKey').value='';
+  document.getElementById('setKey').placeholder=cfg.ai.api_key?'已配置（留空保持不变）':'填入 API Key';
+  if(cfg.ai.model)document.getElementById('setModel').value=cfg.ai.model;
+  document.getElementById('setApi').value=API_BASE||'';
+  // 资料库状态
+  const total=(window.DOCS?DOCS.length:0);
+  document.getElementById('setTotal').textContent=total.toLocaleString()+' 份';
+  const updMsg=document.getElementById('setUpdMsg');
+  const updWay=document.getElementById('setUpdWay');
+  const btnUpd=document.getElementById('setUpdate');
+  if(API_OK&&SrvStatus){
+    updWay.textContent='服务端每 '+SrvStatus.interval_hours+' 小时自动更新';
+    updMsg.textContent='服务自动抓取丹佛斯官方库与工控网最新资料，逐条验证后入库；前端打开即同步。';
+    btnUpd.style.display='block';
+    document.getElementById('setTotal').textContent=SrvStatus.total+' 份';
+  }else{
+    btnUpd.style.display='none';
+    if(_cloudMeta&&_cloudMeta.lastRun){
+      paintCloudStat({meta:_cloudMeta});
+    }else{
+      updWay.textContent='云端每3小时自动更新';
+      updMsg.innerHTML='云端版内置 '+total.toLocaleString()+' 份已验证资料；搜索时若本地不足，会实时联网检索丹佛斯官方最新库；云端定时任务每 3 小时自动抓取官方新文档并做 PDF 真实性校验后入库，无需开电脑。';
+    }
+  }
+  // 若后端在，尝试用后端配置覆盖（局域网场景共享 Key）
+  if(API_OK){
+    try{
+      const c=await api('/api/config').then(x=>x.json());
+      if(c.ai&&c.ai.api_key==='***'){
+        document.getElementById('setKey').placeholder='已在服务端配置（留空保持）';
+        fillProviders(sel,c.ai.provider||'cloud');
+        document.getElementById('setModel').value=c.ai.model||'';
+      }
+    }catch(e){}
+  }
+}
+async function saveConfig(){
+  const tip=document.getElementById('setTip');
+  const provider=document.getElementById('setProvider').value;
+  const preset=PRESETS[provider];
+  const exist=loadLocalCfg().ai;
+  const keyInput=document.getElementById('setKey').value.trim();
+  const ai={provider:provider,
+    base_url:preset.base_url,
+    model:document.getElementById('setModel').value.trim()||preset.model,
+    api_key:keyInput||exist.api_key||''};
+  saveLocalCfg({ai:ai});
+  // 后端在线时同步一份到服务端（局域网共享）
+  if(API_OK){
+    try{
+      await api('/api/config',{method:'POST',headers:{'Content-Type':'application/json'},
+        body:JSON.stringify({ai:{provider:provider,model:ai.model,api_key:keyInput}})}).then(x=>x.json());
+    }catch(e){}
+  }
+  updateFab();
+  if(provider==='cloud'){tip.textContent='✅ 已保存，使用云端免费 AI（无需 Key，开箱即用）';}
+  else{tip.textContent=ai.api_key?'✅ 已保存，AI 可正常答疑（Key 仅存于本设备）':'✅ 已保存（未填 Key 时自动用云端免费 AI）';}
+}
+function saveApi(){
+  const v=document.getElementById('setApi').value.trim().replace(/\/$/,'');
+  if(v){localStorage.setItem('gsk_api',v);API_BASE=v;}
+  ping();document.getElementById('setTip').textContent='已保存并尝试连接';
+}
+function manualUpdate(){
+  const msg=document.getElementById('setUpdMsg');
+  msg.textContent='已开始后台抓取，可能需要几分钟，期间可正常使用…';
+  api('/api/update',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({gongkong:true})})
+    .then(r=>r.json()).then(()=>{
+      let n=0;const iv=setInterval(()=>{
+        api('/api/status').then(x=>x.json()).then(s=>{
+          document.getElementById('setTotal').textContent=s.total+' 份';
+          if(!s.updating){clearInterval(iv);
+            msg.textContent='✅ 更新完成：总数 '+s.total+'，本次新增 '+s.last_added+' 份。';}
+          else{msg.textContent='更新中… 已收录 '+s.total+' 份';}
+        }).catch(()=>{});
+        if(++n>60){clearInterval(iv);}
+      },5000);
+    }).catch(()=>{msg.textContent='触发更新失败，请确认服务在运行';});
+}
+
+/* ---------- 说明书链接健康自检（高频：云端轮转 + 前端渲染上报） ---------- */
+window.BAD_URLS=window.BAD_URLS||{};
+let healthStarted=false;
+async function healthSync(){
+  if(healthStarted)return; healthStarted=true;
+  if(location.protocol!=='http:'&&location.protocol!=='https:')return;
+  const origin=location.origin;
+  const fireCheck=()=>{try{fetch(origin+'/api/check?cb='+Date.now(),{cache:'no-store'}).catch(function(){});}catch(e){}};
+  const loadMap=async()=>{
+    try{
+      const r=await fetch(origin+'/api/healthmap?cb='+Date.now(),{cache:'no-store'});
+      if(!r.ok)return;const j=await r.json();if(!j||!j.bad)return;
+      window.BAD_URLS=j.bad||{};
+      if(typeof S!=='undefined'&&S.q&&typeof rerender==='function')rerender();
+    }catch(e){}
+  };
+  fireCheck();loadMap();
+  setInterval(fireCheck,60000);
+  setInterval(loadMap,240000);
+}
+
+/* ---------- 启动 ---------- */
+function boot(){
+  injectUI();
+  detectApi();
+  ping();setInterval(ping,15000);
+  cloudSync(); // 云托管：拉取云端每3小时自动抓取的新增文档
+  healthSync(); // 高频链接自检：打不开/白屏自动检测、标注、沉底
+  updateFab();
+}
+hookSearch();
+if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',boot);
+else boot();
+window.addEventListener('load',function(){
+  try{ if(typeof S!=='undefined' && S.q && S.q.trim()){
+    setTimeout(function(){ if((API_OK||true)&&typeof S!=='undefined'&&S.q) liveSearch(); }, 400);
+  }}catch(e){}
+});
+})();
+
+
+</script>
+<!-- GSK-APP-END -->
+<script>
+// 访问驱动的云端健康自检：访客打开首页时异步触发，服务器端按边缘节点节流为每小时一次，不阻塞页面、不影响预览
+(function(){
+  try{
+    setTimeout(function(){
+      try{
+        if(navigator.sendBeacon){ navigator.sendBeacon('/api/cron-health'); }
+        else { fetch('/api/cron-health',{method:'POST',keepalive:true}).catch(function(){}); }
+      }catch(e){}
+    }, 4000);
+  }catch(e){}
+})();
+</script>
+</body>
+</html>
