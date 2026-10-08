@@ -1448,5 +1448,35 @@
   "size": 853567,
   "brand": "汇川",
   "src": "inovance.com"
+ },
+ {
+  "name": "IT6000系列人机界面用户手册",
+  "url": "/filevault-ext/ProdDoc/SC/19010304-SC/A07/19010304-SC_A07《IT6000系列人机界面用户手册》-1.pdf",
+  "pages": 20,
+  "type": "用户手册",
+  "date": "2024-11-18",
+  "size": 1210593,
+  "brand": "汇川",
+  "src": "inovance.com"
+ },
+ {
+  "name": "IT6000系列人机界面用户手册-英文",
+  "url": "/filevault-ext/ProdDoc/SC/19010504-SC/A01/19010504-SC_A01《IT6000 Human Machine Interface (HMI) User Guide》-EN-20201116.pdf",
+  "pages": 49,
+  "type": "用户手册",
+  "date": "2021-01-05",
+  "size": 8040378,
+  "brand": "汇川",
+  "src": "inovance.com"
+ },
+ {
+  "name": "Inotouch系列HMI应用手册",
+  "url": "/filevault-ext/ProdDoc/SC/19010291-SC/A02/19010291-SC_A02（19010291《Inotouch系列HMI应用手册》-20201123）.pdf",
+  "pages": 214,
+  "type": "应用手册",
+  "date": "2021-01-05",
+  "size": 7383098,
+  "brand": "汇川",
+  "src": "inovance.com"
  }
 ]
