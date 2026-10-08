@@ -1,11 +1,11 @@
 /* 工书库 Service Worker：外壳离线缓存，数据分片 network-first；PDF 和 vendor 库不缓存直连网络。 */
-const CACHE='gongshuku-v'+"20261007-1500";
+const CACHE='gongshuku-v'+"20261008-2130";
 const SHELL=['./index.html','./data/docs-1.js','./data/docs-2.js','./data/docs-3.js','./data/stats.json','./manifest.webmanifest','./icon-192.png','./icon-512.png','./icon-maskable-192.png','./icon-maskable-512.png','./viewer.html','./reader.html','./vendor/pdf.min.js','./vendor/pdf.worker.min.js'];
 self.addEventListener('install',function(e){
   e.waitUntil(caches.open(CACHE).then(function(c){return c.addAll(SHELL).catch(function(){return c.add('./index.html');});}).then(function(){return self.skipWaiting();}));
 });
 self.addEventListener('activate',function(e){
-  e.waitUntil(caches.keys().then(function(ks){return Promise.all(ks.filter(function(k){return k!==CACHE;}).map(function(k){return caches.delete(k);}));}).then(function(){return self.clients.claim();}));
+  e.waitUntil(caches.keys().then(function(ks){return Promise.all(ks.filter(function(k){return k!==CACHE;}).map(function(k){return caches.delete(k);})}).then(function(){return self.clients.claim();}));
 });
 self.addEventListener('fetch',function(e){
   const req=e.request;if(req.method!=='GET')return;
@@ -15,8 +15,12 @@ self.addEventListener('fetch',function(e){
   // PDF文件和vendor库不缓存，永远走网络拿最新
   if(u.pathname.indexOf('/pdfs/')===0)return;
   if(u.pathname.indexOf('/vendor/')===0)return;
+  // HTML页面永远network-first，确保更新立即生效
+  if(u.pathname.endsWith('.html')||u.pathname==='/'||u.pathname.endsWith('/')){
+    e.respondWith(fetch(req).then(function(r){if(r&&r.status===200){const c=r.clone();caches.open(CACHE).then(function(x){x.put(req,c);}).catch(function(){});}return r;}).catch(function(){return caches.match(req);}));
+    return;
+  }
   if(u.pathname.indexOf('/data/')===0){
-    // 数据分片：network-first，在线总是最新
     e.respondWith(fetch(req).then(function(r){if(r&&r.status===200){const c=r.clone();caches.open(CACHE).then(function(x){x.put(req,c);}).catch(function(){});}return r;}).catch(function(){return caches.match(req);}));
     return;
   }
