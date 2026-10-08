@@ -1478,5 +1478,35 @@
   "size": 7383098,
   "brand": "汇川",
   "src": "inovance.com"
+ },
+ {
+  "name": "Inotouch系列HMI应用手册-英文",
+  "url": "/filevault-ext/ProdDoc/SC/19010577-SC/A01/19010577-SC_A01《InoTouch Series HMI Application Manual》-EN-20201120.pdf",
+  "pages": 180,
+  "type": "应用手册",
+  "date": "2021-01-05",
+  "size": 6908072,
+  "brand": "汇川",
+  "src": "inovance.com"
+ },
+ {
+  "name": "IT5000系列人机界面用户手册",
+  "url": "/filevault-ext/ProdDoc/SC/19010097-SC/B04/19010097-SC_B04（19010097《IT5000系列人机界面用户手册》）20201123.pdf",
+  "pages": 2,
+  "type": "用户手册",
+  "date": "2021-01-05",
+  "size": 5577973,
+  "brand": "汇川",
+  "src": "inovance.com"
+ },
+ {
+  "name": "(D)3G无线中继模块用户手册",
+  "url": "/filevault-ext/ProdDoc/SC/19010243-SC/B04/19010243-SCY_B04(《3G无线中继模块用户手册》)20201123.pdf",
+  "pages": 2,
+  "type": "用户手册",
+  "date": "2021-01-05",
+  "size": 629076,
+  "brand": "汇川",
+  "src": "inovance.com"
  }
 ]
