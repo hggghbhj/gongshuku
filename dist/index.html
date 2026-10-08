@@ -874,7 +874,7 @@ function docCard(d,terms){
   let acts='';
   if(direct){
     if(isPdf){
-      const rdHref='reader?pdf='+encodeURIComponent(d.pdf)+'&title='+encodeURIComponent(d.t)+'&brand='+encodeURIComponent(d.b||'');
+      const rdHref='reader?pdf='+encodeURIComponent(d.pdf)+'&title='+encodeURIComponent(d.t)+'&brand='+encodeURIComponent(d.b||'')+'&ret='+encodeURIComponent(location.href);
       const bad=window.BAD_URLS&&window.BAD_URLS[d.pdf];
       acts+='<a class="btn btn-pdf" onclick="sessionStorage.setItem(\'gsk_return\',location.href)" href="'+esc(rdHref)+'">'+ICON.pdf+'在线预览</a>';
       if(bad)acts+='<div class="badflag" style="flex:1 1 100%;color:#b91c1c;font-size:12px;margin-top:2px">⚠ 自动检测该链接可能异常，已优先排到后面（点开仍会尝试备用通道）</div>';
@@ -1741,7 +1741,7 @@ function ensureLiveBox(){
   return box;
 }
 function liveCard(d){
-  const rdHref='reader?pdf='+encodeURIComponent(d.pdf)+'&title='+encodeURIComponent(d.t)+'&brand='+encodeURIComponent(d.b||'');
+  const rdHref='reader?pdf='+encodeURIComponent(d.pdf)+'&title='+encodeURIComponent(d.t)+'&brand='+encodeURIComponent(d.b||'')+'&ret='+encodeURIComponent(location.href);
   const trHref='viewer.html?pdf='+encodeURIComponent(d.pdf)+'&title='+encodeURIComponent(d.t);
   const acts='<a class="btn btn-pdf" onclick="sessionStorage.setItem(\'gsk_return\',location.href)" href="'+esc(rdHref)+'">在线预览</a>'
     +(d.l==='英文'?'<a class="btn btn-tr" href="'+esc(trHref)+'">翻译</a>':'');
