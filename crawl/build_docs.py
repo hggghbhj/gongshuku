@@ -425,6 +425,10 @@ for _r in uniq:
     _pdf = _r.get("pdf", "")
     if not _pdf or _pdf.startswith("/pdfs/"):
         continue
+    # 补全汇川等品牌的残缺相对路径
+    if _pdf.startswith("/filevault-ext/"):
+        _pdf = "https://www.inovance.com" + _pdf
+        _r["pdf"] = _pdf
     _path = urllib.parse.unquote(urllib.parse.urlparse(_pdf).path)
     _base = os.path.basename(_path)
     if _base in _local_map:
