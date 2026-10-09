@@ -1628,5 +1628,35 @@
   "size": 1571152,
   "brand": "汇川",
   "src": "inovance.com"
+ },
+ {
+  "name": "AC802智能机械可编程控制器用户手册",
+  "url": "/filevault-ext/ProdDoc/SC/19010964-SC/A03/19010964-SC_A03《AC802智能机械可编程控制器用户手册》20220620.pdf",
+  "pages": 2,
+  "type": "用户手册",
+  "date": "2022-07-15",
+  "size": 2132145,
+  "brand": "汇川",
+  "src": "inovance.com"
+ },
+ {
+  "name": "ACC-L螺杆空压机专用控制器用户手册",
+  "url": "/filevault-ext/ProdDoc/SC/19010071-SC/A03/19010071-SC_A03《ACC-L螺杆空压机专用控制器用户手册》20210626.pdf",
+  "pages": 2,
+  "type": "用户手册",
+  "date": "2021-06-30",
+  "size": 6762477,
+  "brand": "汇川",
+  "src": "inovance.com"
+ },
+ {
+  "name": "AM403可编程控制器（NPN输出）用户手册- 英文",
+  "url": "/filevault-ext/ProdDoc/SC/19011278-SC/A00/19011278-SC_A00《AM403 Programmable Controller NPN Output User Manual》-EN-20200619.pdf",
+  "pages": 28,
+  "type": "用户手册",
+  "date": "2021-01-05",
+  "size": 2669114,
+  "brand": "汇川",
+  "src": "inovance.com"
  }
 ]
