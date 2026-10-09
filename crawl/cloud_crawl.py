@@ -187,7 +187,7 @@ if __name__=="__main__":
         import traceback;traceback.print_exc()
         try:
             after=count_manifests()
-            stats={"last_run":time.strftime("%Y-%m-%d %H:%M:%S",time.localtime()),"last_new":0,"new_by_brand":{},"total":sum(after.values()),"brands":after,"brand_count":len(after),"cron":"每3小时自动采集","steps":{},"fatal_error":str(e)}
+            stats={"last_run":bj_now(),"last_new":0,"new_by_brand":{},"total":sum(after.values()),"brands":after,"brand_count":len(after),"cron":"每3小时自动采集","steps":{},"fatal_error":str(e)}
             os.makedirs("../dist/data",exist_ok=True)
             json.dump(stats,open("../dist/data/stats.json","w",encoding="utf-8"),ensure_ascii=False,indent=1)
         except:pass
