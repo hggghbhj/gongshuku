@@ -52,64 +52,64 @@ def main():
         extract_codes(root, codes)
     print(f"找到 {len(codes)} 个叶子分类")
     
-    # 3. 遍历分类获取产品列表，再访问产品详情页获取PDF
+    # 3. 并行遍历分类获取产品，再访问详情页提取PDF
     all_pdfs = {}
-    for i, code in enumerate(codes[:50]):  # 限制前50个分类避免超时
-        if i % 10 == 0:
-            print(f"  处理分类 {i+1}/{min(len(codes),50)}...")
+    from concurrent.futures import ThreadPoolExecutor,as_completed
+    def process_code(code):
+        result={}
         try:
             products = json.loads(fetch(f"https://www.moons.com.cn/support-training/downloads/products?type=baseProduct&code={code}").decode("utf-8"))
             for prod in products:
                 prod_url = prod.get("url", "")
-                if not prod_url:
-                    continue
-                # 访问产品详情页
+                if not prod_url:continue
                 try:
-                    html = fetch("https://www.moons.com.cn" + prod_url).decode("utf-8", errors="ignore")
-                    # 提取PDF链接
-                    pdfs = re.findall(r'href="(/medias/[^"]+\.pdf[^"]*)"', html)
-                    for pdf in pdfs:
-                        pdf_url = "https://www.moons.com.cn" + pdf
-                        # 提取文件名
-                        fname = pdf.split("/")[-1].split("?")[0]
-                        if fname not in all_pdfs:
-                            all_pdfs[fname] = pdf_url
-                except:
-                    pass
-                time.sleep(0.2)
-        except:
-            pass
+                    html = fetch("https://www.moons.com.cn" + prod_url,timeout=15).decode("utf-8", errors="ignore")
+                    for pdf in re.findall(r'href="(/medias/[^"]+\.pdf[^"]*)"',html):
+                        fname=pdf.split("/")[-1].split("?")[0]
+                        result[fname]="https://www.moons.com.cn"+pdf
+                except:pass
+        except:pass
+        return result
+    sel_codes=codes[:50]
+    with ThreadPoolExecutor(max_workers=8) as ex:
+        futs=[ex.submit(process_code,c) for c in sel_codes]
+        done=0
+        for f in as_completed(futs):
+            all_pdfs.update(f.result());done+=1
+            if done%10==0:print(f"  分类 {done}/{len(sel_codes)} PDF{len(all_pdfs)}")
     
     print(f"找到 {len(all_pdfs)} 个PDF")
     
-    # 4. 下载PDF
-    new_count = 0
-    for fname, url in sorted(all_pdfs.items()):
-        if url in existing:
-            continue
-        fname_clean = re.sub(r'[\\/:*?"<>|]', "_", fname)[:100]
-        fp = PDF_DIR / fname_clean
+    # 4. 并行下载PDF
+    to_dl=[(f,u) for f,u in sorted(all_pdfs.items()) if u not in existing]
+    print(f"需下载: {len(to_dl)}")
+    new_count=0
+    def dl(item):
+        fname,url=item
+        fname_clean=re.sub(r'[\\/:*?"<>|]','_',fname)[:100]
         try:
-            data = fetch(url, timeout=60)
-            if not data or not data.startswith(b"%PDF"):
-                print(f"  跳过(非PDF): {fname}")
-                continue
-            if len(data) < 2000:
-                print(f"  跳过(太小): {fname}")
-                continue
-            pages = get_pages(data)
-            if pages == 0:
-                print(f"  跳过(0页): {fname}")
-                continue
-            fp.write_bytes(data)
-            name = fname.replace(".pdf","").replace(".PDF","")
-            manifest.append({"name": name, "url": url, "file": f"pdfs/moons/{fname_clean}", "size": len(data), "pages": pages})
-            existing.add(url)
-            new_count += 1
-            MANIFEST.write_text(json.dumps(manifest, ensure_ascii=False, indent=2), encoding="utf-8")
-            print(f"  + {name} ({pages}页, {len(data)//1024}KB)")
-        except Exception as e:
-            print(f"  失败: {fname} - {e}")
+            data=fetch(url,timeout=40)
+            if not data or not data.startswith(b"%PDF") or len(data)<2000:return None
+            pages=get_pages(data)
+            if pages==0:return None
+            return fname_clean,data,pages
+        except:return None
+    done=0
+    with ThreadPoolExecutor(max_workers=8) as ex:
+        for f in as_completed([ex.submit(dl,x) for x in to_dl]):
+            r=f.result();done+=1
+            if r:
+                fname_clean,data,pages=r
+                fp=PDF_DIR/fname_clean
+                fp.write_bytes(data)
+                name=fname_clean.replace(".pdf","").replace(".PDF","")
+                # 找原始URL
+                url=all_pdfs.get(fname_clean)
+                manifest.append({"name":name,"url":url,"file":f"pdfs/moons/{fname_clean}","size":len(data),"pages":pages})
+                existing.add(url);new_count+=1
+            if done%100==0:
+                MANIFEST.write_text(json.dumps(manifest,ensure_ascii=False,indent=2),encoding="utf-8")
+                print(f"  下载进度 {done}/{len(to_dl)} 新增{new_count}")
     
     MANIFEST.write_text(json.dumps(manifest, ensure_ascii=False, indent=2), encoding="utf-8")
     print(f"\n鸣志: 新增{new_count}, 累计{len(manifest)}")

@@ -75,57 +75,76 @@ def main():
     print(f"已有 {len(manifest)} 条记录")
 
     all_pdfs={}
-    with sync_playwright() as p:
-        browser=p.chromium.launch(executable_path="/usr/local/bin/chromium",
-            args=["--no-sandbox","--disable-dev-shm-usage"])
-        page=browser.new_page()
-
-        for cat_name,kisyu in CATEGORIES.items():
-            url=f"https://www.mitsubishielectric.com/fa/download/search.page?mode=catalog&kisyu={kisyu}"
-            try:
-                page.goto(url,timeout=30000)
-                page.wait_for_timeout(2000)
-                pdf_links=page.query_selector_all("a[href*='.pdf']")
-                new_count=0
-                for link in pdf_links:
-                    href=link.get_attribute("href")
-                    text=link.inner_text().strip()
-                    if href and href not in all_pdfs:
-                        all_pdfs[href]={"url":href,"title":text or href.split("/")[-1],"category":cat_name}
-                        new_count+=1
-                print(f"  {cat_name}: {len(pdf_links)}个PDF, 新增{new_count}")
-            except Exception as e:
-                print(f"  {cat_name}: 失败 - {e}")
-            time.sleep(1)
-
-        browser.close()
+    # 用urllib并行获取所有分类（无需playwright）
+    from concurrent.futures import ThreadPoolExecutor,as_completed
+    def fetch_cat(cat_kisyu):
+        cat_name,kisyu=cat_kisyu
+        url=f"https://www.mitsubishielectric.com/fa/download/search.page?mode=catalog&kisyu={kisyu}"
+        result={}
+        try:
+            req=urllib.request.Request(url,headers=HEADERS)
+            html=urllib.request.urlopen(req,timeout=25,context=ctx).read().decode("utf-8","ignore")
+            for m in re.finditer(r'<a[^>]+href="([^"]+\.pdf[^"]*)"[^>]*>([^<]*)',html):
+                href=m.group(1);text=m.group(2).strip()
+                if href not in result:
+                    result[href]={"url":href,"title":text or href.split("/")[-1],"category":cat_name}
+        except Exception as e:
+            pass
+        return result
+    cats=list(CATEGORIES.items())
+    with ThreadPoolExecutor(max_workers=8) as ex:
+        futs=[ex.submit(fetch_cat,c) for c in cats]
+        done=0
+        for f in as_completed(futs):
+            all_pdfs.update(f.result());done+=1
+            if done%8==0:print(f"  分类 {done}/{len(cats)} PDF{len(all_pdfs)}")
 
     print(f"\n共收集 {len(all_pdfs)} 个唯一PDF")
-
-    success=fail=skip=0
-    for i,(url,info) in enumerate(all_pdfs.items()):
-        if url in existing_urls:
-            skip+=1; continue
+    # 补全URL并匹配已有记录（统一用dl域名）
+    for url in list(all_pdfs.keys()):
+        if not url.startswith("http"):
+            full="https://dl.mitsubishielectric.com"+url
+            all_pdfs[full]=all_pdfs.pop(url);all_pdfs[full]["url"]=full
+    # 同时把www域名也转为dl域名
+    for url in list(all_pdfs.keys()):
+        if url.startswith("https://www.mitsubishielectric.com"):
+            full=url.replace("https://www.mitsubishielectric.com","https://dl.mitsubishielectric.com")
+            if full not in all_pdfs:
+                all_pdfs[full]=all_pdfs.pop(url);all_pdfs[full]["url"]=full
+            else:
+                all_pdfs.pop(url)
+    to_dl=[(u,info) for u,info in all_pdfs.items() if u not in existing_urls]
+    print(f"需下载: {len(to_dl)}, 跳过: {len(all_pdfs)-len(to_dl)}")
+    success=fail=0;skip=len(all_pdfs)-len(to_dl)
+    def dl(item):
+        url,info=item
         filename=re.sub(r'[\\/:*?"<>|]','_',info["title"] or url.split("/")[-1])[:80]
-        if not filename.endswith(".pdf"):
-            filename+=".pdf"
-        path=download_pdf(url,filename)
-        if path:
-            pages=get_pdf_pages(path)
-            size=os.path.getsize(path)
-            manifest.append({
-                "name":info["title"],"url":url if url.startswith("http") else "https://dl.mitsubishielectric.com"+url,
-                "pdf":f"pdfs/mitsubishi/{os.path.basename(path)}","size":size,"pages":pages,
-                "category":info["category"],"brand":"mitsubishi",
-            })
-            success+=1
-            print(f"  [{i+1}/{len(all_pdfs)}] OK: {info['title'][:40]} ({pages}页, {size//1024}KB)")
-        else:
-            fail+=1
-            print(f"  [{i+1}/{len(all_pdfs)}] FAIL: {info['title'][:40]}")
-        if (i+1)%20==0:
-            MANIFEST.write_text(json.dumps(manifest,ensure_ascii=False,indent=2),encoding="utf-8")
+        if not filename.endswith(".pdf"):filename+=".pdf"
+        return url,info,filename,download_pdf(url,filename)
+    done=0
+    with ThreadPoolExecutor(max_workers=8) as ex:
+        for f in as_completed([ex.submit(dl,x) for x in to_dl]):
+            url,info,filename,path=f.result();done+=1
+            if path:
+                pages=get_pdf_pages(path);size=os.path.getsize(path)
+                manifest.append({
+                    "name":info["title"],"url":url,
+                    "pdf":f"pdfs/mitsubishi/{os.path.basename(path)}","size":size,"pages":pages,
+                    "category":info["category"],"brand":"mitsubishi",
+                })
+                success+=1
+            else:fail+=1
+            if done%50==0:
+                MANIFEST.write_text(json.dumps(manifest,ensure_ascii=False,indent=2),encoding="utf-8")
+                print(f"  下载 {done}/{len(to_dl)} 成功{success}")
 
+    # 按URL去重后保存
+    seen_url=set();dedup=[]
+    for x in manifest:
+        u=x.get("url","")
+        if u not in seen_url:
+            seen_url.add(u);dedup.append(x)
+    manifest=dedup
     MANIFEST.write_text(json.dumps(manifest,ensure_ascii=False,indent=2),encoding="utf-8")
     print(f"\n=== 完成: 成功{success}, 失败{fail}, 跳过{skip}, 总计{len(manifest)} ===")
 

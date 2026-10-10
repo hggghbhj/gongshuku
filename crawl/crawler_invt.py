@@ -86,14 +86,18 @@ def main(limit=0):
         try:manifest=json.load(open(MAN,encoding="utf-8"))
         except Exception:manifest=[]
     have={m.get("u") for m in manifest}
+    # 去掉查询参数的URL集合（官网列表会带?v=xxx，导致已下载文件无法匹配）
+    have_base={u.split("?")[0] for u in have}
     new_n=skip_n=fail_n=0
     for idx,r in enumerate(uniq,1):
         u=r["downloadUrl"];title=r.get("downame","").strip()
         h=hashlib.md5(u.encode()).hexdigest()[:8]
         fn="invt_%s.pdf"%h;fp=os.path.join(OUT,fn)
-        if u in have:
+        if u in have or u.split("?")[0] in have_base:
             # 已在持久化 manifest：直接复用，不依赖磁盘文件、不重复下载、不重新 pdfinfo
-            skip_n+=1;continue
+            skip_n+=1
+            if skip_n%100==0:print("  跳过%d/%d"%(skip_n,len(uniq)))
+            continue
         try:
             data=http(safe_url(u),referer="https://www.invt.com.cn/",tries=3)
             if not data.startswith(b"%PDF") or len(data)<5000:

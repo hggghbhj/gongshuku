@@ -129,44 +129,46 @@ def main():
     existing_ids={r.get("download_id") for r in manifest}
     print(f"已有 {len(manifest)} 条记录")
     
-    # 收集所有文档
+    # 收集所有文档（并行）
     all_docs={}
-    for pname,pid in PRODUCT_TYPES.items():
-        for dtype,did in DOC_TYPES.items():
-            docs=get_docs(pid,did)
-            new_count=0
+    from concurrent.futures import ThreadPoolExecutor,as_completed
+    combos=[(pname,pid,dtype,did) for pname,pid in PRODUCT_TYPES.items() for dtype,did in DOC_TYPES.items()]
+    def collect(combo):
+        pname,pid,dtype,did=combo
+        return pname,dtype,get_docs(pid,did)
+    with ThreadPoolExecutor(max_workers=6) as ex:
+        for f in as_completed([ex.submit(collect,c) for c in combos]):
+            pname,dtype,docs=f.result()
             for d in docs:
                 if d["id"] not in all_docs:
                     all_docs[d["id"]]={"id":d["id"],"title":d.get("title",""),"product":pname,"doc_type":dtype}
-                    new_count+=1
-            if docs:
-                print(f"  {pname} - {dtype}: {len(docs)}个, 新增{new_count}")
-            time.sleep(0.2)
-    print(f"\n共收集 {len(all_docs)} 个唯一文档")
+    print(f"共收集 {len(all_docs)} 个唯一文档")
     
-    # 直接下载
-    success=fail=skip=0
-    for i,(doc_id,info) in enumerate(all_docs.items()):
-        if doc_id in existing_ids:
-            skip+=1; continue
+    # 并行下载（已有记录跳过）
+    to_dl=[(did,info) for did,info in all_docs.items() if did not in existing_ids]
+    print(f"需下载: {len(to_dl)} 个")
+    success=fail=0;skip=len(all_docs)-len(to_dl)
+    def dl(item):
+        doc_id,info=item
         title=info["title"] or f"西门子{info['product']}{info['doc_type']}"
-        path=download_pdf(doc_id,title)
-        if path:
-            pages=get_pdf_pages(path)
-            size=os.path.getsize(path)
-            manifest.append({
-                "name":title,"url":f"https://www.ad.siemens.com.cn/download/html/Download?downloadId={doc_id}&loginID=&srno=&sendtime=&ftype=cn",
-                "pdf":f"pdfs/siemens/{os.path.basename(path)}","size":size,"pages":pages,
-                "type":info["doc_type"],"product":info["product"],"download_id":doc_id,"brand":"siemens",
-            })
-            success+=1
-            print(f"  [{i+1}/{len(all_docs)}] OK: {title[:45]} ({pages}页, {size//1024}KB)")
-        else:
-            fail+=1
-            print(f"  [{i+1}/{len(all_docs)}] FAIL: {title[:45]}")
-        time.sleep(1.0)  # 下载后延迟1秒，避免限流
-        if (i+1)%20==0:
-            MANIFEST.write_text(json.dumps(manifest,ensure_ascii=False,indent=2),encoding="utf-8")
+        return doc_id,info,title,download_pdf(doc_id,title)
+    done=0
+    with ThreadPoolExecutor(max_workers=6) as ex:
+        for f in as_completed([ex.submit(dl,item) for item in to_dl]):
+            doc_id,info,title,path=f.result()
+            done+=1
+            if path:
+                pages=get_pdf_pages(path);size=os.path.getsize(path)
+                manifest.append({
+                    "name":title,"url":f"https://www.ad.siemens.com.cn/download/html/Download?downloadId={doc_id}&loginID=&srno=&sendtime=&ftype=cn",
+                    "pdf":f"pdfs/siemens/{os.path.basename(path)}","size":size,"pages":pages,
+                    "type":info["doc_type"],"product":info["product"],"download_id":doc_id,"brand":"siemens",
+                })
+                success+=1
+            else:fail+=1
+            if done%20==0:
+                MANIFEST.write_text(json.dumps(manifest,ensure_ascii=False,indent=2),encoding="utf-8")
+                print(f"  进度 {done}/{len(to_dl)} 成功{success}")
     
     MANIFEST.write_text(json.dumps(manifest,ensure_ascii=False,indent=2),encoding="utf-8")
     print(f"\n=== 完成: 成功{success}, 失败{fail}, 跳过{skip}, 总计{len(manifest)} ===")

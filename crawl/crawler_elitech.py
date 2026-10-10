@@ -46,31 +46,41 @@ def run():
     print("产品总数(去重):",len(products))
     recs={}  # key=urlhash -> rec
     n=0
-    for pid,(name,cname) in products.items():
-        n+=1
-        try:det=post("ajax_manual_show",{"id":pid})
-        except Exception as e:print("  产品%s失败 %s"%(name,str(e)[:30]));continue
-        urls=list(dict.fromkeys(re.findall(r'https?://dl\.e-elitech\.com/(?:uploadfile|upload)/[^"\'\s<>]+?\.pdf',det)))
-        mtime=re.search(r'更新时间[：:]\s*([0-9\-: ]+)',det)
-        date=mtime.group(1)[:10] if mtime else ""
-        for u in urls:
-            u=u.replace("\\/","/")
-            key=hashlib.md5(u.encode()).hexdigest()[:10]
-            fn="ec_%s.pdf"%key;fp=os.path.join(DST,fn)
-            ox=old.get(u)
-            if ox and (ox.get("pages") or 0)>0:
-                recs[key]=ox;continue
-            if not(os.path.exists(fp) and os.path.getsize(fp)>10000):
-                try:
-                    raw=get(u)
-                    if raw[:4]!=b"%PDF":print("  非PDF",name[:18]);continue
-                    open(fp,"wb").write(raw)
-                except Exception as e:print("  下载失败",name[:18],str(e)[:36]);continue
-            if key not in recs:
-                recs[key]={"t":"精创 %s %s"%(name,cname),"model":name,"cat":cname,"u":u,"fn":fn,
-                  "pages":pages_of(fp),"size":os.path.getsize(fp),"d":date,"pids":[pid]}
-        if n%50==0:print("  处理%d/%d 唯一PDF%d"%(n,len(products),len(recs)))
-        time.sleep(0.15)
+    from concurrent.futures import ThreadPoolExecutor,as_completed
+    def fetch_product(pid_name):
+        pid,(name,cname)=pid_name
+        try:
+            det=post("ajax_manual_show",{"id":pid})
+            urls=list(dict.fromkeys(re.findall(r'https?://dl\.e-elitech\.com/(?:uploadfile|upload)/[^"\'\s<>]+?\.pdf',det)))
+            mtime=re.search(r'更新时间[：:]\s*([0-9\-: ]+)',det)
+            date=mtime.group(1)[:10] if mtime else ""
+            return pid,name,cname,urls,date
+        except Exception as e:
+            return pid,name,cname,[], ""
+    items=list(products.items())
+    with ThreadPoolExecutor(max_workers=8) as ex:
+        futs=[ex.submit(fetch_product,it) for it in items]
+        done=0
+        for f in as_completed(futs):
+            pid,name,cname,urls,date=f.result()
+            done+=1
+            for u in urls:
+                u=u.replace("\\/","/")
+                key=hashlib.md5(u.encode()).hexdigest()[:10]
+                fn="ec_%s.pdf"%key;fp=os.path.join(DST,fn)
+                ox=old.get(u)
+                if ox and (ox.get("pages") or 0)>0:
+                    recs[key]=ox;continue
+                if not(os.path.exists(fp) and os.path.getsize(fp)>10000):
+                    try:
+                        raw=get(u)
+                        if raw[:4]!=b"%PDF":continue
+                        open(fp,"wb").write(raw)
+                    except Exception as e:continue
+                if key not in recs:
+                    recs[key]={"t":"精创 %s %s"%(name,cname),"model":name,"cat":cname,"u":u,"fn":fn,
+                      "pages":pages_of(fp),"size":os.path.getsize(fp),"d":date,"pids":[pid]}
+            if done%100==0:print("  处理%d/%d 唯一PDF%d"%(done,len(items),len(recs)))
     out=list(recs.values())
     # 回填上一版已记录但本次接口未列出的历史URL（官网接口波动，保留历史只增不丢，不依赖磁盘文件）
     have_fn={r["fn"] for r in out}

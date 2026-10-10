@@ -2187,17 +2187,17 @@
     "brand": "mitsubishi"
   },
   {
-    "name": "l08298engz.pdf",
-    "url": "https://dl.mitsubishielectric.com/dl/fa/document/catalog/plcr/l08298eng/l08298engz.pdf",
-    "pdf": "pdfs/mitsubishi/l08298engz.pdf",
-    "size": 45357679,
-    "pages": 156,
-    "category": "MELSEC iQ-R系列",
+    "name": "l08490eng-e.pdf",
+    "url": "https://www.mitsubishielectric.com/dl/fa/document/catalog/plc_fx/l08490/l08490eng-e.pdf",
+    "pdf": "pdfs/mitsubishi/l08490eng-e.pdf",
+    "size": 31386201,
+    "pages": 90,
+    "category": "MELSEC-F系列",
     "brand": "mitsubishi"
   },
   {
     "name": "l08322engj.pdf",
-    "url": "https://dl.mitsubishielectric.com/dl/fa/document/catalog/plc/l08322eng/l08322engj.pdf",
+    "url": "https://www.mitsubishielectric.com/dl/fa/document/catalog/plc/l08322eng/l08322engj.pdf",
     "pdf": "pdfs/mitsubishi/l08322engj.pdf",
     "size": 23932542,
     "pages": 52,
@@ -2205,71 +2205,170 @@
     "brand": "mitsubishi"
   },
   {
-    "name": "l08736engg.pdf",
-    "url": "https://dl.mitsubishielectric.com/dl/fa/document/catalog/plcr/l08736eng/l08736engg.pdf",
-    "pdf": "pdfs/mitsubishi/l08736engg.pdf",
-    "size": 7732266,
-    "pages": 20,
-    "category": "MELSEC iQ-R系列",
-    "brand": "mitsubishi"
-  },
-  {
-    "name": "l08734engf.pdf",
-    "url": "https://dl.mitsubishielectric.com/dl/fa/document/catalog/plcr/l08734eng/l08734engf.pdf",
-    "pdf": "pdfs/mitsubishi/l08734engf.pdf",
-    "size": 135563275,
-    "pages": 24,
-    "category": "MELSEC iQ-R系列",
-    "brand": "mitsubishi"
-  },
-  {
     "name": "l08192eo.pdf",
-    "url": "https://dl.mitsubishielectric.com/dl/fa/document/catalog/plcqsws/l08192e/l08192eo.pdf",
+    "url": "https://www.mitsubishielectric.com/dl/fa/document/catalog/plcqsws/l08192e/l08192eo.pdf",
     "pdf": "pdfs/mitsubishi/l08192eo.pdf",
     "size": 17572920,
     "pages": 52,
-    "category": "MELSEC iQ-R系列",
-    "brand": "mitsubishi"
-  },
-  {
-    "name": "l08165el.pdf",
-    "url": "https://dl.mitsubishielectric.com/dl/fa/document/catalog/plc/l08165e/l08165el.pdf",
-    "pdf": "pdfs/mitsubishi/l08165el.pdf",
-    "size": 15351151,
-    "pages": 36,
-    "category": "MELSEC iQ-R系列",
-    "brand": "mitsubishi"
-  },
-  {
-    "name": "l08324engd.pdf",
-    "url": "https://dl.mitsubishielectric.com/dl/fa/document/catalog/plc/l08324eng/l08324engd.pdf",
-    "pdf": "pdfs/mitsubishi/l08324engd.pdf",
-    "size": 1306823,
-    "pages": 8,
-    "category": "MELSEC iQ-R系列",
+    "category": "安全解决方案",
     "brand": "mitsubishi"
   },
   {
     "name": "l08030eh.pdf",
-    "url": "https://dl.mitsubishielectric.com/dl/fa/document/catalog/plc/l08030e/l08030eh.pdf",
+    "url": "https://www.mitsubishielectric.com/dl/fa/document/catalog/plc/l08030e/l08030eh.pdf",
     "pdf": "pdfs/mitsubishi/l08030eh.pdf",
     "size": 20417698,
     "pages": 48,
-    "category": "MELSEC iQ-R系列",
+    "category": "过程自动化",
+    "brand": "mitsubishi"
+  },
+  {
+    "name": "l08101ev.pdf",
+    "url": "https://www.mitsubishielectric.com/dl/fa/document/catalog/plcq/l08101e/l08101ev.pdf",
+    "pdf": "pdfs/mitsubishi/l08101ev.pdf",
+    "size": 28163182,
+    "pages": 88,
+    "category": "MELSEC-Q系列",
     "brand": "mitsubishi"
   },
   {
     "name": "l08221ed.pdf",
-    "url": "https://dl.mitsubishielectric.com/dl/fa/document/catalog/plc/l08221e/l08221ed.pdf",
+    "url": "https://www.mitsubishielectric.com/dl/fa/document/catalog/plc/l08221e/l08221ed.pdf",
     "pdf": "pdfs/mitsubishi/l08221ed.pdf",
     "size": 10645696,
     "pages": 56,
+    "category": "传感器解决方案",
+    "brand": "mitsubishi"
+  },
+  {
+    "name": "l08324engd.pdf",
+    "url": "https://www.mitsubishielectric.com/dl/fa/document/catalog/plc/l08324eng/l08324engd.pdf",
+    "pdf": "pdfs/mitsubishi/l08324engd.pdf",
+    "size": 1306823,
+    "pages": 8,
+    "category": "嵌入式系统",
+    "brand": "mitsubishi"
+  },
+  {
+    "name": "y0725a1503.pdf",
+    "url": "https://www.mitsubishielectric.com/dl/fa/document/catalog/ems/ym-c-y-0725/y0725a1503.pdf",
+    "pdf": "pdfs/mitsubishi/y0725a1503.pdf",
+    "size": 11269110,
+    "pages": 28,
+    "category": "节能支持设备",
+    "brand": "mitsubishi"
+  },
+  {
+    "name": "l08967enge.pdf",
+    "url": "https://www.mitsubishielectric.com/dl/fa/document/catalog/mxc/l08967eng/l08967enge.pdf",
+    "pdf": "pdfs/mitsubishi/l08967enge.pdf",
+    "size": 16585655,
+    "pages": 76,
+    "category": "可编程控制器MELSEC",
+    "brand": "mitsubishi"
+  },
+  {
+    "name": "l08159ep.pdf",
+    "url": "https://www.mitsubishielectric.com/dl/fa/document/catalog/plcl/l08159e/l08159ep.pdf",
+    "pdf": "pdfs/mitsubishi/l08159ep.pdf",
+    "size": 21161726,
+    "pages": 88,
+    "category": "MELSEC-L系列",
+    "brand": "mitsubishi"
+  },
+  {
+    "name": "l08077ep.pdf",
+    "url": "https://www.mitsubishielectric.com/dl/fa/document/catalog/plca/l08077e/l08077ep.pdf",
+    "pdf": "pdfs/mitsubishi/l08077ep.pdf",
+    "size": 4041749,
+    "pages": 28,
+    "category": "MELSEC-A系列",
+    "brand": "mitsubishi"
+  },
+  {
+    "name": "l08076ed.pdf",
+    "url": "https://www.mitsubishielectric.com/dl/fa/document/catalog/plca/l08076e/l08076ed.pdf",
+    "pdf": "pdfs/mitsubishi/l08076ed.pdf",
+    "size": 3238997,
+    "pages": 30,
+    "category": "MELSEC-A系列",
+    "brand": "mitsubishi"
+  },
+  {
+    "name": "l08236em.pdf",
+    "url": "https://www.mitsubishielectric.com/dl/fa/document/catalog/plca/l08236e/l08236em.pdf",
+    "pdf": "pdfs/mitsubishi/l08236em.pdf",
+    "size": 6744999,
+    "pages": 28,
+    "category": "MELSEC-A系列",
+    "brand": "mitsubishi"
+  },
+  {
+    "name": "l08439-a.pdf",
+    "url": "https://www.mitsubishielectric.com/dl/fa/document/catalog/plcf/l08439/l08439-a.pdf",
+    "pdf": "pdfs/mitsubishi/l08439-a.pdf",
+    "size": 2703104,
+    "pages": 8,
+    "category": "MELSEC iQ-F系列",
+    "brand": "mitsubishi"
+  },
+  {
+    "name": "l08154-a.pdf",
+    "url": "https://www.mitsubishielectric.com/dl/fa/document/catalog/plcf/l08154/l08154-a.pdf",
+    "pdf": "pdfs/mitsubishi/l08154-a.pdf",
+    "size": 973941,
+    "pages": 2,
+    "category": "MELSEC iQ-F系列",
+    "brand": "mitsubishi"
+  },
+  {
+    "name": "l08428eng-j.pdf",
+    "url": "https://www.mitsubishielectric.com/dl/fa/document/catalog/plcf/l08428eng/l08428eng-j.pdf",
+    "pdf": "pdfs/mitsubishi/l08428eng-j.pdf",
+    "size": 27391348,
+    "pages": 284,
+    "category": "MELSEC iQ-F系列",
+    "brand": "mitsubishi"
+  },
+  {
+    "name": "l08298engz.pdf",
+    "url": "https://www.mitsubishielectric.com/dl/fa/document/catalog/plcr/l08298eng/l08298engz.pdf",
+    "pdf": "pdfs/mitsubishi/l08298engz.pdf",
+    "size": 45357679,
+    "pages": 156,
     "category": "MELSEC iQ-R系列",
     "brand": "mitsubishi"
   },
   {
+    "name": "l08736engg.pdf",
+    "url": "https://www.mitsubishielectric.com/dl/fa/document/catalog/plcr/l08736eng/l08736engg.pdf",
+    "pdf": "pdfs/mitsubishi/l08736engg.pdf",
+    "size": 7732266,
+    "pages": 20,
+    "category": "MX Component",
+    "brand": "mitsubishi"
+  },
+  {
+    "name": "l08734engf.pdf",
+    "url": "https://www.mitsubishielectric.com/dl/fa/document/catalog/plcr/l08734eng/l08734engf.pdf",
+    "pdf": "pdfs/mitsubishi/l08734engf.pdf",
+    "size": 135563275,
+    "pages": 24,
+    "category": "MX Component",
+    "brand": "mitsubishi"
+  },
+  {
+    "name": "l08165el.pdf",
+    "url": "https://www.mitsubishielectric.com/dl/fa/document/catalog/plc/l08165e/l08165el.pdf",
+    "pdf": "pdfs/mitsubishi/l08165el.pdf",
+    "size": 15351151,
+    "pages": 36,
+    "category": "嵌入式系统",
+    "brand": "mitsubishi"
+  },
+  {
     "name": "r001engf.pdf",
-    "url": "https://dl.mitsubishielectric.com/dl/fa/document/catalog/plcr/r001eng/r001engf.pdf",
+    "url": "https://www.mitsubishielectric.com/dl/fa/document/catalog/plcr/r001eng/r001engf.pdf",
     "pdf": "pdfs/mitsubishi/r001engf.pdf",
     "size": 3198353,
     "pages": 4,
@@ -2277,17 +2376,8 @@
     "brand": "mitsubishi"
   },
   {
-    "name": "r003engg.pdf",
-    "url": "https://dl.mitsubishielectric.com/dl/fa/document/catalog/plcr/r003eng/r003engg.pdf",
-    "pdf": "pdfs/mitsubishi/r003engg.pdf",
-    "size": 3937341,
-    "pages": 8,
-    "category": "MELSEC iQ-R系列",
-    "brand": "mitsubishi"
-  },
-  {
     "name": "r007engj.pdf",
-    "url": "https://dl.mitsubishielectric.com/dl/fa/document/catalog/plcr/r007eng/r007engj.pdf",
+    "url": "https://www.mitsubishielectric.com/dl/fa/document/catalog/plcr/r007eng/r007engj.pdf",
     "pdf": "pdfs/mitsubishi/r007engj.pdf",
     "size": 7318665,
     "pages": 16,
@@ -2295,8 +2385,17 @@
     "brand": "mitsubishi"
   },
   {
+    "name": "r003engg.pdf",
+    "url": "https://www.mitsubishielectric.com/dl/fa/document/catalog/plcr/r003eng/r003engg.pdf",
+    "pdf": "pdfs/mitsubishi/r003engg.pdf",
+    "size": 3937341,
+    "pages": 8,
+    "category": "安全解决方案",
+    "brand": "mitsubishi"
+  },
+  {
     "name": "r013enga.pdf",
-    "url": "https://dl.mitsubishielectric.com/dl/fa/document/catalog/plcr/r013eng/r013enga.pdf",
+    "url": "https://www.mitsubishielectric.com/dl/fa/document/catalog/plcr/r013eng/r013enga.pdf",
     "pdf": "pdfs/mitsubishi/r013enga.pdf",
     "size": 2145762,
     "pages": 4,
@@ -2304,17 +2403,8 @@
     "brand": "mitsubishi"
   },
   {
-    "name": "r006engb.pdf",
-    "url": "https://dl.mitsubishielectric.com/dl/fa/document/catalog/plcr/r006eng/r006engb.pdf",
-    "pdf": "pdfs/mitsubishi/r006engb.pdf",
-    "size": 1499947,
-    "pages": 2,
-    "category": "MELSEC iQ-R系列",
-    "brand": "mitsubishi"
-  },
-  {
     "name": "r008enga.pdf",
-    "url": "https://dl.mitsubishielectric.com/dl/fa/document/catalog/plcr/r008eng/r008enga.pdf",
+    "url": "https://www.mitsubishielectric.com/dl/fa/document/catalog/plcr/r008eng/r008enga.pdf",
     "pdf": "pdfs/mitsubishi/r008enga.pdf",
     "size": 1799571,
     "pages": 4,
@@ -2322,8 +2412,17 @@
     "brand": "mitsubishi"
   },
   {
+    "name": "r006engb.pdf",
+    "url": "https://www.mitsubishielectric.com/dl/fa/document/catalog/plcr/r006eng/r006engb.pdf",
+    "pdf": "pdfs/mitsubishi/r006engb.pdf",
+    "size": 1499947,
+    "pages": 2,
+    "category": "MELSEC iQ-R系列",
+    "brand": "mitsubishi"
+  },
+  {
     "name": "r011engd.pdf",
-    "url": "https://dl.mitsubishielectric.com/dl/fa/document/catalog/plcr/r011eng/r011engd.pdf",
+    "url": "https://www.mitsubishielectric.com/dl/fa/document/catalog/plcr/r011eng/r011engd.pdf",
     "pdf": "pdfs/mitsubishi/r011engd.pdf",
     "size": 568829,
     "pages": 2,
@@ -2332,7 +2431,7 @@
   },
   {
     "name": "r012enga.pdf",
-    "url": "https://dl.mitsubishielectric.com/dl/fa/document/catalog/plcr/r012eng/r012enga.pdf",
+    "url": "https://www.mitsubishielectric.com/dl/fa/document/catalog/plcr/r012eng/r012enga.pdf",
     "pdf": "pdfs/mitsubishi/r012enga.pdf",
     "size": 1931331,
     "pages": 4,
@@ -2341,25 +2440,16 @@
   },
   {
     "name": "y0837a2603.pdf",
-    "url": "https://dl.mitsubishielectric.com/dl/fa/document/catalog/ems/ym-c-y-0837/y0837a2603.pdf",
+    "url": "https://www.mitsubishielectric.com/dl/fa/document/catalog/ems/ym-c-y-0837/y0837a2603.pdf",
     "pdf": "pdfs/mitsubishi/y0837a2603.pdf",
     "size": 282245,
     "pages": 2,
-    "category": "MELSEC iQ-R系列",
-    "brand": "mitsubishi"
-  },
-  {
-    "name": "r009enge.pdf",
-    "url": "https://dl.mitsubishielectric.com/dl/fa/document/catalog/plcr/r009eng/r009enge.pdf",
-    "pdf": "pdfs/mitsubishi/r009enge.pdf",
-    "size": 1612027,
-    "pages": 4,
-    "category": "MELSEC iQ-R系列",
+    "category": "节能支持设备",
     "brand": "mitsubishi"
   },
   {
     "name": "r010enga.pdf",
-    "url": "https://dl.mitsubishielectric.com/dl/fa/document/catalog/plcr/r010eng/r010enga.pdf",
+    "url": "https://www.mitsubishielectric.com/dl/fa/document/catalog/plcr/r010eng/r010enga.pdf",
     "pdf": "pdfs/mitsubishi/r010enga.pdf",
     "size": 3698505,
     "pages": 8,
@@ -2368,7 +2458,7 @@
   },
   {
     "name": "is001engb.pdf",
-    "url": "https://dl.mitsubishielectric.com/dl/fa/document/catalog/plcr/is001eng/is001engb.pdf",
+    "url": "https://www.mitsubishielectric.com/dl/fa/document/catalog/plcr/is001eng/is001engb.pdf",
     "pdf": "pdfs/mitsubishi/is001engb.pdf",
     "size": 6425781,
     "pages": 4,
@@ -2376,17 +2466,17 @@
     "brand": "mitsubishi"
   },
   {
-    "name": "r002engf.pdf",
-    "url": "https://dl.mitsubishielectric.com/dl/fa/document/catalog/plcr/r002eng/r002engf.pdf",
-    "pdf": "pdfs/mitsubishi/r002engf.pdf",
-    "size": 1769574,
+    "name": "r009enge.pdf",
+    "url": "https://www.mitsubishielectric.com/dl/fa/document/catalog/plcr/r009eng/r009enge.pdf",
+    "pdf": "pdfs/mitsubishi/r009enge.pdf",
+    "size": 1612027,
     "pages": 4,
     "category": "MELSEC iQ-R系列",
     "brand": "mitsubishi"
   },
   {
     "name": "r005engh.pdf",
-    "url": "https://dl.mitsubishielectric.com/dl/fa/document/catalog/plcr/r005eng/r005engh.pdf",
+    "url": "https://www.mitsubishielectric.com/dl/fa/document/catalog/plcr/r005eng/r005engh.pdf",
     "pdf": "pdfs/mitsubishi/r005engh.pdf",
     "size": 4246818,
     "pages": 8,
@@ -2394,8 +2484,17 @@
     "brand": "mitsubishi"
   },
   {
+    "name": "r002engf.pdf",
+    "url": "https://www.mitsubishielectric.com/dl/fa/document/catalog/plcr/r002eng/r002engf.pdf",
+    "pdf": "pdfs/mitsubishi/r002engf.pdf",
+    "size": 1769574,
+    "pages": 4,
+    "category": "MELSEC iQ-R系列",
+    "brand": "mitsubishi"
+  },
+  {
     "name": "r016enga.pdf",
-    "url": "https://dl.mitsubishielectric.com/dl/fa/document/catalog/plcr/r016eng/r016enga.pdf",
+    "url": "https://www.mitsubishielectric.com/dl/fa/document/catalog/plcr/r016eng/r016enga.pdf",
     "pdf": "pdfs/mitsubishi/r016enga.pdf",
     "size": 466519,
     "pages": 2,
@@ -2403,1412 +2502,8 @@
     "brand": "mitsubishi"
   },
   {
-    "name": "l08428eng-j.pdf",
-    "url": "https://dl.mitsubishielectric.com/dl/fa/document/catalog/plcf/l08428eng/l08428eng-j.pdf",
-    "pdf": "pdfs/mitsubishi/l08428eng-j.pdf",
-    "size": 27391348,
-    "pages": 284,
-    "category": "MELSEC iQ-F系列",
-    "brand": "mitsubishi"
-  },
-  {
-    "name": "l08154-a.pdf",
-    "url": "https://dl.mitsubishielectric.com/dl/fa/document/catalog/plcf/l08154/l08154-a.pdf",
-    "pdf": "pdfs/mitsubishi/l08154-a.pdf",
-    "size": 973941,
-    "pages": 2,
-    "category": "MELSEC iQ-F系列",
-    "brand": "mitsubishi"
-  },
-  {
-    "name": "l08439-a.pdf",
-    "url": "https://dl.mitsubishielectric.com/dl/fa/document/catalog/plcf/l08439/l08439-a.pdf",
-    "pdf": "pdfs/mitsubishi/l08439-a.pdf",
-    "size": 2703104,
-    "pages": 8,
-    "category": "MELSEC iQ-F系列",
-    "brand": "mitsubishi"
-  },
-  {
-    "name": "l08101ev.pdf",
-    "url": "https://dl.mitsubishielectric.com/dl/fa/document/catalog/plcq/l08101e/l08101ev.pdf",
-    "pdf": "pdfs/mitsubishi/l08101ev.pdf",
-    "size": 28163182,
-    "pages": 88,
-    "category": "MELSEC-Q系列",
-    "brand": "mitsubishi"
-  },
-  {
-    "name": "y0725a1503.pdf",
-    "url": "https://dl.mitsubishielectric.com/dl/fa/document/catalog/ems/ym-c-y-0725/y0725a1503.pdf",
-    "pdf": "pdfs/mitsubishi/y0725a1503.pdf",
-    "size": 11269110,
-    "pages": 28,
-    "category": "MELSEC-Q系列",
-    "brand": "mitsubishi"
-  },
-  {
-    "name": "l08159ep.pdf",
-    "url": "https://dl.mitsubishielectric.com/dl/fa/document/catalog/plcl/l08159e/l08159ep.pdf",
-    "pdf": "pdfs/mitsubishi/l08159ep.pdf",
-    "size": 21161726,
-    "pages": 88,
-    "category": "MELSEC-L系列",
-    "brand": "mitsubishi"
-  },
-  {
-    "name": "l08490eng-e.pdf",
-    "url": "https://dl.mitsubishielectric.com/dl/fa/document/catalog/plc_fx/l08490/l08490eng-e.pdf",
-    "pdf": "pdfs/mitsubishi/l08490eng-e.pdf",
-    "size": 31386201,
-    "pages": 90,
-    "category": "MELSEC-F系列",
-    "brand": "mitsubishi"
-  },
-  {
-    "name": "l08076ed.pdf",
-    "url": "https://dl.mitsubishielectric.com/dl/fa/document/catalog/plca/l08076e/l08076ed.pdf",
-    "pdf": "pdfs/mitsubishi/l08076ed.pdf",
-    "size": 3238997,
-    "pages": 30,
-    "category": "MELSEC-A系列",
-    "brand": "mitsubishi"
-  },
-  {
-    "name": "l08077ep.pdf",
-    "url": "https://dl.mitsubishielectric.com/dl/fa/document/catalog/plca/l08077e/l08077ep.pdf",
-    "pdf": "pdfs/mitsubishi/l08077ep.pdf",
-    "size": 4041749,
-    "pages": 28,
-    "category": "MELSEC-A系列",
-    "brand": "mitsubishi"
-  },
-  {
-    "name": "l08236em.pdf",
-    "url": "https://dl.mitsubishielectric.com/dl/fa/document/catalog/plca/l08236e/l08236em.pdf",
-    "pdf": "pdfs/mitsubishi/l08236em.pdf",
-    "size": 6744999,
-    "pages": 28,
-    "category": "MELSEC-A系列",
-    "brand": "mitsubishi"
-  },
-  {
-    "name": "l08967enge.pdf",
-    "url": "https://dl.mitsubishielectric.com/dl/fa/document/catalog/mxc/l08967eng/l08967enge.pdf",
-    "pdf": "pdfs/mitsubishi/l08967enge.pdf",
-    "size": 16585655,
-    "pages": 76,
-    "category": "可编程控制器MELSEC",
-    "brand": "mitsubishi"
-  },
-  {
-    "name": "l08957engb.pdf",
-    "url": "https://dl.mitsubishielectric.com/dl/fa/document/catalog/got/l08957eng/l08957engb.pdf",
-    "pdf": "pdfs/mitsubishi/l08957engb.pdf",
-    "size": 41800087,
-    "pages": 56,
-    "category": "人机界面GOT",
-    "brand": "mitsubishi"
-  },
-  {
-    "name": "Simplified ChineseVersion",
-    "url": "https://dl.mitsubishielectric.com/dl/fa/document/catalog/got/l08958chn/l08958chnb.pdf",
-    "pdf": "pdfs/mitsubishi/Simplified ChineseVersion.pdf",
-    "size": 42114349,
-    "pages": 56,
-    "category": "人机界面GOT",
-    "brand": "mitsubishi"
-  },
-  {
-    "name": "l08649engd.pdf",
-    "url": "https://dl.mitsubishielectric.com/dl/fa/document/catalog/got/l08649eng/l08649engd.pdf",
-    "pdf": "pdfs/mitsubishi/l08649engd.pdf",
-    "size": 22255805,
-    "pages": 36,
-    "category": "人机界面GOT",
-    "brand": "mitsubishi"
-  },
-  {
-    "name": "l08270engk.pdf",
-    "url": "https://dl.mitsubishielectric.com/dl/fa/document/catalog/got/l08270/l08270engk.pdf",
-    "pdf": "pdfs/mitsubishi/l08270engk.pdf",
-    "size": 102156439,
-    "pages": 214,
-    "category": "人机界面GOT",
-    "brand": "mitsubishi"
-  },
-  {
-    "name": "Simplified ChineseVersion",
-    "url": "https://dl.mitsubishielectric.com/dl/fa/document/catalog/got/l08271/l08271chni.pdf",
-    "pdf": "pdfs/mitsubishi/Simplified ChineseVersion.pdf",
-    "size": 42114349,
-    "pages": 56,
-    "category": "人机界面GOT",
-    "brand": "mitsubishi"
-  },
-  {
-    "name": "l08487engc.pdf",
-    "url": "https://dl.mitsubishielectric.com/dl/fa/document/catalog/got/l08487eng/l08487engc.pdf",
-    "pdf": "pdfs/mitsubishi/l08487engc.pdf",
-    "size": 24851961,
-    "pages": 20,
-    "category": "人机界面GOT",
-    "brand": "mitsubishi"
-  },
-  {
-    "name": "l08674engb.pdf",
-    "url": "https://dl.mitsubishielectric.com/dl/fa/document/catalog/got/l08674eng/l08674engb.pdf",
-    "pdf": "pdfs/mitsubishi/l08674engb.pdf",
-    "size": 21344705,
-    "pages": 28,
-    "category": "人机界面GOT",
-    "brand": "mitsubishi"
-  },
-  {
-    "name": "l08341engb.pdf",
-    "url": "https://dl.mitsubishielectric.com/dl/fa/document/catalog/got/l08341eng/l08341engb.pdf",
-    "pdf": "pdfs/mitsubishi/l08341engb.pdf",
-    "size": 11788205,
-    "pages": 64,
-    "category": "人机界面GOT",
-    "brand": "mitsubishi"
-  },
-  {
-    "name": "l08461engd.pdf",
-    "url": "https://dl.mitsubishielectric.com/dl/fa/document/catalog/got/l08461eng/l08461engd.pdf",
-    "pdf": "pdfs/mitsubishi/l08461engd.pdf",
-    "size": 14565755,
-    "pages": 28,
-    "category": "人机界面GOT",
-    "brand": "mitsubishi"
-  },
-  {
-    "name": "l08606enga.pdf",
-    "url": "https://dl.mitsubishielectric.com/dl/fa/document/catalog/got/l08606eng/l08606enga.pdf",
-    "pdf": "pdfs/mitsubishi/l08606enga.pdf",
-    "size": 15815703,
-    "pages": 32,
-    "category": "人机界面GOT",
-    "brand": "mitsubishi"
-  },
-  {
-    "name": "l08676engb.pdf",
-    "url": "https://dl.mitsubishielectric.com/dl/fa/document/catalog/got/l08676eng/l08676engb.pdf",
-    "pdf": "pdfs/mitsubishi/l08676engb.pdf",
-    "size": 18831016,
-    "pages": 40,
-    "category": "人机界面GOT",
-    "brand": "mitsubishi"
-  },
-  {
-    "name": "l08349engc.pdf",
-    "url": "https://dl.mitsubishielectric.com/dl/fa/document/catalog/got/l08349eng/l08349engc.pdf",
-    "pdf": "pdfs/mitsubishi/l08349engc.pdf",
-    "size": 30143008,
-    "pages": 68,
-    "category": "人机界面GOT",
-    "brand": "mitsubishi"
-  },
-  {
-    "name": "l08555enga.pdf",
-    "url": "https://dl.mitsubishielectric.com/dl/fa/document/catalog/got/l08555eng/l08555enga.pdf",
-    "pdf": "pdfs/mitsubishi/l08555enga.pdf",
-    "size": 17235447,
-    "pages": 24,
-    "category": "人机界面GOT",
-    "brand": "mitsubishi"
-  },
-  {
-    "name": "l08506engb.pdf",
-    "url": "https://dl.mitsubishielectric.com/dl/fa/document/catalog/got/l08506eng/l08506engb.pdf",
-    "pdf": "pdfs/mitsubishi/l08506engb.pdf",
-    "size": 16411073,
-    "pages": 20,
-    "category": "人机界面GOT",
-    "brand": "mitsubishi"
-  },
-  {
-    "name": "l08170engf.pdf",
-    "url": "https://dl.mitsubishielectric.com/dl/fa/document/catalog/got/l08170eng/l08170engf.pdf",
-    "pdf": "pdfs/mitsubishi/l08170engf.pdf",
-    "size": 7315775,
-    "pages": 40,
-    "category": "人机界面GOT",
-    "brand": "mitsubishi"
-  },
-  {
-    "name": "l08054i.pdf",
-    "url": "https://dl.mitsubishielectric.com/dl/fa/document/catalog/got/l08054-gl/l08054i.pdf",
-    "pdf": "pdfs/mitsubishi/l08054i.pdf",
-    "size": 14310575,
-    "pages": 47,
-    "category": "人机界面GOT",
-    "brand": "mitsubishi"
-  },
-  {
-    "name": "l08013c.pdf",
-    "url": "https://dl.mitsubishielectric.com/dl/fa/document/catalog/got/l08013/l08013c.pdf",
-    "pdf": "pdfs/mitsubishi/l08013c.pdf",
-    "size": 6697723,
-    "pages": 33,
-    "category": "人机界面GOT",
-    "brand": "mitsubishi"
-  },
-  {
-    "name": "l08978enga.pdf",
-    "url": "https://dl.mitsubishielectric.com/dl/fa/document/catalog/got/l08978eng/l08978enga.pdf",
-    "pdf": "pdfs/mitsubishi/l08978enga.pdf",
-    "size": 1086232,
-    "pages": 6,
-    "category": "人机界面GOT",
-    "brand": "mitsubishi"
-  },
-  {
-    "name": "Simplified ChineseVersion",
-    "url": "https://dl.mitsubishielectric.com/dl/fa/document/catalog/got/l08979chn/l08979chna.pdf",
-    "pdf": "pdfs/mitsubishi/Simplified ChineseVersion.pdf",
-    "size": 42114349,
-    "pages": 56,
-    "category": "人机界面GOT",
-    "brand": "mitsubishi"
-  },
-  {
-    "name": "l08950enga.pdf",
-    "url": "https://dl.mitsubishielectric.com/dl/fa/document/catalog/got/l08950eng/l08950enga.pdf",
-    "pdf": "pdfs/mitsubishi/l08950enga.pdf",
-    "size": 1459602,
-    "pages": 6,
-    "category": "人机界面GOT",
-    "brand": "mitsubishi"
-  },
-  {
-    "name": "l08930enga.pdf",
-    "url": "https://dl.mitsubishielectric.com/dl/fa/document/catalog/got/l08930eng/l08930enga.pdf",
-    "pdf": "pdfs/mitsubishi/l08930enga.pdf",
-    "size": 2336056,
-    "pages": 6,
-    "category": "人机界面GOT",
-    "brand": "mitsubishi"
-  },
-  {
-    "name": "Simplified ChineseVersion",
-    "url": "https://dl.mitsubishielectric.com/dl/fa/document/catalog/got/l08931chn/l08931chna.pdf",
-    "pdf": "pdfs/mitsubishi/Simplified ChineseVersion.pdf",
-    "size": 42114349,
-    "pages": 56,
-    "category": "人机界面GOT",
-    "brand": "mitsubishi"
-  },
-  {
-    "name": "l08335enge.pdf",
-    "url": "https://dl.mitsubishielectric.com/dl/fa/document/catalog/got/l08335eng/l08335enge.pdf",
-    "pdf": "pdfs/mitsubishi/l08335enge.pdf",
-    "size": 37853190,
-    "pages": 52,
-    "category": "人机界面GOT",
-    "brand": "mitsubishi"
-  },
-  {
-    "name": "Simplified ChineseVersion",
-    "url": "https://dl.mitsubishielectric.com/dl/fa/document/catalog/got/l08336chn/l08336chnd.pdf",
-    "pdf": "pdfs/mitsubishi/Simplified ChineseVersion.pdf",
-    "size": 42114349,
-    "pages": 56,
-    "category": "人机界面GOT",
-    "brand": "mitsubishi"
-  },
-  {
-    "name": "l08572engc.pdf",
-    "url": "https://dl.mitsubishielectric.com/dl/fa/document/catalog/got/l08572eng/l08572engc.pdf",
-    "pdf": "pdfs/mitsubishi/l08572engc.pdf",
-    "size": 4476913,
-    "pages": 12,
-    "category": "人机界面GOT",
-    "brand": "mitsubishi"
-  },
-  {
-    "name": "l08659enga.pdf",
-    "url": "https://dl.mitsubishielectric.com/dl/fa/document/catalog/got/l08659eng/l08659enga.pdf",
-    "pdf": "pdfs/mitsubishi/l08659enga.pdf",
-    "size": 1644310,
-    "pages": 2,
-    "category": "人机界面GOT",
-    "brand": "mitsubishi"
-  },
-  {
-    "name": "l08602engb.pdf",
-    "url": "https://dl.mitsubishielectric.com/dl/fa/document/catalog/got/l08602eng/l08602engb.pdf",
-    "pdf": "pdfs/mitsubishi/l08602engb.pdf",
-    "size": 10376093,
-    "pages": 28,
-    "category": "人机界面GOT",
-    "brand": "mitsubishi"
-  },
-  {
-    "name": "l08594enga.pdf",
-    "url": "https://dl.mitsubishielectric.com/dl/fa/document/catalog/got/l08594eng/l08594enga.pdf",
-    "pdf": "pdfs/mitsubishi/l08594enga.pdf",
-    "size": 3212368,
-    "pages": 4,
-    "category": "人机界面GOT",
-    "brand": "mitsubishi"
-  },
-  {
-    "name": "l08355engb.pdf",
-    "url": "https://dl.mitsubishielectric.com/dl/fa/document/catalog/got/l08355eng/l08355engb.pdf",
-    "pdf": "pdfs/mitsubishi/l08355engb.pdf",
-    "size": 10145857,
-    "pages": 28,
-    "category": "人机界面GOT",
-    "brand": "mitsubishi"
-  },
-  {
-    "name": "l08530enga.pdf",
-    "url": "https://dl.mitsubishielectric.com/dl/fa/document/catalog/got/l08530eng/l08530enga.pdf",
-    "pdf": "pdfs/mitsubishi/l08530enga.pdf",
-    "size": 8831682,
-    "pages": 4,
-    "category": "人机界面GOT",
-    "brand": "mitsubishi"
-  },
-  {
-    "name": "l08414enga.pdf",
-    "url": "https://dl.mitsubishielectric.com/dl/fa/document/catalog/got/l08414eng/l08414enga.pdf",
-    "pdf": "pdfs/mitsubishi/l08414enga.pdf",
-    "size": 7228820,
-    "pages": 8,
-    "category": "人机界面GOT",
-    "brand": "mitsubishi"
-  },
-  {
-    "name": "l08424enga.pdf",
-    "url": "https://dl.mitsubishielectric.com/dl/fa/document/catalog/got/l08424eng/l08424enga.pdf",
-    "pdf": "pdfs/mitsubishi/l08424enga.pdf",
-    "size": 4438242,
-    "pages": 4,
-    "category": "人机界面GOT",
-    "brand": "mitsubishi"
-  },
-  {
-    "name": "l08399engb.pdf",
-    "url": "https://dl.mitsubishielectric.com/dl/fa/document/catalog/got/l08399eng/l08399engb.pdf",
-    "pdf": "pdfs/mitsubishi/l08399engb.pdf",
-    "size": 2036086,
-    "pages": 4,
-    "category": "人机界面GOT",
-    "brand": "mitsubishi"
-  },
-  {
-    "name": "l08416enga.pdf",
-    "url": "https://dl.mitsubishielectric.com/dl/fa/document/catalog/got/l08416eng/l08416enga.pdf",
-    "pdf": "pdfs/mitsubishi/l08416enga.pdf",
-    "size": 1894463,
-    "pages": 4,
-    "category": "人机界面GOT",
-    "brand": "mitsubishi"
-  },
-  {
-    "name": "l08392enga.pdf",
-    "url": "https://dl.mitsubishielectric.com/dl/fa/document/catalog/got/l08392eng/l08392enga.pdf",
-    "pdf": "pdfs/mitsubishi/l08392enga.pdf",
-    "size": 1749467,
-    "pages": 8,
-    "category": "人机界面GOT",
-    "brand": "mitsubishi"
-  },
-  {
-    "name": "l08308enga.pdf",
-    "url": "https://dl.mitsubishielectric.com/dl/fa/document/catalog/got/l08308eng/l08308enga.pdf",
-    "pdf": "pdfs/mitsubishi/l08308enga.pdf",
-    "size": 2051261,
-    "pages": 2,
-    "category": "人机界面GOT",
-    "brand": "mitsubishi"
-  },
-  {
-    "name": "l08464enga.pdf",
-    "url": "https://dl.mitsubishielectric.com/dl/fa/document/catalog/got/l08464eng/l08464enga.pdf",
-    "pdf": "pdfs/mitsubishi/l08464enga.pdf",
-    "size": 18099478,
-    "pages": 12,
-    "category": "人机界面GOT",
-    "brand": "mitsubishi"
-  },
-  {
-    "name": "Simplified ChineseVersion",
-    "url": "https://dl.mitsubishielectric.com/dl/fa/document/catalog/got/l08465chn/l08465chna.pdf",
-    "pdf": "pdfs/mitsubishi/Simplified ChineseVersion.pdf",
-    "size": 42114349,
-    "pages": 56,
-    "category": "人机界面GOT",
-    "brand": "mitsubishi"
-  },
-  {
-    "name": "l08311engc.pdf",
-    "url": "https://dl.mitsubishielectric.com/dl/fa/document/catalog/got/l08311eng/l08311engc.pdf",
-    "pdf": "pdfs/mitsubishi/l08311engc.pdf",
-    "size": 37716636,
-    "pages": 76,
-    "category": "人机界面GOT",
-    "brand": "mitsubishi"
-  },
-  {
-    "name": "l08385engb.pdf",
-    "url": "https://dl.mitsubishielectric.com/dl/fa/document/catalog/got/l08385eng/l08385engb.pdf",
-    "pdf": "pdfs/mitsubishi/l08385engb.pdf",
-    "size": 25024864,
-    "pages": 36,
-    "category": "人机界面GOT",
-    "brand": "mitsubishi"
-  },
-  {
-    "name": "l08087engd.pdf",
-    "url": "https://dl.mitsubishielectric.com/dl/fa/document/catalog/got/l08087eng/l08087engd.pdf",
-    "pdf": "pdfs/mitsubishi/l08087engd.pdf",
-    "size": 33790519,
-    "pages": 330,
-    "category": "人机界面GOT",
-    "brand": "mitsubishi"
-  },
-  {
-    "name": "l03179engl.pdf",
-    "url": "https://dl.mitsubishielectric.com/dl/fa/document/catalog/servo/l03179eng/l03179engl.pdf",
-    "pdf": "pdfs/mitsubishi/l03179engl.pdf",
-    "size": 112750931,
-    "pages": 616,
-    "category": "交流伺服MELSERVO",
-    "brand": "mitsubishi"
-  },
-  {
-    "name": "l03187engg.pdf",
-    "url": "https://dl.mitsubishielectric.com/dl/fa/document/catalog/servo/l03187eng/l03187engg.pdf",
-    "pdf": "pdfs/mitsubishi/l03187engg.pdf",
-    "size": 65821811,
-    "pages": 296,
-    "category": "交流伺服MELSERVO",
-    "brand": "mitsubishi"
-  },
-  {
-    "name": "l03058engl.pdf",
-    "url": "https://dl.mitsubishielectric.com/dl/fa/document/catalog/servo/l03058/l03058engl.pdf",
-    "pdf": "pdfs/mitsubishi/l03058engl.pdf",
-    "size": 88380098,
-    "pages": 454,
-    "category": "交流伺服MELSERVO",
-    "brand": "mitsubishi"
-  },
-  {
-    "name": "l03086engh.pdf",
-    "url": "https://dl.mitsubishielectric.com/dl/fa/document/catalog/servo/l03086/l03086engh.pdf",
-    "pdf": "pdfs/mitsubishi/l03086engh.pdf",
-    "size": 13424194,
-    "pages": 138,
-    "category": "交流伺服MELSERVO",
-    "brand": "mitsubishi"
-  },
-  {
-    "name": "l03055d.pdf",
-    "url": "https://dl.mitsubishielectric.com/dl/fa/document/catalog/servo/l03055/l03055d.pdf",
-    "pdf": "pdfs/mitsubishi/l03055d.pdf",
-    "size": 14201861,
-    "pages": 56,
-    "category": "交流伺服MELSERVO",
-    "brand": "mitsubishi"
-  },
-  {
-    "name": "l03152a.pdf",
-    "url": "https://dl.mitsubishielectric.com/dl/fa/document/catalog/servo/l03152/l03152a.pdf",
-    "pdf": "pdfs/mitsubishi/l03152a.pdf",
-    "size": 9280898,
-    "pages": 16,
-    "category": "交流伺服MELSERVO",
-    "brand": "mitsubishi"
-  },
-  {
-    "name": "l03094a.pdf",
-    "url": "https://dl.mitsubishielectric.com/dl/fa/document/catalog/servo/l03094/l03094a.pdf",
-    "pdf": "pdfs/mitsubishi/l03094a.pdf",
-    "size": 22937802,
-    "pages": 60,
-    "category": "交流伺服MELSERVO",
-    "brand": "mitsubishi"
-  },
-  {
-    "name": "l03017g.pdf",
-    "url": "https://dl.mitsubishielectric.com/dl/fa/document/catalog/servo/l03017/l03017g.pdf",
-    "pdf": "pdfs/mitsubishi/l03017g.pdf",
-    "size": 17486463,
-    "pages": 186,
-    "category": "交流伺服MELSERVO",
-    "brand": "mitsubishi"
-  },
-  {
-    "name": "l03053d.pdf",
-    "url": "https://dl.mitsubishielectric.com/dl/fa/document/catalog/servo/l03053/l03053d.pdf",
-    "pdf": "pdfs/mitsubishi/l03053d.pdf",
-    "size": 5706428,
-    "pages": 64,
-    "category": "交流伺服MELSERVO",
-    "brand": "mitsubishi"
-  },
-  {
-    "name": "l03026c.pdf",
-    "url": "https://dl.mitsubishielectric.com/dl/fa/document/catalog/servo/l03026/l03026c.pdf",
-    "pdf": "pdfs/mitsubishi/l03026c.pdf",
-    "size": 11599965,
-    "pages": 60,
-    "category": "交流伺服MELSERVO",
-    "brand": "mitsubishi"
-  },
-  {
-    "name": "l03101b.pdf",
-    "url": "https://dl.mitsubishielectric.com/dl/fa/document/catalog/servo/l03101/l03101b.pdf",
-    "pdf": "pdfs/mitsubishi/l03101b.pdf",
-    "size": 3586220,
-    "pages": 24,
-    "category": "交流伺服MELSERVO",
-    "brand": "mitsubishi"
-  },
-  {
-    "name": "l03143a.pdf",
-    "url": "https://dl.mitsubishielectric.com/dl/fa/document/catalog/servo/l03143/l03143a.pdf",
-    "pdf": "pdfs/mitsubishi/l03143a.pdf",
-    "size": 2022021,
-    "pages": 4,
-    "category": "交流伺服MELSERVO",
-    "brand": "mitsubishi"
-  },
-  {
-    "name": "l03135a.pdf",
-    "url": "https://dl.mitsubishielectric.com/dl/fa/document/catalog/servo/l03135/l03135a.pdf",
-    "pdf": "pdfs/mitsubishi/l03135a.pdf",
-    "size": 1658368,
-    "pages": 4,
-    "category": "交流伺服MELSERVO",
-    "brand": "mitsubishi"
-  },
-  {
-    "name": "l03106a.pdf",
-    "url": "https://dl.mitsubishielectric.com/dl/fa/document/catalog/servo/l03106/l03106a.pdf",
-    "pdf": "pdfs/mitsubishi/l03106a.pdf",
-    "size": 1821959,
-    "pages": 4,
-    "category": "交流伺服MELSERVO",
-    "brand": "mitsubishi"
-  },
-  {
-    "name": "l03085a.pdf",
-    "url": "https://dl.mitsubishielectric.com/dl/fa/document/catalog/servo/l03085/l03085a.pdf",
-    "pdf": "pdfs/mitsubishi/l03085a.pdf",
-    "size": 1557688,
-    "pages": 4,
-    "category": "交流伺服MELSERVO",
-    "brand": "mitsubishi"
-  },
-  {
-    "name": "l03084a.pdf",
-    "url": "https://dl.mitsubishielectric.com/dl/fa/document/catalog/servo/l03084/l03084a.pdf",
-    "pdf": "pdfs/mitsubishi/l03084a.pdf",
-    "size": 1580543,
-    "pages": 4,
-    "category": "交流伺服MELSERVO",
-    "brand": "mitsubishi"
-  },
-  {
-    "name": "l03083a.pdf",
-    "url": "https://dl.mitsubishielectric.com/dl/fa/document/catalog/servo/l03083/l03083a.pdf",
-    "pdf": "pdfs/mitsubishi/l03083a.pdf",
-    "size": 1511055,
-    "pages": 4,
-    "category": "交流伺服MELSERVO",
-    "brand": "mitsubishi"
-  },
-  {
-    "name": "l03082a.pdf",
-    "url": "https://dl.mitsubishielectric.com/dl/fa/document/catalog/servo/l03082/l03082a.pdf",
-    "pdf": "pdfs/mitsubishi/l03082a.pdf",
-    "size": 1452022,
-    "pages": 4,
-    "category": "交流伺服MELSERVO",
-    "brand": "mitsubishi"
-  },
-  {
-    "name": "l03076a.pdf",
-    "url": "https://dl.mitsubishielectric.com/dl/fa/document/catalog/servo/l03076/l03076a.pdf",
-    "pdf": "pdfs/mitsubishi/l03076a.pdf",
-    "size": 2685764,
-    "pages": 4,
-    "category": "交流伺服MELSERVO",
-    "brand": "mitsubishi"
-  },
-  {
-    "name": "l03074a.pdf",
-    "url": "https://dl.mitsubishielectric.com/dl/fa/document/catalog/servo/l03074/l03074a.pdf",
-    "pdf": "pdfs/mitsubishi/l03074a.pdf",
-    "size": 1414692,
-    "pages": 4,
-    "category": "交流伺服MELSERVO",
-    "brand": "mitsubishi"
-  },
-  {
-    "name": "l03075a.pdf",
-    "url": "https://dl.mitsubishielectric.com/dl/fa/document/catalog/servo/l03075/l03075a.pdf",
-    "pdf": "pdfs/mitsubishi/l03075a.pdf",
-    "size": 1577627,
-    "pages": 4,
-    "category": "交流伺服MELSERVO",
-    "brand": "mitsubishi"
-  },
-  {
-    "name": "l03073a.pdf",
-    "url": "https://dl.mitsubishielectric.com/dl/fa/document/catalog/servo/l03073/l03073a.pdf",
-    "pdf": "pdfs/mitsubishi/l03073a.pdf",
-    "size": 1434186,
-    "pages": 4,
-    "category": "交流伺服MELSERVO",
-    "brand": "mitsubishi"
-  },
-  {
-    "name": "l03072a.pdf",
-    "url": "https://dl.mitsubishielectric.com/dl/fa/document/catalog/servo/l03072/l03072a.pdf",
-    "pdf": "pdfs/mitsubishi/l03072a.pdf",
-    "size": 1664271,
-    "pages": 4,
-    "category": "交流伺服MELSERVO",
-    "brand": "mitsubishi"
-  },
-  {
-    "name": "l03071a.pdf",
-    "url": "https://dl.mitsubishielectric.com/dl/fa/document/catalog/servo/l03071/l03071a.pdf",
-    "pdf": "pdfs/mitsubishi/l03071a.pdf",
-    "size": 1427298,
-    "pages": 4,
-    "category": "交流伺服MELSERVO",
-    "brand": "mitsubishi"
-  },
-  {
-    "name": "l03201enge.pdf",
-    "url": "https://dl.mitsubishielectric.com/dl/fa/document/catalog/servo/l03201/l03201enge.pdf",
-    "pdf": "pdfs/mitsubishi/l03201enge.pdf",
-    "size": 109484217,
-    "pages": 1100,
-    "category": "交流伺服MELSERVO",
-    "brand": "mitsubishi"
-  },
-  {
-    "name": "l03091a.pdf",
-    "url": "https://dl.mitsubishielectric.com/dl/fa/document/catalog/servo/l03091/l03091a.pdf",
-    "pdf": "pdfs/mitsubishi/l03091a.pdf",
-    "size": 2348016,
-    "pages": 8,
-    "category": "交流伺服MELSERVO",
-    "brand": "mitsubishi"
-  },
-  {
-    "name": "l03093f.pdf",
-    "url": "https://dl.mitsubishielectric.com/dl/fa/document/catalog/servo/l03093/l03093f.pdf",
-    "pdf": "pdfs/mitsubishi/l03093f.pdf",
-    "size": 48229474,
-    "pages": 662,
-    "category": "交流伺服MELSERVO",
-    "brand": "mitsubishi"
-  },
-  {
-    "name": "l03127enge.pdf",
-    "url": "https://dl.mitsubishielectric.com/dl/fa/document/catalog/servo/l03127/l03127enge.pdf",
-    "pdf": "pdfs/mitsubishi/l03127enge.pdf",
-    "size": 18215783,
-    "pages": 816,
-    "category": "交流伺服MELSERVO",
-    "brand": "mitsubishi"
-  },
-  {
-    "name": "l06153engb.pdf",
-    "url": "https://dl.mitsubishielectric.com/dl/fa/document/catalog/inv/l-06153eng/l06153engb.pdf",
-    "pdf": "pdfs/mitsubishi/l06153engb.pdf",
-    "size": 25492849,
-    "pages": 109,
-    "category": "变频器FR-FREQROL",
-    "brand": "mitsubishi"
-  },
-  {
-    "name": "JapaneseVersion",
-    "url": "https://dl.mitsubishielectric.com/dl/fa/document/catalog/inv/l-06152/l06152d.pdf",
-    "pdf": "pdfs/mitsubishi/JapaneseVersion.pdf",
-    "size": 21949510,
-    "pages": 117,
-    "category": "变频器FR-FREQROL",
-    "brand": "mitsubishi"
-  },
-  {
-    "name": "l06151engb.pdf",
-    "url": "https://dl.mitsubishielectric.com/dl/fa/document/catalog/inv/l-06151/l06151engb.pdf",
-    "pdf": "pdfs/mitsubishi/l06151engb.pdf",
-    "size": 14966658,
-    "pages": 71,
-    "category": "变频器FR-FREQROL",
-    "brand": "mitsubishi"
-  },
-  {
-    "name": "JapaneseVersion",
-    "url": "https://dl.mitsubishielectric.com/dl/fa/document/catalog/inv/l-06150/l06150c.pdf",
-    "pdf": "pdfs/mitsubishi/JapaneseVersion.pdf",
-    "size": 21949510,
-    "pages": 117,
-    "category": "变频器FR-FREQROL",
-    "brand": "mitsubishi"
-  },
-  {
-    "name": "l06131engd.pdf",
-    "url": "https://dl.mitsubishielectric.com/dl/fa/document/catalog/inv/l-06131eng/l06131engd.pdf",
-    "pdf": "pdfs/mitsubishi/l06131engd.pdf",
-    "size": 27005331,
-    "pages": 156,
-    "category": "变频器FR-FREQROL",
-    "brand": "mitsubishi"
-  },
-  {
-    "name": "l06036k.pdf",
-    "url": "https://dl.mitsubishielectric.com/dl/fa/document/catalog/inv/l06036/l06036k.pdf",
-    "pdf": "pdfs/mitsubishi/l06036k.pdf",
-    "size": 12029212,
-    "pages": 43,
-    "category": "变频器FR-FREQROL",
-    "brand": "mitsubishi"
-  },
-  {
-    "name": "l06054engg.pdf",
-    "url": "https://dl.mitsubishielectric.com/dl/fa/document/catalog/inv/l06054eng/l06054engg.pdf",
-    "pdf": "pdfs/mitsubishi/l06054engg.pdf",
-    "size": 5715821,
-    "pages": 80,
-    "category": "变频器FR-FREQROL",
-    "brand": "mitsubishi"
-  },
-  {
-    "name": "l06075engj.pdf",
-    "url": "https://dl.mitsubishielectric.com/dl/fa/document/catalog/inv/l06075eng/l06075engj.pdf",
-    "pdf": "pdfs/mitsubishi/l06075engj.pdf",
-    "size": 27975776,
-    "pages": 222,
-    "category": "变频器FR-FREQROL",
-    "brand": "mitsubishi"
-  },
-  {
-    "name": "l06110engc.pdf",
-    "url": "https://dl.mitsubishielectric.com/dl/fa/document/catalog/inv/l06110eng/l06110engc.pdf",
-    "pdf": "pdfs/mitsubishi/l06110engc.pdf",
-    "size": 7112349,
-    "pages": 32,
-    "category": "变频器FR-FREQROL",
-    "brand": "mitsubishi"
-  },
-  {
-    "name": "l06086enga.pdf",
-    "url": "https://dl.mitsubishielectric.com/dl/fa/document/catalog/inv/l06086eng/l06086enga.pdf",
-    "pdf": "pdfs/mitsubishi/l06086enga.pdf",
-    "size": 2563504,
-    "pages": 36,
-    "category": "变频器FR-FREQROL",
-    "brand": "mitsubishi"
-  },
-  {
-    "name": "l06098engc.pdf",
-    "url": "https://dl.mitsubishielectric.com/dl/fa/document/catalog/inv/l06098eng/l06098engc.pdf",
-    "pdf": "pdfs/mitsubishi/l06098engc.pdf",
-    "size": 4525042,
-    "pages": 28,
-    "category": "变频器FR-FREQROL",
-    "brand": "mitsubishi"
-  },
-  {
-    "name": "l06101engc.pdf",
-    "url": "https://dl.mitsubishielectric.com/dl/fa/document/catalog/inv/l06101eng/l06101engc.pdf",
-    "pdf": "pdfs/mitsubishi/l06101engc.pdf",
-    "size": 6062140,
-    "pages": 40,
-    "category": "变频器FR-FREQROL",
-    "brand": "mitsubishi"
-  },
-  {
-    "name": "l06085enge.pdf",
-    "url": "https://dl.mitsubishielectric.com/dl/fa/document/catalog/inv/l06085eng/l06085enge.pdf",
-    "pdf": "pdfs/mitsubishi/l06085enge.pdf",
-    "size": 17956747,
-    "pages": 150,
-    "category": "变频器FR-FREQROL",
-    "brand": "mitsubishi"
-  },
-  {
-    "name": "l06105engd.pdf",
-    "url": "https://dl.mitsubishielectric.com/dl/fa/document/catalog/inv/l06105eng/l06105engd.pdf",
-    "pdf": "pdfs/mitsubishi/l06105engd.pdf",
-    "size": 15156545,
-    "pages": 32,
-    "category": "变频器FR-FREQROL",
-    "brand": "mitsubishi"
-  },
-  {
-    "name": "l06051engg.pdf",
-    "url": "https://dl.mitsubishielectric.com/dl/fa/document/catalog/inv/l06051eng/l06051engg.pdf",
-    "pdf": "pdfs/mitsubishi/l06051engg.pdf",
-    "size": 10004836,
-    "pages": 104,
-    "category": "变频器FR-FREQROL",
-    "brand": "mitsubishi"
-  },
-  {
-    "name": "l06073engc.pdf",
-    "url": "https://dl.mitsubishielectric.com/dl/fa/document/catalog/inv/l06073eng/l06073engc.pdf",
-    "pdf": "pdfs/mitsubishi/l06073engc.pdf",
-    "size": 13574377,
-    "pages": 96,
-    "category": "变频器FR-FREQROL",
-    "brand": "mitsubishi"
-  },
-  {
-    "name": "l06113enga.pdf",
-    "url": "https://dl.mitsubishielectric.com/dl/fa/document/catalog/inv/l06113eng/l06113enga.pdf",
-    "pdf": "pdfs/mitsubishi/l06113enga.pdf",
-    "size": 10337924,
-    "pages": 40,
-    "category": "变频器FR-FREQROL",
-    "brand": "mitsubishi"
-  },
-  {
-    "name": "l06055engh.pdf",
-    "url": "https://dl.mitsubishielectric.com/dl/fa/document/catalog/inv/l06055eng/l06055engh.pdf",
-    "pdf": "pdfs/mitsubishi/l06055engh.pdf",
-    "size": 5296619,
-    "pages": 44,
-    "category": "变频器FR-FREQROL",
-    "brand": "mitsubishi"
-  },
-  {
-    "name": "l06057engb.pdf",
-    "url": "https://dl.mitsubishielectric.com/dl/fa/document/catalog/inv/l06057eng/l06057engb.pdf",
-    "pdf": "pdfs/mitsubishi/l06057engb.pdf",
-    "size": 1800885,
-    "pages": 39,
-    "category": "变频器FR-FREQROL",
-    "brand": "mitsubishi"
-  },
-  {
-    "name": "l06116enge.pdf",
-    "url": "https://dl.mitsubishielectric.com/dl/fa/document/catalog/inv/l-06116eng/l06116enge.pdf",
-    "pdf": "pdfs/mitsubishi/l06116enge.pdf",
-    "size": 9039987,
-    "pages": 84,
-    "category": "变频器FR-FREQROL",
-    "brand": "mitsubishi"
-  },
-  {
-    "name": "l06070enge.pdf",
-    "url": "https://dl.mitsubishielectric.com/dl/fa/document/catalog/inv/l06070eng/l06070enge.pdf",
-    "pdf": "pdfs/mitsubishi/l06070enge.pdf",
-    "size": 4731203,
-    "pages": 40,
-    "category": "变频器FR-FREQROL",
-    "brand": "mitsubishi"
-  },
-  {
-    "name": "l06096engd.pdf",
-    "url": "https://dl.mitsubishielectric.com/dl/fa/document/catalog/inv/l06096eng/l06096engd.pdf",
-    "pdf": "pdfs/mitsubishi/l06096engd.pdf",
-    "size": 3939499,
-    "pages": 20,
-    "category": "变频器FR-FREQROL",
-    "brand": "mitsubishi"
-  },
-  {
-    "name": "l06127engd.pdf",
-    "url": "https://dl.mitsubishielectric.com/dl/fa/document/catalog/inv/l-06127eng-d/l06127engd.pdf",
-    "pdf": "pdfs/mitsubishi/l06127engd.pdf",
-    "size": 980712,
-    "pages": 4,
-    "category": "变频器FR-FREQROL",
-    "brand": "mitsubishi"
-  },
-  {
-    "name": "l06162enga.pdf",
-    "url": "https://dl.mitsubishielectric.com/dl/fa/document/catalog/inv/l-06162eng/l06162enga.pdf",
-    "pdf": "pdfs/mitsubishi/l06162enga.pdf",
-    "size": 7234417,
-    "pages": 24,
-    "category": "变频器FR-FREQROL",
-    "brand": "mitsubishi"
-  },
-  {
-    "name": "l06137enga.pdf",
-    "url": "https://dl.mitsubishielectric.com/dl/fa/document/catalog/inv/l-06137eng/l06137enga.pdf",
-    "pdf": "pdfs/mitsubishi/l06137enga.pdf",
-    "size": 985481,
-    "pages": 2,
-    "category": "变频器FR-FREQROL",
-    "brand": "mitsubishi"
-  },
-  {
-    "name": "l06138enga.pdf",
-    "url": "https://dl.mitsubishielectric.com/dl/fa/document/catalog/inv/l-06138eng/l06138enga.pdf",
-    "pdf": "pdfs/mitsubishi/l06138enga.pdf",
-    "size": 847300,
-    "pages": 2,
-    "category": "变频器FR-FREQROL",
-    "brand": "mitsubishi"
-  },
-  {
-    "name": "l06139enga.pdf",
-    "url": "https://dl.mitsubishielectric.com/dl/fa/document/catalog/inv/l-06139eng/l06139enga.pdf",
-    "pdf": "pdfs/mitsubishi/l06139enga.pdf",
-    "size": 527992,
-    "pages": 2,
-    "category": "变频器FR-FREQROL",
-    "brand": "mitsubishi"
-  },
-  {
-    "name": "l06141enga.pdf",
-    "url": "https://dl.mitsubishielectric.com/dl/fa/document/catalog/inv/l-06141eng/l06141enga.pdf",
-    "pdf": "pdfs/mitsubishi/l06141enga.pdf",
-    "size": 270120,
-    "pages": 2,
-    "category": "变频器FR-FREQROL",
-    "brand": "mitsubishi"
-  },
-  {
-    "name": "l06144enga.pdf",
-    "url": "https://dl.mitsubishielectric.com/dl/fa/document/catalog/inv/l06144eng/l06144enga.pdf",
-    "pdf": "pdfs/mitsubishi/l06144enga.pdf",
-    "size": 336051,
-    "pages": 2,
-    "category": "变频器FR-FREQROL",
-    "brand": "mitsubishi"
-  },
-  {
-    "name": "l09091q.pdf",
-    "url": "https://dl.mitsubishielectric.com/dl/fa/document/catalog/robot/l-09091eng/l09091q.pdf",
-    "pdf": "pdfs/mitsubishi/l09091q.pdf",
-    "size": 38889920,
-    "pages": 94,
-    "category": "工业机器人MELFA",
-    "brand": "mitsubishi"
-  },
-  {
-    "name": "l09148a.pdf",
-    "url": "https://dl.mitsubishielectric.com/dl/fa/document/catalog/robot/l-09148eng/l09148a.pdf",
-    "pdf": "pdfs/mitsubishi/l09148a.pdf",
-    "size": 745485,
-    "pages": 2,
-    "category": "工业机器人MELFA",
-    "brand": "mitsubishi"
-  },
-  {
-    "name": "l09123c.pdf",
-    "url": "https://dl.mitsubishielectric.com/dl/fa/document/catalog/robot/l-09123eng/l09123c.pdf",
-    "pdf": "pdfs/mitsubishi/l09123c.pdf",
-    "size": 15939726,
-    "pages": 24,
-    "category": "工业机器人MELFA",
-    "brand": "mitsubishi"
-  },
-  {
-    "name": "l09104e.pdf",
-    "url": "https://dl.mitsubishielectric.com/dl/fa/document/catalog/robot/l-09104eng/l09104e.pdf",
-    "pdf": "pdfs/mitsubishi/l09104e.pdf",
-    "size": 18697547,
-    "pages": 20,
-    "category": "工业机器人MELFA",
-    "brand": "mitsubishi"
-  },
-  {
-    "name": "l09139n.pdf",
-    "url": "https://dl.mitsubishielectric.com/dl/fa/document/catalog/robot/l-09139eng/l09139n.pdf",
-    "pdf": "pdfs/mitsubishi/l09139n.pdf",
-    "size": 4134233,
-    "pages": 8,
-    "category": "工业机器人MELFA",
-    "brand": "mitsubishi"
-  },
-  {
-    "name": "l09150a.pdf",
-    "url": "https://dl.mitsubishielectric.com/dl/fa/document/catalog/robot/l-09150eng/l09150a.pdf",
-    "pdf": "pdfs/mitsubishi/l09150a.pdf",
-    "size": 1226278,
-    "pages": 2,
-    "category": "工业机器人MELFA",
-    "brand": "mitsubishi"
-  },
-  {
-    "name": "l09116c.pdf",
-    "url": "https://dl.mitsubishielectric.com/dl/fa/document/catalog/robot/l-09116eng/l09116c.pdf",
-    "pdf": "pdfs/mitsubishi/l09116c.pdf",
-    "size": 1684401,
-    "pages": 4,
-    "category": "工业机器人MELFA",
-    "brand": "mitsubishi"
-  },
-  {
-    "name": "l09100e.pdf",
-    "url": "https://dl.mitsubishielectric.com/dl/fa/document/catalog/robot/l-09100eng/l09100e.pdf",
-    "pdf": "pdfs/mitsubishi/l09100e.pdf",
-    "size": 11074380,
-    "pages": 24,
-    "category": "工业机器人MELFA",
-    "brand": "mitsubishi"
-  },
-  {
-    "name": "l09111d.pdf",
-    "url": "https://dl.mitsubishielectric.com/dl/fa/document/catalog/robot/l-09111eng/l09111d.pdf",
-    "pdf": "pdfs/mitsubishi/l09111d.pdf",
-    "size": 1223225,
-    "pages": 2,
-    "category": "工业机器人MELFA",
-    "brand": "mitsubishi"
-  },
-  {
-    "name": "l09110e.pdf",
-    "url": "https://dl.mitsubishielectric.com/dl/fa/document/catalog/robot/l-09110eng/l09110e.pdf",
-    "pdf": "pdfs/mitsubishi/l09110e.pdf",
-    "size": 1406103,
-    "pages": 4,
-    "category": "工业机器人MELFA",
-    "brand": "mitsubishi"
-  },
-  {
-    "name": "l09068b.pdf",
-    "url": "https://dl.mitsubishielectric.com/dl/fa/document/catalog/robot/l-09068eng/l09068b.pdf",
-    "pdf": "pdfs/mitsubishi/l09068b.pdf",
-    "size": 8413533,
-    "pages": 48,
-    "category": "工业机器人MELFA",
-    "brand": "mitsubishi"
-  },
-  {
-    "name": "l09117d.pdf",
-    "url": "https://dl.mitsubishielectric.com/dl/fa/document/catalog/robot/l-09117eng/l09117d.pdf",
-    "pdf": "pdfs/mitsubishi/l09117d.pdf",
-    "size": 7167808,
-    "pages": 28,
-    "category": "工业机器人MELFA",
-    "brand": "mitsubishi"
-  },
-  {
-    "name": "l09067h.pdf",
-    "url": "https://dl.mitsubishielectric.com/dl/fa/document/catalog/robot/l-09067eng/l09067h.pdf",
-    "pdf": "pdfs/mitsubishi/l09067h.pdf",
-    "size": 58058377,
-    "pages": 56,
-    "category": "工业机器人MELFA",
-    "brand": "mitsubishi"
-  },
-  {
-    "name": "l03118enge.pdf",
-    "url": "https://dl.mitsubishielectric.com/dl/fa/document/catalog/ssc/l03118/l03118enge.pdf",
-    "pdf": "pdfs/mitsubishi/l03118enge.pdf",
-    "size": 46467425,
-    "pages": 68,
-    "category": "运动控制器",
-    "brand": "mitsubishi"
-  },
-  {
-    "name": "l03100engf.pdf",
-    "url": "https://dl.mitsubishielectric.com/dl/fa/document/catalog/ssc/l03100/l03100engf.pdf",
-    "pdf": "pdfs/mitsubishi/l03100engf.pdf",
-    "size": 64019806,
-    "pages": 124,
-    "category": "运动控制器",
-    "brand": "mitsubishi"
-  },
-  {
-    "name": "l03115engc.pdf",
-    "url": "https://dl.mitsubishielectric.com/dl/fa/document/catalog/ssc/l03115/l03115engc.pdf",
-    "pdf": "pdfs/mitsubishi/l03115engc.pdf",
-    "size": 3655465,
-    "pages": 16,
-    "category": "运动控制器",
-    "brand": "mitsubishi"
-  },
-  {
-    "name": "l03145a.pdf",
-    "url": "https://dl.mitsubishielectric.com/dl/fa/document/catalog/ssc/l03145/l03145a.pdf",
-    "pdf": "pdfs/mitsubishi/l03145a.pdf",
-    "size": 8887160,
-    "pages": 32,
-    "category": "运动控制器",
-    "brand": "mitsubishi"
-  },
-  {
-    "name": "l03062j.pdf",
-    "url": "https://dl.mitsubishielectric.com/dl/fa/document/catalog/ssc/l03062/l03062j.pdf",
-    "pdf": "pdfs/mitsubishi/l03062j.pdf",
-    "size": 27258888,
-    "pages": 80,
-    "category": "运动控制器",
-    "brand": "mitsubishi"
-  },
-  {
-    "name": "l03103a.pdf",
-    "url": "https://dl.mitsubishielectric.com/dl/fa/document/catalog/ssc/l03103/l03103a.pdf",
-    "pdf": "pdfs/mitsubishi/l03103a.pdf",
-    "size": 25662218,
-    "pages": 68,
-    "category": "运动控制器",
-    "brand": "mitsubishi"
-  },
-  {
-    "name": "l03097f.pdf",
-    "url": "https://dl.mitsubishielectric.com/dl/fa/document/catalog/ssc/l03097/l03097f.pdf",
-    "pdf": "pdfs/mitsubishi/l03097f.pdf",
-    "size": 10897579,
-    "pages": 36,
-    "category": "运动控制器",
-    "brand": "mitsubishi"
-  },
-  {
-    "name": "q170mcpu.pdf",
-    "url": "https://dl.mitsubishielectric.com/dl/fa/document/catalog/ssc/l03050/q170mcpu.pdf",
-    "pdf": "pdfs/mitsubishi/q170mcpu.pdf",
-    "size": 2537361,
-    "pages": 9,
-    "category": "运动控制器",
-    "brand": "mitsubishi"
-  },
-  {
-    "name": "l03214enga.pdf",
-    "url": "https://dl.mitsubishielectric.com/dl/fa/document/catalog/ssc/l03214/l03214enga.pdf",
-    "pdf": "pdfs/mitsubishi/l03214enga.pdf",
-    "size": 2313312,
-    "pages": 4,
-    "category": "运动控制器",
-    "brand": "mitsubishi"
-  },
-  {
-    "name": "l03198enga.pdf",
-    "url": "https://dl.mitsubishielectric.com/dl/fa/document/catalog/ssc/l03198eng/l03198enga.pdf",
-    "pdf": "pdfs/mitsubishi/l03198enga.pdf",
-    "size": 19545580,
-    "pages": 28,
-    "category": "运动控制器",
-    "brand": "mitsubishi"
-  },
-  {
-    "name": "l03137enge.pdf",
-    "url": "https://dl.mitsubishielectric.com/dl/fa/document/catalog/ssc/l03137/l03137enge.pdf",
-    "pdf": "pdfs/mitsubishi/l03137enge.pdf",
-    "size": 2832700,
-    "pages": 2,
-    "category": "运动控制器",
-    "brand": "mitsubishi"
-  },
-  {
-    "name": "l03161engb.pdf",
-    "url": "https://dl.mitsubishielectric.com/dl/fa/document/catalog/ssc/l03161/l03161engb.pdf",
-    "pdf": "pdfs/mitsubishi/l03161engb.pdf",
-    "size": 1130104,
-    "pages": 2,
-    "category": "运动控制器",
-    "brand": "mitsubishi"
-  },
-  {
-    "name": "l03148engc.pdf",
-    "url": "https://dl.mitsubishielectric.com/dl/fa/document/catalog/ssc/l03148/l03148engc.pdf",
-    "pdf": "pdfs/mitsubishi/l03148engc.pdf",
-    "size": 1237093,
-    "pages": 2,
-    "category": "运动控制器",
-    "brand": "mitsubishi"
-  },
-  {
-    "name": "l03228enga.pdf",
-    "url": "https://dl.mitsubishielectric.com/dl/fa/document/catalog/ssc/l03228eng/l03228enga.pdf",
-    "pdf": "pdfs/mitsubishi/l03228enga.pdf",
-    "size": 20321396,
-    "pages": 108,
-    "category": "运动控制器",
-    "brand": "mitsubishi"
-  },
-  {
-    "name": "l03212enga.pdf",
-    "url": "https://dl.mitsubishielectric.com/dl/fa/document/catalog/ssc/l03212eng/l03212enga.pdf",
-    "pdf": "pdfs/mitsubishi/l03212enga.pdf",
-    "size": 11691337,
-    "pages": 94,
-    "category": "运动控制器",
-    "brand": "mitsubishi"
-  },
-  {
-    "name": "l03196enga.pdf",
-    "url": "https://dl.mitsubishielectric.com/dl/fa/document/catalog/ssc/l03196eng/l03196enga.pdf",
-    "pdf": "pdfs/mitsubishi/l03196enga.pdf",
-    "size": 7491031,
-    "pages": 54,
-    "category": "运动控制器",
-    "brand": "mitsubishi"
-  },
-  {
-    "name": "l03156a.pdf",
-    "url": "https://dl.mitsubishielectric.com/dl/fa/document/catalog/ssc/l03156/l03156a.pdf",
-    "pdf": "pdfs/mitsubishi/l03156a.pdf",
-    "size": 5272920,
-    "pages": 84,
-    "category": "运动控制器",
-    "brand": "mitsubishi"
-  },
-  {
-    "name": "l03157a.pdf",
-    "url": "https://dl.mitsubishielectric.com/dl/fa/document/catalog/ssc/l03157/l03157a.pdf",
-    "pdf": "pdfs/mitsubishi/l03157a.pdf",
-    "size": 5860196,
-    "pages": 82,
-    "category": "运动控制器",
-    "brand": "mitsubishi"
-  },
-  {
-    "name": "l03158a.pdf",
-    "url": "https://dl.mitsubishielectric.com/dl/fa/document/catalog/ssc/l03158/l03158a.pdf",
-    "pdf": "pdfs/mitsubishi/l03158a.pdf",
-    "size": 5960015,
-    "pages": 104,
-    "category": "运动控制器",
-    "brand": "mitsubishi"
-  },
-  {
-    "name": "l03170enga.pdf",
-    "url": "https://dl.mitsubishielectric.com/dl/fa/document/catalog/ssc/l03170eng/l03170enga.pdf",
-    "pdf": "pdfs/mitsubishi/l03170enga.pdf",
-    "size": 4145695,
-    "pages": 64,
-    "category": "运动控制器",
-    "brand": "mitsubishi"
-  },
-  {
-    "name": "l03189enga.pdf",
-    "url": "https://dl.mitsubishielectric.com/dl/fa/document/catalog/ssc/l03189eng/l03189enga.pdf",
-    "pdf": "pdfs/mitsubishi/l03189enga.pdf",
-    "size": 4547811,
-    "pages": 52,
-    "category": "运动控制器",
-    "brand": "mitsubishi"
-  },
-  {
-    "name": "l03184enga.pdf",
-    "url": "https://dl.mitsubishielectric.com/dl/fa/document/catalog/ssc/l03184eng/l03184enga.pdf",
-    "pdf": "pdfs/mitsubishi/l03184enga.pdf",
-    "size": 4260284,
-    "pages": 72,
-    "category": "运动控制器",
-    "brand": "mitsubishi"
-  },
-  {
-    "name": "l03121enga.pdf",
-    "url": "https://dl.mitsubishielectric.com/dl/fa/document/catalog/ssc/l03121eng/l03121enga.pdf",
-    "pdf": "pdfs/mitsubishi/l03121enga.pdf",
-    "size": 5017580,
-    "pages": 70,
-    "category": "运动控制器",
-    "brand": "mitsubishi"
-  },
-  {
-    "name": "l03122enga.pdf",
-    "url": "https://dl.mitsubishielectric.com/dl/fa/document/catalog/ssc/l03122eng/l03122enga.pdf",
-    "pdf": "pdfs/mitsubishi/l03122enga.pdf",
-    "size": 4677114,
-    "pages": 108,
-    "category": "运动控制器",
-    "brand": "mitsubishi"
-  },
-  {
-    "name": "l03165enga.pdf",
-    "url": "https://dl.mitsubishielectric.com/dl/fa/document/catalog/ssc/l03165eng/l03165enga.pdf",
-    "pdf": "pdfs/mitsubishi/l03165enga.pdf",
-    "size": 3506269,
-    "pages": 64,
-    "category": "运动控制器",
-    "brand": "mitsubishi"
-  },
-  {
-    "name": "l03123a.pdf",
-    "url": "https://dl.mitsubishielectric.com/dl/fa/document/catalog/ssc/l03123/l03123a.pdf",
-    "pdf": "pdfs/mitsubishi/l03123a.pdf",
-    "size": 2221245,
-    "pages": 52,
-    "category": "运动控制器",
-    "brand": "mitsubishi"
-  },
-  {
-    "name": "l03104c.pdf",
-    "url": "https://dl.mitsubishielectric.com/dl/fa/document/catalog/ssc/l03104/l03104c.pdf",
-    "pdf": "pdfs/mitsubishi/l03104c.pdf",
-    "size": 3673293,
-    "pages": 202,
-    "category": "运动控制器",
-    "brand": "mitsubishi"
-  },
-  {
-    "name": "l03191engb.pdf",
-    "url": "https://dl.mitsubishielectric.com/dl/fa/document/catalog/ssc/l03191eng/l03191engb.pdf",
-    "pdf": "pdfs/mitsubishi/l03191engb.pdf",
-    "size": 49135389,
-    "pages": 218,
-    "category": "运动控制器",
-    "brand": "mitsubishi"
-  },
-  {
-    "name": "l03194enga.pdf",
-    "url": "https://dl.mitsubishielectric.com/dl/fa/document/catalog/ssc/l03194eng/l03194enga.pdf",
-    "pdf": "pdfs/mitsubishi/l03194enga.pdf",
-    "size": 15891023,
-    "pages": 172,
-    "category": "运动控制器",
-    "brand": "mitsubishi"
-  },
-  {
-    "name": "l03119engb.pdf",
-    "url": "https://dl.mitsubishielectric.com/dl/fa/document/catalog/ssc/l03119eng/l03119engb.pdf",
-    "pdf": "pdfs/mitsubishi/l03119engb.pdf",
-    "size": 17299483,
-    "pages": 84,
-    "category": "运动控制器",
-    "brand": "mitsubishi"
-  },
-  {
-    "name": "l08658engf.pdf",
-    "url": "https://dl.mitsubishielectric.com/dl/fa/document/catalog/plcnet/l08658eng/l08658engf.pdf",
-    "pdf": "pdfs/mitsubishi/l08658engf.pdf",
-    "size": 16480039,
-    "pages": 16,
-    "category": "网络相关产品",
-    "brand": "mitsubishi"
-  },
-  {
-    "name": "l08656engk.pdf",
-    "url": "https://dl.mitsubishielectric.com/dl/fa/document/catalog/plcnet/l08656eng/l08656engk.pdf",
-    "pdf": "pdfs/mitsubishi/l08656engk.pdf",
-    "size": 20884460,
-    "pages": 56,
-    "category": "网络相关产品",
-    "brand": "mitsubishi"
-  },
-  {
-    "name": "l08111ev.pdf",
-    "url": "https://dl.mitsubishielectric.com/dl/fa/document/catalog/plcnet/l08111e/l08111ev.pdf",
-    "pdf": "pdfs/mitsubishi/l08111ev.pdf",
-    "size": 63754378,
-    "pages": 84,
-    "category": "网络相关产品",
-    "brand": "mitsubishi"
-  },
-  {
-    "name": "l08038ep.pdf",
-    "url": "https://dl.mitsubishielectric.com/dl/fa/document/catalog/plcnet/l08038e/l08038ep.pdf",
-    "pdf": "pdfs/mitsubishi/l08038ep.pdf",
-    "size": 17231952,
-    "pages": 44,
-    "category": "网络相关产品",
-    "brand": "mitsubishi"
-  },
-  {
     "name": "l08591engh.pdf",
-    "url": "https://dl.mitsubishielectric.com/dl/fa/document/catalog/sensor/l08591eng/l08591engh.pdf",
+    "url": "https://www.mitsubishielectric.com/dl/fa/document/catalog/sensor/l08591eng/l08591engh.pdf",
     "pdf": "pdfs/mitsubishi/l08591engh.pdf",
     "size": 8254901,
     "pages": 36,
@@ -3817,7 +2512,7 @@
   },
   {
     "name": "l08691engd.pdf",
-    "url": "https://dl.mitsubishielectric.com/dl/fa/document/catalog/sensor/l08691eng/l08691engd.pdf",
+    "url": "https://www.mitsubishielectric.com/dl/fa/document/catalog/sensor/l08691eng/l08691engd.pdf",
     "pdf": "pdfs/mitsubishi/l08691engd.pdf",
     "size": 8226108,
     "pages": 28,
@@ -3825,8 +2520,1313 @@
     "brand": "mitsubishi"
   },
   {
+    "name": "l03179engl.pdf",
+    "url": "https://www.mitsubishielectric.com/dl/fa/document/catalog/servo/l03179eng/l03179engl.pdf",
+    "pdf": "pdfs/mitsubishi/l03179engl.pdf",
+    "size": 112750931,
+    "pages": 616,
+    "category": "交流伺服MELSERVO",
+    "brand": "mitsubishi"
+  },
+  {
+    "name": "l03118enge.pdf",
+    "url": "https://www.mitsubishielectric.com/dl/fa/document/catalog/ssc/l03118/l03118enge.pdf",
+    "pdf": "pdfs/mitsubishi/l03118enge.pdf",
+    "size": 46467425,
+    "pages": 68,
+    "category": "运动控制器",
+    "brand": "mitsubishi"
+  },
+  {
+    "name": "l03100engf.pdf",
+    "url": "https://www.mitsubishielectric.com/dl/fa/document/catalog/ssc/l03100/l03100engf.pdf",
+    "pdf": "pdfs/mitsubishi/l03100engf.pdf",
+    "size": 64019806,
+    "pages": 124,
+    "category": "运动控制器",
+    "brand": "mitsubishi"
+  },
+  {
+    "name": "l03115engc.pdf",
+    "url": "https://www.mitsubishielectric.com/dl/fa/document/catalog/ssc/l03115/l03115engc.pdf",
+    "pdf": "pdfs/mitsubishi/l03115engc.pdf",
+    "size": 3655465,
+    "pages": 16,
+    "category": "运动控制器",
+    "brand": "mitsubishi"
+  },
+  {
+    "name": "l03145a.pdf",
+    "url": "https://www.mitsubishielectric.com/dl/fa/document/catalog/ssc/l03145/l03145a.pdf",
+    "pdf": "pdfs/mitsubishi/l03145a.pdf",
+    "size": 8887160,
+    "pages": 32,
+    "category": "运动控制器",
+    "brand": "mitsubishi"
+  },
+  {
+    "name": "l03103a.pdf",
+    "url": "https://www.mitsubishielectric.com/dl/fa/document/catalog/ssc/l03103/l03103a.pdf",
+    "pdf": "pdfs/mitsubishi/l03103a.pdf",
+    "size": 25662218,
+    "pages": 68,
+    "category": "运动控制器",
+    "brand": "mitsubishi"
+  },
+  {
+    "name": "l03097f.pdf",
+    "url": "https://www.mitsubishielectric.com/dl/fa/document/catalog/ssc/l03097/l03097f.pdf",
+    "pdf": "pdfs/mitsubishi/l03097f.pdf",
+    "size": 10897579,
+    "pages": 36,
+    "category": "运动控制器",
+    "brand": "mitsubishi"
+  },
+  {
+    "name": "l03062j.pdf",
+    "url": "https://www.mitsubishielectric.com/dl/fa/document/catalog/ssc/l03062/l03062j.pdf",
+    "pdf": "pdfs/mitsubishi/l03062j.pdf",
+    "size": 27258888,
+    "pages": 80,
+    "category": "运动控制器",
+    "brand": "mitsubishi"
+  },
+  {
+    "name": "q170mcpu.pdf",
+    "url": "https://www.mitsubishielectric.com/dl/fa/document/catalog/ssc/l03050/q170mcpu.pdf",
+    "pdf": "pdfs/mitsubishi/q170mcpu.pdf",
+    "size": 2537361,
+    "pages": 9,
+    "category": "运动控制器",
+    "brand": "mitsubishi"
+  },
+  {
+    "name": "l03198enga.pdf",
+    "url": "https://www.mitsubishielectric.com/dl/fa/document/catalog/ssc/l03198eng/l03198enga.pdf",
+    "pdf": "pdfs/mitsubishi/l03198enga.pdf",
+    "size": 19545580,
+    "pages": 28,
+    "category": "运动控制器",
+    "brand": "mitsubishi"
+  },
+  {
+    "name": "l03214enga.pdf",
+    "url": "https://www.mitsubishielectric.com/dl/fa/document/catalog/ssc/l03214/l03214enga.pdf",
+    "pdf": "pdfs/mitsubishi/l03214enga.pdf",
+    "size": 2313312,
+    "pages": 4,
+    "category": "运动控制器",
+    "brand": "mitsubishi"
+  },
+  {
+    "name": "l03137enge.pdf",
+    "url": "https://www.mitsubishielectric.com/dl/fa/document/catalog/ssc/l03137/l03137enge.pdf",
+    "pdf": "pdfs/mitsubishi/l03137enge.pdf",
+    "size": 2832700,
+    "pages": 2,
+    "category": "运动控制器",
+    "brand": "mitsubishi"
+  },
+  {
+    "name": "l03161engb.pdf",
+    "url": "https://www.mitsubishielectric.com/dl/fa/document/catalog/ssc/l03161/l03161engb.pdf",
+    "pdf": "pdfs/mitsubishi/l03161engb.pdf",
+    "size": 1130104,
+    "pages": 2,
+    "category": "运动控制器",
+    "brand": "mitsubishi"
+  },
+  {
+    "name": "l03135a.pdf",
+    "url": "https://www.mitsubishielectric.com/dl/fa/document/catalog/servo/l03135/l03135a.pdf",
+    "pdf": "pdfs/mitsubishi/l03135a.pdf",
+    "size": 1658368,
+    "pages": 4,
+    "category": "交流伺服MELSERVO",
+    "brand": "mitsubishi"
+  },
+  {
+    "name": "l03148engc.pdf",
+    "url": "https://www.mitsubishielectric.com/dl/fa/document/catalog/ssc/l03148/l03148engc.pdf",
+    "pdf": "pdfs/mitsubishi/l03148engc.pdf",
+    "size": 1237093,
+    "pages": 2,
+    "category": "运动控制器",
+    "brand": "mitsubishi"
+  },
+  {
+    "name": "l03143a.pdf",
+    "url": "https://www.mitsubishielectric.com/dl/fa/document/catalog/servo/l03143/l03143a.pdf",
+    "pdf": "pdfs/mitsubishi/l03143a.pdf",
+    "size": 2022021,
+    "pages": 4,
+    "category": "交流伺服MELSERVO",
+    "brand": "mitsubishi"
+  },
+  {
+    "name": "l03106a.pdf",
+    "url": "https://www.mitsubishielectric.com/dl/fa/document/catalog/servo/l03106/l03106a.pdf",
+    "pdf": "pdfs/mitsubishi/l03106a.pdf",
+    "size": 1821959,
+    "pages": 4,
+    "category": "交流伺服MELSERVO",
+    "brand": "mitsubishi"
+  },
+  {
+    "name": "l03084a.pdf",
+    "url": "https://www.mitsubishielectric.com/dl/fa/document/catalog/servo/l03084/l03084a.pdf",
+    "pdf": "pdfs/mitsubishi/l03084a.pdf",
+    "size": 1580543,
+    "pages": 4,
+    "category": "交流伺服MELSERVO",
+    "brand": "mitsubishi"
+  },
+  {
+    "name": "l03085a.pdf",
+    "url": "https://www.mitsubishielectric.com/dl/fa/document/catalog/servo/l03085/l03085a.pdf",
+    "pdf": "pdfs/mitsubishi/l03085a.pdf",
+    "size": 1557688,
+    "pages": 4,
+    "category": "交流伺服MELSERVO",
+    "brand": "mitsubishi"
+  },
+  {
+    "name": "l03083a.pdf",
+    "url": "https://www.mitsubishielectric.com/dl/fa/document/catalog/servo/l03083/l03083a.pdf",
+    "pdf": "pdfs/mitsubishi/l03083a.pdf",
+    "size": 1511055,
+    "pages": 4,
+    "category": "交流伺服MELSERVO",
+    "brand": "mitsubishi"
+  },
+  {
+    "name": "l03082a.pdf",
+    "url": "https://www.mitsubishielectric.com/dl/fa/document/catalog/servo/l03082/l03082a.pdf",
+    "pdf": "pdfs/mitsubishi/l03082a.pdf",
+    "size": 1452022,
+    "pages": 4,
+    "category": "交流伺服MELSERVO",
+    "brand": "mitsubishi"
+  },
+  {
+    "name": "l03076a.pdf",
+    "url": "https://www.mitsubishielectric.com/dl/fa/document/catalog/servo/l03076/l03076a.pdf",
+    "pdf": "pdfs/mitsubishi/l03076a.pdf",
+    "size": 2685764,
+    "pages": 4,
+    "category": "交流伺服MELSERVO",
+    "brand": "mitsubishi"
+  },
+  {
+    "name": "l03074a.pdf",
+    "url": "https://www.mitsubishielectric.com/dl/fa/document/catalog/servo/l03074/l03074a.pdf",
+    "pdf": "pdfs/mitsubishi/l03074a.pdf",
+    "size": 1414692,
+    "pages": 4,
+    "category": "交流伺服MELSERVO",
+    "brand": "mitsubishi"
+  },
+  {
+    "name": "l03075a.pdf",
+    "url": "https://www.mitsubishielectric.com/dl/fa/document/catalog/servo/l03075/l03075a.pdf",
+    "pdf": "pdfs/mitsubishi/l03075a.pdf",
+    "size": 1577627,
+    "pages": 4,
+    "category": "交流伺服MELSERVO",
+    "brand": "mitsubishi"
+  },
+  {
+    "name": "l03072a.pdf",
+    "url": "https://www.mitsubishielectric.com/dl/fa/document/catalog/servo/l03072/l03072a.pdf",
+    "pdf": "pdfs/mitsubishi/l03072a.pdf",
+    "size": 1664271,
+    "pages": 4,
+    "category": "交流伺服MELSERVO",
+    "brand": "mitsubishi"
+  },
+  {
+    "name": "l03071a.pdf",
+    "url": "https://www.mitsubishielectric.com/dl/fa/document/catalog/servo/l03071/l03071a.pdf",
+    "pdf": "pdfs/mitsubishi/l03071a.pdf",
+    "size": 1427298,
+    "pages": 4,
+    "category": "交流伺服MELSERVO",
+    "brand": "mitsubishi"
+  },
+  {
+    "name": "l03073a.pdf",
+    "url": "https://www.mitsubishielectric.com/dl/fa/document/catalog/servo/l03073/l03073a.pdf",
+    "pdf": "pdfs/mitsubishi/l03073a.pdf",
+    "size": 1434186,
+    "pages": 4,
+    "category": "交流伺服MELSERVO",
+    "brand": "mitsubishi"
+  },
+  {
+    "name": "l03228enga.pdf",
+    "url": "https://www.mitsubishielectric.com/dl/fa/document/catalog/ssc/l03228eng/l03228enga.pdf",
+    "pdf": "pdfs/mitsubishi/l03228enga.pdf",
+    "size": 20321396,
+    "pages": 108,
+    "category": "运动控制器",
+    "brand": "mitsubishi"
+  },
+  {
+    "name": "l03212enga.pdf",
+    "url": "https://www.mitsubishielectric.com/dl/fa/document/catalog/ssc/l03212eng/l03212enga.pdf",
+    "pdf": "pdfs/mitsubishi/l03212enga.pdf",
+    "size": 11691337,
+    "pages": 94,
+    "category": "运动控制器",
+    "brand": "mitsubishi"
+  },
+  {
+    "name": "l03156a.pdf",
+    "url": "https://www.mitsubishielectric.com/dl/fa/document/catalog/ssc/l03156/l03156a.pdf",
+    "pdf": "pdfs/mitsubishi/l03156a.pdf",
+    "size": 5272920,
+    "pages": 84,
+    "category": "运动控制器",
+    "brand": "mitsubishi"
+  },
+  {
+    "name": "l03157a.pdf",
+    "url": "https://www.mitsubishielectric.com/dl/fa/document/catalog/ssc/l03157/l03157a.pdf",
+    "pdf": "pdfs/mitsubishi/l03157a.pdf",
+    "size": 5860196,
+    "pages": 82,
+    "category": "运动控制器",
+    "brand": "mitsubishi"
+  },
+  {
+    "name": "l03196enga.pdf",
+    "url": "https://www.mitsubishielectric.com/dl/fa/document/catalog/ssc/l03196eng/l03196enga.pdf",
+    "pdf": "pdfs/mitsubishi/l03196enga.pdf",
+    "size": 7491031,
+    "pages": 54,
+    "category": "运动控制器",
+    "brand": "mitsubishi"
+  },
+  {
+    "name": "l03170enga.pdf",
+    "url": "https://www.mitsubishielectric.com/dl/fa/document/catalog/ssc/l03170eng/l03170enga.pdf",
+    "pdf": "pdfs/mitsubishi/l03170enga.pdf",
+    "size": 4145695,
+    "pages": 64,
+    "category": "运动控制器",
+    "brand": "mitsubishi"
+  },
+  {
+    "name": "l03189enga.pdf",
+    "url": "https://www.mitsubishielectric.com/dl/fa/document/catalog/ssc/l03189eng/l03189enga.pdf",
+    "pdf": "pdfs/mitsubishi/l03189enga.pdf",
+    "size": 4547811,
+    "pages": 52,
+    "category": "运动控制器",
+    "brand": "mitsubishi"
+  },
+  {
+    "name": "l03158a.pdf",
+    "url": "https://www.mitsubishielectric.com/dl/fa/document/catalog/ssc/l03158/l03158a.pdf",
+    "pdf": "pdfs/mitsubishi/l03158a.pdf",
+    "size": 5960015,
+    "pages": 104,
+    "category": "运动控制器",
+    "brand": "mitsubishi"
+  },
+  {
+    "name": "l03184enga.pdf",
+    "url": "https://www.mitsubishielectric.com/dl/fa/document/catalog/ssc/l03184eng/l03184enga.pdf",
+    "pdf": "pdfs/mitsubishi/l03184enga.pdf",
+    "size": 4260284,
+    "pages": 72,
+    "category": "运动控制器",
+    "brand": "mitsubishi"
+  },
+  {
+    "name": "l03121enga.pdf",
+    "url": "https://www.mitsubishielectric.com/dl/fa/document/catalog/ssc/l03121eng/l03121enga.pdf",
+    "pdf": "pdfs/mitsubishi/l03121enga.pdf",
+    "size": 5017580,
+    "pages": 70,
+    "category": "运动控制器",
+    "brand": "mitsubishi"
+  },
+  {
+    "name": "l03122enga.pdf",
+    "url": "https://www.mitsubishielectric.com/dl/fa/document/catalog/ssc/l03122eng/l03122enga.pdf",
+    "pdf": "pdfs/mitsubishi/l03122enga.pdf",
+    "size": 4677114,
+    "pages": 108,
+    "category": "运动控制器",
+    "brand": "mitsubishi"
+  },
+  {
+    "name": "l03165enga.pdf",
+    "url": "https://www.mitsubishielectric.com/dl/fa/document/catalog/ssc/l03165eng/l03165enga.pdf",
+    "pdf": "pdfs/mitsubishi/l03165enga.pdf",
+    "size": 3506269,
+    "pages": 64,
+    "category": "运动控制器",
+    "brand": "mitsubishi"
+  },
+  {
+    "name": "l03123a.pdf",
+    "url": "https://www.mitsubishielectric.com/dl/fa/document/catalog/ssc/l03123/l03123a.pdf",
+    "pdf": "pdfs/mitsubishi/l03123a.pdf",
+    "size": 2221245,
+    "pages": 52,
+    "category": "运动控制器",
+    "brand": "mitsubishi"
+  },
+  {
+    "name": "l03191engb.pdf",
+    "url": "https://www.mitsubishielectric.com/dl/fa/document/catalog/ssc/l03191eng/l03191engb.pdf",
+    "pdf": "pdfs/mitsubishi/l03191engb.pdf",
+    "size": 49135389,
+    "pages": 218,
+    "category": "运动控制器",
+    "brand": "mitsubishi"
+  },
+  {
+    "name": "l03104c.pdf",
+    "url": "https://www.mitsubishielectric.com/dl/fa/document/catalog/ssc/l03104/l03104c.pdf",
+    "pdf": "pdfs/mitsubishi/l03104c.pdf",
+    "size": 3673293,
+    "pages": 202,
+    "category": "运动控制器",
+    "brand": "mitsubishi"
+  },
+  {
+    "name": "l03194enga.pdf",
+    "url": "https://www.mitsubishielectric.com/dl/fa/document/catalog/ssc/l03194eng/l03194enga.pdf",
+    "pdf": "pdfs/mitsubishi/l03194enga.pdf",
+    "size": 15891023,
+    "pages": 172,
+    "category": "运动控制器",
+    "brand": "mitsubishi"
+  },
+  {
+    "name": "l03119engb.pdf",
+    "url": "https://www.mitsubishielectric.com/dl/fa/document/catalog/ssc/l03119eng/l03119engb.pdf",
+    "pdf": "pdfs/mitsubishi/l03119engb.pdf",
+    "size": 17299483,
+    "pages": 84,
+    "category": "运动控制器",
+    "brand": "mitsubishi"
+  },
+  {
+    "name": "l08658engf.pdf",
+    "url": "https://www.mitsubishielectric.com/dl/fa/document/catalog/plcnet/l08658eng/l08658engf.pdf",
+    "pdf": "pdfs/mitsubishi/l08658engf.pdf",
+    "size": 16480039,
+    "pages": 16,
+    "category": "网络相关产品",
+    "brand": "mitsubishi"
+  },
+  {
+    "name": "l08656engk.pdf",
+    "url": "https://www.mitsubishielectric.com/dl/fa/document/catalog/plcnet/l08656eng/l08656engk.pdf",
+    "pdf": "pdfs/mitsubishi/l08656engk.pdf",
+    "size": 20884460,
+    "pages": 56,
+    "category": "网络相关产品",
+    "brand": "mitsubishi"
+  },
+  {
+    "name": "l08111ev.pdf",
+    "url": "https://www.mitsubishielectric.com/dl/fa/document/catalog/plcnet/l08111e/l08111ev.pdf",
+    "pdf": "pdfs/mitsubishi/l08111ev.pdf",
+    "size": 63754378,
+    "pages": 84,
+    "category": "网络相关产品",
+    "brand": "mitsubishi"
+  },
+  {
+    "name": "l08038ep.pdf",
+    "url": "https://www.mitsubishielectric.com/dl/fa/document/catalog/plcnet/l08038e/l08038ep.pdf",
+    "pdf": "pdfs/mitsubishi/l08038ep.pdf",
+    "size": 17231952,
+    "pages": 44,
+    "category": "网络相关产品",
+    "brand": "mitsubishi"
+  },
+  {
+    "name": "l09148a.pdf",
+    "url": "https://www.mitsubishielectric.com/dl/fa/document/catalog/robot/l-09148eng/l09148a.pdf",
+    "pdf": "pdfs/mitsubishi/l09148a.pdf",
+    "size": 745485,
+    "pages": 2,
+    "category": "RT ToolBox3",
+    "brand": "mitsubishi"
+  },
+  {
+    "name": "l09091q.pdf",
+    "url": "https://www.mitsubishielectric.com/dl/fa/document/catalog/robot/l-09091eng/l09091q.pdf",
+    "pdf": "pdfs/mitsubishi/l09091q.pdf",
+    "size": 38889920,
+    "pages": 94,
+    "category": "RT ToolBox3",
+    "brand": "mitsubishi"
+  },
+  {
+    "name": "l09123c.pdf",
+    "url": "https://www.mitsubishielectric.com/dl/fa/document/catalog/robot/l-09123eng/l09123c.pdf",
+    "pdf": "pdfs/mitsubishi/l09123c.pdf",
+    "size": 15939726,
+    "pages": 24,
+    "category": "RT ToolBox3",
+    "brand": "mitsubishi"
+  },
+  {
+    "name": "l09104e.pdf",
+    "url": "https://www.mitsubishielectric.com/dl/fa/document/catalog/robot/l-09104eng/l09104e.pdf",
+    "pdf": "pdfs/mitsubishi/l09104e.pdf",
+    "size": 18697547,
+    "pages": 20,
+    "category": "RT ToolBox3",
+    "brand": "mitsubishi"
+  },
+  {
+    "name": "l09139n.pdf",
+    "url": "https://www.mitsubishielectric.com/dl/fa/document/catalog/robot/l-09139eng/l09139n.pdf",
+    "pdf": "pdfs/mitsubishi/l09139n.pdf",
+    "size": 4134233,
+    "pages": 8,
+    "category": "RT ToolBox3",
+    "brand": "mitsubishi"
+  },
+  {
+    "name": "l09150a.pdf",
+    "url": "https://www.mitsubishielectric.com/dl/fa/document/catalog/robot/l-09150eng/l09150a.pdf",
+    "pdf": "pdfs/mitsubishi/l09150a.pdf",
+    "size": 1226278,
+    "pages": 2,
+    "category": "RT ToolBox3",
+    "brand": "mitsubishi"
+  },
+  {
+    "name": "l09116c.pdf",
+    "url": "https://www.mitsubishielectric.com/dl/fa/document/catalog/robot/l-09116eng/l09116c.pdf",
+    "pdf": "pdfs/mitsubishi/l09116c.pdf",
+    "size": 1684401,
+    "pages": 4,
+    "category": "RT ToolBox3",
+    "brand": "mitsubishi"
+  },
+  {
+    "name": "l09100e.pdf",
+    "url": "https://www.mitsubishielectric.com/dl/fa/document/catalog/robot/l-09100eng/l09100e.pdf",
+    "pdf": "pdfs/mitsubishi/l09100e.pdf",
+    "size": 11074380,
+    "pages": 24,
+    "category": "RT ToolBox3",
+    "brand": "mitsubishi"
+  },
+  {
+    "name": "l09110e.pdf",
+    "url": "https://www.mitsubishielectric.com/dl/fa/document/catalog/robot/l-09110eng/l09110e.pdf",
+    "pdf": "pdfs/mitsubishi/l09110e.pdf",
+    "size": 1406103,
+    "pages": 4,
+    "category": "RT ToolBox3",
+    "brand": "mitsubishi"
+  },
+  {
+    "name": "l09111d.pdf",
+    "url": "https://www.mitsubishielectric.com/dl/fa/document/catalog/robot/l-09111eng/l09111d.pdf",
+    "pdf": "pdfs/mitsubishi/l09111d.pdf",
+    "size": 1223225,
+    "pages": 2,
+    "category": "RT ToolBox3",
+    "brand": "mitsubishi"
+  },
+  {
+    "name": "l09068b.pdf",
+    "url": "https://www.mitsubishielectric.com/dl/fa/document/catalog/robot/l-09068eng/l09068b.pdf",
+    "pdf": "pdfs/mitsubishi/l09068b.pdf",
+    "size": 8413533,
+    "pages": 48,
+    "category": "RT ToolBox3",
+    "brand": "mitsubishi"
+  },
+  {
+    "name": "l09117d.pdf",
+    "url": "https://www.mitsubishielectric.com/dl/fa/document/catalog/robot/l-09117eng/l09117d.pdf",
+    "pdf": "pdfs/mitsubishi/l09117d.pdf",
+    "size": 7167808,
+    "pages": 28,
+    "category": "RT ToolBox3",
+    "brand": "mitsubishi"
+  },
+  {
+    "name": "l09067h.pdf",
+    "url": "https://www.mitsubishielectric.com/dl/fa/document/catalog/robot/l-09067eng/l09067h.pdf",
+    "pdf": "pdfs/mitsubishi/l09067h.pdf",
+    "size": 58058377,
+    "pages": 56,
+    "category": "RT ToolBox3",
+    "brand": "mitsubishi"
+  },
+  {
+    "name": "l08957engb.pdf",
+    "url": "https://www.mitsubishielectric.com/dl/fa/document/catalog/got/l08957eng/l08957engb.pdf",
+    "pdf": "pdfs/mitsubishi/l08957engb.pdf",
+    "size": 41800087,
+    "pages": 56,
+    "category": "人机界面GOT",
+    "brand": "mitsubishi"
+  },
+  {
+    "name": "Simplified ChineseVersion",
+    "url": "https://www.mitsubishielectric.com/dl/fa/document/catalog/got/l08958chn/l08958chnb.pdf",
+    "pdf": "pdfs/mitsubishi/Simplified ChineseVersion.pdf",
+    "size": 42114349,
+    "pages": 56,
+    "category": "人机界面GOT",
+    "brand": "mitsubishi"
+  },
+  {
+    "name": "l08649engd.pdf",
+    "url": "https://www.mitsubishielectric.com/dl/fa/document/catalog/got/l08649eng/l08649engd.pdf",
+    "pdf": "pdfs/mitsubishi/l08649engd.pdf",
+    "size": 22255805,
+    "pages": 36,
+    "category": "人机界面GOT",
+    "brand": "mitsubishi"
+  },
+  {
+    "name": "l08270engk.pdf",
+    "url": "https://www.mitsubishielectric.com/dl/fa/document/catalog/got/l08270/l08270engk.pdf",
+    "pdf": "pdfs/mitsubishi/l08270engk.pdf",
+    "size": 102156439,
+    "pages": 214,
+    "category": "人机界面GOT",
+    "brand": "mitsubishi"
+  },
+  {
+    "name": "Simplified ChineseVersion",
+    "url": "https://www.mitsubishielectric.com/dl/fa/document/catalog/got/l08271/l08271chni.pdf",
+    "pdf": "pdfs/mitsubishi/Simplified ChineseVersion.pdf",
+    "size": 42114349,
+    "pages": 56,
+    "category": "人机界面GOT",
+    "brand": "mitsubishi"
+  },
+  {
+    "name": "l08487engc.pdf",
+    "url": "https://www.mitsubishielectric.com/dl/fa/document/catalog/got/l08487eng/l08487engc.pdf",
+    "pdf": "pdfs/mitsubishi/l08487engc.pdf",
+    "size": 24851961,
+    "pages": 20,
+    "category": "人机界面GOT",
+    "brand": "mitsubishi"
+  },
+  {
+    "name": "l08674engb.pdf",
+    "url": "https://www.mitsubishielectric.com/dl/fa/document/catalog/got/l08674eng/l08674engb.pdf",
+    "pdf": "pdfs/mitsubishi/l08674engb.pdf",
+    "size": 21344705,
+    "pages": 28,
+    "category": "人机界面GOT",
+    "brand": "mitsubishi"
+  },
+  {
+    "name": "l08341engb.pdf",
+    "url": "https://www.mitsubishielectric.com/dl/fa/document/catalog/got/l08341eng/l08341engb.pdf",
+    "pdf": "pdfs/mitsubishi/l08341engb.pdf",
+    "size": 11788205,
+    "pages": 64,
+    "category": "人机界面GOT",
+    "brand": "mitsubishi"
+  },
+  {
+    "name": "l08461engd.pdf",
+    "url": "https://www.mitsubishielectric.com/dl/fa/document/catalog/got/l08461eng/l08461engd.pdf",
+    "pdf": "pdfs/mitsubishi/l08461engd.pdf",
+    "size": 14565755,
+    "pages": 28,
+    "category": "人机界面GOT",
+    "brand": "mitsubishi"
+  },
+  {
+    "name": "l08606enga.pdf",
+    "url": "https://www.mitsubishielectric.com/dl/fa/document/catalog/got/l08606eng/l08606enga.pdf",
+    "pdf": "pdfs/mitsubishi/l08606enga.pdf",
+    "size": 15815703,
+    "pages": 32,
+    "category": "人机界面GOT",
+    "brand": "mitsubishi"
+  },
+  {
+    "name": "l08676engb.pdf",
+    "url": "https://www.mitsubishielectric.com/dl/fa/document/catalog/got/l08676eng/l08676engb.pdf",
+    "pdf": "pdfs/mitsubishi/l08676engb.pdf",
+    "size": 18831016,
+    "pages": 40,
+    "category": "人机界面GOT",
+    "brand": "mitsubishi"
+  },
+  {
+    "name": "Simplified ChineseVersion",
+    "url": "https://www.mitsubishielectric.com/dl/fa/document/catalog/got/l08979chn/l08979chna.pdf",
+    "pdf": "pdfs/mitsubishi/Simplified ChineseVersion.pdf",
+    "size": 42114349,
+    "pages": 56,
+    "category": "人机界面GOT",
+    "brand": "mitsubishi"
+  },
+  {
+    "name": "l08349engc.pdf",
+    "url": "https://www.mitsubishielectric.com/dl/fa/document/catalog/got/l08349eng/l08349engc.pdf",
+    "pdf": "pdfs/mitsubishi/l08349engc.pdf",
+    "size": 30143008,
+    "pages": 68,
+    "category": "人机界面GOT",
+    "brand": "mitsubishi"
+  },
+  {
+    "name": "l08555enga.pdf",
+    "url": "https://www.mitsubishielectric.com/dl/fa/document/catalog/got/l08555eng/l08555enga.pdf",
+    "pdf": "pdfs/mitsubishi/l08555enga.pdf",
+    "size": 17235447,
+    "pages": 24,
+    "category": "人机界面GOT",
+    "brand": "mitsubishi"
+  },
+  {
+    "name": "Simplified ChineseVersion",
+    "url": "https://www.mitsubishielectric.com/dl/fa/document/catalog/got/l08931chn/l08931chna.pdf",
+    "pdf": "pdfs/mitsubishi/Simplified ChineseVersion.pdf",
+    "size": 42114349,
+    "pages": 56,
+    "category": "人机界面GOT",
+    "brand": "mitsubishi"
+  },
+  {
+    "name": "l08506engb.pdf",
+    "url": "https://www.mitsubishielectric.com/dl/fa/document/catalog/got/l08506eng/l08506engb.pdf",
+    "pdf": "pdfs/mitsubishi/l08506engb.pdf",
+    "size": 16411073,
+    "pages": 20,
+    "category": "人机界面GOT",
+    "brand": "mitsubishi"
+  },
+  {
+    "name": "Simplified ChineseVersion",
+    "url": "https://www.mitsubishielectric.com/dl/fa/document/catalog/got/l08336chn/l08336chnd.pdf",
+    "pdf": "pdfs/mitsubishi/Simplified ChineseVersion.pdf",
+    "size": 42114349,
+    "pages": 56,
+    "category": "人机界面GOT",
+    "brand": "mitsubishi"
+  },
+  {
+    "name": "l08170engf.pdf",
+    "url": "https://www.mitsubishielectric.com/dl/fa/document/catalog/got/l08170eng/l08170engf.pdf",
+    "pdf": "pdfs/mitsubishi/l08170engf.pdf",
+    "size": 7315775,
+    "pages": 40,
+    "category": "人机界面GOT",
+    "brand": "mitsubishi"
+  },
+  {
+    "name": "l08054i.pdf",
+    "url": "https://www.mitsubishielectric.com/dl/fa/document/catalog/got/l08054-gl/l08054i.pdf",
+    "pdf": "pdfs/mitsubishi/l08054i.pdf",
+    "size": 14310575,
+    "pages": 47,
+    "category": "人机界面GOT",
+    "brand": "mitsubishi"
+  },
+  {
+    "name": "l08978enga.pdf",
+    "url": "https://www.mitsubishielectric.com/dl/fa/document/catalog/got/l08978eng/l08978enga.pdf",
+    "pdf": "pdfs/mitsubishi/l08978enga.pdf",
+    "size": 1086232,
+    "pages": 6,
+    "category": "人机界面GOT",
+    "brand": "mitsubishi"
+  },
+  {
+    "name": "l08013c.pdf",
+    "url": "https://www.mitsubishielectric.com/dl/fa/document/catalog/got/l08013/l08013c.pdf",
+    "pdf": "pdfs/mitsubishi/l08013c.pdf",
+    "size": 6697723,
+    "pages": 33,
+    "category": "人机界面GOT",
+    "brand": "mitsubishi"
+  },
+  {
+    "name": "l08950enga.pdf",
+    "url": "https://www.mitsubishielectric.com/dl/fa/document/catalog/got/l08950eng/l08950enga.pdf",
+    "pdf": "pdfs/mitsubishi/l08950enga.pdf",
+    "size": 1459602,
+    "pages": 6,
+    "category": "人机界面GOT",
+    "brand": "mitsubishi"
+  },
+  {
+    "name": "l08930enga.pdf",
+    "url": "https://www.mitsubishielectric.com/dl/fa/document/catalog/got/l08930eng/l08930enga.pdf",
+    "pdf": "pdfs/mitsubishi/l08930enga.pdf",
+    "size": 2336056,
+    "pages": 6,
+    "category": "人机界面GOT",
+    "brand": "mitsubishi"
+  },
+  {
+    "name": "l08572engc.pdf",
+    "url": "https://www.mitsubishielectric.com/dl/fa/document/catalog/got/l08572eng/l08572engc.pdf",
+    "pdf": "pdfs/mitsubishi/l08572engc.pdf",
+    "size": 4476913,
+    "pages": 12,
+    "category": "人机界面GOT",
+    "brand": "mitsubishi"
+  },
+  {
+    "name": "l08335enge.pdf",
+    "url": "https://www.mitsubishielectric.com/dl/fa/document/catalog/got/l08335eng/l08335enge.pdf",
+    "pdf": "pdfs/mitsubishi/l08335enge.pdf",
+    "size": 37853190,
+    "pages": 52,
+    "category": "人机界面GOT",
+    "brand": "mitsubishi"
+  },
+  {
+    "name": "l08659enga.pdf",
+    "url": "https://www.mitsubishielectric.com/dl/fa/document/catalog/got/l08659eng/l08659enga.pdf",
+    "pdf": "pdfs/mitsubishi/l08659enga.pdf",
+    "size": 1644310,
+    "pages": 2,
+    "category": "人机界面GOT",
+    "brand": "mitsubishi"
+  },
+  {
+    "name": "l08602engb.pdf",
+    "url": "https://www.mitsubishielectric.com/dl/fa/document/catalog/got/l08602eng/l08602engb.pdf",
+    "pdf": "pdfs/mitsubishi/l08602engb.pdf",
+    "size": 10376093,
+    "pages": 28,
+    "category": "人机界面GOT",
+    "brand": "mitsubishi"
+  },
+  {
+    "name": "l08594enga.pdf",
+    "url": "https://www.mitsubishielectric.com/dl/fa/document/catalog/got/l08594eng/l08594enga.pdf",
+    "pdf": "pdfs/mitsubishi/l08594enga.pdf",
+    "size": 3212368,
+    "pages": 4,
+    "category": "人机界面GOT",
+    "brand": "mitsubishi"
+  },
+  {
+    "name": "l08355engb.pdf",
+    "url": "https://www.mitsubishielectric.com/dl/fa/document/catalog/got/l08355eng/l08355engb.pdf",
+    "pdf": "pdfs/mitsubishi/l08355engb.pdf",
+    "size": 10145857,
+    "pages": 28,
+    "category": "人机界面GOT",
+    "brand": "mitsubishi"
+  },
+  {
+    "name": "l08530enga.pdf",
+    "url": "https://www.mitsubishielectric.com/dl/fa/document/catalog/got/l08530eng/l08530enga.pdf",
+    "pdf": "pdfs/mitsubishi/l08530enga.pdf",
+    "size": 8831682,
+    "pages": 4,
+    "category": "人机界面GOT",
+    "brand": "mitsubishi"
+  },
+  {
+    "name": "Simplified ChineseVersion",
+    "url": "https://www.mitsubishielectric.com/dl/fa/document/catalog/got/l08465chn/l08465chna.pdf",
+    "pdf": "pdfs/mitsubishi/Simplified ChineseVersion.pdf",
+    "size": 42114349,
+    "pages": 56,
+    "category": "人机界面GOT",
+    "brand": "mitsubishi"
+  },
+  {
+    "name": "l08414enga.pdf",
+    "url": "https://www.mitsubishielectric.com/dl/fa/document/catalog/got/l08414eng/l08414enga.pdf",
+    "pdf": "pdfs/mitsubishi/l08414enga.pdf",
+    "size": 7228820,
+    "pages": 8,
+    "category": "人机界面GOT",
+    "brand": "mitsubishi"
+  },
+  {
+    "name": "l08424enga.pdf",
+    "url": "https://www.mitsubishielectric.com/dl/fa/document/catalog/got/l08424eng/l08424enga.pdf",
+    "pdf": "pdfs/mitsubishi/l08424enga.pdf",
+    "size": 4438242,
+    "pages": 4,
+    "category": "人机界面GOT",
+    "brand": "mitsubishi"
+  },
+  {
+    "name": "l08399engb.pdf",
+    "url": "https://www.mitsubishielectric.com/dl/fa/document/catalog/got/l08399eng/l08399engb.pdf",
+    "pdf": "pdfs/mitsubishi/l08399engb.pdf",
+    "size": 2036086,
+    "pages": 4,
+    "category": "人机界面GOT",
+    "brand": "mitsubishi"
+  },
+  {
+    "name": "l08416enga.pdf",
+    "url": "https://www.mitsubishielectric.com/dl/fa/document/catalog/got/l08416eng/l08416enga.pdf",
+    "pdf": "pdfs/mitsubishi/l08416enga.pdf",
+    "size": 1894463,
+    "pages": 4,
+    "category": "人机界面GOT",
+    "brand": "mitsubishi"
+  },
+  {
+    "name": "l08392enga.pdf",
+    "url": "https://www.mitsubishielectric.com/dl/fa/document/catalog/got/l08392eng/l08392enga.pdf",
+    "pdf": "pdfs/mitsubishi/l08392enga.pdf",
+    "size": 1749467,
+    "pages": 8,
+    "category": "人机界面GOT",
+    "brand": "mitsubishi"
+  },
+  {
+    "name": "l08464enga.pdf",
+    "url": "https://www.mitsubishielectric.com/dl/fa/document/catalog/got/l08464eng/l08464enga.pdf",
+    "pdf": "pdfs/mitsubishi/l08464enga.pdf",
+    "size": 18099478,
+    "pages": 12,
+    "category": "人机界面GOT",
+    "brand": "mitsubishi"
+  },
+  {
+    "name": "l08308enga.pdf",
+    "url": "https://www.mitsubishielectric.com/dl/fa/document/catalog/got/l08308eng/l08308enga.pdf",
+    "pdf": "pdfs/mitsubishi/l08308enga.pdf",
+    "size": 2051261,
+    "pages": 2,
+    "category": "人机界面GOT",
+    "brand": "mitsubishi"
+  },
+  {
+    "name": "l08385engb.pdf",
+    "url": "https://www.mitsubishielectric.com/dl/fa/document/catalog/got/l08385eng/l08385engb.pdf",
+    "pdf": "pdfs/mitsubishi/l08385engb.pdf",
+    "size": 25024864,
+    "pages": 36,
+    "category": "人机界面GOT",
+    "brand": "mitsubishi"
+  },
+  {
+    "name": "l08311engc.pdf",
+    "url": "https://www.mitsubishielectric.com/dl/fa/document/catalog/got/l08311eng/l08311engc.pdf",
+    "pdf": "pdfs/mitsubishi/l08311engc.pdf",
+    "size": 37716636,
+    "pages": 76,
+    "category": "人机界面GOT",
+    "brand": "mitsubishi"
+  },
+  {
+    "name": "l08087engd.pdf",
+    "url": "https://www.mitsubishielectric.com/dl/fa/document/catalog/got/l08087eng/l08087engd.pdf",
+    "pdf": "pdfs/mitsubishi/l08087engd.pdf",
+    "size": 33790519,
+    "pages": 330,
+    "category": "人机界面GOT",
+    "brand": "mitsubishi"
+  },
+  {
+    "name": "l03187engg.pdf",
+    "url": "https://www.mitsubishielectric.com/dl/fa/document/catalog/servo/l03187eng/l03187engg.pdf",
+    "pdf": "pdfs/mitsubishi/l03187engg.pdf",
+    "size": 65821811,
+    "pages": 296,
+    "category": "交流伺服MELSERVO",
+    "brand": "mitsubishi"
+  },
+  {
+    "name": "l03058engl.pdf",
+    "url": "https://www.mitsubishielectric.com/dl/fa/document/catalog/servo/l03058/l03058engl.pdf",
+    "pdf": "pdfs/mitsubishi/l03058engl.pdf",
+    "size": 88380098,
+    "pages": 454,
+    "category": "交流伺服MELSERVO",
+    "brand": "mitsubishi"
+  },
+  {
+    "name": "l03086engh.pdf",
+    "url": "https://www.mitsubishielectric.com/dl/fa/document/catalog/servo/l03086/l03086engh.pdf",
+    "pdf": "pdfs/mitsubishi/l03086engh.pdf",
+    "size": 13424194,
+    "pages": 138,
+    "category": "交流伺服MELSERVO",
+    "brand": "mitsubishi"
+  },
+  {
+    "name": "l03055d.pdf",
+    "url": "https://www.mitsubishielectric.com/dl/fa/document/catalog/servo/l03055/l03055d.pdf",
+    "pdf": "pdfs/mitsubishi/l03055d.pdf",
+    "size": 14201861,
+    "pages": 56,
+    "category": "交流伺服MELSERVO",
+    "brand": "mitsubishi"
+  },
+  {
+    "name": "l03152a.pdf",
+    "url": "https://www.mitsubishielectric.com/dl/fa/document/catalog/servo/l03152/l03152a.pdf",
+    "pdf": "pdfs/mitsubishi/l03152a.pdf",
+    "size": 9280898,
+    "pages": 16,
+    "category": "交流伺服MELSERVO",
+    "brand": "mitsubishi"
+  },
+  {
+    "name": "l03094a.pdf",
+    "url": "https://www.mitsubishielectric.com/dl/fa/document/catalog/servo/l03094/l03094a.pdf",
+    "pdf": "pdfs/mitsubishi/l03094a.pdf",
+    "size": 22937802,
+    "pages": 60,
+    "category": "交流伺服MELSERVO",
+    "brand": "mitsubishi"
+  },
+  {
+    "name": "l03017g.pdf",
+    "url": "https://www.mitsubishielectric.com/dl/fa/document/catalog/servo/l03017/l03017g.pdf",
+    "pdf": "pdfs/mitsubishi/l03017g.pdf",
+    "size": 17486463,
+    "pages": 186,
+    "category": "交流伺服MELSERVO",
+    "brand": "mitsubishi"
+  },
+  {
+    "name": "l03053d.pdf",
+    "url": "https://www.mitsubishielectric.com/dl/fa/document/catalog/servo/l03053/l03053d.pdf",
+    "pdf": "pdfs/mitsubishi/l03053d.pdf",
+    "size": 5706428,
+    "pages": 64,
+    "category": "交流伺服MELSERVO",
+    "brand": "mitsubishi"
+  },
+  {
+    "name": "l03026c.pdf",
+    "url": "https://www.mitsubishielectric.com/dl/fa/document/catalog/servo/l03026/l03026c.pdf",
+    "pdf": "pdfs/mitsubishi/l03026c.pdf",
+    "size": 11599965,
+    "pages": 60,
+    "category": "交流伺服MELSERVO",
+    "brand": "mitsubishi"
+  },
+  {
+    "name": "l03101b.pdf",
+    "url": "https://www.mitsubishielectric.com/dl/fa/document/catalog/servo/l03101/l03101b.pdf",
+    "pdf": "pdfs/mitsubishi/l03101b.pdf",
+    "size": 3586220,
+    "pages": 24,
+    "category": "交流伺服MELSERVO",
+    "brand": "mitsubishi"
+  },
+  {
+    "name": "l03201enge.pdf",
+    "url": "https://www.mitsubishielectric.com/dl/fa/document/catalog/servo/l03201/l03201enge.pdf",
+    "pdf": "pdfs/mitsubishi/l03201enge.pdf",
+    "size": 109484217,
+    "pages": 1100,
+    "category": "交流伺服MELSERVO",
+    "brand": "mitsubishi"
+  },
+  {
+    "name": "l03091a.pdf",
+    "url": "https://www.mitsubishielectric.com/dl/fa/document/catalog/servo/l03091/l03091a.pdf",
+    "pdf": "pdfs/mitsubishi/l03091a.pdf",
+    "size": 2348016,
+    "pages": 8,
+    "category": "交流伺服MELSERVO",
+    "brand": "mitsubishi"
+  },
+  {
+    "name": "l03093f.pdf",
+    "url": "https://www.mitsubishielectric.com/dl/fa/document/catalog/servo/l03093/l03093f.pdf",
+    "pdf": "pdfs/mitsubishi/l03093f.pdf",
+    "size": 48229474,
+    "pages": 662,
+    "category": "交流伺服MELSERVO",
+    "brand": "mitsubishi"
+  },
+  {
+    "name": "JapaneseVersion",
+    "url": "https://www.mitsubishielectric.com/dl/fa/document/catalog/inv/l-06152/l06152d.pdf",
+    "pdf": "pdfs/mitsubishi/JapaneseVersion.pdf",
+    "size": 21949510,
+    "pages": 117,
+    "category": "FR Configurator2",
+    "brand": "mitsubishi"
+  },
+  {
+    "name": "l06153engb.pdf",
+    "url": "https://www.mitsubishielectric.com/dl/fa/document/catalog/inv/l-06153eng/l06153engb.pdf",
+    "pdf": "pdfs/mitsubishi/l06153engb.pdf",
+    "size": 25492849,
+    "pages": 109,
+    "category": "FR Configurator2",
+    "brand": "mitsubishi"
+  },
+  {
+    "name": "l06151engb.pdf",
+    "url": "https://www.mitsubishielectric.com/dl/fa/document/catalog/inv/l-06151/l06151engb.pdf",
+    "pdf": "pdfs/mitsubishi/l06151engb.pdf",
+    "size": 14966658,
+    "pages": 71,
+    "category": "FR Configurator2",
+    "brand": "mitsubishi"
+  },
+  {
+    "name": "l03127enge.pdf",
+    "url": "https://www.mitsubishielectric.com/dl/fa/document/catalog/servo/l03127/l03127enge.pdf",
+    "pdf": "pdfs/mitsubishi/l03127enge.pdf",
+    "size": 18215783,
+    "pages": 816,
+    "category": "交流伺服MELSERVO",
+    "brand": "mitsubishi"
+  },
+  {
+    "name": "JapaneseVersion",
+    "url": "https://www.mitsubishielectric.com/dl/fa/document/catalog/inv/l-06150/l06150c.pdf",
+    "pdf": "pdfs/mitsubishi/JapaneseVersion.pdf",
+    "size": 21949510,
+    "pages": 117,
+    "category": "FR Configurator2",
+    "brand": "mitsubishi"
+  },
+  {
+    "name": "l06131engd.pdf",
+    "url": "https://www.mitsubishielectric.com/dl/fa/document/catalog/inv/l-06131eng/l06131engd.pdf",
+    "pdf": "pdfs/mitsubishi/l06131engd.pdf",
+    "size": 27005331,
+    "pages": 156,
+    "category": "FR Configurator2",
+    "brand": "mitsubishi"
+  },
+  {
+    "name": "l06036k.pdf",
+    "url": "https://www.mitsubishielectric.com/dl/fa/document/catalog/inv/l06036/l06036k.pdf",
+    "pdf": "pdfs/mitsubishi/l06036k.pdf",
+    "size": 12029212,
+    "pages": 43,
+    "category": "FR Configurator2",
+    "brand": "mitsubishi"
+  },
+  {
+    "name": "l06054engg.pdf",
+    "url": "https://www.mitsubishielectric.com/dl/fa/document/catalog/inv/l06054eng/l06054engg.pdf",
+    "pdf": "pdfs/mitsubishi/l06054engg.pdf",
+    "size": 5715821,
+    "pages": 80,
+    "category": "FR Configurator2",
+    "brand": "mitsubishi"
+  },
+  {
+    "name": "l06075engj.pdf",
+    "url": "https://www.mitsubishielectric.com/dl/fa/document/catalog/inv/l06075eng/l06075engj.pdf",
+    "pdf": "pdfs/mitsubishi/l06075engj.pdf",
+    "size": 27975776,
+    "pages": 222,
+    "category": "FR Configurator2",
+    "brand": "mitsubishi"
+  },
+  {
+    "name": "l06086enga.pdf",
+    "url": "https://www.mitsubishielectric.com/dl/fa/document/catalog/inv/l06086eng/l06086enga.pdf",
+    "pdf": "pdfs/mitsubishi/l06086enga.pdf",
+    "size": 2563504,
+    "pages": 36,
+    "category": "FR Configurator2",
+    "brand": "mitsubishi"
+  },
+  {
+    "name": "l06110engc.pdf",
+    "url": "https://www.mitsubishielectric.com/dl/fa/document/catalog/inv/l06110eng/l06110engc.pdf",
+    "pdf": "pdfs/mitsubishi/l06110engc.pdf",
+    "size": 7112349,
+    "pages": 32,
+    "category": "FR Configurator2",
+    "brand": "mitsubishi"
+  },
+  {
+    "name": "l06098engc.pdf",
+    "url": "https://www.mitsubishielectric.com/dl/fa/document/catalog/inv/l06098eng/l06098engc.pdf",
+    "pdf": "pdfs/mitsubishi/l06098engc.pdf",
+    "size": 4525042,
+    "pages": 28,
+    "category": "FR Configurator2",
+    "brand": "mitsubishi"
+  },
+  {
+    "name": "l06101engc.pdf",
+    "url": "https://www.mitsubishielectric.com/dl/fa/document/catalog/inv/l06101eng/l06101engc.pdf",
+    "pdf": "pdfs/mitsubishi/l06101engc.pdf",
+    "size": 6062140,
+    "pages": 40,
+    "category": "FR Configurator2",
+    "brand": "mitsubishi"
+  },
+  {
+    "name": "l06085enge.pdf",
+    "url": "https://www.mitsubishielectric.com/dl/fa/document/catalog/inv/l06085eng/l06085enge.pdf",
+    "pdf": "pdfs/mitsubishi/l06085enge.pdf",
+    "size": 17956747,
+    "pages": 150,
+    "category": "FR Configurator2",
+    "brand": "mitsubishi"
+  },
+  {
+    "name": "l06105engd.pdf",
+    "url": "https://www.mitsubishielectric.com/dl/fa/document/catalog/inv/l06105eng/l06105engd.pdf",
+    "pdf": "pdfs/mitsubishi/l06105engd.pdf",
+    "size": 15156545,
+    "pages": 32,
+    "category": "FR Configurator2",
+    "brand": "mitsubishi"
+  },
+  {
+    "name": "l06051engg.pdf",
+    "url": "https://www.mitsubishielectric.com/dl/fa/document/catalog/inv/l06051eng/l06051engg.pdf",
+    "pdf": "pdfs/mitsubishi/l06051engg.pdf",
+    "size": 10004836,
+    "pages": 104,
+    "category": "FR Configurator2",
+    "brand": "mitsubishi"
+  },
+  {
+    "name": "l06073engc.pdf",
+    "url": "https://www.mitsubishielectric.com/dl/fa/document/catalog/inv/l06073eng/l06073engc.pdf",
+    "pdf": "pdfs/mitsubishi/l06073engc.pdf",
+    "size": 13574377,
+    "pages": 96,
+    "category": "FR Configurator2",
+    "brand": "mitsubishi"
+  },
+  {
+    "name": "l06113enga.pdf",
+    "url": "https://www.mitsubishielectric.com/dl/fa/document/catalog/inv/l06113eng/l06113enga.pdf",
+    "pdf": "pdfs/mitsubishi/l06113enga.pdf",
+    "size": 10337924,
+    "pages": 40,
+    "category": "FR Configurator2",
+    "brand": "mitsubishi"
+  },
+  {
+    "name": "l06055engh.pdf",
+    "url": "https://www.mitsubishielectric.com/dl/fa/document/catalog/inv/l06055eng/l06055engh.pdf",
+    "pdf": "pdfs/mitsubishi/l06055engh.pdf",
+    "size": 5296619,
+    "pages": 44,
+    "category": "FR Configurator2",
+    "brand": "mitsubishi"
+  },
+  {
+    "name": "l06057engb.pdf",
+    "url": "https://www.mitsubishielectric.com/dl/fa/document/catalog/inv/l06057eng/l06057engb.pdf",
+    "pdf": "pdfs/mitsubishi/l06057engb.pdf",
+    "size": 1800885,
+    "pages": 39,
+    "category": "FR Configurator2",
+    "brand": "mitsubishi"
+  },
+  {
+    "name": "l06116enge.pdf",
+    "url": "https://www.mitsubishielectric.com/dl/fa/document/catalog/inv/l-06116eng/l06116enge.pdf",
+    "pdf": "pdfs/mitsubishi/l06116enge.pdf",
+    "size": 9039987,
+    "pages": 84,
+    "category": "FR Configurator2",
+    "brand": "mitsubishi"
+  },
+  {
+    "name": "l06096engd.pdf",
+    "url": "https://www.mitsubishielectric.com/dl/fa/document/catalog/inv/l06096eng/l06096engd.pdf",
+    "pdf": "pdfs/mitsubishi/l06096engd.pdf",
+    "size": 3939499,
+    "pages": 20,
+    "category": "FR Configurator2",
+    "brand": "mitsubishi"
+  },
+  {
+    "name": "l06127engd.pdf",
+    "url": "https://www.mitsubishielectric.com/dl/fa/document/catalog/inv/l-06127eng-d/l06127engd.pdf",
+    "pdf": "pdfs/mitsubishi/l06127engd.pdf",
+    "size": 980712,
+    "pages": 4,
+    "category": "FR Configurator2",
+    "brand": "mitsubishi"
+  },
+  {
+    "name": "l06162enga.pdf",
+    "url": "https://www.mitsubishielectric.com/dl/fa/document/catalog/inv/l-06162eng/l06162enga.pdf",
+    "pdf": "pdfs/mitsubishi/l06162enga.pdf",
+    "size": 7234417,
+    "pages": 24,
+    "category": "FR Configurator2",
+    "brand": "mitsubishi"
+  },
+  {
+    "name": "l06138enga.pdf",
+    "url": "https://www.mitsubishielectric.com/dl/fa/document/catalog/inv/l-06138eng/l06138enga.pdf",
+    "pdf": "pdfs/mitsubishi/l06138enga.pdf",
+    "size": 847300,
+    "pages": 2,
+    "category": "FR Configurator2",
+    "brand": "mitsubishi"
+  },
+  {
+    "name": "l06137enga.pdf",
+    "url": "https://www.mitsubishielectric.com/dl/fa/document/catalog/inv/l-06137eng/l06137enga.pdf",
+    "pdf": "pdfs/mitsubishi/l06137enga.pdf",
+    "size": 985481,
+    "pages": 2,
+    "category": "FR Configurator2",
+    "brand": "mitsubishi"
+  },
+  {
+    "name": "l06139enga.pdf",
+    "url": "https://www.mitsubishielectric.com/dl/fa/document/catalog/inv/l-06139eng/l06139enga.pdf",
+    "pdf": "pdfs/mitsubishi/l06139enga.pdf",
+    "size": 527992,
+    "pages": 2,
+    "category": "FR Configurator2",
+    "brand": "mitsubishi"
+  },
+  {
+    "name": "l06070enge.pdf",
+    "url": "https://www.mitsubishielectric.com/dl/fa/document/catalog/inv/l06070eng/l06070enge.pdf",
+    "pdf": "pdfs/mitsubishi/l06070enge.pdf",
+    "size": 4731203,
+    "pages": 40,
+    "category": "FR Configurator2",
+    "brand": "mitsubishi"
+  },
+  {
+    "name": "l06141enga.pdf",
+    "url": "https://www.mitsubishielectric.com/dl/fa/document/catalog/inv/l-06141eng/l06141enga.pdf",
+    "pdf": "pdfs/mitsubishi/l06141enga.pdf",
+    "size": 270120,
+    "pages": 2,
+    "category": "FR Configurator2",
+    "brand": "mitsubishi"
+  },
+  {
+    "name": "l06144enga.pdf",
+    "url": "https://www.mitsubishielectric.com/dl/fa/document/catalog/inv/l06144eng/l06144enga.pdf",
+    "pdf": "pdfs/mitsubishi/l06144enga.pdf",
+    "size": 336051,
+    "pages": 2,
+    "category": "FR Configurator2",
+    "brand": "mitsubishi"
+  },
+  {
     "name": "bnpa1243engj.pdf",
-    "url": "https://dl.mitsubishielectric.com/dl/fa/document/catalog/cnc/bnp-a1243(eng)/bnpa1243engj.pdf",
+    "url": "https://www.mitsubishielectric.com/dl/fa/document/catalog/cnc/bnp-a1243(eng)/bnpa1243engj.pdf",
     "pdf": "pdfs/mitsubishi/bnpa1243engj.pdf",
     "size": 11656152,
     "pages": 17,
@@ -3835,7 +3835,7 @@
   },
   {
     "name": "bnpa1231engm.pdf",
-    "url": "https://dl.mitsubishielectric.com/dl/fa/document/catalog/cnc/bnp-a1231(eng)/bnpa1231engm.pdf",
+    "url": "https://www.mitsubishielectric.com/dl/fa/document/catalog/cnc/bnp-a1231(eng)/bnpa1231engm.pdf",
     "pdf": "pdfs/mitsubishi/bnpa1231engm.pdf",
     "size": 7212415,
     "pages": 17,
@@ -3844,7 +3844,7 @@
   },
   {
     "name": "bnpa1238engf.pdf",
-    "url": "https://dl.mitsubishielectric.com/dl/fa/document/catalog/cnc/bnp-a1238(eng)/bnpa1238engf.pdf",
+    "url": "https://www.mitsubishielectric.com/dl/fa/document/catalog/cnc/bnp-a1238(eng)/bnpa1238engf.pdf",
     "pdf": "pdfs/mitsubishi/bnpa1238engf.pdf",
     "size": 3492116,
     "pages": 13,
@@ -3853,7 +3853,7 @@
   },
   {
     "name": "bnpa1235engj.pdf",
-    "url": "https://dl.mitsubishielectric.com/dl/fa/document/catalog/cnc/bnp-a1235(eng)/bnpa1235engj.pdf",
+    "url": "https://www.mitsubishielectric.com/dl/fa/document/catalog/cnc/bnp-a1235(eng)/bnpa1235engj.pdf",
     "pdf": "pdfs/mitsubishi/bnpa1235engj.pdf",
     "size": 7406549,
     "pages": 19,
@@ -3862,7 +3862,7 @@
   },
   {
     "name": "bnpa1246engf.pdf",
-    "url": "https://dl.mitsubishielectric.com/dl/fa/document/catalog/cnc/bnp-a1246(eng)/bnpa1246engf.pdf",
+    "url": "https://www.mitsubishielectric.com/dl/fa/document/catalog/cnc/bnp-a1246(eng)/bnpa1246engf.pdf",
     "pdf": "pdfs/mitsubishi/bnpa1246engf.pdf",
     "size": 11159773,
     "pages": 15,
@@ -3871,7 +3871,7 @@
   },
   {
     "name": "bnpa1249enga.pdf",
-    "url": "https://dl.mitsubishielectric.com/dl/fa/mmbrs/document/catalog/cnc/bnp-a1249(eng)/bnpa1249enga.pdf",
+    "url": "https://www.mitsubishielectric.com/dl/fa/mmbrs/document/catalog/cnc/bnp-a1249(eng)/bnpa1249enga.pdf",
     "pdf": "pdfs/mitsubishi/bnpa1249enga.pdf",
     "size": 2201615,
     "pages": 5,
@@ -3880,7 +3880,7 @@
   },
   {
     "name": "bnpa1247engb.pdf",
-    "url": "https://dl.mitsubishielectric.com/dl/fa/document/catalog/cnc/bnp-a1247(eng)/bnpa1247engb.pdf",
+    "url": "https://www.mitsubishielectric.com/dl/fa/document/catalog/cnc/bnp-a1247(eng)/bnpa1247engb.pdf",
     "pdf": "pdfs/mitsubishi/bnpa1247engb.pdf",
     "size": 1842535,
     "pages": 3,
@@ -3889,7 +3889,7 @@
   },
   {
     "name": "bnpa1244engh.pdf",
-    "url": "https://dl.mitsubishielectric.com/dl/fa/document/catalog/cnc/bnp-a1244(eng)/bnpa1244engh.pdf",
+    "url": "https://www.mitsubishielectric.com/dl/fa/document/catalog/cnc/bnp-a1244(eng)/bnpa1244engh.pdf",
     "pdf": "pdfs/mitsubishi/bnpa1244engh.pdf",
     "size": 44124489,
     "pages": 116,
@@ -3898,7 +3898,7 @@
   },
   {
     "name": "bnpa1233engh.pdf",
-    "url": "https://dl.mitsubishielectric.com/dl/fa/document/catalog/cnc/bnp-a1233(eng)/bnpa1233engh.pdf",
+    "url": "https://www.mitsubishielectric.com/dl/fa/document/catalog/cnc/bnp-a1233(eng)/bnpa1233engh.pdf",
     "pdf": "pdfs/mitsubishi/bnpa1233engh.pdf",
     "size": 26494704,
     "pages": 101,
@@ -3906,8 +3906,17 @@
     "brand": "mitsubishi"
   },
   {
+    "name": "bnpa1210engk.pdf",
+    "url": "https://www.mitsubishielectric.com/dl/fa/document/catalog/cnc/bnp-a1210(eng)/bnpa1210engk.pdf",
+    "pdf": "pdfs/mitsubishi/bnpa1210engk.pdf",
+    "size": 3915986,
+    "pages": 13,
+    "category": "CNC数控系统",
+    "brand": "mitsubishi"
+  },
+  {
     "name": "bnpa1236jpnk.pdf",
-    "url": "https://dl.mitsubishielectric.com/dl/fa/document/catalog/cnc/bnp-a1236(eng)/bnpa1236jpnk.pdf",
+    "url": "https://www.mitsubishielectric.com/dl/fa/document/catalog/cnc/bnp-a1236(eng)/bnpa1236jpnk.pdf",
     "pdf": "pdfs/mitsubishi/bnpa1236jpnk.pdf",
     "size": 7043995,
     "pages": 13,
@@ -3916,7 +3925,7 @@
   },
   {
     "name": "bnpa1200engu.pdf",
-    "url": "https://dl.mitsubishielectric.com/dl/fa/document/catalog/cnc/bnp-a1200(eng)/bnpa1200engu.pdf",
+    "url": "https://www.mitsubishielectric.com/dl/fa/document/catalog/cnc/bnp-a1200(eng)/bnpa1200engu.pdf",
     "pdf": "pdfs/mitsubishi/bnpa1200engu.pdf",
     "size": 4590887,
     "pages": 15,
@@ -3924,17 +3933,8 @@
     "brand": "mitsubishi"
   },
   {
-    "name": "bnpa1210engk.pdf",
-    "url": "https://dl.mitsubishielectric.com/dl/fa/document/catalog/cnc/bnp-a1210(eng)/bnpa1210engk.pdf",
-    "pdf": "pdfs/mitsubishi/bnpa1210engk.pdf",
-    "size": 3915986,
-    "pages": 13,
-    "category": "CNC数控系统",
-    "brand": "mitsubishi"
-  },
-  {
     "name": "bnpa1218engi.pdf",
-    "url": "https://dl.mitsubishielectric.com/dl/fa/document/catalog/cnc/bnp-a1218(eng)/bnpa1218engi.pdf",
+    "url": "https://www.mitsubishielectric.com/dl/fa/document/catalog/cnc/bnp-a1218(eng)/bnpa1218engi.pdf",
     "pdf": "pdfs/mitsubishi/bnpa1218engi.pdf",
     "size": 3387513,
     "pages": 13,
@@ -3943,7 +3943,7 @@
   },
   {
     "name": "bnpa1228engg.pdf",
-    "url": "https://dl.mitsubishielectric.com/dl/fa/document/catalog/cnc/bnp-a1228(eng)/bnpa1228engg.pdf",
+    "url": "https://www.mitsubishielectric.com/dl/fa/document/catalog/cnc/bnp-a1228(eng)/bnpa1228engg.pdf",
     "pdf": "pdfs/mitsubishi/bnpa1228engg.pdf",
     "size": 1544759,
     "pages": 5,
@@ -3952,7 +3952,7 @@
   },
   {
     "name": "bnpa1225engf.pdf",
-    "url": "https://dl.mitsubishielectric.com/dl/fa/document/catalog/cnc/bnp-a1225(eng)/bnpa1225engf.pdf",
+    "url": "https://www.mitsubishielectric.com/dl/fa/document/catalog/cnc/bnp-a1225(eng)/bnpa1225engf.pdf",
     "pdf": "pdfs/mitsubishi/bnpa1225engf.pdf",
     "size": 19187254,
     "pages": 69,
@@ -3961,7 +3961,7 @@
   },
   {
     "name": "bnpa1240enge.pdf",
-    "url": "https://dl.mitsubishielectric.com/dl/fa/document/catalog/cnc/bnp-a1240(eng)/bnpa1240enge.pdf",
+    "url": "https://www.mitsubishielectric.com/dl/fa/document/catalog/cnc/bnp-a1240(eng)/bnpa1240enge.pdf",
     "pdf": "pdfs/mitsubishi/bnpa1240enge.pdf",
     "size": 1883047,
     "pages": 5,
@@ -3970,7 +3970,7 @@
   },
   {
     "name": "y0720k2603.pdf",
-    "url": "https://dl.mitsubishielectric.com/dl/fa/document/catalog/lvcb/yn-c-0720/y0720k2603.pdf",
+    "url": "https://www.mitsubishielectric.com/dl/fa/document/catalog/lvcb/yn-c-0720/y0720k2603.pdf",
     "pdf": "pdfs/mitsubishi/y0720k2603.pdf",
     "size": 29980866,
     "pages": 276,
@@ -3979,7 +3979,7 @@
   },
   {
     "name": "y0622m2603.pdf",
-    "url": "https://dl.mitsubishielectric.com/dl/fa/document/catalog/lvcb/yn-c-0622/y0622m2603.pdf",
+    "url": "https://www.mitsubishielectric.com/dl/fa/document/catalog/lvcb/yn-c-0622/y0622m2603.pdf",
     "pdf": "pdfs/mitsubishi/y0622m2603.pdf",
     "size": 7691086,
     "pages": 76,
@@ -3987,8 +3987,17 @@
     "brand": "mitsubishi"
   },
   {
+    "name": "Geared_Motors_catalog.pdf",
+    "url": "https://www.mitsubishielectric.com/dl/fa/document/catalog/gear/gm-48/Geared_Motors_catalog.pdf",
+    "pdf": "pdfs/mitsubishi/Geared_Motors_catalog.pdf",
+    "size": 4606430,
+    "pages": 120,
+    "category": "减速电机",
+    "brand": "mitsubishi"
+  },
+  {
     "name": "y0713c2303.pdf",
-    "url": "https://dl.mitsubishielectric.com/dl/fa/document/catalog/lvcb/yn-c-0713/y0713c2303.pdf",
+    "url": "https://www.mitsubishielectric.com/dl/fa/document/catalog/lvcb/yn-c-0713/y0713c2303.pdf",
     "pdf": "pdfs/mitsubishi/y0713c2303.pdf",
     "size": 3891322,
     "pages": 20,
@@ -3997,7 +4006,7 @@
   },
   {
     "name": "y0730d2209.pdf",
-    "url": "https://dl.mitsubishielectric.com/dl/fa/document/catalog/lvcb/yn-c-0730/y0730d2209.pdf",
+    "url": "https://www.mitsubishielectric.com/dl/fa/document/catalog/lvcb/yn-c-0730/y0730d2209.pdf",
     "pdf": "pdfs/mitsubishi/y0730d2209.pdf",
     "size": 4089947,
     "pages": 20,
@@ -4006,7 +4015,7 @@
   },
   {
     "name": "y07291307.pdf",
-    "url": "https://dl.mitsubishielectric.com/dl/fa/document/catalog/lvcb/yn-c-0729/y07291307.pdf",
+    "url": "https://www.mitsubishielectric.com/dl/fa/document/catalog/lvcb/yn-c-0729/y07291307.pdf",
     "pdf": "pdfs/mitsubishi/y07291307.pdf",
     "size": 28626421,
     "pages": 183,
@@ -4015,7 +4024,7 @@
   },
   {
     "name": "mx_series_22a_e.pdf",
-    "url": "https://dl.mitsubishielectric.com/dl/fa/document/catalog/lvcb/yn-c-mxa_eng/mx_series_22a_e.pdf",
+    "url": "https://www.mitsubishielectric.com/dl/fa/document/catalog/lvcb/yn-c-mxa_eng/mx_series_22a_e.pdf",
     "pdf": "pdfs/mitsubishi/mx_series_22a_e.pdf",
     "size": 4227154,
     "pages": 20,
@@ -4024,7 +4033,7 @@
   },
   {
     "name": "mdubreaker_newproductnews.pdf",
-    "url": "https://dl.mitsubishielectric.com/dl/fa/document/catalog/lvcb/yn-c-m023/mdubreaker_newproductnews.pdf",
+    "url": "https://www.mitsubishielectric.com/dl/fa/document/catalog/lvcb/yn-c-m023/mdubreaker_newproductnews.pdf",
     "pdf": "pdfs/mitsubishi/mdubreaker_newproductnews.pdf",
     "size": 3593603,
     "pages": 20,
@@ -4032,8 +4041,17 @@
     "brand": "mitsubishi"
   },
   {
+    "name": "mitsubishi_breaker_line_up.pdf",
+    "url": "https://www.mitsubishielectric.com/dl/fa/document/catalog/lvcb/yn-c-002/mitsubishi_breaker_line_up.pdf",
+    "pdf": "pdfs/mitsubishi/mitsubishi_breaker_line_up.pdf",
+    "size": 3975794,
+    "pages": 25,
+    "category": "低压断路器",
+    "brand": "mitsubishi"
+  },
+  {
     "name": "y0702_1009.pdf",
-    "url": "https://dl.mitsubishielectric.com/dl/fa/document/catalog/lvcb/yn-c-0702/y0702_1009.pdf",
+    "url": "https://www.mitsubishielectric.com/dl/fa/document/catalog/lvcb/yn-c-0702/y0702_1009.pdf",
     "pdf": "pdfs/mitsubishi/y0702_1009.pdf",
     "size": 2856005,
     "pages": 35,
@@ -4042,7 +4060,7 @@
   },
   {
     "name": "introduction_of_low-voltage_circuit_breakers.pdf",
-    "url": "https://dl.mitsubishielectric.com/dl/fa/document/catalog/lvcb/yn-c-001/introduction_of_low-voltage_circuit_breakers.pdf",
+    "url": "https://www.mitsubishielectric.com/dl/fa/document/catalog/lvcb/yn-c-001/introduction_of_low-voltage_circuit_breakers.pdf",
     "pdf": "pdfs/mitsubishi/introduction_of_low-voltage_circuit_breakers.pdf",
     "size": 5705776,
     "pages": 39,
@@ -4050,17 +4068,8 @@
     "brand": "mitsubishi"
   },
   {
-    "name": "mitsubishi_breaker_line_up.pdf",
-    "url": "https://dl.mitsubishielectric.com/dl/fa/document/catalog/lvcb/yn-c-002/mitsubishi_breaker_line_up.pdf",
-    "pdf": "pdfs/mitsubishi/mitsubishi_breaker_line_up.pdf",
-    "size": 3975794,
-    "pages": 25,
-    "category": "低压断路器",
-    "brand": "mitsubishi"
-  },
-  {
     "name": "y-0784_1902.pdf",
-    "url": "https://dl.mitsubishielectric.com/dl/fa/document/catalog/lvcb/yn-c-0784/y-0784_1902.pdf",
+    "url": "https://www.mitsubishielectric.com/dl/fa/document/catalog/lvcb/yn-c-0784/y-0784_1902.pdf",
     "pdf": "pdfs/mitsubishi/y-0784_1902.pdf",
     "size": 584409,
     "pages": 2,
@@ -4069,7 +4078,7 @@
   },
   {
     "name": "y-0786_1903.pdf",
-    "url": "https://dl.mitsubishielectric.com/dl/fa/document/catalog/lvcb/yn-c-0786/y-0786_1903.pdf",
+    "url": "https://www.mitsubishielectric.com/dl/fa/document/catalog/lvcb/yn-c-0786/y-0786_1903.pdf",
     "pdf": "pdfs/mitsubishi/y-0786_1903.pdf",
     "size": 2047607,
     "pages": 8,
@@ -4078,7 +4087,7 @@
   },
   {
     "name": "y0670b0901.pdf",
-    "url": "https://dl.mitsubishielectric.com/dl/fa/document/catalog/lvcb/yn-c-0642/y0670b0901.pdf",
+    "url": "https://www.mitsubishielectric.com/dl/fa/document/catalog/lvcb/yn-c-0642/y0670b0901.pdf",
     "pdf": "pdfs/mitsubishi/y0670b0901.pdf",
     "size": 2612158,
     "pages": 16,
@@ -4087,7 +4096,7 @@
   },
   {
     "name": "y0642b0903.pdf",
-    "url": "https://dl.mitsubishielectric.com/dl/fa/document/catalog/lvcb/yn-c-0670/y0642b0903.pdf",
+    "url": "https://www.mitsubishielectric.com/dl/fa/document/catalog/lvcb/yn-c-0670/y0642b0903.pdf",
     "pdf": "pdfs/mitsubishi/y0642b0903.pdf",
     "size": 10301915,
     "pages": 192,
@@ -4095,17 +4104,17 @@
     "brand": "mitsubishi"
   },
   {
-    "name": "L(NA)02031ENG-L_21B.pdf",
-    "url": "https://dl.mitsubishielectric.com/dl/fa/document/catalog/lvsw/l02031eng/L(NA)02031ENG-L_21B.pdf",
-    "pdf": "pdfs/mitsubishi/L(NA)02031ENG-L_21B.pdf",
-    "size": 39773534,
-    "pages": 410,
-    "category": "接触器和马达启动器",
+    "name": "MELPRO-De.pdf",
+    "url": "https://www.mitsubishielectric.com/dl/fa/document/catalog/pror/se-e843/MELPRO-De.pdf",
+    "pdf": "pdfs/mitsubishi/MELPRO-De.pdf",
+    "size": 6193417,
+    "pages": 8,
+    "category": "保护继电器",
     "brand": "mitsubishi"
   },
   {
     "name": "L(NA)02040ENG.pdf",
-    "url": "https://dl.mitsubishielectric.com/dl/fa/document/catalog/lvsw/l02040eng/L(NA)02040ENG.pdf",
+    "url": "https://www.mitsubishielectric.com/dl/fa/document/catalog/lvsw/l02040eng/L(NA)02040ENG.pdf",
     "pdf": "pdfs/mitsubishi/L(NA)02040ENG.pdf",
     "size": 1372807,
     "pages": 2,
@@ -4113,17 +4122,8 @@
     "brand": "mitsubishi"
   },
   {
-    "name": "L(NA)02037ENG.pdf",
-    "url": "https://dl.mitsubishielectric.com/dl/fa/document/catalog/lvsw/l02037eng/L(NA)02037ENG.pdf",
-    "pdf": "pdfs/mitsubishi/L(NA)02037ENG.pdf",
-    "size": 1225422,
-    "pages": 2,
-    "category": "接触器和马达启动器",
-    "brand": "mitsubishi"
-  },
-  {
     "name": "sh020005c_EN.pdf",
-    "url": "https://dl.mitsubishielectric.com/dl/fa/document/catalog/lvsw/sh020005eng/sh020005c_EN.pdf",
+    "url": "https://www.mitsubishielectric.com/dl/fa/document/catalog/lvsw/sh020005eng/sh020005c_EN.pdf",
     "pdf": "pdfs/mitsubishi/sh020005c_EN.pdf",
     "size": 2618251,
     "pages": 52,
@@ -4131,17 +4131,26 @@
     "brand": "mitsubishi"
   },
   {
-    "name": "Geared_Motors_catalog.pdf",
-    "url": "https://dl.mitsubishielectric.com/dl/fa/document/catalog/gear/gm-48/Geared_Motors_catalog.pdf",
-    "pdf": "pdfs/mitsubishi/Geared_Motors_catalog.pdf",
-    "size": 4606430,
-    "pages": 120,
-    "category": "减速电机",
+    "name": "L(NA)02031ENG-L_21B.pdf",
+    "url": "https://www.mitsubishielectric.com/dl/fa/document/catalog/lvsw/l02031eng/L(NA)02031ENG-L_21B.pdf",
+    "pdf": "pdfs/mitsubishi/L(NA)02031ENG-L_21B.pdf",
+    "size": 39773534,
+    "pages": 410,
+    "category": "接触器和马达启动器",
+    "brand": "mitsubishi"
+  },
+  {
+    "name": "L(NA)02037ENG.pdf",
+    "url": "https://www.mitsubishielectric.com/dl/fa/document/catalog/lvsw/l02037eng/L(NA)02037ENG.pdf",
+    "pdf": "pdfs/mitsubishi/L(NA)02037ENG.pdf",
+    "size": 1225422,
+    "pages": 2,
+    "category": "接触器和马达启动器",
     "brand": "mitsubishi"
   },
   {
     "name": "y0758d2503.pdf",
-    "url": "https://dl.mitsubishielectric.com/dl/fa/document/catalog/pmd/ym-c-y-0758/y0758d2503.pdf",
+    "url": "https://www.mitsubishielectric.com/dl/fa/document/catalog/pmd/ym-c-y-0758/y0758d2503.pdf",
     "pdf": "pdfs/mitsubishi/y0758d2503.pdf",
     "size": 9333464,
     "pages": 44,
@@ -4150,7 +4159,7 @@
   },
   {
     "name": "y0758a1702.pdf",
-    "url": "https://dl.mitsubishielectric.com/dl/fa/document/catalog/pmd/ym-c-y-0758a/y0758a1702.pdf",
+    "url": "https://www.mitsubishielectric.com/dl/fa/document/catalog/pmd/ym-c-y-0758a/y0758a1702.pdf",
     "pdf": "pdfs/mitsubishi/y0758a1702.pdf",
     "size": 9310966,
     "pages": 36,
@@ -4159,7 +4168,7 @@
   },
   {
     "name": "y0712a1803.pdf",
-    "url": "https://dl.mitsubishielectric.com/dl/fa/document/catalog/pmd/ym-c-y-0712/y0712a1803.pdf",
+    "url": "https://www.mitsubishielectric.com/dl/fa/document/catalog/pmd/ym-c-y-0712/y0712a1803.pdf",
     "pdf": "pdfs/mitsubishi/y0712a1803.pdf",
     "size": 9812649,
     "pages": 102,
@@ -4167,26 +4176,8 @@
     "brand": "mitsubishi"
   },
   {
-    "name": "y0768_1704.pdf",
-    "url": "https://dl.mitsubishielectric.com/dl/fa/document/catalog/pmd/ym-c-y-0768/y0768_1704.pdf",
-    "pdf": "pdfs/mitsubishi/y0768_1704.pdf",
-    "size": 1179924,
-    "pages": 2,
-    "category": "电能管理测量仪",
-    "brand": "mitsubishi"
-  },
-  {
-    "name": "introduction_of_me96ss_ver_b_series.pdf",
-    "url": "https://dl.mitsubishielectric.com/dl/fa/document/catalog/pmd/ym-c-y-k002/introduction_of_me96ss_ver_b_series.pdf",
-    "pdf": "pdfs/mitsubishi/introduction_of_me96ss_ver_b_series.pdf",
-    "size": 1030839,
-    "pages": 11,
-    "category": "电能管理测量仪",
-    "brand": "mitsubishi"
-  },
-  {
     "name": "introduction_of_me96ss_ver_a_series.pdf",
-    "url": "https://dl.mitsubishielectric.com/dl/fa/document/catalog/pmd/ym-c-y-k001/introduction_of_me96ss_ver_a_series.pdf",
+    "url": "https://www.mitsubishielectric.com/dl/fa/document/catalog/pmd/ym-c-y-k001/introduction_of_me96ss_ver_a_series.pdf",
     "pdf": "pdfs/mitsubishi/introduction_of_me96ss_ver_a_series.pdf",
     "size": 2044805,
     "pages": 26,
@@ -4194,17 +4185,8 @@
     "brand": "mitsubishi"
   },
   {
-    "name": "MELPRO-De.pdf",
-    "url": "https://dl.mitsubishielectric.com/dl/fa/document/catalog/pror/se-e843/MELPRO-De.pdf",
-    "pdf": "pdfs/mitsubishi/MELPRO-De.pdf",
-    "size": 6193417,
-    "pages": 8,
-    "category": "保护继电器",
-    "brand": "mitsubishi"
-  },
-  {
     "name": "y0766b2003.pdf",
-    "url": "https://dl.mitsubishielectric.com/dl/fa/document/catalog/ems/ym-c-y-0766/y0766b2003.pdf",
+    "url": "https://www.mitsubishielectric.com/dl/fa/document/catalog/ems/ym-c-y-0766/y0766b2003.pdf",
     "pdf": "pdfs/mitsubishi/y0766b2003.pdf",
     "size": 7837525,
     "pages": 32,
@@ -4212,8 +4194,26 @@
     "brand": "mitsubishi"
   },
   {
+    "name": "introduction_of_me96ss_ver_b_series.pdf",
+    "url": "https://www.mitsubishielectric.com/dl/fa/document/catalog/pmd/ym-c-y-k002/introduction_of_me96ss_ver_b_series.pdf",
+    "pdf": "pdfs/mitsubishi/introduction_of_me96ss_ver_b_series.pdf",
+    "size": 1030839,
+    "pages": 11,
+    "category": "电能管理测量仪",
+    "brand": "mitsubishi"
+  },
+  {
+    "name": "y0768_1704.pdf",
+    "url": "https://www.mitsubishielectric.com/dl/fa/document/catalog/pmd/ym-c-y-0768/y0768_1704.pdf",
+    "pdf": "pdfs/mitsubishi/y0768_1704.pdf",
+    "size": 1179924,
+    "pages": 2,
+    "category": "电能管理测量仪",
+    "brand": "mitsubishi"
+  },
+  {
     "name": "y0748e2604.pdf",
-    "url": "https://dl.mitsubishielectric.com/dl/fa/document/catalog/ems/ym-c-y-0748/y0748e2604.pdf",
+    "url": "https://www.mitsubishielectric.com/dl/fa/document/catalog/ems/ym-c-y-0748/y0748e2604.pdf",
     "pdf": "pdfs/mitsubishi/y0748e2604.pdf",
     "size": 11284587,
     "pages": 40,
@@ -4222,7 +4222,7 @@
   },
   {
     "name": "y0792b2603.pdf",
-    "url": "https://dl.mitsubishielectric.com/dl/fa/document/catalog/ems/ym-c-y-0792/y0792b2603.pdf",
+    "url": "https://www.mitsubishielectric.com/dl/fa/document/catalog/ems/ym-c-y-0792/y0792b2603.pdf",
     "pdf": "pdfs/mitsubishi/y0792b2603.pdf",
     "size": 5204253,
     "pages": 20,
@@ -4231,7 +4231,7 @@
   },
   {
     "name": "y0833_2607.pdf",
-    "url": "https://dl.mitsubishielectric.com/dl/fa/document/catalog/ems/ym-c-y-0833/y0833_2607.pdf",
+    "url": "https://www.mitsubishielectric.com/dl/fa/document/catalog/ems/ym-c-y-0833/y0833_2607.pdf",
     "pdf": "pdfs/mitsubishi/y0833_2607.pdf",
     "size": 10000061,
     "pages": 40,
@@ -4240,7 +4240,7 @@
   },
   {
     "name": "y0737d1807.pdf",
-    "url": "https://dl.mitsubishielectric.com/dl/fa/document/catalog/ems/ym-c-y-0737/y0737d1807.pdf",
+    "url": "https://www.mitsubishielectric.com/dl/fa/document/catalog/ems/ym-c-y-0737/y0737d1807.pdf",
     "pdf": "pdfs/mitsubishi/y0737d1807.pdf",
     "size": 5914388,
     "pages": 36,
@@ -4248,17 +4248,8 @@
     "brand": "mitsubishi"
   },
   {
-    "name": "Notice of Certification Standard Change for Energy Saving Supporting Devices EcoMonitorLight",
-    "url": "https://dl.mitsubishielectric.com/fa/document/sales/ems/yama541/yama541.pdf",
-    "pdf": "pdfs/mitsubishi/Notice of Certification Standard Change for Energy Saving Supporting Devices Eco.pdf",
-    "size": 273812,
-    "pages": 1,
-    "category": "节能支持设备",
-    "brand": "mitsubishi"
-  },
-  {
     "name": "l08578engg.pdf",
-    "url": "https://dl.mitsubishielectric.com/dl/fa/document/catalog/melipc/l08578eng/l08578engg.pdf",
+    "url": "https://www.mitsubishielectric.com/dl/fa/document/catalog/melipc/l08578eng/l08578engg.pdf",
     "pdf": "pdfs/mitsubishi/l08578engg.pdf",
     "size": 8076310,
     "pages": 24,
@@ -4267,7 +4258,7 @@
   },
   {
     "name": "l08600engc.pdf",
-    "url": "https://dl.mitsubishielectric.com/dl/fa/document/catalog/melipc/l08600eng/l08600engc.pdf",
+    "url": "https://www.mitsubishielectric.com/dl/fa/document/catalog/melipc/l08600eng/l08600engc.pdf",
     "pdf": "pdfs/mitsubishi/l08600engc.pdf",
     "size": 13640089,
     "pages": 20,
@@ -4275,17 +4266,17 @@
     "brand": "mitsubishi"
   },
   {
-    "name": "l08970enga.pdf",
-    "url": "https://dl.mitsubishielectric.com/dl/fa/document/catalog/melipc/l08970eng/l08970enga.pdf",
-    "pdf": "pdfs/mitsubishi/l08970enga.pdf",
-    "size": 965793,
-    "pages": 2,
-    "category": "工业计算机MELIPC",
+    "name": "l08122eh.pdf",
+    "url": "https://www.mitsubishielectric.com/dl/fa/document/catalog/plceng/l08122e/l08122eh.pdf",
+    "pdf": "pdfs/mitsubishi/l08122eh.pdf",
+    "size": 18228181,
+    "pages": 48,
+    "category": "MX Component",
     "brand": "mitsubishi"
   },
   {
     "name": "l16012.pdf",
-    "url": "https://dl.mitsubishielectric.com/dl/fa/document/catalog/efactory/l16012/l16012.pdf",
+    "url": "https://www.mitsubishielectric.com/dl/fa/document/catalog/efactory/l16012/l16012.pdf",
     "pdf": "pdfs/mitsubishi/l16012.pdf",
     "size": 37929074,
     "pages": 56,
@@ -4293,44 +4284,44 @@
     "brand": "mitsubishi"
   },
   {
+    "name": "l08970enga.pdf",
+    "url": "https://www.mitsubishielectric.com/dl/fa/document/catalog/melipc/l08970eng/l08970enga.pdf",
+    "pdf": "pdfs/mitsubishi/l08970enga.pdf",
+    "size": 965793,
+    "pages": 2,
+    "category": "工业计算机MELIPC",
+    "brand": "mitsubishi"
+  },
+  {
     "name": "l08232engc.pdf",
-    "url": "https://dl.mitsubishielectric.com/dl/fa/document/catalog/plceng/l08232eng/l08232engc.pdf",
+    "url": "https://www.mitsubishielectric.com/dl/fa/document/catalog/plceng/l08232eng/l08232engc.pdf",
     "pdf": "pdfs/mitsubishi/l08232engc.pdf",
     "size": 9686886,
     "pages": 40,
-    "category": "工程软件",
+    "category": "MX Component",
     "brand": "mitsubishi"
   },
   {
     "name": "l08334enge.pdf",
-    "url": "https://dl.mitsubishielectric.com/dl/fa/document/catalog/plceng/l08334eng/l08334enge.pdf",
+    "url": "https://www.mitsubishielectric.com/dl/fa/document/catalog/plceng/l08334eng/l08334enge.pdf",
     "pdf": "pdfs/mitsubishi/l08334enge.pdf",
     "size": 6814222,
     "pages": 16,
-    "category": "工程软件",
-    "brand": "mitsubishi"
-  },
-  {
-    "name": "l08122eh.pdf",
-    "url": "https://dl.mitsubishielectric.com/dl/fa/document/catalog/plceng/l08122e/l08122eh.pdf",
-    "pdf": "pdfs/mitsubishi/l08122eh.pdf",
-    "size": 18228181,
-    "pages": 48,
-    "category": "工程软件",
+    "category": "MX Component",
     "brand": "mitsubishi"
   },
   {
     "name": "L08455ENG-B.pdf",
-    "url": "https://dl.mitsubishielectric.com/dl/fa/document/catalog/plceng/l08455eng/L08455ENG-B.pdf",
+    "url": "https://www.mitsubishielectric.com/dl/fa/document/catalog/plceng/l08455eng/L08455ENG-B.pdf",
     "pdf": "pdfs/mitsubishi/L08455ENG-B.pdf",
     "size": 5655118,
     "pages": 6,
-    "category": "工程软件",
+    "category": "MX Component",
     "brand": "mitsubishi"
   },
   {
     "name": "l08816engg.pdf",
-    "url": "https://dl.mitsubishielectric.com/dl/fa/document/catalog/3dsim/l08816eng/l08816engg.pdf",
+    "url": "https://www.mitsubishielectric.com/dl/fa/document/catalog/3dsim/l08816eng/l08816engg.pdf",
     "pdf": "pdfs/mitsubishi/l08816engg.pdf",
     "size": 7162800,
     "pages": 16,
@@ -4338,17 +4329,8 @@
     "brand": "mitsubishi"
   },
   {
-    "name": "l08785engf.pdf",
-    "url": "https://dl.mitsubishielectric.com/dl/fa/document/catalog/scada/l08785eng/l08785engf.pdf",
-    "pdf": "pdfs/mitsubishi/l08785engf.pdf",
-    "size": 15989663,
-    "pages": 52,
-    "category": "SCADA软件",
-    "brand": "mitsubishi"
-  },
-  {
     "name": "XF-KK10-20A007.pdf",
-    "url": "https://dl.mitsubishielectric.com/dl/fa/document/catalog/renewals/xf-kk10-20a007/XF-KK10-20A007.pdf",
+    "url": "https://www.mitsubishielectric.com/dl/fa/document/catalog/renewals/xf-kk10-20a007/XF-KK10-20A007.pdf",
     "pdf": "pdfs/mitsubishi/XF-KK10-20A007.pdf",
     "size": 1616497,
     "pages": 1,
@@ -4357,11 +4339,20 @@
   },
   {
     "name": "kk001-c1503g-en.pdf",
-    "url": "https://dl.mitsubishielectric.com/dl/fa/document/catalog/renewals/kk001-en/kk001-c1503g-en.pdf",
+    "url": "https://www.mitsubishielectric.com/dl/fa/document/catalog/renewals/kk001-en/kk001-c1503g-en.pdf",
     "pdf": "pdfs/mitsubishi/kk001-c1503g-en.pdf",
     "size": 3794221,
     "pages": 44,
     "category": "服务",
+    "brand": "mitsubishi"
+  },
+  {
+    "name": "l08785engf.pdf",
+    "url": "https://www.mitsubishielectric.com/dl/fa/document/catalog/scada/l08785eng/l08785engf.pdf",
+    "pdf": "pdfs/mitsubishi/l08785engf.pdf",
+    "size": 15989663,
+    "pages": 52,
+    "category": "SCADA软件",
     "brand": "mitsubishi"
   }
 ]

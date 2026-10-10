@@ -7159,5 +7159,27 @@
     "product": "S7-200 SMART",
     "download_id": "18722",
     "brand": "siemens"
+  },
+  {
+    "name": "PCS 7软件更新",
+    "url": "https://www.ad.siemens.com.cn/download/html/Download?downloadId=18395&loginID=&srno=&sendtime=&ftype=cn",
+    "pdf": "pdfs/siemens/PCS 7软件更新_18395.pdf",
+    "size": 1293799,
+    "pages": 37,
+    "type": "操作指南",
+    "product": "DCS PCS7",
+    "download_id": "18395",
+    "brand": "siemens"
+  },
+  {
+    "name": "SINUMERIK 808D ADVANCED 操作步骤与编程（车削）",
+    "url": "https://www.ad.siemens.com.cn/download/html/Download?downloadId=7463&loginID=&srno=&sendtime=&ftype=cn",
+    "pdf": "pdfs/siemens/SINUMERIK 808D ADVANCED 操作步骤与编程（车削）_7463.pdf",
+    "size": 8033780,
+    "pages": 122,
+    "type": "手册",
+    "product": "808D",
+    "download_id": "7463",
+    "brand": "siemens"
   }
 ]

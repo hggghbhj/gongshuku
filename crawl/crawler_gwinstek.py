@@ -146,40 +146,40 @@ def main():
     print(f"\n总计去重后: {len(uniq_links)} 个下载链接")
     print(f"已存在: {len(existing_ids)} 个")
     
-    # 下载新文件
+    # 下载新文件（并行）
     new_count = 0
     fail_count = 0
-    for i, item in enumerate(uniq_links):
-        if item["id"] in existing_ids:
-            continue
-        
-        print(f"[{i+1}/{len(uniq_links)}] 下载...")
-        result = download_pdf(item)
-        
-        if result:
-            fpath, filename = result
-            pages = get_pdf_pages(fpath)
-            size = os.path.getsize(fpath)
-            manifest.append({
-                "id": item["id"],
-                "name": filename,
-                "url": item["url"],
-                "brand": "固纬电子",
-                "type": "用户手册",
-                "size": size,
-                "pages": pages,
-                "page": item["page"],
-            })
-            new_count += 1
-            print(f"  OK! {filename[:40]} {pages}页, {size//1024}KB")
-        else:
-            fail_count += 1
-        
-        # 每10个保存一次
-        if (i + 1) % 10 == 0:
-            save_manifest(manifest)
-        
-        time.sleep(0.5)
+    to_download=[item for item in uniq_links if item["id"] not in existing_ids]
+    print(f"需检查: {len(to_download)} 个")
+    from concurrent.futures import ThreadPoolExecutor,as_completed
+    def work(item):
+        return item, download_pdf(item)
+    done=0
+    with ThreadPoolExecutor(max_workers=8) as ex:
+        futs=[ex.submit(work,item) for item in to_download]
+        for f in as_completed(futs):
+            item,result=f.result()
+            done+=1
+            if result:
+                fpath, filename = result
+                pages = get_pdf_pages(fpath)
+                size = os.path.getsize(fpath)
+                manifest.append({
+                    "id": item["id"],
+                    "name": filename,
+                    "url": item["url"],
+                    "brand": "固纬电子",
+                    "type": "用户手册",
+                    "size": size,
+                    "pages": pages,
+                    "page": item["page"],
+                })
+                new_count += 1
+            else:
+                fail_count += 1
+            if done%50==0:
+                save_manifest(manifest)
+                print(f"  进度 {done}/{len(to_download)} 新增{new_count}")
     
     save_manifest(manifest)
     print(f"\n=== 完成 ===")
