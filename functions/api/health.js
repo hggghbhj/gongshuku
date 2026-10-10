@@ -1,23 +1,15 @@
 // 工书库云端健康自检：访问 /api/health 立即检查所有核心组件
 // ?full=1 检查全部域名（默认只检查静态资源+核心域名）
 // 走代理的域名通过 /api/pdf 真实链路检查（与用户预览路径一致）；直连域名直接检查。
-const DIRECT_HOSTS = ['gongkong.com','gongkong.tv','danfoss.com','amsamotion.com'];
+const DIRECT_HOSTS = ['danfoss.com','amsamotion.com','mitsubishielectric.com','ad.siemens.com.cn'];
 const SAMPLES = [
-  {host:'uploadfile.gongkong.com',brand:'三菱电机',url:'https://uploadfile.gongkong.com/Upload/gongkong/technicalDataAttachment/202609/20/63982badf077489c87365e4e90f649d8.pdf'},
+  {host:'dl.mitsubishielectric.com',brand:'三菱电机',url:'https://dl.mitsubishielectric.com/dl/fa/document/catalog/plc/e001eng/e001eng.pdf'},
   {host:'assets.danfoss.com',brand:'丹佛斯',url:'https://assets.danfoss.com/documents/197727/AN00008642701001-000102.pdf'},
   {host:'www.invt.com',brand:'英威腾',url:'https://www.invt.com/uploads/file1/20260907/IMS21B-A%20Manual_Frame%20Sizes%20200-263_EN_V1.0.pdf'},
-  {host:'mp4.gongkong.com',brand:'爱里富',url:'https://mp4.gongkong.com/2026/file/alif-2026080700003.pdf'},
-  {host:'sc19.gongkong.com',brand:'大恒图像',url:'https://sc19.gongkong.com/Upload/gongkong/technicalDataAttachment/202203/02/792b015e64a943eeb8165d3ab0ac2491.pdf'},
-  {host:'download.gongkong.com',brand:'金蝶',url:'https://download.gongkong.com/fsfiles/technicalData/201706/2017060714022000001.pdf'},
-  {host:'fs.gongkong.com',brand:'滨特尔',url:'https://fs.gongkong.com/files/technicalData/201308/2013080818023200002.pdf'},
   {host:'oss.amsamotion.com',brand:'艾莫迅',url:'https://oss.amsamotion.com/uploads/USB-LORA产品手册-VER1.3-260912.pdf'},
   {host:'jngbdz.com',brand:'工贝电子',url:'https://jngbdz.com/file/PLC_1200/【工贝电子】工贝1200信号板和扩展模块用户手册.pdf'},
-  {host:'www.e-elitech.com',brand:'精创',url:'https://www.e-elitech.com/uploadfile/2022/07/05/202207052256144iePZF.pdf'},
-  {host:'dl.e-elitech.com',brand:'精创电气(镜像)',url:'https://www.e-elitech.com/uploadfile/2020/10/23/202010230913442SRZy8.pdf'},
-  {host:'cdn.xinje.com',brand:'信捷电气',url:'https://cdn.xinje.com/XS系列PLCopen标准控制器用户手册【软件篇】（XS Studio）（PS06 20260918 1.8）-2026.9.18.pdf'},
   {host:'www.leisai.com',brand:'雷赛智能',url:'https://www.leisai.com/upload/file/2026/06/15/雷赛智能简介2026.pdf'},
   {host:'zxdq.oss-cn-shenzhen.aliyuncs.com',brand:'正弦电气',url:'https://zxdq.oss-cn-shenzhen.aliyuncs.com/Upload/pdf/202508/31010310-ES760_SC.pdf'},
-  {host:'website.hcfa.cc',brand:'禾川科技',url:'https://website.hcfa.cc:20080/upload/%E4%BA%A7%E5%93%81%E4%B8%AD%E5%BF%83/%E7%89%B9%E6%AE%8A%E6%9C%BA%E5%9E%8B/%E8%A1%8C%E4%B8%9A%E5%AE%9A%E5%88%B6%E6%9C%BA/%E7%BA%BA%E7%BB%87%E8%A1%8C%E4%B8%9A/E630%E7%B3%BB%E5%88%97%E5%8F%98%E9%A2%91%E5%99%A8/E630%E7%B3%BB%E5%88%97%E7%BA%BA%E7%BB%87%E4%B8%93%E7%94%A8%E8%B6%85%E5%90%AF%E5%8A%A8%E5%8F%98%E9%A2%91%E5%99%A8%E5%AE%89%E8%A3%85%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E%E4%B9%A6V1.0%20%E4%B8%AD%E8%8B%B1%E6%96%87.pdf'},
   {host:'jtdrive.com',brand:'金田科技(WAF)',url:'http://jtdrive.com/wp-content/uploads/2025/12/930E%E8%AF%B4%E6%98%8E%E4%B9%A6-V1.0.pdf'},
   {host:'www.coolmay.com',brand:'顾美科技',url:'http://www.coolmay.com/uploads/files/20241210/729ad44dbd4feca7da24d36979703fbe.pdf'}
 ];
@@ -105,7 +97,7 @@ export async function onRequestGet({ request }){
   }));
 
   // 2. PDF 链接（默认只查核心域名，full=1 查全部）
-  const coreHosts = ['gongkong','danfoss','e-elitech','xinje','leisai','invt','hcfa','jtdrive','coolmay','sinee','amsamotion','jngbdz'];
+  const coreHosts = ['danfoss','invt','amsamotion','jngbdz','leisai','sinee','jtdrive','coolmay','mitsubishielectric','ad.siemens'];
   const targets = full ? SAMPLES : SAMPLES.filter(s=>coreHosts.some(c=>s.host.includes(c)));
 
   const pdfResults = await Promise.all(targets.map(s=>checkPdf(s, base)));

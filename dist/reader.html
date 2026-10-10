@@ -123,9 +123,23 @@ else if(!isLocalPdf(RAW)&&!directOk(RAW)){
     '</div>';
   report(false,{reason:'external'});
 }else{
-document.getElementById('btnOpen').onclick=()=>window.open(RAW,'_blank');
-document.getElementById('btnDl').onclick=()=>window.open(RAW,'_blank');
+document.getElementById('btnOpen').onclick=()=>window.open(safeOpen(RAW),'_blank','noopener');
+document.getElementById('btnDl').onclick=()=>window.open(safeOpen(RAW),'_blank','noopener');
 document.getElementById('btnTr').onclick=()=>location.href='viewer.html?pdf='+encodeURIComponent(RAW)+'&title='+encodeURIComponent(TITLE);
+}
+// 安全打开：对中文路径做百分号编码，避免浏览器无法解析
+function safeOpen(u){
+  if(/^https?:\/\//.test(u)){
+    try{
+      const p=new URL(u);
+      p.pathname=p.pathname.split('/').map(s=>{
+        // 已编码的不再编码
+        try{return encodeURIComponent(decodeURIComponent(s));}catch(e){return encodeURIComponent(s);}
+      }).join('/');
+      return p.href;
+    }catch(e){return u;}
+  }
+  return u;
 }
 function report(ok,extra){
   if(reported && ok) return;
