@@ -1,14 +1,14 @@
 // 工书库云端健康自检：访问 /api/health 立即检查所有核心组件
 // ?full=1 检查全部域名（默认只检查静态资源+核心域名）
 // 走代理的域名通过 /api/pdf 真实链路检查（与用户预览路径一致）；直连域名直接检查。
-const DIRECT_HOSTS = ['danfoss.com','amsamotion.com','mitsubishielectric.com','ad.siemens.com.cn'];
+const DIRECT_HOSTS = ['danfoss.com','amsamotion.com','mitsubishielectric.com','ad.siemens.com.cn','gongshuku.pages.dev'];
 const SAMPLES = [
-  {host:'dl.mitsubishielectric.com',brand:'三菱电机',url:'https://dl.mitsubishielectric.com/dl/fa/document/catalog/plc/e001eng/e001eng.pdf'},
+  {host:'dl.mitsubishielectric.com',brand:'三菱电机',url:'https://dl.mitsubishielectric.com/dl/fa/document/catalog/plc/e001eng/e001engc.pdf'},
   {host:'assets.danfoss.com',brand:'丹佛斯',url:'https://assets.danfoss.com/documents/197727/AN00008642701001-000102.pdf'},
   {host:'www.invt.com',brand:'英威腾',url:'https://www.invt.com/uploads/file1/20260907/IMS21B-A%20Manual_Frame%20Sizes%20200-263_EN_V1.0.pdf'},
   {host:'oss.amsamotion.com',brand:'艾莫迅',url:'https://oss.amsamotion.com/uploads/USB-LORA产品手册-VER1.3-260912.pdf'},
   {host:'jngbdz.com',brand:'工贝电子',url:'https://jngbdz.com/file/PLC_1200/【工贝电子】工贝1200信号板和扩展模块用户手册.pdf'},
-  {host:'www.leisai.com',brand:'雷赛智能',url:'https://www.leisai.com/upload/file/2026/06/15/雷赛智能简介2026.pdf'},
+  {host:'gongshuku.pages.dev',brand:'雷赛智能',url:'https://gongshuku.pages.dev/pdfs/leisai/ls_00104a60.pdf'},
   {host:'zxdq.oss-cn-shenzhen.aliyuncs.com',brand:'正弦电气',url:'https://zxdq.oss-cn-shenzhen.aliyuncs.com/Upload/pdf/202508/31010310-ES760_SC.pdf'},
   {host:'jtdrive.com',brand:'金田科技(WAF)',url:'http://jtdrive.com/wp-content/uploads/2025/12/930E%E8%AF%B4%E6%98%8E%E4%B9%A6-V1.0.pdf'},
   {host:'www.coolmay.com',brand:'顾美科技',url:'http://www.coolmay.com/uploads/files/20241210/729ad44dbd4feca7da24d36979703fbe.pdf'}
