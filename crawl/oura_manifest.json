@@ -433,114 +433,6 @@
  },
  {
   "cat": "用户手册",
-  "t": "EIB-EISSE01总线卡使用手册",
-  "d": "2024-08-27",
-  "u": "https://www.euradrives.com/Upload/File/202510/20251031160727_1576.pdf",
-  "fn": "or_f7e7b3a5.pdf",
-  "pages": 86,
-  "size": 1998453
- },
- {
-  "cat": "用户手册",
-  "t": "E2400系列变频器说明书",
-  "d": "2024-08-27",
-  "u": "https://www.euradrives.com/Upload/File/202408/20240827174226_7223.pdf",
-  "fn": "or_437fe4cb.pdf",
-  "pages": 163,
-  "size": 5487742
- },
- {
-  "cat": "用户手册",
-  "t": "E2000中压系列变频器说明书",
-  "d": "2024-08-27",
-  "u": "https://www.euradrives.com/Upload/File/202408/20240827174045_7724.pdf",
-  "fn": "or_ba97c83f.pdf",
-  "pages": 279,
-  "size": 11646623
- },
- {
-  "cat": "用户手册",
-  "t": "DK800 系列变频器快速使用指南",
-  "d": "2024-08-14",
-  "u": "https://www.euradrives.com/Upload/File/202408/20240814210430_9170.pdf",
-  "fn": "or_0aecc46a.pdf",
-  "pages": 10,
-  "size": 1199500
- },
- {
-  "cat": "用户手册",
-  "t": "SD20-E系列EtherCAT总线型伺服系统详细版使用手册",
-  "d": "2024-08-14",
-  "u": "https://www.euradrives.com/Upload/File/202408/20240814210717_4553.pdf",
-  "fn": "or_e4b71327.pdf",
-  "pages": 48,
-  "size": 3573845
- },
- {
-  "cat": "用户手册",
-  "t": "SD20-D系列详细版使用手册",
-  "d": "2024-08-14",
-  "u": "https://www.euradrives.com/Upload/File/202408/20240814210510_4859.pdf",
-  "fn": "or_ffee2c9f.pdf",
-  "pages": 130,
-  "size": 4977748
- },
- {
-  "cat": "用户手册",
-  "t": "E800/E2000简易操作手册",
-  "d": "2024-08-05",
-  "u": "https://www.euradrives.com/Upload/File/202408/20240805155657_3553.pdf",
-  "fn": "or_d82ef8ae.pdf",
-  "pages": 278,
-  "size": 5184464
- },
- {
-  "cat": "用户手册",
-  "t": "ERM200 硬件使用手册",
-  "d": "2024-08-05",
-  "u": "https://www.euradrives.com/Upload/File/202408/20240805155818_9783.pdf",
-  "fn": "or_386ad1c0.pdf",
-  "pages": 78,
-  "size": 1011771
- },
- {
-  "cat": "用户手册",
-  "t": "E2000-W系列变频器说明书",
-  "d": "2024-08-05",
-  "u": "https://www.euradrives.com/Upload/File/202408/20240805155744_5344.pdf",
-  "fn": "or_df8809dd.pdf",
-  "pages": 45,
-  "size": 1044166
- },
- {
-  "cat": "用户手册",
-  "t": "环控ECS202-16DTD-A单独使用手册",
-  "d": "2024-06-27",
-  "u": "https://www.euradrives.com/Upload/File/202406/20240627161225_0143.pdf",
-  "fn": "or_51847c45.pdf",
-  "pages": 137,
-  "size": 4294315
- },
- {
-  "cat": "用户手册",
-  "t": "ERM242-40DTD软件使用说明手册",
-  "d": "2024-06-27",
-  "u": "https://www.euradrives.com/Upload/File/202406/20240627155857_7613.pdf",
-  "fn": "or_1eef6147.pdf",
-  "pages": 303,
-  "size": 6626972
- },
- {
-  "cat": "用户手册",
-  "t": "EPG05Z卡简易说明书",
-  "d": "2024-06-27",
-  "u": "https://www.euradrives.com/Upload/File/202406/20240627155538_7007.pdf",
-  "fn": "or_cb4e4782.pdf",
-  "pages": 6,
-  "size": 322814
- },
- {
-  "cat": "用户手册",
   "t": "ECS202E-19DR项目单独硬件使用手册",
   "d": "2024-06-27",
   "u": "https://www.euradrives.com/Upload/File/202406/20240627155426_4830.pdf",
@@ -1357,6 +1249,114 @@
   "fn": "or_1ed72dc7.pdf",
   "pages": 16,
   "size": 1609141
+ },
+ {
+  "cat": "用户手册",
+  "t": "EIB-EISSE01总线卡使用手册",
+  "d": "2024-08-27",
+  "u": "https://www.euradrives.com/Upload/File/202510/20251031160727_1576.pdf",
+  "fn": "or_f7e7b3a5.pdf",
+  "pages": 86,
+  "size": 1998453
+ },
+ {
+  "cat": "用户手册",
+  "t": "E2400系列变频器说明书",
+  "d": "2024-08-27",
+  "u": "https://www.euradrives.com/Upload/File/202408/20240827174226_7223.pdf",
+  "fn": "or_437fe4cb.pdf",
+  "pages": 163,
+  "size": 5487742
+ },
+ {
+  "cat": "用户手册",
+  "t": "E2000中压系列变频器说明书",
+  "d": "2024-08-27",
+  "u": "https://www.euradrives.com/Upload/File/202408/20240827174045_7724.pdf",
+  "fn": "or_ba97c83f.pdf",
+  "pages": 279,
+  "size": 11646623
+ },
+ {
+  "cat": "用户手册",
+  "t": "DK800 系列变频器快速使用指南",
+  "d": "2024-08-14",
+  "u": "https://www.euradrives.com/Upload/File/202408/20240814210430_9170.pdf",
+  "fn": "or_0aecc46a.pdf",
+  "pages": 10,
+  "size": 1199500
+ },
+ {
+  "cat": "用户手册",
+  "t": "SD20-E系列EtherCAT总线型伺服系统详细版使用手册",
+  "d": "2024-08-14",
+  "u": "https://www.euradrives.com/Upload/File/202408/20240814210717_4553.pdf",
+  "fn": "or_e4b71327.pdf",
+  "pages": 48,
+  "size": 3573845
+ },
+ {
+  "cat": "用户手册",
+  "t": "SD20-D系列详细版使用手册",
+  "d": "2024-08-14",
+  "u": "https://www.euradrives.com/Upload/File/202408/20240814210510_4859.pdf",
+  "fn": "or_ffee2c9f.pdf",
+  "pages": 130,
+  "size": 4977748
+ },
+ {
+  "cat": "用户手册",
+  "t": "E800/E2000简易操作手册",
+  "d": "2024-08-05",
+  "u": "https://www.euradrives.com/Upload/File/202408/20240805155657_3553.pdf",
+  "fn": "or_d82ef8ae.pdf",
+  "pages": 278,
+  "size": 5184464
+ },
+ {
+  "cat": "用户手册",
+  "t": "ERM200 硬件使用手册",
+  "d": "2024-08-05",
+  "u": "https://www.euradrives.com/Upload/File/202408/20240805155818_9783.pdf",
+  "fn": "or_386ad1c0.pdf",
+  "pages": 78,
+  "size": 1011771
+ },
+ {
+  "cat": "用户手册",
+  "t": "E2000-W系列变频器说明书",
+  "d": "2024-08-05",
+  "u": "https://www.euradrives.com/Upload/File/202408/20240805155744_5344.pdf",
+  "fn": "or_df8809dd.pdf",
+  "pages": 45,
+  "size": 1044166
+ },
+ {
+  "cat": "用户手册",
+  "t": "环控ECS202-16DTD-A单独使用手册",
+  "d": "2024-06-27",
+  "u": "https://www.euradrives.com/Upload/File/202406/20240627161225_0143.pdf",
+  "fn": "or_51847c45.pdf",
+  "pages": 137,
+  "size": 4294315
+ },
+ {
+  "cat": "用户手册",
+  "t": "ERM242-40DTD软件使用说明手册",
+  "d": "2024-06-27",
+  "u": "https://www.euradrives.com/Upload/File/202406/20240627155857_7613.pdf",
+  "fn": "or_1eef6147.pdf",
+  "pages": 303,
+  "size": 6626972
+ },
+ {
+  "cat": "用户手册",
+  "t": "EPG05Z卡简易说明书",
+  "d": "2024-06-27",
+  "u": "https://www.euradrives.com/Upload/File/202406/20240627155538_7007.pdf",
+  "fn": "or_cb4e4782.pdf",
+  "pages": 6,
+  "size": 322814
  },
  {
   "cat": "用户手册",
