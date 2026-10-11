@@ -398,6 +398,25 @@ if os.path.exists("kv_powtran.json"):
         r["ct"]=powtran_ct
         out.append(r)
 
+# === 全量扫描：把所有有manifest的BRANDS品牌纳入（兼容多种字段格式）===
+for _bk,_info in BRANDS.items():
+    _mf=_bk+"_manifest.json"
+    if not os.path.exists(_mf):continue
+    try:_items=json.load(open(_mf,encoding="utf-8"))
+    except:continue
+    if not isinstance(_items,list):continue
+    for x in _items:
+        if not isinstance(x,dict):continue
+        # 兼容多种字段名
+        _t=x.get("t") or x.get("name") or x.get("title") or ""
+        _u=x.get("u") or x.get("url") or x.get("pdf") or ""
+        if not _u:continue
+        if _u.startswith("pdfs/"):_u="/"+_u
+        _d=x.get("d") or x.get("date") or ""
+        _ty=x.get("cat") or x.get("category") or x.get("type") or _info.get("ty_default","说明书")
+        _pg=x.get("pages") or 0
+        out.append(rec(_info["b"],_info["page"],_ty,_t,_d,"",_u,x.get("size",""),_pg,_ty))
+
 # 去重（按 pdf URL）+ 采集时间继承
 # 读取旧docs-3.js，已有文档保持原ct，新增文档ct设为当前时间
 old_ct={}
