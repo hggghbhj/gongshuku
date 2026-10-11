@@ -90,7 +90,7 @@ const TITLE=P.get('title')||'说明书';
 document.getElementById('ttl').textContent=TITLE;
 document.title=TITLE+' · 在线预览';
 const proxy=u=>'/api/proxy/pdf?url='+encodeURIComponent(u);
-const DIRECT_HOSTS=['gongkong.com','gongkong.tv','danfoss.com','amsamotion.com','wideplus.com','invt.com','jngbdz.com','meanwell.com','santak.com.cn','simphoenix.com','gtake.com','tengen.com','hiconics.com','ema-electronic.com','szeasydrive.com','co-trust.com','enc.net.cn','chinavvvf.com','mcgspro.com','sinee.cn','euradrives.com','hcfa.cn','coolmay.com','e-elitech.com','xinje.com','leisai.com','ad.siemens.com.cn','assets.danfoss.com','gwinstek.com','mitsubishielectric.com','chinacocis.com','airtac.com','siglent.com','growatt.com','abb.com','schneider-electric.com'];
+const DIRECT_HOSTS=['danfoss.com','amsamotion.com','wideplus.com','invt.com','jngbdz.com','meanwell.com','santak.com.cn','simphoenix.com','gtake.com','tengen.com','hiconics.com','ema-electronic.com','szeasydrive.com','co-trust.com','enc.net.cn','chinavvvf.com','mcgspro.com','sinee.cn','euradrives.com','hcfa.cn','coolmay.com','e-elitech.com','xinje.com','leisai.com','ad.siemens.com.cn','assets.danfoss.com','gwinstek.com','mitsubishielectric.com','chinacocis.com','airtac.com','siglent.com','growatt.com','abb.com','schneider-electric.com','gongshuku.pages.dev'];
 const PROXY_HOSTS=['lazzen.com','cnkaimin.net'];
 function hostOf(u){try{return new URL(u,location.origin).hostname.toLowerCase();}catch(e){return '';}}
 function needsProxy(u){const h=hostOf(u);return PROXY_HOSTS.some(d=>h===d||h.endsWith('.'+d));}
