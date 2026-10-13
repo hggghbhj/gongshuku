@@ -1,6 +1,15 @@
 [
  {
   "cat": "用户手册",
+  "t": "SD15-ZY系列电液伺服一体机说明书",
+  "d": "2026-10-13",
+  "u": "https://www.euradrives.com/Upload/File/202610/20261013140348_0375.pdf",
+  "fn": "or_ea18ef68.pdf",
+  "pages": 70,
+  "size": 2167798
+ },
+ {
+  "cat": "用户手册",
   "t": "E3000-Q说明书",
   "d": "2026-10-08",
   "u": "https://www.euradrives.com/Upload/File/202610/20261008132052_1219.pdf",
@@ -178,15 +187,6 @@
   "fn": "or_5b5d01af.pdf",
   "pages": 236,
   "size": 7379252
- },
- {
-  "cat": "用户手册",
-  "t": "SD15-ZY系列电液伺服一体机说明书",
-  "d": "2026-06-22",
-  "u": "https://www.euradrives.com/Upload/File/202606/20260622102610_8361.pdf",
-  "fn": "or_09488412.pdf",
-  "pages": 67,
-  "size": 2087183
  },
  {
   "cat": "用户手册",
@@ -1357,6 +1357,15 @@
   "fn": "or_1ed72dc7.pdf",
   "pages": 16,
   "size": 1609141
+ },
+ {
+  "cat": "用户手册",
+  "t": "SD15-ZY系列电液伺服一体机说明书",
+  "d": "2026-06-22",
+  "u": "https://www.euradrives.com/Upload/File/202606/20260622102610_8361.pdf",
+  "fn": "or_09488412.pdf",
+  "pages": 67,
+  "size": 2087183
  },
  {
   "cat": "用户手册",
