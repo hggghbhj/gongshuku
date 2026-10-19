@@ -1,5 +1,25 @@
 [
  {
+  "u": "https://cdn.xinje.com/DS5P系列伺服驱动器用户手册（SC5 12 20261012 1.4）-2026.10.16.pdf",
+  "t": "DS5P系列伺服驱动器用户手册",
+  "v": "1.4",
+  "d": "2026-10-19",
+  "size_h": "58.9MB",
+  "fn": "xj_90ed0a20.pdf",
+  "pages": 422,
+  "size": 61852634
+ },
+ {
+  "u": "https://cdn.xinje.com/TP TH TG TE RT MTG CCSG系列人机界面用户手册【硬件篇】（HC 01 20260928 1.3）.pdf",
+  "t": "TP/TH/TG/TE/RT/MTG/CCSG系列人机界面用户手册【硬件篇】",
+  "v": "1.3",
+  "d": "2026-10-19",
+  "size_h": "7.41MB",
+  "fn": "xj_8061c761.pdf",
+  "pages": 110,
+  "size": 7765870
+ },
+ {
   "u": "https://cdn.xinje.com/信捷云平台—云智造（V5.2）用户手册（MC09 20260921 2.1）.pdf",
   "t": "信捷云平台—云智造（V5.2）用户手册",
   "v": "2.1",
@@ -8,16 +28,6 @@
   "fn": "xj_3e394be1.pdf",
   "pages": 114,
   "size": 14427730
- },
- {
-  "u": "https://cdn.xinje.com/DS5P系列伺服驱动器用户手册（SC5 12 20261012 1.4）-2026.10.13.pdf",
-  "t": "DS5P系列伺服驱动器用户手册",
-  "v": "1.4",
-  "d": "2026-10-13",
-  "size_h": "53.9MB",
-  "fn": "xj_339d74b3.pdf",
-  "pages": 422,
-  "size": 56529301
  },
  {
   "u": "https://cdn.xinje.com/TS系列人机界面用户手册【硬件篇】（HSC01 20260916 1.5）20260916.pdf",
@@ -50,14 +60,14 @@
   "size": 2576735
  },
  {
-  "u": "https://cdn.xinje.com/ROBOT/002_系统屏四阶段手册/XR通用机器人系统V4.0指令手册（RC05 20251218 2.0）_20260415.pdf",
-  "t": "XR通用机器人系统V4.0指令手册（RC05 20251218 2.0）_20260415",
-  "v": "2025.12",
+  "u": "https://cdn.xinje.com/ROBOT/002_系统屏四阶段手册/RC6F机器人控制器用户手册（RC01 20260520 V2.0) 2026.05.20.pdf",
+  "t": "RC6F机器人控制器用户手册（RC01 20260520 V2.0) 2026.05.20.pdf",
+  "v": "2026.05",
   "d": "2026-09-15",
-  "size_h": "3.7MB",
-  "fn": "xj_37615e83.pdf",
-  "pages": 110,
-  "size": 3930308
+  "size_h": "12.7MB",
+  "fn": "xj_5ab752b5.pdf",
+  "pages": 285,
+  "size": 13350471
  },
  {
   "u": "https://cdn.xinje.com/ROBOT/002_系统屏四阶段手册/XR通用机器人系统V4.0用户手册（RC04 20251218 2.0）_20260414.pdf",
@@ -70,14 +80,14 @@
   "size": 13210157
  },
  {
-  "u": "https://cdn.xinje.com/ROBOT/002_系统屏四阶段手册/RC6F机器人控制器用户手册（RC01 20260520 V2.0) 2026.05.20.pdf",
-  "t": "RC6F机器人控制器用户手册（RC01 20260520 V2.0) 2026.05.20.pdf",
-  "v": "2026.05",
+  "u": "https://cdn.xinje.com/ROBOT/002_系统屏四阶段手册/XR通用机器人系统V4.0指令手册（RC05 20251218 2.0）_20260415.pdf",
+  "t": "XR通用机器人系统V4.0指令手册（RC05 20251218 2.0）_20260415",
+  "v": "2025.12",
   "d": "2026-09-15",
-  "size_h": "12.7MB",
-  "fn": "xj_5ab752b5.pdf",
-  "pages": 285,
-  "size": 13350471
+  "size_h": "3.7MB",
+  "fn": "xj_37615e83.pdf",
+  "pages": 110,
+  "size": 3930308
  },
  {
   "u": "https://cdn.xinje.com/TouchWin Pro编辑软件用户手册（HSC02 20260806 1.8）V3-2026.8.06.pdf",
@@ -130,26 +140,6 @@
   "size": 1085272
  },
  {
-  "u": "https://cdn.xinje.com/DS5L1系列伺服驱动器用户手册（SC5 05 20260630 1.5.2）-2026.07.30.pdf",
-  "t": "DS5L1系列伺服驱动器用户手册",
-  "v": "1.5.2",
-  "d": "2026-07-30",
-  "size_h": "21.16MB",
-  "fn": "xj_a3f5b98f.pdf",
-  "pages": 257,
-  "size": 22183347
- },
- {
-  "u": "https://cdn.xinje.com/DS5C1系列伺服驱动器用户手册（SC5 11 20260630 1.3.6）-2026.07.30.pdf",
-  "t": "DS5C1系列伺服驱动器用户手册",
-  "v": "1.3.6",
-  "d": "2026-07-30",
-  "size_h": "35.6MB",
-  "fn": "xj_56cee194.pdf",
-  "pages": 388,
-  "size": 37319868
- },
- {
   "u": "https://cdn.xinje.com/DS5K5系列伺服驱动器用户手册（SC5 19 20260630 1.1.2）-2026.07.30.pdf",
   "t": "DS5K5系列伺服驱动器用户手册",
   "v": "1.1.2",
@@ -158,6 +148,16 @@
   "fn": "xj_204ebdf6.pdf",
   "pages": 277,
   "size": 19749804
+ },
+ {
+  "u": "https://cdn.xinje.com/DS5L1系列伺服驱动器用户手册（SC5 05 20260630 1.5.2）-2026.07.30.pdf",
+  "t": "DS5L1系列伺服驱动器用户手册",
+  "v": "1.5.2",
+  "d": "2026-07-30",
+  "size_h": "21.16MB",
+  "fn": "xj_a3f5b98f.pdf",
+  "pages": 257,
+  "size": 22183347
  },
  {
   "u": "https://cdn.xinje.com/DM5F系列伺服驱动器用户手册（SM5 08 20260630 1.2.6）-2026.07.30.pdf",
@@ -190,14 +190,24 @@
   "size": 17550368
  },
  {
-  "u": "https://cdn.xinje.com/DS5K1系列伺服驱动器用户手册（SC5 13 20260630 1.2.6）-2026.07.30.pdf",
-  "t": "DS5K1系列伺服驱动器用户手册",
-  "v": "1.2.6",
+  "u": "https://cdn.xinje.com/DS5L2系列伺服驱动器用户手册（SC5 14 20260630 1.2.2）-2026.07.30.pdf",
+  "t": "DS5L2系列伺服驱动器用户手册",
+  "v": "1.2.2",
   "d": "2026-07-30",
-  "size_h": "21.4MB",
-  "fn": "xj_20d2321d.pdf",
-  "pages": 272,
-  "size": 22400154
+  "size_h": "18.5MB",
+  "fn": "xj_b35bdd20.pdf",
+  "pages": 259,
+  "size": 19386208
+ },
+ {
+  "u": "https://cdn.xinje.com/DS5C5系列伺服驱动器用户手册（SC5 16 20260630 1.3.1）-2026.07.30.pdf",
+  "t": "DS5C5系列伺服驱动器用户手册",
+  "v": "1.3.1",
+  "d": "2026-07-30",
+  "size_h": "32.8MB",
+  "fn": "xj_b799e79f.pdf",
+  "pages": 490,
+  "size": 34412791
  },
  {
   "u": "https://cdn.xinje.com/DS5EDS5L系列伺服驱动器用户手册（SC5 04 20260630 2.6.2）-2026.07.30.pdf",
@@ -330,16 +340,6 @@
   "size": 8986220
  },
  {
-  "u": "https://cdn.xinje.com/DP3CL多轴系列开环总线步进驱动器用户手册（D3C17 20260618 1.0）-2026.6.18.pdf",
-  "t": "DP3CL多轴系列开环总线步进驱动器用户手册",
-  "v": "1.0",
-  "d": "2026-07-13",
-  "size_h": "9.2MB",
-  "fn": "xj_9a4010fd.pdf",
-  "pages": 68,
-  "size": 9596527
- },
- {
   "u": "https://cdn.xinje.com/VH6系列通用变频器用户手册（INV C 04 20260708 1.5.1）-2026.7.9.pdf",
   "t": "VH6系列通用变频器用户手册",
   "v": "1.5.1",
@@ -380,6 +380,26 @@
   "size": 2590661
  },
  {
+  "u": "https://cdn.xinje.com/XD、XL系列可编程序控制器用户手册（硬件篇）（PD 01 20260410 1.6）.pdf",
+  "t": "XD、XL系列可编程控制器用户手册【硬件篇】",
+  "v": "1.6",
+  "d": "2026-06-26",
+  "size_h": "15.12MB",
+  "fn": "xj_6bdabc66.pdf",
+  "pages": 140,
+  "size": 15867975
+ },
+ {
+  "u": "https://cdn.xinje.com/L系列远程IO用户手册（PR01 20260530 1.4）.pdf",
+  "t": "L系列远程IO用户手册",
+  "v": "1.4",
+  "d": "2026-06-26",
+  "size_h": "12.52MB",
+  "fn": "xj_d3e93fcb.pdf",
+  "pages": 160,
+  "size": 13127731
+ },
+ {
   "u": "https://cdn.xinje.com/CAN通讯用户手册（PD09 20260514 1.2.4）.pdf",
   "t": "CAN通讯用户手册",
   "v": "1.2.4",
@@ -388,6 +408,16 @@
   "fn": "xj_be7c14c6.pdf",
   "pages": 69,
   "size": 2591329
+ },
+ {
+  "u": "https://cdn.xinje.com/XD系列PLC扩展模块用户手册（PD04 20260516 1.2.4）.pdf",
+  "t": "XD系列PLC扩展模块用户手册",
+  "v": "1.2.4",
+  "d": "2026-06-26",
+  "size_h": "10.47MB",
+  "fn": "xj_6b7984cf.pdf",
+  "pages": 289,
+  "size": 10980014
  },
  {
   "u": "https://cdn.xinje.com/以太网通讯用户手册（PD07 20260510 1.5.1）.pdf",
@@ -410,34 +440,44 @@
   "size": 26246377
  },
  {
-  "u": "https://cdn.xinje.com/XD系列PLC扩展模块用户手册（PD04 20260516 1.2.4）.pdf",
-  "t": "XD系列PLC扩展模块用户手册",
-  "v": "1.2.4",
+  "u": "https://cdn.xinje.com/XD、XL系列可编程控制器用户手册（基本指令篇）（PD05 20260610 1.6.1）.pdf",
+  "t": "XD、XL系列可编程控制器用户手册【基本指令篇】",
+  "v": "1.6.1",
   "d": "2026-06-26",
-  "size_h": "10.47MB",
-  "fn": "xj_6b7984cf.pdf",
-  "pages": 289,
-  "size": 10980014
+  "size_h": "39.42MB",
+  "fn": "xj_12b40362.pdf",
+  "pages": 524,
+  "size": 41338606
  },
  {
-  "u": "https://cdn.xinje.com/XD、XL系列可编程序控制器用户手册（硬件篇）（PD 01 20260410 1.6）.pdf",
-  "t": "XD、XL系列可编程控制器用户手册【硬件篇】",
-  "v": "1.6",
+  "u": "https://cdn.xinje.com/XD、XL系列可编程控制器用户手册（定位控制篇）（PD02 20260510 1.3）.pdf",
+  "t": "XD、XL系列可编程控制器用户手册【定位控制篇】",
+  "v": "1.3",
   "d": "2026-06-26",
-  "size_h": "15.12MB",
-  "fn": "xj_6bdabc66.pdf",
-  "pages": 140,
-  "size": 15867975
+  "size_h": "16.82MB",
+  "fn": "xj_98552986.pdf",
+  "pages": 436,
+  "size": 17637955
  },
  {
-  "u": "https://cdn.xinje.com/XL系列PLC左扩展ED模块用户手册（PL08 20260515 1.2）.pdf",
-  "t": "XL系列PLC左扩展ED模块用户手册",
-  "v": "1.2",
+  "u": "https://cdn.xinje.com/Z系列扩展BD板用户手册（ZC02 20260420 1.1.0）.pdf",
+  "t": "Z系列扩展BD板用户手册",
+  "v": "1.1.0",
   "d": "2026-06-26",
-  "size_h": "3.06MB",
-  "fn": "xj_b048152d.pdf",
-  "pages": 99,
-  "size": 3206916
+  "size_h": "1.9MB",
+  "fn": "xj_e28b3c6f.pdf",
+  "pages": 48,
+  "size": 2005237
+ },
+ {
+  "u": "https://cdn.xinje.com/XD XL XG系列可编程控制器用户手册（软件篇）（V3.8.1）（PD03 20260510 1.5.1）.pdf",
+  "t": "XD/XL/XG系列可编程控制器用户手册【软件篇】XDPPro V3.8.1",
+  "v": "1.5.1",
+  "d": "2026-06-26",
+  "size_h": "8.33MB",
+  "fn": "xj_c4d073aa.pdf",
+  "pages": 213,
+  "size": 8730414
  },
  {
   "u": "https://cdn.xinje.com/TS系列人机界面用户手册【通讯篇】（HSC03 202600506 1.9.1）V1-2026.5.6.pdf",
@@ -460,36 +500,6 @@
   "size": 7959822
  },
  {
-  "u": "https://cdn.xinje.com/DP3L1系列开环步进驱动器用户手册（D3C 11 20260424 1.1.1）-2026.4.24.pdf",
-  "t": "DP3L1系列开环步进驱动器用户手册",
-  "v": "1.1.1",
-  "d": "2026-05-08",
-  "size_h": "2.5MB",
-  "fn": "xj_ac4d1674.pdf",
-  "pages": 22,
-  "size": 2636801
- },
- {
-  "u": "https://cdn.xinje.com/DP3CL1系列开环总线步进驱动器用户手册（D3C 13 20260424 1.2.3）-2026.4.24.pdf",
-  "t": "DP3CL1系列开环总线步进驱动器用户手册",
-  "v": "1.2.3",
-  "d": "2026-05-08",
-  "size_h": "15.1MB",
-  "fn": "xj_3507227f.pdf",
-  "pages": 174,
-  "size": 15815239
- },
- {
-  "u": "https://cdn.xinje.com/DP3F1系列闭环步进驱动器用户手册（D3C 09 20260424 1.2.5）-2026.4.24.pdf",
-  "t": "DP3F1系列闭环步进驱动器用户手册",
-  "v": "1.2.5",
-  "d": "2026-05-08",
-  "size_h": "2.2MB",
-  "fn": "xj_aca9d15b.pdf",
-  "pages": 28,
-  "size": 2357770
- },
- {
   "u": "https://cdn.xinje.com/DP3S系列闭环485总线步进驱动器用户手册（D3C 15 20260508 1.4.1）-2026.5.8.pdf",
   "t": "DP3S系列闭环485总线步进驱动器用户手册",
   "v": "1.4.1",
@@ -510,6 +520,46 @@
   "size": 2876010
  },
  {
+  "u": "https://cdn.xinje.com/DP3CL1系列开环总线步进驱动器用户手册（D3C 13 20260424 1.2.3）-2026.4.24.pdf",
+  "t": "DP3CL1系列开环总线步进驱动器用户手册",
+  "v": "1.2.3",
+  "d": "2026-05-08",
+  "size_h": "15.1MB",
+  "fn": "xj_3507227f.pdf",
+  "pages": 174,
+  "size": 15815239
+ },
+ {
+  "u": "https://cdn.xinje.com/DP3SL系列开环RS485步进驱动器用户手册（D3C 14 20260507 1.4.1）-2026.5.8.pdf",
+  "t": "DP3SL系列开环RS485步进驱动器用户手册",
+  "v": "1.4.1",
+  "d": "2026-05-08",
+  "size_h": "2.3MB",
+  "fn": "xj_0d63312f.pdf",
+  "pages": 52,
+  "size": 2388698
+ },
+ {
+  "u": "https://cdn.xinje.com/DP3F1系列闭环步进驱动器用户手册（D3C 09 20260424 1.2.5）-2026.4.24.pdf",
+  "t": "DP3F1系列闭环步进驱动器用户手册",
+  "v": "1.2.5",
+  "d": "2026-05-08",
+  "size_h": "2.2MB",
+  "fn": "xj_aca9d15b.pdf",
+  "pages": 28,
+  "size": 2357770
+ },
+ {
+  "u": "https://cdn.xinje.com/VH5系列通用矢量型变频器用户手册（INV C 06 20260423 1.4.2）-2026.4.23.pdf",
+  "t": "VH5系列通用矢量型变频器用户手册",
+  "v": "1.4.2",
+  "d": "2026-04-24",
+  "size_h": "4.8MB",
+  "fn": "xj_21b00aa0.pdf",
+  "pages": 194,
+  "size": 4987744
+ },
+ {
   "u": "https://cdn.xinje.com/VHL系列通用变频器用户手册（INV C 09 20260423 1.4）-2026.4.23.pdf",
   "t": "VHL系列通用变频器用户手册",
   "v": "1.4",
@@ -528,16 +578,6 @@
   "fn": "xj_69d2bdd0.pdf",
   "pages": 177,
   "size": 5632776
- },
- {
-  "u": "https://cdn.xinje.com/VH5系列通用矢量型变频器用户手册（INV C 06 20260423 1.4.2）-2026.4.23.pdf",
-  "t": "VH5系列通用矢量型变频器用户手册",
-  "v": "1.4.2",
-  "d": "2026-04-24",
-  "size_h": "4.8MB",
-  "fn": "xj_21b00aa0.pdf",
-  "pages": 194,
-  "size": 4987744
  },
  {
   "u": "https://cdn.xinje.com/LUC3系列远程IO用户手册（PR03 20260309 1.0.0）-2026.3.9.pdf",
@@ -580,16 +620,6 @@
   "size": 4109955
  },
  {
-  "u": "https://cdn.xinje.com/A-BOX(-U-4G-W)远程通讯模块用户手册（MC12 20260206 2.3.1）-2026.2.6.pdf",
-  "t": "A-BOX(-U-4G-W)远程通讯模块用户手册",
-  "v": "2.3.1",
-  "d": "2026-02-27",
-  "size_h": "15.26MB",
-  "fn": "xj_14406b65.pdf",
-  "pages": 199,
-  "size": 15999591
- },
- {
   "u": "https://cdn.xinje.com/XL系列PLC扩展模块用户手册（PL04 20260116 1.6.2）.pdf",
   "t": "XL系列PLC扩展模块用户手册",
   "v": "1.6.2",
@@ -610,16 +640,6 @@
   "size": 818730
  },
  {
-  "u": "https://cdn.xinje.com/VH5 VH6系列变频EtherCAT通讯扩展卡用户手册（INV C 08 20251119 1.2.1）-2025.11.19.pdf",
-  "t": "VH5 VH6系列变频器EtherCAT通讯扩展卡用户手册",
-  "v": "1.2.1",
-  "d": "2025-12-02",
-  "size_h": "6.9MB",
-  "fn": "xj_206b77b2.pdf",
-  "pages": 80,
-  "size": 7338214
- },
- {
   "u": "https://cdn.xinje.com/VH5 VH6系列变频PROFINET通讯扩展卡用户手册（INV C 13 20251124 1.0.1）-2025.11.24.pdf",
   "t": "VH5、VH6系列变频器PROFINET通讯扩展卡用户手册",
   "v": "1.0.1",
@@ -628,6 +648,16 @@
   "fn": "xj_94a31ad9.pdf",
   "pages": 40,
   "size": 2967986
+ },
+ {
+  "u": "https://cdn.xinje.com/VH5 VH6系列变频EtherCAT通讯扩展卡用户手册（INV C 08 20251119 1.2.1）-2025.11.19.pdf",
+  "t": "VH5 VH6系列变频器EtherCAT通讯扩展卡用户手册",
+  "v": "1.2.1",
+  "d": "2025-12-02",
+  "size_h": "6.9MB",
+  "fn": "xj_206b77b2.pdf",
+  "pages": 80,
+  "size": 7338214
  },
  {
   "u": "https://cdn.xinje.com/XA系列工业智能控制器用户手册（硬件篇）（IC01 20221219 1.1）2022.12.19.pdf",
@@ -640,14 +670,14 @@
   "size": 3150163
  },
  {
-  "u": "https://cdn.xinje.com/DP3C1系列闭环总线步进驱动器用户手册（D3C12 20251110 1.1.2）-2025.11.10.pdf",
-  "t": "DP3C1系列闭环总线步进驱动器用户手册",
-  "v": "1.1.2",
+  "u": "https://cdn.xinje.com/DP3CL系列开环总线步进驱动器用户手册（D3C07 20251111 1.1.5）-2025.11.11.pdf",
+  "t": "DP3CL系列开环总线步进驱动器用户手册",
+  "v": "1.1.5",
   "d": "2025-11-19",
-  "size_h": "15.6MB",
-  "fn": "xj_1bdc6cfd.pdf",
-  "pages": 182,
-  "size": 16461430
+  "size_h": "2.4MB",
+  "fn": "xj_0bbc5de4.pdf",
+  "pages": 65,
+  "size": 2578048
  },
  {
   "u": "https://cdn.xinje.com/DP-P258步进制动单元安装使用手册（S661015 1.0.1）-2025.10.30.pdf",
@@ -660,16 +690,6 @@
   "size": 478476
  },
  {
-  "u": "https://cdn.xinje.com/DP3CL系列开环总线步进驱动器用户手册（D3C07 20251111 1.1.5）-2025.11.11.pdf",
-  "t": "DP3CL系列开环总线步进驱动器用户手册",
-  "v": "1.1.5",
-  "d": "2025-11-19",
-  "size_h": "2.4MB",
-  "fn": "xj_0bbc5de4.pdf",
-  "pages": 65,
-  "size": 2578048
- },
- {
   "u": "https://cdn.xinje.com/DP3C系列总线步进驱动器用户手册（D3C06 20251112 1.3.1）-2025.11.12.pdf",
   "t": "DP3C系列总线步进驱动器用户手册",
   "v": "1.3.1",
@@ -678,26 +698,6 @@
   "fn": "xj_886bd854.pdf",
   "pages": 56,
   "size": 2522405
- },
- {
-  "u": "https://cdn.xinje.com/XLH-30A32-MC PLC 快速使用手册-2025.10.21.pdf",
-  "t": "XLH-30A32-MC 薄型控制器快速使用手册",
-  "v": "1.0",
-  "d": "2025-11-17",
-  "size_h": "1.5MB",
-  "fn": "xj_d1b90ab4.pdf",
-  "pages": 2,
-  "size": 1592621
- },
- {
-  "u": "https://cdn.xinje.com/XLH-24A16-MC PLC 快速使用手册-2025.10.20.pdf",
-  "t": "XLH-24A16-MC 薄型控制器快速使用手册",
-  "v": "1.0",
-  "d": "2025-11-17",
-  "size_h": "1.9MB",
-  "fn": "xj_cb9f5c7b.pdf",
-  "pages": 2,
-  "size": 2008059
  },
  {
   "u": "https://cdn.xinje.com/XL5H-24A8-MC 快速使用手册-2025.10.21.pdf",
@@ -710,6 +710,16 @@
   "size": 1008435
  },
  {
+  "u": "https://cdn.xinje.com/XLH-30A32-MC PLC 快速使用手册-2025.10.21.pdf",
+  "t": "XLH-30A32-MC 薄型控制器快速使用手册",
+  "v": "1.0",
+  "d": "2025-11-17",
+  "size_h": "1.5MB",
+  "fn": "xj_d1b90ab4.pdf",
+  "pages": 2,
+  "size": 1592621
+ },
+ {
   "u": "https://cdn.xinje.com/XL5E-32T-VP以太网型PLC快速使用手册-2025.9.26.pdf",
   "t": "XL5E-32T-VP以太网型PLC快速使用手册",
   "v": "1.0",
@@ -718,6 +728,16 @@
   "fn": "xj_c232d7a9.pdf",
   "pages": 2,
   "size": 1506458
+ },
+ {
+  "u": "https://cdn.xinje.com/XLH-24A16-MC PLC 快速使用手册-2025.10.20.pdf",
+  "t": "XLH-24A16-MC 薄型控制器快速使用手册",
+  "v": "1.0",
+  "d": "2025-11-17",
+  "size_h": "1.9MB",
+  "fn": "xj_cb9f5c7b.pdf",
+  "pages": 2,
+  "size": 2008059
  },
  {
   "u": "https://cdn.xinje.com/TouchWin编辑软件用户手册（HC 02 20240527 1.2）-2024.5.27.pdf",
@@ -770,6 +790,16 @@
   "size": 471703
  },
  {
+  "u": "https://cdn.xinje.com/TG465-MT(P)UT(P)ET(P)V3.0及以上版本适用（S241015 1.1）-2019.8.5.pdf",
+  "t": "TG465-MT(P)UT(P)ET(P)人机界面安装使用手册（V3.0及以上版本适用）",
+  "v": "1.1",
+  "d": "2025-07-09",
+  "size_h": "424KB",
+  "fn": "xj_1fefcad3.pdf",
+  "pages": 4,
+  "size": 434438
+ },
+ {
   "u": "https://cdn.xinje.com/TG765-XT-C、TG765-XT(P)-C（S241025 1.0）-2019.8.2.pdf",
   "t": "TG765-XT-C、TG765-XT(P)-C人机界面安装使用手册",
   "v": "1.0",
@@ -800,34 +830,14 @@
   "size": 413019
  },
  {
-  "u": "https://cdn.xinje.com/TG765G-MTUTET（S241061 1.0）-2021.4.9.pdf",
-  "t": "TG765G-MT/UT/ET 人机界面安装使用手册",
-  "v": "1.0",
+  "u": "https://cdn.xinje.com/TG765S-MTUTET（S241026 1.1）-2019.8.3.pdf",
+  "t": "TG765S-MT/UT/ET 人机界面安装使用手册",
+  "v": "1.1",
   "d": "2025-07-09",
-  "size_h": "480KB",
-  "fn": "xj_da3acf70.pdf",
+  "size_h": "464KB",
+  "fn": "xj_860199a1.pdf",
   "pages": 4,
-  "size": 492373
- },
- {
-  "u": "https://cdn.xinje.com/TG465G-ET（S241064 1.0）-2021.11.1.pdf",
-  "t": "TG465G-ET 人机界面安装使用手册",
-  "v": "1.0",
-  "d": "2025-07-09",
-  "size_h": "543KB",
-  "fn": "xj_9cec5c3a.pdf",
-  "pages": 4,
-  "size": 556628
- },
- {
-  "u": "https://cdn.xinje.com/TG465G-MT UT XT（S241065 1.0）-2021.11.1.pdf",
-  "t": "TG465G-MT/UT/XT 人机界面安装使用手册",
-  "v": "1.0",
-  "d": "2025-07-09",
-  "size_h": "536KB",
-  "fn": "xj_fbda73d8.pdf",
-  "pages": 4,
-  "size": 548981
+  "size": 475476
  },
  {
   "u": "https://cdn.xinje.com/TG465G-ZT（S241076 1.1）（1）-2024.5.23.pdf",
@@ -840,16 +850,6 @@
   "size": 431261
  },
  {
-  "u": "https://cdn.xinje.com/TG465-MT2UT2（S241016 1.1）-2019.8.5.pdf",
-  "t": "TG465-MT2/UT2 人机界面安装使用手册",
-  "v": "1.1",
-  "d": "2025-07-09",
-  "size_h": "421KB",
-  "fn": "xj_3bae20ed.pdf",
-  "pages": 4,
-  "size": 431879
- },
- {
   "u": "https://cdn.xinje.com/TG465-XT（S241017 1.0）-2019.8.3.pdf",
   "t": "TG465-XT 人机界面安装使用手册",
   "v": "1.0",
@@ -860,24 +860,44 @@
   "size": 413680
  },
  {
-  "u": "https://cdn.xinje.com/TG765G-ZT（S241060 1.1）适用于H3版本-2023.4.12.pdf",
-  "t": "TG765G-ZT 人机界面安装使用手册（适用于H3版本）",
+  "u": "https://cdn.xinje.com/TG465-MT2UT2（S241016 1.1）-2019.8.5.pdf",
+  "t": "TG465-MT2/UT2 人机界面安装使用手册",
   "v": "1.1",
   "d": "2025-07-09",
-  "size_h": "552KB",
-  "fn": "xj_80ffd903.pdf",
+  "size_h": "421KB",
+  "fn": "xj_3bae20ed.pdf",
   "pages": 4,
-  "size": 565849
+  "size": 431879
  },
  {
-  "u": "https://cdn.xinje.com/TG765S-MTUTET（S241026 1.1）-2019.8.3.pdf",
-  "t": "TG765S-MT/UT/ET 人机界面安装使用手册",
-  "v": "1.1",
+  "u": "https://cdn.xinje.com/TG765G-MTUTET（S241061 1.0）-2021.4.9.pdf",
+  "t": "TG765G-MT/UT/ET 人机界面安装使用手册",
+  "v": "1.0",
   "d": "2025-07-09",
-  "size_h": "464KB",
-  "fn": "xj_860199a1.pdf",
+  "size_h": "480KB",
+  "fn": "xj_da3acf70.pdf",
   "pages": 4,
-  "size": 475476
+  "size": 492373
+ },
+ {
+  "u": "https://cdn.xinje.com/TG465G-MT UT XT（S241065 1.0）-2021.11.1.pdf",
+  "t": "TG465G-MT/UT/XT 人机界面安装使用手册",
+  "v": "1.0",
+  "d": "2025-07-09",
+  "size_h": "536KB",
+  "fn": "xj_fbda73d8.pdf",
+  "pages": 4,
+  "size": 548981
+ },
+ {
+  "u": "https://cdn.xinje.com/TG765-NT（S241030 1.0）-2019.8.2.pdf",
+  "t": "TG765-NT 人机界面安装使用手册",
+  "v": "1.0",
+  "d": "2025-07-09",
+  "size_h": "378KB",
+  "fn": "xj_f41453cc.pdf",
+  "pages": 4,
+  "size": 387742
  },
  {
   "u": "https://cdn.xinje.com/TGMA63B-ET（S241072 1.0）-2022.4.14.pdf",
@@ -920,14 +940,14 @@
   "size": 434468
  },
  {
-  "u": "https://cdn.xinje.com/TGM765B-MTET（S241057 1.0）-2020.7.10.pdf",
-  "t": "TGM765B-MT/ET 人机界面安装使用手册",
-  "v": "1.0",
+  "u": "https://cdn.xinje.com/OP320、OP320-S中英（S211001 1.1）-2019.8.2.pdf",
+  "t": "OP320、OP320-S 文本显示器安装使用手册",
+  "v": "1.1",
   "d": "2025-07-09",
-  "size_h": "644KB",
-  "fn": "xj_c81fb6f2.pdf",
+  "size_h": "438KB",
+  "fn": "xj_be260658.pdf",
   "pages": 4,
-  "size": 659896
+  "size": 449380
  },
  {
   "u": "https://cdn.xinje.com/MTG765-HT（S2A1063 1.0）-2023.10.31.pdf",
@@ -938,6 +958,16 @@
   "fn": "xj_a71a4e35.pdf",
   "pages": 4,
   "size": 538420
+ },
+ {
+  "u": "https://cdn.xinje.com/TGM765B-MTET（S241057 1.0）-2020.7.10.pdf",
+  "t": "TGM765B-MT/ET 人机界面安装使用手册",
+  "v": "1.0",
+  "d": "2025-07-09",
+  "size_h": "644KB",
+  "fn": "xj_c81fb6f2.pdf",
+  "pages": 4,
+  "size": 659896
  },
  {
   "u": "https://cdn.xinje.com/TGM465B-MT（S241051 1.1）-2019.8.2.pdf",
@@ -968,6 +998,16 @@
   "fn": "xj_a54df3d1.pdf",
   "pages": 4,
   "size": 474763
+ },
+ {
+  "u": "https://cdn.xinje.com/TGA63S-MTUTET（S241023 1.1）-2019.8.5.pdf",
+  "t": "TGA63S-MT/UT/ET 人机界面安装使用手册",
+  "v": "1.1",
+  "d": "2025-07-09",
+  "size_h": "485KB",
+  "fn": "xj_4471341c.pdf",
+  "pages": 4,
+  "size": 497620
  },
  {
   "u": "https://cdn.xinje.com/TGM465-ET（S241052 1.0）-2019.5.23.pdf",
@@ -1040,14 +1080,14 @@
   "size": 526589
  },
  {
-  "u": "https://cdn.xinje.com/TS3-700-M3（S2B1075 1.0）-2023.5.12.pdf",
-  "t": "TS3-700-M3 人机界面安装使用手册",
+  "u": "https://cdn.xinje.com/TS2-700-Z E（S2B1079 1.0）-2023.7.21.pdf",
+  "t": "TS2-700-Z/E 安装使用手册",
   "v": "1.0",
-  "d": "2025-06-25",
-  "size_h": "487KB",
-  "fn": "xj_c8bbaa6f.pdf",
+  "d": "2025-01-07",
+  "size_h": "476KB",
+  "fn": "xj_58cfb650.pdf",
   "pages": 4,
-  "size": 498998
+  "size": 487941
  },
  {
   "u": "https://cdn.xinje.com/TS3-1000-M E Z（S2B1069 1.1）-2023.9.13.pdf",
@@ -1060,6 +1100,16 @@
   "size": 579560
  },
  {
+  "u": "https://cdn.xinje.com/TS3-700-M3（S2B1075 1.0）-2023.5.12.pdf",
+  "t": "TS3-700-M3 人机界面安装使用手册",
+  "v": "1.0",
+  "d": "2025-06-25",
+  "size_h": "487KB",
+  "fn": "xj_c8bbaa6f.pdf",
+  "pages": 4,
+  "size": 498998
+ },
+ {
   "u": "https://cdn.xinje.com/TS5D-1200-E2 4G W（S2B1082 1.0）（1）-2024.9.20.pdf",
   "t": "TS5D-1200-E2/4G/W 人机界面安装使用手册",
   "v": "1.0",
@@ -1068,6 +1118,16 @@
   "fn": "xj_262cc9a8.pdf",
   "pages": 4,
   "size": 599174
+ },
+ {
+  "u": "https://cdn.xinje.com/TS-W-BD安装使用手册（S2B1074 1.0）(1)-2022.5.19.pdf",
+  "t": "TS-W-BD 人机界面通讯BD板安装使用手册",
+  "v": "1.0",
+  "d": "2025-06-25",
+  "size_h": "286KB",
+  "fn": "xj_9a5d5f0b.pdf",
+  "pages": 2,
+  "size": 293387
  },
  {
   "u": "https://cdn.xinje.com/TS-4G-BD安装使用手册（S2B1073 1.0）2022.5.13.pdf",
@@ -1100,26 +1160,6 @@
   "size": 591650
  },
  {
-  "u": "https://cdn.xinje.com/TS-W-BD安装使用手册（S2B1074 1.0）(1)-2022.5.19.pdf",
-  "t": "TS-W-BD 人机界面通讯BD板安装使用手册",
-  "v": "1.0",
-  "d": "2025-06-25",
-  "size_h": "286KB",
-  "fn": "xj_9a5d5f0b.pdf",
-  "pages": 2,
-  "size": 293387
- },
- {
-  "u": "https://cdn.xinje.com/TS5-1000-E 4G W（S2B1071 1.1）-2023.2.2.pdf",
-  "t": "TS5-1000-E/4G/W人机界面安装使用手册",
-  "v": "1.1",
-  "d": "2025-06-25",
-  "size_h": "490KB",
-  "fn": "xj_5f7d7193.pdf",
-  "pages": 4,
-  "size": 502287
- },
- {
   "u": "https://cdn.xinje.com/TS5-700-E 4G W（S2B1070 1.1）-2023.1.10.pdf",
   "t": "TS5-700-E/4G/W人机界面安装使用手册",
   "v": "1.1",
@@ -1140,16 +1180,6 @@
   "size": 3746827
  },
  {
-  "u": "https://cdn.xinje.com/XDQ、XLQ系列可编程序控制器用户手册（硬件篇）（PQ 04 20250427 1.0）-2025.4.28.pdf",
-  "t": "XDQ、XLQ系列可编程控制器用户手册【硬件篇】",
-  "v": "1.0",
-  "d": "2025-05-15",
-  "size_h": "5.7MB",
-  "fn": "xj_1e6be9e9.pdf",
-  "pages": 107,
-  "size": 6057909
- },
- {
   "u": "https://cdn.xinje.com/XDQ、XLQ系列可编程控制器用户手册（基本指令篇）（PQ05 20250419 1.0）-2025.4.19.pdf",
   "t": "XDQ、XLQ系列可编程控制器用户手册【基本指令篇】",
   "v": "1.0",
@@ -1158,6 +1188,16 @@
   "fn": "xj_e0740816.pdf",
   "pages": 584,
   "size": 20640721
+ },
+ {
+  "u": "https://cdn.xinje.com/XDQ、XLQ系列可编程序控制器用户手册（硬件篇）（PQ 04 20250427 1.0）-2025.4.28.pdf",
+  "t": "XDQ、XLQ系列可编程控制器用户手册【硬件篇】",
+  "v": "1.0",
+  "d": "2025-05-15",
+  "size_h": "5.7MB",
+  "fn": "xj_1e6be9e9.pdf",
+  "pages": 107,
+  "size": 6057909
  },
  {
   "u": "https://cdn.xinje.com/XD系列可编程控制器随机手册（S121041 2.2）-2025.5.8.pdf",
@@ -1170,14 +1210,14 @@
   "size": 1806056
  },
  {
-  "u": "https://cdn.xinje.com/XL系列双极性输入型PLC用户随机手册（S131178 1.1）（1） -2024.2.21.pdf",
-  "t": "XL1、XL3、XL5系列双极性输入薄型PLC用户随机手册",
-  "v": "1.1",
+  "u": "https://cdn.xinje.com/XS3-26T4可编程控制器随机手册（S141136 1.0）-2022.1.4.pdf",
+  "t": "XS3-26T4可编程控制器用户随机手册",
+  "v": "1.0",
   "d": "2025-05-07",
-  "size_h": "1.1MB",
-  "fn": "xj_87b7a5fa.pdf",
+  "size_h": "1.2MB",
+  "fn": "xj_9710c48e.pdf",
   "pages": 2,
-  "size": 1205165
+  "size": 1281226
  },
  {
   "u": "https://cdn.xinje.com/XSA500系列工业智能控制器随机手册（S161181 1.1）（1）-2024.1.12.pdf",
@@ -1210,24 +1250,24 @@
   "size": 1245475
  },
  {
-  "u": "https://cdn.xinje.com/XS3-26T4可编程控制器随机手册（S141136 1.0）-2022.1.4.pdf",
-  "t": "XS3-26T4可编程控制器用户随机手册",
+  "u": "https://cdn.xinje.com/XL系列薄型PLC随机手册（S131080 1.4）（2）-2022.1.4.pdf",
+  "t": "XL1、XL3、XL5系列薄型PLC用户随机手册",
   "v": "1.0",
   "d": "2025-05-07",
-  "size_h": "1.2MB",
-  "fn": "xj_9710c48e.pdf",
+  "size_h": "791KB",
+  "fn": "xj_f7935bac.pdf",
   "pages": 2,
-  "size": 1281226
+  "size": 810368
  },
  {
-  "u": "https://cdn.xinje.com/整体式控制器ZG1-20T-4随机手册（S351008 1.0）-2019.2.16.pdf",
-  "t": "整体式控制器ZG1-20T-4用户随机手册",
-  "v": "1.0",
+  "u": "https://cdn.xinje.com/XSLH-24 PLCopen标准控制器随机手册（S161177 1.1）-2023.5.13.pdf",
+  "t": "XSLH-24 PLCopen标准控制器用户随机手册",
+  "v": "1.1",
   "d": "2025-05-07",
-  "size_h": "682KB",
-  "fn": "xj_4e3a5f15.pdf",
+  "size_h": "1.3MB",
+  "fn": "xj_dbede0b8.pdf",
   "pages": 2,
-  "size": 699179
+  "size": 1389638
  },
  {
   "u": "https://cdn.xinje.com/XSDH-60A32可编程控制器随机手册（S161160 1.1）-2023.11.6.pdf",
@@ -1250,14 +1290,14 @@
   "size": 2235104
  },
  {
-  "u": "https://cdn.xinje.com/XL系列薄型PLC随机手册（S131080 1.4）（2）-2022.1.4.pdf",
-  "t": "XL1、XL3、XL5系列薄型PLC用户随机手册",
-  "v": "1.0",
+  "u": "https://cdn.xinje.com/XL系列双极性输入型PLC用户随机手册（S131178 1.1）（1） -2024.2.21.pdf",
+  "t": "XL1、XL3、XL5系列双极性输入薄型PLC用户随机手册",
+  "v": "1.1",
   "d": "2025-05-07",
-  "size_h": "791KB",
-  "fn": "xj_f7935bac.pdf",
+  "size_h": "1.1MB",
+  "fn": "xj_87b7a5fa.pdf",
   "pages": 2,
-  "size": 810368
+  "size": 1205165
  },
  {
   "u": "https://cdn.xinje.com/XL5N-32T CAN通讯型PLC随机手册（S131170 1.1）（2）-2024.6.14.pdf",
@@ -1270,14 +1310,14 @@
   "size": 2568364
  },
  {
-  "u": "https://cdn.xinje.com/XL5H-24A8(L)总线型PLC用户随机手册（S131174 1.1）（2）-2024.1.13.pdf",
-  "t": "XL5H-24A8、XL5H-24A8L总线型PLC用户随机手册",
-  "v": "1.1",
+  "u": "https://cdn.xinje.com/XD-EnWT-C随机手册（S122058 1.4）-2022.11.9.pdf",
+  "t": "XD-E1/2/4WT-C 扩展模块用户随机手册",
+  "v": "1.4",
   "d": "2025-05-07",
-  "size_h": "1.6MB",
-  "fn": "xj_7a8220d2.pdf",
+  "size_h": "877KB",
+  "fn": "xj_00b98faa.pdf",
   "pages": 2,
-  "size": 1727091
+  "size": 1290457
  },
  {
   "u": "https://cdn.xinje.com/XD-EnWT-D随机手册（S122126 1.5）-2022.11.9.pdf",
@@ -1630,6 +1670,16 @@
   "size": 1719390
  },
  {
+  "u": "https://cdn.xinje.com/XL5H-24A8(L)总线型PLC用户随机手册（S131174 1.1）（2）-2024.1.13.pdf",
+  "t": "XL5H-24A8、XL5H-24A8L总线型PLC用户随机手册",
+  "v": "1.1",
+  "d": "2025-05-07",
+  "size_h": "1.6MB",
+  "fn": "xj_7a8220d2.pdf",
+  "pages": 2,
+  "size": 1727091
+ },
+ {
   "u": "https://cdn.xinje.com/XLH-24A16 PLC随机手册（S131146 1.1）（2）-2024.6.14.pdf",
   "t": "XLH-24A16 PLC用户随机手册",
   "v": "1.1",
@@ -1720,16 +1770,6 @@
   "size": 231639
  },
  {
-  "u": "https://cdn.xinje.com/XSLH-24 PLCopen标准控制器随机手册（S161177 1.1）-2023.5.13.pdf",
-  "t": "XSLH-24 PLCopen标准控制器用户随机手册",
-  "v": "1.1",
-  "d": "2025-05-07",
-  "size_h": "1.3MB",
-  "fn": "xj_dbede0b8.pdf",
-  "pages": 2,
-  "size": 1389638
- },
- {
   "u": "https://cdn.xinje.com/XSLH-30A32 PLC随机手册（S161172 1.0）-2022.6.16.pdf",
   "t": "XSLH-30A32 PLCopen标准控制器用户随机手册",
   "v": "1.0",
@@ -1768,6 +1808,16 @@
   "fn": "xj_d648d3f3.pdf",
   "pages": 2,
   "size": 1173259
+ },
+ {
+  "u": "https://cdn.xinje.com/整体式控制器ZG1-20T-4随机手册（S351008 1.0）-2019.2.16.pdf",
+  "t": "整体式控制器ZG1-20T-4用户随机手册",
+  "v": "1.0",
+  "d": "2025-05-07",
+  "size_h": "682KB",
+  "fn": "xj_4e3a5f15.pdf",
+  "pages": 2,
+  "size": 699179
  },
  {
   "u": "https://cdn.xinje.com/整体式控制器ZG3-20R、T-4随机手册（S351007 1.0）-2020.2.24.pdf",
@@ -2460,16 +2510,6 @@
   "size": 474046
  },
  {
-  "u": "https://cdn.xinje.com/TS2-700-Z E（S2B1079 1.0）-2023.7.21.pdf",
-  "t": "TS2-700-Z/E 安装使用手册",
-  "v": "1.0",
-  "d": "2025-01-07",
-  "size_h": "476KB",
-  "fn": "xj_58cfb650.pdf",
-  "pages": 4,
-  "size": 487941
- },
- {
   "u": "https://cdn.xinje.com/VH1-PE100简易安装及操作说明书（S581013 1.0）（1）-2023.11.18.pdf",
   "t": "VH1-PE100简易安装及操作说明书",
   "v": "1.0",
@@ -2688,16 +2728,6 @@
   "fn": "xj_877bfa2a.pdf",
   "pages": 46,
   "size": 2569540
- },
- {
-  "u": "https://cdn.xinje.com/TP-TH-TG-TE-RT-MTG-CCSG系列人机界面用户手册【硬件篇】.pdf",
-  "t": "TP/TH/TG/TE/RT/MTG/CCSG系列人机界面用户手册【硬件篇】",
-  "v": "1.2",
-  "d": "2024-12-16",
-  "size_h": "6.97MB",
-  "fn": "xj_c6c0bf88.pdf",
-  "pages": 109,
-  "size": 7309718
  },
  {
   "u": "https://cdn.xinje.com/TouchWin组态软件使用说明.pdf",
