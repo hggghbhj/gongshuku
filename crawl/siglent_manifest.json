@@ -2105,5 +2105,75 @@
     "file": "pdfs/siglent/SDG7000A_Programming Guide_EN06A.pdf",
     "size": 3112947,
     "pages": 171
+  },
+  {
+    "name": "SDG7000A_UserManual_EN01G",
+    "url": "https://siglent.oss-cn-shenzhen.aliyuncs.com/English_content/Document/Waveform%20Generators/SDG7000A_UserManual_EN01G.pdf",
+    "file": "pdfs/siglent/SDG7000A_UserManual_EN01G.pdf",
+    "size": 7584907,
+    "pages": 152
+  },
+  {
+    "name": "SDG8000A DataSheet_EN01B",
+    "url": "https://siglent.oss-cn-shenzhen.aliyuncs.com/English_content/Document/Waveform%20Generators/SDG8000A%20DataSheet_EN01B.pdf",
+    "file": "pdfs/siglent/SDG8000A DataSheet_EN01B.pdf",
+    "size": 1607565,
+    "pages": 25
+  },
+  {
+    "name": "SDG8000A_ProgrammingGuide_EN01A",
+    "url": "https://siglent.oss-cn-shenzhen.aliyuncs.com/English_content/Document/Waveform%20Generators/SDG8000A_ProgrammingGuide_EN01A.pdf",
+    "file": "pdfs/siglent/SDG8000A_ProgrammingGuide_EN01A.pdf",
+    "size": 3171494,
+    "pages": 197
+  },
+  {
+    "name": "SDG8000A_QuickStart_EN01B",
+    "url": "https://siglent.oss-cn-shenzhen.aliyuncs.com/English_content/Document/Waveform%20Generators/SDG8000A_QuickStart_EN01B.pdf",
+    "file": "pdfs/siglent/SDG8000A_QuickStart_EN01B.pdf",
+    "size": 1345602,
+    "pages": 28
+  },
+  {
+    "name": "SDG8000A_UserManual_EN01A",
+    "url": "https://siglent.oss-cn-shenzhen.aliyuncs.com/English_content/Document/Waveform%20Generators/SDG8000A_UserManual_EN01A.pdf",
+    "file": "pdfs/siglent/SDG8000A_UserManual_EN01A.pdf",
+    "size": 7052753,
+    "pages": 147
+  },
+  {
+    "name": "SDG800_UserManual_EN02D",
+    "url": "https://siglent.oss-cn-shenzhen.aliyuncs.com/English_content/Document/Waveform%20Generators/SDG800_UserManual_EN02D.pdf",
+    "file": "pdfs/siglent/SDG800_UserManual_EN02D.pdf",
+    "size": 2043512,
+    "pages": 100
+  },
+  {
+    "name": "SDG_Programming Guide_PG02-E05C",
+    "url": "https://siglent.oss-cn-shenzhen.aliyuncs.com/English_content/Document/Waveform%20Generators/SDG_Programming%20Guide_PG02-E05C.pdf",
+    "file": "pdfs/siglent/SDG_Programming Guide_PG02-E05C.pdf",
+    "size": 4240871,
+    "pages": 201
+  },
+  {
+    "name": "Waveform Generators Selection Guide final",
+    "url": "https://siglent.oss-cn-shenzhen.aliyuncs.com/English_content/Document/Waveform%20Generators/Waveform%C2%A0Generators%C2%A0Selection%C2%A0Guide%C2%A0final.pdf",
+    "file": "pdfs/siglent/Waveform Generators Selection Guide final.pdf",
+    "size": 1114700,
+    "pages": 8
+  },
+  {
+    "name": "SSG6000A_QuickStart_EN01B",
+    "url": "https://siglent.oss-cn-shenzhen.aliyuncs.com/English_content/Firmware/Radio_Frequency_Signal_Source/SSG6000A_QuickStart_EN01B.pdf",
+    "file": "pdfs/siglent/SSG6000A_QuickStart_EN01B.pdf",
+    "size": 1587482,
+    "pages": 28
+  },
+  {
+    "name": "SSG6080A_Programming+Guide_EN01B",
+    "url": "https://siglent.oss-cn-shenzhen.aliyuncs.com/English_content/Firmware/Radio_Frequency_Signal_Source/SSG6080A_Programming%2BGuide_EN01B.pdf",
+    "file": "pdfs/siglent/SSG6080A_Programming+Guide_EN01B.pdf",
+    "size": 2816730,
+    "pages": 101
   }
 ]
