@@ -93,6 +93,7 @@ BRANDS={
  "festo":{"b":"费斯托FESTO","page":"https://www.festo.com.cn/","ty_default":"说明书"},
  "keyence":{"b":"基恩士","page":"https://www.keyence.com.cn/downloads/","ty_default":"用户手册"},
  "omron":{"b":"欧姆龙","page":"https://www.fa.omron.com.cn/","ty_default":"用户手册"},
+ "delta":{"b":"台达电子","page":"https://downloadcenter.delta-china.com.cn/","ty_default":"操作手册"},
 }
 def clean_title(t,b):
     t=re.sub(r'\.pdf$','',t or '',flags=re.I).strip()
