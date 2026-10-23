@@ -244,6 +244,219 @@ BRAND_SITES = {
         "b": "固纬电子",
         "start": ["https://www.gwinstek.com.cn/down/208"],
     },
+    # ===== 批量补充：市面上叫得上号的工业品牌 =====
+    "zctech": {
+        "b": "众辰电子",
+        "start": ["https://www.zctech.com/service/download/"],
+    },
+    "lanht": {
+        "b": "蓝海华腾",
+        "start": ["https://www.lanht.com/download/"],
+    },
+    "delta": {
+        "b": "台达电子",
+        "start": ["https://downloadcenter.delta-china.com.cn/zh-CN/DownloadCenter"],
+    },
+    "vb": {
+        "b": "丰炜科技",
+        "start": ["https://www.vb.com.tw/download"],
+    },
+    "fatek": {
+        "b": "永宏电机",
+        "start": ["https://www.fatek.com/download.php"],
+    },
+    "shihlin": {
+        "b": "士林电机",
+        "start": ["https://www.shihlin-electric.com.cn/download"],
+    },
+    "advantech": {
+        "b": "研华科技",
+        "start": ["https://www.advantech.com.cn/support/download"],
+    },
+    "omron": {
+        "b": "欧姆龙",
+        "start": ["https://www.omron.com.cn/cn/support/download/"],
+    },
+    "panasonic": {
+        "b": "松下电器",
+        "start": ["https://industrial.panasonic.cn/cn/pss/fa/"],
+    },
+    "fujielectric": {
+        "b": "富士电机",
+        "start": ["https://www.fujielectric.com.cn/support/download/"],
+    },
+    "yaskawa": {
+        "b": "安川电机",
+        "start": ["https://www.yaskawa.com.cn/support/download/"],
+    },
+    "fanuc": {
+        "b": "发那科",
+        "start": ["https://wwwfanuc.com.cn/service/download/"],
+    },
+    "rockwell": {
+        "b": "罗克韦尔AB",
+        "start": ["https://www.rockwellautomation.com/zh-cn/support/downloads.html"],
+    },
+    "honeywell": {
+        "b": "霍尼韦尔",
+        "start": ["https://www.honeywell.com.cn/zh-cn/support/"],
+    },
+    "yokogawa": {
+        "b": "横河电机",
+        "start": ["https://www.yokogawa.com/cn/zh/support/downloads/"],
+    },
+    "keyence": {
+        "b": "基恩士",
+        "start": ["https://www.keyence.com.cn/download/"],
+    },
+    "pepperl": {
+        "b": "倍加福",
+        "start": ["https://www.pepperl-fuchs.com/cn/zh/software/"],
+    },
+    "balluff": {
+        "b": "巴鲁夫",
+        "start": ["https://www.balluff.com.cn/zh-cn/support/downloads/"],
+    },
+    "sick": {
+        "b": "西克SICK",
+        "start": ["https://www.sick.com/cn/zh/downloads/"],
+    },
+    "endress": {
+        "b": "恩德斯豪斯E+H",
+        "start": ["https://www.endress.com.cn/support/downloads"],
+    },
+    "weinview": {
+        "b": "威纶通",
+        "start": ["https://www.weintek.com/Download/Document/"],
+    },
+    "kinco": {
+        "b": "步科股份",
+        "start": ["https://www.kinco.cn/service/download"],
+    },
+    "samkoon": {
+        "b": "显控科技",
+        "start": ["https://www.samkoon.com/download/"],
+    },
+    "flexem": {
+        "b": "繁易电子",
+        "start": ["https://www.flexem.com/download/"],
+    },
+    "dwg": {
+        "b": "迪文科技",
+        "start": ["https://www.dwin.com.cn/download/"],
+    },
+    "chint": {
+        "b": "正泰电器",
+        "start": ["https://www.chint.com/download/"],
+    },
+    "cs-east": {
+        "b": "常熟开关",
+        "start": ["https://www.cs-electric.com/download/"],
+    },
+    "mingway": {
+        "b": "金升阳",
+        "start": ["https://www.mornsun.cn/download/"],
+    },
+    "hengfu": {
+        "b": "衡孚电源",
+        "start": ["https://www.hengfu.com.cn/download/"],
+    },
+    "smc": {
+        "b": "SMC气动",
+        "start": ["https://www.smc.com.cn/download/"],
+    },
+    "festo": {
+        "b": "费斯托FESTO",
+        "start": ["https://www.festo.com.cn/zh/c/service/downloads/"],
+    },
+    "chelic": {
+        "b": "气立可",
+        "start": ["https://www.chelic.com.cn/download/"],
+    },
+    "knd": {
+        "b": "凯恩帝数控",
+        "start": ["https://www.knd.com.cn/download/"],
+    },
+    "jingdiao": {
+        "b": "北京精雕",
+        "start": ["https://www.jingdiao.com/download/"],
+    },
+    "cqinst": {
+        "b": "重庆川仪",
+        "start": ["https://www.cqinst.com/download/"],
+    },
+    "invt_servo": {
+        "b": "汇川技术",
+        "start": ["https://www.inovance.com/cn/service/download/"],
+    },
+    "lenze": {
+        "b": "伦茨传动",
+        "start": ["https://www.lenze.com.cn/support/download/"],
+    },
+    "boschrexroth": {
+        "b": "博世力士乐",
+        "start": ["https://www.boschrexroth.com.cn/zh/service/download/"],
+    },
+    "parker": {
+        "b": "派克汉尼汾",
+        "start": ["https://www.parker.com.cn/zh/service/download/"],
+    },
+    "norgren": {
+        "b": "诺冠气动",
+        "start": ["https://www.norgren.com/cn/zh/support/downloads/"],
+    },
+    "camozzi": {
+        "b": "康茂盛气动",
+        "start": ["https://www.camozzi.com.cn/download/"],
+    },
+    "werner": {
+        "b": "魏德米勒",
+        "start": ["https://www.weidmueller.com.cn/support/download/"],
+    },
+    "phoenix": {
+        "b": "菲尼克斯电气",
+        "start": ["https://www.phoenixcontact.com.cn/download/"],
+    },
+    "wago": {
+        "b": "万可电子",
+        "start": ["https://www.wago.com/cn/zh/support/downloads/"],
+    },
+    "rs_pro": {
+        "b": "欧姆龙自动化",
+        "start": ["https://www.omron-ap.com.cn/support/download/"],
+    },
+    "delta_industrial": {
+        "b": "台达自动化",
+        "start": ["https://www.deltaww.com.cn/cn/SAAS/download"],
+    },
+    "hinox": {
+        "b": "海纳科技",
+        "start": ["https://www.hinox.com.cn/download/"],
+    },
+    "sunye": {
+        "b": "日业电气",
+        "start": ["https://www.sunye.com.cn/download/"],
+    },
+    "kongberg": {
+        "b": "康士伯",
+        "start": ["https://www.km.kongsberg.com/cn/support/download/"],
+    },
+    "berger": {
+        "b": "百格拉",
+        "start": ["https://www.bergerlahr.com.cn/download/"],
+    },
+    "esitron": {
+        "b": "埃斯顿自动化",
+        "start": ["https://www.estun.com/download/"],
+    },
+    "googol": {
+        "b": "固高自动化",
+        "start": ["https://www.googoltech.com.cn/download/"],
+    },
+    "spii": {
+        "b": "众为兴",
+        "start": ["https://www.spii.com.cn/download/"],
+    },
 }
 
 # 标题中应过滤的无关词（下载页常见噪声）
