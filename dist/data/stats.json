@@ -1,8 +1,10 @@
 {
- "last_run": "2026-10-23 06:40:59",
- "last_new": 0,
- "new_by_brand": {},
- "total": 8372,
+ "last_run": "2026-10-23 09:56:57",
+ "last_new": 3,
+ "new_by_brand": {
+  "mitsubishi": 3
+ },
+ "total": 8375,
  "brands": {
   "cincon": 5,
   "jelpc": 2,
@@ -75,7 +77,7 @@
   "hollysys": 31,
   "huibang": 10,
   "hongrun": 39,
-  "mitsubishi": 484,
+  "mitsubishi": 487,
   "powtran": 52
  },
  "brand_count": 73,
@@ -86,7 +88,7 @@
   "信捷": "ok",
   "雷赛": "timeout",
   "正弦": "timeout",
-  "欧瑞": "retrying(2/3)",
+  "欧瑞": "fail(rc=1)",
   "禾川": "ok",
   "英威腾": "ok",
   "伟创": "ok",

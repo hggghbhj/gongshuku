@@ -4354,5 +4354,32 @@
     "pages": 52,
     "category": "SCADA软件",
     "brand": "mitsubishi"
+  },
+  {
+    "name": "bnpa1247engc.pdf",
+    "url": "https://dl.mitsubishielectric.com/dl/fa/document/catalog/cnc/bnp-a1247(eng)/bnpa1247engc.pdf",
+    "pdf": "pdfs/mitsubishi/bnpa1247engc.pdf",
+    "size": 1153832,
+    "pages": 3,
+    "category": "CNC数控系统",
+    "brand": "mitsubishi"
+  },
+  {
+    "name": "bnpa1246engg.pdf",
+    "url": "https://dl.mitsubishielectric.com/dl/fa/document/catalog/cnc/bnp-a1246(eng)/bnpa1246engg.pdf",
+    "pdf": "pdfs/mitsubishi/bnpa1246engg.pdf",
+    "size": 10865655,
+    "pages": 15,
+    "category": "CNC数控系统",
+    "brand": "mitsubishi"
+  },
+  {
+    "name": "bnpa1243engk.pdf",
+    "url": "https://dl.mitsubishielectric.com/dl/fa/document/catalog/cnc/bnp-a1243(eng)/bnpa1243engk.pdf",
+    "pdf": "pdfs/mitsubishi/bnpa1243engk.pdf",
+    "size": 11810766,
+    "pages": 17,
+    "category": "CNC数控系统",
+    "brand": "mitsubishi"
   }
 ]
