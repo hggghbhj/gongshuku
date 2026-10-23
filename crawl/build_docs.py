@@ -91,6 +91,8 @@ BRANDS={
  "knd":{"b":"凯恩帝数控","page":"https://www.knd.com.cn/","ty_default":"说明书"},
  "smc":{"b":"SMC气动","page":"https://www.smc.com.cn/","ty_default":"说明书"},
  "festo":{"b":"费斯托FESTO","page":"https://www.festo.com.cn/","ty_default":"说明书"},
+ "keyence":{"b":"基恩士","page":"https://www.keyence.com.cn/downloads/","ty_default":"用户手册"},
+ "omron":{"b":"欧姆龙","page":"https://www.fa.omron.com.cn/","ty_default":"用户手册"},
 }
 def clean_title(t,b):
     t=re.sub(r'\.pdf$','',t or '',flags=re.I).strip()
