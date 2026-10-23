@@ -1,5 +1,13 @@
 [
  {
+  "t": "VI30触摸屏PLC一体机",
+  "d": "2026.10.23",
+  "u": "https://www.veichi.cn/Uploads/20261023112435_067421.pdf",
+  "fn": "vc_45368fc4.pdf",
+  "pages": 2,
+  "size": 20621101
+ },
+ {
   "t": "VH-2SCOM_MDB用户使用手册V1.0",
   "d": "2026.10.12",
   "u": "https://www.veichi.cn/Uploads/20261012094046_324600.pdf",
@@ -376,22 +384,6 @@
   "size": 4115082
  },
  {
-  "t": "AC310-I系列变频调速器使用说明书V1.1",
-  "d": "2026.03.10",
-  "u": "https://www.veichi.cn/Uploads/20260310021029_837070.pdf",
-  "fn": "vc_1e1146f6.pdf",
-  "pages": 84,
-  "size": 5251174
- },
- {
-  "t": "SD700英文画册",
-  "d": "2026.01.14",
-  "u": "https://www.veichi.cn/Uploads/20260114013302_404375.pdf",
-  "fn": "vc_b7b5ccea.pdf",
-  "pages": 16,
-  "size": 28800252
- },
- {
   "t": "SD710英文画册",
   "d": "2026.01.14",
   "u": "https://www.veichi.cn/Uploads/20260114013453_684039.pdf",
@@ -448,12 +440,12 @@
   "size": 3785121
  },
  {
-  "t": "VH300&VH500系列可编程控制器编程手册A1.0",
-  "d": "2025.09.29",
-  "u": "https://www.veichi.cn/Uploads/20250929085037_906392.pdf",
-  "fn": "vc_15a97068.pdf",
-  "pages": 290,
-  "size": 40979737
+  "t": "AC310-I系列变频调速器使用说明书V1.1",
+  "d": "2026.03.10",
+  "u": "https://www.veichi.cn/Uploads/20260310021029_837070.pdf",
+  "fn": "vc_1e1146f6.pdf",
+  "pages": 84,
+  "size": 5251174
  },
  {
   "t": "SD860多传伺服系统画册",
@@ -504,11 +496,27 @@
   "size": 432318
  },
  {
+  "t": "SD700英文画册",
+  "d": "2026.01.14",
+  "u": "https://www.veichi.cn/Uploads/20260114013302_404375.pdf",
+  "fn": "vc_b7b5ccea.pdf",
+  "pages": 16,
+  "size": 28800252
+ },
+ {
   "t": "VH200可编程控制器用户手册V1.0250927",
   "d": "2025.09.28",
   "u": "https://www.veichi.cn/Uploads/20250928053017_338363.pdf",
   "fn": "vc_666b1f00.pdf",
   "pages": 27,
   "size": 2038508
+ },
+ {
+  "t": "VH300&VH500系列可编程控制器编程手册A1.0",
+  "d": "2025.09.29",
+  "u": "https://www.veichi.cn/Uploads/20250929085037_906392.pdf",
+  "fn": "vc_15a97068.pdf",
+  "pages": 290,
+  "size": 40979737
  }
 ]
