@@ -4381,5 +4381,14 @@
     "pages": 17,
     "category": "CNC数控系统",
     "brand": "mitsubishi"
+  },
+  {
+    "name": "l08490eng-f.pdf",
+    "url": "https://dl.mitsubishielectric.com/dl/fa/document/catalog/plc_fx/l08490/l08490eng-f.pdf",
+    "pdf": "pdfs/mitsubishi/l08490eng-f.pdf",
+    "size": 13310767,
+    "pages": 76,
+    "category": "MELSEC-F系列",
+    "brand": "mitsubishi"
   }
 ]
