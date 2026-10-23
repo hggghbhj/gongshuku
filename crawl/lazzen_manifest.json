@@ -1,82 +1,192 @@
 [
-  {
-    "name": "良信20260916 file-e405c79ac0.pdf",
-    "url": "https://www.lazzen.com/Public/Uploads/uploadfile/files/20260916/file-e405c79ac0.pdf",
-    "file": "2a5b58a18a43.pdf",
-    "size": 1663637,
-    "pages": 22,
-    "type": "产品说明书"
-  },
-  {
-    "name": "良信20260905 file-638e9620db.pdf",
-    "url": "https://www.lazzen.com/Public/Uploads/uploadfile/files/20260905/file-638e9620db.pdf",
-    "file": "49134a8c7c58.pdf",
-    "size": 1946013,
-    "pages": 16,
-    "type": "产品说明书"
-  },
-  {
-    "name": "良信20260905 file-29eb0d20e1.pdf",
-    "url": "https://www.lazzen.com/Public/Uploads/uploadfile/files/20260905/file-29eb0d20e1.pdf",
-    "file": "2dd4ca786ea3.pdf",
-    "size": 482726,
-    "pages": 5,
-    "type": "产品说明书"
-  },
-  {
-    "name": "良信20260905 file-abb53080bb.pdf",
-    "url": "https://www.lazzen.com/Public/Uploads/uploadfile/files/20260905/file-abb53080bb.pdf",
-    "file": "5929fdc478f9.pdf",
-    "size": 691478,
-    "pages": 7,
-    "type": "产品说明书"
-  },
-  {
-    "name": "良信20260904 file-2dc76943f1.pdf",
-    "url": "https://www.lazzen.com/Public/Uploads/uploadfile/files/20260904/file-2dc76943f1.pdf",
-    "file": "08cb59b75383.pdf",
-    "size": 7003239,
-    "pages": 28,
-    "type": "产品说明书"
-  },
-  {
-    "name": "良信20260904 file-7a43512acf.pdf",
-    "url": "https://www.lazzen.com/Public/Uploads/uploadfile/files/20260904/file-7a43512acf.pdf",
-    "file": "0bca3e3f8a36.pdf",
-    "size": 618557,
-    "pages": 3,
-    "type": "产品说明书"
-  },
-  {
-    "name": "良信20260904 file-13e1606eb8.pdf",
-    "url": "https://www.lazzen.com/Public/Uploads/uploadfile/files/20260904/file-13e1606eb8.pdf",
-    "file": "7af028c01fc2.pdf",
-    "size": 5787675,
-    "pages": 53,
-    "type": "产品说明书"
-  },
-  {
-    "name": "良信20260904 file-06d60ca3a2.pdf",
-    "url": "https://www.lazzen.com/Public/Uploads/uploadfile/files/20260904/file-06d60ca3a2.pdf",
-    "file": "d1b645efefb6.pdf",
-    "size": 894614,
-    "pages": 12,
-    "type": "产品说明书"
-  },
-  {
-    "name": "良信20260904 file-3a2b0427bf.pdf",
-    "url": "https://www.lazzen.com/Public/Uploads/uploadfile/files/20260904/file-3a2b0427bf.pdf",
-    "file": "daeeadb6428a.pdf",
-    "size": 908830,
-    "pages": 7,
-    "type": "产品说明书"
-  },
-  {
-    "name": "良信20260904 file-ebd11ce647.pdf",
-    "url": "https://www.lazzen.com/Public/Uploads/uploadfile/files/20260904/file-ebd11ce647.pdf",
-    "file": "cdcf101f36dc.pdf",
-    "size": 1551293,
-    "pages": 12,
-    "type": "产品说明书"
-  }
+ {
+  "name": "良信20260916 file-e405c79ac0.pdf",
+  "url": "https://www.lazzen.com/Public/Uploads/uploadfile/files/20260916/file-e405c79ac0.pdf",
+  "file": "2a5b58a18a43.pdf",
+  "size": 1663637,
+  "pages": 22,
+  "type": "产品说明书"
+ },
+ {
+  "name": "良信20260905 file-638e9620db.pdf",
+  "url": "https://www.lazzen.com/Public/Uploads/uploadfile/files/20260905/file-638e9620db.pdf",
+  "file": "49134a8c7c58.pdf",
+  "size": 1946013,
+  "pages": 16,
+  "type": "产品说明书"
+ },
+ {
+  "name": "良信20260905 file-29eb0d20e1.pdf",
+  "url": "https://www.lazzen.com/Public/Uploads/uploadfile/files/20260905/file-29eb0d20e1.pdf",
+  "file": "2dd4ca786ea3.pdf",
+  "size": 482726,
+  "pages": 5,
+  "type": "产品说明书"
+ },
+ {
+  "name": "良信20260905 file-abb53080bb.pdf",
+  "url": "https://www.lazzen.com/Public/Uploads/uploadfile/files/20260905/file-abb53080bb.pdf",
+  "file": "5929fdc478f9.pdf",
+  "size": 691478,
+  "pages": 7,
+  "type": "产品说明书"
+ },
+ {
+  "name": "良信20260904 file-2dc76943f1.pdf",
+  "url": "https://www.lazzen.com/Public/Uploads/uploadfile/files/20260904/file-2dc76943f1.pdf",
+  "file": "08cb59b75383.pdf",
+  "size": 7003239,
+  "pages": 28,
+  "type": "产品说明书"
+ },
+ {
+  "name": "良信20260904 file-7a43512acf.pdf",
+  "url": "https://www.lazzen.com/Public/Uploads/uploadfile/files/20260904/file-7a43512acf.pdf",
+  "file": "0bca3e3f8a36.pdf",
+  "size": 618557,
+  "pages": 3,
+  "type": "产品说明书"
+ },
+ {
+  "name": "良信20260904 file-13e1606eb8.pdf",
+  "url": "https://www.lazzen.com/Public/Uploads/uploadfile/files/20260904/file-13e1606eb8.pdf",
+  "file": "7af028c01fc2.pdf",
+  "size": 5787675,
+  "pages": 53,
+  "type": "产品说明书"
+ },
+ {
+  "name": "良信20260904 file-06d60ca3a2.pdf",
+  "url": "https://www.lazzen.com/Public/Uploads/uploadfile/files/20260904/file-06d60ca3a2.pdf",
+  "file": "d1b645efefb6.pdf",
+  "size": 894614,
+  "pages": 12,
+  "type": "产品说明书"
+ },
+ {
+  "name": "良信20260904 file-3a2b0427bf.pdf",
+  "url": "https://www.lazzen.com/Public/Uploads/uploadfile/files/20260904/file-3a2b0427bf.pdf",
+  "file": "daeeadb6428a.pdf",
+  "size": 908830,
+  "pages": 7,
+  "type": "产品说明书"
+ },
+ {
+  "name": "良信20260904 file-ebd11ce647.pdf",
+  "url": "https://www.lazzen.com/Public/Uploads/uploadfile/files/20260904/file-ebd11ce647.pdf",
+  "file": "cdcf101f36dc.pdf",
+  "size": 1551293,
+  "pages": 12,
+  "type": "产品说明书"
+ },
+ {
+  "name": "说明书-智慧人居-智慧暖通-N50(直连）温控器面板产品说明书 2026-08-17 下载",
+  "url": "https://www.lazzen.com/Public/Uploads/uploadfile/files/20260817/file-414693a4eb.pdf",
+  "pages": 0,
+  "type": "说明书",
+  "size": 2019664,
+  "brand": "良信电器",
+  "src": "www.lazzen.com",
+  "status": "ok",
+  "date": ""
+ },
+ {
+  "name": "说明书-智慧人居-智慧暖通-空气盒子-N50空气盒子产品说明书 (250801) 2026-08-17 下载",
+  "url": "https://www.lazzen.com/Public/Uploads/uploadfile/files/20260817/file-164ad17fb0.pdf",
+  "pages": 0,
+  "type": "说明书",
+  "size": 727286,
+  "brand": "良信电器",
+  "src": "www.lazzen.com",
+  "status": "ok",
+  "date": ""
+ },
+ {
+  "name": "LDZ8706 CD4单相电子式多功能电能表说明书 2026-08-17 下载",
+  "url": "https://www.lazzen.com/Public/Uploads/uploadfile/files/20260817/file-7b1af665d5.pdf",
+  "pages": 0,
+  "type": "说明书",
+  "size": 1611338,
+  "brand": "良信电器",
+  "src": "www.lazzen.com",
+  "status": "ok",
+  "date": ""
+ },
+ {
+  "name": "NWK20Z控制器使用说明书（排版）【2025.12.24】 2026-08-14 下载",
+  "url": "https://www.lazzen.com/Public/Uploads/uploadfile/files/20260814/file-f469db27a2.pdf",
+  "pages": 0,
+  "type": "说明书",
+  "size": 3869313,
+  "brand": "良信电器",
+  "src": "www.lazzen.com",
+  "status": "ok",
+  "date": ""
+ },
+ {
+  "name": "NDW3Z-2500 安装使用说明书【2023.05.05】 2026-08-14 下载",
+  "url": "https://www.lazzen.com/Public/Uploads/uploadfile/files/20260814/file-a85610da65.pdf",
+  "pages": 0,
+  "type": "说明书",
+  "size": 5696807,
+  "brand": "良信电器",
+  "src": "www.lazzen.com",
+  "status": "ok",
+  "date": ""
+ },
+ {
+  "name": "LDZ8706 CT(S)4三相电子式多功能电能表说明书0810 2026-08-11 下载",
+  "url": "https://www.lazzen.com/Public/Uploads/uploadfile/files/20260811/file-3be88087a9.pdf",
+  "pages": 0,
+  "type": "说明书",
+  "size": 1014580,
+  "brand": "良信电器",
+  "src": "www.lazzen.com",
+  "status": "ok",
+  "date": ""
+ },
+ {
+  "name": "LDZ8706 CT(S)7三相电子式多功能电能表说明书0810 2026-08-11 下载",
+  "url": "https://www.lazzen.com/Public/Uploads/uploadfile/files/20260811/file-496cf4e489.pdf",
+  "pages": 0,
+  "type": "说明书",
+  "size": 1934999,
+  "brand": "良信电器",
+  "src": "www.lazzen.com",
+  "status": "ok",
+  "date": ""
+ },
+ {
+  "name": "LDZ8706 CT1三相计量模块说明书0810 2026-08-11 下载",
+  "url": "https://www.lazzen.com/Public/Uploads/uploadfile/files/20260811/file-cedfd7a318.pdf",
+  "pages": 0,
+  "type": "说明书",
+  "size": 1168907,
+  "brand": "良信电器",
+  "src": "www.lazzen.com",
+  "status": "ok",
+  "date": ""
+ },
+ {
+  "name": "LEM S96多功能仪表说明书0810 2026-08-11 下载",
+  "url": "https://www.lazzen.com/Public/Uploads/uploadfile/files/20260811/file-80902c6cc6.pdf",
+  "pages": 0,
+  "type": "说明书",
+  "size": 3119111,
+  "brand": "良信电器",
+  "src": "www.lazzen.com",
+  "status": "ok",
+  "date": ""
+ },
+ {
+  "name": "LEM S72多功能仪表说明书0810 2026-08-11 下载",
+  "url": "https://www.lazzen.com/Public/Uploads/uploadfile/files/20260811/file-d3eba27cd4.pdf",
+  "pages": 0,
+  "type": "说明书",
+  "size": 3163306,
+  "brand": "良信电器",
+  "src": "www.lazzen.com",
+  "status": "ok",
+  "date": ""
+ }
 ]

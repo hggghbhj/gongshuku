@@ -158,9 +158,8 @@ for x in load("elitech"):
     out.append(rec(info["b"],info["page"],"说明书",x.get("t"),x.get("d"),"",x.get("u"),"",x.get("pages"),x.get("cat","")))
 for x in load("xinje"):
     info=BRANDS["xinje"]
-    # 优先用本地PDF（fn字段），避免cdn.xinje.com防盗链需要Referer
-    _fn=x.get("fn","")
-    _u="/pdfs/xinje/"+_fn if _fn else x.get("u")
+    # 用官网外链（reader.html 自动代理，绕过 cdn.xinje.com 防盗链）
+    _u=x.get("u")
     r=rec(info["b"],info["page"],"产品手册",x.get("t"),x.get("d"),x.get("v"),_u,x.get("size_h",""),x.get("pages"))
     out.append(r)
 for x in load("leisai"):
@@ -357,15 +356,9 @@ for x in load("hantek"):
 for x in load("moons"):
     info=BRANDS["moons"]
     out.append(rec(info["b"],info["page"],x.get("type","产品手册"),x.get("name"),"","",x.get("url"),"",x.get("pages")))
-# 施耐德本地文件按 {reference}_{hash}.pdf 命名，建立 reference -> 本地路径
-import glob as _glob
-_se_local={}
-for _f in _glob.glob("../dist/pdfs/schneider/*.pdf"):
-    _ref=os.path.basename(_f).split("_")[0]
-    _se_local[_ref]="/pdfs/schneider/"+os.path.basename(_f)
 for x in load("schneider"):
     info=BRANDS["schneider"]
-    _u=_se_local.get(x.get("reference","")) or x.get("url")
+    _u=x.get("url")
     out.append(rec(info["b"],info["page"],x.get("type","用户手册"),x.get("name"),"","",_u,x.get("size",""),x.get("pages")))
 for x in load("gwinstek"):
     info=BRANDS["gwinstek"]
@@ -375,16 +368,13 @@ for x in load("siemens"):
     out.append(rec(info["b"],info["page"],x.get("type","手册"),x.get("name"),"","",x.get("url"),x.get("size",""),x.get("pages")))
 for x in load("mitsubishi"):
     info=BRANDS["mitsubishi"]
-    # 优先用本地 pdf 字段（相对路径 pdfs/mitsubishi/...）
-    _lp=x.get("pdf","")
-    _u=("/"+_lp) if _lp and not _lp.startswith("/") else (_lp or x.get("url"))
-    # 修正可能的双 pdfs
-    _u=_u.replace("/pdfs/pdfs/","/pdfs/")
+    # 用官网外链（reader.html 自动代理）
+    _u=x.get("url")
     out.append(rec(info["b"],info["page"],x.get("category","手册"),x.get("name"),"","",_u,x.get("size",""),x.get("pages")))
 for x in load("cocis"):
     info=BRANDS["cocis"]
-    # 无锡科思PDF已解压部署到 /pdfs/cocis/，用本地URL而非压缩包
-    pdf_url="/pdfs/cocis/"+x.get("name","")+".pdf"
+    # 用官网外链（reader.html 自动代理；压缩包会提示到官网查看）
+    pdf_url=x.get("url")
     out.append(rec(info["b"],info["page"],x.get("category","说明书"),x.get("name"),"","",pdf_url,x.get("size",""),x.get("pages")))
 for x in load("abb_motor"):
     info=BRANDS["abb"]
@@ -437,7 +427,10 @@ except Exception as e:
 now_str=time.strftime("%Y-%m-%d %H:%M:%S",time.localtime())
 seen=set();uniq=[]
 for r in out:
-    k=r.get("pdf","")
+    k=r.get("pdf") or ""
+    # 过滤无有效外链的记录（空URL会导致无法预览）
+    if not k.startswith("http"):
+        continue
     if k in seen:continue
     seen.add(k)
     # 采集时间策略：已有文档继承原ct，新增文档用rec函数设置的品牌接入日期
@@ -448,60 +441,28 @@ for r in out:
         r["ct"]=now_str
     uniq.append(r)
 
-# === 自动匹配本地PDF：把官网URL改成本地/pdf/路径 ===
+# === 本地PDF匹配已禁用 ===
+# 30GB PDF 无法通过 git 部署到 Cloudflare Pages，本地路径线上会 404。
+# 统一保留品牌官网外链 URL，由 reader.html 通过 /api/proxy/pdf 代理中转，
+# 自动绕过 CORS 与防盗链。仅保留 URL 修复/补全逻辑。
 import urllib.parse
-_local_map = {}
-for _root, _, _files in os.walk("../dist/pdfs"):
-    for _f in _files:
-        if _f.endswith(".pdf"):
-            # 生成网站根路径 /pdfs/<品牌>/<文件>
-            _rel = os.path.relpath(os.path.join(_root, _f), "../dist")
-            _local_map[_f] = "/" + _rel.replace(os.sep, "/")
-# 建立 原始URL -> 本地fn 映射（manifest中fn字段，本地文件真实存在）
-_url2fn = {}
-for _mf in glob.glob("*_manifest.json"):
-    _brand = _mf.replace("_manifest.json","")
-    try:
-        _mlist = json.load(open(_mf, encoding="utf-8"))
-    except Exception:
-        continue
-    for _x in _mlist:
-        _fn = _x.get("fn") or _x.get("file")
-        _u0 = _x.get("u") or _x.get("url")
-        if _fn and _u0 and os.path.exists(f"../dist/pdfs/{_brand}/{_fn}"):
-            _local = f"/pdfs/{_brand}/{_fn}"
-            _url2fn[_u0] = _local
-            _url2fn[_u0.split("?")[0]] = _local
 _matched = 0
 for _r in uniq:
-    _pdf = _r.get("pdf", "")
+    _pdf = _r.get("pdf") or ""
     # 全局规范化：修复双 pdfs 等错误路径
     if "/pdfs/pdfs/" in _pdf:
         _pdf = _pdf.replace("/pdfs/pdfs/", "/pdfs/")
         _r["pdf"] = _pdf
-    if not _pdf or _pdf.startswith("/pdfs/"):
-        continue
     # 补全汇川等品牌的残缺相对路径
     if _pdf.startswith("/filevault-ext/"):
         _pdf = "https://www.inovance.com" + _pdf
         _r["pdf"] = _pdf
-    # 1) 优先按 manifest 的 URL->fn 精确映射
-    if _pdf in _url2fn or _pdf.split("?")[0] in _url2fn:
-        _r["pdf"] = _url2fn.get(_pdf) or _url2fn.get(_pdf.split("?")[0])
-        _matched += 1
-        continue
-    # 2) 按 URL basename 匹配
-    _path = urllib.parse.unquote(urllib.parse.urlparse(_pdf).path)
-    _base = os.path.basename(_path)
-    if _base in _local_map:
-        _r["pdf"] = _local_map[_base]
-        _matched += 1
-print(f"本地PDF匹配: {_matched}/{len(uniq)}")
+print(f"本地PDF匹配已禁用（统一外链+代理），记录数: {len(uniq)}")
 
 json.dump(uniq,open("docs_new_records.json","w",encoding="utf-8"),ensure_ascii=False,indent=1)
 # 最终全局清理：修复任何残留的双 pdfs 路径
 for _r in uniq:
-    if "/pdfs/pdfs/" in _r.get("pdf",""):
+    if "/pdfs/pdfs/" in (_r.get("pdf") or ""):
         _r["pdf"] = _r["pdf"].replace("/pdfs/pdfs/","/pdfs/")
 # 写 JS 分片
 with open("docs-3.js","w",encoding="utf-8") as f:

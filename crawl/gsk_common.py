@@ -3,7 +3,7 @@
 import re,os,json,time,hashlib,urllib.request,urllib.parse,urllib.error,subprocess
 UA="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
 BASEDIR=os.path.dirname(os.path.abspath(__file__))
-BASELINE=json.load(open(os.path.join(BASEDIR,"baseline.json"),encoding="utf-8"))
+BASELINE=json.load(open(os.path.join(BASEDIR,"baseline.json"),encoding="utf-8")) if os.path.exists(os.path.join(BASEDIR,"baseline.json")) else []
 
 def http_get(url,referer=None,timeout=25,retries=2,head=None):
     h={"User-Agent":UA,"Accept":"text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",

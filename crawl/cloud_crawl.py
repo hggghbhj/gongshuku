@@ -81,6 +81,8 @@ STEPS=[
  ("三菱电机",["python3","crawler_mitsubishi.py"]),
  ("无锡科思",["python3","crawler_cocis.py"]),
  ("ABB电机",["python3","crawler_abb_motor.py"]),
+ # 通用采集：自动扫描 BRAND_SITES 中所有品牌官网，发现新说明书
+ ("通用采集",["python3","generic_crawl.py","--max-pages","3"]),
 ]
 def count_manifests():
     """统计所有 manifest 的记录数（按品牌key）"""

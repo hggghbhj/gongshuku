@@ -44,10 +44,6 @@ jobs:
           fi
           echo "PDF总数: $(find dist/pdfs -name '*.pdf' | wc -l)"
 
-      - name: 匹配本地PDF路径
-        run: cd crawl && python match_local.py || echo "match_local异常，继续"
-        continue-on-error: true
-
       - name: 压缩并移出超25MB的PDF
         run: python crawl/compress_large.py
         continue-on-error: true
@@ -55,20 +51,13 @@ jobs:
       - name: 确保stats.json存在
         run: python crawl/ensure_stats.py
 
-      - name: 重建docs-3.js
+      - name: 重建docs-3.js（统一外链+代理，不匹配本地路径）
         run: |
-          cp dist/data/docs-3.js /tmp/docs3_backup.js || true
-          cd crawl && python build_docs.py || true
+          cd crawl && python build_docs.py
           cd ..
           if [ -f crawl/docs-3.js ]; then
-            OLD=$(grep -o '"pdf"' /tmp/docs3_backup.js 2>/dev/null | wc -l)
-            NEW=$(grep -o '"pdf"' crawl/docs-3.js | wc -l)
-            echo "旧条目=$OLD 新条目=$NEW"
-            if [ "$NEW" -ge "$OLD" ]; then
-              cp crawl/docs-3.js dist/data/docs-3.js
-            else
-              cp /tmp/docs3_backup.js dist/data/docs-3.js
-            fi
+            cp crawl/docs-3.js dist/data/docs-3.js
+            echo "docs-3条目数: $(grep -o '"pdf"' crawl/docs-3.js | wc -l)"
           fi
 
       - name: 部署到Cloudflare Pages

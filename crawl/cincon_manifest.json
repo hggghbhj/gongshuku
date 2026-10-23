@@ -43,5 +43,82 @@
   "size": 301934,
   "brand": "Cincon",
   "src": "cincon.com"
+ },
+ {
+  "name": "ES",
+  "url": "https://www.cincon.com/user-manual/adapter-user-manual-spanish.pdf",
+  "pages": 0,
+  "type": "说明书",
+  "size": 0,
+  "brand": "Cincon",
+  "src": "www.cincon.com",
+  "status": "ok",
+  "date": ""
+ },
+ {
+  "name": "FR",
+  "url": "https://www.cincon.com/user-manual/adapter-user-manual-french.pdf",
+  "pages": 0,
+  "type": "说明书",
+  "size": 0,
+  "brand": "Cincon",
+  "src": "www.cincon.com",
+  "status": "ok",
+  "date": ""
+ },
+ {
+  "name": "IT",
+  "url": "https://www.cincon.com/user-manual/adapter-user-manual-italian.pdf",
+  "pages": 0,
+  "type": "说明书",
+  "size": 0,
+  "brand": "Cincon",
+  "src": "www.cincon.com",
+  "status": "ok",
+  "date": ""
+ },
+ {
+  "name": "DE",
+  "url": "https://www.cincon.com/user-manual/adapter-user-manual-german.pdf",
+  "pages": 0,
+  "type": "说明书",
+  "size": 0,
+  "brand": "Cincon",
+  "src": "www.cincon.com",
+  "status": "不可访问(503)",
+  "date": ""
+ },
+ {
+  "name": "Privacy Policy.",
+  "url": "https://www.cincon.com/troubleshooting/a43535f3745822fe0535f589bf255677.pdf",
+  "pages": 0,
+  "type": "说明书",
+  "size": 0,
+  "brand": "Cincon",
+  "src": "www.cincon.com",
+  "status": "ok",
+  "date": ""
+ },
+ {
+  "name": "ENG",
+  "url": "https://cn.cincon.com/user-manual/adapter-user-manual-english.pdf",
+  "pages": 0,
+  "type": "说明书",
+  "size": 0,
+  "brand": "Cincon",
+  "src": "cn.cincon.com",
+  "status": "ok",
+  "date": ""
+ },
+ {
+  "name": "隐私权政策",
+  "url": "https://cn.cincon.com/troubleshooting/a43535f3745822fe0535f589bf255677.pdf",
+  "pages": 0,
+  "type": "说明书",
+  "size": 0,
+  "brand": "Cincon",
+  "src": "cn.cincon.com",
+  "status": "ok",
+  "date": ""
  }
 ]
