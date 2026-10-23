@@ -428,6 +428,10 @@ now_str=time.strftime("%Y-%m-%d %H:%M:%S",time.localtime())
 seen=set();uniq=[]
 for r in out:
     k=r.get("pdf") or ""
+    # 先补全已知的相对路径，再做http过滤
+    if k.startswith("/filevault-ext/"):
+        k = "https://www.inovance.com" + k
+        r["pdf"] = k
     # 过滤无有效外链的记录（空URL会导致无法预览）
     if not k.startswith("http"):
         continue
