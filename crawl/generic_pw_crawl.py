@@ -14,6 +14,13 @@ except ImportError:
     print("playwright未安装，请先 pip install playwright && playwright install chromium")
     sys.exit(1)
 
+# Stealth反检测（可选，用于绕过WAF）
+try:
+    from playwright_stealth import Stealth
+    HAS_STEALTH = True
+except ImportError:
+    HAS_STEALTH = False
+
 UA = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
 
 # ===== 困难品牌配置：JS动态渲染、需无头浏览器 =====
@@ -260,8 +267,12 @@ def crawl_brand(brand, p):
 
 def main():
     total_new = 0
-    print(f"通用Playwright采集器启动，共{len(PW_BRANDS)}个困难品牌")
-    with sync_playwright() as p:
+    print(f"通用Playwright采集器启动，共{len(PW_BRANDS)}个困难品牌 (stealth={HAS_STEALTH})")
+    if HAS_STEALTH:
+        pm = Stealth().use_sync(sync_playwright())
+    else:
+        pm = sync_playwright()
+    with pm as p:
         for brand in PW_BRANDS:
             print(f"[{brand['b']}] 采集中...")
             try:
