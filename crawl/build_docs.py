@@ -94,6 +94,7 @@ BRANDS={
  "keyence":{"b":"基恩士","page":"https://www.keyence.com.cn/downloads/","ty_default":"用户手册"},
  "omron":{"b":"欧姆龙","page":"https://www.fa.omron.com.cn/","ty_default":"用户手册"},
  "delta":{"b":"台达电子","page":"https://downloadcenter.delta-china.com.cn/","ty_default":"操作手册"},
+ "yaskawa":{"b":"安川电机","page":"https://www.yaskawa.com.cn/database/","ty_default":"产品说明书"},
 }
 def clean_title(t,b):
     t=re.sub(r'\.pdf$','',t or '',flags=re.I).strip()
