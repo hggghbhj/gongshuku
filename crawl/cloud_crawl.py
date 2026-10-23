@@ -83,6 +83,8 @@ STEPS=[
  ("ABB电机",["python3","crawler_abb_motor.py"]),
  # 通用采集：自动扫描 BRAND_SITES 中所有品牌官网，发现新说明书
  ("通用采集",["python3","generic_crawl.py","--max-pages","3"]),
+ # Playwright采集：处理JS动态渲染的困难品牌（台达/欧姆龙/SMC等）
+ ("Playwright采集",["python3","generic_pw_crawl.py"]),
 ]
 def count_manifests():
     """统计所有 manifest 的记录数（按品牌key）"""
