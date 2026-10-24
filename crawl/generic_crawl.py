@@ -224,10 +224,6 @@ BRAND_SITES = {
         "b": "阳明电机",
         "start": ["https://www.fotek.com.tw/zh-cn/download"],
     },
-    "leisai": {
-        "b": "雷赛智能",
-        "start": ["https://www.leisai.com/downloads.html"],
-    },
     "moons": {
         "b": "鸣志",
         "start": ["https://www.moons.com.cn/support-training/downloads"],
@@ -253,10 +249,6 @@ BRAND_SITES = {
         "b": "蓝海华腾",
         "start": ["https://www.lanht.com/download/"],
     },
-    "delta": {
-        "b": "台达电子",
-        "start": ["https://downloadcenter.delta-china.com.cn/zh-CN/DownloadCenter"],
-    },
     "vb": {
         "b": "丰炜科技",
         "start": ["https://www.vb.com.tw/download"],
@@ -277,17 +269,9 @@ BRAND_SITES = {
         "b": "欧姆龙",
         "start": ["https://www.omron.com.cn/cn/support/download/"],
     },
-    "panasonic": {
-        "b": "松下电器",
-        "start": ["https://industrial.panasonic.cn/cn/pss/fa/"],
-    },
     "fujielectric": {
         "b": "富士电机",
         "start": ["https://www.fujielectric.com.cn/support/download/"],
-    },
-    "yaskawa": {
-        "b": "安川电机",
-        "start": ["https://www.yaskawa.com.cn/support/download/"],
     },
     "fanuc": {
         "b": "发那科",
@@ -304,10 +288,6 @@ BRAND_SITES = {
     "yokogawa": {
         "b": "横河电机",
         "start": ["https://www.yokogawa.com/cn/zh/support/downloads/"],
-    },
-    "keyence": {
-        "b": "基恩士",
-        "start": ["https://www.keyence.com.cn/download/"],
     },
     "pepperl": {
         "b": "倍加福",
@@ -328,10 +308,6 @@ BRAND_SITES = {
     "weinview": {
         "b": "威纶通",
         "start": ["https://www.weintek.com/Download/Document/"],
-    },
-    "kinco": {
-        "b": "步科股份",
-        "start": ["https://www.kinco.cn/service/download"],
     },
     "samkoon": {
         "b": "显控科技",
@@ -444,10 +420,6 @@ BRAND_SITES = {
     "berger": {
         "b": "百格拉",
         "start": ["https://www.bergerlahr.com.cn/download/"],
-    },
-    "esitron": {
-        "b": "埃斯顿自动化",
-        "start": ["https://www.estun.com/download/"],
     },
     "googol": {
         "b": "固高自动化",
