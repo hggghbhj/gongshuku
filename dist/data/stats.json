@@ -1,11 +1,10 @@
 {
- "last_run": "2026-10-26 06:06:33",
- "last_new": 8,
+ "last_run": "2026-10-26 08:29:32",
+ "last_new": 9,
  "new_by_brand": {
-  "amsamotion": 3,
-  "hcfa": 5
+  "hantek": 9
  },
- "total": 17474,
+ "total": 17480,
  "brands": {
   "cincon": 12,
   "jelpc": 2,
@@ -20,7 +19,7 @@
   "senlan": 48,
   "spii": 0,
   "hongfa": 12,
-  "hantek": 64,
+  "hantek": 73,
   "huceen": 14,
   "yudian": 42,
   "fujielectric": 0,
@@ -87,7 +86,7 @@
   "gtake": 31,
   "mcgs": 63,
   "estun": 11,
-  "amsamotion": 175,
+  "amsamotion": 172,
   "fatek": 2,
   "kaimin": 8,
   "boschrexroth": 0,
