@@ -1,5 +1,21 @@
 [
  {
+  "t": "VI30-1618MDM1用户手册(1)",
+  "d": "2026.10.26",
+  "u": "https://www.veichi.cn/Uploads/20261026034105_180322.pdf",
+  "fn": "vc_289f5a0b.pdf",
+  "pages": 69,
+  "size": 5965140
+ },
+ {
+  "t": "VI30-0812MDM1用户手册(1)",
+  "d": "2026.10.26",
+  "u": "https://www.veichi.cn/Uploads/20261026034025_463137.pdf",
+  "fn": "vc_a0bc8c44.pdf",
+  "pages": 66,
+  "size": 5547799
+ },
+ {
   "t": "EHS100系列电液伺服使用说明书V1.5",
   "d": "2026.10.26",
   "u": "https://www.veichi.cn/Uploads/20261026111507_389663.pdf",
@@ -368,70 +384,6 @@
   "size": 9492616
  },
  {
-  "t": "S100货用施工升降机变频驱动器使用说明书V1.1",
-  "d": "2026.03.10",
-  "u": "https://www.veichi.cn/Uploads/20260310021441_069373.pdf",
-  "fn": "vc_f72ac973.pdf",
-  "pages": 87,
-  "size": 6287313
- },
- {
-  "t": "IN310集成一体机系列说明书V1.1",
-  "d": "2026.03.10",
-  "u": "https://www.veichi.cn/Uploads/20260310021408_131585.pdf",
-  "fn": "vc_ac1e778b.pdf",
-  "pages": 12,
-  "size": 2759020
- },
- {
-  "t": "CH610起重机一体化驱动器说明书V1.3",
-  "d": "2026.03.10",
-  "u": "https://www.veichi.cn/Uploads/20260310021337_973200.pdf",
-  "fn": "vc_2808b2d6.pdf",
-  "pages": 164,
-  "size": 6660818
- },
- {
-  "t": "AC500系列高可靠性工程型变频调速器使用说明书（简版）V1.1",
-  "d": "2026.03.10",
-  "u": "https://www.veichi.cn/Uploads/20260310021301_373162.pdf",
-  "fn": "vc_06e998f8.pdf",
-  "pages": 81,
-  "size": 4115082
- },
- {
-  "t": "SD710英文画册",
-  "d": "2026.01.14",
-  "u": "https://www.veichi.cn/Uploads/20260114013453_684039.pdf",
-  "fn": "vc_fca45c97.pdf",
-  "pages": 10,
-  "size": 41275910
- },
- {
-  "t": "SD780英文画册",
-  "d": "2026.01.14",
-  "u": "https://www.veichi.cn/Uploads/20260114013522_766210.pdf",
-  "fn": "vc_248ac127.pdf",
-  "pages": 10,
-  "size": 56909027
- },
- {
-  "t": "SD810英文画册",
-  "d": "2026.01.14",
-  "u": "https://www.veichi.cn/Uploads/20260114013552_019440.pdf",
-  "fn": "vc_2099760a.pdf",
-  "pages": 6,
-  "size": 44897718
- },
- {
-  "t": "SD860英文画册",
-  "d": "2026.01.14",
-  "u": "https://www.veichi.cn/Uploads/20260114013619_088996.pdf",
-  "fn": "vc_467f8254.pdf",
-  "pages": 14,
-  "size": 47690721
- },
- {
   "t": "V9E伺服电机画册2026.3.2",
   "d": "2026.3.2",
   "u": "https://www.veichi.cn/Uploads/20260302030657_130578.pdf",
@@ -464,28 +416,36 @@
   "size": 5251174
  },
  {
-  "t": "SD860多传伺服系统画册",
-  "d": "2025.10.30",
-  "u": "https://www.veichi.cn/Uploads/20251030110733_141307.pdf",
-  "fn": "vc_2dccb5d2.pdf",
-  "pages": 14,
-  "size": 12484569
+  "t": "AC500系列高可靠性工程型变频调速器使用说明书（简版）V1.1",
+  "d": "2026.03.10",
+  "u": "https://www.veichi.cn/Uploads/20260310021301_373162.pdf",
+  "fn": "vc_06e998f8.pdf",
+  "pages": 81,
+  "size": 4115082
  },
  {
-  "t": "SD860电池盒规格书",
-  "d": "2025.11.12",
-  "u": "https://www.veichi.cn/Uploads/20251112024050_143028.pdf",
-  "fn": "vc_3a89d9ca.pdf",
-  "pages": 6,
-  "size": 1465869
+  "t": "CH610起重机一体化驱动器说明书V1.3",
+  "d": "2026.03.10",
+  "u": "https://www.veichi.cn/Uploads/20260310021337_973200.pdf",
+  "fn": "vc_2808b2d6.pdf",
+  "pages": 164,
+  "size": 6660818
  },
  {
-  "t": "AC600系列变频器使用说明书V1.1",
-  "d": "2025.11.27",
-  "u": "https://www.veichi.cn/Uploads/20251127050253_824486.pdf",
-  "fn": "vc_82baf5e1.pdf",
-  "pages": 884,
-  "size": 20857901
+  "t": "IN310集成一体机系列说明书V1.1",
+  "d": "2026.03.10",
+  "u": "https://www.veichi.cn/Uploads/20260310021408_131585.pdf",
+  "fn": "vc_ac1e778b.pdf",
+  "pages": 12,
+  "size": 2759020
+ },
+ {
+  "t": "S100货用施工升降机变频驱动器使用说明书V1.1",
+  "d": "2026.03.10",
+  "u": "https://www.veichi.cn/Uploads/20260310021441_069373.pdf",
+  "fn": "vc_f72ac973.pdf",
+  "pages": 87,
+  "size": 6287313
  },
  {
   "t": "SD900系列伺服选型手册V1.1",
@@ -520,6 +480,38 @@
   "size": 28800252
  },
  {
+  "t": "SD710英文画册",
+  "d": "2026.01.14",
+  "u": "https://www.veichi.cn/Uploads/20260114013453_684039.pdf",
+  "fn": "vc_fca45c97.pdf",
+  "pages": 10,
+  "size": 41275910
+ },
+ {
+  "t": "SD780英文画册",
+  "d": "2026.01.14",
+  "u": "https://www.veichi.cn/Uploads/20260114013522_766210.pdf",
+  "fn": "vc_248ac127.pdf",
+  "pages": 10,
+  "size": 56909027
+ },
+ {
+  "t": "SD810英文画册",
+  "d": "2026.01.14",
+  "u": "https://www.veichi.cn/Uploads/20260114013552_019440.pdf",
+  "fn": "vc_2099760a.pdf",
+  "pages": 6,
+  "size": 44897718
+ },
+ {
+  "t": "SD860英文画册",
+  "d": "2026.01.14",
+  "u": "https://www.veichi.cn/Uploads/20260114013619_088996.pdf",
+  "fn": "vc_467f8254.pdf",
+  "pages": 14,
+  "size": 47690721
+ },
+ {
   "t": "VH200可编程控制器用户手册V1.0250927",
   "d": "2025.09.28",
   "u": "https://www.veichi.cn/Uploads/20250928053017_338363.pdf",
@@ -534,5 +526,29 @@
   "fn": "vc_15a97068.pdf",
   "pages": 290,
   "size": 40979737
+ },
+ {
+  "t": "SD860多传伺服系统画册",
+  "d": "2025.10.30",
+  "u": "https://www.veichi.cn/Uploads/20251030110733_141307.pdf",
+  "fn": "vc_2dccb5d2.pdf",
+  "pages": 14,
+  "size": 12484569
+ },
+ {
+  "t": "SD860电池盒规格书",
+  "d": "2025.11.12",
+  "u": "https://www.veichi.cn/Uploads/20251112024050_143028.pdf",
+  "fn": "vc_3a89d9ca.pdf",
+  "pages": 6,
+  "size": 1465869
+ },
+ {
+  "t": "AC600系列变频器使用说明书V1.1",
+  "d": "2025.11.27",
+  "u": "https://www.veichi.cn/Uploads/20251127050253_824486.pdf",
+  "fn": "vc_82baf5e1.pdf",
+  "pages": 884,
+  "size": 20857901
  }
 ]
