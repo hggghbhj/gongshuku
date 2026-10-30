@@ -4399,5 +4399,23 @@
     "pages": 88,
     "category": "MELSEC-Q系列",
     "brand": "mitsubishi"
+  },
+  {
+    "name": "l08578engh.pdf",
+    "url": "https://dl.mitsubishielectric.com/dl/fa/document/catalog/melipc/l08578eng/l08578engh.pdf",
+    "pdf": "pdfs/mitsubishi/l08578engh.pdf",
+    "size": 7072131,
+    "pages": 16,
+    "category": "工业计算机MELIPC",
+    "brand": "mitsubishi"
+  },
+  {
+    "name": "l08967engf.pdf",
+    "url": "https://dl.mitsubishielectric.com/dl/fa/document/catalog/mxc/l08967eng/l08967engf.pdf",
+    "pdf": "pdfs/mitsubishi/l08967engf.pdf",
+    "size": 24354024,
+    "pages": 88,
+    "category": "可编程控制器MELSEC",
+    "brand": "mitsubishi"
   }
 ]

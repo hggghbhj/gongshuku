@@ -2417,5 +2417,26 @@
   "src": "www.siglent.com",
   "status": "不可访问(404)",
   "date": ""
+ },
+ {
+  "name": "1000 BASE-T Ethernet Compliance Test Application_CN01B",
+  "url": "https://siglent.oss-cn-shenzhen.aliyuncs.com/document/Oscilloscope/1000%20BASE-T%20Ethernet%20Compliance%20Test%20Application_CN01B.pdf",
+  "file": "pdfs/siglent/1000 BASE-T Ethernet Compliance Test Application_CN01B.pdf",
+  "size": 7282240,
+  "pages": 91
+ },
+ {
+  "name": "2.5G_5G_10GBASE-T Ethernet Compliance Test Application_CN01A",
+  "url": "https://siglent.oss-cn-shenzhen.aliyuncs.com/document/Oscilloscope/2.5G_5G_10GBASE-T%20Ethernet%20Compliance%20Test%20Application_CN01A.pdf",
+  "file": "pdfs/siglent/2.5G_5G_10GBASE-T Ethernet Compliance Test Application_CN01A.pdf",
+  "size": 7071266,
+  "pages": 98
+ },
+ {
+  "name": "SPD1000X_DataSheet_CN03C",
+  "url": "https://siglent.oss-cn-shenzhen.aliyuncs.com/document/Power%20Supplies/SPD1000X_DataSheet_CN03C.pdf",
+  "file": "pdfs/siglent/SPD1000X_DataSheet_CN03C.pdf",
+  "size": 1150308,
+  "pages": 7
  }
 ]
