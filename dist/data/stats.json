@@ -1,10 +1,13 @@
 {
- "last_run": "2026-11-02 09:58:04",
- "last_new": 5,
+ "last_run": "2026-11-02 20:13:43",
+ "last_new": 12,
  "new_by_brand": {
-  "hcfa": 5
+  "mitsubishi": 1,
+  "hcfa": 3,
+  "siglent": 5,
+  "amsamotion": 3
  },
- "total": 17515,
+ "total": 17527,
  "brands": {
   "hollysys": 32,
   "zctech": 0,
@@ -38,7 +41,7 @@
   "wideplus": 63,
   "invt_servo": 0,
   "keyence": 876,
-  "mitsubishi": 491,
+  "mitsubishi": 492,
   "googol": 0,
   "norgren": 0,
   "gtake": 31,
@@ -102,7 +105,7 @@
   "cincon": 12,
   "hinox": 0,
   "mingway": 0,
-  "hcfa": 95,
+  "hcfa": 98,
   "inovance": 170,
   "hiconics": 9,
   "sunye": 0,
@@ -119,8 +122,8 @@
   "veichi": 69,
   "xichi": 10,
   "mege": 5,
-  "siglent": 336,
-  "amsamotion": 169,
+  "siglent": 341,
+  "amsamotion": 172,
   "lenze": 0,
   "delixi": 46,
   "yatai": 39,
