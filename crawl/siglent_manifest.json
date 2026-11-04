@@ -2550,5 +2550,40 @@
   "file": "pdfs/siglent/SDG8100A_UserManual_CN01A.pdf",
   "size": 6706177,
   "pages": 127
+ },
+ {
+  "name": "SDM4000A_Remote Manual_CN01C",
+  "url": "https://siglent.oss-cn-shenzhen.aliyuncs.com/document/Digital%20Multimeters/SDM4000A_Remote%20Manual_CN01C.pdf",
+  "file": "pdfs/siglent/SDM4000A_Remote Manual_CN01C.pdf",
+  "size": 1944434,
+  "pages": 108
+ },
+ {
+  "name": "SHS800X_SHS1000X_DataSheet_CN01C",
+  "url": "https://siglent.oss-cn-shenzhen.aliyuncs.com/document/Oscilloscope/SHS800X_SHS1000X_DataSheet_CN01C.pdf",
+  "file": "pdfs/siglent/SHS800X_SHS1000X_DataSheet_CN01C.pdf",
+  "size": 1943526,
+  "pages": 25
+ },
+ {
+  "name": "SSG6M80A_ProgrammingGuide_CN01A",
+  "url": "https://siglent.oss-cn-shenzhen.aliyuncs.com/document/RF%20Generator/SSG6M80A_ProgrammingGuide_CN01A.pdf",
+  "file": "pdfs/siglent/SSG6M80A_ProgrammingGuide_CN01A.pdf",
+  "size": 2859416,
+  "pages": 114
+ },
+ {
+  "name": "SigIQPro_UserManual_CN01D",
+  "url": "https://siglent.oss-cn-shenzhen.aliyuncs.com/document/RF%20Generator/SigIQPro_UserManual_CN01D.pdf",
+  "file": "pdfs/siglent/SigIQPro_UserManual_CN01D.pdf",
+  "size": 11427928,
+  "pages": 397
+ },
+ {
+  "name": "SDG7000A_Datasheet_CN01E",
+  "url": "https://siglent.oss-cn-shenzhen.aliyuncs.com/document/Signal%20Generator/SDG7000A_Datasheet_CN01E.pdf",
+  "file": "pdfs/siglent/SDG7000A_Datasheet_CN01E.pdf",
+  "size": 1855007,
+  "pages": 19
  }
 ]
