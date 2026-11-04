@@ -568,15 +568,6 @@
  },
  {
   "cat": "用户手册",
-  "t": "E2000-Q系列变频器说明书",
-  "d": "2024-06-27",
-  "u": "https://www.euradrives.com/Upload/File/202406/20240627162755_0880.pdf",
-  "fn": "or_6c0eac1c.pdf",
-  "pages": 236,
-  "size": 4370925
- },
- {
-  "cat": "用户手册",
   "t": "EC200系列PLC硬件使用手册",
   "d": "2024-03-22",
   "u": "https://www.euradrives.com/Upload/File/202403/20240322112616_3851.pdf",
@@ -1357,6 +1348,15 @@
   "fn": "or_1ed72dc7.pdf",
   "pages": 16,
   "size": 1609141
+ },
+ {
+  "cat": "用户手册",
+  "t": "E2000-Q系列变频器说明书",
+  "d": "2024-06-27",
+  "u": "https://www.euradrives.com/Upload/File/202406/20240627162755_0880.pdf",
+  "fn": "or_6c0eac1c.pdf",
+  "pages": 236,
+  "size": 4370925
  },
  {
   "cat": "用户手册",
