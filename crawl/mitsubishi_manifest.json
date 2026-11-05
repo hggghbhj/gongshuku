@@ -4426,5 +4426,23 @@
     "pages": 4,
     "category": "网络相关产品",
     "brand": "mitsubishi"
+  },
+  {
+    "name": "l0810025enga.pdf",
+    "url": "https://dl.mitsubishielectric.com/dl/fa/document/catalog/got/l0810025eng/l0810025enga.pdf",
+    "pdf": "pdfs/mitsubishi/l0810025enga.pdf",
+    "size": 6145284,
+    "pages": 8,
+    "category": "人机界面GOT",
+    "brand": "mitsubishi"
+  },
+  {
+    "name": "l0810022enga.pdf",
+    "url": "https://dl.mitsubishielectric.com/dl/fa/document/catalog/got/l0810022eng/l0810022enga.pdf",
+    "pdf": "pdfs/mitsubishi/l0810022enga.pdf",
+    "size": 8939503,
+    "pages": 8,
+    "category": "人机界面GOT",
+    "brand": "mitsubishi"
   }
 ]
