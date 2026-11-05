@@ -4444,5 +4444,23 @@
     "pages": 8,
     "category": "人机界面GOT",
     "brand": "mitsubishi"
+  },
+  {
+    "name": "Simplified ChineseVersion",
+    "url": "https://dl.mitsubishielectric.com/dl/fa/document/catalog/got/l0810023chn/l0810023chna.pdf",
+    "pdf": "pdfs/mitsubishi/Simplified ChineseVersion.pdf",
+    "size": 9567178,
+    "pages": 8,
+    "category": "人机界面GOT",
+    "brand": "mitsubishi"
+  },
+  {
+    "name": "Simplified ChineseVersion",
+    "url": "https://dl.mitsubishielectric.com/dl/fa/document/catalog/got/l0810026chn/l0810026chna.pdf",
+    "pdf": "pdfs/mitsubishi/Simplified ChineseVersion.pdf",
+    "size": 6332250,
+    "pages": 8,
+    "category": "人机界面GOT",
+    "brand": "mitsubishi"
   }
 ]
