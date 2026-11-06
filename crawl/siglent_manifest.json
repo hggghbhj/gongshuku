@@ -2592,5 +2592,19 @@
   "file": "pdfs/siglent/MS032_052_102A_Datasheet_CN01D.pdf",
   "size": 2167061,
   "pages": 20
+ },
+ {
+  "name": "SDS1000X-C_DataSheet_DS0101E-C04E",
+  "url": "https://siglent.oss-cn-shenzhen.aliyuncs.com/document/Oscilloscope/SDS1000X-C_DataSheet_DS0101E-C04E.pdf",
+  "file": "pdfs/siglent/SDS1000X-C_DataSheet_DS0101E-C04E.pdf",
+  "size": 11435334,
+  "pages": 19
+ },
+ {
+  "name": "SDS1000X-E_Datasheet_CN05A",
+  "url": "https://siglent.oss-cn-shenzhen.aliyuncs.com/document/Oscilloscope/SDS1000X-E_Datasheet_CN05A.pdf",
+  "file": "pdfs/siglent/SDS1000X-E_Datasheet_CN05A.pdf",
+  "size": 12582003,
+  "pages": 18
  }
 ]

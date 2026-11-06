@@ -1,5 +1,12 @@
 [
  {
+  "t": "SV730W系列EtherCAT总线伺服安装使用说明书 V2.0",
+  "u": "https://website.hcfa.cc:20080/upload/%E4%BA%A7%E5%93%81%E4%B8%AD%E5%BF%83/%E5%B7%A5%E4%B8%9A%E8%87%AA%E5%8A%A8%E5%8C%96/%E8%BF%90%E5%8A%A8%E6%8E%A7%E5%88%B6/%E5%A4%9A%E8%BD%B4%E4%BC%BA%E6%9C%8D%E9%A9%B1%E5%8A%A8%E5%99%A8/700W%E7%B3%BB%E5%88%97/700W/SV730W%E7%B3%BB%E5%88%97EtherCAT%E6%80%BB%E7%BA%BF%E4%BC%BA%E6%9C%8D%E5%AE%89%E8%A3%85%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E%E4%B9%A6%20V2.0.pdf",
+  "fn": "hc_d172700e.pdf",
+  "pages": 16,
+  "size": 11139062
+ },
+ {
   "t": "SV730W系列EtherCAT总线伺服安装使用说明书 V2.0 中英文",
   "u": "https://website.hcfa.cc:20080/upload/%E4%BA%A7%E5%93%81%E4%B8%AD%E5%BF%83/%E5%B7%A5%E4%B8%9A%E8%87%AA%E5%8A%A8%E5%8C%96/%E8%BF%90%E5%8A%A8%E6%8E%A7%E5%88%B6/%E5%A4%9A%E8%BD%B4%E4%BC%BA%E6%9C%8D%E9%A9%B1%E5%8A%A8%E5%99%A8/700W%E7%B3%BB%E5%88%97/730W/SV730W%E7%B3%BB%E5%88%97EtherCAT%E6%80%BB%E7%BA%BF%E4%BC%BA%E6%9C%8D%E5%AE%89%E8%A3%85%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E%E4%B9%A6%20V2.0.pdf",
   "fn": "hc_f4feaae9.pdf",
@@ -629,6 +636,94 @@
   "size": 0,
   "brand": "禾川科技",
   "src": "website.hcfa.cc:20080",
+  "status": "不可访问(0)",
+  "date": ""
+ },
+ {
+  "name": "M100系列控制器硬件手册V1.2",
+  "url": "https://website.hcfa.cc:20080/upload/产品中心/工业自动化/通用控制/PLC/M系列CPU/M100系列控制器硬件手册V1.2.pdf",
+  "pages": 0,
+  "type": "说明书",
+  "size": 0,
+  "brand": "禾川科技",
+  "src": "website.hcfa.cc:20080",
+  "status": "不可访问(0)",
+  "date": ""
+ },
+ {
+  "name": "E615系列纺织专用超启动变频器（同步机）用户手册 V2.0",
+  "url": "https://website.hcfa.cc:20080/upload/产品中心/特殊机型/行业定制机/纺织行业/E615系列变频器/E615系列纺织专用超启动变频器（同步机）用户手册 V2.0.pdf",
+  "pages": 0,
+  "type": "说明书",
+  "size": 0,
+  "brand": "禾川科技",
+  "src": "website.hcfa.cc:20080",
+  "status": "不可访问(0)",
+  "date": ""
+ },
+ {
+  "name": "E630系列纺织专用超启动变频器用户手册 V2.0",
+  "url": "https://website.hcfa.cc:20080/upload/产品中心/特殊机型/行业定制机/纺织行业/E630系列变频器/E630系列纺织专用超启动变频器用户手册 V2.0.pdf",
+  "pages": 0,
+  "type": "说明书",
+  "size": 0,
+  "brand": "禾川科技",
+  "src": "website.hcfa.cc:20080",
+  "status": "不可访问(0)",
+  "date": ""
+ },
+ {
+  "name": "HCM312-32MT6-D外形尺寸图-不带端子",
+  "url": "https://website.hcfa.cc:20080/upload//产品中心/工业自动化/通用控制/PLC/M系列CPU/M300系列/M312/HCM312-32MT6-D外形尺寸图-不带端子.pdf",
+  "pages": 0,
+  "type": "说明书",
+  "size": 0,
+  "brand": "禾川科技",
+  "src": "website.hcfa.cc:20080",
+  "status": "不可访问(0)",
+  "date": ""
+ },
+ {
+  "name": "HCM312-32MT6-D外形尺寸图-带端子",
+  "url": "https://website.hcfa.cc:20080/upload//产品中心/工业自动化/通用控制/PLC/M系列CPU/M300系列/M312/HCM312-32MT6-D外形尺寸图-带端子.pdf",
+  "pages": 0,
+  "type": "说明书",
+  "size": 0,
+  "brand": "禾川科技",
+  "src": "website.hcfa.cc:20080",
+  "status": "不可访问(0)",
+  "date": ""
+ },
+ {
+  "name": "X4系列脉冲型伺服用户手册V1.0",
+  "url": "https://website.hcfa.cc:20080/upload/产品中心/工业自动化/运动控制/单轴伺服驱动器/X系列/X4/X4系列脉冲型伺服用户手册V1.0.pdf",
+  "pages": 0,
+  "type": "说明书",
+  "size": 0,
+  "brand": "禾川科技",
+  "src": "website.hcfa.cc:20080",
+  "status": "不可访问(0)",
+  "date": ""
+ },
+ {
+  "name": "AMD530B系列步进驱动器（EtherCAT总线）安装使用说明书V1.1 中英文",
+  "url": "http://www.hcfa.cn/service/index/page/AMD530B系列步进驱动器（EtherCAT总线）安装使用说明书V1.1 中英文.pdf.pdf",
+  "pages": 0,
+  "type": "说明书",
+  "size": 0,
+  "brand": "禾川科技",
+  "src": "www.hcfa.cn",
+  "status": "不可访问(0)",
+  "date": ""
+ },
+ {
+  "name": "新平台X2X6系列130&amp",
+  "url": "http://www.hcfa.cn/service/index/page/新平台X2X6系列130&amp;180法兰伺服电机安装使用说明书 V1.0 中英文.pdf",
+  "pages": 0,
+  "type": "说明书",
+  "size": 0,
+  "brand": "禾川科技",
+  "src": "www.hcfa.cn",
   "status": "不可访问(0)",
   "date": ""
  },
