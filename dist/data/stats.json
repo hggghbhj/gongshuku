@@ -1,8 +1,10 @@
 {
- "last_run": "2026-11-08 04:37:39",
- "last_new": 0,
- "new_by_brand": {},
- "total": 17570,
+ "last_run": "2026-11-08 09:50:14",
+ "last_new": 3,
+ "new_by_brand": {
+  "hcfa": 3
+ },
+ "total": 17573,
  "brands": {
   "hollysys": 32,
   "zctech": 0,
@@ -100,7 +102,7 @@
   "cincon": 12,
   "hinox": 0,
   "mingway": 0,
-  "hcfa": 91,
+  "hcfa": 94,
   "inovance": 170,
   "hiconics": 9,
   "sunye": 0,
@@ -137,7 +139,7 @@
   "信捷": "ok",
   "雷赛": "timeout",
   "正弦": "timeout",
-  "欧瑞": "retrying(2/3)",
+  "欧瑞": "ok",
   "禾川": "ok",
   "英威腾": "ok",
   "伟创": "ok",
