@@ -1,6 +1,24 @@
 [
  {
   "cat": "用户手册",
+  "t": "欧瑞编程手册基础及运控指令",
+  "d": "2026-11-13",
+  "u": "https://www.euradrives.com/Upload/File/202611/20261113092442_9647.pdf",
+  "fn": "or_aed1aa6f.pdf",
+  "pages": 559,
+  "size": 20635779
+ },
+ {
+  "cat": "用户手册",
+  "t": "欧瑞全系列PLC产品说明书",
+  "d": "2026-11-13",
+  "u": "https://www.euradrives.com/Upload/File/202611/20261113092336_0868.pdf",
+  "fn": "or_319efc9f.pdf",
+  "pages": 272,
+  "size": 9224284
+ },
+ {
+  "cat": "用户手册",
   "t": "SDP20-G系列伺服系统说明书",
   "d": "2026-10-19",
   "u": "https://www.euradrives.com/Upload/File/202610/20261019131944_2380.pdf",
@@ -568,15 +586,6 @@
  },
  {
   "cat": "用户手册",
-  "t": "EC200系列PLC硬件使用手册",
-  "d": "2024-03-22",
-  "u": "https://www.euradrives.com/Upload/File/202403/20240322112616_3851.pdf",
-  "fn": "or_56aee1a9.pdf",
-  "pages": 99,
-  "size": 3483130
- },
- {
-  "cat": "用户手册",
   "t": "E2100系列变频器说明书",
   "d": "2024-03-22",
   "u": "https://www.euradrives.com/Upload/File/202403/20240322112535_4505.pdf",
@@ -757,15 +766,6 @@
  },
  {
   "cat": "用户手册",
-  "t": "EC400系列PLC硬件使用手册2021072201",
-  "d": "2022-06-09",
-  "u": "https://www.euradrives.com/Upload/File/202206/20220609104808_3618.pdf",
-  "fn": "or_594af47d.pdf",
-  "pages": 27,
-  "size": 1240956
- },
- {
-  "cat": "用户手册",
   "t": "EC431-04IVM单独使用手册",
   "d": "2022-06-09",
   "u": "https://www.euradrives.com/Upload/File/202206/20220609104910_1430.pdf",
@@ -889,15 +889,6 @@
   "fn": "or_c0fe4521.pdf",
   "pages": 17,
   "size": 1068078
- },
- {
-  "cat": "用户手册",
-  "t": "EC400系列PLC软件使用手册2021071901",
-  "d": "2021-08-18",
-  "u": "https://www.euradrives.com/Upload/File/202109/20210926111917_1316.pdf",
-  "fn": "or_d0568829.pdf",
-  "pages": 217,
-  "size": 10117861
  },
  {
   "cat": "用户手册",
@@ -1180,15 +1171,6 @@
  },
  {
   "cat": "用户手册",
-  "t": "EC100EC200系列PLC软件说明书",
-  "d": "2018-01-04",
-  "u": "https://www.euradrives.com/Upload/File/201801/20180104141218_3591.pdf",
-  "fn": "or_3b07800e.pdf",
-  "pages": 267,
-  "size": 6846843
- },
- {
-  "cat": "用户手册",
   "t": "ED200系列文本屏说明书",
   "d": "2018-01-04",
   "u": "https://www.euradrives.com/Upload/File/201801/20180104140834_6235.pdf",
@@ -1348,6 +1330,42 @@
   "fn": "or_1ed72dc7.pdf",
   "pages": 16,
   "size": 1609141
+ },
+ {
+  "cat": "用户手册",
+  "t": "EC200系列PLC硬件使用手册",
+  "d": "2024-03-22",
+  "u": "https://www.euradrives.com/Upload/File/202403/20240322112616_3851.pdf",
+  "fn": "or_56aee1a9.pdf",
+  "pages": 99,
+  "size": 3483130
+ },
+ {
+  "cat": "用户手册",
+  "t": "EC400系列PLC硬件使用手册2021072201",
+  "d": "2022-06-09",
+  "u": "https://www.euradrives.com/Upload/File/202206/20220609104808_3618.pdf",
+  "fn": "or_594af47d.pdf",
+  "pages": 27,
+  "size": 1240956
+ },
+ {
+  "cat": "用户手册",
+  "t": "EC400系列PLC软件使用手册2021071901",
+  "d": "2021-08-18",
+  "u": "https://www.euradrives.com/Upload/File/202109/20210926111917_1316.pdf",
+  "fn": "or_d0568829.pdf",
+  "pages": 217,
+  "size": 10117861
+ },
+ {
+  "cat": "用户手册",
+  "t": "EC100EC200系列PLC软件说明书",
+  "d": "2018-01-04",
+  "u": "https://www.euradrives.com/Upload/File/201801/20180104141218_3591.pdf",
+  "fn": "or_3b07800e.pdf",
+  "pages": 267,
+  "size": 6846843
  },
  {
   "cat": "用户手册",
