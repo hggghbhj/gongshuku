@@ -1,5 +1,19 @@
 [
  {
+  "t": "GA1M-DR08%E4%BA%A7%E5%93%81%E6%89%8B%E5%86%8C-Ver1.0",
+  "u": "https://oss.amsamotion.com/uploads/GA1M-DR08%E4%BA%A7%E5%93%81%E6%89%8B%E5%86%8C-Ver1.0.pdf",
+  "fn": "am_322d41d1.pdf",
+  "pages": 49,
+  "size": 3946067
+ },
+ {
+  "t": "GL1M-DR08%E4%BA%A7%E5%93%81%E6%89%8B%E5%86%8C-Ver1.0",
+  "u": "https://oss.amsamotion.com/uploads/GL1M-DR08%E4%BA%A7%E5%93%81%E6%89%8B%E5%86%8C-Ver1.0.pdf",
+  "fn": "am_ffcba4c0.pdf",
+  "pages": 57,
+  "size": 4345154
+ },
+ {
   "t": "20250528_234809_",
   "u": "https://oss.amsamotion.com/uploads/20250528_234809_.pdf",
   "fn": "am_26571f84.pdf",
@@ -1147,6 +1161,17 @@
   "date": ""
  },
  {
+  "name": "AMX200 SMART系列产品手册 V1.4 260929",
+  "url": "https://oss.amsamotion.com/uploads/AMX200-SMART系列产品手册_V1.4_260929.pdf",
+  "pages": 0,
+  "type": "说明书",
+  "size": 0,
+  "brand": "艾莫迅",
+  "src": "oss.amsamotion.com",
+  "status": "不可访问(0)",
+  "date": ""
+ },
+ {
   "name": "MT CA M02产品使用手册 VER1.0 260914",
   "url": "https://oss.amsamotion.com/uploads/MT-CA-M02产品使用手册-VER1.0-260914.pdf",
   "pages": 0,
@@ -1160,61 +1185,6 @@
  {
   "name": "RS485 ETH M02使用手册 V1.0 20260918",
   "url": "https://oss.amsamotion.com/uploads/RS485-ETH-M02使用手册_V1.0_20260918.pdf",
-  "pages": 0,
-  "type": "说明书",
-  "size": 0,
-  "brand": "艾莫迅",
-  "src": "oss.amsamotion.com",
-  "status": "不可访问(0)",
-  "date": ""
- },
- {
-  "name": "LORA MODBUS 1DI1DR使用手册 VER1.2 260912",
-  "url": "https://oss.amsamotion.com/uploads/LORA-MODBUS-1DI1DR使用手册-VER1.2_260912.pdf",
-  "pages": 0,
-  "type": "说明书",
-  "size": 0,
-  "brand": "艾莫迅",
-  "src": "oss.amsamotion.com",
-  "status": "不可访问(0)",
-  "date": ""
- },
- {
-  "name": "BM系列分布式IO模块系列产品手册 VER1.0 260909",
-  "url": "https://oss.amsamotion.com/uploads/BM系列分布式IO模块系列产品手册-VER1.0-260909.pdf",
-  "pages": 0,
-  "type": "说明书",
-  "size": 0,
-  "brand": "艾莫迅",
-  "src": "oss.amsamotion.com",
-  "status": "不可访问(0)",
-  "date": ""
- },
- {
-  "name": "RS485 LoRa M产品手册 VER1.1 260829",
-  "url": "https://oss.amsamotion.com/uploads/RS485-LoRa-M产品手册-VER1.1-260829.pdf",
-  "pages": 0,
-  "type": "说明书",
-  "size": 0,
-  "brand": "艾莫迅",
-  "src": "oss.amsamotion.com",
-  "status": "不可访问(0)",
-  "date": ""
- },
- {
-  "name": "RS232 485 LORA T产品手册 VER1.1 260829",
-  "url": "https://oss.amsamotion.com/uploads/RS232-485-LORA-T产品手册-VER1.1-260829.pdf",
-  "pages": 0,
-  "type": "说明书",
-  "size": 0,
-  "brand": "艾莫迅",
-  "src": "oss.amsamotion.com",
-  "status": "不可访问(0)",
-  "date": ""
- },
- {
-  "name": "MT1 AMG20产品使用手册说明 ver1.0 20250707",
-  "url": "https://oss.amsamotion.com/uploads/MT1-AMG20产品使用手册说明_ver1.0_20250707.pdf",
   "pages": 0,
   "type": "说明书",
   "size": 0,
@@ -1281,17 +1251,6 @@
  {
   "name": "LORA MODBUS 4DR使用手册 V1.2 2609012",
   "url": "https://oss.amsamotion.com/uploads/LORA-MODBUS-4DR使用手册_V1.2_2609012.pdf",
-  "pages": 0,
-  "type": "说明书",
-  "size": 0,
-  "brand": "艾莫迅",
-  "src": "oss.amsamotion.com",
-  "status": "不可访问(0)",
-  "date": ""
- },
- {
-  "name": "LORA MODBUS 4DI使用手册 V1.2 260912",
-  "url": "https://oss.amsamotion.com/uploads/LORA-MODBUS-4DI使用手册_V1.2_260912.pdf",
   "pages": 0,
   "type": "说明书",
   "size": 0,
