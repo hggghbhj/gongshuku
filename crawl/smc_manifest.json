@@ -118,5 +118,21 @@
   "pages": 0,
   "brand": "SMC气动",
   "src": "pw_crawl"
+ },
+ {
+  "t": "DOC1173958",
+  "u": "https://www.smc.com.cn/upfiles/manual/en-jp/files/DOC1173958.pdf",
+  "size": 1383353,
+  "pages": 0,
+  "brand": "SMC气动",
+  "src": "pw_crawl"
+ },
+ {
+  "t": "DOC1173957",
+  "u": "https://www.smc.com.cn/upfiles/manual/ja-jp/files/DOC1173957.pdf",
+  "size": 1635502,
+  "pages": 0,
+  "brand": "SMC气动",
+  "src": "pw_crawl"
  }
 ]
