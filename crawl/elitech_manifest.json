@@ -13,42 +13,29 @@
   ]
  },
  {
-  "t": "精创 * * 冷媒秤",
-  "model": "* *",
+  "t": "精创 LMC-310A 冷媒秤",
+  "model": "LMC-310A",
   "cat": "冷媒秤",
-  "u": "https://dl.e-elitech.com/uploadfile/2026/06/17/2026061711501802wkv1.pdf",
-  "fn": "ec_dcf067f39e.pdf",
+  "u": "https://dl.e-elitech.com/uploadfile/2020/10/23/202010230913442SRZy8.pdf",
+  "fn": "ec_174ce30c51.pdf",
   "pages": 2,
-  "size": 4088627,
-  "d": "2026-08-13",
+  "size": 900079,
+  "d": "2020-10-23",
   "pids": [
-   "770"
+   "242"
   ]
  },
  {
-  "t": "精创 LMC-210L 冷媒秤",
-  "model": "LMC-210L",
+  "t": "精创 LMC-310 冷媒秤",
+  "model": "LMC-310",
   "cat": "冷媒秤",
-  "u": "https://dl.e-elitech.com/uploadfile/2020/10/21/20201021204103LbRvm2.pdf",
-  "fn": "ec_a0c2f7cc24.pdf",
-  "pages": 14,
-  "size": 1360516,
-  "d": "2024-05-30",
+  "u": "https://dl.e-elitech.com/uploadfile/2020/10/23/20201023091229zQ14Dt.pdf",
+  "fn": "ec_08d80d6cd0.pdf",
+  "pages": 2,
+  "size": 593661,
+  "d": "2024-10-21",
   "pids": [
-   "233"
-  ]
- },
- {
-  "t": "精创 ERS-210 冷媒秤",
-  "model": "ERS-210",
-  "cat": "冷媒秤",
-  "u": "https://dl.e-elitech.com/uploadfile/2026/09/23/20260923175241bZD6jz.pdf",
-  "fn": "ec_ab831f6c9e.pdf",
-  "pages": 9,
-  "size": 28871686,
-  "d": "2026-09-23",
-  "pids": [
-   "760"
+   "228"
   ]
  },
  {
@@ -78,29 +65,42 @@
   ]
  },
  {
-  "t": "精创 LMC-310A 冷媒秤",
-  "model": "LMC-310A",
+  "t": "精创 ERS-210 冷媒秤",
+  "model": "ERS-210",
   "cat": "冷媒秤",
-  "u": "https://dl.e-elitech.com/uploadfile/2020/10/23/202010230913442SRZy8.pdf",
-  "fn": "ec_174ce30c51.pdf",
-  "pages": 2,
-  "size": 900079,
-  "d": "2020-10-23",
+  "u": "https://dl.e-elitech.com/uploadfile/2026/09/23/20260923175241bZD6jz.pdf",
+  "fn": "ec_ab831f6c9e.pdf",
+  "pages": 9,
+  "size": 28871686,
+  "d": "2026-09-23",
   "pids": [
-   "242"
+   "760"
   ]
  },
  {
-  "t": "精创 LMC-310 冷媒秤",
-  "model": "LMC-310",
+  "t": "精创 LMC-210L 冷媒秤",
+  "model": "LMC-210L",
   "cat": "冷媒秤",
-  "u": "https://dl.e-elitech.com/uploadfile/2020/10/23/20201023091229zQ14Dt.pdf",
-  "fn": "ec_08d80d6cd0.pdf",
-  "pages": 2,
-  "size": 593661,
-  "d": "2024-10-21",
+  "u": "https://dl.e-elitech.com/uploadfile/2020/10/21/20201021204103LbRvm2.pdf",
+  "fn": "ec_a0c2f7cc24.pdf",
+  "pages": 14,
+  "size": 1360516,
+  "d": "2024-05-30",
   "pids": [
-   "228"
+   "233"
+  ]
+ },
+ {
+  "t": "精创 * * 冷媒秤",
+  "model": "* *",
+  "cat": "冷媒秤",
+  "u": "https://dl.e-elitech.com/uploadfile/2026/06/17/2026061711501802wkv1.pdf",
+  "fn": "ec_dcf067f39e.pdf",
+  "pages": 2,
+  "size": 4088627,
+  "d": "2026-08-13",
+  "pids": [
+   "770"
   ]
  },
  {
@@ -117,16 +117,16 @@
   ]
  },
  {
-  "t": "精创 SMG-1H/SMG-1L 数字压力表",
-  "model": "SMG-1H/SMG-1L",
+  "t": "精创 DMG-4B 数字压力表",
+  "model": "DMG-4B",
   "cat": "数字压力表",
-  "u": "https://dl.e-elitech.com/uploadfile/2020/09/25/20200925174536QKh4A7.pdf",
-  "fn": "ec_601088c3fa.pdf",
-  "pages": 6,
-  "size": 604467,
-  "d": "2024-05-21",
+  "u": "https://dl.e-elitech.com/uploadfile/2023/08/03/20230803165933U3dcoW.pdf",
+  "fn": "ec_b85cb4090d.pdf",
+  "pages": 18,
+  "size": 3115627,
+  "d": "2023-08-03",
   "pids": [
-   "220"
+   "495"
   ]
  },
  {
@@ -143,6 +143,19 @@
   ]
  },
  {
+  "t": "精创 LMG-10/10W 数字压力表",
+  "model": "LMG-10/10W",
+  "cat": "数字压力表",
+  "u": "https://dl.e-elitech.com/uploadfile/2024/07/17/20240717093126rPSZAf.pdf",
+  "fn": "ec_43055cbe59.pdf",
+  "pages": 19,
+  "size": 1186825,
+  "d": "2024-07-17",
+  "pids": [
+   "554"
+  ]
+ },
+ {
   "t": "精创 DMG-2SE双表阀说明书 数字压力表",
   "model": "DMG-2SE双表阀说明书",
   "cat": "数字压力表",
@@ -156,29 +169,16 @@
   ]
  },
  {
-  "t": "精创 DMG-4B 数字压力表",
-  "model": "DMG-4B",
+  "t": "精创 SMG-1H/SMG-1L 数字压力表",
+  "model": "SMG-1H/SMG-1L",
   "cat": "数字压力表",
-  "u": "https://dl.e-elitech.com/uploadfile/2023/08/03/20230803165933U3dcoW.pdf",
-  "fn": "ec_b85cb4090d.pdf",
-  "pages": 18,
-  "size": 3115627,
-  "d": "2023-08-03",
+  "u": "https://dl.e-elitech.com/uploadfile/2020/09/25/20200925174536QKh4A7.pdf",
+  "fn": "ec_601088c3fa.pdf",
+  "pages": 6,
+  "size": 604467,
+  "d": "2024-05-21",
   "pids": [
-   "495"
-  ]
- },
- {
-  "t": "精创 LMG-10/10W 数字压力表",
-  "model": "LMG-10/10W",
-  "cat": "数字压力表",
-  "u": "https://dl.e-elitech.com/uploadfile/2024/07/17/20240717093126rPSZAf.pdf",
-  "fn": "ec_43055cbe59.pdf",
-  "pages": 19,
-  "size": 1186825,
-  "d": "2024-07-17",
-  "pids": [
-   "554"
+   "220"
   ]
  },
  {
@@ -208,6 +208,19 @@
   ]
  },
  {
+  "t": "精创 DMG-1/DMG-1B 数字压力表",
+  "model": "DMG-1/DMG-1B",
+  "cat": "数字压力表",
+  "u": "https://dl.e-elitech.com/uploadfile/2020/09/17/20200917145918dBQpVa.pdf",
+  "fn": "ec_155dbf9e73.pdf",
+  "pages": 1,
+  "size": 444178,
+  "d": "2024-05-21",
+  "pids": [
+   "211"
+  ]
+ },
+ {
   "t": "精创 DMG-3/DMG-3B 数字压力表",
   "model": "DMG-3/DMG-3B",
   "cat": "数字压力表",
@@ -234,29 +247,16 @@
   ]
  },
  {
-  "t": "精创 DMG-1/DMG-1B 数字压力表",
-  "model": "DMG-1/DMG-1B",
+  "t": "精创 MS-50SE 数字压力表",
+  "model": "MS-50SE",
   "cat": "数字压力表",
-  "u": "https://dl.e-elitech.com/uploadfile/2020/09/17/20200917145918dBQpVa.pdf",
-  "fn": "ec_155dbf9e73.pdf",
-  "pages": 1,
-  "size": 444178,
-  "d": "2024-05-21",
+  "u": "https://dl.e-elitech.com/uploadfile/2026/04/11/202604111044507nxkeg.pdf",
+  "fn": "ec_09851370da.pdf",
+  "pages": 6,
+  "size": 16227391,
+  "d": "2026-04-11",
   "pids": [
-   "211"
-  ]
- },
- {
-  "t": "精创 MS-810/870 数字压力表",
-  "model": "MS-810/870",
-  "cat": "数字压力表",
-  "u": "https://dl.e-elitech.com/uploadfile/2025/03/26/20250326095601UAuFLe.pdf",
-  "fn": "ec_d71e49e05f.pdf",
-  "pages": 15,
-  "size": 1334886,
-  "d": "2025-06-18",
-  "pids": [
-   "640"
+   "741"
   ]
  },
  {
@@ -273,16 +273,16 @@
   ]
  },
  {
-  "t": "精创 MS-50SE 数字压力表",
-  "model": "MS-50SE",
+  "t": "精创 MS-810/870 数字压力表",
+  "model": "MS-810/870",
   "cat": "数字压力表",
-  "u": "https://dl.e-elitech.com/uploadfile/2026/04/11/202604111044507nxkeg.pdf",
-  "fn": "ec_09851370da.pdf",
-  "pages": 6,
-  "size": 16227391,
-  "d": "2026-04-11",
+  "u": "https://dl.e-elitech.com/uploadfile/2025/03/26/20250326095601UAuFLe.pdf",
+  "fn": "ec_d71e49e05f.pdf",
+  "pages": 15,
+  "size": 1334886,
+  "d": "2025-06-18",
   "pids": [
-   "741"
+   "640"
   ]
  },
  {
@@ -296,6 +296,19 @@
   "d": "2025-11-08",
   "pids": [
    "493"
+  ]
+ },
+ {
+  "t": "精创 VGW-760 数字压力表",
+  "model": "VGW-760",
+  "cat": "数字压力表",
+  "u": "https://dl.e-elitech.com/uploadfile/2023/05/11/20230511110104xRD32X.pdf",
+  "fn": "ec_b3e501d4c7.pdf",
+  "pages": 9,
+  "size": 17640832,
+  "d": "2024-05-21",
+  "pids": [
+   "222"
   ]
  },
  {
@@ -325,6 +338,19 @@
   ]
  },
  {
+  "t": "精创 CPU-C 冷媒检漏仪",
+  "model": "CPU-C",
+  "cat": "冷媒检漏仪",
+  "u": "https://dl.e-elitech.com/uploadfile/2024/05/29/20240529100923zs4VvU.pdf",
+  "fn": "ec_e2becb179a.pdf",
+  "pages": 9,
+  "size": 834256,
+  "d": "2024-05-29",
+  "pids": [
+   "318"
+  ]
+ },
+ {
   "t": "精创 CLD-100 冷媒检漏仪",
   "model": "CLD-100",
   "cat": "冷媒检漏仪",
@@ -335,19 +361,6 @@
   "d": "2024-05-17",
   "pids": [
    "8"
-  ]
- },
- {
-  "t": "精创 VGW-760 数字压力表",
-  "model": "VGW-760",
-  "cat": "数字压力表",
-  "u": "https://dl.e-elitech.com/uploadfile/2023/05/11/20230511110104xRD32X.pdf",
-  "fn": "ec_b3e501d4c7.pdf",
-  "pages": 9,
-  "size": 17640832,
-  "d": "2024-05-21",
-  "pids": [
-   "222"
   ]
  },
  {
@@ -364,19 +377,6 @@
   ]
  },
  {
-  "t": "精创 CPU-C 冷媒检漏仪",
-  "model": "CPU-C",
-  "cat": "冷媒检漏仪",
-  "u": "https://dl.e-elitech.com/uploadfile/2024/05/29/20240529100923zs4VvU.pdf",
-  "fn": "ec_e2becb179a.pdf",
-  "pages": 9,
-  "size": 834256,
-  "d": "2024-05-29",
-  "pids": [
-   "318"
-  ]
- },
- {
   "t": "精创 Inframate C 冷媒检漏仪",
   "model": "Inframate C",
   "cat": "冷媒检漏仪",
@@ -387,6 +387,19 @@
   "d": "2024-05-17",
   "pids": [
    "507"
+  ]
+ },
+ {
+  "t": "精创 ELD-210/ELD-270  Multilingual  User  Manuals 冷媒检漏仪",
+  "model": "ELD-210/ELD-270  Multilingual  User  Manuals",
+  "cat": "冷媒检漏仪",
+  "u": "https://dl.e-elitech.com/uploadfile/2026/09/07/20260907132524oPfh1Z.pdf",
+  "fn": "ec_a87dca848b.pdf",
+  "pages": 42,
+  "size": 1332389,
+  "d": "2026-09-07",
+  "pids": [
+   "652"
   ]
  },
  {
@@ -429,16 +442,16 @@
   ]
  },
  {
-  "t": "精创 ELD-210/ELD-270  Multilingual  User  Manuals 冷媒检漏仪",
-  "model": "ELD-210/ELD-270  Multilingual  User  Manuals",
+  "t": "精创 ILD-200 冷媒检漏仪",
+  "model": "ILD-200",
   "cat": "冷媒检漏仪",
-  "u": "https://dl.e-elitech.com/uploadfile/2026/09/07/20260907132524oPfh1Z.pdf",
-  "fn": "ec_a87dca848b.pdf",
-  "pages": 42,
-  "size": 1332389,
-  "d": "2026-09-07",
+  "u": "https://dl.e-elitech.com/uploadfile/2024/05/17/20240517142032mSwdD4.pdf",
+  "fn": "ec_daa928f5bc.pdf",
+  "pages": 6,
+  "size": 947997,
+  "d": "2024-05-17",
   "pids": [
-   "652"
+   "534"
   ]
  },
  {
@@ -452,19 +465,6 @@
   "d": "2024-05-30",
   "pids": [
    "505"
-  ]
- },
- {
-  "t": "精创 ILD-200 冷媒检漏仪",
-  "model": "ILD-200",
-  "cat": "冷媒检漏仪",
-  "u": "https://dl.e-elitech.com/uploadfile/2024/05/17/20240517142032mSwdD4.pdf",
-  "fn": "ec_daa928f5bc.pdf",
-  "pages": 6,
-  "size": 947997,
-  "d": "2024-05-17",
-  "pids": [
-   "534"
   ]
  },
  {
@@ -572,19 +572,6 @@
   ]
  },
  {
-  "t": "精创 ST-1A 温湿度计",
-  "model": "ST-1A",
-  "cat": "温湿度计",
-  "u": "https://dl.e-elitech.com/uploadfile/2024/04/15/20240415145120xBkAj2.pdf",
-  "fn": "ec_b7f7b88aca.pdf",
-  "pages": 1,
-  "size": 363933,
-  "d": "2024-05-21",
-  "pids": [
-   "407"
-  ]
- },
- {
   "t": "精创 BT-3/BT-3-01 温湿度计",
   "model": "BT-3/BT-3-01",
   "cat": "温湿度计",
@@ -595,6 +582,19 @@
   "d": "2024-05-17",
   "pids": [
    "4"
+  ]
+ },
+ {
+  "t": "精创 ST-1A 温湿度计",
+  "model": "ST-1A",
+  "cat": "温湿度计",
+  "u": "https://dl.e-elitech.com/uploadfile/2024/04/15/20240415145120xBkAj2.pdf",
+  "fn": "ec_b7f7b88aca.pdf",
+  "pages": 1,
+  "size": 363933,
+  "d": "2024-05-21",
+  "pids": [
+   "407"
   ]
  },
  {
@@ -611,19 +611,6 @@
   ]
  },
  {
-  "t": "精创 DT-2 温湿度计",
-  "model": "DT-2",
-  "cat": "温湿度计",
-  "u": "https://dl.e-elitech.com/uploadfile/2020/11/04/20201104142137HMf4G1.pdf",
-  "fn": "ec_5d03e71cdb.pdf",
-  "pages": 1,
-  "size": 300584,
-  "d": "2020-11-04",
-  "pids": [
-   "12"
-  ]
- },
- {
   "t": "精创 DT-1 温湿度计",
   "model": "DT-1",
   "cat": "温湿度计",
@@ -634,6 +621,19 @@
   "d": "2024-04-17",
   "pids": [
    "11"
+  ]
+ },
+ {
+  "t": "精创 DT-2 温湿度计",
+  "model": "DT-2",
+  "cat": "温湿度计",
+  "u": "https://dl.e-elitech.com/uploadfile/2020/11/04/20201104142137HMf4G1.pdf",
+  "fn": "ec_5d03e71cdb.pdf",
+  "pages": 1,
+  "size": 300584,
+  "d": "2020-11-04",
+  "pids": [
+   "12"
   ]
  },
  {
@@ -650,6 +650,19 @@
   ]
  },
  {
+  "t": "精创 ICT-220S 温湿度计",
+  "model": "ICT-220S",
+  "cat": "温湿度计",
+  "u": "https://dl.e-elitech.com/uploadfile/2026/05/09/20260509090156tLyOzv.pdf",
+  "fn": "ec_36019aedc7.pdf",
+  "pages": 9,
+  "size": 12192782,
+  "d": "2026-05-09",
+  "pids": [
+   "709"
+  ]
+ },
+ {
   "t": "精创 IPT-100国际版温湿度计 温湿度计",
   "model": "IPT-100国际版温湿度计",
   "cat": "温湿度计",
@@ -660,19 +673,6 @@
   "d": "2025-04-22",
   "pids": [
    "588"
-  ]
- },
- {
-  "t": "精创 XT-01 温湿度计",
-  "model": "XT-01",
-  "cat": "温湿度计",
-  "u": "https://dl.e-elitech.com/uploadfile/2026/05/09/20260509092558n2IEbB.pdf",
-  "fn": "ec_0e4befe0eb.pdf",
-  "pages": 1,
-  "size": 5396,
-  "d": "2026-05-09",
-  "pids": [
-   "756"
   ]
  },
  {
@@ -689,16 +689,16 @@
   ]
  },
  {
-  "t": "精创 ICT-220S 温湿度计",
-  "model": "ICT-220S",
+  "t": "精创 XT-01 温湿度计",
+  "model": "XT-01",
   "cat": "温湿度计",
-  "u": "https://dl.e-elitech.com/uploadfile/2026/05/09/20260509090156tLyOzv.pdf",
-  "fn": "ec_36019aedc7.pdf",
-  "pages": 9,
-  "size": 12192782,
+  "u": "https://dl.e-elitech.com/uploadfile/2026/05/09/20260509092558n2IEbB.pdf",
+  "fn": "ec_0e4befe0eb.pdf",
+  "pages": 1,
+  "size": 5396,
   "d": "2026-05-09",
   "pids": [
-   "709"
+   "756"
   ]
  },
  {
@@ -715,19 +715,6 @@
   ]
  },
  {
-  "t": "精创 EK-3010 温控器",
-  "model": "EK-3010",
-  "cat": "温控器",
-  "u": "https://dl.e-elitech.com/uploadfile/2022/09/27/202209271536510KQVxT.pdf",
-  "fn": "ec_e7b388b73c.pdf",
-  "pages": 2,
-  "size": 5910694,
-  "d": "2022-09-27",
-  "pids": [
-   "89"
-  ]
- },
- {
   "t": "精创 EK-3020 温控器",
   "model": "EK-3020",
   "cat": "温控器",
@@ -738,6 +725,19 @@
   "d": "2020-06-10",
   "pids": [
    "90"
+  ]
+ },
+ {
+  "t": "精创 EK-3010 温控器",
+  "model": "EK-3010",
+  "cat": "温控器",
+  "u": "https://dl.e-elitech.com/uploadfile/2022/09/27/202209271536510KQVxT.pdf",
+  "fn": "ec_e7b388b73c.pdf",
+  "pages": 2,
+  "size": 5910694,
+  "d": "2022-09-27",
+  "pids": [
+   "89"
   ]
  },
  {
@@ -754,32 +754,6 @@
   ]
  },
  {
-  "t": "精创 EK-3030 温控器",
-  "model": "EK-3030",
-  "cat": "温控器",
-  "u": "https://dl.e-elitech.com/uploadfile/2020/06/10/20200610135851HpD2Zl.pdf",
-  "fn": "ec_379a8be6d2.pdf",
-  "pages": 4,
-  "size": 6729569,
-  "d": "2020-06-10",
-  "pids": [
-   "92"
-  ]
- },
- {
-  "t": "精创 ETC-100+ 温控器",
-  "model": "ETC-100+",
-  "cat": "温控器",
-  "u": "https://dl.e-elitech.com/uploadfile/2020/06/10/202006101405240Zx34D.pdf",
-  "fn": "ec_9d7a563f34.pdf",
-  "pages": 1,
-  "size": 2337226,
-  "d": "2020-06-10",
-  "pids": [
-   "94"
-  ]
- },
- {
   "t": "精创 EK-3030E 温控器",
   "model": "EK-3030E",
   "cat": "温控器",
@@ -793,6 +767,19 @@
   ]
  },
  {
+  "t": "精创 EK-3030 温控器",
+  "model": "EK-3030",
+  "cat": "温控器",
+  "u": "https://dl.e-elitech.com/uploadfile/2020/06/10/20200610135851HpD2Zl.pdf",
+  "fn": "ec_379a8be6d2.pdf",
+  "pages": 4,
+  "size": 6729569,
+  "d": "2020-06-10",
+  "pids": [
+   "92"
+  ]
+ },
+ {
   "t": "精创 ETC-200+ 温控器",
   "model": "ETC-200+",
   "cat": "温控器",
@@ -803,6 +790,19 @@
   "d": "2020-12-22",
   "pids": [
    "287"
+  ]
+ },
+ {
+  "t": "精创 ETC-100+ 温控器",
+  "model": "ETC-100+",
+  "cat": "温控器",
+  "u": "https://dl.e-elitech.com/uploadfile/2020/06/10/202006101405240Zx34D.pdf",
+  "fn": "ec_9d7a563f34.pdf",
+  "pages": 1,
+  "size": 2337226,
+  "d": "2020-06-10",
+  "pids": [
+   "94"
   ]
  },
  {
@@ -936,6 +936,19 @@
   ]
  },
  {
+  "t": "精创 STC-1PLUS中文说明书 温控器",
+  "model": "STC-1PLUS中文说明书",
+  "cat": "温控器",
+  "u": "https://dl.e-elitech.com/uploadfile/2022/02/26/20220226132628QsgYOx.pdf",
+  "fn": "ec_fb2e3ced35.pdf",
+  "pages": 1,
+  "size": 1455640,
+  "d": "2022-02-26",
+  "pids": [
+   "430"
+  ]
+ },
+ {
   "t": "精创 STC-1200XP 使用说明 温控器",
   "model": "STC-1200XP 使用说明",
   "cat": "温控器",
@@ -962,16 +975,16 @@
   ]
  },
  {
-  "t": "精创 STC-1PLUS中文说明书 温控器",
-  "model": "STC-1PLUS中文说明书",
+  "t": "精创 STC-2 温控器",
+  "model": "STC-2",
   "cat": "温控器",
-  "u": "https://dl.e-elitech.com/uploadfile/2022/02/26/20220226132628QsgYOx.pdf",
-  "fn": "ec_fb2e3ced35.pdf",
-  "pages": 1,
-  "size": 1455640,
-  "d": "2022-02-26",
+  "u": "https://dl.e-elitech.com/uploadfile/2020/06/15/20200615162202PX2VW7.pdf",
+  "fn": "ec_40228f59c9.pdf",
+  "pages": 2,
+  "size": 3707999,
+  "d": "2020-06-15",
   "pids": [
-   "430"
+   "184"
   ]
  },
  {
@@ -985,19 +998,6 @@
   "d": "2020-12-14",
   "pids": [
    "100"
-  ]
- },
- {
-  "t": "精创 STC-2 温控器",
-  "model": "STC-2",
-  "cat": "温控器",
-  "u": "https://dl.e-elitech.com/uploadfile/2020/06/15/20200615162202PX2VW7.pdf",
-  "fn": "ec_40228f59c9.pdf",
-  "pages": 2,
-  "size": 3707999,
-  "d": "2020-06-15",
-  "pids": [
-   "184"
   ]
  },
  {
@@ -1066,6 +1066,19 @@
   ]
  },
  {
+  "t": "精创 STC-8080A+ 温控器",
+  "model": "STC-8080A+",
+  "cat": "温控器",
+  "u": "https://dl.e-elitech.com/uploadfile/2020/06/10/20200610141813WoAViJ.pdf",
+  "fn": "ec_10ef6855ad.pdf",
+  "pages": 1,
+  "size": 2794135,
+  "d": "2020-06-10",
+  "pids": [
+   "101"
+  ]
+ },
+ {
   "t": "精创 STC-8000H内贸中性 温控器",
   "model": "STC-8000H内贸中性",
   "cat": "温控器",
@@ -1089,19 +1102,6 @@
   "d": "2020-12-22",
   "pids": [
    "299"
-  ]
- },
- {
-  "t": "精创 STC-8080A+ 温控器",
-  "model": "STC-8080A+",
-  "cat": "温控器",
-  "u": "https://dl.e-elitech.com/uploadfile/2020/06/10/20200610141813WoAViJ.pdf",
-  "fn": "ec_10ef6855ad.pdf",
-  "pages": 1,
-  "size": 2794135,
-  "d": "2020-06-10",
-  "pids": [
-   "101"
   ]
  },
  {
@@ -1287,19 +1287,6 @@
   ]
  },
  {
-  "t": "精创 EMS-60 温控器",
-  "model": "EMS-60",
-  "cat": "温控器",
-  "u": "https://dl.e-elitech.com/uploadfile/2025/11/10/20251110163745s73Oaj.pdf",
-  "fn": "ec_0b96596cf3.pdf",
-  "pages": 11,
-  "size": 3531010,
-  "d": "2025-11-10",
-  "pids": [
-   "672"
-  ]
- },
- {
   "t": "精创 EPS-100 温控器",
   "model": "EPS-100",
   "cat": "温控器",
@@ -1310,6 +1297,19 @@
   "d": "2020-06-18",
   "pids": [
    "188"
+  ]
+ },
+ {
+  "t": "精创 EMS-60 温控器",
+  "model": "EMS-60",
+  "cat": "温控器",
+  "u": "https://dl.e-elitech.com/uploadfile/2025/11/10/20251110163745s73Oaj.pdf",
+  "fn": "ec_0b96596cf3.pdf",
+  "pages": 11,
+  "size": 3531010,
+  "d": "2025-11-10",
+  "pids": [
+   "672"
   ]
  },
  {
@@ -1326,19 +1326,6 @@
   ]
  },
  {
-  "t": "精创 HT-06CX 温控器",
-  "model": "HT-06CX",
-  "cat": "温控器",
-  "u": "https://dl.e-elitech.com/uploadfile/2020/06/15/20200615162029wvbJRQ.pdf",
-  "fn": "ec_73c3d6f680.pdf",
-  "pages": 2,
-  "size": 4344125,
-  "d": "2020-06-15",
-  "pids": [
-   "183"
-  ]
- },
- {
   "t": "精创 HT-206 A(30.10.10.00)S2 温控器",
   "model": "HT-206 A(30.10.10.00)S2",
   "cat": "温控器",
@@ -1349,6 +1336,19 @@
   "d": "2020-06-15",
   "pids": [
    "186"
+  ]
+ },
+ {
+  "t": "精创 HT-06CX 温控器",
+  "model": "HT-06CX",
+  "cat": "温控器",
+  "u": "https://dl.e-elitech.com/uploadfile/2020/06/15/20200615162029wvbJRQ.pdf",
+  "fn": "ec_73c3d6f680.pdf",
+  "pages": 2,
+  "size": 4344125,
+  "d": "2020-06-15",
+  "pids": [
+   "183"
   ]
  },
  {
@@ -1404,19 +1404,6 @@
   ]
  },
  {
-  "t": "精创 N-ECM30B-01 温控器",
-  "model": "N-ECM30B-01",
-  "cat": "温控器",
-  "u": "https://dl.e-elitech.com/uploadfile/2022/03/07/20220307134504joUt2O.pdf",
-  "fn": "ec_664956cf11.pdf",
-  "pages": 10,
-  "size": 9576316,
-  "d": "2022-03-07",
-  "pids": [
-   "432"
-  ]
- },
- {
   "t": "精创 NGS-20 说明书 温控器",
   "model": "NGS-20 说明书",
   "cat": "温控器",
@@ -1427,6 +1414,19 @@
   "d": "2026-04-03",
   "pids": [
    "625"
+  ]
+ },
+ {
+  "t": "精创 N-ECM30B-01 温控器",
+  "model": "N-ECM30B-01",
+  "cat": "温控器",
+  "u": "https://dl.e-elitech.com/uploadfile/2022/03/07/20220307134504joUt2O.pdf",
+  "fn": "ec_664956cf11.pdf",
+  "pages": 10,
+  "size": 9576316,
+  "d": "2022-03-07",
+  "pids": [
+   "432"
   ]
  },
  {
@@ -1456,19 +1456,6 @@
   ]
  },
  {
-  "t": "精创 BCD-22 温控器",
-  "model": "BCD-22",
-  "cat": "温控器",
-  "u": "https://dl.e-elitech.com/uploadfile/2020/06/11/20200611133549J1WcAV.pdf",
-  "fn": "ec_288bc15d9a.pdf",
-  "pages": 2,
-  "size": 2469163,
-  "d": "2020-06-11",
-  "pids": [
-   "147"
-  ]
- },
- {
   "t": "精创 ECS-180pro-29(VF)[变频] 中文说明书 温控器",
   "model": "ECS-180pro-29(VF)[变频] 中文说明书",
   "cat": "温控器",
@@ -1479,6 +1466,19 @@
   "d": "2026-06-23",
   "pids": [
    "761"
+  ]
+ },
+ {
+  "t": "精创 BCD-22 温控器",
+  "model": "BCD-22",
+  "cat": "温控器",
+  "u": "https://dl.e-elitech.com/uploadfile/2020/06/11/20200611133549J1WcAV.pdf",
+  "fn": "ec_288bc15d9a.pdf",
+  "pages": 2,
+  "size": 2469163,
+  "d": "2020-06-11",
+  "pids": [
+   "147"
   ]
  },
  {
@@ -1534,19 +1534,6 @@
   ]
  },
  {
-  "t": "精创 ECS-06CX 温控器",
-  "model": "ECS-06CX",
-  "cat": "温控器",
-  "u": "https://dl.e-elitech.com/uploadfile/2020/06/15/20200615162314CKDzqf.pdf",
-  "fn": "ec_78bbef2fec.pdf",
-  "pages": 3,
-  "size": 6179562,
-  "d": "2020-06-20",
-  "pids": [
-   "185"
-  ]
- },
- {
   "t": "精创 ECS-10 温控器",
   "model": "ECS-10",
   "cat": "温控器",
@@ -1560,6 +1547,19 @@
   ]
  },
  {
+  "t": "精创 ECS-06CX 温控器",
+  "model": "ECS-06CX",
+  "cat": "温控器",
+  "u": "https://dl.e-elitech.com/uploadfile/2020/06/15/20200615162314CKDzqf.pdf",
+  "fn": "ec_78bbef2fec.pdf",
+  "pages": 3,
+  "size": 6179562,
+  "d": "2020-06-20",
+  "pids": [
+   "185"
+  ]
+ },
+ {
   "t": "精创 ECS-100 温控器",
   "model": "ECS-100",
   "cat": "温控器",
@@ -1570,6 +1570,19 @@
   "d": "2020-06-11",
   "pids": [
    "151"
+  ]
+ },
+ {
+  "t": "精创 ECS-107 温控器",
+  "model": "ECS-107",
+  "cat": "温控器",
+  "u": "https://dl.e-elitech.com/uploadfile/2020/06/15/20200615165942tbL9lP.pdf",
+  "fn": "ec_b58264a3c5.pdf",
+  "pages": 2,
+  "size": 3590363,
+  "d": "2020-06-15",
+  "pids": [
+   "192"
   ]
  },
  {
@@ -1612,19 +1625,6 @@
   ]
  },
  {
-  "t": "精创 ECS-16 温控器",
-  "model": "ECS-16",
-  "cat": "温控器",
-  "u": "https://dl.e-elitech.com/uploadfile/2020/06/11/20200611135004mUY7hp.pdf",
-  "fn": "ec_fa56480858.pdf",
-  "pages": 4,
-  "size": 2983507,
-  "d": "2020-06-11",
-  "pids": [
-   "152"
-  ]
- },
- {
   "t": "精创 ECS-15 温控器",
   "model": "ECS-15",
   "cat": "温控器",
@@ -1635,6 +1635,19 @@
   "d": "2020-12-22",
   "pids": [
    "291"
+  ]
+ },
+ {
+  "t": "精创 ECS-16 温控器",
+  "model": "ECS-16",
+  "cat": "温控器",
+  "u": "https://dl.e-elitech.com/uploadfile/2020/06/11/20200611135004mUY7hp.pdf",
+  "fn": "ec_fa56480858.pdf",
+  "pages": 4,
+  "size": 2983507,
+  "d": "2020-06-11",
+  "pids": [
+   "152"
   ]
  },
  {
@@ -1690,19 +1703,6 @@
   ]
  },
  {
-  "t": "精创 ECS-107 温控器",
-  "model": "ECS-107",
-  "cat": "温控器",
-  "u": "https://dl.e-elitech.com/uploadfile/2020/06/15/20200615165942tbL9lP.pdf",
-  "fn": "ec_b58264a3c5.pdf",
-  "pages": 2,
-  "size": 3590363,
-  "d": "2020-06-15",
-  "pids": [
-   "192"
-  ]
- },
- {
   "t": "精创 ECS-180(B) 温控器",
   "model": "ECS-180(B)",
   "cat": "温控器",
@@ -1755,19 +1755,6 @@
   ]
  },
  {
-  "t": "精创 ECS-180(C)中文说明书（青岛凯博 110V 定制） 温控器",
-  "model": "ECS-180(C)中文说明书（青岛凯博 110V 定制）",
-  "cat": "温控器",
-  "u": "https://dl.e-elitech.com/uploadfile/2023/12/19/20231219142126qpr43t.pdf",
-  "fn": "ec_f9f580494f.pdf",
-  "pages": 4,
-  "size": 10619244,
-  "d": "2023-12-19",
-  "pids": [
-   "486"
-  ]
- },
- {
   "t": "精创 ECS-180(C)-06 温控器",
   "model": "ECS-180(C)-06",
   "cat": "温控器",
@@ -1778,6 +1765,19 @@
   "d": "2023-01-11",
   "pids": [
    "497"
+  ]
+ },
+ {
+  "t": "精创 ECS-180(C)中文说明书（青岛凯博 110V 定制） 温控器",
+  "model": "ECS-180(C)中文说明书（青岛凯博 110V 定制）",
+  "cat": "温控器",
+  "u": "https://dl.e-elitech.com/uploadfile/2023/12/19/20231219142126qpr43t.pdf",
+  "fn": "ec_f9f580494f.pdf",
+  "pages": 4,
+  "size": 10619244,
+  "d": "2023-12-19",
+  "pids": [
+   "486"
   ]
  },
  {
@@ -1859,19 +1859,6 @@
   ]
  },
  {
-  "t": "精创 ECS-2012neo-05中文常规说明书 温控器",
-  "model": "ECS-2012neo-05中文常规说明书",
-  "cat": "温控器",
-  "u": "https://dl.e-elitech.com/uploadfile/2024/09/20/20240920114611blYEyu.pdf",
-  "fn": "ec_adbc882abe.pdf",
-  "pages": 4,
-  "size": 11817141,
-  "d": "2024-09-20",
-  "pids": [
-   "600"
-  ]
- },
- {
   "t": "精创 ECS-2012neo 温控器",
   "model": "ECS-2012neo",
   "cat": "温控器",
@@ -1898,16 +1885,16 @@
   ]
  },
  {
-  "t": "精创 ECS-2180neo 中文中性 温控器",
-  "model": "ECS-2180neo 中文中性",
+  "t": "精创 ECS-2012neo-05中文常规说明书 温控器",
+  "model": "ECS-2012neo-05中文常规说明书",
   "cat": "温控器",
-  "u": "https://dl.e-elitech.com/uploadfile/2022/05/13/20220513100925ClNQAi.pdf",
-  "fn": "ec_ee961b0daa.pdf",
-  "pages": 1,
-  "size": 5977495,
-  "d": "2022-05-13",
+  "u": "https://dl.e-elitech.com/uploadfile/2024/09/20/20240920114611blYEyu.pdf",
+  "fn": "ec_adbc882abe.pdf",
+  "pages": 4,
+  "size": 11817141,
+  "d": "2024-09-20",
   "pids": [
-   "459"
+   "600"
   ]
  },
  {
@@ -1921,6 +1908,19 @@
   "d": "2021-04-22",
   "pids": [
    "373"
+  ]
+ },
+ {
+  "t": "精创 ECS-2180neo 中文中性 温控器",
+  "model": "ECS-2180neo 中文中性",
+  "cat": "温控器",
+  "u": "https://dl.e-elitech.com/uploadfile/2022/05/13/20220513100925ClNQAi.pdf",
+  "fn": "ec_ee961b0daa.pdf",
+  "pages": 1,
+  "size": 5977495,
+  "d": "2022-05-13",
+  "pids": [
+   "459"
   ]
  },
  {
@@ -2145,19 +2145,6 @@
   ]
  },
  {
-  "t": "精创 N-ECS6016-01 温控器",
-  "model": "N-ECS6016-01",
-  "cat": "温控器",
-  "u": "https://dl.e-elitech.com/uploadfile/2022/08/03/202208031111150p7FeX.pdf",
-  "fn": "ec_88701affc8.pdf",
-  "pages": 1,
-  "size": 3955885,
-  "d": "2022-08-03",
-  "pids": [
-   "470"
-  ]
- },
- {
   "t": "精创 TPM-2000 温控器",
   "model": "TPM-2000",
   "cat": "温控器",
@@ -2168,6 +2155,19 @@
   "d": "2020-06-15",
   "pids": [
    "182"
+  ]
+ },
+ {
+  "t": "精创 N-ECS6016-01 温控器",
+  "model": "N-ECS6016-01",
+  "cat": "温控器",
+  "u": "https://dl.e-elitech.com/uploadfile/2022/08/03/202208031111150p7FeX.pdf",
+  "fn": "ec_88701affc8.pdf",
+  "pages": 1,
+  "size": 3955885,
+  "d": "2022-08-03",
+  "pids": [
+   "470"
   ]
  },
  {
@@ -2236,19 +2236,6 @@
   ]
  },
  {
-  "t": "精创 MTC-1000 温控器",
-  "model": "MTC-1000",
-  "cat": "温控器",
-  "u": "https://dl.e-elitech.com/uploadfile/2021/01/27/20210127154939GTiUgR.pdf",
-  "fn": "ec_e0a9982b7b.pdf",
-  "pages": 4,
-  "size": 1578618,
-  "d": "2021-01-27",
-  "pids": [
-   "341"
-  ]
- },
- {
   "t": "精创 TPM-920 温控器",
   "model": "TPM-920",
   "cat": "温控器",
@@ -2272,6 +2259,19 @@
   "d": "2020-06-15",
   "pids": [
    "180"
+  ]
+ },
+ {
+  "t": "精创 MTC-1000 温控器",
+  "model": "MTC-1000",
+  "cat": "温控器",
+  "u": "https://dl.e-elitech.com/uploadfile/2021/01/27/20210127154939GTiUgR.pdf",
+  "fn": "ec_e0a9982b7b.pdf",
+  "pages": 4,
+  "size": 1578618,
+  "d": "2021-01-27",
+  "pids": [
+   "341"
   ]
  },
  {
@@ -2301,19 +2301,6 @@
   ]
  },
  {
-  "t": "精创 MTC-5060C 温控器",
-  "model": "MTC-5060C",
-  "cat": "温控器",
-  "u": "https://dl.e-elitech.com/uploadfile/2020/10/23/202010230959534Grpo2.pdf",
-  "fn": "ec_ef2ddf0b88.pdf",
-  "pages": 2,
-  "size": 1693541,
-  "d": "2020-10-23",
-  "pids": [
-   "256"
-  ]
- },
- {
   "t": "精创 MTC-5080 温控器",
   "model": "MTC-5080",
   "cat": "温控器",
@@ -2324,6 +2311,19 @@
   "d": "2020-06-11",
   "pids": [
    "142"
+  ]
+ },
+ {
+  "t": "精创 MTC-5060C 温控器",
+  "model": "MTC-5060C",
+  "cat": "温控器",
+  "u": "https://dl.e-elitech.com/uploadfile/2020/10/23/202010230959534Grpo2.pdf",
+  "fn": "ec_ef2ddf0b88.pdf",
+  "pages": 2,
+  "size": 1693541,
+  "d": "2020-10-23",
+  "pids": [
+   "256"
   ]
  },
  {
@@ -2353,19 +2353,6 @@
   ]
  },
  {
-  "t": "精创 MTC-6000PLUS 温控器",
-  "model": "MTC-6000PLUS",
-  "cat": "温控器",
-  "u": "https://dl.e-elitech.com/uploadfile/2022/08/23/20220823165726TqohiF.pdf",
-  "fn": "ec_10860288b4.pdf",
-  "pages": 8,
-  "size": 10160364,
-  "d": "2023-10-08",
-  "pids": [
-   "468"
-  ]
- },
- {
   "t": "精创 MTC-6000N 内贸常规 温控器",
   "model": "MTC-6000N 内贸常规",
   "cat": "温控器",
@@ -2376,6 +2363,19 @@
   "d": "2020-10-21",
   "pids": [
    "235"
+  ]
+ },
+ {
+  "t": "精创 MTC-6000PLUS 温控器",
+  "model": "MTC-6000PLUS",
+  "cat": "温控器",
+  "u": "https://dl.e-elitech.com/uploadfile/2022/08/23/20220823165726TqohiF.pdf",
+  "fn": "ec_10860288b4.pdf",
+  "pages": 8,
+  "size": 10160364,
+  "d": "2023-10-08",
+  "pids": [
+   "468"
   ]
  },
  {
@@ -2405,6 +2405,19 @@
   ]
  },
  {
+  "t": "精创 MTC-6000PLUS-08 温控器",
+  "model": "MTC-6000PLUS-08",
+  "cat": "温控器",
+  "u": "https://dl.e-elitech.com/uploadfile/2024/09/04/20240904095558cDoCQN.pdf",
+  "fn": "ec_6ce97b3948.pdf",
+  "pages": 7,
+  "size": 4159358,
+  "d": "2024-09-04",
+  "pids": [
+   "594"
+  ]
+ },
+ {
   "t": "精创 MTC-6000PLUS-07（恒温） 温控器",
   "model": "MTC-6000PLUS-07（恒温）",
   "cat": "温控器",
@@ -2428,19 +2441,6 @@
   "d": "2024-11-05",
   "pids": [
    "618"
-  ]
- },
- {
-  "t": "精创 MTC-6000PLUS-08 温控器",
-  "model": "MTC-6000PLUS-08",
-  "cat": "温控器",
-  "u": "https://dl.e-elitech.com/uploadfile/2024/09/04/20240904095558cDoCQN.pdf",
-  "fn": "ec_6ce97b3948.pdf",
-  "pages": 7,
-  "size": 4159358,
-  "d": "2024-09-04",
-  "pids": [
-   "594"
   ]
  },
  {
@@ -2600,19 +2600,6 @@
   ]
  },
  {
-  "t": "精创 LTC-06CX-01D 温控器",
-  "model": "LTC-06CX-01D",
-  "cat": "温控器",
-  "u": "https://dl.e-elitech.com/uploadfile/2020/12/22/20201222153444SDAg4C.pdf",
-  "fn": "ec_2fa57ebd57.pdf",
-  "pages": 2,
-  "size": 4888596,
-  "d": "2020-12-22",
-  "pids": [
-   "301"
-  ]
- },
- {
   "t": "精创 LTC-100 温控器",
   "model": "LTC-100",
   "cat": "温控器",
@@ -2626,6 +2613,19 @@
   ]
  },
  {
+  "t": "精创 LTC-06CX-01D 温控器",
+  "model": "LTC-06CX-01D",
+  "cat": "温控器",
+  "u": "https://dl.e-elitech.com/uploadfile/2020/12/22/20201222153444SDAg4C.pdf",
+  "fn": "ec_2fa57ebd57.pdf",
+  "pages": 2,
+  "size": 4888596,
+  "d": "2020-12-22",
+  "pids": [
+   "301"
+  ]
+ },
+ {
   "t": "精创 LTC-100-1 温控器",
   "model": "LTC-100-1",
   "cat": "温控器",
@@ -2636,19 +2636,6 @@
   "d": "2024-11-18",
   "pids": [
    "354"
-  ]
- },
- {
-  "t": "精创 LTC-1010 温控器",
-  "model": "LTC-1010",
-  "cat": "温控器",
-  "u": "https://dl.e-elitech.com/uploadfile/2020/12/22/20201222160949Fj8Rvf.pdf",
-  "fn": "ec_bf91c6d62f.pdf",
-  "pages": 2,
-  "size": 6237756,
-  "d": "2020-12-22",
-  "pids": [
-   "308"
   ]
  },
  {
@@ -2678,6 +2665,19 @@
   ]
  },
  {
+  "t": "精创 LTC-1010 温控器",
+  "model": "LTC-1010",
+  "cat": "温控器",
+  "u": "https://dl.e-elitech.com/uploadfile/2020/12/22/20201222160949Fj8Rvf.pdf",
+  "fn": "ec_bf91c6d62f.pdf",
+  "pages": 2,
+  "size": 6237756,
+  "d": "2020-12-22",
+  "pids": [
+   "308"
+  ]
+ },
+ {
   "t": "精创 LTC-15 温控器",
   "model": "LTC-15",
   "cat": "温控器",
@@ -2688,19 +2688,6 @@
   "d": "2021-01-27",
   "pids": [
    "338"
-  ]
- },
- {
-  "t": "精创 LTC-16 温控器",
-  "model": "LTC-16",
-  "cat": "温控器",
-  "u": "https://dl.e-elitech.com/uploadfile/2021/01/20/20210120132144LBlk7N.pdf",
-  "fn": "ec_ae3f80f15d.pdf",
-  "pages": 2,
-  "size": 1419573,
-  "d": "2021-01-20",
-  "pids": [
-   "339"
   ]
  },
  {
@@ -2717,16 +2704,16 @@
   ]
  },
  {
-  "t": "精创 LTC-1815 温控器",
-  "model": "LTC-1815",
+  "t": "精创 LTC-16 温控器",
+  "model": "LTC-16",
   "cat": "温控器",
-  "u": "https://dl.e-elitech.com/uploadfile/2020/12/22/20201222161733OJVyEQ.pdf",
-  "fn": "ec_b9a76cba2a.pdf",
+  "u": "https://dl.e-elitech.com/uploadfile/2021/01/20/20210120132144LBlk7N.pdf",
+  "fn": "ec_ae3f80f15d.pdf",
   "pages": 2,
-  "size": 6604721,
-  "d": "2020-12-22",
+  "size": 1419573,
+  "d": "2021-01-20",
   "pids": [
-   "310"
+   "339"
   ]
  },
  {
@@ -2740,6 +2727,19 @@
   "d": "2020-06-15",
   "pids": [
    "189"
+  ]
+ },
+ {
+  "t": "精创 LTC-1815 温控器",
+  "model": "LTC-1815",
+  "cat": "温控器",
+  "u": "https://dl.e-elitech.com/uploadfile/2020/12/22/20201222161733OJVyEQ.pdf",
+  "fn": "ec_b9a76cba2a.pdf",
+  "pages": 2,
+  "size": 6604721,
+  "d": "2020-12-22",
+  "pids": [
+   "310"
   ]
  },
  {
@@ -2821,19 +2821,6 @@
   ]
  },
  {
-  "t": "精创 LTC-500B 温控器",
-  "model": "LTC-500B",
-  "cat": "温控器",
-  "u": "https://dl.e-elitech.com/uploadfile/2025/11/10/20251110103637Fg8St5.pdf",
-  "fn": "ec_990496d94d.pdf",
-  "pages": 26,
-  "size": 8191862,
-  "d": "2025-11-10",
-  "pids": [
-   "286"
-  ]
- },
- {
   "t": "精创 LTC-50 温控器",
   "model": "LTC-50",
   "cat": "温控器",
@@ -2844,6 +2831,19 @@
   "d": "2020-12-22",
   "pids": [
    "302"
+  ]
+ },
+ {
+  "t": "精创 LTC-500B 温控器",
+  "model": "LTC-500B",
+  "cat": "温控器",
+  "u": "https://dl.e-elitech.com/uploadfile/2025/11/10/20251110103637Fg8St5.pdf",
+  "fn": "ec_990496d94d.pdf",
+  "pages": 26,
+  "size": 8191862,
+  "d": "2025-11-10",
+  "pids": [
+   "286"
   ]
  },
  {
@@ -2873,19 +2873,6 @@
   ]
  },
  {
-  "t": "精创 LTC-51 温控器",
-  "model": "LTC-51",
-  "cat": "温控器",
-  "u": "https://dl.e-elitech.com/uploadfile/2020/12/22/20201222160330wCoILe.pdf",
-  "fn": "ec_b237bcc1cb.pdf",
-  "pages": 2,
-  "size": 4798108,
-  "d": "2020-12-22",
-  "pids": [
-   "304"
-  ]
- },
- {
   "t": "精创 LTC-51RF 温控器",
   "model": "LTC-51RF",
   "cat": "温控器",
@@ -2899,6 +2886,19 @@
   ]
  },
  {
+  "t": "精创 LTC-51 温控器",
+  "model": "LTC-51",
+  "cat": "温控器",
+  "u": "https://dl.e-elitech.com/uploadfile/2020/12/22/20201222160330wCoILe.pdf",
+  "fn": "ec_b237bcc1cb.pdf",
+  "pages": 2,
+  "size": 4798108,
+  "d": "2020-12-22",
+  "pids": [
+   "304"
+  ]
+ },
+ {
   "t": "精创 LTC-55PLUS 温控器",
   "model": "LTC-55PLUS",
   "cat": "温控器",
@@ -2909,19 +2909,6 @@
   "d": "2021-04-12",
   "pids": [
    "305"
-  ]
- },
- {
-  "t": "精创 LTC-70 温控器",
-  "model": "LTC-70",
-  "cat": "温控器",
-  "u": "https://dl.e-elitech.com/uploadfile/2021/08/16/20210816161620B2FRwo.pdf",
-  "fn": "ec_276190ae23.pdf",
-  "pages": 2,
-  "size": 7444750,
-  "d": "2021-08-16",
-  "pids": [
-   "306"
   ]
  },
  {
@@ -2951,16 +2938,16 @@
   ]
  },
  {
-  "t": "精创 LTC-70-43 温控器",
-  "model": "LTC-70-43",
+  "t": "精创 LTC-70 温控器",
+  "model": "LTC-70",
   "cat": "温控器",
-  "u": "https://dl.e-elitech.com/uploadfile/2021/09/18/20210918164439yF6JfP.pdf",
-  "fn": "ec_1154dde516.pdf",
+  "u": "https://dl.e-elitech.com/uploadfile/2021/08/16/20210816161620B2FRwo.pdf",
+  "fn": "ec_276190ae23.pdf",
   "pages": 2,
-  "size": 5394952,
-  "d": "2021-09-18",
+  "size": 7444750,
+  "d": "2021-08-16",
   "pids": [
-   "408"
+   "306"
   ]
  },
  {
@@ -2974,6 +2961,19 @@
   "d": "2021-09-30",
   "pids": [
    "411"
+  ]
+ },
+ {
+  "t": "精创 LTC-70-43 温控器",
+  "model": "LTC-70-43",
+  "cat": "温控器",
+  "u": "https://dl.e-elitech.com/uploadfile/2021/09/18/20210918164439yF6JfP.pdf",
+  "fn": "ec_1154dde516.pdf",
+  "pages": 2,
+  "size": 5394952,
+  "d": "2021-09-18",
+  "pids": [
+   "408"
   ]
  },
  {
@@ -3029,16 +3029,16 @@
   ]
  },
  {
-  "t": "精创 LTC-70PLUS-41 温控器",
-  "model": "LTC-70PLUS-41",
+  "t": "精创 LTC-73中文说明书 温控器",
+  "model": "LTC-73中文说明书",
   "cat": "温控器",
-  "u": "https://dl.e-elitech.com/uploadfile/2022/06/01/20220601132149O8LwpK.pdf",
-  "fn": "ec_e91438ddfb.pdf",
-  "pages": 2,
-  "size": 1279641,
-  "d": "2022-06-01",
+  "u": "https://dl.e-elitech.com/uploadfile/2025/02/10/20250210152250coKgaT.pdf",
+  "fn": "ec_4bf0f3348f.pdf",
+  "pages": 10,
+  "size": 1038321,
+  "d": "2025-02-10",
   "pids": [
-   "461"
+   "623"
   ]
  },
  {
@@ -3055,19 +3055,6 @@
   ]
  },
  {
-  "t": "精创 LTC-73中文说明书 温控器",
-  "model": "LTC-73中文说明书",
-  "cat": "温控器",
-  "u": "https://dl.e-elitech.com/uploadfile/2025/02/10/20250210152250coKgaT.pdf",
-  "fn": "ec_4bf0f3348f.pdf",
-  "pages": 10,
-  "size": 1038321,
-  "d": "2025-02-10",
-  "pids": [
-   "623"
-  ]
- },
- {
   "t": "精创 LTC-90 温控器",
   "model": "LTC-90",
   "cat": "温控器",
@@ -3078,6 +3065,19 @@
   "d": "2020-12-22",
   "pids": [
    "307"
+  ]
+ },
+ {
+  "t": "精创 LTC-70PLUS-41 温控器",
+  "model": "LTC-70PLUS-41",
+  "cat": "温控器",
+  "u": "https://dl.e-elitech.com/uploadfile/2022/06/01/20220601132149O8LwpK.pdf",
+  "fn": "ec_e91438ddfb.pdf",
+  "pages": 2,
+  "size": 1279641,
+  "d": "2022-06-01",
+  "pids": [
+   "461"
   ]
  },
  {
@@ -3107,19 +3107,6 @@
   ]
  },
  {
-  "t": "精创 LTW-100-S1 温控器",
-  "model": "LTW-100-S1",
-  "cat": "温控器",
-  "u": "https://dl.e-elitech.com/uploadfile/2020/12/22/202012221629383amr4l.pdf",
-  "fn": "ec_bdd9afc729.pdf",
-  "pages": 2,
-  "size": 4916358,
-  "d": "2020-12-22",
-  "pids": [
-   "311"
-  ]
- },
- {
   "t": "精创 N-LTC70-09 温控器",
   "model": "N-LTC70-09",
   "cat": "温控器",
@@ -3130,6 +3117,19 @@
   "d": "2021-08-27",
   "pids": [
    "404"
+  ]
+ },
+ {
+  "t": "精创 LTW-100-S1 温控器",
+  "model": "LTW-100-S1",
+  "cat": "温控器",
+  "u": "https://dl.e-elitech.com/uploadfile/2020/12/22/202012221629383amr4l.pdf",
+  "fn": "ec_bdd9afc729.pdf",
+  "pages": 2,
+  "size": 4916358,
+  "d": "2020-12-22",
+  "pids": [
+   "311"
   ]
  },
  {
@@ -3159,16 +3159,16 @@
   ]
  },
  {
-  "t": "精创 LTW-100-S2-02D 温控器",
-  "model": "LTW-100-S2-02D",
+  "t": "精创 LTW-200pro 温控器",
+  "model": "LTW-200pro",
   "cat": "温控器",
-  "u": "https://dl.e-elitech.com/uploadfile/2020/12/22/20201222163300ZUztvQ.pdf",
-  "fn": "ec_1e117ee501.pdf",
-  "pages": 2,
-  "size": 5100261,
-  "d": "2020-12-22",
+  "u": "https://dl.e-elitech.com/uploadfile/2023/03/27/20230327101635tvUKDI.pdf",
+  "fn": "ec_7bb37f7e68.pdf",
+  "pages": 13,
+  "size": 1091442,
+  "d": "2023-03-27",
   "pids": [
-   "314"
+   "510"
   ]
  },
  {
@@ -3185,16 +3185,16 @@
   ]
  },
  {
-  "t": "精创 LTW-200pro 温控器",
-  "model": "LTW-200pro",
+  "t": "精创 LTW-100-S2-02D 温控器",
+  "model": "LTW-100-S2-02D",
   "cat": "温控器",
-  "u": "https://dl.e-elitech.com/uploadfile/2023/03/27/20230327101635tvUKDI.pdf",
-  "fn": "ec_7bb37f7e68.pdf",
-  "pages": 13,
-  "size": 1091442,
-  "d": "2023-03-27",
+  "u": "https://dl.e-elitech.com/uploadfile/2020/12/22/20201222163300ZUztvQ.pdf",
+  "fn": "ec_1e117ee501.pdf",
+  "pages": 2,
+  "size": 5100261,
+  "d": "2020-12-22",
   "pids": [
-   "510"
+   "314"
   ]
  },
  {
@@ -3263,19 +3263,6 @@
   ]
  },
  {
-  "t": "精创 LTW-90 温控器",
-  "model": "LTW-90",
-  "cat": "温控器",
-  "u": "https://dl.e-elitech.com/uploadfile/2024/06/21/20240621135133tflNjR.pdf",
-  "fn": "ec_37a3cd199d.pdf",
-  "pages": 2,
-  "size": 872543,
-  "d": "2024-06-21",
-  "pids": [
-   "563"
-  ]
- },
- {
   "t": "精创 N-LTC50D-22 温控器",
   "model": "N-LTC50D-22",
   "cat": "温控器",
@@ -3289,29 +3276,16 @@
   ]
  },
  {
-  "t": "精创 MC-51 温控器",
-  "model": "MC-51",
+  "t": "精创 LTW-90 温控器",
+  "model": "LTW-90",
   "cat": "温控器",
-  "u": "https://dl.e-elitech.com/uploadfile/2024/09/26/20240926150308DqKJFU.pdf",
-  "fn": "ec_622947ba7c.pdf",
-  "pages": 4,
-  "size": 2074718,
-  "d": "2024-09-26",
-  "pids": [
-   "601"
-  ]
- },
- {
-  "t": "精创 AI节能-02-4G/WiFi 机组电控箱",
-  "model": "AI节能-02-4G/WiFi",
-  "cat": "机组电控箱",
-  "u": "https://dl.e-elitech.com/uploadfile/2022/07/05/202207052256144iePZF.pdf",
-  "fn": "ec_b3dc23257e.pdf",
+  "u": "https://dl.e-elitech.com/uploadfile/2024/06/21/20240621135133tflNjR.pdf",
+  "fn": "ec_37a3cd199d.pdf",
   "pages": 2,
-  "size": 3403723,
-  "d": "2022-07-27",
+  "size": 872543,
+  "d": "2024-06-21",
   "pids": [
-   "469"
+   "563"
   ]
  },
  {
@@ -3328,6 +3302,19 @@
   ]
  },
  {
+  "t": "精创 MC-51 温控器",
+  "model": "MC-51",
+  "cat": "温控器",
+  "u": "https://dl.e-elitech.com/uploadfile/2024/09/26/20240926150308DqKJFU.pdf",
+  "fn": "ec_622947ba7c.pdf",
+  "pages": 4,
+  "size": 2074718,
+  "d": "2024-09-26",
+  "pids": [
+   "601"
+  ]
+ },
+ {
   "t": "精创 CP-180 机组电控箱",
   "model": "CP-180",
   "cat": "机组电控箱",
@@ -3338,6 +3325,19 @@
   "d": "2020-06-11",
   "pids": [
    "108"
+  ]
+ },
+ {
+  "t": "精创 AI节能-02-4G/WiFi 机组电控箱",
+  "model": "AI节能-02-4G/WiFi",
+  "cat": "机组电控箱",
+  "u": "https://dl.e-elitech.com/uploadfile/2022/07/05/202207052256144iePZF.pdf",
+  "fn": "ec_b3dc23257e.pdf",
+  "pages": 2,
+  "size": 3403723,
+  "d": "2022-07-27",
+  "pids": [
+   "469"
   ]
  },
  {
@@ -3370,19 +3370,6 @@
   "t": "精创 ECB-1000L 机组电控箱",
   "model": "ECB-1000L",
   "cat": "机组电控箱",
-  "u": "https://dl.e-elitech.com/uploadfile/2020/06/11/20200611095529pZsVES.pdf",
-  "fn": "ec_5e5c243c32.pdf",
-  "pages": 2,
-  "size": 1282879,
-  "d": "2020-06-11",
-  "pids": [
-   "109"
-  ]
- },
- {
-  "t": "精创 ECB-1000L 机组电控箱",
-  "model": "ECB-1000L",
-  "cat": "机组电控箱",
   "u": "https://dl.e-elitech.com/uploadfile/2022/04/25/20220425172849JUlXGd.pdf",
   "fn": "ec_17160554c0.pdf",
   "pages": 1,
@@ -3390,6 +3377,19 @@
   "d": "2022-04-25",
   "pids": [
    "246"
+  ]
+ },
+ {
+  "t": "精创 ECB-1000L 机组电控箱",
+  "model": "ECB-1000L",
+  "cat": "机组电控箱",
+  "u": "https://dl.e-elitech.com/uploadfile/2020/06/11/20200611095529pZsVES.pdf",
+  "fn": "ec_5e5c243c32.pdf",
+  "pages": 2,
+  "size": 1282879,
+  "d": "2020-06-11",
+  "pids": [
+   "109"
   ]
  },
  {
@@ -3403,6 +3403,19 @@
   "d": "2020-12-22",
   "pids": [
    "285"
+  ]
+ },
+ {
+  "t": "精创 ECB-1000S 机组电控箱",
+  "model": "ECB-1000S",
+  "cat": "机组电控箱",
+  "u": "https://dl.e-elitech.com/uploadfile/2024/10/30/20241030163135iQVJqy.pdf",
+  "fn": "ec_d6d7a95e96.pdf",
+  "pages": 2,
+  "size": 6011371,
+  "d": "2024-10-30",
+  "pids": [
+   "617"
   ]
  },
  {
@@ -3445,19 +3458,6 @@
   ]
  },
  {
-  "t": "精创 ECB-3000 220V 机组电控箱",
-  "model": "ECB-3000 220V",
-  "cat": "机组电控箱",
-  "u": "https://dl.e-elitech.com/uploadfile/2020/06/11/202006111005550S94aM.pdf",
-  "fn": "ec_8fc400634e.pdf",
-  "pages": 2,
-  "size": 1532130,
-  "d": "2020-06-11",
-  "pids": [
-   "113"
-  ]
- },
- {
   "t": "精创 ECB-3010(5-30HP) 机组电控箱",
   "model": "ECB-3010(5-30HP)",
   "cat": "机组电控箱",
@@ -3481,6 +3481,19 @@
   "d": "2020-11-04",
   "pids": [
    "114"
+  ]
+ },
+ {
+  "t": "精创 ECB-3000 220V 机组电控箱",
+  "model": "ECB-3000 220V",
+  "cat": "机组电控箱",
+  "u": "https://dl.e-elitech.com/uploadfile/2020/06/11/202006111005550S94aM.pdf",
+  "fn": "ec_8fc400634e.pdf",
+  "pages": 2,
+  "size": 1532130,
+  "d": "2020-06-11",
+  "pids": [
+   "113"
   ]
  },
  {
@@ -3510,19 +3523,6 @@
   ]
  },
  {
-  "t": "精创 ECB-1000S 机组电控箱",
-  "model": "ECB-1000S",
-  "cat": "机组电控箱",
-  "u": "https://dl.e-elitech.com/uploadfile/2024/10/30/20241030163135iQVJqy.pdf",
-  "fn": "ec_d6d7a95e96.pdf",
-  "pages": 2,
-  "size": 6011371,
-  "d": "2024-10-30",
-  "pids": [
-   "617"
-  ]
- },
- {
   "t": "精创 ECB-3030 机组电控箱",
   "model": "ECB-3030",
   "cat": "机组电控箱",
@@ -3549,19 +3549,6 @@
   ]
  },
  {
-  "t": "精创 ECB-4000中文说明书,常规 机组电控箱",
-  "model": "ECB-4000中文说明书,常规",
-  "cat": "机组电控箱",
-  "u": "https://dl.e-elitech.com/uploadfile/2024/06/26/202406261524384xIjsm.pdf",
-  "fn": "ec_43e01b69e5.pdf",
-  "pages": 18,
-  "size": 3928075,
-  "d": "2024-06-26",
-  "pids": [
-   "559"
-  ]
- },
- {
   "t": "精创 ECB-5060-2G 4G WiFi 机组电控箱",
   "model": "ECB-5060-2G 4G WiFi",
   "cat": "机组电控箱",
@@ -3575,16 +3562,16 @@
   ]
  },
  {
-  "t": "精创 ECB-5060CN(10HP) 机组电控箱",
-  "model": "ECB-5060CN(10HP)",
+  "t": "精创 ECB-4000中文说明书,常规 机组电控箱",
+  "model": "ECB-4000中文说明书,常规",
   "cat": "机组电控箱",
-  "u": "https://dl.e-elitech.com/uploadfile/2020/06/11/202006111045003qyz1U.pdf",
-  "fn": "ec_16ed43cd17.pdf",
-  "pages": 2,
-  "size": 8919770,
-  "d": "2020-06-11",
+  "u": "https://dl.e-elitech.com/uploadfile/2024/06/26/202406261524384xIjsm.pdf",
+  "fn": "ec_43e01b69e5.pdf",
+  "pages": 18,
+  "size": 3928075,
+  "d": "2024-06-26",
   "pids": [
-   "128"
+   "559"
   ]
  },
  {
@@ -3611,6 +3598,19 @@
   "d": "2021-05-14",
   "pids": [
    "248"
+  ]
+ },
+ {
+  "t": "精创 ECB-5060CN(10HP) 机组电控箱",
+  "model": "ECB-5060CN(10HP)",
+  "cat": "机组电控箱",
+  "u": "https://dl.e-elitech.com/uploadfile/2020/06/11/202006111045003qyz1U.pdf",
+  "fn": "ec_16ed43cd17.pdf",
+  "pages": 2,
+  "size": 8919770,
+  "d": "2020-06-11",
+  "pids": [
+   "128"
   ]
  },
  {
@@ -3731,19 +3731,6 @@
   ]
  },
  {
-  "t": "精创 ECB-5080S(15HP) 机组电控箱",
-  "model": "ECB-5080S(15HP)",
-  "cat": "机组电控箱",
-  "u": "https://dl.e-elitech.com/uploadfile/2020/06/11/20200611113251MkNQ8X.pdf",
-  "fn": "ec_55d7975df7.pdf",
-  "pages": 1,
-  "size": 1962865,
-  "d": "2020-06-11",
-  "pids": [
-   "137"
-  ]
- },
- {
   "t": "精创 ECB-5080XR（15HP） 机组电控箱",
   "model": "ECB-5080XR（15HP）",
   "cat": "机组电控箱",
@@ -3754,6 +3741,19 @@
   "d": "2020-06-11",
   "pids": [
    "139"
+  ]
+ },
+ {
+  "t": "精创 ECB-5080S(15HP) 机组电控箱",
+  "model": "ECB-5080S(15HP)",
+  "cat": "机组电控箱",
+  "u": "https://dl.e-elitech.com/uploadfile/2020/06/11/20200611113251MkNQ8X.pdf",
+  "fn": "ec_55d7975df7.pdf",
+  "pages": 1,
+  "size": 1962865,
+  "d": "2020-06-11",
+  "pids": [
+   "137"
   ]
  },
  {
@@ -3835,19 +3835,6 @@
   ]
  },
  {
-  "t": "精创 ECM-30-01 美的生物定制 机组电控箱",
-  "model": "ECM-30-01 美的生物定制",
-  "cat": "机组电控箱",
-  "u": "https://dl.e-elitech.com/uploadfile/2024/12/09/20241209162211kgl38Q.pdf",
-  "fn": "ec_4cc80610ae.pdf",
-  "pages": 12,
-  "size": 6763527,
-  "d": "2024-12-09",
-  "pids": [
-   "627"
-  ]
- },
- {
   "t": "精创 ECM-30 温控器 机组电控箱",
   "model": "ECM-30 温控器",
   "cat": "机组电控箱",
@@ -3858,6 +3845,19 @@
   "d": "2026-01-12",
   "pids": [
    "631"
+  ]
+ },
+ {
+  "t": "精创 ECM-30-01 美的生物定制 机组电控箱",
+  "model": "ECM-30-01 美的生物定制",
+  "cat": "机组电控箱",
+  "u": "https://dl.e-elitech.com/uploadfile/2024/12/09/20241209162211kgl38Q.pdf",
+  "fn": "ec_4cc80610ae.pdf",
+  "pages": 12,
+  "size": 6763527,
+  "d": "2024-12-09",
+  "pids": [
+   "627"
   ]
  },
  {
@@ -4082,19 +4082,6 @@
   ]
  },
  {
-  "t": "精创 LS-180-09一体机控制器 机组电控箱",
-  "model": "LS-180-09一体机控制器",
-  "cat": "机组电控箱",
-  "u": "https://dl.e-elitech.com/uploadfile/2026/06/15/20260615180339sWiCqZ.pdf",
-  "fn": "ec_6a6bfab939.pdf",
-  "pages": 21,
-  "size": 1268519,
-  "d": "2026-06-15",
-  "pids": [
-   "706"
-  ]
- },
- {
   "t": "精创 LS-180-08一体机控制器 机组电控箱",
   "model": "LS-180-08一体机控制器",
   "cat": "机组电控箱",
@@ -4105,6 +4092,19 @@
   "d": "2025-09-22",
   "pids": [
    "721"
+  ]
+ },
+ {
+  "t": "精创 LS-180-09一体机控制器 机组电控箱",
+  "model": "LS-180-09一体机控制器",
+  "cat": "机组电控箱",
+  "u": "https://dl.e-elitech.com/uploadfile/2026/06/15/20260615180339sWiCqZ.pdf",
+  "fn": "ec_6a6bfab939.pdf",
+  "pages": 21,
+  "size": 1268519,
+  "d": "2026-06-15",
+  "pids": [
+   "706"
   ]
  },
  {
@@ -4173,19 +4173,6 @@
   ]
  },
  {
-  "t": "精创 LS-280-01 中文说明书 V1.6 机组电控箱",
-  "model": "LS-280-01 中文说明书 V1.6",
-  "cat": "机组电控箱",
-  "u": "https://dl.e-elitech.com/uploadfile/2025/04/11/20250411151218LteUhY.pdf",
-  "fn": "ec_e7db274c88.pdf",
-  "pages": 17,
-  "size": 1824568,
-  "d": "2025-08-06",
-  "pids": [
-   "579"
-  ]
- },
- {
   "t": "精创 LS-230pro 中文常规说明书 机组电控箱",
   "model": "LS-230pro 中文常规说明书",
   "cat": "机组电控箱",
@@ -4196,6 +4183,19 @@
   "d": "2025-01-11",
   "pids": [
    "634"
+  ]
+ },
+ {
+  "t": "精创 LS-280-01 中文说明书 V1.6 机组电控箱",
+  "model": "LS-280-01 中文说明书 V1.6",
+  "cat": "机组电控箱",
+  "u": "https://dl.e-elitech.com/uploadfile/2025/04/11/20250411151218LteUhY.pdf",
+  "fn": "ec_e7db274c88.pdf",
+  "pages": 17,
+  "size": 1824568,
+  "d": "2025-08-06",
+  "pids": [
+   "579"
   ]
  },
  {
@@ -4251,19 +4251,6 @@
   ]
  },
  {
-  "t": "精创 LS-280-11 机组电控箱",
-  "model": "LS-280-11",
-  "cat": "机组电控箱",
-  "u": "https://dl.e-elitech.com/uploadfile/2025/09/16/20250916111256zSec1m.pdf",
-  "fn": "ec_145b4f3ea8.pdf",
-  "pages": 18,
-  "size": 1899759,
-  "d": "2025-09-16",
-  "pids": [
-   "686"
-  ]
- },
- {
   "t": "精创 LS-280-10 V1.0 机组电控箱",
   "model": "LS-280-10 V1.0",
   "cat": "机组电控箱",
@@ -4274,6 +4261,19 @@
   "d": "2025-01-17",
   "pids": [
    "620"
+  ]
+ },
+ {
+  "t": "精创 LS-280-11 机组电控箱",
+  "model": "LS-280-11",
+  "cat": "机组电控箱",
+  "u": "https://dl.e-elitech.com/uploadfile/2025/09/16/20250916111256zSec1m.pdf",
+  "fn": "ec_145b4f3ea8.pdf",
+  "pages": 18,
+  "size": 1899759,
+  "d": "2025-09-16",
+  "pids": [
+   "686"
   ]
  },
  {
@@ -4355,19 +4355,6 @@
   ]
  },
  {
-  "t": "精创 LS-300K-01 机组电控箱",
-  "model": "LS-300K-01",
-  "cat": "机组电控箱",
-  "u": "https://dl.e-elitech.com/uploadfile/2024/08/06/202408061056066G8rVL.pdf",
-  "fn": "ec_9a88c9a24b.pdf",
-  "pages": 24,
-  "size": 7644663,
-  "d": "2025-04-10",
-  "pids": [
-   "590"
-  ]
- },
- {
   "t": "精创 LS-300A-02 机组电控箱",
   "model": "LS-300A-02",
   "cat": "机组电控箱",
@@ -4378,6 +4365,19 @@
   "d": "2026-08-25",
   "pids": [
    "788"
+  ]
+ },
+ {
+  "t": "精创 LS-300K-01 机组电控箱",
+  "model": "LS-300K-01",
+  "cat": "机组电控箱",
+  "u": "https://dl.e-elitech.com/uploadfile/2024/08/06/202408061056066G8rVL.pdf",
+  "fn": "ec_9a88c9a24b.pdf",
+  "pages": 24,
+  "size": 7644663,
+  "d": "2025-04-10",
+  "pids": [
+   "590"
   ]
  },
  {
@@ -4498,16 +4498,16 @@
   ]
  },
  {
-  "t": "精创 GSP-9A 温湿度记录仪",
-  "model": "GSP-9A",
+  "t": "精创 RC-18 温湿度记录仪",
+  "model": "RC-18",
   "cat": "温湿度记录仪",
-  "u": "https://dl.e-elitech.com/uploadfile/2025/04/10/20250410142730FLdUPQ.pdf",
-  "fn": "ec_6f0fd2ef38.pdf",
-  "pages": 1,
-  "size": 52320,
-  "d": "2026-08-19",
+  "u": "https://dl.e-elitech.com/uploadfile/2020/06/10/20200610113729ugb3zh.pdf",
+  "fn": "ec_45be4378db.pdf",
+  "pages": 2,
+  "size": 8831113,
+  "d": "2020-06-10",
   "pids": [
-   "787"
+   "62"
   ]
  },
  {
@@ -4524,16 +4524,16 @@
   ]
  },
  {
-  "t": "精创 RC-16 温湿度记录仪",
-  "model": "RC-16",
+  "t": "精创 GSP-9A 温湿度记录仪",
+  "model": "GSP-9A",
   "cat": "温湿度记录仪",
-  "u": "https://dl.e-elitech.com/uploadfile/2025/10/17/20251017155559oyJTjl.pdf",
-  "fn": "ec_1dbb5fb25f.pdf",
-  "pages": 4,
-  "size": 4824012,
-  "d": "2025-10-17",
+  "u": "https://dl.e-elitech.com/uploadfile/2025/04/10/20250410142730FLdUPQ.pdf",
+  "fn": "ec_6f0fd2ef38.pdf",
+  "pages": 1,
+  "size": 52320,
+  "d": "2026-08-19",
   "pids": [
-   "724"
+   "787"
   ]
  },
  {
@@ -4550,16 +4550,16 @@
   ]
  },
  {
-  "t": "精创 RC-18 温湿度记录仪",
-  "model": "RC-18",
+  "t": "精创 RC-16 温湿度记录仪",
+  "model": "RC-16",
   "cat": "温湿度记录仪",
-  "u": "https://dl.e-elitech.com/uploadfile/2020/06/10/20200610113729ugb3zh.pdf",
-  "fn": "ec_45be4378db.pdf",
-  "pages": 2,
-  "size": 8831113,
-  "d": "2020-06-10",
+  "u": "https://dl.e-elitech.com/uploadfile/2025/10/17/20251017155559oyJTjl.pdf",
+  "fn": "ec_1dbb5fb25f.pdf",
+  "pages": 4,
+  "size": 4824012,
+  "d": "2025-10-17",
   "pids": [
-   "62"
+   "724"
   ]
  },
  {
@@ -4654,19 +4654,6 @@
   ]
  },
  {
-  "t": "精创 RC-51 温湿度记录仪",
-  "model": "RC-51",
-  "cat": "温湿度记录仪",
-  "u": "https://dl.e-elitech.com/uploadfile/2021/08/23/20210823092728UEpsHL.pdf",
-  "fn": "ec_fdb54895ba.pdf",
-  "pages": 2,
-  "size": 3193126,
-  "d": "2021-08-23",
-  "pids": [
-   "71"
-  ]
- },
- {
   "t": "精创 RC-5+ 温湿度记录仪",
   "model": "RC-5+",
   "cat": "温湿度记录仪",
@@ -4677,6 +4664,19 @@
   "d": "2025-07-05",
   "pids": [
    "70"
+  ]
+ },
+ {
+  "t": "精创 RC-51 温湿度记录仪",
+  "model": "RC-51",
+  "cat": "温湿度记录仪",
+  "u": "https://dl.e-elitech.com/uploadfile/2021/08/23/20210823092728UEpsHL.pdf",
+  "fn": "ec_fdb54895ba.pdf",
+  "pages": 2,
+  "size": 3193126,
+  "d": "2021-08-23",
+  "pids": [
+   "71"
   ]
  },
  {
@@ -4732,19 +4732,6 @@
   ]
  },
  {
-  "t": "精创 RCW-3 温湿度记录仪",
-  "model": "RCW-3",
-  "cat": "温湿度记录仪",
-  "u": "https://dl.e-elitech.com/uploadfile/2021/03/25/202103251339101OaCnE.pdf",
-  "fn": "ec_2b5490e78b.pdf",
-  "pages": 2,
-  "size": 5185967,
-  "d": "2021-03-25",
-  "pids": [
-   "365"
-  ]
- },
- {
   "t": "精创 RCW-260 温湿度记录仪",
   "model": "RCW-260",
   "cat": "温湿度记录仪",
@@ -4755,6 +4742,19 @@
   "d": "2024-08-20",
   "pids": [
    "580"
+  ]
+ },
+ {
+  "t": "精创 RCW-3 温湿度记录仪",
+  "model": "RCW-3",
+  "cat": "温湿度记录仪",
+  "u": "https://dl.e-elitech.com/uploadfile/2021/03/25/202103251339101OaCnE.pdf",
+  "fn": "ec_2b5490e78b.pdf",
+  "pages": 2,
+  "size": 5185967,
+  "d": "2021-03-25",
+  "pids": [
+   "365"
   ]
  },
  {
@@ -4797,6 +4797,19 @@
   ]
  },
  {
+  "t": "精创 RCW-360Plus 系列 温湿度记录仪",
+  "model": "RCW-360Plus 系列",
+  "cat": "温湿度记录仪",
+  "u": "https://dl.e-elitech.com/uploadfile/2024/11/15/20241115103852PBofcT.pdf",
+  "fn": "ec_688b1ae455.pdf",
+  "pages": 12,
+  "size": 7752389,
+  "d": "2024-11-15",
+  "pids": [
+   "378"
+  ]
+ },
+ {
   "t": "精创 RCW-360L 4G 温湿度记录仪",
   "model": "RCW-360L 4G",
   "cat": "温湿度记录仪",
@@ -4820,19 +4833,6 @@
   "d": "2021-03-25",
   "pids": [
    "359"
-  ]
- },
- {
-  "t": "精创 RCW-360Plus 系列 温湿度记录仪",
-  "model": "RCW-360Plus 系列",
-  "cat": "温湿度记录仪",
-  "u": "https://dl.e-elitech.com/uploadfile/2024/11/15/20241115103852PBofcT.pdf",
-  "fn": "ec_688b1ae455.pdf",
-  "pages": 12,
-  "size": 7752389,
-  "d": "2024-11-15",
-  "pids": [
-   "378"
   ]
  },
  {
@@ -4875,32 +4875,6 @@
   ]
  },
  {
-  "t": "精创 RCW-400A（3G版） 温湿度记录仪",
-  "model": "RCW-400A（3G版）",
-  "cat": "温湿度记录仪",
-  "u": "https://dl.e-elitech.com/uploadfile/2021/10/22/20211022160244SELOnk.pdf",
-  "fn": "ec_a020c04008.pdf",
-  "pages": 10,
-  "size": 5067955,
-  "d": "2021-10-22",
-  "pids": [
-   "361"
-  ]
- },
- {
-  "t": "精创 RCW-600WIFI 温湿度记录仪",
-  "model": "RCW-600WIFI",
-  "cat": "温湿度记录仪",
-  "u": "https://dl.e-elitech.com/uploadfile/2021/02/20/20210220093406WqE12Q.pdf",
-  "fn": "ec_44b788f2a0.pdf",
-  "pages": 10,
-  "size": 1406119,
-  "d": "2021-02-20",
-  "pids": [
-   "351"
-  ]
- },
- {
   "t": "精创 RCW-800W 温湿度记录仪",
   "model": "RCW-800W",
   "cat": "温湿度记录仪",
@@ -4911,6 +4885,19 @@
   "d": "2024-06-29",
   "pids": [
    "474"
+  ]
+ },
+ {
+  "t": "精创 RCW-400A（3G版） 温湿度记录仪",
+  "model": "RCW-400A（3G版）",
+  "cat": "温湿度记录仪",
+  "u": "https://dl.e-elitech.com/uploadfile/2021/10/22/20211022160244SELOnk.pdf",
+  "fn": "ec_a020c04008.pdf",
+  "pages": 10,
+  "size": 5067955,
+  "d": "2021-10-22",
+  "pids": [
+   "361"
   ]
  },
  {
@@ -4927,16 +4914,16 @@
   ]
  },
  {
-  "t": "精创 SFIot-20S 温湿度记录仪",
-  "model": "SFIot-20S",
+  "t": "精创 RCW-600WIFI 温湿度记录仪",
+  "model": "RCW-600WIFI",
   "cat": "温湿度记录仪",
-  "u": "https://dl.e-elitech.com/uploadfile/2026/07/28/20260728143725T5X6Ni.pdf",
-  "fn": "ec_2bb4540004.pdf",
-  "pages": 5,
-  "size": 2433937,
-  "d": "2026-07-28",
+  "u": "https://dl.e-elitech.com/uploadfile/2021/02/20/20210220093406WqE12Q.pdf",
+  "fn": "ec_44b788f2a0.pdf",
+  "pages": 10,
+  "size": 1406119,
+  "d": "2021-02-20",
   "pids": [
-   "540"
+   "351"
   ]
  },
  {
@@ -4950,6 +4937,19 @@
   "d": "2026-08-11",
   "pids": [
    "757"
+  ]
+ },
+ {
+  "t": "精创 SFIot-20S 温湿度记录仪",
+  "model": "SFIot-20S",
+  "cat": "温湿度记录仪",
+  "u": "https://dl.e-elitech.com/uploadfile/2026/07/28/20260728143725T5X6Ni.pdf",
+  "fn": "ec_2bb4540004.pdf",
+  "pages": 5,
+  "size": 2433937,
+  "d": "2026-07-28",
+  "pids": [
+   "540"
   ]
  },
  {
@@ -4979,19 +4979,6 @@
   ]
  },
  {
-  "t": "精创 TI-21 温湿度记录仪",
-  "model": "TI-21",
-  "cat": "温湿度记录仪",
-  "u": "https://dl.e-elitech.com/uploadfile/2020/06/10/20200610133336Oe2SFc.pdf",
-  "fn": "ec_d56a859689.pdf",
-  "pages": 1,
-  "size": 1114993,
-  "d": "2020-06-10",
-  "pids": [
-   "81"
-  ]
- },
- {
   "t": "精创 TI-2S 温湿度记录仪",
   "model": "TI-2S",
   "cat": "温湿度记录仪",
@@ -5005,16 +4992,16 @@
   ]
  },
  {
-  "t": "精创 TI-3S/EliTag Series 温湿度记录仪",
-  "model": "TI-3S/EliTag Series",
+  "t": "精创 TI-21 温湿度记录仪",
+  "model": "TI-21",
   "cat": "温湿度记录仪",
-  "u": "https://dl.e-elitech.com/uploadfile/2025/08/25/20250825105656t7BsE3.pdf",
-  "fn": "ec_c7651e8c5f.pdf",
-  "pages": 4,
-  "size": 2086487,
-  "d": "2025-08-25",
+  "u": "https://dl.e-elitech.com/uploadfile/2020/06/10/20200610133336Oe2SFc.pdf",
+  "fn": "ec_d56a859689.pdf",
+  "pages": 1,
+  "size": 1114993,
+  "d": "2020-06-10",
   "pids": [
-   "611"
+   "81"
   ]
  },
  {
@@ -5031,16 +5018,16 @@
   ]
  },
  {
-  "t": "精创 LogEt 260 温湿度记录仪",
-  "model": "LogEt 260",
+  "t": "精创 TI-3S/EliTag Series 温湿度记录仪",
+  "model": "TI-3S/EliTag Series",
   "cat": "温湿度记录仪",
-  "u": "https://dl.e-elitech.com/uploadfile/2024/08/20/20240820133722Alj6Wg.pdf",
-  "fn": "ec_bde7d2c75e.pdf",
-  "pages": 8,
-  "size": 573111,
-  "d": "2024-08-20",
+  "u": "https://dl.e-elitech.com/uploadfile/2025/08/25/20250825105656t7BsE3.pdf",
+  "fn": "ec_c7651e8c5f.pdf",
+  "pages": 4,
+  "size": 2086487,
+  "d": "2025-08-25",
   "pids": [
-   "581"
+   "611"
   ]
  },
  {
@@ -5057,16 +5044,16 @@
   ]
  },
  {
-  "t": "精创 LogEt 8系列 温湿度记录仪",
-  "model": "LogEt 8系列",
+  "t": "精创 LogEt 260 温湿度记录仪",
+  "model": "LogEt 260",
   "cat": "温湿度记录仪",
-  "u": "https://dl.e-elitech.com/uploadfile/2025/01/15/20250115114403sMaApY.pdf",
-  "fn": "ec_d51fe715fd.pdf",
-  "pages": 12,
-  "size": 4011799,
-  "d": "2025-01-15",
+  "u": "https://dl.e-elitech.com/uploadfile/2024/08/20/20240820133722Alj6Wg.pdf",
+  "fn": "ec_bde7d2c75e.pdf",
+  "pages": 8,
+  "size": 573111,
+  "d": "2024-08-20",
   "pids": [
-   "55"
+   "581"
   ]
  },
  {
@@ -5080,6 +5067,19 @@
   "d": "2025-06-06",
   "pids": [
    "687"
+  ]
+ },
+ {
+  "t": "精创 LogEt 8系列 温湿度记录仪",
+  "model": "LogEt 8系列",
+  "cat": "温湿度记录仪",
+  "u": "https://dl.e-elitech.com/uploadfile/2025/01/15/20250115114403sMaApY.pdf",
+  "fn": "ec_d51fe715fd.pdf",
+  "pages": 12,
+  "size": 4011799,
+  "d": "2025-01-15",
+  "pids": [
+   "55"
   ]
  },
  {
@@ -5174,19 +5174,6 @@
   ]
  },
  {
-  "t": "精创 IotLog 20S 温湿度记录仪",
-  "model": "IotLog 20S",
-  "cat": "温湿度记录仪",
-  "u": "https://dl.e-elitech.com/uploadfile/2026/07/28/20260728143825iFR0uf.pdf",
-  "fn": "ec_e5ba34f70a.pdf",
-  "pages": 10,
-  "size": 1753616,
-  "d": "2026-07-28",
-  "pids": [
-   "390"
-  ]
- },
- {
   "t": "精创 IotLog 20SE 温湿度记录仪",
   "model": "IotLog 20SE",
   "cat": "温湿度记录仪",
@@ -5197,6 +5184,19 @@
   "d": "2026-08-06",
   "pids": [
    "784"
+  ]
+ },
+ {
+  "t": "精创 IotLog 20S 温湿度记录仪",
+  "model": "IotLog 20S",
+  "cat": "温湿度记录仪",
+  "u": "https://dl.e-elitech.com/uploadfile/2026/07/28/20260728143825iFR0uf.pdf",
+  "fn": "ec_e5ba34f70a.pdf",
+  "pages": 10,
+  "size": 1753616,
+  "d": "2026-07-28",
+  "pids": [
+   "390"
   ]
  },
  {
@@ -5239,16 +5239,16 @@
   ]
  },
  {
-  "t": "精创 TM-2 温湿度记录仪",
-  "model": "TM-2",
+  "t": "精创 TM-1 温湿度记录仪",
+  "model": "TM-1",
   "cat": "温湿度记录仪",
-  "u": "https://dl.e-elitech.com/uploadfile/2025/04/29/20250429143752iIEz4T.pdf",
-  "fn": "ec_b8f8890686.pdf",
-  "pages": 4,
-  "size": 1118191,
-  "d": "2025-05-07",
+  "u": "https://dl.e-elitech.com/uploadfile/2025/06/21/20250621102552UENDPg.pdf",
+  "fn": "ec_3db7dc47cb.pdf",
+  "pages": 3,
+  "size": 840354,
+  "d": "2025-06-21",
   "pids": [
-   "658"
+   "657"
   ]
  },
  {
@@ -5265,16 +5265,16 @@
   ]
  },
  {
-  "t": "精创 TM-1 温湿度记录仪",
-  "model": "TM-1",
+  "t": "精创 TM-2 温湿度记录仪",
+  "model": "TM-2",
   "cat": "温湿度记录仪",
-  "u": "https://dl.e-elitech.com/uploadfile/2025/06/21/20250621102552UENDPg.pdf",
-  "fn": "ec_3db7dc47cb.pdf",
-  "pages": 3,
-  "size": 840354,
-  "d": "2025-06-21",
+  "u": "https://dl.e-elitech.com/uploadfile/2025/04/29/20250429143752iIEz4T.pdf",
+  "fn": "ec_b8f8890686.pdf",
+  "pages": 4,
+  "size": 1118191,
+  "d": "2025-05-07",
   "pids": [
-   "657"
+   "658"
   ]
  },
  {
@@ -5343,19 +5343,6 @@
   ]
  },
  {
-  "t": "精创 EL-LDM50D 50米测距仪 其他仪表工具",
-  "model": "EL-LDM50D 50米测距仪",
-  "cat": "其他仪表工具",
-  "u": "https://dl.e-elitech.com/uploadfile/2025/04/07/20250407115443lP192S.pdf",
-  "fn": "ec_e2331648e0.pdf",
-  "pages": 16,
-  "size": 333523,
-  "d": "2025-08-04",
-  "pids": [
-   "643"
-  ]
- },
- {
   "t": "精创 DIT-220红外测温枪 其他仪表工具",
   "model": "DIT-220红外测温枪",
   "cat": "其他仪表工具",
@@ -5382,16 +5369,29 @@
   ]
  },
  {
-  "t": "精创 DIT-520红外测温枪 其他仪表工具",
-  "model": "DIT-520红外测温枪",
+  "t": "精创 EL-LDM50D 50米测距仪 其他仪表工具",
+  "model": "EL-LDM50D 50米测距仪",
   "cat": "其他仪表工具",
-  "u": "https://dl.e-elitech.com/uploadfile/2026/05/07/202605071651447RwZXW.pdf",
-  "fn": "ec_3c38c33bd7.pdf",
-  "pages": 6,
-  "size": 1504407,
-  "d": "2026-07-28",
+  "u": "https://dl.e-elitech.com/uploadfile/2025/04/07/20250407115443lP192S.pdf",
+  "fn": "ec_e2331648e0.pdf",
+  "pages": 16,
+  "size": 333523,
+  "d": "2025-08-04",
   "pids": [
-   "781"
+   "643"
+  ]
+ },
+ {
+  "t": "精创 SVP-DC 其他仪表工具",
+  "model": "SVP-DC",
+  "cat": "其他仪表工具",
+  "u": "https://dl.e-elitech.com/uploadfile/2025/06/19/20250619172337iDHcRm.pdf",
+  "fn": "ec_0f52acba96.pdf",
+  "pages": 16,
+  "size": 945139,
+  "d": "2025-06-19",
+  "pids": [
+   "691"
   ]
  },
  {
@@ -5408,16 +5408,16 @@
   ]
  },
  {
-  "t": "精创 SVP-DC 其他仪表工具",
-  "model": "SVP-DC",
+  "t": "精创 DIT-520红外测温枪 其他仪表工具",
+  "model": "DIT-520红外测温枪",
   "cat": "其他仪表工具",
-  "u": "https://dl.e-elitech.com/uploadfile/2025/06/19/20250619172337iDHcRm.pdf",
-  "fn": "ec_0f52acba96.pdf",
-  "pages": 16,
-  "size": 945139,
-  "d": "2025-06-19",
+  "u": "https://dl.e-elitech.com/uploadfile/2026/05/07/202605071651447RwZXW.pdf",
+  "fn": "ec_3c38c33bd7.pdf",
+  "pages": 6,
+  "size": 1504407,
+  "d": "2026-07-28",
   "pids": [
-   "691"
+   "781"
   ]
  },
  {
@@ -5473,19 +5473,6 @@
   ]
  },
  {
-  "t": "精创 DT-1 系列 用户手册",
-  "model": "DT-1 系列",
-  "cat": "用户手册",
-  "u": "https://dl.e-elitech.com/uploadfile/2022/04/06/20220406135707F3S4Rm.pdf",
-  "fn": "ec_bf4cccdf98.pdf",
-  "pages": 5,
-  "size": 5061688,
-  "d": "2022-04-06",
-  "pids": [
-   "449"
-  ]
- },
- {
   "t": "精创 EK-3010 用户手册",
   "model": "EK-3010",
   "cat": "用户手册",
@@ -5496,6 +5483,19 @@
   "d": "2022-04-06",
   "pids": [
    "448"
+  ]
+ },
+ {
+  "t": "精创 DT-1 系列 用户手册",
+  "model": "DT-1 系列",
+  "cat": "用户手册",
+  "u": "https://dl.e-elitech.com/uploadfile/2022/04/06/20220406135707F3S4Rm.pdf",
+  "fn": "ec_bf4cccdf98.pdf",
+  "pages": 5,
+  "size": 5061688,
+  "d": "2022-04-06",
+  "pids": [
+   "449"
   ]
  },
  {
@@ -5512,19 +5512,6 @@
   ]
  },
  {
-  "t": "精创 GSP-8A 用户手册",
-  "model": "GSP-8A",
-  "cat": "用户手册",
-  "u": "https://dl.e-elitech.com/uploadfile/2022/04/06/202204061344478DU3dC.pdf",
-  "fn": "ec_80bebcc203.pdf",
-  "pages": 7,
-  "size": 465775,
-  "d": "2022-04-06",
-  "pids": [
-   "446"
-  ]
- },
- {
   "t": "精创 GSP-6温湿度记录仪 用户手册",
   "model": "GSP-6温湿度记录仪",
   "cat": "用户手册",
@@ -5538,16 +5525,16 @@
   ]
  },
  {
-  "t": "精创 HLD-100+ 用户手册",
-  "model": "HLD-100+",
+  "t": "精创 GSP-8A 用户手册",
+  "model": "GSP-8A",
   "cat": "用户手册",
-  "u": "https://dl.e-elitech.com/uploadfile/2022/04/06/20220406134418qY6BnX.pdf",
-  "fn": "ec_63602334ab.pdf",
-  "pages": 1,
-  "size": 492189,
+  "u": "https://dl.e-elitech.com/uploadfile/2022/04/06/202204061344478DU3dC.pdf",
+  "fn": "ec_80bebcc203.pdf",
+  "pages": 7,
+  "size": 465775,
   "d": "2022-04-06",
   "pids": [
-   "445"
+   "446"
   ]
  },
  {
@@ -5564,6 +5551,19 @@
   ]
  },
  {
+  "t": "精创 HLD-100+ 用户手册",
+  "model": "HLD-100+",
+  "cat": "用户手册",
+  "u": "https://dl.e-elitech.com/uploadfile/2022/04/06/20220406134418qY6BnX.pdf",
+  "fn": "ec_63602334ab.pdf",
+  "pages": 1,
+  "size": 492189,
+  "d": "2022-04-06",
+  "pids": [
+   "445"
+  ]
+ },
+ {
   "t": "精创 MTC-5060 用户手册",
   "model": "MTC-5060",
   "cat": "用户手册",
@@ -5574,19 +5574,6 @@
   "d": "2022-04-06",
   "pids": [
    "443"
-  ]
- },
- {
-  "t": "精创 RC-18 用户手册",
-  "model": "RC-18",
-  "cat": "用户手册",
-  "u": "https://dl.e-elitech.com/uploadfile/2022/04/06/20220406135908jvg6yk.pdf",
-  "fn": "ec_325becf17d.pdf",
-  "pages": 5,
-  "size": 1265680,
-  "d": "2022-04-06",
-  "pids": [
-   "452"
   ]
  },
  {
@@ -5603,16 +5590,29 @@
   ]
  },
  {
-  "t": "精创 RCW-360系列 用户手册",
-  "model": "RCW-360系列",
+  "t": "精创 RC-18 用户手册",
+  "model": "RC-18",
   "cat": "用户手册",
-  "u": "https://dl.e-elitech.com/uploadfile/2022/04/06/202204061341092hKeuo.pdf",
-  "fn": "ec_460f29ee64.pdf",
-  "pages": 25,
-  "size": 3824111,
+  "u": "https://dl.e-elitech.com/uploadfile/2022/04/06/20220406135908jvg6yk.pdf",
+  "fn": "ec_325becf17d.pdf",
+  "pages": 5,
+  "size": 1265680,
   "d": "2022-04-06",
   "pids": [
-   "439"
+   "452"
+  ]
+ },
+ {
+  "t": "精创 RC-5+ 用户手册",
+  "model": "RC-5+",
+  "cat": "用户手册",
+  "u": "https://dl.e-elitech.com/uploadfile/2022/04/06/202204061342139wvbCc.pdf",
+  "fn": "ec_7f441865c1.pdf",
+  "pages": 7,
+  "size": 407315,
+  "d": "2022-04-06",
+  "pids": [
+   "441"
   ]
  },
  {
@@ -5629,16 +5629,16 @@
   ]
  },
  {
-  "t": "精创 RC-5+ 用户手册",
-  "model": "RC-5+",
+  "t": "精创 RCW-360系列 用户手册",
+  "model": "RCW-360系列",
   "cat": "用户手册",
-  "u": "https://dl.e-elitech.com/uploadfile/2022/04/06/202204061342139wvbCc.pdf",
-  "fn": "ec_7f441865c1.pdf",
-  "pages": 7,
-  "size": 407315,
+  "u": "https://dl.e-elitech.com/uploadfile/2022/04/06/202204061341092hKeuo.pdf",
+  "fn": "ec_460f29ee64.pdf",
+  "pages": 25,
+  "size": 3824111,
   "d": "2022-04-06",
   "pids": [
-   "441"
+   "439"
   ]
  },
  {
@@ -5681,19 +5681,6 @@
   ]
  },
  {
-  "t": "精创 STC-9100 用户手册",
-  "model": "STC-9100",
-  "cat": "用户手册",
-  "u": "https://dl.e-elitech.com/uploadfile/2022/04/06/20220406133743PwFg8N.pdf",
-  "fn": "ec_80721ae4bc.pdf",
-  "pages": 2,
-  "size": 251590,
-  "d": "2022-04-06",
-  "pids": [
-   "435"
-  ]
- },
- {
   "t": "精创 TI-1S 用户手册",
   "model": "TI-1S",
   "cat": "用户手册",
@@ -5707,16 +5694,16 @@
   ]
  },
  {
-  "t": "精创 精创冷云平台使用指引 用户手册",
-  "model": "精创冷云平台使用指引",
+  "t": "精创 STC-9100 用户手册",
+  "model": "STC-9100",
   "cat": "用户手册",
-  "u": "https://dl.e-elitech.com/uploadfile/2022/04/06/20220406140228c1omNh.pdf",
-  "fn": "ec_794e17392c.pdf",
-  "pages": 25,
-  "size": 3216558,
+  "u": "https://dl.e-elitech.com/uploadfile/2022/04/06/20220406133743PwFg8N.pdf",
+  "fn": "ec_80721ae4bc.pdf",
+  "pages": 2,
+  "size": 251590,
   "d": "2022-04-06",
   "pids": [
-   "453"
+   "435"
   ]
  },
  {
@@ -5730,6 +5717,19 @@
   "d": "2022-04-06",
   "pids": [
    "434"
+  ]
+ },
+ {
+  "t": "精创 精创冷云平台使用指引 用户手册",
+  "model": "精创冷云平台使用指引",
+  "cat": "用户手册",
+  "u": "https://dl.e-elitech.com/uploadfile/2022/04/06/20220406140228c1omNh.pdf",
+  "fn": "ec_794e17392c.pdf",
+  "pages": 25,
+  "size": 3216558,
+  "d": "2022-04-06",
+  "pids": [
+   "453"
   ]
  },
  {
