@@ -567,6 +567,17 @@
   "size": 4102133
  },
  {
+  "name": "HCQXB-OD08-BD外形尺寸图",
+  "url": "https://website.hcfa.cc:20080/upload//产品中心/工业自动化/通用控制/IO/Q系列扩展卡/数字量/HCQXB-OD08-BD外形尺寸图.pdf",
+  "pages": 0,
+  "type": "说明书",
+  "size": 0,
+  "brand": "禾川科技",
+  "src": "website.hcfa.cc:20080",
+  "status": "不可访问(0)",
+  "date": ""
+ },
+ {
   "name": "HCMXE-ID16-D外形尺寸图",
   "url": "https://website.hcfa.cc:20080/upload/产品中心/工业自动化/通用控制/IO/MX系列远程模块/分布式数字量/HCMXE-ID16-D外形尺寸图.pdf",
   "pages": 0,
@@ -591,17 +602,6 @@
  {
   "name": "HCM100-80MT6-A外形尺寸图",
   "url": "https://website.hcfa.cc:20080/upload/产品中心/工业自动化/通用控制/PLC/M系列CPU/M100系列/M100/HCM100-80MT6-A外形尺寸图.pdf",
-  "pages": 0,
-  "type": "说明书",
-  "size": 0,
-  "brand": "禾川科技",
-  "src": "website.hcfa.cc:20080",
-  "status": "不可访问(0)",
-  "date": ""
- },
- {
-  "name": "HCM100-80MR-A外形尺寸图",
-  "url": "https://website.hcfa.cc:20080/upload/产品中心/工业自动化/通用控制/PLC/M系列CPU/M100系列/M100/HCM100-80MR-A外形尺寸图.pdf",
   "pages": 0,
   "type": "说明书",
   "size": 0,
@@ -646,116 +646,6 @@
  {
   "name": "HCQX-□D32C-D4外形尺寸图",
   "url": "https://website.hcfa.cc:20080/upload/产品中心/工业自动化/通用控制/IO/Q系列模块/通用数字量/HCQX-□D32C-D4外形尺寸图.pdf",
-  "pages": 0,
-  "type": "说明书",
-  "size": 0,
-  "brand": "禾川科技",
-  "src": "website.hcfa.cc:20080",
-  "status": "不可访问(0)",
-  "date": ""
- },
- {
-  "name": "AMD530B步进总线伺服产品中文手册V1.2",
-  "url": "https://website.hcfa.cc:20080/upload/产品中心/工业自动化/运动控制/步进产品/AM系列驱动/AMD530B步进总线伺服产品中文手册V1.2 20260917.pdf",
-  "pages": 0,
-  "type": "说明书",
-  "size": 0,
-  "brand": "禾川科技",
-  "src": "website.hcfa.cc:20080",
-  "status": "不可访问(0)",
-  "date": ""
- },
- {
-  "name": "E605系列变频器用户手册 V1.1",
-  "url": "https://website.hcfa.cc:20080/upload/产品中心/工业自动化/工业驱动/低压驱动器/HDv-E605系列变频器用户手册 V1.1 20260930.pdf",
-  "pages": 0,
-  "type": "说明书",
-  "size": 0,
-  "brand": "禾川科技",
-  "src": "website.hcfa.cc:20080",
-  "status": "不可访问(0)",
-  "date": ""
- },
- {
-  "name": "M100系列控制器硬件手册V1.2",
-  "url": "https://website.hcfa.cc:20080/upload/产品中心/工业自动化/通用控制/PLC/M系列CPU/M100系列控制器硬件手册V1.2.pdf",
-  "pages": 0,
-  "type": "说明书",
-  "size": 0,
-  "brand": "禾川科技",
-  "src": "website.hcfa.cc:20080",
-  "status": "不可访问(0)",
-  "date": ""
- },
- {
-  "name": "禾川工业机器人样本V3.1",
-  "url": "https://website.hcfa.cc:20080/upload/产品中心/机器人/工业机器人/禾川工业机器人样本V3.1 20261009.pdf",
-  "pages": 0,
-  "type": "说明书",
-  "size": 0,
-  "brand": "禾川科技",
-  "src": "website.hcfa.cc:20080",
-  "status": "不可访问(0)",
-  "date": ""
- },
- {
-  "name": "RHS1系列机器人CE-MD证书",
-  "url": "https://website.hcfa.cc:20080/upload//产品中心/机器人/工业机器人/SCARA机器人/RHS1系列机器人CE-MD证书.pdf",
-  "pages": 0,
-  "type": "说明书",
-  "size": 0,
-  "brand": "禾川科技",
-  "src": "website.hcfa.cc:20080",
-  "status": "不可访问(0)",
-  "date": ""
- },
- {
-  "name": "工业机器人专用-用户手册-基本操作 V2.2",
-  "url": "https://website.hcfa.cc:20080/upload//产品中心/机器人/工业机器人/离线编程平台/工业机器人专用-用户手册-基本操作 V2.2 20251024.pdf",
-  "pages": 0,
-  "type": "说明书",
-  "size": 0,
-  "brand": "禾川科技",
-  "src": "website.hcfa.cc:20080",
-  "status": "不可访问(0)",
-  "date": ""
- },
- {
-  "name": "SCARA机器人控制器硬件手册V2.1",
-  "url": "https://website.hcfa.cc:20080/upload//产品中心/机器人/工业机器人/离线编程平台/SCARA机器人控制器硬件手册V2.1-20260630.pdf",
-  "pages": 0,
-  "type": "说明书",
-  "size": 0,
-  "brand": "禾川科技",
-  "src": "website.hcfa.cc:20080",
-  "status": "不可访问(0)",
-  "date": ""
- },
- {
-  "name": "SCARA机器人简易操作手册V2.1",
-  "url": "https://website.hcfa.cc:20080/upload//产品中心/机器人/工业机器人/离线编程平台/SCARA机器人简易操作手册V2.1-20260630.pdf",
-  "pages": 0,
-  "type": "说明书",
-  "size": 0,
-  "brand": "禾川科技",
-  "src": "website.hcfa.cc:20080",
-  "status": "不可访问(0)",
-  "date": ""
- },
- {
-  "name": "SCARA机器人示教器使用手册V2.1",
-  "url": "https://website.hcfa.cc:20080/upload//产品中心/机器人/工业机器人/离线编程平台/SCARA机器人示教器使用手册V2.1-20260630.pdf",
-  "pages": 0,
-  "type": "说明书",
-  "size": 0,
-  "brand": "禾川科技",
-  "src": "website.hcfa.cc:20080",
-  "status": "不可访问(0)",
-  "date": ""
- },
- {
-  "name": "禾川SCARA机器人定期点检和保养用户手册V1.0",
-  "url": "https://website.hcfa.cc:20080/upload//产品中心/机器人/工业机器人/离线编程平台/禾川SCARA机器人定期点检和保养用户手册V1.0 20260629.pdf",
   "pages": 0,
   "type": "说明书",
   "size": 0,

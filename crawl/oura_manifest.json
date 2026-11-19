@@ -946,87 +946,6 @@
  },
  {
   "cat": "用户手册",
-  "t": "欧瑞蓝牙控制盒中文使用说明",
-  "d": "2020-09-22",
-  "u": "https://www.euradrives.com/Upload/File/202009/20200922153454_1508.pdf",
-  "fn": "or_6b847429.pdf",
-  "pages": 6,
-  "size": 654514
- },
- {
-  "cat": "用户手册",
-  "t": "SD20-D系列CANopen型伺服使用手册",
-  "d": "2020-09-22",
-  "u": "https://www.euradrives.com/Upload/File/202009/20200922151057_7524.pdf",
-  "fn": "or_9d2ed7e6.pdf",
-  "pages": 307,
-  "size": 5731109
- },
- {
-  "cat": "用户手册",
-  "t": "SD10-Y系列伺服系统说明书",
-  "d": "2020-08-10",
-  "u": "https://www.euradrives.com/Upload/File/202008/20200810093742_4053.pdf",
-  "fn": "or_1a1d3219.pdf",
-  "pages": 265,
-  "size": 4954322
- },
- {
-  "cat": "用户手册",
-  "t": "SD20-D系列EtherCAT型伺服说明书",
-  "d": "2020-08-10",
-  "u": "https://www.euradrives.com/Upload/File/202008/20200810142117_1642.pdf",
-  "fn": "or_b052fb18.pdf",
-  "pages": 296,
-  "size": 5444275
- },
- {
-  "cat": "用户手册",
-  "t": "ETM200系列工业触控显示器说明书",
-  "d": "2020-04-11",
-  "u": "https://www.euradrives.com/Upload/File/202004/20200411160152_1945.pdf",
-  "fn": "or_19b32366.pdf",
-  "pages": 2,
-  "size": 377471
- },
- {
-  "cat": "用户手册",
-  "t": "DTU配置软件说明书",
-  "d": "2020-03-11",
-  "u": "https://www.euradrives.com/Upload/File/201901/20190127151628_4235.pdf",
-  "fn": "or_53ff1d73.pdf",
-  "pages": 9,
-  "size": 470220
- },
- {
-  "cat": "用户手册",
-  "t": "EPS2000系列变频器说明书",
-  "d": "2019-11-05",
-  "u": "https://www.euradrives.com/Upload/File/201801/20180102100314_0105.pdf",
-  "fn": "or_5df4a9fc.pdf",
-  "pages": 173,
-  "size": 3537194
- },
- {
-  "cat": "用户手册",
-  "t": "E800-Z系列变频器说明书",
-  "d": "2019-08-12",
-  "u": "https://www.euradrives.com/Upload/File/201806/20180619153642_1239.pdf",
-  "fn": "or_9b1baf88.pdf",
-  "pages": 171,
-  "size": 3723138
- },
- {
-  "cat": "用户手册",
-  "t": "E800-Z触摸屏用户手册",
-  "d": "2019-08-12",
-  "u": "https://www.euradrives.com/Upload/File/201806/20180619153600_6747.pdf",
-  "fn": "or_5ec8afa2.pdf",
-  "pages": 22,
-  "size": 1357292
- },
- {
-  "cat": "用户手册",
   "t": "F2000-P系列变频器用户手册",
   "d": "2019-06-26",
   "u": "https://www.euradrives.com/Upload/File/201906/20190626091439_4854.pdf",
@@ -1330,6 +1249,87 @@
   "fn": "or_1ed72dc7.pdf",
   "pages": 16,
   "size": 1609141
+ },
+ {
+  "cat": "用户手册",
+  "t": "欧瑞蓝牙控制盒中文使用说明",
+  "d": "2020-09-22",
+  "u": "https://www.euradrives.com/Upload/File/202009/20200922153454_1508.pdf",
+  "fn": "or_6b847429.pdf",
+  "pages": 6,
+  "size": 654514
+ },
+ {
+  "cat": "用户手册",
+  "t": "SD20-D系列CANopen型伺服使用手册",
+  "d": "2020-09-22",
+  "u": "https://www.euradrives.com/Upload/File/202009/20200922151057_7524.pdf",
+  "fn": "or_9d2ed7e6.pdf",
+  "pages": 307,
+  "size": 5731109
+ },
+ {
+  "cat": "用户手册",
+  "t": "SD10-Y系列伺服系统说明书",
+  "d": "2020-08-10",
+  "u": "https://www.euradrives.com/Upload/File/202008/20200810093742_4053.pdf",
+  "fn": "or_1a1d3219.pdf",
+  "pages": 265,
+  "size": 4954322
+ },
+ {
+  "cat": "用户手册",
+  "t": "SD20-D系列EtherCAT型伺服说明书",
+  "d": "2020-08-10",
+  "u": "https://www.euradrives.com/Upload/File/202008/20200810142117_1642.pdf",
+  "fn": "or_b052fb18.pdf",
+  "pages": 296,
+  "size": 5444275
+ },
+ {
+  "cat": "用户手册",
+  "t": "ETM200系列工业触控显示器说明书",
+  "d": "2020-04-11",
+  "u": "https://www.euradrives.com/Upload/File/202004/20200411160152_1945.pdf",
+  "fn": "or_19b32366.pdf",
+  "pages": 2,
+  "size": 377471
+ },
+ {
+  "cat": "用户手册",
+  "t": "DTU配置软件说明书",
+  "d": "2020-03-11",
+  "u": "https://www.euradrives.com/Upload/File/201901/20190127151628_4235.pdf",
+  "fn": "or_53ff1d73.pdf",
+  "pages": 9,
+  "size": 470220
+ },
+ {
+  "cat": "用户手册",
+  "t": "EPS2000系列变频器说明书",
+  "d": "2019-11-05",
+  "u": "https://www.euradrives.com/Upload/File/201801/20180102100314_0105.pdf",
+  "fn": "or_5df4a9fc.pdf",
+  "pages": 173,
+  "size": 3537194
+ },
+ {
+  "cat": "用户手册",
+  "t": "E800-Z系列变频器说明书",
+  "d": "2019-08-12",
+  "u": "https://www.euradrives.com/Upload/File/201806/20180619153642_1239.pdf",
+  "fn": "or_9b1baf88.pdf",
+  "pages": 171,
+  "size": 3723138
+ },
+ {
+  "cat": "用户手册",
+  "t": "E800-Z触摸屏用户手册",
+  "d": "2019-08-12",
+  "u": "https://www.euradrives.com/Upload/File/201806/20180619153600_6747.pdf",
+  "fn": "or_5ec8afa2.pdf",
+  "pages": 22,
+  "size": 1357292
  },
  {
   "cat": "用户手册",
