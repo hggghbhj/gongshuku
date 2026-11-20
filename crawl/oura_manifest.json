@@ -946,111 +946,84 @@
  },
  {
   "cat": "用户手册",
-  "t": "F2000-P系列变频器用户手册",
-  "d": "2019-06-26",
-  "u": "https://www.euradrives.com/Upload/File/201906/20190626091439_4854.pdf",
-  "fn": "or_f3e57f40.pdf",
-  "pages": 115,
-  "size": 3161728
+  "t": "欧瑞蓝牙控制盒中文使用说明",
+  "d": "2020-09-22",
+  "u": "https://www.euradrives.com/Upload/File/202009/20200922153454_1508.pdf",
+  "fn": "or_6b847429.pdf",
+  "pages": 6,
+  "size": 654514
  },
  {
   "cat": "用户手册",
-  "t": "E2000-C系列变频器说明书",
-  "d": "2019-03-15",
-  "u": "https://www.euradrives.com/Upload/File/201903/20190315112711_7719.pdf",
-  "fn": "or_e814eea3.pdf",
-  "pages": 118,
-  "size": 3056673
+  "t": "SD20-D系列CANopen型伺服使用手册",
+  "d": "2020-09-22",
+  "u": "https://www.euradrives.com/Upload/File/202009/20200922151057_7524.pdf",
+  "fn": "or_9d2ed7e6.pdf",
+  "pages": 307,
+  "size": 5731109
  },
  {
   "cat": "用户手册",
-  "t": "EIB-CSSE01总线卡说明书",
-  "d": "2019-01-27",
-  "u": "https://www.euradrives.com/Upload/File/201901/20190127151344_6608.pdf",
-  "fn": "or_d3651234.pdf",
-  "pages": 24,
-  "size": 1061051
+  "t": "SD10-Y系列伺服系统说明书",
+  "d": "2020-08-10",
+  "u": "https://www.euradrives.com/Upload/File/202008/20200810093742_4053.pdf",
+  "fn": "or_1a1d3219.pdf",
+  "pages": 265,
+  "size": 4954322
  },
  {
   "cat": "用户手册",
-  "t": "EIB-ESSE01总线卡说明书",
-  "d": "2019-01-27",
-  "u": "https://www.euradrives.com/Upload/File/201901/20190127151256_6901.pdf",
-  "fn": "or_9bef9ac3.pdf",
-  "pages": 28,
-  "size": 979126
+  "t": "SD20-D系列EtherCAT型伺服说明书",
+  "d": "2020-08-10",
+  "u": "https://www.euradrives.com/Upload/File/202008/20200810142117_1642.pdf",
+  "fn": "or_b052fb18.pdf",
+  "pages": 296,
+  "size": 5444275
  },
  {
   "cat": "用户手册",
-  "t": "EIB-PDSSE01系列总线卡说明书",
-  "d": "2019-01-27",
-  "u": "https://www.euradrives.com/Upload/File/201801/20180104152152_6612.pdf",
-  "fn": "or_3d601154.pdf",
-  "pages": 40,
-  "size": 1417782
+  "t": "ETM200系列工业触控显示器说明书",
+  "d": "2020-04-11",
+  "u": "https://www.euradrives.com/Upload/File/202004/20200411160152_1945.pdf",
+  "fn": "or_19b32366.pdf",
+  "pages": 2,
+  "size": 377471
  },
  {
   "cat": "用户手册",
-  "t": "ESB-CSPE01系列说明书",
-  "d": "2019-01-27",
-  "u": "https://www.euradrives.com/Upload/File/201801/20180104150427_3502.pdf",
-  "fn": "or_d55ea64f.pdf",
-  "pages": 48,
-  "size": 848591
+  "t": "DTU配置软件说明书",
+  "d": "2020-03-11",
+  "u": "https://www.euradrives.com/Upload/File/201901/20190127151628_4235.pdf",
+  "fn": "or_53ff1d73.pdf",
+  "pages": 9,
+  "size": 470220
  },
  {
   "cat": "用户手册",
-  "t": "EN2000系列变频器说明书",
-  "d": "2018-12-24",
-  "u": "https://www.euradrives.com/Upload/File/201801/20180104143846_8163.pdf",
-  "fn": "or_b362d155.pdf",
-  "pages": 211,
-  "size": 4850195
+  "t": "EPS2000系列变频器说明书",
+  "d": "2019-11-05",
+  "u": "https://www.euradrives.com/Upload/File/201801/20180102100314_0105.pdf",
+  "fn": "or_5df4a9fc.pdf",
+  "pages": 173,
+  "size": 3537194
  },
  {
   "cat": "用户手册",
-  "t": "F2000-G系列变频器用户手册",
-  "d": "2018-04-04",
-  "u": "https://www.euradrives.com/Upload/File/201804/20180404091946_0659.pdf",
-  "fn": "or_c11d6e50.pdf",
-  "pages": 106,
-  "size": 2099172
+  "t": "E800-Z系列变频器说明书",
+  "d": "2019-08-12",
+  "u": "https://www.euradrives.com/Upload/File/201806/20180619153642_1239.pdf",
+  "fn": "or_9b1baf88.pdf",
+  "pages": 171,
+  "size": 3723138
  },
  {
   "cat": "用户手册",
-  "t": "F1500-P系列用户手册",
-  "d": "2018-04-04",
-  "u": "https://www.euradrives.com/Upload/File/201804/20180404091902_1625.pdf",
-  "fn": "or_70f967c1.pdf",
-  "pages": 85,
-  "size": 2578332
- },
- {
-  "cat": "用户手册",
-  "t": "F1500-G系列变频器用户手册",
-  "d": "2018-04-04",
-  "u": "https://www.euradrives.com/Upload/File/201804/20180404091822_6186.pdf",
-  "fn": "or_5b8d4a9a.pdf",
-  "pages": 96,
-  "size": 2832778
- },
- {
-  "cat": "用户手册",
-  "t": "E1000系列变频器用户手册",
-  "d": "2018-04-04",
-  "u": "https://www.euradrives.com/Upload/File/201804/20180404091548_4819.pdf",
-  "fn": "or_014d6fe8.pdf",
-  "pages": 159,
-  "size": 7938142
- },
- {
-  "cat": "用户手册",
-  "t": "HFBUDR_EBUDR系列制动单元说明书",
-  "d": "2018-03-07",
-  "u": "https://www.euradrives.com/Upload/File/201801/20180104152059_9175.pdf",
-  "fn": "or_39a54df3.pdf",
-  "pages": 27,
-  "size": 850652
+  "t": "E800-Z触摸屏用户手册",
+  "d": "2019-08-12",
+  "u": "https://www.euradrives.com/Upload/File/201806/20180619153600_6747.pdf",
+  "fn": "or_5ec8afa2.pdf",
+  "pages": 22,
+  "size": 1357292
  },
  {
   "cat": "用户手册",
@@ -1252,84 +1225,111 @@
  },
  {
   "cat": "用户手册",
-  "t": "欧瑞蓝牙控制盒中文使用说明",
-  "d": "2020-09-22",
-  "u": "https://www.euradrives.com/Upload/File/202009/20200922153454_1508.pdf",
-  "fn": "or_6b847429.pdf",
-  "pages": 6,
-  "size": 654514
+  "t": "F2000-P系列变频器用户手册",
+  "d": "2019-06-26",
+  "u": "https://www.euradrives.com/Upload/File/201906/20190626091439_4854.pdf",
+  "fn": "or_f3e57f40.pdf",
+  "pages": 115,
+  "size": 3161728
  },
  {
   "cat": "用户手册",
-  "t": "SD20-D系列CANopen型伺服使用手册",
-  "d": "2020-09-22",
-  "u": "https://www.euradrives.com/Upload/File/202009/20200922151057_7524.pdf",
-  "fn": "or_9d2ed7e6.pdf",
-  "pages": 307,
-  "size": 5731109
+  "t": "E2000-C系列变频器说明书",
+  "d": "2019-03-15",
+  "u": "https://www.euradrives.com/Upload/File/201903/20190315112711_7719.pdf",
+  "fn": "or_e814eea3.pdf",
+  "pages": 118,
+  "size": 3056673
  },
  {
   "cat": "用户手册",
-  "t": "SD10-Y系列伺服系统说明书",
-  "d": "2020-08-10",
-  "u": "https://www.euradrives.com/Upload/File/202008/20200810093742_4053.pdf",
-  "fn": "or_1a1d3219.pdf",
-  "pages": 265,
-  "size": 4954322
+  "t": "EIB-CSSE01总线卡说明书",
+  "d": "2019-01-27",
+  "u": "https://www.euradrives.com/Upload/File/201901/20190127151344_6608.pdf",
+  "fn": "or_d3651234.pdf",
+  "pages": 24,
+  "size": 1061051
  },
  {
   "cat": "用户手册",
-  "t": "SD20-D系列EtherCAT型伺服说明书",
-  "d": "2020-08-10",
-  "u": "https://www.euradrives.com/Upload/File/202008/20200810142117_1642.pdf",
-  "fn": "or_b052fb18.pdf",
-  "pages": 296,
-  "size": 5444275
+  "t": "EIB-ESSE01总线卡说明书",
+  "d": "2019-01-27",
+  "u": "https://www.euradrives.com/Upload/File/201901/20190127151256_6901.pdf",
+  "fn": "or_9bef9ac3.pdf",
+  "pages": 28,
+  "size": 979126
  },
  {
   "cat": "用户手册",
-  "t": "ETM200系列工业触控显示器说明书",
-  "d": "2020-04-11",
-  "u": "https://www.euradrives.com/Upload/File/202004/20200411160152_1945.pdf",
-  "fn": "or_19b32366.pdf",
-  "pages": 2,
-  "size": 377471
+  "t": "EIB-PDSSE01系列总线卡说明书",
+  "d": "2019-01-27",
+  "u": "https://www.euradrives.com/Upload/File/201801/20180104152152_6612.pdf",
+  "fn": "or_3d601154.pdf",
+  "pages": 40,
+  "size": 1417782
  },
  {
   "cat": "用户手册",
-  "t": "DTU配置软件说明书",
-  "d": "2020-03-11",
-  "u": "https://www.euradrives.com/Upload/File/201901/20190127151628_4235.pdf",
-  "fn": "or_53ff1d73.pdf",
-  "pages": 9,
-  "size": 470220
+  "t": "ESB-CSPE01系列说明书",
+  "d": "2019-01-27",
+  "u": "https://www.euradrives.com/Upload/File/201801/20180104150427_3502.pdf",
+  "fn": "or_d55ea64f.pdf",
+  "pages": 48,
+  "size": 848591
  },
  {
   "cat": "用户手册",
-  "t": "EPS2000系列变频器说明书",
-  "d": "2019-11-05",
-  "u": "https://www.euradrives.com/Upload/File/201801/20180102100314_0105.pdf",
-  "fn": "or_5df4a9fc.pdf",
-  "pages": 173,
-  "size": 3537194
+  "t": "EN2000系列变频器说明书",
+  "d": "2018-12-24",
+  "u": "https://www.euradrives.com/Upload/File/201801/20180104143846_8163.pdf",
+  "fn": "or_b362d155.pdf",
+  "pages": 211,
+  "size": 4850195
  },
  {
   "cat": "用户手册",
-  "t": "E800-Z系列变频器说明书",
-  "d": "2019-08-12",
-  "u": "https://www.euradrives.com/Upload/File/201806/20180619153642_1239.pdf",
-  "fn": "or_9b1baf88.pdf",
-  "pages": 171,
-  "size": 3723138
+  "t": "F2000-G系列变频器用户手册",
+  "d": "2018-04-04",
+  "u": "https://www.euradrives.com/Upload/File/201804/20180404091946_0659.pdf",
+  "fn": "or_c11d6e50.pdf",
+  "pages": 106,
+  "size": 2099172
  },
  {
   "cat": "用户手册",
-  "t": "E800-Z触摸屏用户手册",
-  "d": "2019-08-12",
-  "u": "https://www.euradrives.com/Upload/File/201806/20180619153600_6747.pdf",
-  "fn": "or_5ec8afa2.pdf",
-  "pages": 22,
-  "size": 1357292
+  "t": "F1500-P系列用户手册",
+  "d": "2018-04-04",
+  "u": "https://www.euradrives.com/Upload/File/201804/20180404091902_1625.pdf",
+  "fn": "or_70f967c1.pdf",
+  "pages": 85,
+  "size": 2578332
+ },
+ {
+  "cat": "用户手册",
+  "t": "F1500-G系列变频器用户手册",
+  "d": "2018-04-04",
+  "u": "https://www.euradrives.com/Upload/File/201804/20180404091822_6186.pdf",
+  "fn": "or_5b8d4a9a.pdf",
+  "pages": 96,
+  "size": 2832778
+ },
+ {
+  "cat": "用户手册",
+  "t": "E1000系列变频器用户手册",
+  "d": "2018-04-04",
+  "u": "https://www.euradrives.com/Upload/File/201804/20180404091548_4819.pdf",
+  "fn": "or_014d6fe8.pdf",
+  "pages": 159,
+  "size": 7938142
+ },
+ {
+  "cat": "用户手册",
+  "t": "HFBUDR_EBUDR系列制动单元说明书",
+  "d": "2018-03-07",
+  "u": "https://www.euradrives.com/Upload/File/201801/20180104152059_9175.pdf",
+  "fn": "or_39a54df3.pdf",
+  "pages": 27,
+  "size": 850652
  },
  {
   "cat": "用户手册",
