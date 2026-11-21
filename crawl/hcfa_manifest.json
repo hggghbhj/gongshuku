@@ -55,8 +55,8 @@
   "date": ""
  },
  {
-  "name": "AMD530B系列步进驱动器（EtherCAT总线）安装使用说明书V1.1 中英文",
-  "url": "http://www.hcfa.cn/service/index/page/AMD530B系列步进驱动器（EtherCAT总线）安装使用说明书V1.1 中英文.pdf.pdf",
+  "name": "SCARA机器人简易操作手册V2.1",
+  "url": "http://www.hcfa.cn/service/index/page/SCARA机器人简易操作手册V2.1.pdf",
   "pages": 0,
   "type": "说明书",
   "size": 0,
@@ -66,8 +66,8 @@
   "date": ""
  },
  {
-  "name": "新平台X2X6系列130&amp",
-  "url": "http://www.hcfa.cn/service/index/page/新平台X2X6系列130&amp;180法兰伺服电机安装使用说明书 V1.0 中英文.pdf",
+  "name": "SCARA机器人示教器使用手册V2.1",
+  "url": "http://www.hcfa.cn/service/index/page/SCARA机器人示教器使用手册V2.1.pdf",
   "pages": 0,
   "type": "说明书",
   "size": 0,
@@ -77,8 +77,8 @@
   "date": ""
  },
  {
-  "name": "V100 V300系列触摸屏CE证书",
-  "url": "http://www.hcfa.cn/service/index/page/V100 V300系列触摸屏CE证书.pdf",
+  "name": "禾川SCARA机器人定期点检和保养用户手册V1.0",
+  "url": "http://www.hcfa.cn/service/index/page/禾川SCARA机器人定期点检和保养用户手册V1.0.pdf",
   "pages": 0,
   "type": "说明书",
   "size": 0,
@@ -88,8 +88,8 @@
   "date": ""
  },
  {
-  "name": "禾川工业机器人样本V3.1",
-  "url": "http://www.hcfa.cn/service/index/page/禾川工业机器人样本V3.1.pdf",
+  "name": "D5ND Y系列伺服外形尺寸图",
+  "url": "http://www.hcfa.cn/service/index/page/D5ND-Y系列伺服外形尺寸图.pdf",
   "pages": 0,
   "type": "说明书",
   "size": 0,
@@ -99,96 +99,8 @@
   "date": ""
  },
  {
-  "name": "RHS1系列机器人CE MD证书",
-  "url": "http://www.hcfa.cn/service/index/page/RHS1系列机器人CE-MD证书.pdf",
-  "pages": 0,
-  "type": "说明书",
-  "size": 0,
-  "brand": "禾川科技",
-  "src": "www.hcfa.cn",
-  "status": "不可访问(0)",
-  "date": ""
- },
- {
-  "name": "工业机器人专用 用户手册 基本操作 V2.2",
-  "url": "http://www.hcfa.cn/service/index/page/工业机器人专用-用户手册-基本操作 V2.2.pdf",
-  "pages": 0,
-  "type": "说明书",
-  "size": 0,
-  "brand": "禾川科技",
-  "src": "www.hcfa.cn",
-  "status": "不可访问(0)",
-  "date": ""
- },
- {
-  "name": "SCARA机器人控制器硬件手册V2.1",
-  "url": "http://www.hcfa.cn/service/index/page/SCARA机器人控制器硬件手册V2.1.pdf",
-  "pages": 0,
-  "type": "说明书",
-  "size": 0,
-  "brand": "禾川科技",
-  "src": "www.hcfa.cn",
-  "status": "不可访问(0)",
-  "date": ""
- },
- {
-  "name": "HCM322 32MT6 D外形尺寸图 不带插头",
-  "url": "http://www.hcfa.cn/service/index/page/HCM322-32MT6-D外形尺寸图-不带插头.pdf",
-  "pages": 0,
-  "type": "说明书",
-  "size": 0,
-  "brand": "禾川科技",
-  "src": "www.hcfa.cn",
-  "status": "不可访问(0)",
-  "date": ""
- },
- {
-  "name": "HCM322 32MT6 D外形尺寸图 带插头",
-  "url": "http://www.hcfa.cn/service/index/page/HCM322-32MT6-D外形尺寸图-带插头.pdf",
-  "pages": 0,
-  "type": "说明书",
-  "size": 0,
-  "brand": "禾川科技",
-  "src": "www.hcfa.cn",
-  "status": "不可访问(0)",
-  "date": ""
- },
- {
-  "name": "M300 M500 M500S系列CPU单元(32点)安装使用说明书V5.0 中英文",
-  "url": "http://www.hcfa.cn/service/index/page/M300 M500 M500S系列CPU单元(32点)安装使用说明书V5.0 中英文.pdf",
-  "pages": 0,
-  "type": "说明书",
-  "size": 0,
-  "brand": "禾川科技",
-  "src": "www.hcfa.cn",
-  "status": "不可访问(0)",
-  "date": ""
- },
- {
-  "name": "SV730W系列EtherCAT总线伺服安装使用说明书 V2.0 中英文",
-  "url": "http://www.hcfa.cn/service/index/page/SV730W系列EtherCAT总线伺服安装使用说明书 V2.0 中英文.pdf.pdf",
-  "pages": 0,
-  "type": "说明书",
-  "size": 0,
-  "brand": "禾川科技",
-  "src": "www.hcfa.cn",
-  "status": "不可访问(0)",
-  "date": ""
- },
- {
-  "name": "V500 外形尺寸图 V511",
-  "url": "http://www.hcfa.cn/service/index/page/V500 外形尺寸图-V511.pdf",
-  "pages": 0,
-  "type": "说明书",
-  "size": 0,
-  "brand": "禾川科技",
-  "src": "www.hcfa.cn",
-  "status": "不可访问(0)",
-  "date": ""
- },
- {
-  "name": "V315E外形尺寸图",
-  "url": "http://www.hcfa.cn/service/index/page/V315E外形尺寸图.pdf",
+  "name": "D5系列低压 CANopen型总线伺服安装使用说明书V1.0 中英文",
+  "url": "http://www.hcfa.cn/service/index/page/D5系列低压 CANopen型总线伺服安装使用说明书V1.0 中英文.pdf",
   "pages": 0,
   "type": "说明书",
   "size": 0,
