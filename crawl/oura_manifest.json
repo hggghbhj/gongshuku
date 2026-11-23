@@ -541,6 +541,114 @@
  },
  {
   "cat": "用户手册",
+  "t": "ERM242-40DTD软件使用说明手册",
+  "d": "2024-06-27",
+  "u": "https://www.euradrives.com/Upload/File/202406/20240627155857_7613.pdf",
+  "fn": "or_1eef6147.pdf",
+  "pages": 303,
+  "size": 6626972
+ },
+ {
+  "cat": "用户手册",
+  "t": "EPG05Z卡简易说明书",
+  "d": "2024-06-27",
+  "u": "https://www.euradrives.com/Upload/File/202406/20240627155538_7007.pdf",
+  "fn": "or_cb4e4782.pdf",
+  "pages": 6,
+  "size": 322814
+ },
+ {
+  "cat": "用户手册",
+  "t": "ECS202E-19DR项目单独硬件使用手册",
+  "d": "2024-06-27",
+  "u": "https://www.euradrives.com/Upload/File/202406/20240627155426_4830.pdf",
+  "fn": "or_ace5f49d.pdf",
+  "pages": 27,
+  "size": 3481497
+ },
+ {
+  "cat": "用户手册",
+  "t": "EAC100 系列运动控制器简易使用手册",
+  "d": "2024-06-27",
+  "u": "https://www.euradrives.com/Upload/File/202406/20240627154537_3794.pdf",
+  "fn": "or_26f26306.pdf",
+  "pages": 2,
+  "size": 981342
+ },
+ {
+  "cat": "用户手册",
+  "t": "EAC100系列运动控制器使用手册（SP9内核）",
+  "d": "2024-06-27",
+  "u": "https://www.euradrives.com/Upload/File/202406/20240627154507_6715.pdf",
+  "fn": "or_0de913a2.pdf",
+  "pages": 97,
+  "size": 4974948
+ },
+ {
+  "cat": "用户手册",
+  "t": "E2100系列变频器说明书",
+  "d": "2024-03-22",
+  "u": "https://www.euradrives.com/Upload/File/202403/20240322112535_4505.pdf",
+  "fn": "or_591e68ad.pdf",
+  "pages": 265,
+  "size": 4843415
+ },
+ {
+  "cat": "用户手册",
+  "t": "SF-STO系列产品说明书",
+  "d": "2024-02-01",
+  "u": "https://www.euradrives.com/Upload/File/202402/20240201134822_6869.pdf",
+  "fn": "or_c1c2ec37.pdf",
+  "pages": 3,
+  "size": 863280
+ },
+ {
+  "cat": "用户手册",
+  "t": "DRIVES上位机监控软件用户使用手册",
+  "d": "2024-02-01",
+  "u": "https://www.euradrives.com/Upload/File/202402/20240201133905_4155.pdf",
+  "fn": "or_bb8d3762.pdf",
+  "pages": 130,
+  "size": 4967324
+ },
+ {
+  "cat": "用户手册",
+  "t": "PRM100系列使用手册",
+  "d": "2023-11-27",
+  "u": "https://www.euradrives.com/Upload/File/202312/20231203134120_0288.pdf",
+  "fn": "or_e03f43fa.pdf",
+  "pages": 21,
+  "size": 1662514
+ },
+ {
+  "cat": "用户手册",
+  "t": "EAC112系列运动控制器使用手册（SP17内核）",
+  "d": "2023-11-16",
+  "u": "https://www.euradrives.com/Upload/File/202311/20231116172736_7184.pdf",
+  "fn": "or_6c21f4a3.pdf",
+  "pages": 94,
+  "size": 4989731
+ },
+ {
+  "cat": "用户手册",
+  "t": "E2000-690V中压系列变频器说明书",
+  "d": "2023-11-16",
+  "u": "https://www.euradrives.com/Upload/File/202311/20231116172636_3288.pdf",
+  "fn": "or_056e75ce.pdf",
+  "pages": 249,
+  "size": 4628470
+ },
+ {
+  "cat": "用户手册",
+  "t": "EC231-04TCM-S单独硬件使用手册",
+  "d": "2023-09-22",
+  "u": "https://www.euradrives.com/Upload/File/202309/20230922172948_0855.pdf",
+  "fn": "or_e6e82de0.pdf",
+  "pages": 13,
+  "size": 568633
+ },
+ {
+  "cat": "用户手册",
   "t": "欧瑞传动ME2000工程型使用手册",
   "d": "2023-07-31",
   "u": "https://www.euradrives.com/Upload/File/202307/20230731162513_0983.pdf",
@@ -1222,114 +1330,6 @@
   "fn": "or_1ed72dc7.pdf",
   "pages": 16,
   "size": 1609141
- },
- {
-  "cat": "用户手册",
-  "t": "ERM242-40DTD软件使用说明手册",
-  "d": "2024-06-27",
-  "u": "https://www.euradrives.com/Upload/File/202406/20240627155857_7613.pdf",
-  "fn": "or_1eef6147.pdf",
-  "pages": 303,
-  "size": 6626972
- },
- {
-  "cat": "用户手册",
-  "t": "EPG05Z卡简易说明书",
-  "d": "2024-06-27",
-  "u": "https://www.euradrives.com/Upload/File/202406/20240627155538_7007.pdf",
-  "fn": "or_cb4e4782.pdf",
-  "pages": 6,
-  "size": 322814
- },
- {
-  "cat": "用户手册",
-  "t": "ECS202E-19DR项目单独硬件使用手册",
-  "d": "2024-06-27",
-  "u": "https://www.euradrives.com/Upload/File/202406/20240627155426_4830.pdf",
-  "fn": "or_ace5f49d.pdf",
-  "pages": 27,
-  "size": 3481497
- },
- {
-  "cat": "用户手册",
-  "t": "EAC100 系列运动控制器简易使用手册",
-  "d": "2024-06-27",
-  "u": "https://www.euradrives.com/Upload/File/202406/20240627154537_3794.pdf",
-  "fn": "or_26f26306.pdf",
-  "pages": 2,
-  "size": 981342
- },
- {
-  "cat": "用户手册",
-  "t": "EAC100系列运动控制器使用手册（SP9内核）",
-  "d": "2024-06-27",
-  "u": "https://www.euradrives.com/Upload/File/202406/20240627154507_6715.pdf",
-  "fn": "or_0de913a2.pdf",
-  "pages": 97,
-  "size": 4974948
- },
- {
-  "cat": "用户手册",
-  "t": "E2100系列变频器说明书",
-  "d": "2024-03-22",
-  "u": "https://www.euradrives.com/Upload/File/202403/20240322112535_4505.pdf",
-  "fn": "or_591e68ad.pdf",
-  "pages": 265,
-  "size": 4843415
- },
- {
-  "cat": "用户手册",
-  "t": "SF-STO系列产品说明书",
-  "d": "2024-02-01",
-  "u": "https://www.euradrives.com/Upload/File/202402/20240201134822_6869.pdf",
-  "fn": "or_c1c2ec37.pdf",
-  "pages": 3,
-  "size": 863280
- },
- {
-  "cat": "用户手册",
-  "t": "DRIVES上位机监控软件用户使用手册",
-  "d": "2024-02-01",
-  "u": "https://www.euradrives.com/Upload/File/202402/20240201133905_4155.pdf",
-  "fn": "or_bb8d3762.pdf",
-  "pages": 130,
-  "size": 4967324
- },
- {
-  "cat": "用户手册",
-  "t": "PRM100系列使用手册",
-  "d": "2023-11-27",
-  "u": "https://www.euradrives.com/Upload/File/202312/20231203134120_0288.pdf",
-  "fn": "or_e03f43fa.pdf",
-  "pages": 21,
-  "size": 1662514
- },
- {
-  "cat": "用户手册",
-  "t": "EAC112系列运动控制器使用手册（SP17内核）",
-  "d": "2023-11-16",
-  "u": "https://www.euradrives.com/Upload/File/202311/20231116172736_7184.pdf",
-  "fn": "or_6c21f4a3.pdf",
-  "pages": 94,
-  "size": 4989731
- },
- {
-  "cat": "用户手册",
-  "t": "E2000-690V中压系列变频器说明书",
-  "d": "2023-11-16",
-  "u": "https://www.euradrives.com/Upload/File/202311/20231116172636_3288.pdf",
-  "fn": "or_056e75ce.pdf",
-  "pages": 249,
-  "size": 4628470
- },
- {
-  "cat": "用户手册",
-  "t": "EC231-04TCM-S单独硬件使用手册",
-  "d": "2023-09-22",
-  "u": "https://www.euradrives.com/Upload/File/202309/20230922172948_0855.pdf",
-  "fn": "or_e6e82de0.pdf",
-  "pages": 13,
-  "size": 568633
  },
  {
   "cat": "用户手册",
