@@ -931,11 +931,11 @@
   "size": 3750873
  },
  {
-  "t": "AMX-DTU-G200%E4%BA%A7%E5%93%81%E6%89%8B%E5%86%8C_ver1.1",
-  "u": "https://oss.amsamotion.com/uploads/AMX-DTU-G200%E4%BA%A7%E5%93%81%E6%89%8B%E5%86%8C_ver1.1.pdf",
-  "fn": "am_b75d2bdb.pdf",
+  "t": "AMX-DTU-G200%E4%BA%A7%E5%93%81%E6%89%8B%E5%86%8C_ver1.0",
+  "u": "https://oss.amsamotion.com/uploads/AMX-DTU-G200%E4%BA%A7%E5%93%81%E6%89%8B%E5%86%8C_ver1.0.pdf",
+  "fn": "am_61d6af0d.pdf",
   "pages": 11,
-  "size": 678303
+  "size": 677436
  },
  {
   "t": "AMX-DTU-G100%E4%BA%A7%E5%93%81%E6%89%8B%E5%86%8C_ver1.0_250913",
@@ -1120,11 +1120,11 @@
   "size": 4522122
  },
  {
-  "t": "%E8%89%BE%E8%8E%AB%E8%BF%851200%E6%89%A9%E5%B1%95%E6%A8%A1%E5%9D%97%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C_ver1.2_261120",
-  "u": "https://oss.amsamotion.com/uploads/%E8%89%BE%E8%8E%AB%E8%BF%851200%E6%89%A9%E5%B1%95%E6%A8%A1%E5%9D%97%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C_ver1.2_261120.pdf",
-  "fn": "am_9d4e51f6.pdf",
+  "t": "%E8%89%BE%E8%8E%AB%E8%BF%851200%E6%89%A9%E5%B1%95%E6%A8%A1%E5%9D%97%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C_ver1.1_261120",
+  "u": "https://oss.amsamotion.com/uploads/%E8%89%BE%E8%8E%AB%E8%BF%851200%E6%89%A9%E5%B1%95%E6%A8%A1%E5%9D%97%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C_ver1.1_261120.pdf",
+  "fn": "am_51eb0380.pdf",
   "pages": 26,
-  "size": 1252898
+  "size": 1236910
  },
  {
   "name": "【英文版】艾莫迅产品手册261008",
@@ -1171,63 +1171,8 @@
   "date": ""
  },
  {
-  "name": "ETH CA M02产品使用手册 VER1.0 260914",
-  "url": "https://oss.amsamotion.com/uploads/ETH-CA-M02产品使用手册-VER1.0-260914.pdf",
-  "pages": 0,
-  "type": "说明书",
-  "size": 0,
-  "brand": "艾莫迅",
-  "src": "oss.amsamotion.com",
-  "status": "不可访问(0)",
-  "date": ""
- },
- {
-  "name": "MT CA M02产品手册 Ver1.0 261121",
-  "url": "https://oss.amsamotion.com/uploads/MT-CA-M02产品手册-Ver1.0-261121.pdf",
-  "pages": 0,
-  "type": "说明书",
-  "size": 0,
-  "brand": "艾莫迅",
-  "src": "oss.amsamotion.com",
-  "status": "不可访问(0)",
-  "date": ""
- },
- {
-  "name": "RS485 ETH M02使用手册 V1.0 20260918",
-  "url": "https://oss.amsamotion.com/uploads/RS485-ETH-M02使用手册_V1.0_20260918.pdf",
-  "pages": 0,
-  "type": "说明书",
-  "size": 0,
-  "brand": "艾莫迅",
-  "src": "oss.amsamotion.com",
-  "status": "不可访问(0)",
-  "date": ""
- },
- {
-  "name": "USB CA M01产品使用手册 Ver1.0",
-  "url": "https://oss.amsamotion.com/uploads/USB-CA-M01产品使用手册-Ver1.0.pdf",
-  "pages": 0,
-  "type": "说明书",
-  "size": 0,
-  "brand": "艾莫迅",
-  "src": "oss.amsamotion.com",
-  "status": "不可访问(0)",
-  "date": ""
- },
- {
-  "name": "LORA MODBUS 1DI1DR使用手册 VER1.2 260912",
-  "url": "https://oss.amsamotion.com/uploads/LORA-MODBUS-1DI1DR使用手册-VER1.2_260912.pdf",
-  "pages": 0,
-  "type": "说明书",
-  "size": 0,
-  "brand": "艾莫迅",
-  "src": "oss.amsamotion.com",
-  "status": "不可访问(0)",
-  "date": ""
- },
- {
-  "name": "BM系列分布式IO模块系列产品手册 VER1.0 260909",
-  "url": "https://oss.amsamotion.com/uploads/BM系列分布式IO模块系列产品手册-VER1.0-260909.pdf",
+  "name": "AMX200 SMART系列产品手册 V1.4 260929",
+  "url": "https://oss.amsamotion.com/uploads/AMX200-SMART系列产品手册_V1.4_260929.pdf",
   "pages": 0,
   "type": "说明书",
   "size": 0,

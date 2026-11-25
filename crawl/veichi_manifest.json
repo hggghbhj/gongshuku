@@ -1,5 +1,93 @@
 [
  {
+  "t": "SD860系列通用型多传伺服产品画册",
+  "d": "2026.11.25",
+  "u": "https://www.veichi.cn/Uploads/20261125011903_725888.pdf",
+  "fn": "vc_952c1987.pdf",
+  "pages": 14,
+  "size": 13794338
+ },
+ {
+  "t": "SD810系列通用型多传伺服产品画册",
+  "d": "2026.11.25",
+  "u": "https://www.veichi.cn/Uploads/20261125011512_481899.pdf",
+  "fn": "vc_d8b1bd70.pdf",
+  "pages": 6,
+  "size": 7515564
+ },
+ {
+  "t": "RB300一体机产品画册",
+  "d": "2026.11.25",
+  "u": "https://www.veichi.cn/Uploads/20261125114207_470442.pdf",
+  "fn": "vc_4eabb037.pdf",
+  "pages": 6,
+  "size": 11994439
+ },
+ {
+  "t": "RB200旋转关节模组产品画册",
+  "d": "2026.11.25",
+  "u": "https://www.veichi.cn/Uploads/20261125113922_997991.pdf",
+  "fn": "vc_bdc762db.pdf",
+  "pages": 8,
+  "size": 137692872
+ },
+ {
+  "t": "RB100伺服一体轮产品画册",
+  "d": "2026.11.25",
+  "u": "https://www.veichi.cn/Uploads/20261125113143_775484.pdf",
+  "fn": "vc_8618134b.pdf",
+  "pages": 8,
+  "size": 9927982
+ },
+ {
+  "t": "GS20系列水泵专用驱动器产品画册",
+  "d": "2026.11.25",
+  "u": "https://www.veichi.cn/Uploads/20261125111444_304726.pdf",
+  "fn": "vc_2c8a17c9.pdf",
+  "pages": 8,
+  "size": 5178852
+ },
+ {
+  "t": "ACP30系列中压变频器产品画册",
+  "d": "2026.11.25",
+  "u": "https://www.veichi.cn/Uploads/20261125111226_859019.pdf",
+  "fn": "vc_ee38bca9.pdf",
+  "pages": 12,
+  "size": 17776318
+ },
+ {
+  "t": "ACH200系列高压变频器产品画册",
+  "d": "2026.11.25",
+  "u": "https://www.veichi.cn/Uploads/20261125110832_256095.pdf",
+  "fn": "vc_c83a9257.pdf",
+  "pages": 10,
+  "size": 11891353
+ },
+ {
+  "t": "AC800系列工程多机传动变频器",
+  "d": "2026.11.25",
+  "u": "https://www.veichi.cn/Uploads/20261125105637_089598.pdf",
+  "fn": "vc_bcbf3c24.pdf",
+  "pages": 14,
+  "size": 12282581
+ },
+ {
+  "t": "AC500系列高可靠性工程型变频器",
+  "d": "2026.11.25",
+  "u": "https://www.veichi.cn/Uploads/20261125105141_109954.pdf",
+  "fn": "vc_dbec4513.pdf",
+  "pages": 10,
+  "size": 10805191
+ },
+ {
+  "t": "AC310系列高性能矢量变频器画册",
+  "d": "2026.11.25",
+  "u": "https://www.veichi.cn/Uploads/20261125104835_871372.pdf",
+  "fn": "vc_518e8ee9.pdf",
+  "pages": 12,
+  "size": 13805713
+ },
+ {
   "t": "AC10画册",
   "d": "2026.11.24",
   "u": "https://www.veichi.cn/Uploads/20261124021945_596023.pdf",
@@ -352,28 +440,12 @@
   "size": 1980483
  },
  {
-  "t": "VH-4TC模块用户手册V1.1",
-  "d": "2026.03.20",
-  "u": "https://www.veichi.cn/Uploads/20260320113614_381313.pdf",
-  "fn": "vc_d6b7198a.pdf",
-  "pages": 25,
-  "size": 3959352
- },
- {
-  "t": "VH-4PT模块用户手册V1.1",
-  "d": "2026.03.20",
-  "u": "https://www.veichi.cn/Uploads/20260320113520_417327.pdf",
-  "fn": "vc_45a6692f.pdf",
-  "pages": 24,
-  "size": 4090923
- },
- {
-  "t": "VH-4DA模块用户手册 V1.1",
-  "d": "2026.03.20",
-  "u": "https://www.veichi.cn/Uploads/20260320113426_686748.pdf",
-  "fn": "vc_d388aa9e.pdf",
-  "pages": 23,
-  "size": 3879220
+  "t": "AC310-I系列变频调速器使用说明书V1.1",
+  "d": "2026.03.10",
+  "u": "https://www.veichi.cn/Uploads/20260310021029_837070.pdf",
+  "fn": "vc_1e1146f6.pdf",
+  "pages": 84,
+  "size": 5251174
  },
  {
   "t": "AC500系列高可靠性工程型变频调速器使用说明书（简版）V1.1",
@@ -408,38 +480,6 @@
   "size": 6287313
  },
  {
-  "t": "AC01-画册",
-  "d": "2026.03.12",
-  "u": "https://www.veichi.cn/Uploads/20260312020403_305817.pdf",
-  "fn": "vc_52ba9877.pdf",
-  "pages": 6,
-  "size": 9492616
- },
- {
-  "t": "AC10-画册",
-  "d": "2026.03.12",
-  "u": "https://www.veichi.cn/Uploads/20260312020441_135395.pdf",
-  "fn": "vc_3e81355b.pdf",
-  "pages": 6,
-  "size": 7890128
- },
- {
-  "t": "AC500-画册",
-  "d": "2026.03.12",
-  "u": "https://www.veichi.cn/Uploads/20260312020513_169494.pdf",
-  "fn": "vc_6bbd7ee2.pdf",
-  "pages": 10,
-  "size": 9261984
- },
- {
-  "t": "AC310-画册",
-  "d": "2026.03.12",
-  "u": "https://www.veichi.cn/Uploads/20260312020553_737210.pdf",
-  "fn": "vc_1ef6f683.pdf",
-  "pages": 10,
-  "size": 11045061
- },
- {
   "t": "AC330-画册",
   "d": "2026.03.12",
   "u": "https://www.veichi.cn/Uploads/20260312020623_412069.pdf",
@@ -454,6 +494,38 @@
   "fn": "vc_fff95a26.pdf",
   "pages": 23,
   "size": 3761881
+ },
+ {
+  "t": "VH-4DA模块用户手册 V1.1",
+  "d": "2026.03.20",
+  "u": "https://www.veichi.cn/Uploads/20260320113426_686748.pdf",
+  "fn": "vc_d388aa9e.pdf",
+  "pages": 23,
+  "size": 3879220
+ },
+ {
+  "t": "VH-4PT模块用户手册V1.1",
+  "d": "2026.03.20",
+  "u": "https://www.veichi.cn/Uploads/20260320113520_417327.pdf",
+  "fn": "vc_45a6692f.pdf",
+  "pages": 24,
+  "size": 4090923
+ },
+ {
+  "t": "VH-4TC模块用户手册V1.1",
+  "d": "2026.03.20",
+  "u": "https://www.veichi.cn/Uploads/20260320113614_381313.pdf",
+  "fn": "vc_d6b7198a.pdf",
+  "pages": 25,
+  "size": 3959352
+ },
+ {
+  "t": "SD700英文画册",
+  "d": "2026.01.14",
+  "u": "https://www.veichi.cn/Uploads/20260114013302_404375.pdf",
+  "fn": "vc_b7b5ccea.pdf",
+  "pages": 16,
+  "size": 28800252
  },
  {
   "t": "SD710英文画册",
@@ -512,12 +584,12 @@
   "size": 3785121
  },
  {
-  "t": "AC310-I系列变频调速器使用说明书V1.1",
-  "d": "2026.03.10",
-  "u": "https://www.veichi.cn/Uploads/20260310021029_837070.pdf",
-  "fn": "vc_1e1146f6.pdf",
-  "pages": 84,
-  "size": 5251174
+  "t": "VH200可编程控制器用户手册V1.0250927",
+  "d": "2025.09.28",
+  "u": "https://www.veichi.cn/Uploads/20250928053017_338363.pdf",
+  "fn": "vc_666b1f00.pdf",
+  "pages": 27,
+  "size": 2038508
  },
  {
   "t": "VH300&VH500系列可编程控制器编程手册A1.0",
@@ -526,14 +598,6 @@
   "fn": "vc_15a97068.pdf",
   "pages": 290,
   "size": 40979737
- },
- {
-  "t": "SD860多传伺服系统画册",
-  "d": "2025.10.30",
-  "u": "https://www.veichi.cn/Uploads/20251030110733_141307.pdf",
-  "fn": "vc_2dccb5d2.pdf",
-  "pages": 14,
-  "size": 12484569
  },
  {
   "t": "SD860电池盒规格书",
@@ -576,19 +640,43 @@
   "size": 432318
  },
  {
-  "t": "SD700英文画册",
-  "d": "2026.01.14",
-  "u": "https://www.veichi.cn/Uploads/20260114013302_404375.pdf",
-  "fn": "vc_b7b5ccea.pdf",
-  "pages": 16,
-  "size": 28800252
+  "t": "AC01-画册",
+  "d": "2026.03.12",
+  "u": "https://www.veichi.cn/Uploads/20260312020403_305817.pdf",
+  "fn": "vc_52ba9877.pdf",
+  "pages": 6,
+  "size": 9492616
  },
  {
-  "t": "VH200可编程控制器用户手册V1.0250927",
-  "d": "2025.09.28",
-  "u": "https://www.veichi.cn/Uploads/20250928053017_338363.pdf",
-  "fn": "vc_666b1f00.pdf",
-  "pages": 27,
-  "size": 2038508
+  "t": "AC10-画册",
+  "d": "2026.03.12",
+  "u": "https://www.veichi.cn/Uploads/20260312020441_135395.pdf",
+  "fn": "vc_3e81355b.pdf",
+  "pages": 6,
+  "size": 7890128
+ },
+ {
+  "t": "AC500-画册",
+  "d": "2026.03.12",
+  "u": "https://www.veichi.cn/Uploads/20260312020513_169494.pdf",
+  "fn": "vc_6bbd7ee2.pdf",
+  "pages": 10,
+  "size": 9261984
+ },
+ {
+  "t": "AC310-画册",
+  "d": "2026.03.12",
+  "u": "https://www.veichi.cn/Uploads/20260312020553_737210.pdf",
+  "fn": "vc_1ef6f683.pdf",
+  "pages": 10,
+  "size": 11045061
+ },
+ {
+  "t": "SD860多传伺服系统画册",
+  "d": "2025.10.30",
+  "u": "https://www.veichi.cn/Uploads/20251030110733_141307.pdf",
+  "fn": "vc_2dccb5d2.pdf",
+  "pages": 14,
+  "size": 12484569
  }
 ]
