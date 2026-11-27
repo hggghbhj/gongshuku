@@ -77,8 +77,8 @@
   "date": ""
  },
  {
-  "name": "HCM100 80MT6 A外形尺寸图",
-  "url": "http://www.hcfa.cn/service/index/page/HCM100-80MT6-A外形尺寸图.pdf",
+  "name": "HCM512 32MT4 D PNP外形尺寸图",
+  "url": "http://www.hcfa.cn/service/index/page/HCM512-32MT4-D-PNP外形尺寸图.pdf",
   "pages": 0,
   "type": "说明书",
   "size": 0,
@@ -88,8 +88,8 @@
   "date": ""
  },
  {
-  "name": "HCM100 80MR A外形尺寸图",
-  "url": "http://www.hcfa.cn/service/index/page/HCM100-80MR-A外形尺寸图.pdf",
+  "name": "HCM511 32MT4 D PNP外形尺寸图",
+  "url": "http://www.hcfa.cn/service/index/page/HCM511-32MT4-D-PNP外形尺寸图.pdf",
   "pages": 0,
   "type": "说明书",
   "size": 0,
@@ -99,8 +99,8 @@
   "date": ""
  },
  {
-  "name": "HCM514 32MT4 D PNP外形尺寸图",
-  "url": "http://www.hcfa.cn/service/index/page/HCM514-32MT4-D-PNP外形尺寸图.pdf",
+  "name": "HCM511S 32MT4 D PNP外形尺寸图",
+  "url": "http://www.hcfa.cn/service/index/page/HCM511S-32MT4-D-PNP外形尺寸图.pdf",
   "pages": 0,
   "type": "说明书",
   "size": 0,
@@ -110,8 +110,8 @@
   "date": ""
  },
  {
-  "name": "HCM513 32MT4 D PNP外形尺寸图",
-  "url": "http://www.hcfa.cn/service/index/page/HCM513-32MT4-D-PNP外形尺寸图.pdf",
+  "name": "HCM312 32MT6 D PNP外形尺寸图",
+  "url": "http://www.hcfa.cn/service/index/page/HCM312-32MT6-D-PNP外形尺寸图.pdf",
   "pages": 0,
   "type": "说明书",
   "size": 0,
@@ -121,8 +121,8 @@
   "date": ""
  },
  {
-  "name": "V315E外形尺寸图",
-  "url": "http://www.hcfa.cn/service/index/page/V315E外形尺寸图.pdf",
+  "name": "工业机器人专用 用户手册 基本操作 V2.2",
+  "url": "http://www.hcfa.cn/service/index/page/工业机器人专用-用户手册-基本操作 V2.2.pdf",
   "pages": 0,
   "type": "说明书",
   "size": 0,
@@ -132,8 +132,8 @@
   "date": ""
  },
  {
-  "name": "V310E外形尺寸图",
-  "url": "http://www.hcfa.cn/service/index/page/V310E外形尺寸图.pdf",
+  "name": "SCARA机器人控制器硬件手册V2.1",
+  "url": "http://www.hcfa.cn/service/index/page/SCARA机器人控制器硬件手册V2.1.pdf",
   "pages": 0,
   "type": "说明书",
   "size": 0,
@@ -143,8 +143,8 @@
   "date": ""
  },
  {
-  "name": "V304E外形尺寸图",
-  "url": "http://www.hcfa.cn/service/index/page/V304E外形尺寸图.pdf",
+  "name": "SCARA机器人简易操作手册V2.1",
+  "url": "http://www.hcfa.cn/service/index/page/SCARA机器人简易操作手册V2.1.pdf",
   "pages": 0,
   "type": "说明书",
   "size": 0,
@@ -154,8 +154,8 @@
   "date": ""
  },
  {
-  "name": "SV700 730系列单轴伺服驱动器安装使用说明书 V1.0 中英文",
-  "url": "http://www.hcfa.cn/service/index/page/SV700 730系列单轴伺服驱动器安装使用说明书 V1.0 中英文.pdf.pdf",
+  "name": "SCARA机器人示教器使用手册V2.1",
+  "url": "http://www.hcfa.cn/service/index/page/SCARA机器人示教器使用手册V2.1.pdf",
   "pages": 0,
   "type": "说明书",
   "size": 0,
@@ -165,8 +165,30 @@
   "date": ""
  },
  {
-  "name": "HDv AIO 11A 000多功能模拟量扩展卡用户手册",
-  "url": "http://www.hcfa.cn/service/index/page/HDv-AIO-11A-000多功能模拟量扩展卡用户手册.pdf",
+  "name": "禾川SCARA机器人定期点检和保养用户手册V1.0",
+  "url": "http://www.hcfa.cn/service/index/page/禾川SCARA机器人定期点检和保养用户手册V1.0.pdf",
+  "pages": 0,
+  "type": "说明书",
+  "size": 0,
+  "brand": "禾川科技",
+  "src": "www.hcfa.cn",
+  "status": "不可访问(0)",
+  "date": ""
+ },
+ {
+  "name": "D5ND Y系列伺服外形尺寸图",
+  "url": "http://www.hcfa.cn/service/index/page/D5ND-Y系列伺服外形尺寸图.pdf",
+  "pages": 0,
+  "type": "说明书",
+  "size": 0,
+  "brand": "禾川科技",
+  "src": "www.hcfa.cn",
+  "status": "不可访问(0)",
+  "date": ""
+ },
+ {
+  "name": "D5系列低压 CANopen型总线伺服安装使用说明书V1.0 中英文",
+  "url": "http://www.hcfa.cn/service/index/page/D5系列低压 CANopen型总线伺服安装使用说明书V1.0 中英文.pdf",
   "pages": 0,
   "type": "说明书",
   "size": 0,
