@@ -47,83 +47,83 @@
  {
   "i": 6,
   "cat": "用户手册",
-  "t": "Coolmay DK60系列触摸屏用户手册V26.81",
-  "u": "http://www.coolmay.com/uploads/files/20260821/3881b054901d0f92647760745daf7940.pdf",
+  "t": "Coolmay L01S系列可编程控制器（PLC）用户手册-V26.111-SL",
+  "u": "http://www.coolmay.com/uploads/files/20261127/081c4d24d7cd9fa4dceb942d81a183b3.pdf",
   "fn": "cm_06.pdf",
-  "pages": 1,
-  "size": 6281917
+  "pages": 2,
+  "size": 9205181
  },
  {
   "i": 7,
   "cat": "用户手册",
-  "t": "Coolmay TK80系列触摸屏用户手册 V26.61",
-  "u": "http://www.coolmay.com/uploads/files/20260701/d0d80b1ba63371293df3c799b01be880.pdf",
+  "t": "Coolmay DK60系列触摸屏用户手册V26.81",
+  "u": "http://www.coolmay.com/uploads/files/20260821/3881b054901d0f92647760745daf7940.pdf",
   "fn": "cm_07.pdf",
-  "pages": 2,
-  "size": 8887585
+  "pages": 1,
+  "size": 6281917
  },
  {
   "i": 8,
   "cat": "用户手册",
-  "t": "Coolmay TK60系列触摸屏用户手册V26.61",
-  "u": "http://www.coolmay.com/uploads/files/20260701/1a5d16b85cdc5272ebb13578ec7ceb2b.pdf",
+  "t": "Coolmay TK80系列触摸屏用户手册 V26.61",
+  "u": "http://www.coolmay.com/uploads/files/20260701/d0d80b1ba63371293df3c799b01be880.pdf",
   "fn": "cm_08.pdf",
   "pages": 2,
-  "size": 4222155
+  "size": 8887585
  },
  {
   "i": 9,
   "cat": "用户手册",
-  "t": "Coolmay CX3U系列PLC用户手册V26.61",
-  "u": "http://www.coolmay.com/uploads/files/20260625/bb2431b62c145bfcf0fc0654bd9251f5.pdf",
+  "t": "Coolmay TK60系列触摸屏用户手册V26.61",
+  "u": "http://www.coolmay.com/uploads/files/20260701/1a5d16b85cdc5272ebb13578ec7ceb2b.pdf",
   "fn": "cm_09.pdf",
   "pages": 2,
-  "size": 5151621
+  "size": 4222155
  },
  {
   "i": 10,
   "cat": "用户手册",
-  "t": "Coolmay M300系列可编程控制器（plc）用户手册V26.61",
-  "u": "http://www.coolmay.com/uploads/files/20260625/6c7b7863843280044504cc888a02725b.pdf",
+  "t": "Coolmay CX3U系列PLC用户手册V26.61",
+  "u": "http://www.coolmay.com/uploads/files/20260625/bb2431b62c145bfcf0fc0654bd9251f5.pdf",
   "fn": "cm_10.pdf",
-  "pages": 1,
-  "size": 6640989
+  "pages": 2,
+  "size": 5151621
  },
  {
   "i": 11,
   "cat": "用户手册",
-  "t": "L02S系列DIO模块用户手册V26.51",
-  "u": "http://www.coolmay.com/uploads/files/20260525/d3664f1072eb1916801d171c9ce9c2c0.pdf",
+  "t": "Coolmay M300系列可编程控制器（plc）用户手册V26.61",
+  "u": "http://www.coolmay.com/uploads/files/20260625/6c7b7863843280044504cc888a02725b.pdf",
   "fn": "cm_11.pdf",
-  "pages": 2,
-  "size": 8166388
+  "pages": 1,
+  "size": 6640989
  },
  {
   "i": 12,
   "cat": "用户手册",
-  "t": "L02S系列AIO模块用户手册V26.51",
-  "u": "http://www.coolmay.com/uploads/files/20260525/4a4e5fcdf5700aaa29b86eb08848332c.pdf",
+  "t": "L02S系列DIO模块用户手册V26.51",
+  "u": "http://www.coolmay.com/uploads/files/20260525/d3664f1072eb1916801d171c9ce9c2c0.pdf",
   "fn": "cm_12.pdf",
   "pages": 2,
-  "size": 6227473
+  "size": 8166388
  },
  {
   "i": 13,
   "cat": "用户手册",
-  "t": "Coolmay 智能模组模块用户手册 V26.51",
-  "u": "http://www.coolmay.com/uploads/files/20260513/97a1348c46696a29527aa74d2bf4d6ee.pdf",
+  "t": "L02S系列AIO模块用户手册V26.51",
+  "u": "http://www.coolmay.com/uploads/files/20260525/4a4e5fcdf5700aaa29b86eb08848332c.pdf",
   "fn": "cm_13.pdf",
   "pages": 2,
-  "size": 9579534
+  "size": 6227473
  },
  {
   "i": 14,
   "cat": "用户手册",
-  "t": "Coolmay L02S系列可编程控制器（plc）用户手册V26.31-SL",
-  "u": "http://www.coolmay.com/uploads/files/20260402/e0eb4fefeb425bd7d68055bab68aadb7.pdf",
+  "t": "Coolmay 智能模组模块用户手册 V26.51",
+  "u": "http://www.coolmay.com/uploads/files/20260513/97a1348c46696a29527aa74d2bf4d6ee.pdf",
   "fn": "cm_14.pdf",
-  "pages": 1,
-  "size": 7642111
+  "pages": 2,
+  "size": 9579534
  },
  {
   "i": 15,
